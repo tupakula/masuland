@@ -1,0 +1,42 @@
+@namespace mx "library://ns.adobe.com/flex/mx";
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace view "com.masuland.loginexample.parsley222.view.*";
+
+mx|global
+{
+	theme-color: #D29910;
+	color: #C74803;
+}
+
+view|AppStack
+{
+	backgroundAlpha: 0.7;
+	
+	borderStyle: solid;
+	borderThickness: 1;
+	borderColor: #D29910;
+	backgroundColor: #F5F2E2;
+	
+	cornerRadius: 10;
+	
+	dropShadowColor: #000000;
+	dropShadowEnabled: true;
+	shadowDirection: top;
+	shadow-distance: 0;
+}
+
+.loginHeader
+{
+	text-align: center;
+	font-weight: bold;
+	font-size: 20;
+}
+
+mx|HRule
+{
+	strokeColor: #D29910;
+	
+	dropShadowEnabled: true;
+	shadowDirection: top;
+	shadow-distance: 0;
+}
