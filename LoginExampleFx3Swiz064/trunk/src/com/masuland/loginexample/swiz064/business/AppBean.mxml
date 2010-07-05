@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BeanLoader 
+	xmlns="org.swizframework.util.*"
+	xmlns:business="com.masuland.loginexample.swiz064.business.*"
+	xmlns:control="com.masuland.loginexample.swiz064.control.*"
+	xmlns:model="com.masuland.loginexample.swiz064.model.*"
+	>
+	
+	<business:AppDynamicChannelSet 
+		id="appDynamicChannel"
+		serverName="localhost"
+		serverPort="80"
+		contextRoot="/amfphp"
+		endPointName="gateway.php"
+		/>		
+	
+	<business:AppRemoteObject
+		id="appRemoteObject" 
+		destination="appService"
+		source="com.masuland.service.AppService"
+		channelSet="{ appDynamicChannel }"
+		/>
+
+	<!-- DELEGATE -->	
+	
+	<business:AppMockDelegate 
+		id="appDelegate" 
+		/>
+
+	<!-- CONTROLLER -->	
+
+	<control:AppEventNames
+		id="appEventNames"
+		/>
+	
+	<control:AppController
+		id="appController"
+		/>
+
+	<!-- MODEL -->	
+
+	<model:AppModel 
+		id="appModel"
+		/>
+	
+</BeanLoader>
