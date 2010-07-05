@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application 
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:view="com.masuland.loginexample.swiz10.view.*"
+	xmlns:swiz="http://swiz.swizframework.org"
+	width="100%" height="100%"
+	layout="absolute" 
+	pageTitle="Swiz 1.0 - Login Example"
+	backgroundAlpha="0"
+	backgroundColor="#FFFFFF"
+	backgroundGradientAlphas="[1, 1]"
+	backgroundGradientColors="[#FFFFFF, #FFFFFF]"
+	 viewSourceURL="srcview/index.html">
+	
+	<mx:Metadata>
+		[ResourceBundle("resources")]
+	</mx:Metadata>
+	
+	<mx:Script>
+		<![CDATA[
+			import com.masuland.loginexample.swiz10.business.AppBean;
+		]]>
+	</mx:Script>
+	
+	<swiz:Swiz
+		beanProviders="{ [AppBean] }"
+		>
+		<swiz:config>
+			<swiz:SwizConfig
+				eventPackages="com.masuland.loginexample.swiz10.control.event"
+				viewPackages="com.masuland.loginexample.swiz10.view" 
+				/>
+		</swiz:config>
+	</swiz:Swiz>
+	
+	<view:AppView
+		/>
+	
+</mx:Application>
