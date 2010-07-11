@@ -1,6 +1,8 @@
 package com.masuland.loginexample.swiz064.control
 {
 	import com.masuland.loginexample.swiz064.business.IAppDelegate;
+	import com.masuland.loginexample.swiz064.control.event.LoadLocaleEvent;
+	import com.masuland.loginexample.swiz064.control.event.LoadStyleEvent;
 	import com.masuland.loginexample.swiz064.control.responder.GetSettingsResponder;
 	import com.masuland.loginexample.swiz064.control.responder.LoginResponder;
 	import com.masuland.loginexample.swiz064.control.responder.RegisterResponder;
@@ -221,6 +223,12 @@ package com.masuland.loginexample.swiz064.control
 		public function loadLayout(layout:LayoutVO):void 
 		{
 			appModel.currentLayout = layout;
+			
+			// load style
+			Swiz.dispatchEvent(new LoadStyleEvent(StyleVO( appModel.currentLayout.styles.getItemAt(0) )));
+			
+			// load locales
+			Swiz.dispatchEvent(new LoadLocaleEvent(LocaleVO( appModel.currentLayout.locales.getItemAt(0) )));
 		}
 		
 		/**
