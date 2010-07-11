@@ -94,15 +94,18 @@
 			>
 			
 			<mx:VBox
-				horizontalCenter="-10" verticalCenter="0"
+				verticalCenter="0"
+				left="10" right="10"
 				>
 				
 				<mx:VBox
 					verticalGap="0"
+					width="100%"
 					>
 					<mx:Label
 						width="100%"
 						text="{resourceManager.getString('resources', 'txt_username')}"
+						styleName="descriptor"
 						/>
 					<mx:TextInput
 						id="tip_username"
@@ -113,6 +116,7 @@
 				
 				<mx:VBox
 					id="fi_email"
+					width="100%"
 					verticalGap="0"
 					visible="false"
 					includeInLayout="false"
@@ -120,6 +124,7 @@
 					<mx:Label
 						width="100%"
 						text="{resourceManager.getString('resources', 'txt_email')}"
+						styleName="descriptor"
 						/>
 					<mx:TextInput
 						id="tip_email"
@@ -129,11 +134,13 @@
 				</mx:VBox>
 				
 				<mx:VBox
+					width="100%"
 					verticalGap="0"
 					>
 					<mx:Label
 						width="100%"
 						text="{resourceManager.getString('resources', 'txt_password')}"
+						styleName="descriptor"
 						/>
 					<mx:TextInput
 						id="tip_password"
@@ -145,6 +152,7 @@
 				
 				<mx:VBox
 					id="fi_repeatPassword"
+					width="100%"
 					verticalGap="0"
 					visible="false"
 					includeInLayout="false"
@@ -152,6 +160,7 @@
 					<mx:Label
 						width="100%"
 						text="{resourceManager.getString('resources', 'txt_repeat_password')}"
+						styleName="descriptor"
 						/>
 					<mx:TextInput
 						id="tip_repeatPassword"
