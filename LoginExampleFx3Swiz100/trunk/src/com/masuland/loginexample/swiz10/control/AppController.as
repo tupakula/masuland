@@ -78,12 +78,6 @@ package com.masuland.loginexample.swiz10.control
 			
 			// load layout
 			dispatcher.dispatchEvent(new LoadLayoutEvent(LayoutVO( appModel.settings.layouts.getItemAt(0) )));
-			
-			// load style
-			dispatcher.dispatchEvent(new LoadStyleEvent(StyleVO( appModel.settings.styles.getItemAt(0) )));
-			
-			// load locales
-			dispatcher.dispatchEvent(new LoadLocaleEvent(LocaleVO( appModel.settings.locales.getItemAt(0) )));
 		}
 		
 		/**  */
@@ -278,6 +272,12 @@ package com.masuland.loginexample.swiz10.control
 		public function loadLayout(layout:LayoutVO):void 
 		{
 			appModel.currentLayout = layout;
+			
+			// load style
+			dispatcher.dispatchEvent(new LoadStyleEvent(StyleVO( appModel.currentLayout.styles.getItemAt(0) )));
+			
+			// load locales
+			dispatcher.dispatchEvent(new LoadLocaleEvent(LocaleVO( appModel.currentLayout.locales.getItemAt(0) )));
 		}
 		
 		/**
