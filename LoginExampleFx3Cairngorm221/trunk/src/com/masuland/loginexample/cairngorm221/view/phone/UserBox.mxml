@@ -61,7 +61,8 @@
 			>
 			
 			<mx:VBox
-				horizontalCenter="-10" verticalCenter="0"
+				verticalCenter="0"
+				left="10" right="10"
 				>
 				
 				<mx:HBox
@@ -70,19 +71,23 @@
 					>
 					<mx:Label
 						text="{resourceManager.getString('resources', 'txt_username')}"
+						styleName="descriptor"
 						/>
-					<mx:Text
+					<mx:Label
 						width="100%"
 						text="{ appModel.currentUser.username }"
+						styleName="descriptor"
 						/>
 				</mx:HBox>
 			
 				<mx:VBox
+					width="100%"
 					verticalGap="0"
 					>
 					<mx:Label
 						width="100%"
 						text="{resourceManager.getString('resources', 'txt_firstname')}"
+						styleName="descriptor"
 						/>
 					<mx:TextInput
 						id="tip_firstname"
@@ -92,11 +97,13 @@
 				</mx:VBox>
 				
 				<mx:VBox
+					width="100%"
 					verticalGap="0"
 					>
 					<mx:Label
 						width="100%"
 						text="{resourceManager.getString('resources', 'txt_lastname')}"
+						styleName="descriptor"
 						/>
 					<mx:TextInput
 						id="tip_lastname"
@@ -106,11 +113,13 @@
 				</mx:VBox>
 				
 				<mx:VBox
+					width="100%"
 					verticalGap="0"
 					>
 					<mx:Label
 						width="100%"
 						text="{resourceManager.getString('resources', 'txt_email')}"
+						styleName="descriptor"
 						/>
 					<mx:TextInput
 						id="tip_email"
@@ -120,11 +129,13 @@
 				</mx:VBox>
 				
 				<mx:VBox
+					width="100%"
 					verticalGap="0"
 					>
 					<mx:Label
 						width="100%"
 						text="{resourceManager.getString('resources', 'txt_birthday')}"
+						styleName="descriptor"
 						/>
 					<mx:DateField
 						id="df_birthday"

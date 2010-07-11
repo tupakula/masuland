@@ -74,9 +74,9 @@ package com.masuland.loginexample.cairngorm221.business
 				settings.layouts = new ArrayCollection();
 				
 				var layout:LayoutVO = new LayoutVO();
-				layout.name = 'Web, 400x300';
-				layout.width = 400;
-				layout.heigth = 300;
+				layout.name = 'Web, 450x320';
+				layout.width = 450;
+				layout.heigth = 320;
 				layout.stateName = 'web';
 				layout.styles = styles;
 				layout.locales = locales;
@@ -117,6 +117,15 @@ package com.masuland.loginexample.cairngorm221.business
 				// Phone layout
 				
 				layout = new LayoutVO();
+				layout.name = 'Phone, 280x420';
+				layout.width = 280;
+				layout.heigth = 420;
+				layout.stateName = 'phone';
+				layout.styles = styles;
+				layout.locales = locales;
+				settings.layouts.addItem(layout);
+				
+				layout = new LayoutVO();
 				layout.name = 'Phone, 300x500';
 				layout.width = 300;
 				layout.heigth = 500;
@@ -125,15 +134,6 @@ package com.masuland.loginexample.cairngorm221.business
 				layout.locales = locales;
 				settings.layouts.addItem(layout);
 
-				layout = new LayoutVO();
-				layout.name = 'Phone, 250x400';
-				layout.width = 250;
-				layout.heigth = 400;
-				layout.stateName = 'phone';
-				layout.styles = styles;
-				layout.locales = locales;
-				settings.layouts.addItem(layout);
-				
 				token = MockDelegateHelper.createMockResult(settings, 500, true);
 			}
 			else

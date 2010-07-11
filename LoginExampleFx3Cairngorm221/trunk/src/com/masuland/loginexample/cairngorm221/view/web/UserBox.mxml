@@ -60,7 +60,7 @@
 			>
 
 			<mx:Form
-				horizontalCenter="-10" verticalCenter="0"
+				horizontalCenter="0" verticalCenter="0"
 				>
 				<mx:FormItem
 					width="100%"
