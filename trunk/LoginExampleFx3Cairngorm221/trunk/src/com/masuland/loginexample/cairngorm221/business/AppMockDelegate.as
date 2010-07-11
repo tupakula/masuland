@@ -2,13 +2,13 @@ package com.masuland.loginexample.cairngorm221.business
 {
 	import com.adobe.cairngorm.business.ServiceLocator;
 	import com.masuland.loginexample.cairngorm221.model.AppModel;
+	import com.masuland.loginexample.cairngorm221.util.MockDelegateHelper;
 	import com.masuland.loginexample.cairngorm221.vo.AuthenticationVO;
 	import com.masuland.loginexample.cairngorm221.vo.LayoutVO;
 	import com.masuland.loginexample.cairngorm221.vo.LocaleVO;
 	import com.masuland.loginexample.cairngorm221.vo.SettingsVO;
 	import com.masuland.loginexample.cairngorm221.vo.StyleVO;
 	import com.masuland.loginexample.cairngorm221.vo.UserVO;
-	import com.masuland.loginexample.cairngorm221.util.MockDelegateHelper;
 	
 	import mx.collections.ArrayCollection;
 	import mx.rpc.AsyncToken;
@@ -40,50 +40,100 @@ package com.masuland.loginexample.cairngorm221.business
 			if (appModel.isMockData)
 			{
 				var settings:SettingsVO = new SettingsVO();
-				settings.styles = new ArrayCollection();
 				
-				var style:StyleVO = new StyleVO();
-				style.name = 'Green';
-				style.path = 'style/login_example_green.swf';
-				settings.styles.addItem(style);
+				// Locale
 				
-				style = new StyleVO();
-				style.name = 'Red';
-				style.path = 'style/login_example_red.swf';
-				settings.styles.addItem(style);
-
-				settings.layouts = new ArrayCollection();
-				
-				var layout:LayoutVO = new LayoutVO();
-				layout.name = '400x300';
-				layout.width = 400;
-				layout.heigth = 300;
-				settings.layouts.addItem(layout);
-
-				layout = new LayoutVO();
-				layout.name = '500x350';
-				layout.width = 500;
-				layout.heigth = 350;
-				settings.layouts.addItem(layout);
-
-				layout = new LayoutVO();
-				layout.name = '600x400';
-				layout.width = 600;
-				layout.heigth = 400;
-				settings.layouts.addItem(layout);
-				
-				settings.locales = new ArrayCollection();
+				var locales:ArrayCollection = new ArrayCollection();
 				
 				var locale:LocaleVO = new LocaleVO();
 				locale.name = 'English';
 				locale.code = 'en_US';
-				settings.locales.addItem(locale);
-
+				locales.addItem(locale);
+				
 				locale = new LocaleVO();
 				locale.name = 'Deutsch';
 				locale.code = 'de_DE';
-				settings.locales.addItem(locale);
+				locales.addItem(locale);
+				
+				// Web style
+				
+				var styles:ArrayCollection = new ArrayCollection();
+				
+				var style:StyleVO = new StyleVO();
+				style.name = 'Web, Green';
+				style.path = 'style/login_example_web_green.swf';
+				styles.addItem(style);
+				
+				style = new StyleVO();
+				style.name = 'Web, Red';
+				style.path = 'style/login_example_web_red.swf';
+				styles.addItem(style);
+				
+				// Web layout
+				
+				settings.layouts = new ArrayCollection();
+				
+				var layout:LayoutVO = new LayoutVO();
+				layout.name = 'Web, 400x300';
+				layout.width = 400;
+				layout.heigth = 300;
+				layout.stateName = 'web';
+				layout.styles = styles;
+				layout.locales = locales;
+				settings.layouts.addItem(layout);
 
+				layout = new LayoutVO();
+				layout.name = 'Web, 500x350';
+				layout.width = 500;
+				layout.heigth = 350;
+				layout.stateName = 'web';
+				layout.styles = styles;
+				layout.locales = locales;
+				settings.layouts.addItem(layout);
+
+				layout = new LayoutVO();
+				layout.name = 'Web, 600x400';
+				layout.width = 600;
+				layout.heigth = 400;
+				layout.stateName = 'web';
+				layout.styles = styles;
+				layout.locales = locales;
+				settings.layouts.addItem(layout);
+				
+				// Phone style
+				
+				styles = new ArrayCollection();
+				
+				style = new StyleVO();
+				style.name = 'Phone, Green';
+				style.path = 'style/login_example_phone_green.swf';
+				styles.addItem(style);
+				
+				style = new StyleVO();
+				style.name = 'Phone, Red';
+				style.path = 'style/login_example_phone_red.swf';
+				styles.addItem(style);
+				
+				// Phone layout
+				
+				layout = new LayoutVO();
+				layout.name = 'Phone, 300x500';
+				layout.width = 300;
+				layout.heigth = 500;
+				layout.stateName = 'phone';
+				layout.styles = styles;
+				layout.locales = locales;
+				settings.layouts.addItem(layout);
+
+				layout = new LayoutVO();
+				layout.name = 'Phone, 250x400';
+				layout.width = 250;
+				layout.heigth = 400;
+				layout.stateName = 'phone';
+				layout.styles = styles;
+				layout.locales = locales;
+				settings.layouts.addItem(layout);
+				
 				token = MockDelegateHelper.createMockResult(settings, 500, true);
 			}
 			else

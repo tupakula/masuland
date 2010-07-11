@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mx:Canvas 
 	xmlns:mx="http://www.adobe.com/2006/mxml"
-	xmlns:view="com.masuland.loginexample.cairngorm221.view.*"
-	width="{ appModel.currentLayout.width }" height="{ appModel.currentLayout.heigth }"
-	visible="false"
+	xmlns:web="com.masuland.loginexample.cairngorm221.view.web.*"
+	width="100%" height="100%"
 	styleName="defaultBox"
-	resizeEffect="{ fx_resize }"
 	>
 	
 	<mx:states>
 		<mx:State name="login">
-			<mx:SetProperty target="{this}" name="visible" value="true" />
 			<mx:SetProperty target="{bx_login}" name="visible" value="true" />
 		</mx:State>
 		<mx:State name="user">
-			<mx:SetProperty target="{this}" name="visible" value="true" />
 			<mx:SetProperty target="{bx_user}" name="visible" value="true" />
 		</mx:State>
 	</mx:states>
-	
-	<mx:Resize
-		id="fx_resize"
-		duration="150"
-		/>
 
 	<mx:Script>
 		<![CDATA[
@@ -33,15 +24,15 @@
 		]]>
 	</mx:Script>
 
-	<view:LoginBox
+	<web:LoginBox
 		id="bx_login"
 		currentState="{ appModel.loginBoxState }"
 		visible="false"
 		/>
 	
-	<view:UserBox
+	<web:UserBox
 		id="bx_user"
 		visible="false"
 		/>
-	
+
 </mx:Canvas>

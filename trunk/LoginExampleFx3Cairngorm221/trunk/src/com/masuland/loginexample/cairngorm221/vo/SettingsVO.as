@@ -10,8 +10,6 @@ package com.masuland.loginexample.cairngorm221.vo
 	public class SettingsVO
 	{
 		public var layouts:ArrayCollection;
-		public var styles:ArrayCollection;
-		public var locales:ArrayCollection;
 		
 		public function SettingsVO() {}
 	}

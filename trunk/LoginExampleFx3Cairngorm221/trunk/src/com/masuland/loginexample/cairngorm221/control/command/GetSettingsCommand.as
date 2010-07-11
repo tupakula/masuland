@@ -5,13 +5,9 @@ package com.masuland.loginexample.cairngorm221.control.command
 	import com.masuland.loginexample.cairngorm221.business.AppMockDelegate;
 	import com.masuland.loginexample.cairngorm221.business.IAppDelegate;
 	import com.masuland.loginexample.cairngorm221.control.event.LoadLayoutEvent;
-	import com.masuland.loginexample.cairngorm221.control.event.LoadLocaleEvent;
-	import com.masuland.loginexample.cairngorm221.control.event.LoadStyleEvent;
 	import com.masuland.loginexample.cairngorm221.model.AppModel;
 	import com.masuland.loginexample.cairngorm221.vo.LayoutVO;
-	import com.masuland.loginexample.cairngorm221.vo.LocaleVO;
 	import com.masuland.loginexample.cairngorm221.vo.SettingsVO;
-	import com.masuland.loginexample.cairngorm221.vo.StyleVO;
 	
 	import mx.rpc.IResponder;
 	
@@ -29,14 +25,8 @@ package com.masuland.loginexample.cairngorm221.control.command
 			
 			appModel.settings = SettingsVO( data.result );
 			
-			// Load style
-			new LoadStyleEvent(StyleVO( appModel.settings.styles.getItemAt(0) )).dispatch();
-			
 			// Load layout
 			new LoadLayoutEvent(LayoutVO( appModel.settings.layouts.getItemAt(0) )).dispatch();
-			
-			// Load locale
-			new LoadLocaleEvent(LocaleVO( appModel.settings.locales.getItemAt(0) )).dispatch();
 		}
 
 		public function fault(info:Object):void
