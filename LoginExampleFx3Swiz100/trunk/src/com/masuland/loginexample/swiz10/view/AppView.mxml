@@ -3,7 +3,7 @@
 	xmlns:mx="http://www.adobe.com/2006/mxml" 
 	xmlns:view="com.masuland.loginexample.swiz10.view.*"
 	width="100%" height="100%"
-	visible="{ appModel.isApplicationVisible }" xmlns:web="com.masuland.loginexample.swiz10.view.web.*"
+	visible="{ appModel.isApplicationVisible }" 
 	>
 	
 	<mx:Script>
@@ -64,9 +64,9 @@
 		</mx:HBox>
 	</mx:VBox>
 	
-	<web:AppStack
+	<view:LayoutStack
 		horizontalCenter="0" verticalCenter="0"
-		currentState="{ appModel.appStackState }"
+		currentState="{ appModel.currentLayout.stateName }"
 		/>
 	
 </mx:Canvas>
