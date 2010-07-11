@@ -24,9 +24,30 @@ AppStack
 
 .loginHeader
 {
-	text-align: center;
+	text-align: left;
+	text-indent: 5;
 	font-weight: bold;
 	font-size: 20;
+}
+
+.descriptor
+{
+	font-size: 17;
+}
+
+Button
+{
+	font-size: 15;
+}
+
+TextInput
+{
+	font-size: 17;
+}
+
+ComboBox
+{
+	font-size: 10;
 }
 
 HRule

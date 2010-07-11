@@ -5,7 +5,7 @@
 	width="{ appModel.currentLayout.width }" height="{ appModel.currentLayout.heigth }"
 	visible="false"
 	styleName="defaultBox"
-	resizeEffect="{ fx_resize }"
+	resizeEffect="{ fx_resize }" xmlns:web="com.masuland.loginexample.swiz10.view.web.*"
 	>
 	
 	<mx:states>
@@ -34,13 +34,13 @@
 		]]>
 	</mx:Script>
 
-	<view:LoginBox
+	<web:LoginBox
 		id="bx_login"
 		currentState="{ appModel.loginBoxState }"
 		visible="false"
 		/>
 	
-	<view:UserBox
+	<web:UserBox
 		id="bx_user"
 		visible="false"
 		/>

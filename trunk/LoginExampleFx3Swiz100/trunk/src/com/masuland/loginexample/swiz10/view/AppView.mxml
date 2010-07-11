@@ -3,7 +3,7 @@
 	xmlns:mx="http://www.adobe.com/2006/mxml" 
 	xmlns:view="com.masuland.loginexample.swiz10.view.*"
 	width="100%" height="100%"
-	visible="{ appModel.isApplicationVisible }"
+	visible="{ appModel.isApplicationVisible }" xmlns:web="com.masuland.loginexample.swiz10.view.web.*"
 	>
 	
 	<mx:Script>
@@ -30,18 +30,6 @@
 			verticalAlign="middle"
 			>
 			<mx:Label
-				text="{resourceManager.getString('resources', 'txt_change_style')}"
-				/>
-			<mx:ComboBox
-				id="cb_style"
-				dataProvider="{ appModel.settings.styles }"
-				change="dispatchEvent(new LoadStyleEvent(StyleVO( cb_style.selectedItem )));"
-				/>
-		</mx:HBox>
-		<mx:HBox
-			verticalAlign="middle"
-			>
-			<mx:Label
 				text="{resourceManager.getString('resources', 'txt_change_layout')}"
 				/>
 			<mx:ComboBox
@@ -54,17 +42,29 @@
 			verticalAlign="middle"
 			>
 			<mx:Label
+				text="{resourceManager.getString('resources', 'txt_change_style')}"
+				/>
+			<mx:ComboBox
+				id="cb_style"
+				dataProvider="{ appModel.currentLayout.styles }"
+				change="dispatchEvent(new LoadStyleEvent(StyleVO( cb_style.selectedItem )));"
+				/>
+		</mx:HBox>
+		<mx:HBox
+			verticalAlign="middle"
+			>
+			<mx:Label
 				text="{resourceManager.getString('resources', 'txt_change_locale')}"
 				/>
 			<mx:ComboBox
 				id="cb_locale"
-				dataProvider="{ appModel.settings.locales }"
+				dataProvider="{ appModel.currentLayout.locales }"
 				change="dispatchEvent(new LoadLocaleEvent(LocaleVO( cb_locale.selectedItem )));"
 				/>
 		</mx:HBox>
 	</mx:VBox>
 	
-	<view:AppStack
+	<web:AppStack
 		horizontalCenter="0" verticalCenter="0"
 		currentState="{ appModel.appStackState }"
 		/>

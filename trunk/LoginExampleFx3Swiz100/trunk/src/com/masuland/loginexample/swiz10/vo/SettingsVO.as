@@ -10,8 +10,6 @@ package com.masuland.loginexample.swiz10.vo
 	public class SettingsVO
 	{
 		public var layouts:ArrayCollection;
-		public var styles:ArrayCollection;
-		public var locales:ArrayCollection;
 		
 		public function SettingsVO() {}
 	}
