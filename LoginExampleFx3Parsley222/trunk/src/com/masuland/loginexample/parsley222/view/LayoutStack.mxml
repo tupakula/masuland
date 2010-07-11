@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mx:Canvas 
 	xmlns:mx="http://www.adobe.com/2006/mxml" 
-	xmlns:web="com.masuland.loginexample.cairngorm221.view.web.*" 
-	xmlns:phone="com.masuland.loginexample.cairngorm221.view.phone.*"
+	xmlns:web="com.masuland.loginexample.parsley222.view.web.*" 
+	xmlns:phone="com.masuland.loginexample.parsley222.view.phone.*"
+	xmlns:spicefactory="http://www.spicefactory.org/parsley"
 	width="{ appModel.currentLayout.width }" height="{ appModel.currentLayout.heigth }"
 	resizeEffect="{ fx_resize }" 
 	>
@@ -20,12 +21,15 @@
 	
 	<mx:Script>
 		<![CDATA[
-			import com.masuland.loginexample.cairngorm221.model.AppModel;
+			import com.masuland.loginexample.parsley222.model.AppModel;
 			
+			[Inject]
 			[Bindable]
-			public var appModel:AppModel = AppModel.getInstance();
+			public var appModel:AppModel;
 		]]>
 	</mx:Script>
+	
+	<spicefactory:Configure />
 	
 	<mx:Resize
 		id="fx_resize"
