@@ -1,5 +1,7 @@
 package com.masuland.loginexample.swiz064.vo
 {
+	import mx.collections.ArrayCollection;
+
 	[Bindable]
 	/**
 	 * 
@@ -10,6 +12,9 @@ package com.masuland.loginexample.swiz064.vo
 		public var name:String;
 		public var width:Number;
 		public var heigth:Number;
+		public var stateName:String;
+		public var styles:ArrayCollection; // List of StyleVOs
+		public var locales:ArrayCollection; // List of LocaleVOs
 		
 		public function LayoutVO() {}
 

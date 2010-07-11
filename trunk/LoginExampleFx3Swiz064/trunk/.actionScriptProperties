@@ -17,9 +17,9 @@
   </applications>
   <modules/>
   <buildCSSFiles>
-    <buildCSSFileEntry destPath="bin-debug" sourcePath="src/style/login_example_sun.css"/>
-    <buildCSSFileEntry destPath="bin-debug" sourcePath="src/style/login_example_green.css"/>
-    <buildCSSFileEntry destPath="bin-debug" sourcePath="src/style/login_example_red.css"/>
-    <buildCSSFileEntry destPath="bin-debug" sourcePath="src/style/login_example_standard.css"/>
+    <buildCSSFileEntry destPath="bin-debug" sourcePath="src/style/login_example_phone_red.css"/>
+    <buildCSSFileEntry destPath="bin-debug" sourcePath="src/style/login_example_web_red.css"/>
+    <buildCSSFileEntry destPath="bin-debug" sourcePath="src/style/login_example_phone_green.css"/>
+    <buildCSSFileEntry destPath="bin-debug" sourcePath="src/style/login_example_web_green.css"/>
   </buildCSSFiles>
 </actionScriptProperties>
