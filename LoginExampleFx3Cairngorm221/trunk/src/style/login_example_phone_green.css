@@ -1,0 +1,40 @@
+
+global
+{
+	theme-color: #319B6B;
+	color: #435544;
+}
+
+AppStack
+{
+	backgroundAlpha: 0.7;
+	
+	borderStyle: solid;
+	borderThickness: 1;
+	borderColor: #319B6B;
+	backgroundColor: #DCECDC;
+	
+	cornerRadius: 10;
+	
+	dropShadowColor: #000000;
+	dropShadowEnabled: true;
+	shadowDirection: top;
+	shadow-distance: 0;
+}
+
+.loginHeader
+{
+	text-align: left;
+	text-indent: 5;
+	font-weight: bold;
+	font-size: 20;
+}
+
+HRule
+{
+	strokeColor: #319B6B;
+	
+	dropShadowEnabled: true;
+	shadowDirection: top;
+	shadow-distance: 0;
+}
