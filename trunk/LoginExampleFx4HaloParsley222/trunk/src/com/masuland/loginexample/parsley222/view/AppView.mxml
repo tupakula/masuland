@@ -40,18 +40,6 @@
 			verticalAlign="middle"
 			>
 			<mx:Label
-				text="{resourceManager.getString('resources', 'txt_change_style')}"
-				/>
-			<mx:ComboBox
-				id="cb_style"
-				dataProvider="{ appModel.settings.styles }"
-				change="dispatchEvent(new LoadStyleEvent(StyleVO( cb_style.selectedItem )));"
-				/>
-		</mx:HBox>
-		<mx:HBox
-			verticalAlign="middle"
-			>
-			<mx:Label
 				text="{resourceManager.getString('resources', 'txt_change_layout')}"
 				/>
 			<mx:ComboBox
@@ -64,11 +52,23 @@
 			verticalAlign="middle"
 			>
 			<mx:Label
+				text="{resourceManager.getString('resources', 'txt_change_style')}"
+				/>
+			<mx:ComboBox
+				id="cb_style"
+				dataProvider="{ appModel.currentLayout.styles }"
+				change="dispatchEvent(new LoadStyleEvent(StyleVO( cb_style.selectedItem )));"
+				/>
+		</mx:HBox>
+		<mx:HBox
+			verticalAlign="middle"
+			>
+			<mx:Label
 				text="{resourceManager.getString('resources', 'txt_change_locale')}"
 				/>
 			<mx:ComboBox
 				id="cb_locale"
-				dataProvider="{ appModel.settings.locales }"
+				dataProvider="{ appModel.currentLayout.locales }"
 				change="dispatchEvent(new LoadLocaleEvent(LocaleVO( cb_locale.selectedItem )));"
 				/>
 		</mx:HBox>

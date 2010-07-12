@@ -6,6 +6,7 @@
 	xmlns:spicefactory="http://www.spicefactory.org/parsley"
 	xmlns:view="com.masuland.loginexample.parsley222.view.*"
 	width="100%" height="100%" 
+	pageTitle="Parsley 2.2.2 - Login Example (Fx4, Halo)"
 	applicationComplete="application1_applicationCompleteHandler(event)"
 	viewSourceURL="srcview/index.html"
 	>
@@ -42,7 +43,6 @@
 		<s:TraceTarget level="{ LogEventLevel.DEBUG }">
 			<s:filters>
 				<fx:Array>
-					<fx:String>com.adobe.cairngorm.*</fx:String>
 					<fx:String>org.spicefactory.*</fx:String>
 				</fx:Array>
 			</s:filters>
