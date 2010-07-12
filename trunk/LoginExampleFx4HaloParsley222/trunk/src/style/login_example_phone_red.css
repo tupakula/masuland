@@ -1,6 +1,6 @@
 @namespace mx "library://ns.adobe.com/flex/mx";
 @namespace s "library://ns.adobe.com/flex/spark";
-@namespace view "com.masuland.loginexample.parsley222.view.*";
+@namespace phone "com.masuland.loginexample.parsley222.view.phone.*";
 
 mx|global
 {
@@ -8,7 +8,7 @@ mx|global
 	color: #C74803;
 }
 
-view|AppStack
+phone|AppStack
 {
 	backgroundAlpha: 0.7;
 	
