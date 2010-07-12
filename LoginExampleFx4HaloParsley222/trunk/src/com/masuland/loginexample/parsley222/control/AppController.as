@@ -73,12 +73,6 @@ package com.masuland.loginexample.parsley222.control
 			
 			// load layout
 			dispatcher(new LoadLayoutEvent(LayoutVO( appModel.settings.layouts.getItemAt(0) )));
-			
-			// load style
-			dispatcher(new LoadStyleEvent(StyleVO( appModel.settings.styles.getItemAt(0) )));
-			
-			// load locales
-			dispatcher(new LoadLocaleEvent(LocaleVO( appModel.settings.locales.getItemAt(0) )));
 		}
 		
 		/**  */
@@ -253,6 +247,12 @@ package com.masuland.loginexample.parsley222.control
 		public function loadLayout(event:LoadLayoutEvent):void 
 		{
 			appModel.currentLayout = event.layout;
+			
+			// load style
+			dispatcher(new LoadStyleEvent(StyleVO( appModel.currentLayout.styles.getItemAt(0) )));
+			
+			// load locales
+			dispatcher(new LoadLocaleEvent(LocaleVO( appModel.currentLayout.locales.getItemAt(0) )));
 		}
 		
 		/**
