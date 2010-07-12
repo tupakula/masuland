@@ -13,7 +13,7 @@
 		[Event(name="LoadLocaleEvent.EVENT_NAME", type="com.masuland.loginexample.parsley222.control.event.LoadLocaleEvent")]
 		[ManagedEvents("LoadStyleEvent.EVENT_NAME, LoadLayoutEvent.EVENT_NAME, LoadLocaleEvent.EVENT_NAME")]
 	</mx:Metadata>
-
+	
 	<mx:Script>
 		<![CDATA[
 			import com.masuland.loginexample.parsley222.control.event.LoadLayoutEvent;
@@ -74,9 +74,9 @@
 		</mx:HBox>
 	</mx:VBox>
 	
-	<view:AppStack
+	<view:LayoutStack
 		horizontalCenter="0" verticalCenter="0"
-		currentState="{ appModel.appStackState }"
+		currentState="{ appModel.currentLayout.stateName }"
 		/>
 	
 </mx:Canvas>
