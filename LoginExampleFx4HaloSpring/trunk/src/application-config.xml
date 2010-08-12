@@ -6,6 +6,8 @@
 		http://www.springactionscript.org/schema/objects/spring-actionscript-objects-1.0.xsd"
 	>
 	
+	<!-- PROCESSOR -->	
+	
 	<object 
 		id="autowiringStageProcessor" 
 		class="org.springextensions.actionscript.stage.DefaultAutowiringStageProcessor"
@@ -21,20 +23,33 @@
 		class="org.springextensions.actionscript.ioc.factory.config.RouteEventsMetaDataPostProcessor"
 		/>
 	
+	<!-- SERVICE -->	
+	
 	<object 
 		id="appRemoteObject" 
 		class="mx.rpc.remoting.mxml.RemoteObject"
 		/>
 	
+	<!-- DELEGATE -->	
+<!--	
+	<object 
+		id="appDelegate" 
+		class="com.masuland.loginexample.spring.business.AppAmfDelegate"
+		/>
+-->	
 	<object 
 		id="appDelegate" 
 		class="com.masuland.loginexample.spring.business.AppMockDelegate"
 		/>
 	
+	<!-- CONTROLLER -->	
+	
 	<object 
 		id="appController" 
 		class="com.masuland.loginexample.spring.control.AppController"
 		/>
+	
+	<!-- MODEL -->	
 	
 	<object 
 		id="appModel" 
