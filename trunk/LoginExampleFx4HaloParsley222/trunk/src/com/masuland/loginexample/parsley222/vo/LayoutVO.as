@@ -11,7 +11,7 @@ package com.masuland.loginexample.parsley222.vo
 	{
 		public var name:String;
 		public var width:Number;
-		public var heigth:Number;
+		public var height:Number;
 		public var stateName:String;
 		public var styles:ArrayCollection; // List of StyleVOs
 		public var locales:ArrayCollection; // List of LocaleVOs
