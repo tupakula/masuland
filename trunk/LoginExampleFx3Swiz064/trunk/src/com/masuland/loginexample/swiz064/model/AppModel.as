@@ -30,7 +30,6 @@ package com.masuland.loginexample.swiz064.model
 		// Flags
 		//---------------
 		
-		public var isMockData:Boolean = true;
 		public var isApplicationVisible:Boolean;
 		
 		//---------------

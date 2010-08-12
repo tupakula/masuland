@@ -3,7 +3,7 @@
 	xmlns:mx="http://www.adobe.com/2006/mxml" 
 	xmlns:web="com.masuland.loginexample.swiz064.view.web.*" 
 	xmlns:phone="com.masuland.loginexample.swiz064.view.phone.*"
-	width="{ appModel.currentLayout.width }" height="{ appModel.currentLayout.heigth }"
+	width="{ appModel.currentLayout.width }" height="{ appModel.currentLayout.height }"
 	resizeEffect="{ fx_resize }" 
 	>
 	
