@@ -25,7 +25,11 @@
 		/>
 	
 	<!-- DELEGATE -->	
-	
+<!--	
+	<business:AppAmfDelegate 
+		id="appDelegate" 
+		/>
+-->
 	<business:AppMockDelegate 
 		id="appDelegate" 
 		/>
