@@ -30,7 +30,6 @@ package com.masuland.loginexample.spring.model
 		// Flags
 		//---------------
 		
-		public var isMockData:Boolean = true;
 		public var isApplicationVisible:Boolean;
 		
 		//---------------
