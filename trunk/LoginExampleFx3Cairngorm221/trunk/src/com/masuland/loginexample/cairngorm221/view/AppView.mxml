@@ -21,6 +21,12 @@
 		]]>
 	</mx:Script>
 	
+	<mx:Text
+		left="5" top="5"
+		text="Cairngorm 2.2.1 - Login Example (Fx3)"
+		styleName="appTitle"
+		/>
+	
 	<mx:VBox
 		right="5" top="5"
 		horizontalAlign="right"

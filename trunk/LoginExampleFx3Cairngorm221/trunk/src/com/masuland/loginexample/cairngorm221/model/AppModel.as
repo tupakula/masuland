@@ -26,7 +26,6 @@ package com.masuland.loginexample.cairngorm221.model
 		// Flags
 		//---------------
 		
-		public var isMockData:Boolean = true;
 		public var isApplicationVisible:Boolean;
 		
 		//---------------
