@@ -18,6 +18,8 @@ Furthermore, the Login Example application lets you choose between different lay
 
 The Login Example application uses the following value objects.
 
+http://masuland.googlecode.com/files/LoginExampleValueObjects.png
+
 {{{
 
 SettingsVO
@@ -34,7 +36,7 @@ LayoutVO
 LocaleVO
  - name : String
  - code : String
-ü›Vòa´OìÛ
+ï¿½Vï¿½aï¿½Oï¿½ï¿½
  - name : String
  - path : String
 
@@ -55,6 +57,8 @@ UserVO
 == 1.3. Client-Server Interface (Delegates) ==
 
 The client-server communication will be will be defined in delegate classes. The Login Example application uses the following methods for client-server communication. 
+
+http://masuland.googlecode.com/files/LoginExampleDelegates.png
 
 {{{
 
