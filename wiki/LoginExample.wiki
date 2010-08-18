@@ -33,12 +33,13 @@ LayoutVO
  - styles : ArrayCollection <StyleVO>
  - locales : ArrayCollection <LocaleVO>
 
+StyleVO
+ - name : String
+ - path : String
+
 LocaleVO
  - name : String
  - code : String
-�V�a�O��
- - name : String
- - path : String
 
 AuthenticationVO
  - username : String
