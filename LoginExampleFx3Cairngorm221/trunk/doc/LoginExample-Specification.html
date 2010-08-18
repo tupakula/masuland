@@ -5,7 +5,7 @@
 	<TITLE></TITLE>
 	<META NAME="GENERATOR" CONTENT="OpenOffice.org 3.0  (Win32)">
 	<META NAME="CREATED" CONTENT="20100814;21311600">
-	<META NAME="CHANGED" CONTENT="20100816;13021100">
+	<META NAME="CHANGED" CONTENT="20100818;10254800">
 	<META NAME="Info 1" CONTENT="">
 	<META NAME="Info 2" CONTENT="">
 	<META NAME="Info 3" CONTENT="">
@@ -13,23 +13,34 @@
 </HEAD>
 <BODY LANG="en-US" DIR="LTR">
 <H1>Login Example &ndash; Specification Document</H1>
-<P>This document describes the basic architecture of the Login
-Example application. You will get an overview about the application
-flow and states. Furthermore, types of value objects (VOs) and 
-client-server interface (delegates) will be discussed.</P>
+<P>This document outlines the basic architecture of the Login Example
+application. You will get an overview about the application flow and
+states. Furthermore, types of value objects and client-server
+interface (Delegates) will be discussed.</P>
 <P><IMG SRC="assets/LoginExamplePrintScreen.PNG" NAME="graphics4" ALIGN=LEFT WIDTH=917 HEIGHT=550 BORDER=0><BR CLEAR=LEFT><BR><BR>
 </P>
-<H2>1.1.  Application Flow and States</H2>
+<H2>1.1. Application Flow and States</H2>
 <P>With the Login Example application you will be guided through a
 simple login or registering process. After you have been logged in
 the application lets you change and update your user account
-information. The following state chart diagram shows you the work
-flow of the application.</P>
-<P><IMG SRC="argouml_export/LoginExampleStateChart.png" NAME="graphics3" ALIGN=LEFT WIDTH=493 HEIGHT=457 BORDER=0><BR CLEAR=LEFT><BR><BR>
-</P>
+information. The following state chart diagram shows the application
+flow.</P>
+<P><IMG SRC="assets/argouml/LoginExampleStateChart.png" NAME="graphics3" ALIGN=LEFT WIDTH=493 HEIGHT=457 BORDER=0><BR CLEAR=LEFT>Furthermore,
+the Login Example application lets you choose between different
+layouts (&ldquo;web&rdquo; or &ldquo;phone&rdquo; layout). Depending
+on the layout you have chosen you can select between different
+coloring styles (&ldquo;red&rdquo; or &ldquo;green&rdquo;) and
+languages (&ldquo;English&rdquo; or &ldquo;German&rdquo;). Since the
+coloring style and the language of an application is always dependent
+on its application layout &ndash; imagine an application with
+different writing directions (for example English or Chinese) or an
+application which is running on different devices (web browser or
+mobile phone) with different coloring styles (&ldquo;Summer&rdquo; or
+&ldquo;Winter&rdquo; theme) &ndash; the Login Example application
+should be able to deal with that, too.</P>
 <H2>1.2. Value Objects</H2>
 <P>The Login Example application uses the following value objects.</P>
-<P><IMG SRC="argouml_export/LoginExampleValueObjects.png" NAME="graphics1" ALIGN=LEFT WIDTH=652 HEIGHT=407 BORDER=0><BR CLEAR=LEFT><BR><BR>
+<P><IMG SRC="assets/argouml/LoginExampleValueObjects.png" NAME="graphics1" ALIGN=LEFT WIDTH=652 HEIGHT=407 BORDER=0><BR CLEAR=LEFT><BR><BR>
 </P>
 <PRE><FONT COLOR="#000000">SettingsVO</FONT>
 <FONT COLOR="#000000"> - layouts : ArrayCollection &lt;LayoutVO&gt;</FONT>
@@ -51,7 +62,7 @@ LocaleVO
 <FONT COLOR="#000000"> - path : String</FONT>
 
 <FONT COLOR="#000000">AuthenticationVO</FONT>
-<FONT COLOR="#000000"><FONT COLOR="#000000"> - username : String</FONT></FONT>
+<FONT COLOR="#000000"> - username : String</FONT>
 <FONT COLOR="#000000"> - password : String</FONT>
 <FONT COLOR="#000000"> - email : String</FONT>
 
@@ -60,16 +71,20 @@ LocaleVO
 <FONT COLOR="#000000"> - firstname : String</FONT>
 <FONT COLOR="#000000"> - lastname : String</FONT>
 <FONT COLOR="#000000"> - email : String</FONT>
-<FONT COLOR="#000000"> - birthday : Date</FONT>
-</PRE><H2>
+<FONT COLOR="#000000"> - birthday : Date</FONT></PRE><H2>
 1.3. Client-Server Interface (Delegates)</H2>
 <P><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">The
-client-server communication will be will be handled by the following
-interface. </FONT></FONT>
+client-server communication will be will be defined in delegate
+classes. The Login Example application uses the following methods for
+client-server communication.. </FONT></FONT>
 </P>
-<P><IMG SRC="argouml_export/LoginExampleDelegates.png" NAME="graphics2" ALIGN=LEFT WIDTH=300 HEIGHT=192 BORDER=0><BR CLEAR=LEFT><BR><BR>
-</P>
-<P><BR><BR>
-</P>
+<PRE><IMG SRC="assets/argouml/LoginExampleDelegates.png" NAME="graphics5" ALIGN=LEFT WIDTH=300 HEIGHT=192 BORDER=0><BR CLEAR=LEFT><FONT COLOR="#000000">IAppDelegate</FONT>
+<FONT COLOR="#000000"> - getSettings() : SettingsVO</FONT>
+<FONT COLOR="#000000"> - login(auth : AuthenticationVO) : UserVO</FONT>
+<FONT COLOR="#000000"> - register(auth : AuthenticationVO) : UserVO</FONT>
+<FONT COLOR="#000000"> - updateUser(user : UserVO) : UserVO</FONT>
+
+
+</PRE>
 </BODY>
 </HTML>
