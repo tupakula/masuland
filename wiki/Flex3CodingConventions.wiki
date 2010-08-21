@@ -2,9 +2,10 @@
 
 This document proposes additional Flex 3 coding conventions to the existing Flex coding conventions provided by Adobe, see http://opensource.adobe.com/wiki/display/flexsdk/Coding+Conventions
 
-== MXML File Conventions ==
+== 1. MXML File Conventions ==
 
 - For indentation always use tabs<br/>
+- When using string notation in <mx:Script /> tag always use single quotes, e.g. 'Hallo String'<br/>
 - Use a consistent MXML node order:
  # <mx:Metadata/>
  # <mx:State/>
@@ -86,9 +87,10 @@ This document proposes additional Flex 3 coding conventions to the existing Flex
         </mx:TextInput>
 }}}
 
-== Actionscript File Conventions ==
+== 2. Actionscript File Conventions ==
 
 - For indentation always use tabs<br/>
+- When using string notation always use single quotes, e.g. 'Hallo String'<br/>
 - Use a consistent AS layout:
  # Constants
  # Properties
@@ -119,3 +121,7 @@ package com.masuland.loginexample.vo
 	}
 }
 }}}
+
+== 3. CSS File Conventions ==
+
+- For indentation always use tabs<br/>
