@@ -136,6 +136,20 @@ This document proposes additional Flex 3 coding conventions to the existing Flex
 || {{{tr_}}} || Tree ||
 || {{{vd_}}} || VideoDisplay ||
 
+|| *Prefix* || *Flex Component (Layout)* ||
+|| {{{bx_}}} || Box, HBox, VBox, Canvas ||
+|| {{{ctlb_}}} || ControlBar, ApplicationControlBar ||
+|| {{{f_}}} || Form ||
+|| {{{fh_}}} || FormHeading ||
+|| {{{gr_}}} || Grid ||
+|| {{{dbx_}}} || HDividedBox, VDividedBox ||
+|| {{{rl_}}} || HRule, VRule ||
+|| {{{ml_}}} || ModuleLoader ||
+|| {{{pn_}}} || Panel ||
+|| {{{sp_}}} || Spacer ||
+|| {{{tl_}}} || Tile ||
+|| {{{tlw_}}} || TileWindow ||
+
 == 2. Actionscript File Conventions ==
 
 - For indentation always use tabs<br/>
