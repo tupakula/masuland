@@ -111,7 +111,7 @@ This document proposes additional Flex 3 coding conventions to the existing Flex
                 />
 }}}
 
-|| *Prefix* || *Flex Component (Control)* ||
+|| *Prefix* || *Flex 3 SDK Component (Control)* ||
 || {{{btn_}}} || Button, LinkButton ||
 || {{{cb_}}} || CheckBox ||
 || {{{cp_}}} || ColorPicker ||
@@ -136,7 +136,7 @@ This document proposes additional Flex 3 coding conventions to the existing Flex
 || {{{tr_}}} || Tree ||
 || {{{vd_}}} || VideoDisplay ||
 
-|| *Prefix* || *Flex Component (Layout)* ||
+|| *Prefix* || *Flex 3 SDK Component (Layout)* ||
 || {{{bx_}}} || Box, HBox, VBox, Canvas ||
 || {{{ctlb_}}} || ControlBar, ApplicationControlBar ||
 || {{{f_}}} || Form ||
