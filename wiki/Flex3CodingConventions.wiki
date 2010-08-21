@@ -188,3 +188,35 @@ package com.masuland.loginexample.vo
 == 3. CSS File Conventions ==
 
 - For indentation always use tabs<br/>
+
+{{{
+global
+{
+	theme-color: #319B6B;
+	color: #435544;
+}
+
+AppStack
+{
+	backgroundAlpha: 0.7;
+	
+	borderStyle: solid;
+	borderThickness: 1;
+	borderColor: #319B6B;
+	backgroundColor: #DCECDC;
+	
+	cornerRadius: 10;
+	
+	dropShadowColor: #000000;
+	dropShadowEnabled: true;
+	shadowDirection: top;
+	shadow-distance: 0;
+}
+
+.appTitle
+{
+	text-align: center;
+	font-weight: bold;
+	font-size: 15;
+}
+}}}
