@@ -8,7 +8,7 @@
 	width="100%" height="100%" 
 	pageTitle="Spring 1.0.0 (Code Behind) - Login Example (Fx4, Halo)"
 	creationComplete="creationCompleteHandler(event)"
-	>
+	 viewSourceURL="srcview/index.html">
 	
 	<fx:Metadata>
 		[ResourceBundle("resources")]
