@@ -4,7 +4,7 @@ This document proposes additional Flex 3 coding conventions to the existing Flex
 
 == MXML File Conventions ==
 
-- For indentation always use tabs
+- For indentation always use tabs<br/>
 - Use a consistent MXML node order:
  # <mx:Metadata/>
  # <mx:State/>
@@ -88,7 +88,7 @@ This document proposes additional Flex 3 coding conventions to the existing Flex
 
 == Actionscript File Conventions ==
 
-- For indentation always use tabs
+- For indentation always use tabs<br/>
 - Use a consistent AS layout:
  # Constants
  # Properties
