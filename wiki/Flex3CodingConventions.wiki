@@ -5,31 +5,25 @@ This document proposes additional Flex 3 coding conventions to the existing Flex
 == MXML File Conventions ==
 
 - Use a consistent MXML node order:
-
-{{{
-1. <mx:Metadata/>
-2. <mx:State/>
-3. <mx:Transition/>
-4. <mx:Script/>
-4.1. Constants
-4.2. Properties
-4.3. Constructors
-4.4. Methods / Functions
-5. <mx:Effect/>
-6. <mx:UIComponent/>
-}}}
+ # <mx:Metadata/>
+ # <mx:State/>
+ # <mx:Transition/>
+ # <mx:Script/>
+   # Constants
+   # Properties
+   # Constructors
+   # Methods / Functions
+ # <mx:Effect/>
+ # <mx:UIComponent/>
 
 - Use a consistent attribute order inside MXML nodes:
-
-{{{
-1. Name spaces
-2. Component Id
-3. Layout information
-4. Component values
-5. Style information
-6. Effects
-7. Events
-}}}
+ # Name spaces
+ # Component Id
+ # Layout information
+ # Component values
+ # Style information
+ # Effects
+ # Events
 
 {{{
         <mx:Canvas
@@ -94,10 +88,7 @@ This document proposes additional Flex 3 coding conventions to the existing Flex
 == Actionscript File Conventions ==
 
 - Use a consistent AS layout:
-
-{{{
-1. Constants
-2. Properties
-3. Constructors
-4. Methods / Functions
-}}}
+ # Constants
+ # Properties
+ # Constructors
+ # Methods / Functions
