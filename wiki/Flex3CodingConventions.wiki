@@ -87,6 +87,55 @@ This document proposes additional Flex 3 coding conventions to the existing Flex
         </mx:TextInput>
 }}}
 
+
+- Use a consistent naming convention for id attributes in MXML nodes extending UIComponent:
+
+{{{
+        <mx:Text
+                id="txt_myText"
+                />
+        <mx:TextInput
+                id="tip_myTextInput"
+                />
+        <mx:TextArea
+                id="ta_myTextArea"
+                />
+        <mx:CheckBox
+                id="cb_myCheckBox"
+                />
+        <mx:ComboBox
+                id="cbb_myComboBox"
+                />
+        <mx:Button
+                id="btn_myButton"
+                />
+}}}
+
+|| *Prefix* || *Flex Component (Control)* ||
+|| {{{btn_}}} || Button, LinkButton ||
+|| {{{cb_}}} || CheckBox ||
+|| {{{cp_}}} || ColorPicker ||
+|| {{{cbb_}}} || ComboBox ||
+|| {{{dg_}}} || DataGrid, AdvancedDataGrid, OLAPDataGrid ||
+|| {{{dc_}}} || DateChooser ||
+|| {{{df_}}} || DateField ||
+|| {{{ls_}}} || List, HorizontalList, TileList ||
+|| {{{sl_}}} || HSlider, VSlider ||
+|| {{{img_}}} || Image ||
+|| {{{nst_}}} || NumericStepper ||
+|| {{{pbtn_}}} || PopupButton ||
+|| {{{pmbtn}}} || PopupMenuButton ||
+|| {{{pb_}}} || ProgressBar ||
+|| {{{rb_}}} || RadioButton ||
+|| {{{rbg_}}} || RadioButtonGroup ||
+|| {{{rte_}}} || RichTextEditor ||
+|| {{{sl_}}} || SWFLoader ||
+|| {{{ta_}}} || TextArea ||
+|| {{{txt_}}} || Text, Label ||
+|| {{{tip_}}} || TextInput ||
+|| {{{tr_}}} || Tree ||
+|| {{{vd_}}} || VideoDisplay ||
+
 == 2. Actionscript File Conventions ==
 
 - For indentation always use tabs<br/>
