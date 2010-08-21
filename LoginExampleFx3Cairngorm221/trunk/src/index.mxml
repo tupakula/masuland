@@ -12,8 +12,7 @@
 	backgroundGradientColors="[#ffffff, #ffffff]"
 	pageTitle="Cairngorm 2.2.1 - Login Example (Fx3)"
 	applicationComplete="new InitialiseClientEvent().dispatch()"
-	viewSourceURL="srcview/index.html"
-	>
+	 viewSourceURL="srcview/index.html">
 
 	<mx:Metadata>
 		[ResourceBundle("resources")]
