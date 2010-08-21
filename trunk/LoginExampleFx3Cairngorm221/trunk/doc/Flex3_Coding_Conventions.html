@@ -5,7 +5,7 @@
 	<TITLE></TITLE>
 	<META NAME="GENERATOR" CONTENT="OpenOffice.org 3.0  (Win32)">
 	<META NAME="CREATED" CONTENT="0;0">
-	<META NAME="CHANGED" CONTENT="20100814;21291700">
+	<META NAME="CHANGED" CONTENT="20100821;20035900">
 	<META NAME="CocoaVersion" CONTENT="949.54">
 	<META NAME="Info 2" CONTENT="">
 	<META NAME="Info 3" CONTENT="">
@@ -19,157 +19,126 @@
 	</STYLE>
 </HEAD>
 <BODY LANG="en-US" DIR="LTR">
-<P CLASS="p1"><BR>
+<H1>Additional Adobe Flex 3 Coding Conventions</H1>
+<P CLASS="p2" STYLE="margin-bottom: 0.2in"><BR><BR>
 </P>
-<P CLASS="p2"><FONT SIZE=4 STYLE="font-size: 15pt"><FONT FACE="Arial, sans-serif"><B>Additional
-Adobe Flex 3 Coding Conventions</B></FONT></FONT></P>
-<P CLASS="p2"><BR>
-</P>
-<P CLASS="p2"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">This
+<P STYLE="margin-bottom: 0in"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">This
 document proposes additional Flex 3 coding conventions to the
-existing conventions provided by Adobe, see
+existing Flex coding conventions provided by Adobe, see
 <A HREF="http://opensource.adobe.com/wiki/display/flexsdk/Coding+Conventions">http://opensource.adobe.com/wiki/display/flexsdk/Coding+Conventions</A>
- </FONT></FONT>
+</FONT></FONT>
 </P>
-<P CLASS="p3"><BR>
-</P>
-<P CLASS="p3"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><B>MXML
-File Conventions:</B></FONT></FONT></P>
-<P CLASS="p3"><BR>
-</P>
-<P CLASS="p3"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">-
-Use a consistent MXML layout:</FONT></FONT></P>
-<P CLASS="p3"><BR>
-</P>
-<P CLASS="p3"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">1.
-&lt;mx:State/&gt;</FONT></FONT></P>
-<P CLASS="p3"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">2.
-&lt;mx:Transition/&gt;</FONT></FONT></P>
-<P CLASS="p3"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">3.
-&lt;mx:Script/&gt;</FONT></FONT></P>
-<P CLASS="p3"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">3.1.
-Constants</FONT></FONT></P>
-<P CLASS="p3"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">3.2.
-Properties</FONT></FONT></P>
-<P CLASS="p3"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">3.3.
-Constructors</FONT></FONT></P>
-<P CLASS="p3"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">3.4.
-Methods / Functions</FONT></FONT></P>
-<P CLASS="p3"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">4.
-&lt;mx:Effect/&gt;</FONT></FONT></P>
-<P CLASS="p3"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">5.
-&lt;mx:View/&gt;</FONT></FONT></P>
-<P CLASS="p3"><BR>
-</P>
-<P CLASS="p3"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">-
-Use a consistent attribute layout inside of MXML nodes:</FONT></FONT></P>
-<P CLASS="p3"><BR>
-</P>
-<P STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">	</FONT><FONT COLOR="#0000ff">&lt;mx:Canvas</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		xmlns:mx=&quot;</FONT><FONT COLOR="#990000">http://www.adobe.com/2006/mxml</FONT><FONT COLOR="#000000">&quot;
-&nbsp; // namespaces</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		id=&quot;</FONT><FONT COLOR="#990000">bx_myBox</FONT><FONT COLOR="#000000">&quot;
-&nbsp; // component id</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		x=&quot;</FONT><FONT COLOR="#990000">0</FONT><FONT COLOR="#000000">&quot;
-y=&quot;</FONT><FONT COLOR="#990000">0</FONT><FONT COLOR="#000000">&quot;
-&nbsp; // layout information</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		width=&quot;</FONT><FONT COLOR="#990000">100%</FONT><FONT COLOR="#000000">&quot;
-height=&quot;</FONT><FONT COLOR="#990000">100%</FONT><FONT COLOR="#000000">&quot;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		backgroundAlpha=&quot;</FONT><FONT COLOR="#990000">0.5</FONT><FONT COLOR="#000000">&quot;
-&nbsp; // styling</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		backgroundColor=&quot;</FONT><FONT COLOR="#990000">#ff00ff</FONT><FONT COLOR="#000000">&quot;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		styleName=&quot;</FONT><FONT COLOR="#990000">myBoxStyle</FONT><FONT COLOR="#000000">&quot;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		showEffect=&quot;</FONT><FONT COLOR="#990000">{</FONT><FONT COLOR="#000000">
-fx_fadeIn </FONT><FONT COLOR="#990000">}</FONT><FONT COLOR="#000000">&quot;
-&nbsp; // effects</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=2>		click=&quot;onClick(event)&quot;
-&nbsp; // events</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		</FONT><FONT COLOR="#0000ff">&gt;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		</FONT><FONT COLOR="#0000ff">&lt;mx:Repeater</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">			id=&quot;</FONT><FONT COLOR="#990000">rp_myRepeater</FONT><FONT COLOR="#000000">&quot;
-&nbsp; // component id</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">			dataProvider=&quot;</FONT><FONT COLOR="#990000">{</FONT><FONT COLOR="#000000">
-model.repeaterData </FONT><FONT COLOR="#990000">}</FONT><FONT COLOR="#000000">&quot;&nbsp;
-&nbsp; // component values</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">			</FONT><FONT COLOR="#0000ff">&gt;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">			</FONT><FONT COLOR="#0000ff">&lt;mx:Image</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">				source=&quot;</FONT><FONT COLOR="#990000">{</FONT><FONT COLOR="#000000">
-PersonVO( rp_myRepeater.currentItem ).profileImage </FONT><FONT COLOR="#990000">}</FONT><FONT COLOR="#000000">&quot;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">				</FONT><FONT COLOR="#0000ff">/&gt;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		</FONT><FONT COLOR="#0000ff">&lt;/mx:Repeater&gt;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">	</FONT><FONT COLOR="#0000ff">&lt;/mx:Canvas&gt;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=2>	</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">	</FONT><FONT COLOR="#0000ff">&lt;mx:List&nbsp;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		id=&quot;</FONT><FONT COLOR="#990000">li_myList</FONT><FONT COLOR="#000000">&quot;
-&nbsp; // component id</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		width=&quot;</FONT><FONT COLOR="#990000">100%</FONT><FONT COLOR="#000000">&quot;
-height=&quot;</FONT><FONT COLOR="#990000">100%</FONT><FONT COLOR="#000000">&quot;
-&nbsp; // layout information</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		dataProvider=&quot;</FONT><FONT COLOR="#990000">{</FONT><FONT COLOR="#000000">
-model.listData </FONT><FONT COLOR="#990000">}</FONT><FONT COLOR="#000000">&quot;&nbsp;
-&nbsp; // component values</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		columnCount=&quot;</FONT><FONT COLOR="#990000">1</FONT><FONT COLOR="#000000">&quot;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		rowCount=&quot;</FONT><FONT COLOR="#990000">2</FONT><FONT COLOR="#000000">&quot;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		useRollOver=&quot;</FONT><FONT COLOR="#990000">false</FONT><FONT COLOR="#000000">&quot;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		variableRowHeight=&quot;</FONT><FONT COLOR="#990000">true</FONT><FONT COLOR="#000000">&quot;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		horizontalScrollPolicy=&quot;</FONT><FONT COLOR="#990000">off</FONT><FONT COLOR="#000000">&quot;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		verticalScrollPolicy=&quot;</FONT><FONT COLOR="#990000">off</FONT><FONT COLOR="#000000">&quot;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		borderStyle=&quot;</FONT><FONT COLOR="#990000">none</FONT><FONT COLOR="#000000">&quot;
-&nbsp; // styling</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		selectionColor=&quot;</FONT><FONT COLOR="#990000">#ffffff</FONT><FONT COLOR="#000000">&quot;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		styleName=&quot;</FONT><FONT COLOR="#990000">myListStyle</FONT><FONT COLOR="#000000">&quot;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		hideEffect=&quot;</FONT><FONT COLOR="#990000">{</FONT><FONT COLOR="#000000">
-fx_fadeOut </FONT><FONT COLOR="#990000">}</FONT><FONT COLOR="#000000">&quot;
-&nbsp; // effects</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT COLOR="#000000"><FONT FACE="Courier New, monospace"><FONT SIZE=2>		dragStart=&quot;onDragStart(event)&quot;
-&nbsp; // events</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		</FONT><FONT COLOR="#0000ff">/&gt;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
-</P>
-<P CLASS="p3"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">-
-Use a consistent naming convention for the id attributes in MXML
-nodes:</FONT></FONT></P>
-<P CLASS="p3"><BR>
-</P>
-<P STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">	</FONT><FONT COLOR="#0000ff">&lt;mx:Text</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		id=&quot;</FONT><FONT COLOR="#990000">txt_myText</FONT><FONT COLOR="#000000">&quot;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		</FONT><FONT COLOR="#0000ff">/&gt;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">	</FONT><FONT COLOR="#0000ff">&lt;mx:TextInput</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		id=&quot;</FONT><FONT COLOR="#990000">tip_myTextInput</FONT><FONT COLOR="#000000">&quot;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		</FONT><FONT COLOR="#0000ff">/&gt;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">	</FONT><FONT COLOR="#0000ff">&lt;mx:TextArea</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		id=&quot;</FONT><FONT COLOR="#990000">ta_myTextArea</FONT><FONT COLOR="#000000">&quot;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		</FONT><FONT COLOR="#0000ff">/&gt;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">	</FONT><FONT COLOR="#0000ff">&lt;mx:CheckBox</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		id=&quot;</FONT><FONT COLOR="#990000">cb_myCheckBox</FONT><FONT COLOR="#000000">&quot;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		</FONT><FONT COLOR="#0000ff">/&gt;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">	</FONT><FONT COLOR="#0000ff">&lt;mx:ComboBox</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		id=&quot;</FONT><FONT COLOR="#990000">cbb_myComboBox</FONT><FONT COLOR="#000000">&quot;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		</FONT><FONT COLOR="#0000ff">/&gt;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">	</FONT><FONT COLOR="#0000ff">&lt;mx:Button</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		id=&quot;</FONT><FONT COLOR="#990000">btn_myButton</FONT><FONT COLOR="#000000">&quot;</FONT></FONT></FONT></P>
-<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT COLOR="#000000">		</FONT><FONT COLOR="#0000ff">/&gt;</FONT></FONT></FONT></P>
-<P STYLE="margin-bottom: 0in"><BR>
-</P>
-<P CLASS="p3"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt"><B>Actionscript
-File Conventions:</B></FONT></FONT></P>
-<P CLASS="p1"><BR>
-</P>
-<P CLASS="p3"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">-
+<H2><B>MXML File Conventions:</B></H2>
+<P STYLE="margin-bottom: 0in">- Use a consistent MXML node order:</P>
+<DL>
+	<DD>1. &lt;mx:Metadata/&gt;</DD><DD>
+	2. &lt;mx:State/&gt;</DD><DD>
+	3. &lt;mx:Transition/&gt;</DD><DD>
+	4. &lt;mx:Script/&gt;</DD><DD>
+	4.1. Constants</DD><DD>
+	4.2. Properties</DD><DD>
+	4.3. Constructors</DD><DD>
+	4.4. Methods / Functions</DD><DD>
+	5. &lt;mx:Effect/&gt;</DD><DD STYLE="margin-bottom: 0.2in">
+	6. &lt;mx:UIComponent/&gt;</DD></DL>
+<P STYLE="margin-bottom: 0in">
+- Use a consistent attribute order inside MXML nodes:</P>
+<DL>
+	<DD>1. Name spaces</DD><DD>
+	2. Component Id</DD><DD>
+	3. Layout information</DD><DD>
+	4. Component values</DD><DD>
+	5. Style information</DD><DD>
+	6. Effects</DD><DD STYLE="margin-bottom: 0.2in">
+	7. Events</DD></DL>
+<PRE><FONT COLOR="#000000">        </FONT><FONT COLOR="#0000ff"><FONT FACE="Courier New, monospace">&lt;mx:Canvas</FONT></FONT>
+<FONT COLOR="#000000">                xmlns:mx=&quot;</FONT><FONT COLOR="#990000">http://www.adobe.com/2006/mxml</FONT><FONT COLOR="#000000">&quot;  // Name spaces</FONT>
+<FONT COLOR="#000000">                id=&quot;</FONT><FONT COLOR="#990000">bx_myBox</FONT><FONT COLOR="#000000">&quot;  // Component id</FONT>
+<FONT COLOR="#000000">                x=&quot;</FONT><FONT COLOR="#990000">0</FONT><FONT COLOR="#000000">&quot; y=&quot;</FONT><FONT COLOR="#990000">0</FONT><FONT COLOR="#000000">&quot;  // Layout information</FONT>
+<FONT COLOR="#000000">                width=&quot;</FONT><FONT COLOR="#990000">100%</FONT><FONT COLOR="#000000">&quot; height=&quot;</FONT><FONT COLOR="#990000">100%</FONT><FONT COLOR="#000000">&quot;</FONT>
+<FONT COLOR="#000000">                backgroundAlpha=&quot;</FONT><FONT COLOR="#990000">0.5</FONT><FONT COLOR="#000000">&quot;  // Style information</FONT>
+<FONT COLOR="#000000">                backgroundColor=&quot;</FONT><FONT COLOR="#990000">#ff00ff</FONT><FONT COLOR="#000000">&quot;</FONT>
+<FONT COLOR="#000000">                styleName=&quot;</FONT><FONT COLOR="#990000">myBoxStyle</FONT><FONT COLOR="#000000">&quot;</FONT>
+<FONT COLOR="#000000">                showEffect=&quot;</FONT><FONT COLOR="#990000">{</FONT><FONT COLOR="#000000"> fx_fadeIn </FONT><FONT COLOR="#990000">}</FONT><FONT COLOR="#000000">&quot;  // Effects</FONT>
+                click=&quot;onClick(event)&quot;  // Events
+<FONT COLOR="#000000">                </FONT><FONT COLOR="#0000ff">&gt;</FONT>
+<FONT COLOR="#000000">                </FONT><FONT COLOR="#0000ff">&lt;mx:Repeater</FONT>
+<FONT COLOR="#000000">                        id=&quot;</FONT><FONT COLOR="#990000">rp_myRepeater</FONT><FONT COLOR="#000000">&quot;  // Component Id</FONT>
+<FONT COLOR="#000000">                        dataProvider=&quot;</FONT><FONT COLOR="#990000">{</FONT><FONT COLOR="#000000"> model.repeaterData </FONT><FONT COLOR="#990000">}</FONT><FONT COLOR="#000000">&quot;  // Component values</FONT>
+<FONT COLOR="#000000">                        </FONT><FONT COLOR="#0000ff">&gt;</FONT>
+<FONT COLOR="#000000">                        </FONT><FONT COLOR="#0000ff">&lt;mx:Image</FONT>
+<FONT COLOR="#000000">                                source=&quot;</FONT><FONT COLOR="#990000">{</FONT><FONT COLOR="#000000"> PersonVO( rp_myRepeater.currentItem ).profileImage </FONT><FONT COLOR="#990000">}</FONT><FONT COLOR="#000000">&quot;</FONT>
+<FONT COLOR="#000000">                                </FONT><FONT COLOR="#0000ff">/&gt;</FONT>
+<FONT COLOR="#000000">                </FONT><FONT COLOR="#0000ff">&lt;/mx:Repeater&gt;</FONT>
+<FONT COLOR="#000000">        </FONT><FONT COLOR="#0000ff">&lt;/mx:Canvas&gt;</FONT>
+        
+<FONT COLOR="#000000">        </FONT><FONT COLOR="#0000ff">&lt;mx:List</FONT>
+<FONT COLOR="#000000">                id=&quot;</FONT><FONT COLOR="#990000">li_myList</FONT><FONT COLOR="#000000">&quot;  // Component Id</FONT>
+<FONT COLOR="#000000">                width=&quot;</FONT><FONT COLOR="#990000">100%</FONT><FONT COLOR="#000000">&quot; height=&quot;</FONT><FONT COLOR="#990000">100%</FONT><FONT COLOR="#000000">&quot;  // Layout information</FONT>
+<FONT COLOR="#000000">                dataProvider=&quot;</FONT><FONT COLOR="#990000">{</FONT><FONT COLOR="#000000"> model.listData </FONT><FONT COLOR="#990000">}</FONT><FONT COLOR="#000000">&quot;  // Component values</FONT>
+<FONT COLOR="#000000">                columnCount=&quot;</FONT><FONT COLOR="#990000">1</FONT><FONT COLOR="#000000">&quot;</FONT>
+<FONT COLOR="#000000">                rowCount=&quot;</FONT><FONT COLOR="#990000">2</FONT><FONT COLOR="#000000">&quot;</FONT>
+<FONT COLOR="#000000">                useRollOver=&quot;</FONT><FONT COLOR="#990000">false</FONT><FONT COLOR="#000000">&quot;</FONT>
+<FONT COLOR="#000000">                variableRowHeight=&quot;</FONT><FONT COLOR="#990000">true</FONT><FONT COLOR="#000000">&quot;</FONT>
+<FONT COLOR="#000000">                horizontalScrollPolicy=&quot;</FONT><FONT COLOR="#990000">off</FONT><FONT COLOR="#000000">&quot;</FONT>
+<FONT COLOR="#000000">                verticalScrollPolicy=&quot;</FONT><FONT COLOR="#990000">off</FONT><FONT COLOR="#000000">&quot;</FONT>
+<FONT COLOR="#000000">                borderStyle=&quot;</FONT><FONT COLOR="#990000">none</FONT><FONT COLOR="#000000">&quot;  // Style information</FONT>
+<FONT COLOR="#000000">                selectionColor=&quot;</FONT><FONT COLOR="#990000">#ffffff</FONT><FONT COLOR="#000000">&quot;</FONT>
+<FONT COLOR="#000000">                styleName=&quot;</FONT><FONT COLOR="#990000">myListStyle</FONT><FONT COLOR="#000000">&quot;</FONT>
+<FONT COLOR="#000000">                hideEffect=&quot;</FONT><FONT COLOR="#990000">{</FONT><FONT COLOR="#000000"> fx_fadeOut </FONT><FONT COLOR="#990000">}</FONT><FONT COLOR="#000000">&quot;  // Effects</FONT>
+                dragStart=&quot;onDragStart(event)&quot;  // Events
+<FONT COLOR="#000000">                </FONT><FONT COLOR="#0000ff">/&gt;</FONT></PRE><P STYLE="margin-bottom: 0in">
+<FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">-
+Dependent on the number of attributes and embedded MXML nodes inside
+one MXML node use the following convention:</FONT></FONT></P>
+<PRE><FONT COLOR="#000000">        </FONT><FONT COLOR="#0000ff">&lt;mx:TextInput</FONT><FONT COLOR="#000000"> </FONT><FONT COLOR="#0000ff">/&gt;</FONT>
+
+<FONT COLOR="#000000">        </FONT><FONT COLOR="#0000ff">&lt;mx:TextInput</FONT>
+<FONT COLOR="#000000">                text=&quot;</FONT><FONT COLOR="#990000">{</FONT><FONT COLOR="#000000">model.firstname</FONT><FONT COLOR="#990000">}</FONT><FONT COLOR="#000000">&quot;</FONT>
+<FONT COLOR="#000000">                </FONT><FONT COLOR="#0000ff">/&gt;</FONT>
+
+<FONT COLOR="#000000">        </FONT><FONT COLOR="#0000ff">&lt;mx:TextInput</FONT><FONT COLOR="#000000"> </FONT><FONT COLOR="#0000ff">&gt;</FONT>
+<FONT COLOR="#000000">                </FONT><FONT COLOR="#0000ff">&lt;mx:text&gt;</FONT><FONT COLOR="#000000">{model.firstname}</FONT><FONT COLOR="#0000ff">&lt;/mx:text&gt;</FONT>
+<FONT COLOR="#000000">        </FONT><FONT COLOR="#0000ff">&lt;/mx:TextInput&gt;</FONT>
+
+<FONT COLOR="#000000">        </FONT><FONT COLOR="#0000ff">&lt;mx:TextInput</FONT>
+<FONT COLOR="#000000">                width=&quot;</FONT><FONT COLOR="#990000">100%</FONT><FONT COLOR="#000000">&quot;</FONT>
+<FONT COLOR="#000000">                </FONT><FONT COLOR="#0000ff">&gt;</FONT>
+<FONT COLOR="#000000">                </FONT><FONT COLOR="#0000ff">&lt;mx:text&gt;</FONT><FONT COLOR="#000000">{model.firstname}</FONT><FONT COLOR="#0000ff">&lt;/mx:text&gt;</FONT>
+<FONT COLOR="#000000">        </FONT><FONT COLOR="#0000ff">&lt;/mx:TextInput&gt;</FONT></PRE><P CLASS="p3" STYLE="margin-bottom: 0.2in">
+<FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">-
+Use a consistent naming convention for id attributes in MXML nodes
+extending UIComponent:</FONT></FONT></P>
+<PRE><FONT COLOR="#000000">        </FONT><FONT COLOR="#0000ff">&lt;mx:Text</FONT>
+<FONT COLOR="#000000">                id=&quot;</FONT><FONT COLOR="#990000">txt_myText</FONT><FONT COLOR="#000000">&quot;</FONT>
+<FONT COLOR="#000000">                </FONT><FONT COLOR="#0000ff">/&gt;</FONT>
+<FONT COLOR="#000000">        </FONT><FONT COLOR="#0000ff">&lt;mx:TextInput</FONT>
+<FONT COLOR="#000000">                id=&quot;</FONT><FONT COLOR="#990000">tip_myTextInput</FONT><FONT COLOR="#000000">&quot;</FONT>
+<FONT COLOR="#000000">                </FONT><FONT COLOR="#0000ff">/&gt;</FONT>
+<FONT COLOR="#000000">        </FONT><FONT COLOR="#0000ff">&lt;mx:TextArea</FONT>
+<FONT COLOR="#000000">                id=&quot;</FONT><FONT COLOR="#990000">ta_myTextArea</FONT><FONT COLOR="#000000">&quot;</FONT>
+<FONT COLOR="#000000">                </FONT><FONT COLOR="#0000ff">/&gt;</FONT>
+<FONT COLOR="#000000">        </FONT><FONT COLOR="#0000ff">&lt;mx:CheckBox</FONT>
+<FONT COLOR="#000000">                id=&quot;</FONT><FONT COLOR="#990000">cb_myCheckBox</FONT><FONT COLOR="#000000">&quot;</FONT>
+<FONT COLOR="#000000">                </FONT><FONT COLOR="#0000ff">/&gt;</FONT>
+<FONT COLOR="#000000">        </FONT><FONT COLOR="#0000ff">&lt;mx:ComboBox</FONT>
+<FONT COLOR="#000000">                id=&quot;</FONT><FONT COLOR="#990000">cbb_myComboBox</FONT><FONT COLOR="#000000">&quot;</FONT>
+<FONT COLOR="#000000">                </FONT><FONT COLOR="#0000ff">/&gt;</FONT>
+<FONT COLOR="#000000">        </FONT><FONT COLOR="#0000ff">&lt;mx:Button</FONT>
+<FONT COLOR="#000000">                id=&quot;</FONT><FONT COLOR="#990000">btn_myButton</FONT><FONT COLOR="#000000">&quot;</FONT>
+<FONT COLOR="#000000">                </FONT><FONT COLOR="#0000ff">/&gt;</FONT></PRE><H2>
+Actionscript File Conventions:</H2>
+<P CLASS="p3" STYLE="margin-bottom: 0.2in"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">-
 Use a consistent AS layout:</FONT></FONT></P>
-<P CLASS="p3"><BR>
+<DL>
+	<DD>1. Constants</DD><DD>
+	2. Properties</DD><DD>
+	3. Constructors</DD><DD STYLE="margin-bottom: 0.2in">
+	4. Methods / Functions</DD></DL>
+<P CLASS="p1" STYLE="margin-bottom: 0.2in">
+<BR><BR>
 </P>
-<P CLASS="p3"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">1.
-Constants</FONT></FONT></P>
-<P CLASS="p3"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">2.
-Properties</FONT></FONT></P>
-<P CLASS="p3"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">3.
-Constructors</FONT></FONT></P>
-<P CLASS="p3"><FONT FACE="Arial, sans-serif"><FONT SIZE=2 STYLE="font-size: 11pt">4.
-Methods / Functions</FONT></FONT></P>
-<P CLASS="p1"><BR>
-</P>
-<P CLASS="p1"><BR>
+<P CLASS="p1" STYLE="margin-bottom: 0.2in"><BR><BR>
 </P>
 </BODY>
 </HTML>
