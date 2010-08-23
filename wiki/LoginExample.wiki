@@ -32,4 +32,4 @@ Flex 4 (Halo) with Code Behind & Cairngorm 3 Validation Library:
 
 ...
 
-*Please feel free to give comments or suggestions because the code is still work in progress*
+*Please feel free to give comments or suggestions because the code is still work in progress.*
