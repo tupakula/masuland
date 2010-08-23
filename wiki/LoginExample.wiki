@@ -1,5 +1,7 @@
 = Login Example =
 
+http://masuland.googlecode.com/files/LoginExamplePrintScreen.png
+
 Please read the [LoginExampleFeatureSpec Feature Specification] of the Login Example application. Implementations with different Flex versions and MVC frameworks are listed below. The code follows Flex coding convention guidelines ([Flex3CodingConventions Flex 3], Flex 4 TODO). 
 
 Flex 3:
