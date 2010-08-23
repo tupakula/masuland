@@ -2,8 +2,6 @@
 
 This document outlines the basic architecture of the Login Example application. You will get an overview about the application flow and states. Furthermore, types of value objects and client-server interface (Delegates) will be discussed.
 
-http://masuland.googlecode.com/files/LoginExamplePrintScreen.png
-
 == 1.1. Application Flow and States ==
 
 With the Login Example application you will be guided through a simple login or registering process. After you have been logged in the application lets you change and update your user account information. The following state chart diagram shows the application flow.
