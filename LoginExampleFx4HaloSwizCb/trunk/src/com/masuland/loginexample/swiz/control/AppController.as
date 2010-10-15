@@ -19,11 +19,13 @@ package com.masuland.loginexample.swiz.control
 	import flash.events.IEventDispatcher;
 	
 	import mx.controls.Alert;
+	import mx.core.FlexGlobals;
 	import mx.events.ResourceEvent;
 	import mx.events.StyleEvent;
 	import mx.resources.ResourceManager;
 	import mx.rpc.events.FaultEvent;
 	import mx.rpc.events.ResultEvent;
+	import mx.styles.IStyleManager2;
 	import mx.styles.StyleManager;
 	
 	import org.swizframework.utils.services.ServiceHelper;
@@ -247,17 +249,18 @@ package com.masuland.loginexample.swiz.control
 		public function loadStyle(style:StyleVO):void 
 		{
 			var myEvent:IEventDispatcher;
+			var myStyleManager:IStyleManager2 = StyleManager.getStyleManager(FlexGlobals.topLevelApplication.moduleFactory);
 			
 			if (appModel != null)
 			{
 				if (appModel.currentStyle != null)
 				{
-					StyleManager.unloadStyleDeclarations(appModel.currentStyle.path, false);
+					myStyleManager.unloadStyleDeclarations(appModel.currentStyle.path, false);
 				}
 
 				appModel.currentStyle = style;
 				
-				myEvent = StyleManager.loadStyleDeclarations(style.path, true);
+				myEvent = myStyleManager.loadStyleDeclarations(style.path, true);
 				myEvent.addEventListener(StyleEvent.COMPLETE, onLoadStyleComplete);
 				myEvent.addEventListener(StyleEvent.ERROR, onLoadStyleError);
 			}
