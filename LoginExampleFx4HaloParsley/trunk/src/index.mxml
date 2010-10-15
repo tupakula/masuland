@@ -38,7 +38,7 @@
 	<fx:Declarations>
 		<spicefactory:ContextBuilder>
 			<spicefactory:FlexConfig type="{ AppConfig }"/>
-			<spicefactory:Settings unhandledMessageErrors="{ErrorPolicy.RETHROW}"/> 
+			<spicefactory:MessageSettings unhandledErrors="{ErrorPolicy.RETHROW}"/> 
 		</spicefactory:ContextBuilder>
 		
 		<s:TraceTarget level="{ LogEventLevel.DEBUG }">
