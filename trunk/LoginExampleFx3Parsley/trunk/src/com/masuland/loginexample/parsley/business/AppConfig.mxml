@@ -20,7 +20,7 @@
 	<mx:RemoteObject
 		id="appRemoteObject" 
 		destination="appService"
-		source="com.masuland.loginexample.parsley222.service.AppService"
+		source="com.masuland.loginexample.parsley.service.AppService"
 		channelSet="{ appDynamicChannel }"
 		/>
 	
