@@ -20,6 +20,7 @@ package com.masuland.loginexample.parsley.control
 	import flash.events.IEventDispatcher;
 	
 	import mx.controls.Alert;
+	import mx.core.FlexGlobals;
 	import mx.events.ResourceEvent;
 	import mx.events.StyleEvent;
 	import mx.resources.ResourceManager;
@@ -27,6 +28,7 @@ package com.masuland.loginexample.parsley.control
 	import mx.rpc.Responder;
 	import mx.rpc.events.FaultEvent;
 	import mx.rpc.events.ResultEvent;
+	import mx.styles.IStyleManager2;
 	import mx.styles.StyleManager;
 	
 	public class AppController
@@ -230,17 +232,18 @@ package com.masuland.loginexample.parsley.control
 		public function loadStyle(event:LoadStyleEvent):void 
 		{
 			var myEvent:IEventDispatcher;
+			var myStyleManager:IStyleManager2 = StyleManager.getStyleManager(FlexGlobals.topLevelApplication.moduleFactory);
 			
 			if (appModel != null)
 			{
 				if (appModel.currentStyle != null)
 				{
-					StyleManager.unloadStyleDeclarations(appModel.currentStyle.path, false);
+					myStyleManager.unloadStyleDeclarations(appModel.currentStyle.path, false);
 				}
 
 				appModel.currentStyle = event.style;
 				
-				myEvent = StyleManager.loadStyleDeclarations(event.style.path, true);
+				myEvent = myStyleManager.loadStyleDeclarations(event.style.path, true);
 				myEvent.addEventListener(StyleEvent.COMPLETE, onLoadStyleComplete);
 				myEvent.addEventListener(StyleEvent.ERROR, onLoadStyleError);
 			}
