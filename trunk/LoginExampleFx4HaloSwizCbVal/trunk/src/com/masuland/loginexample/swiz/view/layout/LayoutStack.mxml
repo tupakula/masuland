@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas 
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:web="com.masuland.loginexample.swiz.view.layout.web.*" 
+	xmlns:phone="com.masuland.loginexample.swiz.view.layout.phone.*"
+	width="{ appModel.currentLayout.width }" height="{ appModel.currentLayout.height }"
+	resizeEffect="{ fx_resize }" 
+	>
+	
+	<mx:states>
+		<mx:State name="web">
+			<mx:SetProperty target="{layout_web}" name="visible" value="true" />
+			<mx:SetProperty target="{layout_web}" name="includeInLayout" value="true" />
+		</mx:State>
+		<mx:State name="phone">
+			<mx:SetProperty target="{layout_phone}" name="visible" value="true" />
+			<mx:SetProperty target="{layout_phone}" name="includeInLayout" value="true" />
+		</mx:State>
+	</mx:states>
+	
+	<mx:Script>
+		<![CDATA[
+			import com.masuland.loginexample.swiz.model.AppModel;
+			
+			[Inject]
+			[Bindable]
+			public var appModel:AppModel;
+		]]>
+	</mx:Script>
+	
+	<mx:Resize
+		id="fx_resize"
+		duration="150"
+		/>
+	
+	<web:AppStack
+		id="layout_web"
+		currentState="{ appModel.appStackState }"
+		visible="false"
+		includeInLayout="false"
+		/>
+
+	<phone:AppStack
+		id="layout_phone"
+		currentState="{ appModel.appStackState }"
+		visible="false"
+		includeInLayout="false"
+		/>
+
+</mx:Canvas>

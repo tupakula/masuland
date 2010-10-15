@@ -4,7 +4,7 @@
 	xmlns:s="library://ns.adobe.com/flex/spark" 
 	xmlns:mx="library://ns.adobe.com/flex/mx" 
 	xmlns:swiz="http://swiz.swizframework.org"
-	xmlns:view="com.masuland.loginexample.swiz10.view.*"
+	xmlns:view="com.masuland.loginexample.swiz.view.*"
 	width="100%" height="100%"
 	pageTitle="Swiz 1.0 (CB, Valdation Lib) - Login Example (Fx4, Halo)"
 	backgroundAlpha="0"
@@ -18,7 +18,7 @@
 	
 	<fx:Script>
 		<![CDATA[
-			import com.masuland.loginexample.swiz10.business.AppBean;
+			import com.masuland.loginexample.swiz.business.AppBean;
 		]]>
 	</fx:Script>
 	
@@ -29,8 +29,8 @@
 			>
 			<swiz:config>
 				<swiz:SwizConfig
-					eventPackages="com.masuland.loginexample.swiz10.control.event"
-					viewPackages="com.masuland.loginexample.swiz10.view" 
+					eventPackages="com.masuland.loginexample.swiz.control.event"
+					viewPackages="com.masuland.loginexample.swiz.view" 
 					/>
 			</swiz:config>
 		</swiz:Swiz>
