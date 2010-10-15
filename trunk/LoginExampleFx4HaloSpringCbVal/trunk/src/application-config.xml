@@ -24,12 +24,12 @@
 		/>
 	
 	<!-- SERVICE -->	
-	
+<!-- 	
 	<object 
 		id="appRemoteObject" 
 		class="mx.rpc.remoting.mxml.RemoteObject"
 		/>
-	
+-->	
 	<!-- DELEGATE -->	
 <!--	
 	<object 
