@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mx:Application 
 	xmlns:mx="http://www.adobe.com/2006/mxml" 
-	xmlns:view="com.masuland.loginexample.swiz10.view.*"
+	xmlns:view="com.masuland.loginexample.swiz.view.*"
 	xmlns:swiz="http://swiz.swizframework.org"
 	width="100%" height="100%"
 	layout="absolute" 
@@ -19,7 +19,7 @@
 	
 	<mx:Script>
 		<![CDATA[
-			import com.masuland.loginexample.swiz10.business.AppBean;
+			import com.masuland.loginexample.swiz.business.AppBean;
 		]]>
 	</mx:Script>
 	
@@ -28,8 +28,8 @@
 		>
 		<swiz:config>
 			<swiz:SwizConfig
-				eventPackages="com.masuland.loginexample.swiz10.control.event"
-				viewPackages="com.masuland.loginexample.swiz10.view" 
+				eventPackages="com.masuland.loginexample.swiz.control.event"
+				viewPackages="com.masuland.loginexample.swiz.view" 
 				/>
 		</swiz:config>
 	</swiz:Swiz>
