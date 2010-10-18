@@ -1,0 +1,63 @@
+@namespace mx "library://ns.adobe.com/flex/mx";
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace phone "com.masuland.loginexample.swiz.view.layout.phone.*";
+
+mx|global
+{
+	theme-color: #D29910;
+	color: #C74803;
+}
+
+phone|AppStack
+{
+	backgroundAlpha: 0.7;
+	
+	borderStyle: solid;
+	borderThickness: 1;
+	borderColor: #D29910;
+	backgroundColor: #F5F2E2;
+	
+	cornerRadius: 10;
+	
+	dropShadowColor: #000000;
+	dropShadowEnabled: true;
+	shadowDirection: top;
+	shadow-distance: 0;
+}
+
+.loginHeader
+{
+	text-align: left;
+	text-indent: 5;
+	font-weight: bold;
+	font-size: 20;
+}
+
+.descriptor
+{
+	font-size: 17;
+}
+
+mx|Button
+{
+	font-size: 15;
+}
+
+mx|TextInput
+{
+	font-size: 17;
+}
+
+mx|ComboBox
+{
+	font-size: 10;
+}
+
+mx|HRule
+{
+	strokeColor: #D29910;
+	
+	dropShadowEnabled: true;
+	shadowDirection: top;
+	shadow-distance: 0;
+}
