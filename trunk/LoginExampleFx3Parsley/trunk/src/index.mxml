@@ -16,8 +16,8 @@
 	
 	<mx:Metadata>
 		[ResourceBundle("resources")]
-		[Event(name="AppEvent.INITIALIZE_CLIENT", type="com.masuland.loginexample.parsley.control.event.AppEvent")]
 		[ManagedEvents("AppEvent.INITIALIZE_CLIENT")]
+		[Event(name="AppEvent.INITIALIZE_CLIENT", type="com.masuland.loginexample.parsley.control.event.AppEvent")]
 	</mx:Metadata>
 	
 	<mx:Script>
@@ -37,7 +37,7 @@
 	<spicefactory:Configure />
 	
 	<spicefactory:ContextBuilder>
-		<spicefactory:FlexConfig type="{AppConfig}"/>
+		<spicefactory:FlexConfig type="{ AppConfig }"/>
 	</spicefactory:ContextBuilder> 
 	
 	<view:AppView
