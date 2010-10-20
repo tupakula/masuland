@@ -35,7 +35,7 @@
 			verticalAlign="middle"
 			>
 			<mx:Label
-				text="{resourceManager.getString('resources', 'txt_change_layout')}"
+				text="{ resourceManager.getString('resources', 'txt_change_layout') }"
 				/>
 			<mx:ComboBox
 				id="cb_layout"
@@ -47,7 +47,7 @@
 			verticalAlign="middle"
 			>
 			<mx:Label
-				text="{resourceManager.getString('resources', 'txt_change_style')}"
+				text="{ resourceManager.getString('resources', 'txt_change_style') }"
 				/>
 			<mx:ComboBox
 				id="cb_style"
@@ -59,7 +59,7 @@
 			verticalAlign="middle"
 			>
 			<mx:Label
-				text="{resourceManager.getString('resources', 'txt_change_locale')}"
+				text="{ resourceManager.getString('resources', 'txt_change_locale') }"
 				/>
 			<mx:ComboBox
 				id="cb_locale"

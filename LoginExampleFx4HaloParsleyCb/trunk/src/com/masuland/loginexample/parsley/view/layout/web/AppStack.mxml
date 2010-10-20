@@ -9,10 +9,10 @@
 	
 	<mx:states>
 		<mx:State name="login">
-			<mx:SetProperty target="{bx_login}" name="visible" value="true" />
+			<mx:SetProperty target="{ bx_login }" name="visible" value="true" />
 		</mx:State>
 		<mx:State name="user">
-			<mx:SetProperty target="{bx_user}" name="visible" value="true" />
+			<mx:SetProperty target="{ bx_user }" name="visible" value="true" />
 		</mx:State>
 	</mx:states>
 

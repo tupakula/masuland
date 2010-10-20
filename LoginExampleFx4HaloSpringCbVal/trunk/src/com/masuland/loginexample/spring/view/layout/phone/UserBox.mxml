@@ -42,13 +42,13 @@
 				id="txt_header"
 				width="100%"
 				styleName="loginHeader"
-				text="{resourceManager.getString('resources', 'title_user_account')}"
+				text="{ resourceManager.getString('resources', 'title_user_account') }"
 				/>
 			
 			<mx:Button
 				id="btn_logout"
 				height="35"
-				label="{resourceManager.getString('resources', 'cta_logout')}"
+				label="{ resourceManager.getString('resources', 'cta_logout') }"
 				buttonMode="true" 
 				useHandCursor="true"
 				click="cb.logout()"
@@ -74,7 +74,7 @@
 					verticalGap="0"
 					>
 					<mx:Label
-						text="{resourceManager.getString('resources', 'txt_username')}"
+						text="{ resourceManager.getString('resources', 'txt_username') }"
 						styleName="descriptor"
 						/>
 					<mx:Label
@@ -90,7 +90,7 @@
 					>
 					<mx:Label
 						width="100%"
-						text="{resourceManager.getString('resources', 'txt_firstname')}"
+						text="{ resourceManager.getString('resources', 'txt_firstname') }"
 						styleName="descriptor"
 						/>
 					<mx:TextInput
@@ -106,7 +106,7 @@
 					>
 					<mx:Label
 						width="100%"
-						text="{resourceManager.getString('resources', 'txt_lastname')}"
+						text="{ resourceManager.getString('resources', 'txt_lastname') }"
 						styleName="descriptor"
 						/>
 					<mx:TextInput
@@ -122,7 +122,7 @@
 					>
 					<mx:Label
 						width="100%"
-						text="{resourceManager.getString('resources', 'txt_email')}"
+						text="{ resourceManager.getString('resources', 'txt_email') }"
 						styleName="descriptor"
 						/>
 					<mx:TextInput
@@ -138,7 +138,7 @@
 					>
 					<mx:Label
 						width="100%"
-						text="{resourceManager.getString('resources', 'txt_birthday')}"
+						text="{ resourceManager.getString('resources', 'txt_birthday') }"
 						styleName="descriptor"
 						/>
 					<mx:DateField
@@ -162,7 +162,7 @@
 			<mx:Button
 				id="btn_update"
 				height="35"
-				label="{resourceManager.getString('resources', 'cta_update')}"
+				label="{ resourceManager.getString('resources', 'cta_update') }"
 				buttonMode="true" 
 				useHandCursor="true"
 				click="cb.updateUser(vo_user)"
