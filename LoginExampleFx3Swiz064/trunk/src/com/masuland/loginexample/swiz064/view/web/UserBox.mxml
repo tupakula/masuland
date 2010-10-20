@@ -41,12 +41,12 @@
 				id="txt_header"
 				width="100%"
 				styleName="loginHeader"
-				text="{resourceManager.getString('resources', 'title_user_account')}"
+				text="{ resourceManager.getString('resources', 'title_user_account') }"
 				/>
 			
 			<mx:Button
 				id="btn_logout"
-				label="{resourceManager.getString('resources', 'cta_logout')}"
+				label="{ resourceManager.getString('resources', 'cta_logout') }"
 				buttonMode="true" 
 				useHandCursor="true"
 				click="Swiz.dispatch(AppEventNames.LOGOUT)"
@@ -67,7 +67,7 @@
 				>
 				<mx:FormItem
 					width="100%"
-					label="{resourceManager.getString('resources', 'txt_username')}"
+					label="{ resourceManager.getString('resources', 'txt_username') }"
 					direction="horizontal"
 					required="false"
 					>
@@ -78,7 +78,7 @@
 				</mx:FormItem>
 				<mx:FormItem
 					width="100%"
-					label="{resourceManager.getString('resources', 'txt_firstname')}"
+					label="{ resourceManager.getString('resources', 'txt_firstname') }"
 					direction="horizontal"
 					required="false"
 					>
@@ -90,7 +90,7 @@
 				</mx:FormItem>
 				<mx:FormItem
 					width="100%"
-					label="{resourceManager.getString('resources', 'txt_lastname')}"
+					label="{ resourceManager.getString('resources', 'txt_lastname') }"
 					direction="horizontal"
 					required="false"
 					>
@@ -102,7 +102,7 @@
 				</mx:FormItem>
 				<mx:FormItem
 					width="100%"
-					label="{resourceManager.getString('resources', 'txt_email')}"
+					label="{ resourceManager.getString('resources', 'txt_email') }"
 					direction="horizontal"
 					required="false"
 					>
@@ -114,7 +114,7 @@
 				</mx:FormItem>
 				<mx:FormItem
 					width="100%"
-					label="{resourceManager.getString('resources', 'txt_birthday')}"
+					label="{ resourceManager.getString('resources', 'txt_birthday') }"
 					direction="horizontal"
 					required="false"
 					>
@@ -131,7 +131,7 @@
 						>
 						<mx:Button
 							id="btn_update"
-							label="{resourceManager.getString('resources', 'cta_update')}"
+							label="{ resourceManager.getString('resources', 'cta_update') }"
 							buttonMode="true" 
 							useHandCursor="true"
 							click="Swiz.dispatchEvent(new UpdateUserEvent(vo_user))"
