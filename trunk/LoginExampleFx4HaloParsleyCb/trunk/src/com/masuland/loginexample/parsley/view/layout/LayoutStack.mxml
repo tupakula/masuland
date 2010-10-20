@@ -10,12 +10,12 @@
 	
 	<mx:states>
 		<mx:State name="web">
-			<mx:SetProperty target="{layout_web}" name="visible" value="true" />
-			<mx:SetProperty target="{layout_web}" name="includeInLayout" value="true" />
+			<mx:SetProperty target="{ layout_web }" name="visible" value="true" />
+			<mx:SetProperty target="{ layout_web }" name="includeInLayout" value="true" />
 		</mx:State>
 		<mx:State name="phone">
-			<mx:SetProperty target="{layout_phone}" name="visible" value="true" />
-			<mx:SetProperty target="{layout_phone}" name="includeInLayout" value="true" />
+			<mx:SetProperty target="{ layout_phone }" name="visible" value="true" />
+			<mx:SetProperty target="{ layout_phone }" name="includeInLayout" value="true" />
 		</mx:State>
 	</mx:states>
 	
