@@ -2,7 +2,7 @@
 
 http://masuland.googlecode.com/files/LoginExamplePrintScreen.png
 
-Please read the [LoginExampleFeatureSpec Login Example Feature Specification]. Implementations with different Flex versions and MVC frameworks are listed below. The code follows additional Flex coding conventions ([Flex3CodingConventions Flex 3], Flex 4 TODO). 
+Please read the [LoginExampleFeatureSpec Login Example Feature Specification] document. Implementations with different Flex versions and MVC frameworks are listed below. The code follows additional Flex coding conventions ([Flex3CodingConventions Flex 3], Flex 4 TODO). 
 
 Flex 3:
 
