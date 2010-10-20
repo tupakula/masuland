@@ -6,7 +6,7 @@
 	xmlns:spicefactory="http://www.spicefactory.org/parsley"
 	xmlns:view="com.masuland.loginexample.parsley.view.*"
 	width="100%" height="100%" 
-	pageTitle="Parsley 2.3.1 (MVCb) - Login Example (Fx4, Halo)"
+	pageTitle="Parsley (MVCb) - Login Example (Fx4, Halo)"
 	viewSourceURL="srcview/index.html"
 	>
 
