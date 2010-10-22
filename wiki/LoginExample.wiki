@@ -33,6 +33,7 @@ Flex 4 (Halo) with Code Behind & Cairngorm 3 Validation Library:
 Flex 4 (Halo) with "Model - View - Code Behind" (MVCb) approach:
 
  * Flex 4 (Halo) Login Example with Parsley 2.3.1 (MVCb), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCb/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCb/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloParsleyMVCb/trunk/ svn repo])
+ * Flex 4 (Halo) Login Example with Spring AS 1.0 (MVCb), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCb/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCb/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpringMVCb/trunk/ svn repo])
  * Flex 4 (Halo) Login Example with Swiz 1.0 (MVCb), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCb/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCb/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSwizMVCb/trunk/ svn repo])
 
 ...
