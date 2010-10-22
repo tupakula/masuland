@@ -73,17 +73,17 @@ This document proposes additional Flex 3 coding conventions to the existing Flex
         <mx:TextInput />
 
         <mx:TextInput
-                text="{model.selectedUser.firstname}"
+                text="{ model.selectedUser.firstname }"
                 />
 
         <mx:TextInput>
-                <mx:text>{model.selectedUser.firstname}</mx:text>
+                <mx:text>{ model.selectedUser.firstname }</mx:text>
         </mx:TextInput>
 
         <mx:TextInput
                 width="100%"
                 >
-                <mx:text>{model.selectedUser.firstname}</mx:text>
+                <mx:text>{ model.selectedUser.firstname }</mx:text>
         </mx:TextInput>
 }}}
 
