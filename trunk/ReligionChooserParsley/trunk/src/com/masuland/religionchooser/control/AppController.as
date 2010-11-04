@@ -52,7 +52,7 @@ package com.masuland.religionchooser.control
 			coll.addItem(locale);
 			
 			appModel.locales = coll;
-			appModel.selectedLocale = coll.getItemAt(0) as LocaleVO;
+			appModel.selectedLocale = coll.getItemAt(1) as LocaleVO;
 		}
 		
 		protected function getSettingsResult(event:ResultEvent):void
