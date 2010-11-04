@@ -1,0 +1,42 @@
+<data
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	>
+	<settingsVO
+		>
+		<layouts>
+			<layoutVO
+				name="Web, 100%x100%"
+				width="100%"
+				height="100%"
+				stateName="web"
+				>
+				<styles>
+					<styleVO
+						name="Web, Green"
+						path="style/login_example_web_green.swf"
+						/>
+					<styleVO
+						name="Web, Red"
+						path="style/login_example_web_red.swf"
+						/>
+				</styles>
+				<locales>
+					<localeVO
+						name="English"
+						code="en_US"
+						/>
+					<localeVO
+						name="Deutsch"
+						code="de_DE"
+						/>
+				</locales>
+			</layoutVO>
+			<layoutVO
+				name="Web, 450x450"
+				width="100%"
+				height="100%"
+				stateName="web"
+				/>
+		</layouts>
+	</settingsVO>
+</data>

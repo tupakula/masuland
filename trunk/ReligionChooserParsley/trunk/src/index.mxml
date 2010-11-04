@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application 
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:mx="library://ns.adobe.com/flex/mx" 
+	xmlns:spicefactory="http://www.spicefactory.org/parsley" 
+	xmlns:view="com.masuland.religionchooser.view.*" 
+	width="100%" height="100%" 
+	applicationComplete="this_applicationCompleteHandler(event)" 
+	>
+	
+	<fx:Metadata>
+		[ResourceBundle("resources")]
+		[ManagedEvents("AppEvent.INIT_APP")]
+		[Event(name="AppEvent.INIT_APP", type="com.masuland.religionchooser.event.AppEvent")]
+	</fx:Metadata>
+
+	<fx:Style source="style/religion_chooser_web_standard.css" />
+	
+	<fx:Script>
+		<![CDATA[
+			import com.masuland.religionchooser.AppConfig;
+			import com.masuland.religionchooser.event.AppEvent;
+			
+			import mx.events.FlexEvent;
+			import mx.logging.LogEventLevel;
+			
+			import org.spicefactory.parsley.core.messaging.ErrorPolicy;
+			
+			protected function this_applicationCompleteHandler(event:FlexEvent):void
+			{
+				dispatchEvent(new AppEvent(AppEvent.INIT_APP));
+			}
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<spicefactory:ContextBuilder>
+			<spicefactory:FlexConfig type="{ AppConfig }"/>
+			<spicefactory:MessageSettings unhandledErrors="{ ErrorPolicy.RETHROW }"/> 
+		</spicefactory:ContextBuilder>
+		
+		<s:TraceTarget level="{ LogEventLevel.DEBUG }">
+			<s:filters>
+				<fx:Array>
+					<fx:String>org.spicefactory.*</fx:String>
+				</fx:Array>
+			</s:filters>
+		</s:TraceTarget>
+		
+		<spicefactory:Configure />
+	</fx:Declarations>
+	
+	<view:AppView
+		id="appView"
+		/>
+	
+</s:Application>
