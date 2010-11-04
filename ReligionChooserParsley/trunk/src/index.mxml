@@ -7,6 +7,7 @@
 	xmlns:view="com.masuland.religionchooser.view.*" 
 	width="100%" height="100%" 
 	applicationComplete="this_applicationCompleteHandler(event)" 
+	viewSourceURL="srcview/index.html"
 	>
 	
 	<fx:Metadata>
