@@ -10,7 +10,6 @@ import com.adobe.fiber.styles.StyleValidator;
 import com.adobe.fiber.valueobjects.AbstractEntityMetadata;
 import com.adobe.fiber.valueobjects.AvailablePropertyIterator;
 import com.adobe.fiber.valueobjects.IPropertyIterator;
-import com.masuland.religionchooser.vo.ChoiceVO;
 import mx.events.ValidationResultEvent;
 import com.adobe.fiber.core.model_internal;
 import com.adobe.fiber.valueobjects.IModelType;
@@ -19,52 +18,62 @@ import mx.events.PropertyChangeEvent;
 use namespace model_internal;
 
 [ExcludeClass]
-internal class _ChoicesEntityMetadata extends com.adobe.fiber.valueobjects.AbstractEntityMetadata
+internal class _StyleVOEntityMetadata extends com.adobe.fiber.valueobjects.AbstractEntityMetadata
 {
     private static var emptyArray:Array = new Array();
 
-    model_internal static var allProperties:Array = new Array("choiceVO");
+    model_internal static var allProperties:Array = new Array("name", "path");
     model_internal static var allAssociationProperties:Array = new Array();
-    model_internal static var allRequiredProperties:Array = new Array("choiceVO");
-    model_internal static var allAlwaysAvailableProperties:Array = new Array("choiceVO");
+    model_internal static var allRequiredProperties:Array = new Array("name", "path");
+    model_internal static var allAlwaysAvailableProperties:Array = new Array("name", "path");
     model_internal static var guardedProperties:Array = new Array();
-    model_internal static var dataProperties:Array = new Array("choiceVO");
+    model_internal static var dataProperties:Array = new Array("name", "path");
     model_internal static var derivedProperties:Array = new Array();
-    model_internal static var collectionProperties:Array = new Array("choiceVO");
+    model_internal static var collectionProperties:Array = new Array();
     model_internal static var collectionBaseMap:Object;
-    model_internal static var entityName:String = "Choices";
+    model_internal static var entityName:String = "StyleVO";
     model_internal static var dependentsOnMap:Object;
     model_internal static var dependedOnServices:Array = new Array();
 
     
-    model_internal var _choiceVOIsValid:Boolean;
-    model_internal var _choiceVOValidator:com.adobe.fiber.styles.StyleValidator;
-    model_internal var _choiceVOIsValidCacheInitialized:Boolean = false;
-    model_internal var _choiceVOValidationFailureMessages:Array;
+    model_internal var _nameIsValid:Boolean;
+    model_internal var _nameValidator:com.adobe.fiber.styles.StyleValidator;
+    model_internal var _nameIsValidCacheInitialized:Boolean = false;
+    model_internal var _nameValidationFailureMessages:Array;
+    
+    model_internal var _pathIsValid:Boolean;
+    model_internal var _pathValidator:com.adobe.fiber.styles.StyleValidator;
+    model_internal var _pathIsValidCacheInitialized:Boolean = false;
+    model_internal var _pathValidationFailureMessages:Array;
 
-    model_internal var _instance:_Super_Choices;
+    model_internal var _instance:_Super_StyleVO;
     model_internal static var _nullStyle:com.adobe.fiber.styles.Style = new com.adobe.fiber.styles.Style();
 
-    public function _ChoicesEntityMetadata(value : _Super_Choices)
+    public function _StyleVOEntityMetadata(value : _Super_StyleVO)
     {
         // initialize property maps
         if (model_internal::dependentsOnMap == null)
         {
             // depenents map
             model_internal::dependentsOnMap = new Object();
-            model_internal::dependentsOnMap["choiceVO"] = new Array();
+            model_internal::dependentsOnMap["name"] = new Array();
+            model_internal::dependentsOnMap["path"] = new Array();
 
             // collection base map
             model_internal::collectionBaseMap = new Object()
-            model_internal::collectionBaseMap["choiceVO"] = "com.masuland.religionchooser.vo.ChoiceVO";
         }
 
         model_internal::_instance = value;
-        model_internal::_choiceVOValidator = new StyleValidator(model_internal::_instance.model_internal::_doValidationForChoiceVO);
-        model_internal::_choiceVOValidator.required = true;
-        model_internal::_choiceVOValidator.requiredFieldError = "choiceVO is required";
-        //model_internal::_choiceVOValidator.source = model_internal::_instance;
-        //model_internal::_choiceVOValidator.property = "choiceVO";
+        model_internal::_nameValidator = new StyleValidator(model_internal::_instance.model_internal::_doValidationForName);
+        model_internal::_nameValidator.required = true;
+        model_internal::_nameValidator.requiredFieldError = "name is required";
+        //model_internal::_nameValidator.source = model_internal::_instance;
+        //model_internal::_nameValidator.property = "name";
+        model_internal::_pathValidator = new StyleValidator(model_internal::_instance.model_internal::_doValidationForPath);
+        model_internal::_pathValidator.required = true;
+        model_internal::_pathValidator.requiredFieldError = "path is required";
+        //model_internal::_pathValidator.source = model_internal::_instance;
+        //model_internal::_pathValidator.property = "path";
     }
 
     override public function getEntityName():String
@@ -105,7 +114,7 @@ internal class _ChoicesEntityMetadata extends com.adobe.fiber.valueobjects.Abstr
     override public function getDependants(propertyName:String):Array
     {
        if (model_internal::dataProperties.indexOf(propertyName) == -1)
-            throw new Error(propertyName + " is not a data property of entity Choices");  
+            throw new Error(propertyName + " is not a data property of entity StyleVO");  
             
        return model_internal::dependentsOnMap[propertyName] as Array;  
     }
@@ -123,7 +132,7 @@ internal class _ChoicesEntityMetadata extends com.adobe.fiber.valueobjects.Abstr
     override public function getCollectionBase(propertyName:String):String
     {
         if (model_internal::collectionProperties.indexOf(propertyName) == -1)
-            throw new Error(propertyName + " is not a collection property of entity Choices");  
+            throw new Error(propertyName + " is not a collection property of entity StyleVO");  
 
         return model_internal::collectionBaseMap[propertyName];
     }
@@ -137,7 +146,7 @@ internal class _ChoicesEntityMetadata extends com.adobe.fiber.valueobjects.Abstr
     {
         if (model_internal::allProperties.indexOf(propertyName) == -1)
         {
-            throw new Error(propertyName + " does not exist for entity Choices");
+            throw new Error(propertyName + " does not exist for entity StyleVO");
         }
 
         return model_internal::_instance[propertyName];
@@ -147,7 +156,7 @@ internal class _ChoicesEntityMetadata extends com.adobe.fiber.valueobjects.Abstr
     {
         if (model_internal::dataProperties.indexOf(propertyName) == -1)
         {
-            throw new Error(propertyName + " is not a data property of entity Choices");
+            throw new Error(propertyName + " is not a data property of entity StyleVO");
         }
 
         model_internal::_instance[propertyName] = value;
@@ -179,7 +188,7 @@ internal class _ChoicesEntityMetadata extends com.adobe.fiber.valueobjects.Abstr
     {
         if (model_internal::allProperties.indexOf(propertyName) == -1)
         {
-            throw new Error(propertyName + " does not exist for entity Choices");
+            throw new Error(propertyName + " does not exist for entity StyleVO");
         }
 
         if (model_internal::allAlwaysAvailableProperties.indexOf(propertyName) != -1)
@@ -274,7 +283,13 @@ internal class _ChoicesEntityMetadata extends com.adobe.fiber.valueobjects.Abstr
     }
 
     [Bindable(event="propertyChange")]
-    public function get isChoiceVOAvailable():Boolean
+    public function get isNameAvailable():Boolean
+    {
+        return true;
+    }
+
+    [Bindable(event="propertyChange")]
+    public function get isPathAvailable():Boolean
     {
         return true;
     }
@@ -283,12 +298,20 @@ internal class _ChoicesEntityMetadata extends com.adobe.fiber.valueobjects.Abstr
     /**
      * derived property recalculation
      */
-    public function invalidateDependentOnChoiceVO():void
+    public function invalidateDependentOnName():void
     {
-        if (model_internal::_choiceVOIsValidCacheInitialized )
+        if (model_internal::_nameIsValidCacheInitialized )
         {
-            model_internal::_instance.model_internal::_doValidationCacheOfChoiceVO = null;
-            model_internal::calculateChoiceVOIsValid();
+            model_internal::_instance.model_internal::_doValidationCacheOfName = null;
+            model_internal::calculateNameIsValid();
+        }
+    }
+    public function invalidateDependentOnPath():void
+    {
+        if (model_internal::_pathIsValidCacheInitialized )
+        {
+            model_internal::_instance.model_internal::_doValidationCacheOfPath = null;
+            model_internal::calculatePathIsValid();
         }
     }
 
@@ -298,44 +321,44 @@ internal class _ChoicesEntityMetadata extends com.adobe.fiber.valueobjects.Abstr
     }
 
     [Bindable(event="propertyChange")]   
-    public function get choiceVOStyle():com.adobe.fiber.styles.Style
+    public function get nameStyle():com.adobe.fiber.styles.Style
     {
         return model_internal::_nullStyle;
     }
 
-    public function get choiceVOValidator() : StyleValidator
+    public function get nameValidator() : StyleValidator
     {
-        return model_internal::_choiceVOValidator;
+        return model_internal::_nameValidator;
     }
 
-    model_internal function set _choiceVOIsValid_der(value:Boolean):void 
+    model_internal function set _nameIsValid_der(value:Boolean):void 
     {
-        var oldValue:Boolean = model_internal::_choiceVOIsValid;         
+        var oldValue:Boolean = model_internal::_nameIsValid;         
         if (oldValue !== value)
         {
-            model_internal::_choiceVOIsValid = value;
-            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "choiceVOIsValid", oldValue, value));
+            model_internal::_nameIsValid = value;
+            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "nameIsValid", oldValue, value));
         }                             
     }
 
     [Bindable(event="propertyChange")]
-    public function get choiceVOIsValid():Boolean
+    public function get nameIsValid():Boolean
     {
-        if (!model_internal::_choiceVOIsValidCacheInitialized)
+        if (!model_internal::_nameIsValidCacheInitialized)
         {
-            model_internal::calculateChoiceVOIsValid();
+            model_internal::calculateNameIsValid();
         }
 
-        return model_internal::_choiceVOIsValid;
+        return model_internal::_nameIsValid;
     }
 
-    model_internal function calculateChoiceVOIsValid():void
+    model_internal function calculateNameIsValid():void
     {
-        var valRes:ValidationResultEvent = model_internal::_choiceVOValidator.validate(model_internal::_instance.choiceVO)
-        model_internal::_choiceVOIsValid_der = (valRes.results == null);
-        model_internal::_choiceVOIsValidCacheInitialized = true;
+        var valRes:ValidationResultEvent = model_internal::_nameValidator.validate(model_internal::_instance.name)
+        model_internal::_nameIsValid_der = (valRes.results == null);
+        model_internal::_nameIsValidCacheInitialized = true;
         if (valRes.results == null)
-             model_internal::choiceVOValidationFailureMessages_der = emptyArray;
+             model_internal::nameValidationFailureMessages_der = emptyArray;
         else
         {
             var _valFailures:Array = new Array();
@@ -343,22 +366,22 @@ internal class _ChoicesEntityMetadata extends com.adobe.fiber.valueobjects.Abstr
             {
                 _valFailures.push(valRes.results[a].errorMessage);
             }
-            model_internal::choiceVOValidationFailureMessages_der = _valFailures;
+            model_internal::nameValidationFailureMessages_der = _valFailures;
         }
     }
 
     [Bindable(event="propertyChange")]
-    public function get choiceVOValidationFailureMessages():Array
+    public function get nameValidationFailureMessages():Array
     {
-        if (model_internal::_choiceVOValidationFailureMessages == null)
-            model_internal::calculateChoiceVOIsValid();
+        if (model_internal::_nameValidationFailureMessages == null)
+            model_internal::calculateNameIsValid();
 
-        return _choiceVOValidationFailureMessages;
+        return _nameValidationFailureMessages;
     }
 
-    model_internal function set choiceVOValidationFailureMessages_der(value:Array) : void
+    model_internal function set nameValidationFailureMessages_der(value:Array) : void
     {
-        var oldValue:Array = model_internal::_choiceVOValidationFailureMessages;
+        var oldValue:Array = model_internal::_nameValidationFailureMessages;
 
         var needUpdate : Boolean = false;
         if (oldValue == null)
@@ -386,8 +409,108 @@ internal class _ChoicesEntityMetadata extends com.adobe.fiber.valueobjects.Abstr
 
         if (needUpdate)
         {
-            model_internal::_choiceVOValidationFailureMessages = value;   
-            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "choiceVOValidationFailureMessages", oldValue, value));
+            model_internal::_nameValidationFailureMessages = value;   
+            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "nameValidationFailureMessages", oldValue, value));
+            // Only execute calculateIsValid if it has been called before, to update the validationFailureMessages for
+            // the entire entity.
+            if (model_internal::_instance.model_internal::_cacheInitialized_isValid)
+            {
+                model_internal::_instance.model_internal::isValid_der = model_internal::_instance.model_internal::calculateIsValid();
+            }
+        }
+    }
+
+    [Bindable(event="propertyChange")]   
+    public function get pathStyle():com.adobe.fiber.styles.Style
+    {
+        return model_internal::_nullStyle;
+    }
+
+    public function get pathValidator() : StyleValidator
+    {
+        return model_internal::_pathValidator;
+    }
+
+    model_internal function set _pathIsValid_der(value:Boolean):void 
+    {
+        var oldValue:Boolean = model_internal::_pathIsValid;         
+        if (oldValue !== value)
+        {
+            model_internal::_pathIsValid = value;
+            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "pathIsValid", oldValue, value));
+        }                             
+    }
+
+    [Bindable(event="propertyChange")]
+    public function get pathIsValid():Boolean
+    {
+        if (!model_internal::_pathIsValidCacheInitialized)
+        {
+            model_internal::calculatePathIsValid();
+        }
+
+        return model_internal::_pathIsValid;
+    }
+
+    model_internal function calculatePathIsValid():void
+    {
+        var valRes:ValidationResultEvent = model_internal::_pathValidator.validate(model_internal::_instance.path)
+        model_internal::_pathIsValid_der = (valRes.results == null);
+        model_internal::_pathIsValidCacheInitialized = true;
+        if (valRes.results == null)
+             model_internal::pathValidationFailureMessages_der = emptyArray;
+        else
+        {
+            var _valFailures:Array = new Array();
+            for (var a:int = 0 ; a<valRes.results.length ; a++)
+            {
+                _valFailures.push(valRes.results[a].errorMessage);
+            }
+            model_internal::pathValidationFailureMessages_der = _valFailures;
+        }
+    }
+
+    [Bindable(event="propertyChange")]
+    public function get pathValidationFailureMessages():Array
+    {
+        if (model_internal::_pathValidationFailureMessages == null)
+            model_internal::calculatePathIsValid();
+
+        return _pathValidationFailureMessages;
+    }
+
+    model_internal function set pathValidationFailureMessages_der(value:Array) : void
+    {
+        var oldValue:Array = model_internal::_pathValidationFailureMessages;
+
+        var needUpdate : Boolean = false;
+        if (oldValue == null)
+            needUpdate = true;
+    
+        // avoid firing the event when old and new value are different empty arrays
+        if (!needUpdate && (oldValue !== value && (oldValue.length > 0 || value.length > 0)))
+        {
+            if (oldValue.length == value.length)
+            {
+                for (var a:int=0; a < oldValue.length; a++)
+                {
+                    if (oldValue[a] !== value[a])
+                    {
+                        needUpdate = true;
+                        break;
+                    }
+                }
+            }
+            else
+            {
+                needUpdate = true;
+            }
+        }
+
+        if (needUpdate)
+        {
+            model_internal::_pathValidationFailureMessages = value;   
+            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "pathValidationFailureMessages", oldValue, value));
             // Only execute calculateIsValid if it has been called before, to update the validationFailureMessages for
             // the entire entity.
             if (model_internal::_instance.model_internal::_cacheInitialized_isValid)
@@ -422,9 +545,13 @@ internal class _ChoicesEntityMetadata extends com.adobe.fiber.valueobjects.Abstr
      {
          switch(propertyName)
          {
-            case("choiceVO"):
+            case("name"):
             {
-                return choiceVOValidationFailureMessages;
+                return nameValidationFailureMessages;
+            }
+            case("path"):
+            {
+                return pathValidationFailureMessages;
             }
             default:
             {

@@ -1,5 +1,5 @@
 /**
- * This is a generated sub-class of _Choices.as and is intended for behavior
+ * This is a generated sub-class of _StyleVO.as and is intended for behavior
  * customization.  This class is only generated when there is no file already present
  * at its target location.  Thus custom behavior that you add here will survive regeneration
  * of the super-class. 
@@ -15,7 +15,7 @@ package com.masuland.religionchooser.vo
 
 import com.adobe.fiber.core.model_internal;
 
-public class Choices extends _Super_Choices
+public class StyleVO extends _Super_StyleVO
 {
     /** 
      * DO NOT MODIFY THIS STATIC INITIALIZER - IT IS NECESSARY
@@ -30,17 +30,17 @@ public class Choices extends _Super_Choices
      */     
     public static function _initRemoteClassAlias() : void
     {
-        _Super_Choices.model_internal::initRemoteClassAliasSingle(com.masuland.religionchooser.vo.Choices);
-        _Super_Choices.model_internal::initRemoteClassAliasAllRelated();
+        _Super_StyleVO.model_internal::initRemoteClassAliasSingle(com.masuland.religionchooser.vo.StyleVO);
+        _Super_StyleVO.model_internal::initRemoteClassAliasAllRelated();
     }
      
     model_internal static function initRemoteClassAliasSingleChild() : void
     {
-        _Super_Choices.model_internal::initRemoteClassAliasSingle(com.masuland.religionchooser.vo.Choices);
+        _Super_StyleVO.model_internal::initRemoteClassAliasSingle(com.masuland.religionchooser.vo.StyleVO);
     }
     
     {
-        _Super_Choices.model_internal::initRemoteClassAliasSingle(com.masuland.religionchooser.vo.Choices);
+        _Super_StyleVO.model_internal::initRemoteClassAliasSingle(com.masuland.religionchooser.vo.StyleVO);
     }
     /** 
      * END OF DO NOT MODIFY SECTION

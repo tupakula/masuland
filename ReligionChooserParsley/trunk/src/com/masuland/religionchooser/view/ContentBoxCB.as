@@ -2,6 +2,7 @@ package com.masuland.religionchooser.view
 {
 	import com.masuland.religionchooser.event.AppEvent;
 	import com.masuland.religionchooser.vo.ChoiceVO;
+	import com.masuland.religionchooser.vo.LayoutVO;
 	import com.masuland.religionchooser.vo.LocaleVO;
 	import com.masuland.religionchooser.vo.QuestionVO;
 	import com.masuland.religionchooser.vo.ResultVO;
@@ -16,9 +17,13 @@ package com.masuland.religionchooser.view
 		[MessageDispatcher]
 		public var dispatcher:Function;
 
-		[Subscribe(objectId="selectedLocale")]
+		[Subscribe(objectId="currentLayout")]
 		[Bindable]
-		public var selectedLocale:LocaleVO;
+		public var currentLayout:LayoutVO;
+
+		[Subscribe(objectId="currentLocale")]
+		[Bindable]
+		public var currentLocale:LocaleVO;
 
 		[Subscribe(objectId="selectedQuestion")]
 		[Bindable]

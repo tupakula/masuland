@@ -1,16 +1,30 @@
 package com.masuland.religionchooser.control
 {
 	import com.masuland.religionchooser.event.AppEvent;
+	import com.masuland.religionchooser.event.LoadLayoutEvent;
+	import com.masuland.religionchooser.event.LoadLocaleEvent;
+	import com.masuland.religionchooser.event.LoadStyleEvent;
 	import com.masuland.religionchooser.model.AppModel;
 	import com.masuland.religionchooser.service.contentxml.ContentXmlService;
+	import com.masuland.religionchooser.service.settingsxml.SettingsXmlService;
 	import com.masuland.religionchooser.view.ContentBoxState;
+	import com.masuland.religionchooser.vo.LayoutVO;
 	import com.masuland.religionchooser.vo.LocaleVO;
 	import com.masuland.religionchooser.vo.QuestionVO;
+	import com.masuland.religionchooser.vo.SettingsVO;
+	import com.masuland.religionchooser.vo.StyleVO;
 	
-	import mx.collections.ArrayCollection;
+	import flash.events.IEventDispatcher;
+	
 	import mx.controls.Alert;
+	import mx.core.FlexGlobals;
+	import mx.events.ResourceEvent;
+	import mx.events.StyleEvent;
+	import mx.resources.ResourceManager;
 	import mx.rpc.events.FaultEvent;
 	import mx.rpc.events.ResultEvent;
+	import mx.styles.IStyleManager2;
+	import mx.styles.StyleManager;
 	
 	public class AppController
 	{
@@ -35,28 +49,25 @@ package com.masuland.religionchooser.control
 			getContent();
 		}
 
+		[MessageHandler(selector="AppEvent.INIT_APP")]
 		public function getSettings():void
 		{
-			var coll:ArrayCollection = new ArrayCollection();
-			
-			var locale:LocaleVO = new LocaleVO();
-			locale.name = 'Deutsch';
-			locale.index = 0;
-			locale.code = 'de_DE';
-			coll.addItem(locale);
-
-			locale = new LocaleVO();
-			locale.name = 'English';
-			locale.index = 1;
-			locale.code = 'en_US';
-			coll.addItem(locale);
-			
-			appModel.locales = coll;
-			appModel.selectedLocale = coll.getItemAt(1) as LocaleVO;
+			var service:SettingsXmlService = new SettingsXmlService();
+			service.addEventListener(ResultEvent.RESULT, getSettingsResult);
+			service.addEventListener(FaultEvent.FAULT, getSettingsFault)
+			service.getData();
 		}
 		
 		protected function getSettingsResult(event:ResultEvent):void
 		{
+			var settings:SettingsVO = event.result as SettingsVO;
+			
+			if (settings)
+			{
+				appModel.settings = settings;
+				
+				dispatcher(new LoadLayoutEvent(LayoutVO( settings.layoutVO.getItemAt(0) )));
+			}
 		}
 		
 		protected function getSettingsFault(event:FaultEvent):void
@@ -115,13 +126,123 @@ package com.masuland.religionchooser.control
 			appModel.selectedQuestion = appModel.rootQuestion;
 		}
 		
+
+		//---------------
+		// GUI Loading
+		//---------------
+
 		/**
-		 * Restart
+		 * 
 		 */
-		[MessageHandler(selector="AppEvent.CHANGE_LANGUAGE")]
-		public function changeLanguage(event:AppEvent):void
+		[MessageHandler]
+		public function loadLayout(event:LoadLayoutEvent):void 
 		{
-			appModel.selectedLocale = event.locale;
+			appModel.currentLayout = event.layout;
+			
+			// load style
+			dispatcher(new LoadStyleEvent(StyleVO( appModel.currentLayout.styleVO.getItemAt(0) )));
+			
+			// load locales
+			dispatcher(new LoadLocaleEvent(LocaleVO( appModel.currentLayout.localeVO.getItemAt(0) )));
+		}
+		
+
+		/**
+		 * 
+		 */
+		[MessageHandler]
+		public function loadLocale(event:LoadLocaleEvent):void 
+		{
+			appModel.currentLocale = event.locale;
+			
+			ResourceManager.getInstance().localeChain = [ appModel.currentLocale.code ];
+			ResourceManager.getInstance().update();
+			
+			// TODO ... Resource update bug
+			
+/*			var oldLoginBoxState:String = appModel.loginBoxState;
+			appModel.loginBoxState = LoginBoxState.HIDDEN;
+			appModel.loginBoxState = oldLoginBoxState;
+			
+			var oldAppStackState:String = appModel.appStackState;
+			appModel.appStackState = AppStackState.HIDDEN;
+			appModel.appStackState = oldAppStackState;
+*/			
+			/*			var resourceModuleURL:String;
+			var eventDispatcher:IEventDispatcher;
+			
+			if (appModel.currentLocale != null)
+			{
+			resourceModuleURL = "AppResources_" + appModel.currentLocale.code + ".swf";
+			eventDispatcher = ResourceManager.getInstance().loadResourceModule(resourceModuleURL);
+			
+			if (eventDispatcher != null)
+			{
+			eventDispatcher.addEventListener(ResourceEvent.COMPLETE, onLoadLocaleComplete);
+			eventDispatcher.addEventListener(ResourceEvent.ERROR, onLoadLocaleError);
+			}
+			}
+		*/
+		}
+
+		/**
+		 * 
+		 */
+		private function onLoadLocaleComplete(event:ResourceEvent):void
+		{	    	
+			ResourceManager.getInstance().localeChain = [ appModel.currentLocale.code ];
+		}
+		
+		/**
+		 * 
+		 */
+		private function onLoadLocaleError(event:ResourceEvent):void
+		{	    	
+		}
+		
+
+		/**
+		 * 
+		 */
+		[MessageHandler]
+		public function loadStyle(event:LoadStyleEvent):void 
+		{
+			appModel.currentStyle = event.style;
+			
+			return;
+			
+			var myEvent:IEventDispatcher;
+			var myStyleManager:IStyleManager2 = StyleManager.getStyleManager(FlexGlobals.topLevelApplication.moduleFactory);
+			
+			if (appModel != null)
+			{
+				if (appModel.currentStyle != null)
+				{
+					myStyleManager.unloadStyleDeclarations(appModel.currentStyle.path, false);
+				}
+				
+				appModel.currentStyle = event.style;
+				
+				myEvent = myStyleManager.loadStyleDeclarations(event.style.path, true);
+				myEvent.addEventListener(StyleEvent.COMPLETE, onLoadStyleComplete);
+				myEvent.addEventListener(StyleEvent.ERROR, onLoadStyleError);
+			}
+		}
+		
+		/**
+		 * 
+		 */
+		private function onLoadStyleComplete(event:StyleEvent):void
+		{
+//			appModel.isApplicationVisible = true;
+		}
+		
+		/**
+		 * 
+		 */
+		private function onLoadStyleError(event:StyleEvent):void
+		{
+//			appModel.isApplicationVisible = true;
 		}
 	}
 }

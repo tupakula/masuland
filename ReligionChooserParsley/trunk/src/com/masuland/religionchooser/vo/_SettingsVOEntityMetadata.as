@@ -10,7 +10,7 @@ import com.adobe.fiber.styles.StyleValidator;
 import com.adobe.fiber.valueobjects.AbstractEntityMetadata;
 import com.adobe.fiber.valueobjects.AvailablePropertyIterator;
 import com.adobe.fiber.valueobjects.IPropertyIterator;
-import com.masuland.religionchooser.vo.LangVO;
+import com.masuland.religionchooser.vo.LayoutVO;
 import mx.events.ValidationResultEvent;
 import com.adobe.fiber.core.model_internal;
 import com.adobe.fiber.valueobjects.IModelType;
@@ -19,52 +19,52 @@ import mx.events.PropertyChangeEvent;
 use namespace model_internal;
 
 [ExcludeClass]
-internal class _LangsEntityMetadata extends com.adobe.fiber.valueobjects.AbstractEntityMetadata
+internal class _SettingsVOEntityMetadata extends com.adobe.fiber.valueobjects.AbstractEntityMetadata
 {
     private static var emptyArray:Array = new Array();
 
-    model_internal static var allProperties:Array = new Array("langVO");
+    model_internal static var allProperties:Array = new Array("layoutVO");
     model_internal static var allAssociationProperties:Array = new Array();
-    model_internal static var allRequiredProperties:Array = new Array("langVO");
-    model_internal static var allAlwaysAvailableProperties:Array = new Array("langVO");
+    model_internal static var allRequiredProperties:Array = new Array("layoutVO");
+    model_internal static var allAlwaysAvailableProperties:Array = new Array("layoutVO");
     model_internal static var guardedProperties:Array = new Array();
-    model_internal static var dataProperties:Array = new Array("langVO");
+    model_internal static var dataProperties:Array = new Array("layoutVO");
     model_internal static var derivedProperties:Array = new Array();
-    model_internal static var collectionProperties:Array = new Array("langVO");
+    model_internal static var collectionProperties:Array = new Array("layoutVO");
     model_internal static var collectionBaseMap:Object;
-    model_internal static var entityName:String = "Langs";
+    model_internal static var entityName:String = "SettingsVO";
     model_internal static var dependentsOnMap:Object;
     model_internal static var dependedOnServices:Array = new Array();
 
     
-    model_internal var _langVOIsValid:Boolean;
-    model_internal var _langVOValidator:com.adobe.fiber.styles.StyleValidator;
-    model_internal var _langVOIsValidCacheInitialized:Boolean = false;
-    model_internal var _langVOValidationFailureMessages:Array;
+    model_internal var _layoutVOIsValid:Boolean;
+    model_internal var _layoutVOValidator:com.adobe.fiber.styles.StyleValidator;
+    model_internal var _layoutVOIsValidCacheInitialized:Boolean = false;
+    model_internal var _layoutVOValidationFailureMessages:Array;
 
-    model_internal var _instance:_Super_Langs;
+    model_internal var _instance:_Super_SettingsVO;
     model_internal static var _nullStyle:com.adobe.fiber.styles.Style = new com.adobe.fiber.styles.Style();
 
-    public function _LangsEntityMetadata(value : _Super_Langs)
+    public function _SettingsVOEntityMetadata(value : _Super_SettingsVO)
     {
         // initialize property maps
         if (model_internal::dependentsOnMap == null)
         {
             // depenents map
             model_internal::dependentsOnMap = new Object();
-            model_internal::dependentsOnMap["langVO"] = new Array();
+            model_internal::dependentsOnMap["layoutVO"] = new Array();
 
             // collection base map
             model_internal::collectionBaseMap = new Object()
-            model_internal::collectionBaseMap["langVO"] = "com.masuland.religionchooser.vo.LangVO";
+            model_internal::collectionBaseMap["layoutVO"] = "com.masuland.religionchooser.vo.LayoutVO";
         }
 
         model_internal::_instance = value;
-        model_internal::_langVOValidator = new StyleValidator(model_internal::_instance.model_internal::_doValidationForLangVO);
-        model_internal::_langVOValidator.required = true;
-        model_internal::_langVOValidator.requiredFieldError = "langVO is required";
-        //model_internal::_langVOValidator.source = model_internal::_instance;
-        //model_internal::_langVOValidator.property = "langVO";
+        model_internal::_layoutVOValidator = new StyleValidator(model_internal::_instance.model_internal::_doValidationForLayoutVO);
+        model_internal::_layoutVOValidator.required = true;
+        model_internal::_layoutVOValidator.requiredFieldError = "layoutVO is required";
+        //model_internal::_layoutVOValidator.source = model_internal::_instance;
+        //model_internal::_layoutVOValidator.property = "layoutVO";
     }
 
     override public function getEntityName():String
@@ -105,7 +105,7 @@ internal class _LangsEntityMetadata extends com.adobe.fiber.valueobjects.Abstrac
     override public function getDependants(propertyName:String):Array
     {
        if (model_internal::dataProperties.indexOf(propertyName) == -1)
-            throw new Error(propertyName + " is not a data property of entity Langs");  
+            throw new Error(propertyName + " is not a data property of entity SettingsVO");  
             
        return model_internal::dependentsOnMap[propertyName] as Array;  
     }
@@ -123,7 +123,7 @@ internal class _LangsEntityMetadata extends com.adobe.fiber.valueobjects.Abstrac
     override public function getCollectionBase(propertyName:String):String
     {
         if (model_internal::collectionProperties.indexOf(propertyName) == -1)
-            throw new Error(propertyName + " is not a collection property of entity Langs");  
+            throw new Error(propertyName + " is not a collection property of entity SettingsVO");  
 
         return model_internal::collectionBaseMap[propertyName];
     }
@@ -137,7 +137,7 @@ internal class _LangsEntityMetadata extends com.adobe.fiber.valueobjects.Abstrac
     {
         if (model_internal::allProperties.indexOf(propertyName) == -1)
         {
-            throw new Error(propertyName + " does not exist for entity Langs");
+            throw new Error(propertyName + " does not exist for entity SettingsVO");
         }
 
         return model_internal::_instance[propertyName];
@@ -147,7 +147,7 @@ internal class _LangsEntityMetadata extends com.adobe.fiber.valueobjects.Abstrac
     {
         if (model_internal::dataProperties.indexOf(propertyName) == -1)
         {
-            throw new Error(propertyName + " is not a data property of entity Langs");
+            throw new Error(propertyName + " is not a data property of entity SettingsVO");
         }
 
         model_internal::_instance[propertyName] = value;
@@ -179,7 +179,7 @@ internal class _LangsEntityMetadata extends com.adobe.fiber.valueobjects.Abstrac
     {
         if (model_internal::allProperties.indexOf(propertyName) == -1)
         {
-            throw new Error(propertyName + " does not exist for entity Langs");
+            throw new Error(propertyName + " does not exist for entity SettingsVO");
         }
 
         if (model_internal::allAlwaysAvailableProperties.indexOf(propertyName) != -1)
@@ -274,7 +274,7 @@ internal class _LangsEntityMetadata extends com.adobe.fiber.valueobjects.Abstrac
     }
 
     [Bindable(event="propertyChange")]
-    public function get isLangVOAvailable():Boolean
+    public function get isLayoutVOAvailable():Boolean
     {
         return true;
     }
@@ -283,12 +283,12 @@ internal class _LangsEntityMetadata extends com.adobe.fiber.valueobjects.Abstrac
     /**
      * derived property recalculation
      */
-    public function invalidateDependentOnLangVO():void
+    public function invalidateDependentOnLayoutVO():void
     {
-        if (model_internal::_langVOIsValidCacheInitialized )
+        if (model_internal::_layoutVOIsValidCacheInitialized )
         {
-            model_internal::_instance.model_internal::_doValidationCacheOfLangVO = null;
-            model_internal::calculateLangVOIsValid();
+            model_internal::_instance.model_internal::_doValidationCacheOfLayoutVO = null;
+            model_internal::calculateLayoutVOIsValid();
         }
     }
 
@@ -298,44 +298,44 @@ internal class _LangsEntityMetadata extends com.adobe.fiber.valueobjects.Abstrac
     }
 
     [Bindable(event="propertyChange")]   
-    public function get langVOStyle():com.adobe.fiber.styles.Style
+    public function get layoutVOStyle():com.adobe.fiber.styles.Style
     {
         return model_internal::_nullStyle;
     }
 
-    public function get langVOValidator() : StyleValidator
+    public function get layoutVOValidator() : StyleValidator
     {
-        return model_internal::_langVOValidator;
+        return model_internal::_layoutVOValidator;
     }
 
-    model_internal function set _langVOIsValid_der(value:Boolean):void 
+    model_internal function set _layoutVOIsValid_der(value:Boolean):void 
     {
-        var oldValue:Boolean = model_internal::_langVOIsValid;         
+        var oldValue:Boolean = model_internal::_layoutVOIsValid;         
         if (oldValue !== value)
         {
-            model_internal::_langVOIsValid = value;
-            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "langVOIsValid", oldValue, value));
+            model_internal::_layoutVOIsValid = value;
+            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "layoutVOIsValid", oldValue, value));
         }                             
     }
 
     [Bindable(event="propertyChange")]
-    public function get langVOIsValid():Boolean
+    public function get layoutVOIsValid():Boolean
     {
-        if (!model_internal::_langVOIsValidCacheInitialized)
+        if (!model_internal::_layoutVOIsValidCacheInitialized)
         {
-            model_internal::calculateLangVOIsValid();
+            model_internal::calculateLayoutVOIsValid();
         }
 
-        return model_internal::_langVOIsValid;
+        return model_internal::_layoutVOIsValid;
     }
 
-    model_internal function calculateLangVOIsValid():void
+    model_internal function calculateLayoutVOIsValid():void
     {
-        var valRes:ValidationResultEvent = model_internal::_langVOValidator.validate(model_internal::_instance.langVO)
-        model_internal::_langVOIsValid_der = (valRes.results == null);
-        model_internal::_langVOIsValidCacheInitialized = true;
+        var valRes:ValidationResultEvent = model_internal::_layoutVOValidator.validate(model_internal::_instance.layoutVO)
+        model_internal::_layoutVOIsValid_der = (valRes.results == null);
+        model_internal::_layoutVOIsValidCacheInitialized = true;
         if (valRes.results == null)
-             model_internal::langVOValidationFailureMessages_der = emptyArray;
+             model_internal::layoutVOValidationFailureMessages_der = emptyArray;
         else
         {
             var _valFailures:Array = new Array();
@@ -343,22 +343,22 @@ internal class _LangsEntityMetadata extends com.adobe.fiber.valueobjects.Abstrac
             {
                 _valFailures.push(valRes.results[a].errorMessage);
             }
-            model_internal::langVOValidationFailureMessages_der = _valFailures;
+            model_internal::layoutVOValidationFailureMessages_der = _valFailures;
         }
     }
 
     [Bindable(event="propertyChange")]
-    public function get langVOValidationFailureMessages():Array
+    public function get layoutVOValidationFailureMessages():Array
     {
-        if (model_internal::_langVOValidationFailureMessages == null)
-            model_internal::calculateLangVOIsValid();
+        if (model_internal::_layoutVOValidationFailureMessages == null)
+            model_internal::calculateLayoutVOIsValid();
 
-        return _langVOValidationFailureMessages;
+        return _layoutVOValidationFailureMessages;
     }
 
-    model_internal function set langVOValidationFailureMessages_der(value:Array) : void
+    model_internal function set layoutVOValidationFailureMessages_der(value:Array) : void
     {
-        var oldValue:Array = model_internal::_langVOValidationFailureMessages;
+        var oldValue:Array = model_internal::_layoutVOValidationFailureMessages;
 
         var needUpdate : Boolean = false;
         if (oldValue == null)
@@ -386,8 +386,8 @@ internal class _LangsEntityMetadata extends com.adobe.fiber.valueobjects.Abstrac
 
         if (needUpdate)
         {
-            model_internal::_langVOValidationFailureMessages = value;   
-            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "langVOValidationFailureMessages", oldValue, value));
+            model_internal::_layoutVOValidationFailureMessages = value;   
+            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "layoutVOValidationFailureMessages", oldValue, value));
             // Only execute calculateIsValid if it has been called before, to update the validationFailureMessages for
             // the entire entity.
             if (model_internal::_instance.model_internal::_cacheInitialized_isValid)
@@ -422,9 +422,9 @@ internal class _LangsEntityMetadata extends com.adobe.fiber.valueobjects.Abstrac
      {
          switch(propertyName)
          {
-            case("langVO"):
+            case("layoutVO"):
             {
-                return langVOValidationFailureMessages;
+                return layoutVOValidationFailureMessages;
             }
             default:
             {
