@@ -1,12 +1,10 @@
 package com.masuland.religionchooser.view
 {
-	import com.masuland.religionchooser.event.AppEvent;
-	import com.masuland.religionchooser.vo.ChoiceVO;
+	import com.masuland.religionchooser.event.LoadLocaleEvent;
+	import com.masuland.religionchooser.event.LoadStyleEvent;
+	import com.masuland.religionchooser.vo.LayoutVO;
 	import com.masuland.religionchooser.vo.LocaleVO;
-	import com.masuland.religionchooser.vo.QuestionVO;
-	import com.masuland.religionchooser.vo.ResultVO;
-	
-	import mx.collections.ArrayCollection;
+	import com.masuland.religionchooser.vo.StyleVO;
 	
 	import spark.components.supportClasses.SkinnableComponent;
 	
@@ -15,20 +13,26 @@ package com.masuland.religionchooser.view
 		[MessageDispatcher]
 		public var dispatcher:Function;
 
-		[Subscribe(objectId="locales")]
+		[Subscribe(objectId="currentLayout")]
 		[Bindable]
-		public var locales:ArrayCollection;
+		public var currentLayout:LayoutVO;
 		
-		[Subscribe(objectId="selectedLocale")]
+		[Subscribe(objectId="currentStyle")]
 		[Bindable]
-		public var selectedLocale:LocaleVO;
+		public var currentStyle:StyleVO;
+		
+		[Subscribe(objectId="currentLocale")]
+		[Bindable]
+		public var currentLocale:LocaleVO;
+		
+		public function changeStyle(style:StyleVO):void
+		{
+			dispatcher(new LoadStyleEvent(style));
+		}
 		
 		public function changeLocale(locale:LocaleVO):void
 		{
-			var e:AppEvent = new AppEvent(AppEvent.CHANGE_LANGUAGE);
-			e.locale = locale;
-			
-			dispatcher(e);
+			dispatcher(new LoadLocaleEvent(locale));
 		}
 	}
 }

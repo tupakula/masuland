@@ -27,7 +27,7 @@
 	</fx:Declarations>
 	
 	<s:Button 
-		label="{ LangVO( ChoiceVO( data ).langs.langVO.getItemAt(cb.selectedLocale.index) ).value }"
+		label="{ LangVO( ChoiceVO( data ).langVO.getItemAt(cb.currentLayout.localeVO.getItemIndex(cb.currentLocale)) ).value }"
 		click="cb.showNext(ChoiceVO( data ))"
 		styleName="choiceButton"
 		/>

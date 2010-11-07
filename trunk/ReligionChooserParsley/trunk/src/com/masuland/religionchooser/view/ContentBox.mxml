@@ -6,7 +6,7 @@
 	xmlns:spicefactory="http://www.spicefactory.org/parsley" 
 	xmlns:view="com.masuland.religionchooser.view.*"
 	currentState="{ cb.appViewState }"
-	horizontalAlign="center"
+	horizontalAlign="center" verticalAlign="middle"
 	>
 	
 	<fx:Metadata>
@@ -88,14 +88,14 @@
 
 				<s:RichText
 					horizontalCenter="0" verticalCenter="0"
-					text="{ LangVO( cb.selectedQuestion.langs.langVO.getItemAt(cb.selectedLocale.index) ).value }"
+					text="{ LangVO( cb.selectedQuestion.langVO.getItemAt(cb.currentLayout.localeVO.getItemIndex(cb.currentLocale)) ).value }"
 					fontSize="32"
 					/>
 				
 			</s:Group>
 			
 			<s:DataGroup
-				dataProvider="{ cb.selectedQuestion.choices.choiceVO }"
+				dataProvider="{ cb.selectedQuestion.choiceVO }"
 				>
 				
 				<s:layout>
@@ -120,7 +120,7 @@
 			>
 			
 			<s:RichText
-				text="{ LangVO( cb.selectedResult.langVO.getItemAt(cb.selectedLocale.index) ).value }"
+				text="{ LangVO( cb.selectedResult.langVO.getItemAt(cb.currentLayout.localeVO.getItemIndex(cb.currentLocale)) ).value }"
 				fontSize="32"
 				/>
 			

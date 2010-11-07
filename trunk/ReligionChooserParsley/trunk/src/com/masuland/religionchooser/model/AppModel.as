@@ -1,8 +1,11 @@
 package com.masuland.religionchooser.model
 {
+	import com.masuland.religionchooser.vo.LayoutVO;
 	import com.masuland.religionchooser.vo.LocaleVO;
 	import com.masuland.religionchooser.vo.QuestionVO;
 	import com.masuland.religionchooser.vo.ResultVO;
+	import com.masuland.religionchooser.vo.SettingsVO;
+	import com.masuland.religionchooser.vo.StyleVO;
 	
 	import mx.collections.ArrayCollection;
 
@@ -17,11 +20,21 @@ package com.masuland.religionchooser.model
 		// Values
 		//---------------
 		
-		[Publish(objectId="locales")]
-		public var locales:ArrayCollection;
+		// Settings
 		
-		[Publish(objectId="selectedLocale")]
-		public var selectedLocale:LocaleVO;
+		[Publish(objectId="settings")]
+		public var settings:SettingsVO;
+
+		[Publish(objectId="currentLayout")]
+		public var currentLayout:LayoutVO;
+
+		[Publish(objectId="currentLocale")]
+		public var currentLocale:LocaleVO;
+		
+		[Publish(objectId="currentStyle")]
+		public var currentStyle:StyleVO;
+		
+		// Content
 		
 		[Publish(objectId="rootQuestion")]
 		public var rootQuestion:QuestionVO;

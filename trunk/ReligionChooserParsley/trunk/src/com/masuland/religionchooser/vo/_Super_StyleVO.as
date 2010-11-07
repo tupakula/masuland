@@ -1,6 +1,6 @@
 /**
  * This is a generated class and is not intended for modification.  To customize behavior
- * of this value object you may modify the generated sub-class of this class - QuestionVO.as.
+ * of this value object you may modify the generated sub-class of this class - StyleVO.as.
  */
 
 package com.masuland.religionchooser.vo
@@ -8,13 +8,9 @@ package com.masuland.religionchooser.vo
 import com.adobe.fiber.services.IFiberManagingService;
 import com.adobe.fiber.util.FiberUtils;
 import com.adobe.fiber.valueobjects.IValueObject;
-import com.masuland.religionchooser.vo.ChoiceVO;
-import com.masuland.religionchooser.vo.LangVO;
 import flash.events.Event;
 import flash.events.EventDispatcher;
 import mx.binding.utils.ChangeWatcher;
-import mx.collections.ArrayCollection;
-import mx.events.CollectionEvent;
 import mx.events.PropertyChangeEvent;
 import mx.validators.ValidationResult;
 
@@ -27,7 +23,7 @@ import com.adobe.fiber.valueobjects.AvailablePropertyIterator;
 use namespace model_internal;
 
 [ExcludeClass]
-public class _Super_QuestionVO extends flash.events.EventDispatcher implements com.adobe.fiber.valueobjects.IValueObject
+public class _Super_StyleVO extends flash.events.EventDispatcher implements com.adobe.fiber.valueobjects.IValueObject
 {
     model_internal static function initRemoteClassAliasSingle(cz:Class) : void
     {
@@ -35,21 +31,15 @@ public class _Super_QuestionVO extends flash.events.EventDispatcher implements c
 
     model_internal static function initRemoteClassAliasAllRelated() : void
     {
-        com.masuland.religionchooser.vo.LangVO.initRemoteClassAliasSingleChild();
-        com.masuland.religionchooser.vo.ChoiceVO.initRemoteClassAliasSingleChild();
-        com.masuland.religionchooser.vo.ResultVO.initRemoteClassAliasSingleChild();
-        com.masuland.religionchooser.vo.QuestionVO.initRemoteClassAliasSingleChild();
     }
 
-    model_internal var _dminternal_model : _QuestionVOEntityMetadata;
+    model_internal var _dminternal_model : _StyleVOEntityMetadata;
 
     /**
      * properties
      */
-    private var _internal_langVO : ArrayCollection;
-    model_internal var _internal_langVO_leaf:com.masuland.religionchooser.vo.LangVO;
-    private var _internal_choiceVO : ArrayCollection;
-    model_internal var _internal_choiceVO_leaf:com.masuland.religionchooser.vo.ChoiceVO;
+    private var _internal_name : String;
+    private var _internal_path : String;
 
     private static var emptyArray:Array = new Array();
 
@@ -61,13 +51,13 @@ public class _Super_QuestionVO extends flash.events.EventDispatcher implements c
 
     model_internal var _changeWatcherArray:Array = new Array();
 
-    public function _Super_QuestionVO()
+    public function _Super_StyleVO()
     {
-        _model = new _QuestionVOEntityMetadata(this);
+        _model = new _StyleVOEntityMetadata(this);
 
         // Bind to own data properties for cache invalidation triggering
-        model_internal::_changeWatcherArray.push(mx.binding.utils.ChangeWatcher.watch(this, "langVO", model_internal::setterListenerLangVO));
-        model_internal::_changeWatcherArray.push(mx.binding.utils.ChangeWatcher.watch(this, "choiceVO", model_internal::setterListenerChoiceVO));
+        model_internal::_changeWatcherArray.push(mx.binding.utils.ChangeWatcher.watch(this, "name", model_internal::setterListenerName));
+        model_internal::_changeWatcherArray.push(mx.binding.utils.ChangeWatcher.watch(this, "path", model_internal::setterListenerPath));
 
     }
 
@@ -76,60 +66,38 @@ public class _Super_QuestionVO extends flash.events.EventDispatcher implements c
      */
 
     [Bindable(event="propertyChange")]
-    public function get langVO() : ArrayCollection
+    public function get name() : String
     {
-        return _internal_langVO;
+        return _internal_name;
     }
 
     [Bindable(event="propertyChange")]
-    public function get choiceVO() : ArrayCollection
+    public function get path() : String
     {
-        return _internal_choiceVO;
+        return _internal_path;
     }
 
     /**
      * data property setters
      */
 
-    public function set langVO(value:*) : void
+    public function set name(value:String) : void
     {
-        var oldValue:ArrayCollection = _internal_langVO;
+        var oldValue:String = _internal_name;
         if (oldValue !== value)
         {
-            if (value is ArrayCollection)
-            {
-                _internal_langVO = value;
-            }
-            else if (value is Array)
-            {
-                _internal_langVO = new ArrayCollection(value);
-            }
-            else
-            {
-                throw new Error("value of langVO must be a collection");
-            }
-            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "langVO", oldValue, _internal_langVO));
+            _internal_name = value;
+            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "name", oldValue, _internal_name));
         }
     }
 
-    public function set choiceVO(value:*) : void
+    public function set path(value:String) : void
     {
-        var oldValue:ArrayCollection = _internal_choiceVO;
+        var oldValue:String = _internal_path;
         if (oldValue !== value)
         {
-            if (value is ArrayCollection)
-            {
-                _internal_choiceVO = value;
-            }
-            else if (value is Array)
-            {
-                _internal_choiceVO = new ArrayCollection(value);
-            }
-            else
-            {
-                throw new Error("value of choiceVO must be a collection");
-            }
-            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "choiceVO", oldValue, _internal_choiceVO));
+            _internal_path = value;
+            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "path", oldValue, _internal_path));
         }
     }
 
@@ -145,28 +113,14 @@ public class _Super_QuestionVO extends flash.events.EventDispatcher implements c
      *  - the validity of the property (and the containing entity) if the given data property is required.
      */
 
-    model_internal function setterListenerLangVO(value:flash.events.Event):void
+    model_internal function setterListenerName(value:flash.events.Event):void
     {
-        if (value is mx.events.PropertyChangeEvent)
-        {
-            if (mx.events.PropertyChangeEvent(value).newValue)
-            {
-                mx.events.PropertyChangeEvent(value).newValue.addEventListener(mx.events.CollectionEvent.COLLECTION_CHANGE, model_internal::setterListenerLangVO);
-            }
-        }
-        _model.invalidateDependentOnLangVO();
+        _model.invalidateDependentOnName();
     }
 
-    model_internal function setterListenerChoiceVO(value:flash.events.Event):void
+    model_internal function setterListenerPath(value:flash.events.Event):void
     {
-        if (value is mx.events.PropertyChangeEvent)
-        {
-            if (mx.events.PropertyChangeEvent(value).newValue)
-            {
-                mx.events.PropertyChangeEvent(value).newValue.addEventListener(mx.events.CollectionEvent.COLLECTION_CHANGE, model_internal::setterListenerChoiceVO);
-            }
-        }
-        _model.invalidateDependentOnChoiceVO();
+        _model.invalidateDependentOnPath();
     }
 
 
@@ -190,15 +144,15 @@ public class _Super_QuestionVO extends flash.events.EventDispatcher implements c
         var validationFailureMessages:Array = new Array();
 
         var propertyValidity:Boolean = true;
-        if (!_model.langVOIsValid)
+        if (!_model.nameIsValid)
         {
             propertyValidity = false;
-            com.adobe.fiber.util.FiberUtils.arrayAdd(validationFailureMessages, _model.model_internal::_langVOValidationFailureMessages);
+            com.adobe.fiber.util.FiberUtils.arrayAdd(validationFailureMessages, _model.model_internal::_nameValidationFailureMessages);
         }
-        if (!_model.choiceVOIsValid)
+        if (!_model.pathIsValid)
         {
             propertyValidity = false;
-            com.adobe.fiber.util.FiberUtils.arrayAdd(validationFailureMessages, _model.model_internal::_choiceVOValidationFailureMessages);
+            com.adobe.fiber.util.FiberUtils.arrayAdd(validationFailureMessages, _model.model_internal::_pathValidationFailureMessages);
         }
 
         model_internal::_cacheInitialized_isValid = true;
@@ -227,14 +181,14 @@ public class _Super_QuestionVO extends flash.events.EventDispatcher implements c
 
     [Transient]
     [Bindable(event="propertyChange")]
-    public function get _model() : _QuestionVOEntityMetadata
+    public function get _model() : _StyleVOEntityMetadata
     {
         return model_internal::_dminternal_model;
     }
 
-    public function set _model(value : _QuestionVOEntityMetadata) : void
+    public function set _model(value : _StyleVOEntityMetadata) : void
     {
-        var oldValue : _QuestionVOEntityMetadata = model_internal::_dminternal_model;
+        var oldValue : _StyleVOEntityMetadata = model_internal::_dminternal_model;
         if (oldValue !== value)
         {
             model_internal::_dminternal_model = value;
@@ -279,56 +233,56 @@ public class _Super_QuestionVO extends flash.events.EventDispatcher implements c
         }
     }
 
-    model_internal var _doValidationCacheOfLangVO : Array = null;
-    model_internal var _doValidationLastValOfLangVO : ArrayCollection;
+    model_internal var _doValidationCacheOfName : Array = null;
+    model_internal var _doValidationLastValOfName : String;
 
-    model_internal function _doValidationForLangVO(valueIn:Object):Array
+    model_internal function _doValidationForName(valueIn:Object):Array
     {
-        var value : ArrayCollection = valueIn as ArrayCollection;
+        var value : String = valueIn as String;
 
-        if (model_internal::_doValidationCacheOfLangVO != null && model_internal::_doValidationLastValOfLangVO == value)
-           return model_internal::_doValidationCacheOfLangVO ;
+        if (model_internal::_doValidationCacheOfName != null && model_internal::_doValidationLastValOfName == value)
+           return model_internal::_doValidationCacheOfName ;
 
-        _model.model_internal::_langVOIsValidCacheInitialized = true;
+        _model.model_internal::_nameIsValidCacheInitialized = true;
         var validationFailures:Array = new Array();
         var errorMessage:String;
         var failure:Boolean;
 
         var valRes:ValidationResult;
-        if (_model.isLangVOAvailable && _internal_langVO == null)
+        if (_model.isNameAvailable && _internal_name == null)
         {
-            validationFailures.push(new ValidationResult(true, "", "", "langVO is required"));
+            validationFailures.push(new ValidationResult(true, "", "", "name is required"));
         }
 
-        model_internal::_doValidationCacheOfLangVO = validationFailures;
-        model_internal::_doValidationLastValOfLangVO = value;
+        model_internal::_doValidationCacheOfName = validationFailures;
+        model_internal::_doValidationLastValOfName = value;
 
         return validationFailures;
     }
     
-    model_internal var _doValidationCacheOfChoiceVO : Array = null;
-    model_internal var _doValidationLastValOfChoiceVO : ArrayCollection;
+    model_internal var _doValidationCacheOfPath : Array = null;
+    model_internal var _doValidationLastValOfPath : String;
 
-    model_internal function _doValidationForChoiceVO(valueIn:Object):Array
+    model_internal function _doValidationForPath(valueIn:Object):Array
     {
-        var value : ArrayCollection = valueIn as ArrayCollection;
+        var value : String = valueIn as String;
 
-        if (model_internal::_doValidationCacheOfChoiceVO != null && model_internal::_doValidationLastValOfChoiceVO == value)
-           return model_internal::_doValidationCacheOfChoiceVO ;
+        if (model_internal::_doValidationCacheOfPath != null && model_internal::_doValidationLastValOfPath == value)
+           return model_internal::_doValidationCacheOfPath ;
 
-        _model.model_internal::_choiceVOIsValidCacheInitialized = true;
+        _model.model_internal::_pathIsValidCacheInitialized = true;
         var validationFailures:Array = new Array();
         var errorMessage:String;
         var failure:Boolean;
 
         var valRes:ValidationResult;
-        if (_model.isChoiceVOAvailable && _internal_choiceVO == null)
+        if (_model.isPathAvailable && _internal_path == null)
         {
-            validationFailures.push(new ValidationResult(true, "", "", "choiceVO is required"));
+            validationFailures.push(new ValidationResult(true, "", "", "path is required"));
         }
 
-        model_internal::_doValidationCacheOfChoiceVO = validationFailures;
-        model_internal::_doValidationLastValOfChoiceVO = value;
+        model_internal::_doValidationCacheOfPath = validationFailures;
+        model_internal::_doValidationLastValOfPath = value;
 
         return validationFailures;
     }

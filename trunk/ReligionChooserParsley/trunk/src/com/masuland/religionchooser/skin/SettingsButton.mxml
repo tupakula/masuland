@@ -33,7 +33,8 @@
 	</s:Rect>
 	
 	<s:RichText 
-		id="richtext1"
+		id="txt_label"
+		horizontalCenter="-2" verticalCenter="0"
 		color="#2B4381" 
 		fontFamily="Times New Roman" 
 		fontSize="12" 
@@ -43,20 +44,14 @@
 		rotation.disabledAndSelected="180"
 		tabStops="S0 S50" 
 		text="&lt;&lt;" 
-		text.upAndSelected="&gt;&gt;" 
-		text.overAndSelected="&gt;&gt;"
-		text.downAndSelected="&gt;&gt;"
-		text.disabledAndSelected="&gt;&gt;"
-		x="8" x.down="22" 
-		y="10" y.down="20" 
 		/>
 	
 	<s:transitions>
-		<s:Transition fromState="*" toState="*" autoReverse="true">
+		<s:Transition fromState="*" toState="*">
 			<s:Parallel>
-				<s:Parallel target="{richtext1}">
-					<s:Move duration="250" autoCenterTransform="true"/>
-					<s:Rotate duration="250" autoCenterTransform="true"/>
+				<s:Parallel target="{ txt_label }">
+					<s:Move duration="250" />
+					<s:Rotate duration="250" />
 				</s:Parallel>
 			</s:Parallel>
 		</s:Transition>

@@ -14,7 +14,6 @@ package com.masuland.religionchooser.event
 		public static const CHANGE_SELECTED_QUESTION:String = 'AppEvent.CHANGE_SELECTED_QUESTION';
 		public static const SHOW_RESULT:String = 'AppEvent.SHOW_RESULT';
 		public static const RESTART:String = 'AppEvent.RESTART';
-		public static const CHANGE_LANGUAGE:String = 'AppEvent.CHANGE_LANGUAGE';
 		
 		public var locale:LocaleVO;
 		public var question:QuestionVO;

@@ -1,5 +1,5 @@
 /**
- * This is a generated sub-class of _LocaleVO.as and is intended for behavior
+ * This is a generated sub-class of _LayoutVO.as and is intended for behavior
  * customization.  This class is only generated when there is no file already present
  * at its target location.  Thus custom behavior that you add here will survive regeneration
  * of the super-class. 
@@ -15,7 +15,7 @@ package com.masuland.religionchooser.vo
 
 import com.adobe.fiber.core.model_internal;
 
-public class LocaleVO extends _Super_LocaleVO
+public class LayoutVO extends _Super_LayoutVO
 {
     /** 
      * DO NOT MODIFY THIS STATIC INITIALIZER - IT IS NECESSARY
@@ -30,17 +30,17 @@ public class LocaleVO extends _Super_LocaleVO
      */     
     public static function _initRemoteClassAlias() : void
     {
-        _Super_LocaleVO.model_internal::initRemoteClassAliasSingle(com.masuland.religionchooser.vo.LocaleVO);
-        _Super_LocaleVO.model_internal::initRemoteClassAliasAllRelated();
+        _Super_LayoutVO.model_internal::initRemoteClassAliasSingle(com.masuland.religionchooser.vo.LayoutVO);
+        _Super_LayoutVO.model_internal::initRemoteClassAliasAllRelated();
     }
      
     model_internal static function initRemoteClassAliasSingleChild() : void
     {
-        _Super_LocaleVO.model_internal::initRemoteClassAliasSingle(com.masuland.religionchooser.vo.LocaleVO);
+        _Super_LayoutVO.model_internal::initRemoteClassAliasSingle(com.masuland.religionchooser.vo.LayoutVO);
     }
     
     {
-        _Super_LocaleVO.model_internal::initRemoteClassAliasSingle(com.masuland.religionchooser.vo.LocaleVO);
+        _Super_LayoutVO.model_internal::initRemoteClassAliasSingle(com.masuland.religionchooser.vo.LayoutVO);
     }
     /** 
      * END OF DO NOT MODIFY SECTION
