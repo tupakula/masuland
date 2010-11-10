@@ -1,7 +1,5 @@
 = Religion Chooser Feature Specification =
 
-*Please notice:* The Religion Chooser application aims to be a fun application based on a choice tree structure created by holytaco.com: http://www.holytaco.com/flowchart-determine-what-religion-you-should-follow
-
 This document outlines the basic architecture of the Religion Chooser application. You will get an overview about the application flow and states. Furthermore, types of value objects and client-server interface (Delegates) will be discussed.
 
 == 1.1. Application Flow and States ==
