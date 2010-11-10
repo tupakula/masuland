@@ -1,0 +1,11 @@
+= Religion Chooser =
+
+Please read the [ReligionChooserFeatureSpec Feature Specification] of the Religion Chooser application. Implementations with different Flex versions and MVC frameworks are listed below. The code follows additional Flex coding conventions (Flex 4 TODO). 
+
+Flex 4 (Gumbo) with "Model - View - Code Behind" (MVCb) approach:
+
+ * Flex 4 (Gumbo) Religion Chooser with Parsley 2.3.1 (MVCb), ([http://dl.dropbox.com/u/352808/code/ReligionChooserParsley/index.html live app]) ([http://dl.dropbox.com/u/352808/code/ReligionChooserParsley/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/ReligionChooserParsley/trunk/ svn repo])
+
+...
+
+*Please feel free to give comments, suggestions or feature requests because the code is still work in progress.*
