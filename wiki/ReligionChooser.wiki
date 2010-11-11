@@ -7,9 +7,7 @@ For more information about Religion Chooser application please check out the [Re
 Flex 4 (Gumbo) with "Model - View - Code Behind" (MVCb) approach:
 
  * Flex 4 (Gumbo) Religion Chooser with Parsley 2.3.1 (MVCb), ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboParsleyMVCb/index.html live app]) ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboParsleyMVCb/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/ReligionChooserGumboParsleyMVCb/trunk/ svn repo])
-
  * Flex 4 (Gumbo) Religion Chooser with Spring 1.0 (MVCb), ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSpringMVCb/index.html live app]) ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSpringMVCb/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/ReligionChooserGumboSpringMVCb/trunk/ svn repo])
-
  * Flex 4 (Gumbo) Religion Chooser with Swiz 1.0 (MVCb), ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSwizMVCb/index.html live app]) ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSwizMVCb/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/ReligionChooserGumboSwizMVCb/trunk/ svn repo])
 
 ...
