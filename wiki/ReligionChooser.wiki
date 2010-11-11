@@ -1,8 +1,6 @@
 = Religion Chooser =
 
-*Please notice:* The Religion Chooser application aims to be a fun application based on a choice tree structure created by holytaco.com: http://www.holytaco.com/flowchart-determine-what-religion-you-should-follow
-
-For more information about Religion Chooser application please check out the [ReligionChooserFeatureSpec Feature Specification] document. Implementations with different Flex versions and MVC frameworks are listed below. The code follows additional Flex coding conventions (Flex 4 TODO). 
+The Religion Chooser application aims to be a fun application based on a choice tree structure created by holytaco.com: http://www.holytaco.com/flowchart-determine-what-religion-you-should-follow . For more information about the application please read the [ReligionChooserFeatureSpec Religion Chooser Feature Specification] document. Implementations with different Flex versions and MVC frameworks are listed below. The code follows additional Flex coding conventions (Flex 4 TODO). 
 
 Flex 4 (Gumbo) with "Model - View - Code Behind" (MVCb) approach:
 
