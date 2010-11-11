@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application 
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:mx="library://ns.adobe.com/flex/mx" 
+	xmlns:swiz="http://swiz.swizframework.org"
+	xmlns:view="com.masuland.religionchooser.view.*" 
+	width="100%" height="100%" 
+	viewSourceURL="srcview/index.html" 
+	>
+	
+	<fx:Metadata>
+		[ResourceBundle("resources")]
+	</fx:Metadata>
+
+	<fx:Style source="style/religion_chooser_web_standard.css" />
+	
+	<fx:Script>
+		<![CDATA[
+			import com.masuland.religionchooser.AppBean;
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		
+		<swiz:Swiz
+			beanProviders="{ [AppBean] }"
+			>
+			<swiz:config>
+				<swiz:SwizConfig
+					eventPackages="com.masuland.religionchooser.event"
+					viewPackages="com.masuland.religionchooser.view" 
+					/>
+			</swiz:config>
+		</swiz:Swiz>
+		
+	</fx:Declarations>
+	
+	<view:AppView
+		id="appView"
+		/>
+	
+</s:Application>

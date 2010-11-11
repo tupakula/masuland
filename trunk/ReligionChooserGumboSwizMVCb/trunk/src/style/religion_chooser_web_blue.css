@@ -1,0 +1,20 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/mx";
+@namespace view "com.masuland.religionchooser.view.*";
+@namespace skin "com.masuland.religionchooser.skin.*";
+
+view|ContentBoxCB
+{
+	skin-class: ClassReference("view.ContentBox");
+}
+
+.choiceButton
+{
+	skin-class: ClassReference("skin.ChoiceButton");
+}
+
+.restartButton
+{
+	skin-class: ClassReference("skin.RestartButton");
+}
