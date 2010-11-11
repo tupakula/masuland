@@ -1,0 +1,182 @@
+<data
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	>
+	<questionVO>
+		<langVO code="de_DE" value="Wieviele Goetter moechtest Du anbeten?" />
+		<langVO code="en_US" value="How Many Gods Do You Want To Worship?" />
+		<choiceVO type="many">
+			<langVO code="de_DE" value="Viele" />
+			<langVO code="en_US" value="Many Of Them" />
+			<questionVO>
+				<langVO code="de_DE" value="Moechtest Du wiedergeboren werden?" />
+				<langVO code="en_US" value="Do You Want To Be Reincarnated?" />
+				<choiceVO type="yes">
+					<langVO code="de_DE" value="Ja" />
+					<langVO code="en_US" value="Yes" />
+						<questionVO>
+							<langVO code="de_DE" value="Besitzt Du eine schwarze Katze?" />
+							<langVO code="en_US" value="Do you own a black cat?" />
+							<choiceVO type="yes">
+								<langVO code="de_DE" value="Ja" />
+								<langVO code="en_US" value="Yes" />
+								<resultVO
+									imgUrl="content/images/wiccan.png"
+									>
+									<langVO code="de_DE" value="Du solltest Wiccan werden." />
+									<langVO code="en_US" value="You Should be a Wiccan." />
+								</resultVO>
+							</choiceVO>
+							<choiceVO type="no">
+								<langVO code="de_DE" value="Nein" />
+								<langVO code="en_US" value="No" />
+								<questionVO>
+									<langVO code="de_DE" value="Bevorzugst Du indisches oder chinesisches Takeout?" />
+									<langVO code="en_US" value="Do You Prefer Indian Takeout or Chinese Takeout?" />
+									<choiceVO type="indian">
+										<langVO code="de_DE" value="Indisch" />
+										<langVO code="en_US" value="Indian" />
+										<resultVO
+											imgUrl="content/images/hindu.png"
+											>
+											<langVO code="de_DE" value="Du solltest ein Hindu werden." />
+											<langVO code="en_US" value="You Should be a Hindu." />
+										</resultVO>
+									</choiceVO>
+									<choiceVO type="chinese">
+										<langVO code="de_DE" value="Chinesisch" />
+										<langVO code="en_US" value="Chinese" />
+										<resultVO
+											imgUrl="content/images/buddhist.png"
+											>
+											<langVO code="de_DE" value="Du solltest ein Buddhist werden." />
+											<langVO code="en_US" value="You Should be a Buddhist." />
+										</resultVO>
+									</choiceVO>
+								</questionVO>
+							</choiceVO>
+						</questionVO>
+					</choiceVO>
+					<choiceVO type="no">
+						<langVO code="de_DE" value="Nein" />
+						<langVO code="en_US" value="No" />
+						<resultVO
+							imgUrl="content/images/mayan.png"
+							>
+							<langVO code="de_DE" value="Du solltest der Mayan Religion beitreten." />
+							<langVO code="en_US" value="You Should Follow the Mayan Religion." />
+						</resultVO>
+					</choiceVO>
+				</questionVO>
+			</choiceVO>
+		<choiceVO type="one">
+			<langVO code="de_DE" value="Einen" />
+			<langVO code="en_US" value="One" />
+			<questionVO>
+				<langVO code="de_DE" value="Was denkst Du ueber Schinken?" />
+				<langVO code="en_US" value="How Do You Feel About Bacon?" />
+				<choiceVO type="no">
+					<langVO code="de_DE" value="Ich hasse Schinken" />
+					<langVO code="en_US" value="Hate Bacon" />
+					<questionVO>
+						<langVO code="de_DE" value="Was denkst Du ueber Hummus?" />
+						<langVO code="en_US" value="How Do You Feel About Hummus?" />
+						<choiceVO type="no">
+							<langVO code="de_DE" value="Ich hasse Hummus" />
+							<langVO code="en_US" value="I hate Hummus" />
+							<resultVO
+								imgUrl="content/images/jewish.png"
+								>
+								<langVO code="de_DE" value="Du solltest Jude werden." />
+								<langVO code="en_US" value="You Should be Jewish." />
+							</resultVO>
+						</choiceVO>
+						<choiceVO type="yes">
+							<langVO code="de_DE" value="Ich liebe Hummus" />
+							<langVO code="en_US" value="I love Hummus" />
+							<resultVO
+								imgUrl="content/images/muslim.png"
+								>
+								<langVO code="de_DE" value="Du solltest Moslem werden." />
+								<langVO code="en_US" value="You Should be Muslim." />
+							</resultVO>
+						</choiceVO>
+					</questionVO>
+				</choiceVO>
+				<choiceVO type="yes">
+					<langVO code="de_DE" value="Ich liebe Schinken" />
+					<langVO code="en_US" value="I love Bacon" />
+					<questionVO>
+						<langVO code="de_DE" value="Bist Du eine von Natur aus anstrengende Person?" />
+						<langVO code="en_US" value="Are You a Naturally Annoying Person?" />
+						<choiceVO type="no">
+							<langVO code="de_DE" value="Nein" />
+							<langVO code="en_US" value="No" />
+							<resultVO
+								imgUrl="content/images/christian.png"
+								>
+								<langVO code="de_DE" value="Du solltest Christ werden." />
+								<langVO code="en_US" value="You Should be Christian." />
+							</resultVO>
+						</choiceVO>
+						<choiceVO type="yes">
+							<langVO code="de_DE" value="Ja" />
+							<langVO code="en_US" value="Yes" />
+							<questionVO>
+								<langVO code="de_DE" value="Glaubst Du, dass Unterwaesche magisch sein kann?" />
+								<langVO code="en_US" value="Do You Think Underware Can Be Magical?" />
+								<choiceVO type="no">
+									<langVO code="de_DE" value="Nein" />
+									<langVO code="en_US" value="No" />
+									<resultVO
+										imgUrl="content/images/jehowah.png"
+										>
+										<langVO code="de_DE" value="Du solltest ein Zeuge Jehovah's werden." />
+										<langVO code="en_US" value="You Should be a Jehowah's Witness." />
+									</resultVO>
+								</choiceVO>
+								<choiceVO type="yes">
+									<langVO code="de_DE" value="Ja" />
+									<langVO code="en_US" value="Yes" />
+									<resultVO
+										imgUrl="content/images/mormon.png"
+										>
+										<langVO code="de_DE" value="Du solltest Mormone werden." />
+										<langVO code="en_US" value="You Should Be a Mormon." />
+									</resultVO>
+								</choiceVO>
+							</questionVO>
+						</choiceVO>
+					</questionVO>
+				</choiceVO>
+			</questionVO>
+		</choiceVO>
+		<choiceVO type="none">
+			<langVO code="de_DE" value="Keinen" />
+			<langVO code="en_US" value="None" />
+			<questionVO>
+				<langVO code="de_DE" value="Bist Du reich und wahnsinnig?" />
+				<langVO code="en_US" value="Are You Rich And Insane?" />
+				<choiceVO type="no">
+					<langVO code="de_DE" value="Nein" />
+					<langVO code="en_US" value="No" />
+					<resultVO
+						imgUrl="content/images/atheist.png"
+						>
+						<langVO code="de_DE" value="Du solltest Atheist werden." />
+						<langVO code="en_US" value="You Should be an Atheist." />
+					</resultVO>
+				</choiceVO>
+				<choiceVO type="yes">
+					<langVO code="de_DE" value="Ja" />
+					<langVO code="en_US" value="Yes" />
+					<resultVO
+						imgUrl="content/images/scientologist.png"
+						>
+						<langVO code="de_DE" value="Du solltest Scientologe werden." />
+						<langVO code="en_US" value="You Should Be a Scientologist." />
+					</resultVO>
+				</choiceVO>
+			</questionVO>
+		</choiceVO>
+	</questionVO>
+</data>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<swiz:BeanProvider
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:swiz="http://swiz.swizframework.org" 
+	xmlns:control="com.masuland.religionchooser.control.*" 
+	xmlns:model="com.masuland.religionchooser.model.*" 
+	xmlns:view="com.masuland.religionchooser.view.*"
+	>
+	
+	<!-- DELEGATE -->	
+	
+	<!-- CONTROLLER -->	
+	
+	<control:AppController
+		id="appController"
+		/>
+	
+	<!-- MODEL -->	
+	
+	<model:AppModel 
+		id="appModel"
+		/>
+	
+	<!-- CODE BEHIND -->	
+	
+	<view:AppViewCB
+		id="appViewCB"
+		/>
+	
+	<view:SettingsBoxCB
+		id="settingsBoxCB"
+		/>
+	
+	<view:ContentBoxCB
+		id="contentBoxCB"
+		/>
+	
+	<view:ChoiceRendererCB
+		id="choiceRendererCB"
+		/>
+
+</swiz:BeanProvider>
