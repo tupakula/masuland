@@ -4,6 +4,7 @@
 	xmlns:s="library://ns.adobe.com/flex/spark" 
 	xmlns:mx="library://ns.adobe.com/flex/mx" 
 	autoDrawBackground="true"
+	initialize="SwizManager.setUp(this);"
 	>
 
 	<fx:Metadata>
@@ -12,8 +13,11 @@
 
 	<fx:Script>
 		<![CDATA[
+			import com.masuland.religionchooser.view.ChoiceRendererCB;
 			import com.masuland.religionchooser.vo.ChoiceVO;
 			import com.masuland.religionchooser.vo.LangVO;
+			
+			import org.swizframework.core.SwizManager;
 
 			[Inject]
 			[Bindable]

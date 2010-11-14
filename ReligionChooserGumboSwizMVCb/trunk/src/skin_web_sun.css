@@ -3,6 +3,11 @@
 @namespace mx "library://ns.adobe.com/flex/mx";
 @namespace view "com.masuland.religionchooser.view.*";
 
+view|AppViewCB
+{
+	skin-class: ClassReference("com.masuland.religionchooser.skin.AppView");
+}
+
 view|SettingsBoxCB
 {
 	skin-class: ClassReference("com.masuland.religionchooser.skin.SettingsBox");
@@ -10,7 +15,7 @@ view|SettingsBoxCB
 
 view|ContentBoxCB
 {
-	skin-class: ClassReference("com.masuland.religionchooser.view.ContentBox");
+	skin-class: ClassReference("com.masuland.religionchooser.skin.ContentBoxSun");
 }
 
 .settingsButton

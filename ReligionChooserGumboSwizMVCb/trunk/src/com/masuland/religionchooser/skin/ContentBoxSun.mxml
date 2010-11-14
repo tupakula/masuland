@@ -3,9 +3,11 @@
 	xmlns:fx="http://ns.adobe.com/mxml/2009" 
 	xmlns:s="library://ns.adobe.com/flex/spark" 
 	xmlns:mx="library://ns.adobe.com/flex/mx" 
+	xmlns:skin="com.masuland.religionchooser.skin.*" 
 	xmlns:view="com.masuland.religionchooser.view.*"
 	currentState="{ cb.appViewState }"
-	horizontalAlign="center" verticalAlign="middle"
+	horizontalAlign="center" verticalAlign="middle" 
+	initialize="SwizManager.setUp(this);"
 	>
 	
 	<fx:Metadata>
@@ -14,7 +16,10 @@
 	
 	<fx:Script>
 		<![CDATA[
+			import com.masuland.religionchooser.view.ContentBoxCB;
 			import com.masuland.religionchooser.vo.LangVO;
+			
+			import org.swizframework.core.SwizManager;
 			
 			[Inject]
 			[Bindable]
@@ -29,7 +34,7 @@
 	
 	<s:RichText 
 		horizontalCenter="0" top="20"
-		color="#5D7693" fontFamily="Arial" 
+		color="#FF0000" fontFamily="Arial" 
 		fontSize="42" tabStops="S0 S50 S100 S150 S200" 
 		text="Religion Chooser" 
 		/>
@@ -99,7 +104,7 @@
 				
 				<s:itemRenderer>
 					<fx:Component>
-						<view:ChoiceRenderer />
+						<skin:ChoiceRenderer />
 					</fx:Component>
 				</s:itemRenderer>
 				
