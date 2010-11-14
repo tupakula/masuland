@@ -42,7 +42,7 @@ package com.masuland.religionchooser.control
 		/**
 		 * Initialises the application
 		 */ 
-		[Mediate(event="mx.events.FlexEvent.APPLICATION_COMPLETE")]
+		[Mediate(event="AppEvent.INIT_APP")]
 		public function initApp():void
 		{
 			dispatcher.dispatchEvent(new AppEvent(AppEvent.GET_SETTINGS));
@@ -210,8 +210,6 @@ package com.masuland.religionchooser.control
 		{
 			appModel.currentStyle = event.style;
 			
-			return;
-			
 			var myEvent:IEventDispatcher;
 			var myStyleManager:IStyleManager2 = StyleManager.getStyleManager(FlexGlobals.topLevelApplication.moduleFactory);
 			
@@ -235,6 +233,7 @@ package com.masuland.religionchooser.control
 		 */
 		private function onLoadStyleComplete(event:StyleEvent):void
 		{
+			trace('');
 //			appModel.isApplicationVisible = true;
 		}
 		
@@ -243,6 +242,7 @@ package com.masuland.religionchooser.control
 		 */
 		private function onLoadStyleError(event:StyleEvent):void
 		{
+			trace('');
 //			appModel.isApplicationVisible = true;
 		}
 	}
