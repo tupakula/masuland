@@ -78,7 +78,7 @@
 				width="100%"
 				>
 				
-				<mx:LinkButton 
+				<s:ToggleButton 
 					id="btn_moreSettings" 
 					right="0"
 					label.open="More Settings"

@@ -35,13 +35,5 @@ view|ContentBoxCB
 
 .moreButton
 {
-	padding-left: 0;
-	padding-right: 0;
-	color: #464646;
-	cornerRadius: 2;
-	fontWeight: normal;
-	textDecoration: underline;
-	paddingBottom: 0;
-	paddingTop: 0;
-	horizontalGap: 0;
+	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sun.MoreButton");
 }
