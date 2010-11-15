@@ -3,32 +3,32 @@
 @namespace mx "library://ns.adobe.com/flex/mx";
 @namespace view "com.masuland.religionchooser.view.*";
 
-view|AppViewCB
+/*view|AppViewCB
 {
-	skin-class: ClassReference("com.masuland.religionchooser.skin.AppView");
-}
+	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sun.AppView");
+}*/
 
 view|SettingsBoxCB
 {
-	skin-class: ClassReference("com.masuland.religionchooser.skin.SettingsBox");
+	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sun.SettingsBox");
 }
 
 view|ContentBoxCB
 {
-	skin-class: ClassReference("com.masuland.religionchooser.skin.ContentBoxSun");
+	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sun.ContentBox");
 }
 
 .settingsButton
 {
-	skin-class: ClassReference("com.masuland.religionchooser.skin.SettingsButton");
+	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sun.SettingsButton");
 }
 
 .choiceButton
 {
-	skin-class: ClassReference("com.masuland.religionchooser.skin.ChoiceButton");
+	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sun.ChoiceButton");
 }
 
 .restartButton
 {
-	skin-class: ClassReference("com.masuland.religionchooser.skin.RestartButton");
+	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sun.RestartButton");
 }

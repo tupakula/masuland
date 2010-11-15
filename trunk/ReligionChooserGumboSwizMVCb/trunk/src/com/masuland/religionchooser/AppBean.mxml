@@ -34,9 +34,5 @@
 	<view:ContentBoxCB
 		id="contentBoxCB"
 		/>
-	
-	<view:ChoiceRendererCB
-		id="choiceRendererCB"
-		/>
 
 </swiz:BeanProvider>

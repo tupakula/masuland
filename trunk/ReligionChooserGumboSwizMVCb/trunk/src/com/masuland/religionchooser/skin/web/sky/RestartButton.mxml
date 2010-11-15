@@ -4,7 +4,9 @@
 	xmlns:fx="http://ns.adobe.com/mxml/2009"
 	>
 	
-	<fx:Metadata>[HostComponent("spark.components.Button")]</fx:Metadata>
+	<fx:Metadata>
+		[HostComponent("spark.components.Button")]
+	</fx:Metadata>
 	
 	<s:states>
 		<s:State name="up"/>

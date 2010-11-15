@@ -3,12 +3,10 @@
 	xmlns:fx="http://ns.adobe.com/mxml/2009" 
 	xmlns:s="library://ns.adobe.com/flex/spark" 
 	xmlns:mx="library://ns.adobe.com/flex/mx" 
-	xmlns:skin="com.masuland.religionchooser.skin.*"
+	xmlns:skin="com.masuland.religionchooser.skin.*" 
 	xmlns:swiz="http://swiz.swizframework.org"
-	xmlns:view="com.masuland.religionchooser.view.*" 
 	width="100%" height="100%" 
 	viewSourceURL="srcview/index.html" 
-	initialize="application1_initializeHandler(event)" 
 	>
 	
 	<fx:Metadata>
@@ -19,21 +17,13 @@
 		<![CDATA[
 			import com.masuland.religionchooser.AppBean;
 			import com.masuland.religionchooser.event.AppEvent;
-			import com.masuland.religionchooser.skin.ContentBox;
-			import com.masuland.religionchooser.skin.ContentBoxSun;
+			import com.masuland.religionchooser.skin.web.sky.ContentBox;
+			import com.masuland.religionchooser.skin.web.sun.ContentBox;
 			
 			import mx.events.FlexEvent;
 			
-			ContentBoxSun;
-			ContentBox;
-			
 			[Dispatcher]
 			public var dispatcher:IEventDispatcher;
-
-			protected function application1_initializeHandler(event:FlexEvent):void
-			{
-				dispatcher.dispatchEvent(new AppEvent(AppEvent.INIT_APP));
-			}
 		]]>
 	</fx:Script>
 	

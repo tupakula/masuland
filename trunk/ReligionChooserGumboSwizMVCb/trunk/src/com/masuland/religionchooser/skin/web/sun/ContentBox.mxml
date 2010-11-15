@@ -3,11 +3,9 @@
 	xmlns:fx="http://ns.adobe.com/mxml/2009" 
 	xmlns:s="library://ns.adobe.com/flex/spark" 
 	xmlns:mx="library://ns.adobe.com/flex/mx" 
-	xmlns:skin="com.masuland.religionchooser.skin.*" 
-	xmlns:view="com.masuland.religionchooser.view.*"
-	currentState="{ cb.appViewState }"
+	xmlns:view="com.masuland.religionchooser.view.*" 
+	currentState="{ hostComponent.appViewState }"
 	horizontalAlign="center" verticalAlign="middle" 
-	initialize="SwizManager.setUp(this);"
 	>
 	
 	<fx:Metadata>
@@ -16,14 +14,7 @@
 	
 	<fx:Script>
 		<![CDATA[
-			import com.masuland.religionchooser.view.ContentBoxCB;
 			import com.masuland.religionchooser.vo.LangVO;
-			
-			import org.swizframework.core.SwizManager;
-			
-			[Inject]
-			[Bindable]
-			public var cb:ContentBoxCB;
 		]]>
 	</fx:Script>
 	
@@ -34,10 +25,28 @@
 	
 	<s:RichText 
 		horizontalCenter="0" top="20"
-		color="#FF0000" fontFamily="Arial" 
-		fontSize="42" tabStops="S0 S50 S100 S150 S200" 
+		color="#C46F41" 
+		fontFamily="Arial" 
+		fontSize="42" 
+		tabStops="S0 S50 S100 S150 S200" 
 		text="Religion Chooser" 
-		/>
+		>
+		<s:filters>
+			<s:DropShadowFilter 
+				alpha="0.5" 
+				angle="45.0" 
+				blurX="4.0" 
+				blurY="4.0" 
+				color="#000000"
+				distance="4.0" 
+				hideObject="false" 
+				inner="false" 
+				knockout="false"
+				quality="2" 
+				strength="1"
+				/>
+		</s:filters>
+	</s:RichText>
 	
 	<mx:Spacer
 		height="25"
@@ -45,32 +54,59 @@
 	
 	<s:RichText 
 		horizontalCenter="0" top="80" 
-		color="#5D7693" 
+		color="#C46F41" 
 		fontFamily="Arial" 
 		fontSize="32" 
-		text="Question" 
 		text.result="Result" 
 		text.question="Question"
-		/>
+		>
+		<s:filters>
+			<s:DropShadowFilter 
+				alpha="0.5" 
+				angle="45.0" 
+				blurX="4.0" 
+				blurY="4.0" 
+				color="#000000"
+				distance="4.0" 
+				hideObject="false" 
+				inner="false" 
+				knockout="false"
+				quality="2" 
+				strength="1"
+				/>
+		</s:filters>
+	</s:RichText>
 	
 	<s:Group
 		>
 
 		<s:Rect 
 			height="100%" width="100%"
-			alpha="0.52" 
+			alpha="0.5" 
 			radiusX="10"
 			>
+			<s:filters>
+				<s:GlowFilter 
+					alpha="1.0" 
+					blurX="6.0" 
+					blurY="6.0" 
+					color="#000000" 
+					inner="false"
+					knockout="false"
+					quality="2" 
+					strength="1"
+					/>
+			</s:filters>
 			<s:stroke>
 				<s:LinearGradientStroke caps="none" joints="miter" miterLimit="4" rotation="90" weight="1">
-					<s:GradientEntry alpha="1.0" color="#668AC4" ratio="0"/>
-					<s:GradientEntry alpha="1.0" color="#5D7693" ratio="1"/>
+					<s:GradientEntry alpha="1.0" color="#FF5800" ratio="0"/>
+					<s:GradientEntry alpha="1.0" color="#CE9365" ratio="1"/>
 				</s:LinearGradientStroke>
 			</s:stroke>
 			<s:fill>
 				<s:LinearGradient rotation="90">
-					<s:GradientEntry alpha="1.0" color="#C3CCDB" ratio="0"/>
-					<s:GradientEntry alpha="1.0" color="#548ACC" ratio="1"/>
+					<s:GradientEntry alpha="1.0" color="#FFCB00" ratio="0"/>
+					<s:GradientEntry alpha="1.0" color="#FF5800" ratio="1"/>
 				</s:LinearGradient>
 			</s:fill>
 		</s:Rect>
@@ -88,14 +124,14 @@
 
 				<s:RichText
 					horizontalCenter="0" verticalCenter="0"
-					text="{ LangVO( cb.selectedQuestion.langVO.getItemAt(cb.currentLayout.localeVO.getItemIndex(cb.currentLocale)) ).value }"
+					text="{ LangVO( hostComponent.selectedQuestion.langVO.getItemAt(hostComponent.currentLayout.localeVO.getItemIndex(hostComponent.currentLocale)) ).value }"
 					fontSize="32"
 					/>
 				
 			</s:Group>
 			
 			<s:DataGroup
-				dataProvider="{ cb.selectedQuestion.choiceVO }"
+				dataProvider="{ hostComponent.selectedQuestion.choiceVO }"
 				>
 				
 				<s:layout>
@@ -104,7 +140,7 @@
 				
 				<s:itemRenderer>
 					<fx:Component>
-						<skin:ChoiceRenderer />
+						<view:ChoiceRenderer />
 					</fx:Component>
 				</s:itemRenderer>
 				
@@ -120,7 +156,7 @@
 			>
 			
 			<s:RichText
-				text="{ LangVO( cb.selectedResult.langVO.getItemAt(cb.currentLayout.localeVO.getItemIndex(cb.currentLocale)) ).value }"
+				text="{ LangVO( hostComponent.selectedResult.langVO.getItemAt(hostComponent.currentLayout.localeVO.getItemIndex(hostComponent.currentLocale)) ).value }"
 				fontSize="32"
 				/>
 			
@@ -130,7 +166,7 @@
 			
 			<s:Button
 				label="Restart"
-				click="cb.restart()"
+				click="hostComponent.restart()"
 				styleName="restartButton"
 				/>
 			
