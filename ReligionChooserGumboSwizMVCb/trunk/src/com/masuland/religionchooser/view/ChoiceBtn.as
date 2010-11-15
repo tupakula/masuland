@@ -31,7 +31,11 @@ package com.masuland.religionchooser.view
 		public function ChoiceBtn()
 		{
 			SwizManager.setUp(this);
-			
+
+			buttonMode = true;
+			useHandCursor = true;
+			mouseChildren = false;
+
 			addEventListener(MouseEvent.CLICK, handleMouseClick);
 		}
 

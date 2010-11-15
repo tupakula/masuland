@@ -12,16 +12,16 @@
 		[HostComponent("com.masuland.religionchooser.view.ContentBoxCB")]
 	</fx:Metadata>
 	
+	<s:states>
+		<s:State name="question" />
+		<s:State name="result" />
+	</s:states>
+	
 	<fx:Script>
 		<![CDATA[
 			import com.masuland.religionchooser.vo.LangVO;
 		]]>
 	</fx:Script>
-	
-	<s:states>
-		<s:State name="question" />
-		<s:State name="result" />
-	</s:states>
 	
 	<s:RichText 
 		horizontalCenter="0" top="20"
@@ -29,7 +29,7 @@
 		fontFamily="Arial" 
 		fontSize="42" 
 		tabStops="S0 S50 S100 S150 S200" 
-		text="Religion Chooser" 
+		text="{ resourceManager.getString('resources', 'txt_title_app') }"
 		>
 		<s:filters>
 			<s:DropShadowFilter 
@@ -57,8 +57,8 @@
 		color="#C46F41" 
 		fontFamily="Arial" 
 		fontSize="32" 
-		text.result="Result" 
-		text.question="Question"
+		text.result="{ resourceManager.getString('resources', 'txt_title_result') }"
+		text.question="{ resourceManager.getString('resources', 'txt_title_question') }"
 		>
 		<s:filters>
 			<s:DropShadowFilter 
@@ -168,8 +168,9 @@
 			
 			<s:Button
 				label="Restart"
+				buttonMode="true" useHandCursor="true" mouseChildren="false"
+				styleName="actionButton"
 				click="hostComponent.restart()"
-				styleName="restartButton"
 				/>
 			
 		</s:VGroup>

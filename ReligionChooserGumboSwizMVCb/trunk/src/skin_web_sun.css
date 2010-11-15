@@ -23,14 +23,9 @@ view|ContentBoxCB
 	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sun.SettingsButton");
 }
 
-.choiceButton
+.actionButton
 {
-	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sun.ChoiceButton");
-}
-
-.restartButton
-{
-	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sun.RestartButton");
+	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sun.ActionButton");
 }
 
 .moreButton
