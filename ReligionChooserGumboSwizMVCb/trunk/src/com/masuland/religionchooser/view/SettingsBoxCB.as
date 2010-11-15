@@ -14,6 +14,7 @@ package com.masuland.religionchooser.view
 	
 	[SkinState("closed")]
 	[SkinState("open")]
+	[SkinState("openMore")]
 	public class SettingsBoxCB extends SkinnableComponent
 	{
 		[Dispatcher]
@@ -21,6 +22,9 @@ package com.masuland.religionchooser.view
 
 		[SkinPart(require="true")]
 		public var btn_settings:ToggleButton;
+
+		[SkinPart(require="false")]
+		public var btn_moreSettings:ToggleButton;
 
 		[Inject(source="appModel.currentLayout", bind="true")]
 		[Bindable]
@@ -35,20 +39,18 @@ package com.masuland.religionchooser.view
 		public var currentLocale:LocaleVO;
 		
 		[Bindable]
-		public var settingsButtonSelected:Boolean = false;
-/*		
-		public function SettingsBoxCB()
-		{
-		}
+		public var settingsButtonSelected:Boolean = true;
+
+		[Bindable]
+		public var moreSettingsButtonSelected:Boolean = false;
 		
-		protected function init_handler(event:FlexEvent):void
-		{
-			_allowCheckState = true;
-		}
-*/		
 		override protected function getCurrentSkinState():String
 		{
-			if (settingsButtonSelected)
+			if (settingsButtonSelected && moreSettingsButtonSelected)
+			{
+				return 'openMore';
+			}
+			else if (settingsButtonSelected)
 			{
 				return 'open';
 			}
@@ -68,7 +70,7 @@ package com.masuland.religionchooser.view
 			dispatcher.dispatchEvent(new LoadLocaleEvent(locale));
 		}
 		
-		public function button_clickHandler(event:MouseEvent):void
+		public function settingsButton_clickHandler(event:MouseEvent):void
 		{
 			if (settingsButtonSelected)
 			{
@@ -77,6 +79,20 @@ package com.masuland.religionchooser.view
 			else
 			{
 				settingsButtonSelected = true;
+			}
+			
+			invalidateSkinState();
+		}
+		
+		public function moreSettingsButton_clickHandler(event:MouseEvent):void
+		{
+			if (moreSettingsButtonSelected)
+			{
+				moreSettingsButtonSelected = false;
+			}
+			else
+			{
+				moreSettingsButtonSelected = true;
 			}
 			
 			invalidateSkinState();
