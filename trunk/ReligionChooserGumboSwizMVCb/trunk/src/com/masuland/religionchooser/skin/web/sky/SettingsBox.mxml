@@ -13,7 +13,6 @@
 		<![CDATA[
 			import com.masuland.religionchooser.vo.LocaleVO;
 			import com.masuland.religionchooser.vo.StyleVO;
-			
 		]]>
 	</fx:Script>
 
@@ -25,7 +24,9 @@
 	<s:ToggleButton 
 		id="btn_settings" 
 		x="0" y="8" 
+		selected="{ hostComponent.settingsButtonSelected }"
 		styleName="settingsButton"
+		click="hostComponent.button_clickHandler(event)"
 		/>
 	
 	<s:Group
