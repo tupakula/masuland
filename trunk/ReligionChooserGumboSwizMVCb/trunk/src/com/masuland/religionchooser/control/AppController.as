@@ -233,8 +233,6 @@ package com.masuland.religionchooser.control
 		 */
 		private function onLoadStyleComplete(event:StyleEvent):void
 		{
-			trace('');
-//			appModel.isApplicationVisible = true;
 		}
 		
 		/**
@@ -242,8 +240,6 @@ package com.masuland.religionchooser.control
 		 */
 		private function onLoadStyleError(event:StyleEvent):void
 		{
-			trace('');
-//			appModel.isApplicationVisible = true;
 		}
 	}
 }

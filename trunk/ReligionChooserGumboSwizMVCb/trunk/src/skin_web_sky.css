@@ -23,14 +23,9 @@ view|ContentBoxCB
 	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sky.SettingsButton");
 }
 
-.choiceButton
+.actionButton
 {
-	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sky.ChoiceButton");
-}
-
-.restartButton
-{
-	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sky.RestartButton");
+	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sky.ActionButton");
 }
 
 .moreButton

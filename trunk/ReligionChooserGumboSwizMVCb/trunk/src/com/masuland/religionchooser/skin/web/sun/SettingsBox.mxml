@@ -22,10 +22,38 @@
 		<s:State name="openMore"/>
 	</s:states>
 	
+	<s:transitions>
+		<s:Transition fromState="closed" toState="open">
+			<s:Parallel>
+				<s:Parallel target="{ btn_settings }">
+					<s:Move duration="250"/>
+				</s:Parallel>
+				<s:Parallel target="{ bx_settings }">
+					<s:Resize duration="250" />
+					<s:Fade duration="200" startDelay="50"/>
+					<s:Move duration="250"/>
+				</s:Parallel>
+			</s:Parallel>
+		</s:Transition>
+		<s:Transition fromState="open" toState="closed">
+			<s:Parallel>
+				<s:Parallel target="{ btn_settings }">
+					<s:Move duration="250"/>
+				</s:Parallel>
+				<s:Parallel target="{ bx_settings }">
+					<s:Resize duration="250" />
+					<s:Fade duration="150"/>
+					<s:Move duration="250"/>
+				</s:Parallel>
+			</s:Parallel>
+		</s:Transition>
+	</s:transitions>
+	
 	<s:ToggleButton 
 		id="btn_settings" 
 		x="0" y="8" 
 		selected="{ hostComponent.settingsButtonSelected }"
+		buttonMode="true" useHandCursor="true" mouseChildren="false"
 		styleName="settingsButton"
 		click="hostComponent.settingsButton_clickHandler(event)"
 		/>
@@ -83,6 +111,7 @@
 					right="0"
 					label.open="More Settings"
 					label.openMore="Less Settings"
+					buttonMode="true" useHandCursor="true" mouseChildren="false"
 					styleName="moreButton"
 					selected="{ hostComponent.moreSettingsButtonSelected }"
 					click="hostComponent.moreSettingsButton_clickHandler(event)"
@@ -116,32 +145,5 @@
 		</s:VGroup>
 		
 	</s:Group>
-	
-	<s:transitions>
-		<s:Transition fromState="closed" toState="open">
-			<s:Parallel>
-				<s:Parallel target="{ btn_settings }">
-					<s:Move duration="250"/>
-				</s:Parallel>
-				<s:Parallel target="{ bx_settings }">
-					<s:Resize duration="250" />
-					<s:Fade duration="200" startDelay="50"/>
-					<s:Move duration="250"/>
-				</s:Parallel>
-			</s:Parallel>
-		</s:Transition>
-		<s:Transition fromState="open" toState="closed">
-			<s:Parallel>
-				<s:Parallel target="{ btn_settings }">
-					<s:Move duration="250"/>
-				</s:Parallel>
-				<s:Parallel target="{ bx_settings }">
-					<s:Resize duration="250" />
-					<s:Fade duration="150"/>
-					<s:Move duration="250"/>
-				</s:Parallel>
-			</s:Parallel>
-		</s:Transition>
-	</s:transitions>
 	
 </s:Group>

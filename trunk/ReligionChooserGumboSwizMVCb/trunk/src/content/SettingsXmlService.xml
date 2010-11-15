@@ -18,12 +18,12 @@
 				path="skin_web_sky.swf"
 				/>
 			<localeVO
-				name="Deutsch"
-				code="de_DE"
-				/>
-			<localeVO
 				name="English"
 				code="en_US"
+				/>
+			<localeVO
+				name="Deutsch"
+				code="de_DE"
 				/>
 		</layoutVO>
 		<layoutVO
@@ -41,12 +41,12 @@
 				path="skin_web_sky.swf"
 				/>
 			<localeVO
-				name="Deutsch"
-				code="de_DE"
-				/>
-			<localeVO
 				name="English"
 				code="en_US"
+				/>
+			<localeVO
+				name="Deutsch"
+				code="de_DE"
 				/>
 		</layoutVO>
 	</settingsVO>
