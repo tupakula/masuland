@@ -109,8 +109,8 @@
 				<s:ToggleButton 
 					id="btn_moreSettings" 
 					right="0"
-					label.open="More Settings"
-					label.openMore="Less Settings"
+					label.open="{ resourceManager.getString('resources', 'cta_more_settings') }"
+					label.openMore="{ resourceManager.getString('resources', 'cta_less_settings') }"
 					buttonMode="true" useHandCursor="true" mouseChildren="false"
 					styleName="moreButton"
 					selected="{ hostComponent.moreSettingsButtonSelected }"
