@@ -19,6 +19,7 @@
 	<s:states>
 		<s:State name="closed"/>
 		<s:State name="open"/>
+		<s:State name="openMore"/>
 	</s:states>
 	
 	<s:ToggleButton 
@@ -26,13 +27,13 @@
 		x="0" y="8" 
 		selected="{ hostComponent.settingsButtonSelected }"
 		styleName="settingsButton"
-		click="hostComponent.button_clickHandler(event)"
+		click="hostComponent.settingsButton_clickHandler(event)"
 		/>
 	
 	<s:Group
 		id="bx_settings"
 		x="27.5" y="0.5"
-		includeIn="open" 
+		includeIn="open, openMore" 
 		>
 		
 		<s:Rect 
@@ -58,26 +59,6 @@
 			>
 			
 			<s:RichText
-				text="{ resourceManager.getString('resources', 'txt_change_style') }"
-				visible="{ hostComponent.currentLayout.styleVO.length > 0 }"
-				includeInLayout="{ hostComponent.currentLayout.styleVO.length > 0 }"
-				/>
-			
-			<s:DropDownList
-				id="ddl_styleVO"
-				dataProvider="{ hostComponent.currentLayout.styleVO }"
-				selectedItem="{ hostComponent.currentStyle }"
-				visible="{ hostComponent.currentLayout.styleVO.length > 0 }"
-				includeInLayout="{ hostComponent.currentLayout.styleVO.length > 0 }"
-				labelField="name"
-				change="hostComponent.changeStyle(ddl_styleVO.selectedItem as StyleVO)"
-				/>
-			
-			<mx:Spacer
-				height="5"
-				/>
-			
-			<s:RichText
 				text="{ resourceManager.getString('resources', 'txt_change_locale') }"
 				visible="{ hostComponent.currentLayout.localeVO.length > 0 }"
 				includeInLayout="{ hostComponent.currentLayout.localeVO.length > 0 }"
@@ -91,6 +72,45 @@
 				includeInLayout="{ hostComponent.currentLayout.localeVO.length > 0 }"
 				labelField="name"
 				change="hostComponent.changeLocale(ddl_locale.selectedItem as LocaleVO)"
+				/>
+			
+			<s:Group
+				width="100%"
+				>
+				
+				<mx:LinkButton 
+					id="btn_moreSettings" 
+					right="0"
+					label.open="More Settings"
+					label.openMore="Less Settings"
+					styleName="moreButton"
+					selected="{ hostComponent.moreSettingsButtonSelected }"
+					click="hostComponent.moreSettingsButton_clickHandler(event)"
+					/>
+				
+			</s:Group>
+			
+			<mx:Spacer
+				height="5"
+				includeIn="openMore"
+				/>
+			
+			<s:RichText
+				text="{ resourceManager.getString('resources', 'txt_change_style') }"
+				includeIn="openMore"
+				visible="{ hostComponent.currentLayout.styleVO.length > 0 }"
+				includeInLayout="{ hostComponent.currentLayout.styleVO.length > 0 }"
+				/>
+			
+			<s:DropDownList
+				id="ddl_styleVO"
+				dataProvider="{ hostComponent.currentLayout.styleVO }"
+				selectedItem="{ hostComponent.currentStyle }"
+				includeIn="openMore"
+				visible="{ hostComponent.currentLayout.styleVO.length > 0 }"
+				includeInLayout="{ hostComponent.currentLayout.styleVO.length > 0 }"
+				labelField="name"
+				change="hostComponent.changeStyle(ddl_styleVO.selectedItem as StyleVO)"
 				/>
 			
 		</s:VGroup>
