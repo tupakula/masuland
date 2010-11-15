@@ -5,6 +5,7 @@
 	xmlns:mx="library://ns.adobe.com/flex/mx" 
 	xmlns:view="com.masuland.religionchooser.view.*"
 	width="100%" height="100%" 
+	initialize="group1_initializeHandler(event)"
 	>
 	
 	<fx:Metadata>
@@ -16,9 +17,21 @@
 			import com.masuland.religionchooser.view.AppViewCB;
 			import com.masuland.religionchooser.vo.LocaleVO;
 			
+			import mx.events.FlexEvent;
+			
+			import org.swizframework.core.SwizManager;
+			
 			[Inject]
 			[Bindable]
 			public var cb:AppViewCB;
+			
+			protected function group1_initializeHandler(event:FlexEvent):void
+			{
+				SwizManager.setUp(this);
+				
+				percentWidth = 100;
+				percentHeight = 100;
+			}
 		]]>
 	</fx:Script>
 	

@@ -7,13 +7,18 @@ package com.masuland.religionchooser.view
 	import com.masuland.religionchooser.vo.StyleVO;
 	
 	import flash.events.IEventDispatcher;
+	import flash.events.MouseEvent;
 	
+	import spark.components.ToggleButton;
 	import spark.components.supportClasses.SkinnableComponent;
 	
 	public class SettingsBoxCB extends SkinnableComponent
 	{
 		[Dispatcher]
 		public var dispatcher:IEventDispatcher;
+		
+		[SkinPart(require="true")]
+		public var btn_settings:ToggleButton;
 
 		[Inject(source="appModel.currentLayout", bind="true")]
 		[Bindable]
@@ -27,6 +32,12 @@ package com.masuland.religionchooser.view
 		[Bindable]
 		public var currentLocale:LocaleVO;
 		
+		public function SettingsBoxCB()
+		{
+			btn_settings = new ToggleButton();
+			btn_settings.addEventListener(MouseEvent.CLICK, button_clickHandler);
+		}
+		
 		public function changeStyle(style:StyleVO):void
 		{
 			dispatcher.dispatchEvent(new LoadStyleEvent(style));
@@ -35,6 +46,23 @@ package com.masuland.religionchooser.view
 		public function changeLocale(locale:LocaleVO):void
 		{
 			dispatcher.dispatchEvent(new LoadLocaleEvent(locale));
+		}
+		
+		protected function button_clickHandler(event:MouseEvent):void
+		{				
+			const state:String = currentState;
+			
+			if (state == 'open') 
+			{
+				currentState = 'closed';
+				btn_settings.selected = false;
+			}
+			
+			if (state == 'closed') 
+			{
+				currentState = 'open';
+				btn_settings.selected = true;
+			}
 		}
 	}
 }

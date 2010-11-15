@@ -42,7 +42,7 @@ package com.masuland.religionchooser.control
 		/**
 		 * Initialises the application
 		 */ 
-		[Mediate(event="AppEvent.INIT_APP")]
+		[Mediate(event="mx.events.FlexEvent.APPLICATION_COMPLETE")]
 		public function initApp():void
 		{
 			dispatcher.dispatchEvent(new AppEvent(AppEvent.GET_SETTINGS));
