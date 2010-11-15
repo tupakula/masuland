@@ -37,7 +37,7 @@
 	<s:RichText 
 		id="txt_label"
 		horizontalCenter="-2" verticalCenter="0"
-		color="#2B4381" 
+		color="#464646" 
 		fontFamily="Times New Roman" 
 		fontSize="12" 
 		rotation.upAndSelected="180" 

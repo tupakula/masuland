@@ -12,11 +12,13 @@ package com.masuland.religionchooser.view
 	import spark.components.ToggleButton;
 	import spark.components.supportClasses.SkinnableComponent;
 	
+	[SkinState("closed")]
+	[SkinState("open")]
 	public class SettingsBoxCB extends SkinnableComponent
 	{
 		[Dispatcher]
 		public var dispatcher:IEventDispatcher;
-		
+
 		[SkinPart(require="true")]
 		public var btn_settings:ToggleButton;
 
@@ -32,10 +34,28 @@ package com.masuland.religionchooser.view
 		[Bindable]
 		public var currentLocale:LocaleVO;
 		
+		[Bindable]
+		public var settingsButtonSelected:Boolean = false;
+/*		
 		public function SettingsBoxCB()
 		{
-			btn_settings = new ToggleButton();
-			btn_settings.addEventListener(MouseEvent.CLICK, button_clickHandler);
+		}
+		
+		protected function init_handler(event:FlexEvent):void
+		{
+			_allowCheckState = true;
+		}
+*/		
+		override protected function getCurrentSkinState():String
+		{
+			if (settingsButtonSelected)
+			{
+				return 'open';
+			}
+			else
+			{
+				return 'closed';
+			}
 		}
 		
 		public function changeStyle(style:StyleVO):void
@@ -48,21 +68,18 @@ package com.masuland.religionchooser.view
 			dispatcher.dispatchEvent(new LoadLocaleEvent(locale));
 		}
 		
-		protected function button_clickHandler(event:MouseEvent):void
-		{				
-			const state:String = currentState;
-			
-			if (state == 'open') 
+		public function button_clickHandler(event:MouseEvent):void
+		{
+			if (settingsButtonSelected)
 			{
-				currentState = 'closed';
-				btn_settings.selected = false;
+				settingsButtonSelected = false;
+			}
+			else
+			{
+				settingsButtonSelected = true;
 			}
 			
-			if (state == 'closed') 
-			{
-				currentState = 'open';
-				btn_settings.selected = true;
-			}
+			invalidateSkinState();
 		}
 	}
 }

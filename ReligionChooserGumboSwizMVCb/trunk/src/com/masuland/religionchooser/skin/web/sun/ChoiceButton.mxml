@@ -37,7 +37,7 @@
 		id="labelDisplay"
 		paddingLeft="20" paddingRight="20"
 		paddingTop="15" paddingBottom="10"
-		color="#2B4381" fontFamily="Arial" 
+		color="#464646" fontFamily="Arial" 
 		fontSize="23" tabStops="S0 S50" 
 		/>
 	
