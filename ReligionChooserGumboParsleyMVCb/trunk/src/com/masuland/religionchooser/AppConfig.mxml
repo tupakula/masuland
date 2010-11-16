@@ -2,7 +2,8 @@
 <mx:Object 
 	xmlns:mx="http://www.adobe.com/2006/mxml" 
 	xmlns:model="com.masuland.religionchooser.model.*" 
-	xmlns:control="com.masuland.religionchooser.control.*" xmlns:view="com.masuland.religionchooser.view.*" 
+	xmlns:control="com.masuland.religionchooser.control.*" 
+	xmlns:view="com.masuland.religionchooser.view.*" 
 	>
 	
 	<!-- DELEGATE -->	
@@ -31,10 +32,6 @@
 	
 	<view:ContentBoxCB
 		id="contentBoxCB"
-		/>
-	
-	<view:ChoiceRendererCB
-		id="choiceRendererCB"
 		/>
 	
 </mx:Object>
