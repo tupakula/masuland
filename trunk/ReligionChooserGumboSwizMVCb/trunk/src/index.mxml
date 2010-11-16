@@ -5,6 +5,7 @@
 	xmlns:mx="library://ns.adobe.com/flex/mx" 
 	xmlns:skin="com.masuland.religionchooser.skin.*" 
 	xmlns:swiz="http://swiz.swizframework.org"
+	pageTitle="Religion Chooser"
 	width="100%" height="100%" 
 	viewSourceURL="srcview/index.html" 
 	>
