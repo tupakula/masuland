@@ -38,11 +38,31 @@
 	<s:HGroup
 		left="10" right="10" top="10" bottom="10"
 		>
-
-		<view:ContentBoxCB 
-			id="bx_content"
+		
+		<s:VGroup
 			width="100%" height="100%"
-			/>
+			>
+			
+			<s:HGroup
+				verticalAlign="middle"
+				>
+				
+				<mx:Image
+					source="content/sun_icon.png"
+					/>
+				
+				<s:Label
+					text="{ resourceManager.getString('resources', 'txt_app_description') }"
+					/>
+				
+			</s:HGroup>
+			
+			<view:ContentBoxCB 
+				id="bx_content"
+				width="100%" height="100%"
+				/>
+			
+		</s:VGroup>
 	
 		<view:SettingsBoxCB
 			id="bx_settings"
