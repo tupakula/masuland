@@ -6,6 +6,7 @@
 	xmlns:spicefactory="http://www.spicefactory.org/parsley" 
 	xmlns:skin="com.masuland.religionchooser.skin.*"
 	width="100%" height="100%" 
+	pageTitle="Religion Chooser"
 	applicationComplete="this_applicationCompleteHandler(event)" 
 	viewSourceURL="srcview/index.html" 
 	>
