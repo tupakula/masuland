@@ -1,0 +1,34 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/mx";
+@namespace view "com.masuland.religionchooser.view.*";
+
+/*view|AppViewCB
+{
+	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sky.AppView");
+}*/
+
+view|SettingsBoxCB
+{
+	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sky.SettingsBox");
+}
+
+view|ContentBoxCB
+{
+	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sky.ContentBox");
+}
+
+.settingsButton
+{
+	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sky.SettingsButton");
+}
+
+.actionButton
+{
+	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sky.ActionButton");
+}
+
+.moreButton
+{
+	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sky.MoreButton");
+}

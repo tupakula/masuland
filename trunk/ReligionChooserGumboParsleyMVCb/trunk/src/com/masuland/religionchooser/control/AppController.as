@@ -45,16 +45,16 @@ package com.masuland.religionchooser.control
 		[MessageHandler(selector="AppEvent.INIT_APP")]
 		public function initApp(event:AppEvent):void
 		{
-			getSettings();
-			getContent();
+			dispatcher(new AppEvent(AppEvent.GET_SETTINGS));
+			dispatcher(new AppEvent(AppEvent.GET_CONTENT));
 		}
 
-		[MessageHandler(selector="AppEvent.INIT_APP")]
+		[MessageHandler(selector="AppEvent.GET_SETTINGS")]
 		public function getSettings():void
 		{
 			var service:SettingsXmlService = new SettingsXmlService();
 			service.addEventListener(ResultEvent.RESULT, getSettingsResult);
-			service.addEventListener(FaultEvent.FAULT, getSettingsFault)
+			service.addEventListener(FaultEvent.FAULT, getSettingsFault);
 			service.getData();
 		}
 		
@@ -75,11 +75,12 @@ package com.masuland.religionchooser.control
 			Alert.show('getSettingsFault(): ' + event.fault.faultString);
 		}
 
+		[MessageHandler(selector="AppEvent.GET_CONTENT")]
 		public function getContent():void
 		{
 			var service:ContentXmlService = new ContentXmlService();
 			service.addEventListener(ResultEvent.RESULT, getContentResult);
-			service.addEventListener(FaultEvent.FAULT, getContentFault)
+			service.addEventListener(FaultEvent.FAULT, getContentFault);
 			service.getData();
 		}
 
@@ -209,8 +210,6 @@ package com.masuland.religionchooser.control
 		{
 			appModel.currentStyle = event.style;
 			
-			return;
-			
 			var myEvent:IEventDispatcher;
 			var myStyleManager:IStyleManager2 = StyleManager.getStyleManager(FlexGlobals.topLevelApplication.moduleFactory);
 			
@@ -234,6 +233,8 @@ package com.masuland.religionchooser.control
 		 */
 		private function onLoadStyleComplete(event:StyleEvent):void
 		{
+			trace('');
+			
 //			appModel.isApplicationVisible = true;
 		}
 		
@@ -242,6 +243,8 @@ package com.masuland.religionchooser.control
 		 */
 		private function onLoadStyleError(event:StyleEvent):void
 		{
+			trace('');
+			
 //			appModel.isApplicationVisible = true;
 		}
 	}
