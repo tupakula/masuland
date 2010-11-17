@@ -3,7 +3,7 @@
 	xmlns:fx="http://ns.adobe.com/mxml/2009" 
 	xmlns:s="library://ns.adobe.com/flex/spark" 
 	xmlns:mx="library://ns.adobe.com/flex/mx" 
-	xmlns:ui="com.masuland.religionchooser.ui.*" 
+	xmlns:ui="com.masuland.religionchooser.view.ui.*" 
 	xmlns:swiz="http://swiz.swizframework.org"
 	pageTitle="Religion Chooser"
 	width="100%" height="100%" 
@@ -18,8 +18,8 @@
 		<![CDATA[
 			import com.masuland.religionchooser.AppBean;
 			import com.masuland.religionchooser.event.AppEvent;
-			import com.masuland.religionchooser.ui.web.sky.ContentBox;
-			import com.masuland.religionchooser.ui.web.sun.ContentBox;
+			import com.masuland.religionchooser.view.ui.web.sky.ContentBox;
+			import com.masuland.religionchooser.view.ui.web.sun.ContentBox;
 			
 			import mx.events.FlexEvent;
 			
