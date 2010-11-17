@@ -5,11 +5,11 @@
 	xmlns:mx="library://ns.adobe.com/flex/mx" 
 	xmlns:view="com.masuland.religionchooser.view.*" 
 	currentState="{ hostComponent.appViewState }"
-	horizontalAlign="center" verticalAlign="middle" 
+	horizontalAlign="center" verticalAlign="middle" xmlns:component="com.masuland.religionchooser.view.component.*" 
 	>
 	
 	<fx:Metadata>
-		[HostComponent("com.masuland.religionchooser.view.ContentBoxCB")]
+		[HostComponent("com.masuland.religionchooser.view.component.ContentBoxCB")]
 	</fx:Metadata>
 	
 	<s:states>
@@ -25,7 +25,7 @@
 	
 	<s:RichText 
 		horizontalCenter="0" top="20"
-		color="#5D7693" 
+		color="#C46F41" 
 		fontFamily="Arial" 
 		fontSize="42" 
 		tabStops="S0 S50 S100 S150 S200" 
@@ -54,7 +54,7 @@
 	
 	<s:RichText 
 		horizontalCenter="0" top="80" 
-		color="#5D7693" 
+		color="#C46F41" 
 		fontFamily="Arial" 
 		fontSize="32" 
 		text.result="{ resourceManager.getString('resources', 'txt_title_result') }"
@@ -99,14 +99,14 @@
 			</s:filters>
 			<s:stroke>
 				<s:LinearGradientStroke caps="none" joints="miter" miterLimit="4" rotation="90" weight="1">
-					<s:GradientEntry alpha="1.0" color="#668AC4" ratio="0"/>
-					<s:GradientEntry alpha="1.0" color="#5D7693" ratio="1"/>
+					<s:GradientEntry alpha="1.0" color="#FF5800" ratio="0"/>
+					<s:GradientEntry alpha="1.0" color="#CE9365" ratio="1"/>
 				</s:LinearGradientStroke>
 			</s:stroke>
 			<s:fill>
 				<s:LinearGradient rotation="90">
-					<s:GradientEntry alpha="1.0" color="#C3CCDB" ratio="0"/>
-					<s:GradientEntry alpha="1.0" color="#548ACC" ratio="1"/>
+					<s:GradientEntry alpha="1.0" color="#FFCB00" ratio="0"/>
+					<s:GradientEntry alpha="1.0" color="#FF5800" ratio="1"/>
 				</s:LinearGradient>
 			</s:fill>
 		</s:Rect>
@@ -124,8 +124,8 @@
 
 				<s:RichText
 					horizontalCenter="0" verticalCenter="0"
-					text="{ LangVO( hostComponent.selectedQuestion.langVO.getItemAt(hostComponent.currentLayout.localeVO.getItemIndex(hostComponent.currentLocale)) ).value }"
 					color="#464646"
+					text="{ LangVO( hostComponent.selectedQuestion.langVO.getItemAt(hostComponent.currentLayout.localeVO.getItemIndex(hostComponent.currentLocale)) ).value }"
 					fontSize="32"
 					/>
 				
@@ -141,7 +141,7 @@
 				
 				<s:itemRenderer>
 					<fx:Component>
-						<view:ChoiceRenderer />
+						<component:ChoiceRenderer />
 					</fx:Component>
 				</s:itemRenderer>
 				
