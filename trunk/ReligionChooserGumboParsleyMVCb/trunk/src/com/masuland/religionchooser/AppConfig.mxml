@@ -3,7 +3,7 @@
 	xmlns:mx="http://www.adobe.com/2006/mxml" 
 	xmlns:model="com.masuland.religionchooser.model.*" 
 	xmlns:control="com.masuland.religionchooser.control.*" 
-	xmlns:view="com.masuland.religionchooser.view.*" xmlns:component="com.masuland.religionchooser.view.component.*" 
+	xmlns:component="com.masuland.religionchooser.view.component.*" 
 	>
 	
 	<!-- DELEGATE -->	
