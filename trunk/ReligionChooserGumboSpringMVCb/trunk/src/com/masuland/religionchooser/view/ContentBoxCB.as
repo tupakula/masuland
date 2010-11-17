@@ -10,11 +10,10 @@ package com.masuland.religionchooser.view
 	
 	import spark.components.supportClasses.SkinnableComponent;
 	
+	[SkinState("question")]
+	[SkinState("result")]
 	public class ContentBoxCB extends SkinnableComponent
 	{
-		[SkinState("question")]
-		[SkinState("result")]
-
 		[Autowired(name='appModel', property='currentLayout')]
 		[Bindable]
 		public var currentLayout:LayoutVO;

@@ -6,7 +6,7 @@ package com.masuland.religionchooser.view
 	{
 		[SkinPart(require="true")]
 		public var bx_content:ContentBoxCB;
-
+		
 		[SkinPart(require="true")]
 		public var bx_settings:SettingsBoxCB;
 	}

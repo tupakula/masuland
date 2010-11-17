@@ -4,7 +4,9 @@
 	xmlns:fx="http://ns.adobe.com/mxml/2009"
 	>
 	
-	<fx:Metadata>[HostComponent("spark.components.Button")]</fx:Metadata>
+	<fx:Metadata>
+		[HostComponent("spark.components.Button")]
+	</fx:Metadata>
 	
 	<s:states>
 		<s:State name="up"/>
@@ -12,21 +14,30 @@
 		<s:State name="down"/>
 		<s:State name="disabled"/>
 	</s:states>
-	
+<!--	
+	<s:transitions>
+		<s:Transition fromState="*" toState="*">
+			<s:Resize
+				targets="{[ this ]}"
+				duration="150"
+				/>
+		</s:Transition>
+	</s:transitions>
+-->	
 	<s:Rect 
 		height="100%" width="100%"
 		radiusX="5"
 		>
 		<s:stroke>
 			<s:LinearGradientStroke caps="none" joints="miter" miterLimit="4" rotation="90" weight="1">
-				<s:GradientEntry alpha="1.0" color="#81A6DD" ratio="0"/>
-				<s:GradientEntry alpha="1.0" color="#7A9DC4" ratio="1"/>
+				<s:GradientEntry alpha="1.0" color="#FF5800" ratio="0"/>
+				<s:GradientEntry alpha="1.0" color="#C48F8F" ratio="1"/>
 			</s:LinearGradientStroke>
 		</s:stroke>
 		<s:fill>
 			<s:LinearGradient rotation="90">
-				<s:GradientEntry alpha="1.0" color="#A9BBD8" ratio="0"/>
-				<s:GradientEntry alpha="1.0" color="#6291DD" ratio="1"/>
+				<s:GradientEntry alpha="1.0" color="#FFCB00" ratio="0"/>
+				<s:GradientEntry alpha="1.0" color="#FF5800" ratio="1"/>
 			</s:LinearGradient>
 		</s:fill>
 	</s:Rect>
@@ -35,7 +46,7 @@
 		id="labelDisplay"
 		paddingLeft="20" paddingRight="20"
 		paddingTop="15" paddingBottom="10"
-		color="#2B4381" fontFamily="Arial" 
+		color="#464646" fontFamily="Arial" 
 		fontSize="23" tabStops="S0 S50" 
 		/>
 	
