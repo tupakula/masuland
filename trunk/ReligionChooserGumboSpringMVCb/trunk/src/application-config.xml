@@ -60,22 +60,22 @@
 	
 	<object 
 		id="appViewCB" 
-		class="com.masuland.religionchooser.view.AppViewCB"
+		class="com.masuland.religionchooser.view.component.AppViewCB"
 		/>
 
 	<object
 		id="settingsBoxCB"
-		class="com.masuland.religionchooser.view.SettingsBoxCB"
+		class="com.masuland.religionchooser.view.component.SettingsBoxCB"
 		/>
 	
 	<object
 		id="contentBoxCB"
-		class="com.masuland.religionchooser.view.ContentBoxCB"
+		class="com.masuland.religionchooser.view.component.ContentBoxCB"
 		/>
 	
 	<object
 		id="choiceBtn"
-		class="com.masuland.religionchooser.view.ChoiceBtn"
+		class="com.masuland.religionchooser.view.component.ChoiceBtn"
 		/>
 	
 </objects>
