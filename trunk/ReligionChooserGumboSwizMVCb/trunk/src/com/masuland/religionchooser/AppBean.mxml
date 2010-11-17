@@ -4,7 +4,7 @@
 	xmlns:swiz="http://swiz.swizframework.org" 
 	xmlns:control="com.masuland.religionchooser.control.*" 
 	xmlns:model="com.masuland.religionchooser.model.*" 
-	xmlns:view="com.masuland.religionchooser.view.*"
+	xmlns:component="com.masuland.religionchooser.view.component.*"
 	>
 	
 	<!-- DELEGATE -->	
@@ -23,15 +23,15 @@
 	
 	<!-- CODE BEHIND -->	
 	
-	<view:AppViewCB
+	<component:AppViewCB
 		id="appViewCB"
 		/>
 	
-	<view:SettingsBoxCB
+	<component:SettingsBoxCB
 		id="settingsBoxCB"
 		/>
 	
-	<view:ContentBoxCB
+	<component:ContentBoxCB
 		id="contentBoxCB"
 		/>
 

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:VGroup 
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:mx="library://ns.adobe.com/flex/mx" 
+	xmlns:view="com.masuland.religionchooser.view.*" 
+	currentState="{ hostComponent.appViewState }"
+	horizontalAlign="center" verticalAlign="middle" xmlns:component="com.masuland.religionchooser.view.component.*" 
+	>
+	
+	<fx:Metadata>
+		[HostComponent("com.masuland.religionchooser.view.component.ContentBoxCB")]
+	</fx:Metadata>
+	
+	<s:states>
+		<s:State name="question" />
+		<s:State name="result" />
+	</s:states>
+	
+	<fx:Script>
+		<![CDATA[
+			import com.masuland.religionchooser.vo.LangVO;
+		]]>
+	</fx:Script>
+	
+	<s:RichText 
+		horizontalCenter="0" top="20"
+		color="#5D7693" 
+		fontFamily="Arial" 
+		fontSize="42" 
+		tabStops="S0 S50 S100 S150 S200" 
+		text="{ resourceManager.getString('resources', 'txt_title_app') }"
+		>
+		<s:filters>
+			<s:DropShadowFilter 
+				alpha="0.5" 
+				angle="45.0" 
+				blurX="4.0" 
+				blurY="4.0" 
+				color="#000000"
+				distance="4.0" 
+				hideObject="false" 
+				inner="false" 
+				knockout="false"
+				quality="2" 
+				strength="1"
+				/>
+		</s:filters>
+	</s:RichText>
+	
+	<mx:Spacer
+		height="25"
+		/>
+	
+	<s:RichText 
+		horizontalCenter="0" top="80" 
+		color="#5D7693" 
+		fontFamily="Arial" 
+		fontSize="32" 
+		text.result="{ resourceManager.getString('resources', 'txt_title_result') }"
+		text.question="{ resourceManager.getString('resources', 'txt_title_question') }"
+		>
+		<s:filters>
+			<s:DropShadowFilter 
+				alpha="0.5" 
+				angle="45.0" 
+				blurX="4.0" 
+				blurY="4.0" 
+				color="#000000"
+				distance="4.0" 
+				hideObject="false" 
+				inner="false" 
+				knockout="false"
+				quality="2" 
+				strength="1"
+				/>
+		</s:filters>
+	</s:RichText>
+	
+	<s:Group
+		>
+
+		<s:Rect 
+			height="100%" width="100%"
+			alpha="0.5" 
+			radiusX="10"
+			>
+			<s:filters>
+				<s:GlowFilter 
+					alpha="1.0" 
+					blurX="6.0" 
+					blurY="6.0" 
+					color="#000000" 
+					inner="false"
+					knockout="false"
+					quality="2" 
+					strength="1"
+					/>
+			</s:filters>
+			<s:stroke>
+				<s:LinearGradientStroke caps="none" joints="miter" miterLimit="4" rotation="90" weight="1">
+					<s:GradientEntry alpha="1.0" color="#668AC4" ratio="0"/>
+					<s:GradientEntry alpha="1.0" color="#5D7693" ratio="1"/>
+				</s:LinearGradientStroke>
+			</s:stroke>
+			<s:fill>
+				<s:LinearGradient rotation="90">
+					<s:GradientEntry alpha="1.0" color="#C3CCDB" ratio="0"/>
+					<s:GradientEntry alpha="1.0" color="#548ACC" ratio="1"/>
+				</s:LinearGradient>
+			</s:fill>
+		</s:Rect>
+		
+		<s:VGroup
+			left="25" right="25"
+			top="25" bottom="25"
+			horizontalAlign="center"
+			includeIn="question"
+			>
+			
+			<s:Group
+				width="100%" height="250"
+				>
+
+				<s:RichText
+					horizontalCenter="0" verticalCenter="0"
+					text="{ LangVO( hostComponent.selectedQuestion.langVO.getItemAt(hostComponent.currentLayout.localeVO.getItemIndex(hostComponent.currentLocale)) ).value }"
+					color="#464646"
+					fontSize="32"
+					/>
+				
+			</s:Group>
+			
+			<s:DataGroup
+				dataProvider="{ hostComponent.selectedQuestion.choiceVO }"
+				>
+				
+				<s:layout>
+					<s:HorizontalLayout />
+				</s:layout>
+				
+				<s:itemRenderer>
+					<fx:Component>
+						<component:ChoiceRenderer />
+					</fx:Component>
+				</s:itemRenderer>
+				
+			</s:DataGroup>
+			
+		</s:VGroup>
+		
+		<s:VGroup
+			left="25" right="25"
+			top="25" bottom="25"
+			horizontalAlign="center"
+			includeIn="result"
+			>
+			
+			<s:RichText
+				text="{ LangVO( hostComponent.selectedResult.langVO.getItemAt(hostComponent.currentLayout.localeVO.getItemIndex(hostComponent.currentLocale)) ).value }"
+				color="#464646"
+				fontSize="32"
+				/>
+			
+			<mx:Spacer
+				height="32"
+				/>
+			
+			<s:Button
+				label="Restart"
+				buttonMode="true" useHandCursor="true" mouseChildren="false"
+				styleName="actionButton"
+				click="hostComponent.restart()"
+				/>
+			
+		</s:VGroup>
+		
+	</s:Group>
+	
+</s:VGroup>

@@ -7,7 +7,7 @@ package com.masuland.religionchooser.control
 	import com.masuland.religionchooser.model.AppModel;
 	import com.masuland.religionchooser.service.contentxml.ContentXmlService;
 	import com.masuland.religionchooser.service.settingsxml.SettingsXmlService;
-	import com.masuland.religionchooser.view.ContentBoxState;
+	import com.masuland.religionchooser.view.component.ContentBoxState;
 	import com.masuland.religionchooser.vo.LayoutVO;
 	import com.masuland.religionchooser.vo.LocaleVO;
 	import com.masuland.religionchooser.vo.QuestionVO;
