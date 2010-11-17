@@ -1,4 +1,4 @@
-package com.masuland.religionchooser.view
+package com.masuland.religionchooser.view.component
 {
 	import spark.components.supportClasses.SkinnableComponent;
 	

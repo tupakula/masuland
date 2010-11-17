@@ -1,4 +1,4 @@
-package com.masuland.religionchooser.view
+package com.masuland.religionchooser.view.component
 {
 	public class ContentBoxState
 	{

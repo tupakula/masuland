@@ -1,34 +1,29 @@
 /* CSS file */
 @namespace s "library://ns.adobe.com/flex/spark";
 @namespace mx "library://ns.adobe.com/flex/mx";
-@namespace view "com.masuland.religionchooser.view.*";
+@namespace component "com.masuland.religionchooser.view.component.*";
 
-/*view|AppViewCB
+component|SettingsBoxCB
 {
-	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sky.AppView");
-}*/
-
-view|SettingsBoxCB
-{
-	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sky.SettingsBox");
+	skin-class: ClassReference("com.masuland.religionchooser.view.skin.web.sky.SettingsBox");
 }
 
-view|ContentBoxCB
+component|ContentBoxCB
 {
-	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sky.ContentBox");
+	skin-class: ClassReference("com.masuland.religionchooser.view.skin.web.sky.ContentBox");
 }
 
 .settingsButton
 {
-	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sky.SettingsButton");
+	skin-class: ClassReference("com.masuland.religionchooser.view.skin.web.sky.SettingsButton");
 }
 
 .actionButton
 {
-	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sky.ActionButton");
+	skin-class: ClassReference("com.masuland.religionchooser.view.skin.web.sky.ActionButton");
 }
 
 .moreButton
 {
-	skin-class: ClassReference("com.masuland.religionchooser.skin.web.sky.MoreButton");
+	skin-class: ClassReference("com.masuland.religionchooser.view.skin.web.sky.MoreButton");
 }

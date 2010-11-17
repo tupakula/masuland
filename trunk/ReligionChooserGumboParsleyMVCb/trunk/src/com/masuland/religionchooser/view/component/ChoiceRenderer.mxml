@@ -4,7 +4,7 @@
 	xmlns:s="library://ns.adobe.com/flex/spark" 
 	xmlns:mx="library://ns.adobe.com/flex/mx" 
 	xmlns:view="com.masuland.religionchooser.view.*"
-	autoDrawBackground="true" 
+	autoDrawBackground="true" xmlns:component="com.masuland.religionchooser.view.component.*" 
 	>
 
 	<fx:Script>
@@ -13,7 +13,7 @@
 		]]>
 	</fx:Script>
 	
-	<view:ChoiceBtn 
+	<component:ChoiceBtn 
 		choice="{ ChoiceVO( data ) }"
 		styleName="actionButton"
 		/>

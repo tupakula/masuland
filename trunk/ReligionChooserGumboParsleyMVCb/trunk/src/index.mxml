@@ -4,7 +4,7 @@
 	xmlns:s="library://ns.adobe.com/flex/spark" 
 	xmlns:mx="library://ns.adobe.com/flex/mx" 
 	xmlns:spicefactory="http://www.spicefactory.org/parsley" 
-	xmlns:skin="com.masuland.religionchooser.skin.*"
+	xmlns:skin="com.masuland.religionchooser.view.skin.*"
 	width="100%" height="100%" 
 	pageTitle="Religion Chooser"
 	applicationComplete="this_applicationCompleteHandler(event)" 
@@ -16,8 +16,6 @@
 		[ManagedEvents("AppEvent.INIT_APP")]
 		[Event(name="AppEvent.INIT_APP", type="com.masuland.religionchooser.event.AppEvent")]
 	</fx:Metadata>
-
-	<fx:Style source="skin_web_sun.css" />
 	
 	<fx:Script>
 		<![CDATA[
