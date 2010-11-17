@@ -3,9 +3,9 @@
 	xmlns:fx="http://ns.adobe.com/mxml/2009" 
 	xmlns:s="library://ns.adobe.com/flex/spark" 
 	xmlns:mx="library://ns.adobe.com/flex/mx" 
-	xmlns:view="com.masuland.religionchooser.view.*" 
+	xmlns:component="com.masuland.religionchooser.view.component.*" 
 	currentState="{ hostComponent.appViewState }"
-	horizontalAlign="center" verticalAlign="middle" xmlns:component="com.masuland.religionchooser.view.component.*" 
+	horizontalAlign="center" verticalAlign="middle" 
 	>
 	
 	<fx:Metadata>
