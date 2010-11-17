@@ -74,10 +74,10 @@
 		/>
 	
 	<object
-		id="choiceRendererCB"
-		class="com.masuland.religionchooser.view.ChoiceRendererCB"
+		id="choiceBtn"
+		class="com.masuland.religionchooser.view.ChoiceBtn"
 		/>
-
+	
 </objects>
 
 

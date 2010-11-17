@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <actionScriptProperties analytics="false" mainApplicationPath="index.mxml" projectUUID="fc4cf89e-70ff-4982-b068-8aab46fac7c1" version="6">
-  <compiler additionalCompilerArguments="-locale=de_DE,en_US -source-path=locale/{locale}" autoRSLOrdering="true" copyDependentFiles="true" fteInMXComponents="false" generateAccessible="true" htmlExpressInstall="true" htmlGenerate="true" htmlHistoryManagement="true" htmlPlayerVersionCheck="true" includeNetmonSwc="false" outputFolderPath="bin-debug" sourceFolderPath="src" strict="true" targetPlayerVersion="0.0.0" useApolloConfig="false" useDebugRSLSwfs="true" verifyDigests="true" warn="true">
+  <compiler additionalCompilerArguments="-locale=en_US,de_DE -source-path=locale/{locale} -defaults-css-url=src/skin_web_sun.css" autoRSLOrdering="true" copyDependentFiles="true" fteInMXComponents="false" generateAccessible="true" htmlExpressInstall="true" htmlGenerate="true" htmlHistoryManagement="true" htmlPlayerVersionCheck="true" includeNetmonSwc="false" outputFolderPath="bin-debug" sourceFolderPath="src" strict="true" targetPlayerVersion="0.0.0" useApolloConfig="false" useDebugRSLSwfs="true" verifyDigests="true" warn="true">
     <compilerSourcePath/>
     <libraryPath defaultLinkType="0">
       <libraryPathEntry kind="4" path="">
@@ -22,6 +22,8 @@
   </applications>
   <modules/>
   <buildCSSFiles>
+    <buildCSSFileEntry destPath="bin-debug" sourcePath="src/skin_web_sun.css"/>
+    <buildCSSFileEntry destPath="bin-debug" sourcePath="src/skin_web_sky.css"/>
     <buildCSSFileEntry destPath="bin-debug" sourcePath="src/religion_chooser_web_blue.css"/>
   </buildCSSFiles>
 </actionScriptProperties>
