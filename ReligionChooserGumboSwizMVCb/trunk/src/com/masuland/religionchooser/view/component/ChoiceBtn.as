@@ -1,4 +1,4 @@
-package com.masuland.religionchooser.view
+package com.masuland.religionchooser.view.component
 {
 	import com.masuland.religionchooser.event.AppEvent;
 	import com.masuland.religionchooser.vo.ChoiceVO;
