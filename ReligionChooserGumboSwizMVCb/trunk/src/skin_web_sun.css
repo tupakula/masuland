@@ -5,25 +5,25 @@
 
 component|SettingsBoxCB
 {
-	skin-class: ClassReference("com.masuland.religionchooser.ui.web.sun.SettingsBox");
+	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.SettingsBox");
 }
 
 component|ContentBoxCB
 {
-	skin-class: ClassReference("com.masuland.religionchooser.ui.web.sun.ContentBox");
+	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.ContentBox");
 }
 
 .settingsButton
 {
-	skin-class: ClassReference("com.masuland.religionchooser.ui.web.sun.SettingsButton");
+	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.SettingsButton");
 }
 
 .actionButton
 {
-	skin-class: ClassReference("com.masuland.religionchooser.ui.web.sun.ActionButton");
+	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.ActionButton");
 }
 
 .moreButton
 {
-	skin-class: ClassReference("com.masuland.religionchooser.ui.web.sun.MoreButton");
+	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.MoreButton");
 }

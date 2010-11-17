@@ -1,7 +1,6 @@
 package com.masuland.religionchooser.view.component
 {
 	import com.masuland.religionchooser.event.AppEvent;
-	import com.masuland.religionchooser.vo.ChoiceVO;
 	import com.masuland.religionchooser.vo.LayoutVO;
 	import com.masuland.religionchooser.vo.LocaleVO;
 	import com.masuland.religionchooser.vo.QuestionVO;
