@@ -5,6 +5,7 @@
 	xmlns:mx="library://ns.adobe.com/flex/mx" 
 	xmlns:ui="com.masuland.religionchooser.view.ui.*"
 	width="100%" height="100%" 
+	pageTitle="Religion Chooser"
 	applicationComplete="creationCompleteHandler(event)" 
 	viewSourceURL="srcview/index.html" 
 	>
