@@ -1,10 +1,30 @@
 = Flex Application Architecture MVCb =
 
-This document describes the application flow of the "Model - View - Code Behind" (MVCb) approach. In this architecture the presentation pattern "Code Behind" will be use as a synonym to the "Presentation Model" because they have lots of things in common. For comparison of these presentation pattern please read the articles of Paul Williams about [http://blogs.adobe.com/paulw/archives/2007/11/presentation_pa_5.html Code Behind] and the [http://blogs.adobe.com/paulw/archives/2007/10/presentation_pa_3.html Presentation Model].
+This document describes the application flow of the "Model - View - Code Behind" (MVCb) architecture. The presentation pattern "Code Behind" will be use in this architecture as a synonym to the "Presentation Model" because they have lots of things in common. For a comparison of both presentation patterns please read the articles of Paul Williams about the [http://blogs.adobe.com/paulw/archives/2007/11/presentation_pa_5.html Code Behind] pattern and the [http://blogs.adobe.com/paulw/archives/2007/10/presentation_pa_3.html Presentation Model].
 
 http://masuland.googlecode.com/files/FlexApplicationArchitectureMVCb.png
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+This architecture contains 3 types of action flows:
+
+1. Presentation Flow:
+  * (1) User Interface calls function in the Code Behind (Flex 3) / Component (Flex 4) class
+  * (9) Databinding updates User Interface
+
+2. Action Flow:
+  * (1) User Interface calls function in the Code Behind (Flex 3) / Component (Flex 4) class
+  * (2) Code Behind (Flex 3) / Component (Flex 4) class dispatches Event
+  * (7) Processed data will be written back to the Model
+  * (8) Databinding updates Code Behind (Flex 3) / Component (Flex 4) class
+  * (9) Databinding updates User Interface
+
+3. Business Flow:
+  * (1) User Interface calls function in the Code Behind (Flex 3) / Component (Flex 4) class
+  * (2) Code Behind (Flex 3) / Component (Flex 4) class dispatches Event
+  * (3) Registered Action (Event handler) calls the Delegate
+  * (4) Delegate calls its implemented Service
+  * (5) Service returns data
+  * (6) Delegate returns data to registered Action (Event handler)
+  * (7) Processed data will be written back to the Model
+  * (8) Databinding updates Code Behind (Flex 3) / Component (Flex 4) class
+  * (9) Databinding updates User Interface
+
