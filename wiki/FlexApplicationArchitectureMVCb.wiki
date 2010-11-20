@@ -1,10 +1,10 @@
 = Flex Application Architecture MVCb =
 
-This document describes the application flow of the "Model - View - Code Behind" (MVCb) architecture. The presentation pattern "Code Behind" will be use in this architecture as a synonym to the "Presentation Model" because they have lots of things in common. For a comparison of both presentation patterns please read the articles of Paul Williams about the [http://blogs.adobe.com/paulw/archives/2007/11/presentation_pa_5.html Code Behind] pattern and the [http://blogs.adobe.com/paulw/archives/2007/10/presentation_pa_3.html Presentation Model].
+This document describes the application flow of the "Model - View - Code Behind" (MVCb) architecture.  In this architecture, the presentation pattern "Code Behind" will be used as a synonym to the "Presentation Model" because they have lots in common. For a comparison of both presentation patterns please read the articles of Paul Williams about the [http://blogs.adobe.com/paulw/archives/2007/11/presentation_pa_5.html Code Behind] pattern and the [http://blogs.adobe.com/paulw/archives/2007/10/presentation_pa_3.html Presentation Model].
 
 http://masuland.googlecode.com/files/FlexApplicationArchitectureMVCb.png
 
-This architecture contains 3 types of action flows:
+This architecture contains 3 types of application flows:
 
 1. Presentation Flow:
   * (1) User Interface calls function in the Code Behind (Flex 3) / Component (Flex 4) class
@@ -27,4 +27,3 @@ This architecture contains 3 types of action flows:
   * (7) Processed data will be written back to the Model
   * (8) Databinding updates Code Behind (Flex 3) / Component (Flex 4) class
   * (9) Databinding updates User Interface
-
