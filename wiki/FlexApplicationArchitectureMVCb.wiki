@@ -27,3 +27,8 @@ This architecture contains 3 types of application flows:
   * (7) Processed data will be written back to the Model
   * (8) Databinding updates Code Behind (Flex 3) / Component (Flex 4) class
   * (9) Databinding updates User Interface
+
+== Code examples implementing MVCb ==
+
+  * Login Example (Flex 4), http://code.google.com/p/masuland/wiki/LoginExample
+  * Religion Chooser (Flex 3.5 and Flex 4), http://code.google.com/p/masuland/wiki/ReligionChooser
