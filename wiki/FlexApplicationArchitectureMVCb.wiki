@@ -25,8 +25,8 @@ This architecture contains 3 types of application flows:
   * (5) Service returns data
   * (6) Delegate returns data to registered Action (Event handler)
   * (7) Processed data will be written back to the Model
-  * (8) Databinding updates Code Behind (Flex 3) / Component (Flex 4) class
-  * (9) Databinding updates User Interface
+  * (8) Databinding in Model updates Code Behind (Flex 3) / Component (Flex 4) class
+  * (9) Databinding in Code Behind (Flex 3) / Component (Flex 4) class updates User Interface
 
 == Code Examples Implementing MVCb ==
 
