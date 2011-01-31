@@ -65,7 +65,7 @@ package com.masuland.loginexample.view.cb
 		
 		public function loadLocale(locale:LocaleVO):void
 		{
-			appController.loadLocales(locale);
+			appController.loadLocale(locale);
 		}
 	}
 }
