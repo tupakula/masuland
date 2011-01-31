@@ -36,6 +36,12 @@ Flex 4 (Halo) with [FlexApplicationArchitectureMVCb "Model - View - Code Behind"
  * Flex 4 (Halo) Login Example with Spring AS 1.0 (MVCb), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCb/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCb/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpringMVCb/trunk/ svn repo])
  * Flex 4 (Halo) Login Example with Swiz 1.0 (MVCb), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCb/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCb/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSwizMVCb/trunk/ svn repo])
 
+Flex 4 (Halo) with "No Event" approach:
+
+ * Flex 4 (Halo) Login Example with Parsley 2.3.1 (NoEvt), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyNoEvt/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyNoEvt/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloParsleyNoEvt/trunk/ svn repo])
+ * Flex 4 (Halo) Login Example with Spring AS 1.1 (NoEvt), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringNoEvt/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringNoEvt/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpringNoEvt/trunk/ svn repo])
+ * Flex 4 (Halo) Login Example with Swiz 1.0 (NoEvt), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizNoEvt/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizNoEvt/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSwizNoEvt/trunk/ svn repo])
+
 ...
 
 *Please feel free to give comments, suggestions or feature requests because the code is still work in progress.*
