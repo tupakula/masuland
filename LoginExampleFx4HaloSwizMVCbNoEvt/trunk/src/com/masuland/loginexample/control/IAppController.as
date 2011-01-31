@@ -8,6 +8,8 @@ package com.masuland.loginexample.control
 
 	public interface IAppController
 	{
+		function initApp():void;
+		
 		function getSettings():void;
 		
 		function login(auth:AuthenticationVO):void;
@@ -22,7 +24,7 @@ package com.masuland.loginexample.control
 		
 		function gotoRegister():void;
 		
-		function loadLocales(locale:LocaleVO):void;
+		function loadLocale(locale:LocaleVO):void;
 		
 		function loadStyle(style:StyleVO):void;
 		

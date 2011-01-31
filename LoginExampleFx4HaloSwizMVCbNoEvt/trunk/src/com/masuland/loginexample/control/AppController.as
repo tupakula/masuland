@@ -28,9 +28,6 @@ package com.masuland.loginexample.control
 	[Bindable]
 	public class AppController implements IAppController
 	{
-		[Dispatcher]
-		public var dispatcher:IEventDispatcher;
-		
 		[Inject]
 		public var serviceHelper:ServiceHelper;
 		
@@ -39,8 +36,6 @@ package com.masuland.loginexample.control
 		
 		[Inject]
 		public var appDelegate:IAppDelegate;
-		
-		public function AppController() {}
 
 		//---------------
 		// Action Events
@@ -50,7 +45,7 @@ package com.masuland.loginexample.control
 		 * Load the User collection.
 		 */ 
 		[Mediate(event="mx.events.FlexEvent.APPLICATION_COMPLETE")]
-		public function initApp() : void
+		public function initApp():void
 		{
 			appModel.appStackState = AppStackState.LOGIN;
 			appModel.loginBoxState = LoginBoxState.LOGIN;
@@ -184,7 +179,7 @@ package com.masuland.loginexample.control
 		/**
 		 * 
 		 */
-		public function loadLocales(locale:LocaleVO):void 
+		public function loadLocale(locale:LocaleVO):void 
 		{
 			appModel.currentLocale = locale;
 			
@@ -251,7 +246,7 @@ package com.masuland.loginexample.control
 			loadStyle(StyleVO( appModel.currentLayout.styles.getItemAt(0) ));
 			
 			// load locales
-			loadLocales(LocaleVO( appModel.currentLayout.locales.getItemAt(0) ));
+			loadLocale(LocaleVO( appModel.currentLayout.locales.getItemAt(0) ));
 		}
 		
 		/**

@@ -6,6 +6,9 @@ package com.masuland.loginexample.view.cb
 
 	public class LoginBoxCB implements ILoginBoxCB
 	{
+		[Inject]
+		public var appController:IAppController;
+		
 		private var _username:String = '';
 		
 		private var _email:String = '';
@@ -13,9 +16,6 @@ package com.masuland.loginexample.view.cb
 		private var _password:String = '';
 		
 		private var _repeatPassword:String = '';
-		
-		[Inject]
-		public var appController:IAppController;
 		
 		[Bindable]
 		public function get username():String
