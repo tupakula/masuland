@@ -2,7 +2,7 @@
 
 This document describes the application flow of an Adobe Flex 3 and Flex 4 application written in the "No Event" (!NoEvt) architecture. It is based on the [FlexApplicationArchitectureMVCb "Model - View - Code Behind Architecture" (MVCb)] but avoids dispatching events inside the application, see arrow (2) and (3) in the following diagram:
 
-http://masuland.googlecode.com/files/FlexApplicationArchitectureNoEvt.png
+http://masuland.googlecode.com/files/FlexApplicationArchitectureNoEvt_2.png
 
 == Application Flows ==
 
