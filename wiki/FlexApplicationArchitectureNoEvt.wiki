@@ -1,6 +1,6 @@
 = Flex Application Architecture - "No Event" (!NoEvt) =
 
-This document describes the application flow of an Adobe Flex 3 and Flex 4 application written in the "No Event" (NoEvt) architecture. It is based on the [FlexApplicationArchitectureMVCb "Model - View - Code Behind" (MVCb)] architecture but avoids dispatching events inside the application, see the following diagram step (2) and (3):
+This document describes the application flow of an Adobe Flex 3 and Flex 4 application written in the "No Event" (!NoEvt) architecture. It is based on the [FlexApplicationArchitectureMVCb "Model - View - Code Behind Architecture" (MVCb)] but avoids dispatching events inside the application, see arrow (2) and (3) in the following diagram:
 
 http://masuland.googlecode.com/files/FlexApplicationArchitectureNoEvt.png
 
@@ -30,6 +30,6 @@ Just like [FlexApplicationArchitectureMVCb MVCb] this architecture contains 3 ty
   * (8) Databinding updates Code Behind (Flex 3) / Component (Flex 4) class
   * (9) Databinding updates User Interface
 
-== Code Examples Implementing NoEvt ==
+== Code Examples Implementing !NoEvt ==
 
   * Login Example (Flex 3.5 and Flex 4), http://code.google.com/p/masuland/wiki/LoginExample
