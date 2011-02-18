@@ -1,12 +1,12 @@
-= Flex Application Nano Architecture - "No Event" (!NoEvt) =
+= Flex Application Nanoarchitecture - "No Event" (!NoEvt) =
 
-This document describes the application flow of an Adobe Flex 3 and Flex 4 application written in the "No Event" (!NoEvt) nano architecture. It is based on the [FlexApplicationArchitectureMVCb "Model - View - Code Behind" (MVCb)] nano architecture but avoids dispatching events inside the application, see arrow (2) and (3) in the following diagram:
+This document describes the application flow of an Adobe Flex 3 and Flex 4 application written in the "No Event" (!NoEvt) nanoarchitecture. It is based on the [FlexApplicationArchitectureMVCb "Model - View - Code Behind" (MVCb)] nanoarchitecture but avoids dispatching events inside the application, see arrow (2) and (3) in the following diagram:
 
 http://masuland.googlecode.com/files/FlexApplicationArchitectureNoEvt_2.png
 
 == Application Flows ==
 
-Just like [FlexApplicationArchitectureMVCb MVCb] this nano architecture contains 3 types of application flows:
+Just like [FlexApplicationArchitectureMVCb MVCb] this nanoarchitecture contains 3 types of application flows:
 
 1. Presentation Flow:
   * (1) User Interface calls function in the Code Behind (Flex 3) / Component (Flex 4) class
