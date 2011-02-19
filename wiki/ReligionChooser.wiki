@@ -4,7 +4,7 @@ The Religion Chooser application aims to be a fun application based on a choice 
 
 http://masuland.googlecode.com/files/ReligionChooserPrintScreen.png
 
-Flex 4 (Gumbo) with [FlexApplicationArchitectureMVCb "Model - View - Code Behind" (MVCb)] approach:
+Flex 4 (Gumbo) with [FlexApplicationArchitectureMVCb "Model - View - Code Behind" (MVCb)] Nanoarchitecture:
 
  * Flex 4 (Gumbo) Religion Chooser with Parsley 2.3.1 (MVCb), ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboParsleyMVCb/index.html live app]) ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboParsleyMVCb/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/ReligionChooserGumboParsleyMVCb/trunk/ svn repo])
  * Flex 4 (Gumbo) Religion Chooser with Spring 1.0 (MVCb), ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSpringMVCb/index.html live app]) ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSpringMVCb/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/ReligionChooserGumboSpringMVCb/trunk/ svn repo])
