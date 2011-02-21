@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application 
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:view="com.masuland.loginexample.view.*"
+	xmlns:spicefactory="http://www.spicefactory.org/parsley"
+	width="100%" height="100%"
+	layout="absolute" 
+	pageTitle="Parsley - Login Example (Fx3)"
+	backgroundAlpha="0"
+	backgroundColor="#FFFFFF"
+	backgroundGradientAlphas="[1, 1]"
+	backgroundGradientColors="[#FFFFFF, #FFFFFF]"
+	applicationComplete="application1_applicationCompleteHandler(event)"
+	viewSourceURL="srcview/index.html" 
+	>
+	
+	<mx:Metadata>
+		[ResourceBundle("resources")]
+		[ManagedEvents("AppEvent.INITIALIZE_CLIENT")]
+		[Event(name="AppEvent.INITIALIZE_CLIENT", type="com.masuland.loginexample.control.event.AppEvent")]
+	</mx:Metadata>
+	
+	<mx:Script>
+		<![CDATA[
+			import com.masuland.loginexample.business.AppConfig;
+			import com.masuland.loginexample.control.event.AppEvent;
+			
+			import mx.events.FlexEvent;
+
+			protected function application1_applicationCompleteHandler(event:FlexEvent):void
+			{
+				dispatchEvent(new AppEvent(AppEvent.INITIALIZE_CLIENT));
+			}
+		]]>
+	</mx:Script>
+	
+	<spicefactory:Configure />
+	
+	<spicefactory:ContextBuilder>
+		<spicefactory:FlexConfig type="{ AppConfig }"/>
+	</spicefactory:ContextBuilder> 
+	
+	<view:AppView
+		/>
+	
+</mx:Application>
