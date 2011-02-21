@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox 
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:view="com.masuland.loginexample.view.*"
+	width="100%" height="100%"
+	visible="{ appModel.isApplicationVisible }" 
+	paddingLeft="5" paddingRight="5" paddingTop="5" paddingBottom="5"
+	>
+	
+	<mx:Script>
+		<![CDATA[
+			import com.masuland.loginexample.model.AppModel;
+			
+			[Bindable]
+			public var appModel:AppModel = AppModel.getInstance();
+		]]>
+	</mx:Script>
+	
+	<mx:VBox 
+		width="100%" height="100%"
+		>
+		
+		<mx:HBox
+			verticalAlign="middle"
+			>
+			<mx:Image
+				source="@Embed(source='images/icon_masuland.png')"
+				buttonMode="true"
+				useHandCursor="true"
+				mouseChildren="true"
+				click="navigateToURL(new URLRequest('http://www.masuland.com'))"
+				/>
+			<mx:Label
+				text="Cairngorm 2.2.1 - Login Example (Fx3)"
+				styleName="appTitle"
+				/>
+		</mx:HBox>
+		
+		<mx:Canvas
+			width="100%" height="100%"
+			>
+
+			<view:LayoutStack
+				horizontalCenter="0" verticalCenter="0"
+				currentState="{ appModel.currentLayout.stateName }"
+				/>
+
+		</mx:Canvas>
+		
+	</mx:VBox>
+
+	<view:SettingsBox
+		currentState="{ appModel.settingsBoxState }"
+		/>
+
+</mx:HBox>

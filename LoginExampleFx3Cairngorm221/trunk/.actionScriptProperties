@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <actionScriptProperties analytics="false" mainApplicationPath="index.mxml" projectUUID="d8c58cf2-c578-4d0a-b044-ab659a8ad856" version="6">
-  <compiler additionalCompilerArguments="-locale=en_US,de_DE -source-path=locale/{locale}" autoRSLOrdering="false" copyDependentFiles="true" flexSDK="Flex 3.5" fteInMXComponents="false" generateAccessible="false" htmlExpressInstall="true" htmlGenerate="true" htmlHistoryManagement="true" htmlPlayerVersionCheck="true" includeNetmonSwc="false" outputFolderPath="bin-debug" sourceFolderPath="src" strict="true" targetPlayerVersion="0.0.0" useApolloConfig="false" useDebugRSLSwfs="true" verifyDigests="true" warn="true">
-    <compilerSourcePath/>
+  <compiler additionalCompilerArguments="-locale=en_US,de_DE" autoRSLOrdering="false" copyDependentFiles="true" flexSDK="Flex 3.5" fteInMXComponents="false" generateAccessible="false" htmlExpressInstall="true" htmlGenerate="true" htmlHistoryManagement="true" htmlPlayerVersionCheck="true" includeNetmonSwc="false" outputFolderPath="bin-debug" sourceFolderPath="src/main/flex" strict="true" targetPlayerVersion="0.0.0" useApolloConfig="false" useDebugRSLSwfs="true" verifyDigests="true" warn="true">
+    <compilerSourcePath>
+      <compilerSourcePathEntry kind="1" linkType="1" path="src/main/resources"/>
+      <compilerSourcePathEntry kind="1" linkType="1" path="src/main/locales/{locale}"/>
+      <compilerSourcePathEntry kind="1" linkType="1" path="src/test/flex"/>
+    </compilerSourcePath>
     <libraryPath defaultLinkType="1">
       <libraryPathEntry kind="4" path="">
         <excludedEntries>
@@ -17,9 +21,13 @@
   </applications>
   <modules/>
   <buildCSSFiles>
-    <buildCSSFileEntry destPath="bin-debug" sourcePath="src/style/login_example_phone_red.css"/>
-    <buildCSSFileEntry destPath="bin-debug" sourcePath="src/style/login_example_web_red.css"/>
-    <buildCSSFileEntry destPath="bin-debug" sourcePath="src/style/login_example_phone_green.css"/>
     <buildCSSFileEntry destPath="bin-debug" sourcePath="src/style/login_example_web_green.css"/>
+    <buildCSSFileEntry destPath="bin-debug" sourcePath="src/style/login_example_phone_green.css"/>
+    <buildCSSFileEntry destPath="bin-debug" sourcePath="src/main/resources/style/login_example_web_red.css"/>
+    <buildCSSFileEntry destPath="bin-debug" sourcePath="src/main/resources/style/login_example_phone_red.css"/>
+    <buildCSSFileEntry destPath="bin-debug" sourcePath="src/main/resources/style/login_example_phone_green.css"/>
+    <buildCSSFileEntry destPath="bin-debug" sourcePath="src/style/login_example_web_red.css"/>
+    <buildCSSFileEntry destPath="bin-debug" sourcePath="src/style/login_example_phone_red.css"/>
+    <buildCSSFileEntry destPath="bin-debug" sourcePath="src/main/resources/style/login_example_web_green.css"/>
   </buildCSSFiles>
 </actionScriptProperties>
