@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox 
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:parsley="http://www.spicefactory.org/parsley"
+	horizontalGap="1" 
+	>
+	
+	<mx:Metadata>
+		[ManagedEvents("LoadStyleEvent.EVENT_NAME, LoadLayoutEvent.EVENT_NAME, LoadLocaleEvent.EVENT_NAME")]
+		[Event(name="LoadStyleEvent.EVENT_NAME", type="com.masuland.loginexample.control.event.LoadStyleEvent")]
+		[Event(name="LoadLayoutEvent.EVENT_NAME", type="com.masuland.loginexample.control.event.LoadLayoutEvent")]
+		[Event(name="LoadLocaleEvent.EVENT_NAME", type="com.masuland.loginexample.control.event.LoadLocaleEvent")]
+	</mx:Metadata>
+	
+	<mx:states>
+		<mx:State name="closed">
+			<mx:SetProperty target="{ btn_settings }" name="label" value="&lt;&lt;" />
+		</mx:State>
+		<mx:State name="open">
+			<mx:SetProperty target="{ btn_settings }" name="label" value="&gt;&gt;" />
+			<mx:SetProperty target="{ bx_settings }" name="visible" value="true" />
+			<mx:SetProperty target="{ bx_settings }" name="includeInLayout" value="true" />
+		</mx:State>
+	</mx:states>
+	
+	<mx:Script>
+		<![CDATA[
+			import com.masuland.loginexample.control.event.LoadLayoutEvent;
+			import com.masuland.loginexample.control.event.LoadLocaleEvent;
+			import com.masuland.loginexample.control.event.LoadStyleEvent;
+			import com.masuland.loginexample.model.AppModel;
+			import com.masuland.loginexample.state.SettingsBoxState;
+			import com.masuland.loginexample.vo.LayoutVO;
+			import com.masuland.loginexample.vo.LocaleVO;
+			import com.masuland.loginexample.vo.StyleVO;
+			
+			[Inject]
+			[Bindable]
+			public var appModel:AppModel;
+		]]>
+	</mx:Script>
+
+	<parsley:Configure />
+
+	<mx:VBox>
+		
+		<mx:Spacer
+			height="5"
+			/>
+		
+		<mx:Button
+			id="btn_settings"
+			styleName="settingsButton"
+			buttonMode="true" useHandCursor="true" mouseChildren="false"
+			click="appModel.settingsBoxState == SettingsBoxState.CLOSED ? appModel.settingsBoxState = SettingsBoxState.OPEN : appModel.settingsBoxState = SettingsBoxState.CLOSED"
+			/>
+		
+	</mx:VBox>
+	
+	<mx:VBox
+		id="bx_settings"
+		styleName="settingBox"
+		visible="false"
+		includeInLayout="false"
+		>
+		<mx:VBox
+			verticalAlign="middle"
+			verticalGap="2"
+			>
+			<mx:Label
+				text="{ resourceManager.getString('resources', 'txt_change_layout') }"
+				/>
+			<mx:ComboBox
+				id="cb_layout"
+				width="100%"
+				dataProvider="{ appModel.settings.layouts }"
+				change="dispatchEvent(new LoadLayoutEvent(LayoutVO( cb_layout.selectedItem )))"
+				/>
+		</mx:VBox>
+		<mx:VBox
+			verticalAlign="middle"
+			verticalGap="2"
+			>
+			<mx:Label
+				text="{ resourceManager.getString('resources', 'txt_change_style') }"
+				/>
+			<mx:ComboBox
+				id="cb_style"
+				width="100%"
+				dataProvider="{ appModel.currentLayout.styles }"
+				change="dispatchEvent(new LoadStyleEvent(StyleVO( cb_style.selectedItem )))"
+				/>
+		</mx:VBox>
+		<mx:VBox
+			verticalAlign="middle"
+			verticalGap="2"
+			>
+			<mx:Label
+				text="{ resourceManager.getString('resources', 'txt_change_locale') }"
+				/>
+			<mx:ComboBox
+				id="cb_locale"
+				width="100%"
+				dataProvider="{ appModel.currentLayout.locales }"
+				change="dispatchEvent(new LoadLocaleEvent(LocaleVO( cb_locale.selectedItem )))"
+				/>
+		</mx:VBox>
+	</mx:VBox>
+
+</mx:HBox>
