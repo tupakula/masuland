@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mx:Canvas 
 	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:parsley="http://www.spicefactory.org/parsley" 
 	xmlns:web="com.masuland.loginexample.view.web.*" 
 	xmlns:phone="com.masuland.loginexample.view.phone.*"
-	xmlns:spicefactory="http://www.spicefactory.org/parsley"
 	width="{ appModel.currentLayout.width }" height="{ appModel.currentLayout.height }"
 	resizeEffect="{ fx_resize }" 
 	>
@@ -29,7 +29,7 @@
 		]]>
 	</mx:Script>
 	
-	<spicefactory:Configure />
+	<parsley:Configure />
 	
 	<mx:Resize
 		id="fx_resize"
