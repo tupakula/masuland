@@ -16,7 +16,7 @@
 
 	<fx:Script>
 		<![CDATA[
-			import com.masuland.loginexample.business.AppConfig;
+			import com.masuland.loginexample.AppConfig;
 			
 			import mx.logging.LogEventLevel;
 			
