@@ -1,6 +1,6 @@
 @namespace mx "library://ns.adobe.com/flex/mx";
 @namespace s "library://ns.adobe.com/flex/spark";
-@namespace web "com.masuland.loginexample.parsley.view.web.*";
+@namespace web "com.masuland.loginexample.view.layout.web.*";
 
 mx|global
 {
