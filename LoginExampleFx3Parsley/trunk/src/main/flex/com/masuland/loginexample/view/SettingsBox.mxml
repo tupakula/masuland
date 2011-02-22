@@ -64,10 +64,12 @@
 		includeInLayout="false"
 		>
 		<mx:VBox
+			width="100%"
 			verticalAlign="middle"
 			verticalGap="2"
 			>
 			<mx:Label
+				width="100%"
 				text="{ resourceManager.getString('resources', 'txt_change_layout') }"
 				/>
 			<mx:ComboBox
@@ -78,10 +80,12 @@
 				/>
 		</mx:VBox>
 		<mx:VBox
+			width="100%"
 			verticalAlign="middle"
 			verticalGap="2"
 			>
 			<mx:Label
+				width="100%"
 				text="{ resourceManager.getString('resources', 'txt_change_style') }"
 				/>
 			<mx:ComboBox
@@ -92,10 +96,12 @@
 				/>
 		</mx:VBox>
 		<mx:VBox
+			width="100%"
 			verticalAlign="middle"
 			verticalGap="2"
 			>
 			<mx:Label
+				width="100%"
 				text="{ resourceManager.getString('resources', 'txt_change_locale') }"
 				/>
 			<mx:ComboBox
