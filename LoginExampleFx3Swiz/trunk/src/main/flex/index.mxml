@@ -28,8 +28,8 @@
 		>
 		<swiz:config>
 			<swiz:SwizConfig
-				eventPackages="com.masuland.loginexample.swiz.control.event"
-				viewPackages="com.masuland.loginexample.swiz.view" 
+				eventPackages="com.masuland.loginexample.control.event"
+				viewPackages="com.masuland.loginexample.view" 
 				/>
 		</swiz:config>
 	</swiz:Swiz>

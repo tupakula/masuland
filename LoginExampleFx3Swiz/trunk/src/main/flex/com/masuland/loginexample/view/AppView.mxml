@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<mx:Canvas 
+<mx:HBox 
 	xmlns:mx="http://www.adobe.com/2006/mxml" 
 	xmlns:view="com.masuland.loginexample.view.*"
 	width="100%" height="100%"
 	visible="{ appModel.isApplicationVisible }" 
+	paddingLeft="10" paddingRight="10" paddingTop="10" paddingBottom="10" 
 	>
 	
 	<mx:Script>
 		<![CDATA[
-			import com.masuland.loginexample.control.event.LoadLayoutEvent;
-			import com.masuland.loginexample.control.event.LoadLocaleEvent;
-			import com.masuland.loginexample.control.event.LoadStyleEvent;
 			import com.masuland.loginexample.model.AppModel;
-			import com.masuland.loginexample.vo.LayoutVO;
-			import com.masuland.loginexample.vo.LocaleVO;
-			import com.masuland.loginexample.vo.StyleVO;
 			
 			[Inject]
 			[Bindable]
@@ -22,51 +17,41 @@
 		]]>
 	</mx:Script>
 	
-	<mx:VBox
-		right="5" top="5"
-		horizontalAlign="right"
+	<mx:VBox 
+		width="100%" height="100%"
 		>
+		
 		<mx:HBox
 			verticalAlign="middle"
 			>
-			<mx:Label
-				text="{ resourceManager.getString('resources', 'txt_change_layout') }"
+			<mx:Image
+				source="@Embed(source='images/icon_masuland.png')"
+				buttonMode="true"
+				useHandCursor="true"
+				mouseChildren="true"
+				click="navigateToURL(new URLRequest('http://www.masuland.com'))"
 				/>
-			<mx:ComboBox
-				id="cb_layout"
-				dataProvider="{ appModel.settings.layouts }"
-				change="dispatchEvent(new LoadLayoutEvent(LayoutVO( cb_layout.selectedItem )));"
+			<mx:Label
+				text="Swiz 1.0 - Login Example (Fx3)"
+				styleName="appTitle"
 				/>
 		</mx:HBox>
-		<mx:HBox
-			verticalAlign="middle"
+		
+		<mx:Canvas
+			width="100%" height="100%"
 			>
-			<mx:Label
-				text="{ resourceManager.getString('resources', 'txt_change_style') }"
+			
+			<view:LayoutStack
+				horizontalCenter="0" verticalCenter="0"
+				currentState="{ appModel.currentLayout.stateName }"
 				/>
-			<mx:ComboBox
-				id="cb_style"
-				dataProvider="{ appModel.currentLayout.styles }"
-				change="dispatchEvent(new LoadStyleEvent(StyleVO( cb_style.selectedItem )));"
-				/>
-		</mx:HBox>
-		<mx:HBox
-			verticalAlign="middle"
-			>
-			<mx:Label
-				text="{ resourceManager.getString('resources', 'txt_change_locale') }"
-				/>
-			<mx:ComboBox
-				id="cb_locale"
-				dataProvider="{ appModel.currentLayout.locales }"
-				change="dispatchEvent(new LoadLocaleEvent(LocaleVO( cb_locale.selectedItem )));"
-				/>
-		</mx:HBox>
+			
+		</mx:Canvas>
+		
 	</mx:VBox>
 	
-	<view:LayoutStack
-		horizontalCenter="0" verticalCenter="0"
-		currentState="{ appModel.currentLayout.stateName }"
+	<view:SettingsBox
+		currentState="{ appModel.settingsBoxState }"
 		/>
 	
-</mx:Canvas>
+</mx:HBox>
