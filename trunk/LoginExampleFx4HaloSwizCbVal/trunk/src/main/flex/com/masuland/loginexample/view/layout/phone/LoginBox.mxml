@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas 
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:vo="com.masuland.loginexample.vo.*"
+	xmlns:validation="com.adobe.cairngorm.validation.*"
+	width="100%" height="100%"
+	>
+	
+	<mx:states>
+		<mx:State name="login">
+			<mx:SetProperty target="{ txt_header }" name="text" value="{ resourceManager.getString('resources', 'title_login') }" />
+			<mx:SetProperty target="{ bx_loginButtons }" name="visible" value="true" />
+			<mx:SetProperty target="{ bx_loginButtons }" name="includeInLayout" value="true" />
+		</mx:State>
+		<mx:State name="loginProgress">
+			<mx:SetProperty target="{ txt_header }" name="text" value="{ resourceManager.getString('resources', 'title_login_progress') }" />
+		</mx:State>
+		<mx:State name="register">
+			<mx:SetProperty target="{ txt_header }" name="text" value="{ resourceManager.getString('resources', 'title_register') }" />
+			<mx:SetProperty target="{ fi_email }" name="visible" value="true" />
+			<mx:SetProperty target="{ fi_email }" name="includeInLayout" value="true" />
+			<mx:SetProperty target="{ fi_repeatPassword }" name="visible" value="true" />
+			<mx:SetProperty target="{ fi_repeatPassword }" name="includeInLayout" value="true" />
+			<mx:SetProperty target="{ bx_registerButtons }" name="visible" value="true" />
+			<mx:SetProperty target="{ bx_registerButtons }" name="includeInLayout" value="true" />
+		</mx:State>
+		<mx:State name="registerProgress">
+			<mx:SetProperty target="{ txt_header }" name="text" value="{ resourceManager.getString('resources', 'title_register_progress') }" />
+		</mx:State>
+		<mx:State name="loggedIn">
+			<mx:SetProperty target="{ txt_header }" name="text" value="{ resourceManager.getString('resources', 'title_logged_in') }" />
+		</mx:State>
+	</mx:states>
+	
+	<mx:Script>
+		<![CDATA[
+			import com.masuland.loginexample.model.AppModel;
+			import com.masuland.loginexample.view.cb.LoginBoxCB;
+			
+			[Inject]
+			[Bindable]
+			public var appModel:AppModel;
+			
+			[Inject]
+			[Bindable]
+			public var cb:LoginBoxCB;
+		]]>
+	</mx:Script>
+
+	<vo:AuthenticationVO
+		id="vo_auth"
+		username="{ tip_username.text }"
+		password="{ tip_password.text }"
+		email="{ tip_email.text }"
+		/>
+	
+	<validation:ValidatorGroupSubscriber 
+		resetValidationFeedbackOnFocusIn="true"
+		>
+		<validation:ValidatorSubscriber 
+			validator="{ cb.validatorGroup.val_username }" 
+			listener="{ tip_username }"
+			/>
+		<validation:ValidatorSubscriber 
+			validator="{ cb.validatorGroup.val_password }" 
+			listener="{ tip_password }"
+			/>
+	</validation:ValidatorGroupSubscriber>
+
+	<mx:VBox
+		left="5" right="5" top="5" bottom="5"
+		horizontalAlign="center"
+		>
+		
+		<mx:Label
+			id="txt_header"
+			width="100%"
+			styleName="loginHeader"
+			/>
+		
+		<mx:HRule
+			width="100%"
+			/>
+		
+		<mx:Canvas
+			width="100%" height="100%"
+			>
+			
+			<mx:VBox
+				verticalCenter="0"
+				left="10" right="10"
+				>
+				
+				<mx:VBox
+					verticalGap="0"
+					width="100%"
+					>
+					<mx:Label
+						width="100%"
+						text="{ resourceManager.getString('resources', 'txt_username') }"
+						styleName="descriptor"
+						/>
+					<mx:TextInput
+						id="tip_username"
+						width="100%"
+						text="@{ cb.username }"
+						enter="cb.validatorGroup.isValid ? cb.ctaLoginOrRegister(vo_auth, currentState) : false"
+						/>
+				</mx:VBox>
+				
+				<mx:VBox
+					id="fi_email"
+					width="100%"
+					verticalGap="0"
+					visible="false"
+					includeInLayout="false"
+					>
+					<mx:Label
+						width="100%"
+						text="{ resourceManager.getString('resources', 'txt_email') }"
+						styleName="descriptor"
+						/>
+					<mx:TextInput
+						id="tip_email"
+						width="100%"
+						text="@{ cb.email }"
+						enter="cb.validatorGroup.isValid ? cb.ctaLoginOrRegister(vo_auth, currentState) : false"
+						/>
+				</mx:VBox>
+				
+				<mx:VBox
+					width="100%"
+					verticalGap="0"
+					>
+					<mx:Label
+						width="100%"
+						text="{ resourceManager.getString('resources', 'txt_password') }"
+						styleName="descriptor"
+						/>
+					<mx:TextInput
+						id="tip_password"
+						width="100%"
+						text="@{ cb.password }"
+						displayAsPassword="true"
+						enter="cb.validatorGroup.isValid ? cb.ctaLoginOrRegister(vo_auth, currentState) : false"
+						/>
+				</mx:VBox>
+				
+				<mx:VBox
+					id="fi_repeatPassword"
+					width="100%"
+					verticalGap="0"
+					visible="false"
+					includeInLayout="false"
+					>
+					<mx:Label
+						width="100%"
+						text="{ resourceManager.getString('resources', 'txt_repeat_password') }"
+						styleName="descriptor"
+						/>
+					<mx:TextInput
+						id="tip_repeatPassword"
+						width="100%"
+						text="@{ cb.repeatPassword }"
+						displayAsPassword="true"
+						enter="cb.validatorGroup.isValid ? cb.ctaLoginOrRegister(vo_auth, currentState) : false"
+						/>
+				</mx:VBox>
+				
+			</mx:VBox>
+			
+		</mx:Canvas>
+		
+		<mx:HRule
+			width="100%"
+			/>
+
+		<mx:HBox
+			id="bx_loginButtons"
+			width="100%"
+			visible="false"
+			includeInLayout="false"
+			>
+			<mx:Button
+				id="btn_doLogin"
+				height="35"
+				label="{ resourceManager.getString('resources', 'cta_login') }"
+				enabled="{ cb.validatorGroup.isValid }"
+				buttonMode="true" 
+				useHandCursor="true"
+				click="cb.ctaLoginOrRegister(vo_auth, currentState)"
+				/>
+			<mx:Spacer
+				width="100%"
+				/>
+			<mx:Button
+				id="btn_gotoRegister"
+				height="35"
+				label="{ resourceManager.getString('resources', 'cta_goto_register') }"
+				click="cb.gotoRegister()"
+				/>
+		</mx:HBox>
+		
+		<mx:HBox
+			id="bx_registerButtons"
+			width="100%"
+			visible="false"
+			includeInLayout="false"
+			>
+			<mx:Button
+				id="btn_doRegister"
+				height="35"
+				label="{ resourceManager.getString('resources', 'cta_register') }"
+				enabled="{ cb.validatorGroup.isValid }"
+				buttonMode="true"
+				useHandCursor="true"
+				click="cb.ctaLoginOrRegister(vo_auth, currentState)"
+				/>
+			<mx:Spacer
+				width="100%"
+				/>
+			<mx:Button
+				id="btn_gotoLogin"
+				height="35"
+				label="{ resourceManager.getString('resources', 'cta_goto_login') }"
+				click="cb.gotoLogin()"
+				/>
+		</mx:HBox>
+
+	</mx:VBox>
+	
+</mx:Canvas>
