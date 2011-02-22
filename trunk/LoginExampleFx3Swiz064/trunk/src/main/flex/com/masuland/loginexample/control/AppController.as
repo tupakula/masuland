@@ -10,6 +10,7 @@ package com.masuland.loginexample.control
 	import com.masuland.loginexample.model.AppModel;
 	import com.masuland.loginexample.state.AppStackState;
 	import com.masuland.loginexample.state.LoginBoxState;
+	import com.masuland.loginexample.state.SettingsBoxState;
 	import com.masuland.loginexample.vo.AuthenticationVO;
 	import com.masuland.loginexample.vo.LayoutVO;
 	import com.masuland.loginexample.vo.LocaleVO;
@@ -56,6 +57,7 @@ package com.masuland.loginexample.control
 		{	
 			appModel.appStackState = AppStackState.LOGIN;
 			appModel.loginBoxState = LoginBoxState.LOGIN;
+			appModel.settingsBoxState = SettingsBoxState.OPEN;
 			
 			// get settings
 			Swiz.dispatch(AppEventNames.GET_SETTINGS);
