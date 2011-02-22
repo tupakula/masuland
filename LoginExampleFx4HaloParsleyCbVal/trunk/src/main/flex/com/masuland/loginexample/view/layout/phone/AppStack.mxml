@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas 
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:phone="com.masuland.loginexample.view.layout.phone.*"
+	xmlns:spicefactory="http://www.spicefactory.org/parsley"
+	width="100%" height="100%"
+	styleName="defaultBox"
+	>
+	
+	<mx:states>
+		<mx:State name="login">
+			<mx:SetProperty target="{ bx_login }" name="visible" value="true" />
+		</mx:State>
+		<mx:State name="user">
+			<mx:SetProperty target="{ bx_user }" name="visible" value="true" />
+		</mx:State>
+	</mx:states>
+	
+	<mx:Script>
+		<![CDATA[
+			import com.masuland.loginexample.model.AppModel;
+			
+			[Inject]
+			[Bindable]
+			public var appModel:AppModel;
+		]]>
+	</mx:Script>
+	
+	<spicefactory:Configure />
+
+	<phone:LoginBox
+		id="bx_login"
+		currentState="{ appModel.loginBoxState }"
+		visible="false"
+		/>
+	
+	<phone:UserBox
+		id="bx_user"
+		visible="false"
+		/>
+	
+</mx:Canvas>

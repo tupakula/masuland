@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<validation:ValidatorGroup 
+	xmlns:validation="com.adobe.cairngorm.validation.*"
+    xmlns:mx="http://www.adobe.com/2006/mxml"
+	>
+
+    <mx:Script>
+        <![CDATA[
+			import com.masuland.loginexample.model.AppModel;
+			import com.masuland.loginexample.state.LoginBoxState;
+			
+            [Bindable]
+            public var cb:LoginBoxCB;
+        ]]>
+    </mx:Script>
+
+	<validation:validators>
+		
+		<mx:StringValidator 
+			id="val_username"
+			source="{ cb }"
+			required="true"
+			minLength="3"
+			property="username"
+			triggerEvent="change"
+			/>
+		
+		<mx:StringValidator 
+			id="val_password"
+			source="{ cb }"
+			required="true"
+			minLength="3"
+			property="password"
+			triggerEvent="change"
+			/>
+		
+	</validation:validators>
+	
+	<validation:groups>
+		
+		<validation:ValidatorGroup 
+			id="val_registerGroup"
+			enabled="{ cb.appModel.loginBoxState == LoginBoxState.REGISTER }"
+			>
+			
+			<validation:validators>
+				
+				<mx:StringValidator 
+					id="val_email"
+					source="{ cb }"
+					required="true"
+					minLength="3"
+					property="email"
+					triggerEvent="change"
+					/>
+				
+				<mx:StringValidator 
+					id="val_repeatPassword"
+					source="{ cb }"
+					required="true"
+					minLength="3"
+					property="repeatPassword"
+					triggerEvent="change"
+					/>
+				
+			</validation:validators>
+			
+		</validation:ValidatorGroup>
+		
+	</validation:groups>
+
+</validation:ValidatorGroup>
