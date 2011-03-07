@@ -36,7 +36,7 @@ package com.masuland.loginexample.control.responder
 		/**  */
 		public function fault(info:Object):void
 		{
-			Alert.show("GetSettingsResponder.fault(info:Object)");
+			Alert.show('GetSettingsResponder.fault(info:Object)');
 		}
 	}
 }
