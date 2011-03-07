@@ -14,6 +14,10 @@ package com.masuland.loginexample.view.cb
 
 	public class LoginBoxCB
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[Inject]
 		[Bindable]
 		public var appModel:AppModel;
@@ -36,6 +40,10 @@ package com.masuland.loginexample.view.cb
 		[Dispatcher]
 		public var dispatcher:IEventDispatcher;
 		
+		//----------------------
+		// Constructor
+		//----------------------
+		
 		public function LoginBoxCB()
 		{
 			validatorGroup.cb = this;
@@ -43,6 +51,10 @@ package com.masuland.loginexample.view.cb
 			validatorGroup.validate(true);
 		}
 
+		//----------------------
+		// Methods
+		//----------------------
+		
 		public function ctaLoginOrRegister(auth:AuthenticationVO, loginBoxState:String):void
 		{
 			if (loginBoxState == LoginBoxState.LOGIN)

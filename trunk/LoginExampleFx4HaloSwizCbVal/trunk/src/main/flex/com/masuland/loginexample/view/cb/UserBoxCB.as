@@ -8,8 +8,16 @@ package com.masuland.loginexample.view.cb
 
 	public class UserBoxCB
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[Dispatcher]
 		public var dispatcher:IEventDispatcher;
+		
+		//----------------------
+		// Methods
+		//----------------------
 		
 		public function updateUser(user:UserVO):void
 		{
