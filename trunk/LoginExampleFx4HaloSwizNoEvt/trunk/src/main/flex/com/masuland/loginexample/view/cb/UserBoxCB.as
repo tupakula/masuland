@@ -5,12 +5,20 @@ package com.masuland.loginexample.view.cb
 
 	public class UserBoxCB implements IUserBoxCB
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[Inject]
 		public var appController:IAppController;
 
 		private var _currentUser:UserVO;
 
-		[Inject(source="appModel.currentUser", bind="true")]
+		//----------------------
+		// Getter / Setter
+		//----------------------
+		
+		[Inject(source='appModel.currentUser', bind='true')]
 		[Bindable]
 		public function get currentUser():UserVO
 		{
@@ -22,6 +30,10 @@ package com.masuland.loginexample.view.cb
 			_currentUser = value;
 		}
 
+		//----------------------
+		// Methods
+		//----------------------
+		
 		public function updateUser(user:UserVO):void
 		{
 			appController.updateUser(user);

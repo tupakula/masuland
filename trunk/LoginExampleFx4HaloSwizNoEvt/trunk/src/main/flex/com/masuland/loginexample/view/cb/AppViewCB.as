@@ -8,16 +8,24 @@ package com.masuland.loginexample.view.cb
 
 	public class AppViewCB implements IAppViewCB
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[Inject]
 		public var appController:IAppController;
 
 		private var _isApplicationVisible:Boolean;
 		
-		private var _settings:SettingsVO;
-		
 		private var _currentLayout:LayoutVO;
+		
+		private var _settingsBoxState:String;
 
-		[Inject(source="appModel.isApplicationVisible", bind="true")]
+		//----------------------
+		// Getter / Setter
+		//----------------------
+		
+		[Inject(source='appModel.isApplicationVisible', bind='true')]
 		[Bindable]
 		public function get isApplicationVisible():Boolean
 		{
@@ -29,19 +37,7 @@ package com.masuland.loginexample.view.cb
 			_isApplicationVisible = value;
 		}
 
-		[Inject(source="appModel.settings", bind="true")]
-		[Bindable]
-		public function get settings():SettingsVO
-		{
-			return _settings;
-		}
-
-		public function set settings(value:SettingsVO):void
-		{
-			_settings = value;
-		}
-
-		[Inject(source="appModel.currentLayout", bind="true")]
+		[Inject(source='appModel.currentLayout', bind='true')]
 		[Bindable]
 		public function get currentLayout():LayoutVO
 		{
@@ -52,7 +48,23 @@ package com.masuland.loginexample.view.cb
 		{
 			_currentLayout = value;
 		}
+		
+		[Inject(source='appModel.settingsBoxState', bind='true')]
+		[Bindable]
+		public function get settingsBoxState():String
+		{
+			return _settingsBoxState;
+		}
+		
+		public function set settingsBoxState(value:String):void
+		{
+			_settingsBoxState = value;
+		}
 
+		//----------------------
+		// Methods
+		//----------------------
+		
 		public function loadStyle(style:StyleVO):void
 		{
 			appController.loadStyle(style);

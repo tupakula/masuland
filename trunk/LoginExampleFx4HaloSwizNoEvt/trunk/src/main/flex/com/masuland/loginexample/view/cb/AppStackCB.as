@@ -2,9 +2,17 @@ package com.masuland.loginexample.view.cb
 {
 	public class AppStackCB implements IAppStackCB
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		private var _loginBoxState:String;
 
-		[Inject(source="appModel.loginBoxState", bind="true")]
+		//----------------------
+		// Getter / Setter
+		//----------------------
+		
+		[Inject(source='appModel.loginBoxState', bind='true')]
 		[Bindable]
 		public function get loginBoxState():String
 		{

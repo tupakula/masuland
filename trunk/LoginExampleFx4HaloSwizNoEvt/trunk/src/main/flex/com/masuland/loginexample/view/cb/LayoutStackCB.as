@@ -4,11 +4,19 @@ package com.masuland.loginexample.view.cb
 
 	public class LayoutStackCB implements ILayoutStackCB
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		private var _appStackState:String;
 
 		private var _currentLayout:LayoutVO;
 
-		[Inject(source="appModel.appStackState", bind="true")]
+		//----------------------
+		// Getter / Setter
+		//----------------------
+		
+		[Inject(source='appModel.appStackState', bind='true')]
 		[Bindable]
 		public function get appStackState():String
 		{
@@ -20,7 +28,7 @@ package com.masuland.loginexample.view.cb
 			_appStackState = value;
 		}
 
-		[Inject(source="appModel.currentLayout", bind="true")]
+		[Inject(source='appModel.currentLayout', bind='true')]
 		[Bindable]
 		public function get currentLayout():LayoutVO
 		{
