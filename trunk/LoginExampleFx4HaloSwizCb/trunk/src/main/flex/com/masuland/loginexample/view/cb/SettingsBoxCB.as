@@ -10,7 +10,7 @@ package com.masuland.loginexample.view.cb
 	
 	import flash.events.IEventDispatcher;
 
-	public class AppViewCB
+	public class SettingsBoxCB
 	{
 		[Dispatcher]
 		public var dispatcher:IEventDispatcher;
