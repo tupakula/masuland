@@ -55,7 +55,7 @@
 
 	<!-- CODE BEHIND -->
 	
-	<cb:AppViewCB 
+	<cb:SettingsBoxCB 
 		id="appViewCB"
 		/>
 	

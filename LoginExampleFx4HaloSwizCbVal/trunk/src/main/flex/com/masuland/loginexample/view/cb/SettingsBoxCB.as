@@ -10,11 +10,19 @@ package com.masuland.loginexample.view.cb
 	
 	import flash.events.IEventDispatcher;
 
-	public class AppViewCB
+	public class SettingsBoxCB
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[Dispatcher]
 		public var dispatcher:IEventDispatcher;
 
+		//----------------------
+		// Methods
+		//----------------------
+		
 		public function loadStyle(style:StyleVO):void
 		{
 			dispatcher.dispatchEvent(new LoadStyleEvent(style));
