@@ -52,6 +52,11 @@
 		visible="false"
 		includeInLayout="false"
 		>
+		<mx:Label
+			text="{ resourceManager.getString('resources', 'txt_settings_title') }"
+			width="100%"
+			styleName="settingsHeader"
+			/>
 		<mx:VBox
 			width="100%"
 			verticalAlign="middle"
