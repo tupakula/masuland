@@ -6,10 +6,10 @@ package com.masuland.loginexample.view.cb
 	import com.masuland.loginexample.vo.StyleVO;
 
 	[Bindable]
-	public interface IAppViewCB
+	public interface ISettingsBoxCB
 	{
-		function get isApplicationVisible():Boolean;
-		function set isApplicationVisible(value:Boolean):void;
+		function get settings():SettingsVO;
+		function set settings(value:SettingsVO):void;
 		
 		function get currentLayout():LayoutVO;
 		function set currentLayout(value:LayoutVO):void;
@@ -17,6 +17,8 @@ package com.masuland.loginexample.view.cb
 		function get settingsBoxState():String;
 		function set settingsBoxState(value:String):void;
 		
+		function toggleSettingsBox():void;
+			
 		function loadStyle(style:StyleVO):void;
 		
 		function loadLayout(layout:LayoutVO):void;
