@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="LoginExampleFx3Parsley" default="build" basedir=".">
+	
+	<property file="build.properties" />
+	
+	<taskdef 
+		resource="flexTasks.tasks"
+		classpath="${basedir}/libs/flexTasks.jar"
+		/>
+	
+<!--
+		classpath="${basedir}/libs/flexTasks.jar"
+		classpath="/Applications/Adobe\ Flash\ Builder\ 4\ Plug-in/sdks/4.1.0/ant/lib/flexTasks.jar"
+-->
+	
+	<target name="prepare">
+		<mkdir dir="${DIR_BUILD}" />
+		<copy todir="${DIR_BUILD}">
+<!--
+			<fileset dir="src">
+				<include name="config/**"/>
+				<include name="resources/**" />
+			</fileset>
+-->
+			<fileset dir="html-template">
+				<include name="*.html"/>
+				<include name="*.js"/>
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="build" depends="build.application, build.styles, build.locales, build.htmlWrapper" />
+
+	<target name="build.application" depends="prepare">
+		<mxmlc file="src/main/flex/${FILE_MAIN}.mxml"
+			output="${DIR_BUILD}/${FILE_MAIN}.swf" 
+			incremental="true"
+			keep-generated-actionscript="false"
+			locale="de_DE,en_US"
+			debug="${BUILD_DEBUG_MODE}"
+			>
+		    <metadata description="LoginExampleFx3Parsley">
+		        <contributor name="Masu" />
+		    </metadata>
+			<load-config filename="${FLEX_HOME}/frameworks/flex-config.xml"/>
+			<use-network>false</use-network>
+			<compiler.source-path>src/main/resources</compiler.source-path>
+			<source-path>src/main/locales/{locale}</source-path>
+			<source-path path-element="${FLEX_HOME}/frameworks/javascript/fabridge/src"/>
+			<include-libraries dir="libs">
+				<include name="*.swc" />
+			</include-libraries>
+		</mxmlc>
+	</target>
+
+<!--
+			<source-path path-element="src/main/resources">
+				<include name="**/*" />
+			</source-path>
+			<source-path path-element="src/main/resources"/>
+			<source-path>src/main/resources</source-path>
+-->
+
+	<target name="build.locales">
+		<antcall target="build.locales.de_DE" />
+		<antcall target="build.locales.en_US" />
+	</target>
+
+	<target name="build.locales.de_DE">
+		<mxmlc
+			output="${DIR_BUILD}/locales/locale_de_DE.swf"
+			>
+			<locale>de_DE</locale>
+			<source-path>src/main/locales/{locale}</source-path>
+			<compiler.library-path dir="${FLEX_HOME}/frameworks" append="false">
+				<include name="libs" />
+			</compiler.library-path>
+			<include-resource-bundles>resources</include-resource-bundles>
+		</mxmlc>
+<!--
+		<mxmlc
+			output="${DIR_BUILD}/locales/locale_de_DE.swf"
+			>
+			<locale>de_DE</locale>
+			<source-path>src/main/locales/{locale}</source-path>
+			<include-resource-bundles>resources</include-resource-bundles>
+		</mxmlc>
+
+		<mxmlc
+			debug="${BUILD_DEBUG_MODE}"
+			incremental="true"
+			output="${DIR_BUILD}/locales/locale_de_DE.swf"
+			>
+			<locale>de_DE</locale>
+			<source-path>src/main/locales/{locale}</source-path>
+			<compiler.library-path dir="${FLEX_HOME}/frameworks" append="false">
+				<include name="libs" />
+			</compiler.library-path>
+ 
+			<include-resource-bundles>resources</include-resource-bundles>
+		</mxmlc>
+-->
+	</target>
+
+	<target name="build.locales.en_US">
+		<mxmlc
+			debug="${BUILD_DEBUG_MODE}"
+			incremental="true"
+			output="${DIR_BUILD}/locales/locale_en_US.swf"
+			>
+			<locale>en_US</locale>
+			<source-path>src/main/locales/{locale}</source-path>
+			<include-resource-bundles>resources</include-resource-bundles>
+		</mxmlc>
+	</target>
+
+	<target name="build.styles" depends="prepare">
+		<mxmlc 
+			file="src/main/resources/style/login_example_web_green.css"
+			output="${DIR_BUILD}/style/login_example_web_green.swf" 
+			keep-generated-actionscript="false"
+			debug="${BUILD_DEBUG_MODE}"
+			/>
+		<mxmlc 
+			file="src/main/resources/style/login_example_web_red.css"
+			output="${DIR_BUILD}/style/login_example_web_red.swf" 
+			keep-generated-actionscript="false"
+			debug="${BUILD_DEBUG_MODE}"
+			/>
+		<mxmlc 
+			file="src/main/resources/style/login_example_phone_green.css"
+			output="${DIR_BUILD}/style/login_example_phone_green.swf" 
+			keep-generated-actionscript="false"
+			debug="${BUILD_DEBUG_MODE}"
+			/>
+		<mxmlc 
+			file="src/main/resources/style/login_example_phone_red.css"
+			output="${DIR_BUILD}/style/login_example_phone_red.swf" 
+			keep-generated-actionscript="false"
+			debug="${BUILD_DEBUG_MODE}"
+			/>
+	</target>
+
+	<target name="build.htmlWrapper" depends="prepare">
+		<html-wrapper 
+			title="Alfa FlexCounter" 
+			file="index.html"
+			height="1024" width="768" 
+			bgcolor="red" 
+			application="app" 
+			swf="${FILE_MAIN}"
+			history="false" 
+			template="express-installation" 
+			output="${DIR_BUILD}" 
+			/>
+	</target>
+
+	<target name="buildAndDeploy" depends="build, deploy" />
+
+	<target name="deploy">
+		<copy todir="${DIR_DEPLOY}">
+			<fileset dir="${DIR_BUILD}">
+				<include name="config/**"/>
+				<include name="*.swf" />
+				<include name="locale/**"/>
+				<include name="style/**"/>
+				<include name="resources/**"/>
+			</fileset>
+			<!--fileset dir="src">
+				<include name="resources/**"/>
+			</fileset-->
+		</copy>
+	</target>
+	
+	<target name="clean">
+		<antcall target="clean.build" />
+		<antcall target="clean.deploy" />
+	</target>
+	
+	<target name="clean.build">
+		<delete dir="${DIR_BUILD}" />
+	</target>
+	
+	<target name="clean.deploy">
+		<delete dir="${DIR_DEPLOY}" />
+	</target>
+	
+</project>

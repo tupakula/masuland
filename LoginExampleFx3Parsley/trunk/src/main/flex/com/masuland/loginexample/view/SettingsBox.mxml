@@ -50,6 +50,7 @@
 		
 		<mx:Button
 			id="btn_settings"
+			width="35" height="30"
 			styleName="settingsButton"
 			buttonMode="true" useHandCursor="true" mouseChildren="false"
 			click="appModel.settingsBoxState == SettingsBoxState.CLOSED ? appModel.settingsBoxState = SettingsBoxState.OPEN : appModel.settingsBoxState = SettingsBoxState.CLOSED"
@@ -63,6 +64,11 @@
 		visible="false"
 		includeInLayout="false"
 		>
+		<mx:Label
+			text="{ resourceManager.getString('resources', 'txt_settings_title') }"
+			width="100%"
+			styleName="settingsHeader"
+			/>
 		<mx:VBox
 			width="100%"
 			verticalAlign="middle"
