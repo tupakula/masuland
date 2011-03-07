@@ -33,9 +33,10 @@
 				useHandCursor="true"
 				mouseChildren="true"
 				click="navigateToURL(new URLRequest('http://www.masuland.com'))"
+				toolTip="You are just as bright as your surrounding"
 				/>
 			<mx:Label
-				text="Parsley 2.3.1 - Login Example (Fx3)"
+				text="Parsley - Login Example (Fx3)"
 				styleName="appTitle"
 				/>
 		</mx:HBox>

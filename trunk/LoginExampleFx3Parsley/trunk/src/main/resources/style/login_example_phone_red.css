@@ -60,6 +60,13 @@ AppStack
 	padding-bottom: 5;
 }
 
+.settingsHeader
+{
+	text-align: left;
+	font-weight: bold;
+	font-size: 14;
+}
+
 .loginHeader
 {
 	text-align: left;
