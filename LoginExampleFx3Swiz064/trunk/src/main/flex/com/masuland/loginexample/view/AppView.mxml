@@ -30,6 +30,7 @@
 				useHandCursor="true"
 				mouseChildren="true"
 				click="navigateToURL(new URLRequest('http://www.masuland.com'))"
+				toolTip="You are just as bright as your surrounding"
 				/>
 			<mx:Label
 				text="Swiz 0.6.4 - Login Example (Fx3)"

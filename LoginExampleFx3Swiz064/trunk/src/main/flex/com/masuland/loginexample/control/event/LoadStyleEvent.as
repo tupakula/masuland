@@ -11,7 +11,7 @@ package com.masuland.loginexample.control.event
 		/**  */
 		public static const EVENT_NAME:String = getQualifiedClassName(
 			Class(LoadStyleEvent)).substring(
-				getQualifiedClassName(Class(LoadStyleEvent)).lastIndexOf("::")+2, 
+				getQualifiedClassName(Class(LoadStyleEvent)).lastIndexOf('::')+2, 
 				getQualifiedClassName(Class(LoadStyleEvent)).length);
 		
 		public var style:StyleVO;

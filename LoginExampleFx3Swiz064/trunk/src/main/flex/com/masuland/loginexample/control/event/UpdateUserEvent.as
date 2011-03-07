@@ -11,7 +11,7 @@ package com.masuland.loginexample.control.event
 		/**  */
 		public static const EVENT_NAME:String = getQualifiedClassName(
 			Class(UpdateUserEvent)).substring(
-				getQualifiedClassName(Class(UpdateUserEvent)).lastIndexOf("::")+2, 
+				getQualifiedClassName(Class(UpdateUserEvent)).lastIndexOf('::')+2, 
 				getQualifiedClassName(Class(UpdateUserEvent)).length);
 		
 		public var user:UserVO;

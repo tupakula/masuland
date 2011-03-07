@@ -11,7 +11,7 @@ package com.masuland.loginexample.control.event
 		/**  */
 		public static const EVENT_NAME:String = getQualifiedClassName(
 			Class(LoadLocaleEvent)).substring(
-				getQualifiedClassName(Class(LoadLocaleEvent)).lastIndexOf("::")+2, 
+				getQualifiedClassName(Class(LoadLocaleEvent)).lastIndexOf('::')+2, 
 				getQualifiedClassName(Class(LoadLocaleEvent)).length);
 		
 		public var locale:LocaleVO;

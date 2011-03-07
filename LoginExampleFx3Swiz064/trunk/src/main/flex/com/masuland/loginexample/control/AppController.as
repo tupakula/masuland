@@ -32,6 +32,10 @@ package com.masuland.loginexample.control
 	[Bindable]
 	public class AppController extends AbstractController
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[Autowire]
 		public var appModel:AppModel;
 		
@@ -41,18 +45,14 @@ package com.masuland.loginexample.control
 		[Autowire]
 		public var appDelegate:IAppDelegate;
 		
-		public function AppController() {}
-
-		//---------------
-		// Action Events
-		//---------------
-
+		//----------------------
+		// Methods
+		//----------------------
+		
 		/**
 		 * 
 		 */
-		[Mediate(
-			event="${appEventNames.INITIALIZE_CLIENT}"
-			)]
+		[Mediate(event='${appEventNames.INITIALIZE_CLIENT}')]
 		public function onInitComplete(event:Event):void 
 		{	
 			appModel.appStackState = AppStackState.LOGIN;
@@ -63,7 +63,7 @@ package com.masuland.loginexample.control
 			Swiz.dispatch(AppEventNames.GET_SETTINGS);
 		}
 
-		[Mediate(event="${appEventNames.GET_SETTINGS}")]
+		[Mediate(event='${appEventNames.GET_SETTINGS}')]
 		public function getSettings():void
 		{
 			var responder:GetSettingsResponder = new GetSettingsResponder();
@@ -74,8 +74,7 @@ package com.masuland.loginexample.control
 				responder.fault);
 		}
 		
-		[Mediate(event="${appEventNames.LOGIN}", 
-			properties="auth")]
+		[Mediate(event='${appEventNames.LOGIN}', properties='auth')]
 		public function login(auth:AuthenticationVO, nextEvent:Event=null):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN_PROGRESS;
@@ -88,15 +87,14 @@ package com.masuland.loginexample.control
 				responder.fault);
 		}
 
-		[Mediate(event="${appEventNames.LOGOUT}")]
+		[Mediate(event='${appEventNames.LOGOUT}')]
 		public function logout():void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
 			appModel.appStackState = AppStackState.LOGIN;
 		}
 
-		[Mediate(event="${appEventNames.REGISTER}", 
-			properties="auth")]
+		[Mediate(event='${appEventNames.REGISTER}', properties='auth')]
 		public function register(auth:AuthenticationVO, nextEvent:Event=null):void
 		{
 			appModel.loginBoxState = LoginBoxState.REGISTER_PROGRESS;
@@ -109,8 +107,7 @@ package com.masuland.loginexample.control
 				responder.fault);
 		}
 
-		[Mediate(event="${appEventNames.UPDATE_USER}", 
-			properties="user")]
+		[Mediate(event='${appEventNames.UPDATE_USER}', properties='user')]
 		public function updateUser(user:UserVO):void
 		{
 			var responder:UpdateUserResponder = new UpdateUserResponder();
@@ -121,16 +118,10 @@ package com.masuland.loginexample.control
 				responder.fault);
 		}
 		
-		//---------------
-		// GUI Events
-		//---------------
-		
 		/**
 		 * 
 		 */
-		[Mediate(
-			event="${appEventNames.GOTO_LOGIN}"
-			)]
+		[Mediate(event='${appEventNames.GOTO_LOGIN}')]
 		public function gotoLogin():void 
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
@@ -139,26 +130,17 @@ package com.masuland.loginexample.control
 		/**
 		 * 
 		 */
-		[Mediate(
-			event="${appEventNames.GOTO_REGISTER}"
-			)]
+		[Mediate(event='${appEventNames.GOTO_REGISTER}')]
 		public function gotoRegister():void 
 		{
 			appModel.loginBoxState = LoginBoxState.REGISTER;
 		}
 
-		//---------------
-		// GUI Loading
-		//---------------
-
 		/**
 		 * 
 		 */
-		[Mediate(
-			event="${appEventNames.LOAD_LOCALE}", 
-			properties="locale"
-			)]
-		public function loadLocales(locale:LocaleVO):void 
+		[Mediate(event='${appEventNames.LOAD_LOCALE}', properties='locale')]
+		public function loadLocale(locale:LocaleVO):void 
 		{
 			appModel.currentLocale = locale;
 			
@@ -180,7 +162,7 @@ package com.masuland.loginexample.control
 			
 			if (appModel.currentLocale != null)
 			{
-				resourceModuleURL = "AppResources_" + appModel.currentLocale.code + ".swf";
+				resourceModuleURL = 'AppResources_' + appModel.currentLocale.code + '.swf';
 				eventDispatcher = ResourceManager.getInstance().loadResourceModule(resourceModuleURL);
 				
 				if (eventDispatcher != null)
@@ -194,9 +176,7 @@ package com.masuland.loginexample.control
 		/**
 		 * 
 		 */
-		[Mediate(
-			event="${appEventNames.LOAD_STYLE}", 
-			properties="style")]
+		[Mediate(event='${appEventNames.LOAD_STYLE}', properties='style')]
 		public function loadStyle(style:StyleVO):void 
 		{
 			var myEvent:IEventDispatcher;
@@ -211,17 +191,15 @@ package com.masuland.loginexample.control
 				appModel.currentStyle = style;
 				
 				myEvent = StyleManager.loadStyleDeclarations(style.path, true);
-				myEvent.addEventListener(StyleEvent.COMPLETE, onLoadStyleComplete);
-				myEvent.addEventListener(StyleEvent.ERROR, onLoadStyleError);
+				myEvent.addEventListener(StyleEvent.COMPLETE, loadStyle_completeHandler);
+				myEvent.addEventListener(StyleEvent.ERROR, loadStyle_errorHandler);
 			}
 		}
 
 		/**
 		 * 
 		 */
-		[Mediate(
-			event="${appEventNames.LOAD_LAYOUT}", 
-			properties="layout")]
+		[Mediate(event='${appEventNames.LOAD_LAYOUT}', properties='layout')]
 		public function loadLayout(layout:LayoutVO):void 
 		{
 			appModel.currentLayout = layout;
@@ -233,10 +211,14 @@ package com.masuland.loginexample.control
 			Swiz.dispatchEvent(new LoadLocaleEvent(LocaleVO( appModel.currentLayout.locales.getItemAt(0) )));
 		}
 		
+		//----------------------
+		// Handler
+		//----------------------
+		
 		/**
 		 * 
 		 */
-		private function onLoadLocaleComplete(event:ResourceEvent):void
+		protected function loadLocale_completeHandler(event:ResourceEvent):void
 		{	    	
 			ResourceManager.getInstance().localeChain = [ appModel.currentLocale.code ];
 		}
@@ -244,14 +226,14 @@ package com.masuland.loginexample.control
 		/**
 		 * 
 		 */
-		private function onLoadLocaleError(event:ResourceEvent):void
+		protected function loadLocale_errorHandler(event:ResourceEvent):void
 		{	    	
 		}
 
 		/**
 		 * 
 		 */
-		private function onLoadStyleComplete(event:StyleEvent):void
+		protected function loadStyle_completeHandler(event:StyleEvent):void
 		{
 			appModel.isApplicationVisible = true;
 		}
@@ -259,7 +241,7 @@ package com.masuland.loginexample.control
 		/**
 		 * 
 		 */
-		private function onLoadStyleError(event:StyleEvent):void
+		protected function loadStyle_errorHandler(event:StyleEvent):void
 		{
 			appModel.isApplicationVisible = true;
 		}

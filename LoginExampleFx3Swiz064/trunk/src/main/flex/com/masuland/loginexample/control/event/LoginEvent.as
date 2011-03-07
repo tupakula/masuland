@@ -11,7 +11,7 @@ package com.masuland.loginexample.control.event
 		/**  */
 		public static const EVENT_NAME:String = getQualifiedClassName(
 			Class(LoginEvent)).substring(
-				getQualifiedClassName(Class(LoginEvent)).lastIndexOf("::")+2, 
+				getQualifiedClassName(Class(LoginEvent)).lastIndexOf('::')+2, 
 				getQualifiedClassName(Class(LoginEvent)).length);
 		
 		public var auth:AuthenticationVO;
