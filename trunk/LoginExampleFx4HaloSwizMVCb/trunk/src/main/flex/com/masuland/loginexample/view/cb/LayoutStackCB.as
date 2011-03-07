@@ -4,6 +4,10 @@ package com.masuland.loginexample.view.cb
 
 	public class LayoutStackCB
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[Dispatcher]
 		public var dispatcher:IEventDispatcher;
 

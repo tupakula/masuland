@@ -2,6 +2,10 @@ package com.masuland.loginexample.view.cb
 {
 	public class AppStackCB
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[Dispatcher]
 		public var dispatcher:IEventDispatcher;
 

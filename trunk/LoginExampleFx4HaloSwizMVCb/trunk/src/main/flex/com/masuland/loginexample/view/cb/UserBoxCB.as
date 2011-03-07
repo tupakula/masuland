@@ -8,6 +8,10 @@ package com.masuland.loginexample.view.cb
 
 	public class UserBoxCB
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[Dispatcher]
 		public var dispatcher:IEventDispatcher;
 
@@ -15,6 +19,10 @@ package com.masuland.loginexample.view.cb
 		[Bindable]
 		public var currentUser:UserVO;
 
+		//----------------------
+		// Methods
+		//----------------------
+		
 		public function updateUser(user:UserVO):void
 		{
 			dispatcher.dispatchEvent(new UpdateUserEvent(user));

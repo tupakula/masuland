@@ -39,5 +39,6 @@ package com.masuland.loginexample.model
 		
 		public var loginBoxState:String;
 		public var appStackState:String;
+		public var settingsBoxState:String;
 	}
 }
