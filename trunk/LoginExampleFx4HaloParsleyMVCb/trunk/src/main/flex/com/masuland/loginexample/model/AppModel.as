@@ -19,36 +19,36 @@ package com.masuland.loginexample.model
 		// Values
 		//---------------
 		
-		[Publish(scope="AppModel", objectId="currentUser")]
+		[Publish(scope='appModel', objectId='currentUser')]
 		public var currentUser:UserVO;
 		
-		[Publish(scope="AppModel", objectId="settings")]
+		[Publish(scope='appModel', objectId='settings')]
 		public var settings:SettingsVO;
 
-		[Publish(scope="AppModel", objectId="currentStyle")]
+		[Publish(scope='appModel', objectId='currentStyle')]
 		public var currentStyle:StyleVO;
 		
-		[Publish(scope="AppModel", objectId="currentLayout")]
+		[Publish(scope='appModel', objectId='currentLayout')]
 		public var currentLayout:LayoutVO;
 		
-		[Publish(scope="AppModel", objectId="currentLocale")]
+		[Publish(scope='appModel', objectId='currentLocale')]
 		public var currentLocale:LocaleVO;
 		
 		//---------------
 		// Flags
 		//---------------
 		
-		[Publish(scope="AppModel", objectId="isApplicationVisible")]
+		[Publish(scope='appModel', objectId='isApplicationVisible')]
 		public var isApplicationVisible:Boolean;
 		
 		//---------------
 		// States
 		//---------------
 		
-		[Publish(scope="AppModel", objectId="loginBoxState")]
+		[Publish(scope='appModel', objectId='loginBoxState')]
 		public var loginBoxState:String;
 		
-		[Publish(scope="AppModel", objectId="appStackState")]
+		[Publish(scope='appModel', objectId='appStackState')]
 		public var appStackState:String;
 	}
 }

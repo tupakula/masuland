@@ -11,21 +11,29 @@ package com.masuland.loginexample.view.cb
 
 	public class AppViewCB
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[MessageDispatcher]
 		public var dispatcher:Function;
 
-		[Subscribe(scope="AppModel", objectId="isApplicationVisible")]
+		[Subscribe(scope='appModel', objectId='isApplicationVisible')]
 		[Bindable]
 		public var isApplicationVisible:Boolean;
 		
-		[Subscribe(scope="AppModel", objectId="settings")]
+		[Subscribe(scope='appModel', objectId='settings')]
 		[Bindable]
 		public var settings:SettingsVO;
 
-		[Subscribe(scope="AppModel", objectId="currentLayout")]
+		[Subscribe(scope='appModel', objectId='currentLayout')]
 		[Bindable]
 		public var currentLayout:LayoutVO;
 
+		//----------------------
+		// Methods
+		//----------------------
+		
 		public function loadStyle(style:StyleVO):void
 		{
 			dispatcher(new LoadStyleEvent(style));
