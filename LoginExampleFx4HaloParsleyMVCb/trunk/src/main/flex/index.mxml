@@ -27,8 +27,8 @@
 	<fx:Declarations>
 		<spicefactory:ContextBuilder>
 			<spicefactory:FlexConfig type="{ AppConfig }"/>
-			<spicefactory:MessageSettings unhandledErrors="{ErrorPolicy.RETHROW}"/> 
-			<spicefactory:Scope name="AppModel" inherited="true"/>
+			<spicefactory:MessageSettings unhandledErrors="{ ErrorPolicy.RETHROW }"/> 
+			<spicefactory:Scope name="appModel" inherited="true"/>
 		</spicefactory:ContextBuilder>
 		
 		<s:TraceTarget level="{ LogEventLevel.DEBUG }">
