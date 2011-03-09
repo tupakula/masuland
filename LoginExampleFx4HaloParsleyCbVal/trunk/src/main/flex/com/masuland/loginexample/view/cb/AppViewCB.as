@@ -10,9 +10,17 @@ package com.masuland.loginexample.view.cb
 
 	public class AppViewCB
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[MessageDispatcher]
 		public var dispatcher:Function;
 
+		//----------------------
+		// Methods
+		//----------------------
+		
 		public function loadStyle(style:StyleVO):void
 		{
 			dispatcher(new LoadStyleEvent(style));

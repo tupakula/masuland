@@ -9,6 +9,10 @@ package com.masuland.loginexample.view.cb
 
 	public class LoginBoxCB
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[Inject]
 		[Bindable]
 		public var appModel:AppModel;
@@ -28,13 +32,17 @@ package com.masuland.loginexample.view.cb
 		[Bindable]
 		public var validatorGroup:LoginBoxValidatorGroup = new LoginBoxValidatorGroup();
 		
+		//----------------------
+		// Methods
+		//----------------------
+		
 		[MessageDispatcher]
 		public var dispatcher:Function;
 		
 		public function LoginBoxCB()
 		{
 			validatorGroup.cb = this;
-			validatorGroup.initialized(this, "LoginBoxCB");
+			validatorGroup.initialized(this, 'LoginBoxCB');
 			validatorGroup.validate(true);
 		}
 		
