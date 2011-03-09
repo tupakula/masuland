@@ -8,11 +8,19 @@ package com.masuland.loginexample.view.cb
 	import com.masuland.loginexample.vo.LocaleVO;
 	import com.masuland.loginexample.vo.StyleVO;
 
-	public class AppViewCB
+	public class SettingsBoxCB
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[MessageDispatcher]
 		public var dispatcher:Function;
 
+		//----------------------
+		// Methods
+		//----------------------
+		
 		public function loadStyle(style:StyleVO):void
 		{
 			dispatcher(new LoadStyleEvent(style));
