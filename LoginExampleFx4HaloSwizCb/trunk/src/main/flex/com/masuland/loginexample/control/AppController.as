@@ -57,7 +57,7 @@ package com.masuland.loginexample.control
 		/**
 		 * 
 		 */ 
-		[Mediate(event='mx.events.FlexEvent.APPLICATION_COMPLETE')]
+		[EventHandler(event='mx.events.FlexEvent.APPLICATION_COMPLETE')]
 		public function initApp():void
 		{
 			appModel.appStackState = AppStackState.LOGIN;
@@ -68,7 +68,7 @@ package com.masuland.loginexample.control
 			dispatcher.dispatchEvent(new AppEvent(AppEvent.GET_SETTINGS));
 		}
 		
-		[Mediate(event='AppEvent.GET_SETTINGS')]
+		[EventHandler(event='AppEvent.GET_SETTINGS')]
 		public function getSettings():void
 		{
 			serviceHelper.executeServiceCall(
@@ -77,7 +77,7 @@ package com.masuland.loginexample.control
 				getSettings_faultHandler);
 		}
 		
-		[Mediate(event='LoginEvent.EVENT_NAME', properties='auth')]
+		[EventHandler(event='LoginEvent.EVENT_NAME', properties='auth')]
 		public function login(auth:AuthenticationVO, nextEvent:Event=null):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN_PROGRESS;
@@ -88,14 +88,14 @@ package com.masuland.loginexample.control
 				login_faultHandler);
 		}
 		
-		[Mediate(event='AppEvent.LOGOUT')]
+		[EventHandler(event='AppEvent.LOGOUT')]
 		public function logout():void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
 			appModel.appStackState = AppStackState.LOGIN;
 		}
 		
-		[Mediate(event='RegisterEvent.EVENT_NAME', properties='auth')]
+		[EventHandler(event='RegisterEvent.EVENT_NAME', properties='auth')]
 		public function register(auth:AuthenticationVO, nextEvent:Event=null):void
 		{
 			appModel.loginBoxState = LoginBoxState.REGISTER_PROGRESS;
@@ -106,7 +106,7 @@ package com.masuland.loginexample.control
 				register_faultHandler);
 		}
 		
-		[Mediate(event='UpdateUserEvent.EVENT_NAME}', properties='user')]
+		[EventHandler(event='UpdateUserEvent.EVENT_NAME', properties='user')]
 		public function updateUser(user:UserVO):void
 		{
 			serviceHelper.executeServiceCall(
@@ -118,7 +118,7 @@ package com.masuland.loginexample.control
 		/**
 		 * 
 		 */
-		[Mediate(event='AppEvent.GOTO_LOGIN')]
+		[EventHandler(event='AppEvent.GOTO_LOGIN')]
 		public function gotoLogin():void 
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
@@ -127,7 +127,7 @@ package com.masuland.loginexample.control
 		/**
 		 * 
 		 */
-		[Mediate(event='AppEvent.GOTO_REGISTER')]
+		[EventHandler(event='AppEvent.GOTO_REGISTER')]
 		public function gotoRegister():void 
 		{
 			appModel.loginBoxState = LoginBoxState.REGISTER;
@@ -136,7 +136,7 @@ package com.masuland.loginexample.control
 		/**
 		 * 
 		 */
-		[Mediate(event='LoadLocaleEvent.EVENT_NAME', properties='locale')]
+		[EventHandler(event='LoadLocaleEvent.EVENT_NAME', properties='locale')]
 		public function loadLocale(locale:LocaleVO):void 
 		{
 			appModel.currentLocale = locale;
@@ -173,7 +173,7 @@ package com.masuland.loginexample.control
 		/**
 		 * 
 		 */
-		[Mediate(event='LoadStyleEvent.EVENT_NAME', properties='style')]
+		[EventHandler(event='LoadStyleEvent.EVENT_NAME', properties='style')]
 		public function loadStyle(style:StyleVO):void 
 		{
 			var myEvent:IEventDispatcher;
@@ -197,7 +197,7 @@ package com.masuland.loginexample.control
 		/**
 		 * 
 		 */
-		[Mediate(event='LoadLayoutEvent.EVENT_NAME', properties='layout')]
+		[EventHandler(event='LoadLayoutEvent.EVENT_NAME', properties='layout')]
 		public function loadLayout(layout:LayoutVO):void 
 		{
 			appModel.currentLayout = layout;

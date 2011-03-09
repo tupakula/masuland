@@ -49,7 +49,7 @@ package com.masuland.loginexample.control
 		/**
 		 * 
 		 */ 
-		[Mediate(event="mx.events.FlexEvent.APPLICATION_COMPLETE")]
+		[EventHandler(event="mx.events.FlexEvent.APPLICATION_COMPLETE")]
 		public function initApp():void
 		{
 			appModel.appStackState = AppStackState.LOGIN;
