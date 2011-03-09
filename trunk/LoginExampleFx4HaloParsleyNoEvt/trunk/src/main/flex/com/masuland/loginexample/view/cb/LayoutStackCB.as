@@ -4,11 +4,15 @@ package com.masuland.loginexample.view.cb
 
 	public class LayoutStackCB implements ILayoutStackCB
 	{
-		[Subscribe(scope="AppModel", objectId="appStackState")]
+		//----------------------
+		// Properties
+		//----------------------
+		
+		[Subscribe(scope='appModel', objectId='appStackState')]
 		[Bindable]
 		public var appStackState:String;
 
-		[Subscribe(scope="AppModel", objectId="currentLayout")]
+		[Subscribe(scope='appModel', objectId='currentLayout')]
 		[Bindable]
 		public var currentLayout:LayoutVO;
 	}

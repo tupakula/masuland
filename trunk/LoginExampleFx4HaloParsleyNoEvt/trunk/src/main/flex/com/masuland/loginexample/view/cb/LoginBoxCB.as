@@ -6,6 +6,10 @@ package com.masuland.loginexample.view.cb
 
 	public class LoginBoxCB implements ILoginBoxCB
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[Inject]
 		public var appController:IAppController;
 		
@@ -20,6 +24,10 @@ package com.masuland.loginexample.view.cb
 		
 		[Bindable]
 		public var repeatPassword:String = '';
+		
+		//----------------------
+		// Methods
+		//----------------------
 		
 		public function ctaLoginOrRegister(auth:AuthenticationVO, loginBoxState:String):void
 		{
