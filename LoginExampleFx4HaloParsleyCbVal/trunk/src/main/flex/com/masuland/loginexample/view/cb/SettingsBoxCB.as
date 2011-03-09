@@ -8,7 +8,7 @@ package com.masuland.loginexample.view.cb
 	import com.masuland.loginexample.vo.LocaleVO;
 	import com.masuland.loginexample.vo.StyleVO;
 
-	public class AppViewCB
+	public class SettingsBoxCB
 	{
 		//----------------------
 		// Properties
