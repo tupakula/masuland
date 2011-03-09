@@ -53,6 +53,10 @@
 		id="appViewCB"
 		/>
 	
+	<cb:SettingsBoxCB
+		id="settingsBoxCB"
+		/>
+	
 	<cb:LayoutStackCB
 		id="layoutStackCB"
 		/>

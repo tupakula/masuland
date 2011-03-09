@@ -50,5 +50,8 @@ package com.masuland.loginexample.model
 		
 		[Publish(scope='appModel', objectId='appStackState')]
 		public var appStackState:String;
+		
+		[Publish(scope='appModel', objectId='settingsBoxState')]
+		public var settingsBoxState:String;
 	}
 }

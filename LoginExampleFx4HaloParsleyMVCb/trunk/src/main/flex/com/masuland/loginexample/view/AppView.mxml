@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<mx:Canvas 
+<mx:HBox 
 	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:view="com.masuland.loginexample.view.*"
+	xmlns:parsley="http://www.spicefactory.org/parsley" 
 	xmlns:layout="com.masuland.loginexample.view.layout.*" 
-	xmlns:spicefactory="http://www.spicefactory.org/parsley"
 	width="100%" height="100%"
 	visible="{ cb.isApplicationVisible }" 
+	paddingLeft="10" paddingRight="10" paddingTop="10" paddingBottom="10" 
 	>
 	
 	<mx:Script>
 		<![CDATA[
 			import com.masuland.loginexample.view.cb.AppViewCB;
-			import com.masuland.loginexample.vo.LayoutVO;
-			import com.masuland.loginexample.vo.LocaleVO;
-			import com.masuland.loginexample.vo.StyleVO;
 			
 			[Inject]
 			[Bindable]
@@ -20,53 +19,44 @@
 		]]>
 	</mx:Script>
 	
-	<spicefactory:Configure />
+	<parsley:Configure />
 	
-	<mx:VBox
-		right="5" top="5"
-		horizontalAlign="right"
+	<mx:VBox 
+		width="100%" height="100%"
 		>
+		
 		<mx:HBox
 			verticalAlign="middle"
 			>
-			<mx:Label
-				text="{ resourceManager.getString('resources', 'txt_change_layout') }"
+			<mx:Image
+				source="@Embed(source='images/icon_masuland.png')"
+				buttonMode="true"
+				useHandCursor="true"
+				mouseChildren="true"
+				click="navigateToURL(new URLRequest('http://www.masuland.com'))"
+				toolTip="You are just as bright as your surrounding"
 				/>
-			<mx:ComboBox
-				id="cb_layout"
-				dataProvider="{ cb.settings.layouts }"
-				change="cb.loadLayout(LayoutVO( cb_layout.selectedItem ));"
+			<mx:Label
+				text="Parsley (MVCb) - Login Example (Fx4, Halo)"
+				styleName="appTitle"
 				/>
 		</mx:HBox>
-		<mx:HBox
-			verticalAlign="middle"
+		
+		<mx:Canvas
+			width="100%" height="100%"
 			>
-			<mx:Label
-				text="{ resourceManager.getString('resources', 'txt_change_style') }"
+			
+			<layout:LayoutStack
+				horizontalCenter="0" verticalCenter="0"
+				currentState="{ cb.currentLayout.stateName }"
 				/>
-			<mx:ComboBox
-				id="cb_style"
-				dataProvider="{ cb.currentLayout.styles }"
-				change="cb.loadStyle(StyleVO( cb_style.selectedItem ));"
-				/>
-		</mx:HBox>
-		<mx:HBox
-			verticalAlign="middle"
-			>
-			<mx:Label
-				text="{ resourceManager.getString('resources', 'txt_change_locale') }"
-				/>
-			<mx:ComboBox
-				id="cb_locale"
-				dataProvider="{ cb.currentLayout.locales }"
-				change="cb.loadLocale(LocaleVO( cb_locale.selectedItem ));"
-				/>
-		</mx:HBox>
+			
+		</mx:Canvas>
+		
 	</mx:VBox>
 	
-	<layout:LayoutStack
-		horizontalCenter="0" verticalCenter="0"
-		currentState="{ cb.currentLayout.stateName }"
+	<view:SettingsBox
+		currentState="{ cb.settingsBoxState }"
 		/>
 	
-</mx:Canvas>
+</mx:HBox>
