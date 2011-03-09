@@ -11,6 +11,7 @@ package com.masuland.loginexample.control
 	import com.masuland.loginexample.model.AppModel;
 	import com.masuland.loginexample.state.AppStackState;
 	import com.masuland.loginexample.state.LoginBoxState;
+	import com.masuland.loginexample.state.SettingsBoxState;
 	import com.masuland.loginexample.vo.LayoutVO;
 	import com.masuland.loginexample.vo.LocaleVO;
 	import com.masuland.loginexample.vo.SettingsVO;
@@ -33,6 +34,10 @@ package com.masuland.loginexample.control
 	
 	public class AppController
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[MessageDispatcher]
 		public var dispatcher:Function;
 		
@@ -42,7 +47,9 @@ package com.masuland.loginexample.control
 		[Inject]
 		public var appDelegate:IAppDelegate;
 		
-		public function AppController() {}
+		//----------------------
+		// Methods
+		//----------------------
 		
 		[Init]
 		public function init():void
@@ -50,43 +57,25 @@ package com.masuland.loginexample.control
 			dispatcher(new AppEvent(AppEvent.INITIALIZE_CLIENT));
 		}
 		
-		//---------------
-		// Action Events
-		//---------------
-
 		/**
-		 * Load the User collection.
+		 * 
 		 */
-		[MessageHandler(selector="AppEvent.INITIALIZE_CLIENT")]
+		[MessageHandler(selector='AppEvent.INITIALIZE_CLIENT')]
 		public function initializeClient(event:AppEvent):void
 		{
 			appModel.appStackState = AppStackState.LOGIN;
 			appModel.loginBoxState = LoginBoxState.LOGIN;
+			appModel.settingsBoxState = SettingsBoxState.OPEN;
 			
 			// get settings
 			dispatcher(new AppEvent(AppEvent.GET_SETTINGS));
 		}
 		
-		[MessageHandler(selector="AppEvent.GET_SETTINGS")]
+		[MessageHandler(selector='AppEvent.GET_SETTINGS')]
 		public function getSettings(event:AppEvent):void
 		{
 			var token:AsyncToken = appDelegate.getSettings();
-			token.addResponder(new Responder(getSettings_result, getSettings_fault));
-		}
-		
-		/**  */
-		public function getSettings_result(event:ResultEvent):void
-		{
-			appModel.settings = SettingsVO( event.result );
-			
-			// load layout
-			dispatcher(new LoadLayoutEvent(LayoutVO( appModel.settings.layouts.getItemAt(0) )));
-		}
-		
-		/**  */
-		public function getSettings_fault(event:FaultEvent):void
-		{
-			Alert.show("getSettings_fault: " + event.fault);
+			token.addResponder(new Responder(getSettings_resultHandler, getSettings_faultHandler));
 		}
 		
 		[MessageHandler]
@@ -95,99 +84,50 @@ package com.masuland.loginexample.control
 			appModel.loginBoxState = LoginBoxState.LOGIN_PROGRESS;
 			
 			var token:AsyncToken = appDelegate.login(event.auth);
-			token.addResponder(new Responder(login_result, login_fault));
+			token.addResponder(new Responder(login_resultHandler, login_faultHandler));
 		}
 		
-		/**  */
-		public function login_result(event:ResultEvent):void
-		{
-			appModel.currentUser = UserVO( event.result );
-			appModel.appStackState = AppStackState.USER;
-			appModel.loginBoxState = LoginBoxState.HIDDEN;
-		}
-		
-		/**  */
-		public function login_fault(event:FaultEvent):void
-		{
-			appModel.loginBoxState = LoginBoxState.LOGIN;
-		}
-
-		[MessageHandler(selector="AppEvent.LOGOUT")]
+		[MessageHandler(selector='AppEvent.LOGOUT')]
 		public function logout(event:AppEvent):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
 			appModel.appStackState = AppStackState.LOGIN;
 		}
-
+		
 		[MessageHandler]
 		public function register(event:RegisterEvent):void
 		{
 			appModel.loginBoxState = LoginBoxState.REGISTER_PROGRESS;
 			
 			var token:AsyncToken = appDelegate.register(event.auth);
-			token.addResponder(new Responder(register_result, register_fault));
-		}
-		
-		/**  */
-		public function register_result(event:ResultEvent):void
-		{
-			appModel.currentUser = UserVO( event.result );
-			appModel.appStackState = AppStackState.USER;
-			appModel.loginBoxState = LoginBoxState.HIDDEN;
-		}
-		
-		/**  */
-		public function register_fault(event:FaultEvent):void
-		{
-			appModel.loginBoxState = LoginBoxState.LOGIN;
+			token.addResponder(new Responder(register_resultHandler, register_faultHandler));
 		}
 		
 		[MessageHandler]
 		public function updateUser(event:UpdateUserEvent):void
 		{
 			var token:AsyncToken = appDelegate.updateUser(event.user);
-			token.addResponder(new Responder(updateUser_result, updateUser_fault));
+			token.addResponder(new Responder(updateUser_resultHandler, updateUser_faultHandler));
 		}
-		
-		/**  */
-		public function updateUser_result(event:ResultEvent):void
-		{
-			appModel.currentUser = UserVO( event.result );
-		}
-		
-		/**  */
-		public function updateUser_fault(event:FaultEvent):void
-		{
-			appModel.loginBoxState = LoginBoxState.LOGIN;
-		}
-
-		
-		//---------------
-		// GUI Events
-		//---------------
 		
 		/**
 		 * 
 		 */
-		[MessageHandler(selector="AppEvent.GOTO_LOGIN")]
+		[MessageHandler(selector='AppEvent.GOTO_LOGIN')]
 		public function gotoLogin():void 
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
 		}
-
+		
 		/**
 		 * 
 		 */
-		[MessageHandler(selector="AppEvent.GOTO_REGISTER")]
+		[MessageHandler(selector='AppEvent.GOTO_REGISTER')]
 		public function gotoRegister():void 
 		{
 			appModel.loginBoxState = LoginBoxState.REGISTER;
 		}
-
-		//---------------
-		// GUI Loading
-		//---------------
-
+		
 		/**
 		 * 
 		 */
@@ -198,7 +138,7 @@ package com.masuland.loginexample.control
 			
 			ResourceManager.getInstance().localeChain = [ appModel.currentLocale.code ];
 			ResourceManager.getInstance().update();
-
+			
 			// TODO ... Resource update bug
 			
 			var oldLoginBoxState:String = appModel.loginBoxState;
@@ -214,7 +154,7 @@ package com.masuland.loginexample.control
 			
 			if (appModel.currentLocale != null)
 			{
-				resourceModuleURL = "AppResources_" + appModel.currentLocale.code + ".swf";
+				resourceModuleURL = 'AppResources_' + appModel.currentLocale.code + '.swf';
 				eventDispatcher = ResourceManager.getInstance().loadResourceModule(resourceModuleURL);
 				
 				if (eventDispatcher != null)
@@ -240,15 +180,15 @@ package com.masuland.loginexample.control
 				{
 					myStyleManager.unloadStyleDeclarations(appModel.currentStyle.path, false);
 				}
-
+				
 				appModel.currentStyle = event.style;
 				
 				myEvent = myStyleManager.loadStyleDeclarations(event.style.path, true);
-				myEvent.addEventListener(StyleEvent.COMPLETE, onLoadStyleComplete);
-				myEvent.addEventListener(StyleEvent.ERROR, onLoadStyleError);
+				myEvent.addEventListener(StyleEvent.COMPLETE, loadStyle_completeHandler);
+				myEvent.addEventListener(StyleEvent.ERROR, loadStyle_errorHandler);
 			}
 		}
-
+		
 		/**
 		 * 
 		 */
@@ -264,10 +204,69 @@ package com.masuland.loginexample.control
 			dispatcher(new LoadLocaleEvent(LocaleVO( appModel.currentLayout.locales.getItemAt(0) )));
 		}
 		
+		//----------------------
+		// Handler
+		//----------------------
+		
+		/**  */
+		protected function getSettings_resultHandler(event:ResultEvent):void
+		{
+			appModel.settings = SettingsVO( event.result );
+			
+			// load layout
+			dispatcher(new LoadLayoutEvent(LayoutVO( appModel.settings.layouts.getItemAt(0) )));
+		}
+		
+		/**  */
+		protected function getSettings_faultHandler(event:FaultEvent):void
+		{
+			Alert.show('getSettings_fault: ' + event.fault);
+		}
+		
+		/**  */
+		protected function login_resultHandler(event:ResultEvent):void
+		{
+			appModel.currentUser = UserVO( event.result );
+			appModel.appStackState = AppStackState.USER;
+			appModel.loginBoxState = LoginBoxState.HIDDEN;
+		}
+		
+		/**  */
+		protected function login_faultHandler(event:FaultEvent):void
+		{
+			appModel.loginBoxState = LoginBoxState.LOGIN;
+		}
+		
+		/**  */
+		protected function register_resultHandler(event:ResultEvent):void
+		{
+			appModel.currentUser = UserVO( event.result );
+			appModel.appStackState = AppStackState.USER;
+			appModel.loginBoxState = LoginBoxState.HIDDEN;
+		}
+		
+		/**  */
+		protected function register_faultHandler(event:FaultEvent):void
+		{
+			appModel.loginBoxState = LoginBoxState.LOGIN;
+		}
+		
+		/**  */
+		protected function updateUser_resultHandler(event:ResultEvent):void
+		{
+			appModel.currentUser = UserVO( event.result );
+		}
+		
+		/**  */
+		protected function updateUser_faultHandler(event:FaultEvent):void
+		{
+			appModel.loginBoxState = LoginBoxState.LOGIN;
+		}
+		
 		/**
 		 * 
 		 */
-		private function onLoadLocaleComplete(event:ResourceEvent):void
+		protected function loadLocale_completeHandler(event:ResourceEvent):void
 		{	    	
 			ResourceManager.getInstance().localeChain = [ appModel.currentLocale.code ];
 		}
@@ -275,14 +274,14 @@ package com.masuland.loginexample.control
 		/**
 		 * 
 		 */
-		private function onLoadLocaleError(event:ResourceEvent):void
+		protected function loadLocale_errorHandler(event:ResourceEvent):void
 		{	    	
 		}
 
 		/**
 		 * 
 		 */
-		private function onLoadStyleComplete(event:StyleEvent):void
+		protected function loadStyle_completeHandler(event:StyleEvent):void
 		{
 			appModel.isApplicationVisible = true;
 		}
@@ -290,7 +289,7 @@ package com.masuland.loginexample.control
 		/**
 		 * 
 		 */
-		private function onLoadStyleError(event:StyleEvent):void
+		protected function loadStyle_errorHandler(event:StyleEvent):void
 		{
 			appModel.isApplicationVisible = true;
 		}

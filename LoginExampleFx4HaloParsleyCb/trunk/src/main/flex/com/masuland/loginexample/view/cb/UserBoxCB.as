@@ -6,8 +6,16 @@ package com.masuland.loginexample.view.cb
 
 	public class UserBoxCB
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[MessageDispatcher]
 		public var dispatcher:Function;
+		
+		//----------------------
+		// Methods
+		//----------------------
 		
 		public function updateUser(user:UserVO):void
 		{

@@ -9,6 +9,10 @@ package com.masuland.loginexample.view.cb
 
 	public class LoginBoxCB
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[Bindable]
 		public var username:String = '';
 		
@@ -23,6 +27,10 @@ package com.masuland.loginexample.view.cb
 
 		[MessageDispatcher]
 		public var dispatcher:Function;
+		
+		//----------------------
+		// Methods
+		//----------------------
 		
 		public function ctaLoginOrRegister(auth:AuthenticationVO, loginBoxState:String):void
 		{
