@@ -5,12 +5,20 @@ package com.masuland.loginexample.view.cb
 
 	public class UserBoxCB implements IUserBoxCB
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[Inject]
 		public var appController:IAppController;
 		
-		[Subscribe(scope="AppModel", objectId="currentUser")]
+		[Subscribe(scope='appModel', objectId='currentUser')]
 		[Bindable]
 		public var currentUser:UserVO;
+		
+		//----------------------
+		// Methods
+		//----------------------
 		
 		public function updateUser(user:UserVO):void
 		{

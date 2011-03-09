@@ -1,23 +1,30 @@
 package com.masuland.loginexample.view.cb
 {
 	import com.masuland.loginexample.control.IAppController;
+	import com.masuland.loginexample.model.AppModel;
+	import com.masuland.loginexample.state.SettingsBoxState;
 	import com.masuland.loginexample.vo.LayoutVO;
 	import com.masuland.loginexample.vo.LocaleVO;
+	import com.masuland.loginexample.vo.SettingsVO;
 	import com.masuland.loginexample.vo.StyleVO;
 
-	public class AppViewCB implements IAppViewCB
+	public class SettingsBoxCB implements ISettingsBoxCB
 	{
 		//----------------------
 		// Properties
 		//----------------------
 		
 		[Inject]
-		public var appController:IAppController;
-
-		[Subscribe(scope='appModel', objectId='isApplicationVisible')]
 		[Bindable]
-		public var isApplicationVisible:Boolean;
+		public var appModel:AppModel;
 
+		[Inject]
+		public var appController:IAppController;
+		
+		[Subscribe(scope='appModel', objectId='settings')]
+		[Bindable]
+		public var settings:SettingsVO;
+		
 		[Subscribe(scope='appModel', objectId='currentLayout')]
 		[Bindable]
 		public var currentLayout:LayoutVO;
@@ -29,6 +36,18 @@ package com.masuland.loginexample.view.cb
 		//----------------------
 		// Methods
 		//----------------------
+		
+		public function toggleSettingsBox():void
+		{
+			if (appModel.settingsBoxState == SettingsBoxState.CLOSED)
+			{
+				appModel.settingsBoxState = SettingsBoxState.OPEN;
+			}
+			else
+			{
+				appModel.settingsBoxState = SettingsBoxState.CLOSED;
+			}
+		}
 		
 		public function loadStyle(style:StyleVO):void
 		{
