@@ -13,8 +13,10 @@ This document proposes additional Flex 3 coding conventions to the existing Flex
  # <mx:Script/>
    # Constants
    # Properties
-   # Constructors
-   # Methods / Functions
+   # Constructor
+   # Getter / Setter
+   # Methods
+   # Handler
  # <mx:Effect/>
  # <mx:UIComponent/>
 
@@ -157,8 +159,10 @@ This document proposes additional Flex 3 coding conventions to the existing Flex
 - Use a consistent AS layout:
  # Constants
  # Properties
- # Constructors
- # Methods / Functions
+ # Constructor
+ # Getter / Setter
+ # Methods
+ # Handler
 
 {{{
 package com.masuland.loginexample.vo
@@ -169,13 +173,27 @@ package com.masuland.loginexample.vo
 	 */
 	public class UserVO
 	{
+		//----------------------
+		// Properties
+		//----------------------
+
 		public var username:String;
 		public var firstname:String;
 		public var lastname:String;
 		public var email:String;
 		public var birthday:Date;
+
+		//----------------------
+		// Constructor
+		//----------------------
 		
-		public function UserVO() {}
+		public function UserVO() {
+			super();
+		}
+
+		//----------------------
+		// Methods
+		//----------------------
 
 		public function toString():String
 		{
