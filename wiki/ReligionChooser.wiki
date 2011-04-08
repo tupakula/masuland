@@ -12,4 +12,4 @@ Flex 4 (Gumbo) with [FlexApplicationArchitectureMVCb "Model - View - Code Behind
 
 ...
 
-*Please feel free to give comments, suggestions or feature requests because the code is still work in progress.*
+*Please feel free to post comments, suggestions or feature requests because the code is still work in progress.*
