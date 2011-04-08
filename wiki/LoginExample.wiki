@@ -15,7 +15,7 @@ Flex 3:
 Flex 4 (Halo):
 
  * Flex 4 (Halo) Login Example with Parsley 2.4.0, ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsley/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsley/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsley/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloParsley/trunk/ svn repo])
- * Flex 4 (Halo) Login Example with Spring AS 1.1, ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpring/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpring/index.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpring/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpring/trunk/ svn repo])
+ * Flex 4 (Halo) Login Example with Spring AS 1.1, ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpring/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpring/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpring/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpring/trunk/ svn repo])
  * Flex 4 (Halo) Login Example with Swiz 1.0, ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwiz/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwiz/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwiz/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSwiz/trunk/ svn repo])
 
 Flex 4 (Halo) with Code Behind classes:
