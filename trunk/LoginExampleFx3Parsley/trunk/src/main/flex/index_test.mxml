@@ -2,20 +2,15 @@
 <mx:Application 
 	xmlns:mx="http://www.adobe.com/2006/mxml"
 	xmlns:flexUnitUIRunner="http://www.adobe.com/2009/flexUnitUIRunner"
-	xmlns:parsley="http://www.spicefactory.org/parsley"
 	creationComplete="complete()"
 	>
 	
 	<mx:Script>
 		<![CDATA[
-			import com.masuland.loginexample.AppConfig;
 			import com.masuland.loginexample.AppTestSuite;
-			
-			import mx.logging.LogEventLevel;
 			
 			import org.flexunit.listeners.UIListener;
 			import org.flexunit.runner.FlexUnitCore;
-			import org.spicefactory.parsley.core.messaging.ErrorPolicy;
 			
 			private var core:FlexUnitCore;
 			
@@ -27,21 +22,6 @@
 			}
 		]]>
 	</mx:Script>
-	
-	<parsley:ContextBuilder>
-		<parsley:FlexConfig type="{ AppConfig }"/>
-		<parsley:MessageSettings unhandledErrors="{ ErrorPolicy.RETHROW }"/> 
-	</parsley:ContextBuilder>
-	
-	<mx:TraceTarget level="{ LogEventLevel.DEBUG }">
-		<mx:filters>
-			<mx:Array>
-				<mx:String>org.spicefactory.*</mx:String>
-			</mx:Array>
-		</mx:filters>
-	</mx:TraceTarget>
-	
-	<parsley:Configure />
 	
 	<flexUnitUIRunner:TestRunnerBase 
 		id="runner"
