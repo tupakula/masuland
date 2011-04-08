@@ -19,12 +19,12 @@
 	
 	<mx:Script>
 		<![CDATA[
-			import com.masuland.loginexample.business.AppBean;
+			import com.masuland.loginexample.AppBeans;
 		]]>
 	</mx:Script>
 	
 	<swiz:Swiz
-		beanProviders="{ [AppBean] }"
+		beanProviders="{ [AppBeans] }"
 		>
 		<swiz:config>
 			<swiz:SwizConfig

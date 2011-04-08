@@ -18,14 +18,14 @@
 	
 	<fx:Script>
 		<![CDATA[
-			import com.masuland.loginexample.AppBean;
+			import com.masuland.loginexample.AppBeans;
 		]]>
 	</fx:Script>
 	
 	<fx:Declarations>
 		
 		<swiz:Swiz
-			beanProviders="{ [AppBean] }"
+			beanProviders="{ [AppBeans] }"
 			>
 			<swiz:config>
 				<swiz:SwizConfig

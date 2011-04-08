@@ -55,7 +55,7 @@ package com.masuland.loginexample.control
 		//----------------------
 		
 		/**
-		 * Load the User collection.
+		 * 
 		 */ 
 		[EventHandler(event='mx.events.FlexEvent.APPLICATION_COMPLETE')]
 		public function initApp():void
@@ -73,8 +73,8 @@ package com.masuland.loginexample.control
 		{
 			serviceHelper.executeServiceCall(
 				appDelegate.getSettings(),
-				getSettings_result,
-				getSettings_fault);
+				getSettings_resultHandler,
+				getSettings_faultHandler);
 		}
 		
 		[EventHandler(event='LoginEvent.EVENT_NAME', properties='auth')]
@@ -84,8 +84,8 @@ package com.masuland.loginexample.control
 			
 			serviceHelper.executeServiceCall(
 				appDelegate.login(auth),
-				login_result,
-				login_fault);
+				login_resultHandler,
+				login_faultHandler);
 		}
 		
 		[EventHandler(event='AppEvent.LOGOUT')]
@@ -102,8 +102,8 @@ package com.masuland.loginexample.control
 			
 			serviceHelper.executeServiceCall(
 				appDelegate.register(auth),
-				register_result,
-				register_fault);
+				register_resultHandler,
+				register_faultHandler);
 		}
 		
 		[EventHandler(event='UpdateUserEvent.EVENT_NAME', properties='user')]
@@ -111,8 +111,8 @@ package com.masuland.loginexample.control
 		{
 			serviceHelper.executeServiceCall(
 				appDelegate.updateUser(user),
-				updateUser_result,
-				updateUser_fault);
+				updateUser_resultHandler,
+				updateUser_faultHandler);
 		}
 		
 		/**
@@ -168,8 +168,7 @@ package com.masuland.loginexample.control
 					eventDispatcher.addEventListener(ResourceEvent.ERROR, onLoadLocaleError);
 				}
 			}
-*/
-		}
+*/		}
 		
 		/**
 		 * 
@@ -190,8 +189,8 @@ package com.masuland.loginexample.control
 				appModel.currentStyle = style;
 				
 				myEvent = myStyleManager.loadStyleDeclarations(style.path, true);
-				myEvent.addEventListener(StyleEvent.COMPLETE, onLoadStyleComplete);
-				myEvent.addEventListener(StyleEvent.ERROR, onLoadStyleError);
+				myEvent.addEventListener(StyleEvent.COMPLETE, loadStyle_completeHandler);
+				myEvent.addEventListener(StyleEvent.ERROR, loadStyle_errorHandler);
 			}
 		}
 		
@@ -215,7 +214,7 @@ package com.masuland.loginexample.control
 		//----------------------
 		
 		/**  */
-		public function getSettings_result(event:ResultEvent):void
+		public function getSettings_resultHandler(event:ResultEvent):void
 		{
 			appModel.settings = SettingsVO( event.result );
 			
@@ -224,13 +223,13 @@ package com.masuland.loginexample.control
 		}
 		
 		/**  */
-		public function getSettings_fault(event:FaultEvent):void
+		public function getSettings_faultHandler(event:FaultEvent):void
 		{
 			Alert.show('getSettings_fault: ' + event.fault);
 		}
 		
 		/**  */
-		public function login_result(event:ResultEvent):void
+		public function login_resultHandler(event:ResultEvent):void
 		{
 			appModel.currentUser = UserVO( event.result );
 			appModel.appStackState = AppStackState.USER;
@@ -238,13 +237,13 @@ package com.masuland.loginexample.control
 		}
 		
 		/**  */
-		public function login_fault(event:FaultEvent):void
+		public function login_faultHandler(event:FaultEvent):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
 		}
 		
 		/**  */
-		public function register_result(event:ResultEvent):void
+		public function register_resultHandler(event:ResultEvent):void
 		{
 			appModel.currentUser = UserVO( event.result );
 			appModel.appStackState = AppStackState.USER;
@@ -252,19 +251,19 @@ package com.masuland.loginexample.control
 		}
 		
 		/**  */
-		public function register_fault(event:FaultEvent):void
+		public function register_faultHandler(event:FaultEvent):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
 		}
 		
 		/**  */
-		public function updateUser_result(event:ResultEvent):void
+		public function updateUser_resultHandler(event:ResultEvent):void
 		{
 			appModel.currentUser = UserVO( event.result );
 		}
 		
 		/**  */
-		public function updateUser_fault(event:FaultEvent):void
+		public function updateUser_faultHandler(event:FaultEvent):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
 		}
@@ -272,7 +271,7 @@ package com.masuland.loginexample.control
 		/**
 		 * 
 		 */
-		private function onLoadLocaleComplete(event:ResourceEvent):void
+		private function loadLocale_completeHandler(event:ResourceEvent):void
 		{	    	
 			ResourceManager.getInstance().localeChain = [ appModel.currentLocale.code ];
 		}
@@ -280,14 +279,14 @@ package com.masuland.loginexample.control
 		/**
 		 * 
 		 */
-		private function onLoadLocaleError(event:ResourceEvent):void
+		private function loadLocale_errorHandler(event:ResourceEvent):void
 		{	    	
 		}
 
 		/**
 		 * 
 		 */
-		private function onLoadStyleComplete(event:StyleEvent):void
+		private function loadStyle_completeHandler(event:StyleEvent):void
 		{
 			appModel.isApplicationVisible = true;
 		}
@@ -295,7 +294,7 @@ package com.masuland.loginexample.control
 		/**
 		 * 
 		 */
-		private function onLoadStyleError(event:StyleEvent):void
+		private function loadStyle_errorHandler(event:StyleEvent):void
 		{
 			appModel.isApplicationVisible = true;
 		}
