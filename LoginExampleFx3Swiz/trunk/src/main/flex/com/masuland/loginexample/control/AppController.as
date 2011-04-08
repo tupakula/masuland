@@ -166,8 +166,7 @@ package com.masuland.loginexample.control
 					eventDispatcher.addEventListener(ResourceEvent.ERROR, onLoadLocaleError);
 				}
 			}
-*/
-		}
+*/		}
 		
 		/**
 		 * 
