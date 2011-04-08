@@ -57,14 +57,12 @@ package com.masuland.loginexample.business
 		[Before]
 		public function setUp():void
 		{
-			var contextBuilder:ContextBuilder;
-			var context:Context;
-			
 			// Use the ContextBuilder to build your context
-			contextBuilder = ContextBuilder.newBuilder();
-			contextBuilder.config(FlexConfig.forClass(AppConfig));
-			
-			context = contextBuilder.build();
+			var context:Context = ContextBuilder.newSetup()
+				.scope('appModel', true)
+				.newBuilder()
+				.config(FlexConfig.forClass(AppConfig))
+				.build();
 			
 			// Add this test case to your context 
 			// which will begin the injection process
