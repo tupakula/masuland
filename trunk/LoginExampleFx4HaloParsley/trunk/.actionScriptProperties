@@ -18,6 +18,7 @@
   </compiler>
   <applications>
     <application path="index.mxml"/>
+    <application path="index_test.mxml"/>
   </applications>
   <modules/>
   <buildCSSFiles>
