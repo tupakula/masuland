@@ -1,7 +1,7 @@
 package com.masuland.loginexample
 {
+	import com.masuland.loginexample.business.AppMockDelegate;
 	import com.masuland.loginexample.control.AppController;
-	import com.masuland.loginexample.control.event.AppEvent;
 	import com.masuland.loginexample.view.AppView;
 	
 	import flash.events.Event;
@@ -15,15 +15,15 @@ package com.masuland.loginexample
 	
 	import org.springextensions.actionscript.context.support.FlexXMLApplicationContext;
 	import org.springextensions.actionscript.core.event.EventBus;
-	import org.springextensions.actionscript.ioc.factory.config.EventHandlerMetaDataPostProcessor;
-	import org.springextensions.actionscript.ioc.factory.config.RouteEventsMetaDataPostProcessor;
+	import org.springextensions.actionscript.ioc.factory.config.EventHandlerMetadataProcessor;
+	import org.springextensions.actionscript.ioc.factory.config.RouteEventsMetaDataProcessor;
 	import org.springextensions.actionscript.stage.DefaultAutowiringStageProcessor;
 
 	public class AppConfig extends EventDispatcher implements IMXMLObject
 	{
 		// Force inclusion of classes not referenced elsewhere in the code
 		{
-			AppController,AppMockDelegate,EventHandlerMetaDataPostProcessor,DefaultAutowiringStageProcessor,RouteEventsMetaDataPostProcessor;
+			AppController, AppMockDelegate, EventHandlerMetadataProcessor, DefaultAutowiringStageProcessor, RouteEventsMetaDataProcessor;
 		}
 		
 		public var applicationContext:FlexXMLApplicationContext;
@@ -46,7 +46,7 @@ package com.masuland.loginexample
 		private function createContext(event:FlexEvent) : void
 		{
 			applicationContext = new FlexXMLApplicationContext();
-			applicationContext.addConfigLocation("application-config.xml");
+			applicationContext.addConfigLocation("application-config-test.xml");
 			applicationContext.addEventListener(Event.COMPLETE, applicationContext_completeHandler);
 			applicationContext.addEventListener(IOErrorEvent.IO_ERROR, applicationContext_ioErrorHandler);
 			applicationContext.load();
@@ -54,7 +54,6 @@ package com.masuland.loginexample
 		
 		private function applicationContext_completeHandler(event:Event) : void 
 		{
-			EventBus.dispatchEvent(new AppEvent(AppEvent.INITIALIZE_CLIENT));
 		}
 		
 		private function applicationContext_ioErrorHandler(event:IOErrorEvent) : void 

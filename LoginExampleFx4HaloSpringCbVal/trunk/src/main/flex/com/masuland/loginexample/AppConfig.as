@@ -1,5 +1,6 @@
 package com.masuland.loginexample
 {
+	import com.masuland.loginexample.business.AppMockDelegate;
 	import com.masuland.loginexample.control.AppController;
 	import com.masuland.loginexample.control.event.AppEvent;
 	import com.masuland.loginexample.view.AppView;
@@ -15,15 +16,15 @@ package com.masuland.loginexample
 	
 	import org.springextensions.actionscript.context.support.FlexXMLApplicationContext;
 	import org.springextensions.actionscript.core.event.EventBus;
-	import org.springextensions.actionscript.ioc.factory.config.EventHandlerMetaDataPostProcessor;
-	import org.springextensions.actionscript.ioc.factory.config.RouteEventsMetaDataPostProcessor;
+	import org.springextensions.actionscript.ioc.factory.config.EventHandlerMetadataProcessor;
+	import org.springextensions.actionscript.ioc.factory.config.RouteEventsMetaDataProcessor;
 	import org.springextensions.actionscript.stage.DefaultAutowiringStageProcessor;
 
 	public class AppConfig extends EventDispatcher implements IMXMLObject
 	{
 		// Force inclusion of classes not referenced elsewhere in the code
 		{
-			AppController,AppMockDelegate,EventHandlerMetaDataPostProcessor,DefaultAutowiringStageProcessor,RouteEventsMetaDataPostProcessor;
+			AppController, AppMockDelegate, EventHandlerMetadataProcessor, DefaultAutowiringStageProcessor, RouteEventsMetaDataProcessor;
 		}
 		
 		public var applicationContext:FlexXMLApplicationContext;

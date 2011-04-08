@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application 
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:flexUnitUIRunner="http://www.adobe.com/2009/flexUnitUIRunner"
+	xmlns:loginexample="com.masuland.loginexample.*"
+	creationComplete="complete()" 
+	>
+	
+	<mx:Script>
+		<![CDATA[
+			import com.masuland.loginexample.AppTestSuite;
+			import com.masuland.loginexample.view.cb.AppStackCB;
+			import com.masuland.loginexample.view.cb.AppViewCB;
+			import com.masuland.loginexample.view.cb.LayoutStackCB;
+			import com.masuland.loginexample.view.cb.LoginBoxCB;
+			import com.masuland.loginexample.view.cb.SettingsBoxCB;
+			import com.masuland.loginexample.view.cb.UserBoxCB;
+			
+			import org.flexunit.listeners.UIListener;
+			import org.flexunit.runner.FlexUnitCore;
+			import org.springextensions.actionscript.test.context.flexunit4.SpringFlexUnit4ClassRunner;
+			
+			private var core:FlexUnitCore;
+			
+			{
+				SpringFlexUnit4ClassRunner, AppViewCB, SettingsBoxCB, LayoutStackCB, AppStackCB, LoginBoxCB, UserBoxCB
+			}
+			
+			private function complete():void 
+			{
+				core = new FlexUnitCore();
+				core.addListener(new UIListener(runner));
+				core.run([AppTestSuite]);
+			}
+		]]>
+	</mx:Script>
+
+	<loginexample:AppConfig/>
+
+	<flexUnitUIRunner:TestRunnerBase 
+		id="runner"
+		width="100%" height="100%"
+		/>
+	
+</mx:Application>
