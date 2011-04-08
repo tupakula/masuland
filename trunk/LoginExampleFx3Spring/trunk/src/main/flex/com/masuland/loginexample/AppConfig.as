@@ -24,7 +24,7 @@ package com.masuland.loginexample
 	{
 		// Force inclusion of classes not referenced elsewhere in the code
 		{
-			AppController,AppMockDelegate,EventHandlerMetadataProcessor,DefaultAutowiringStageProcessor,RouteEventsMetaDataProcessor;
+			AppController, AppMockDelegate, EventHandlerMetadataProcessor, DefaultAutowiringStageProcessor, RouteEventsMetaDataProcessor;
 		}
 		
 		public var applicationContext:FlexXMLApplicationContext;
