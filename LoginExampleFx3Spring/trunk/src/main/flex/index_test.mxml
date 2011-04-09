@@ -12,13 +12,8 @@
 			
 			import org.flexunit.listeners.UIListener;
 			import org.flexunit.runner.FlexUnitCore;
-			import org.springextensions.actionscript.test.context.flexunit4.SpringFlexUnit4ClassRunner;
 			
 			private var core:FlexUnitCore;
-			
-			{
-				SpringFlexUnit4ClassRunner
-			}
 			
 			private function complete():void 
 			{
@@ -29,7 +24,9 @@
 		]]>
 	</mx:Script>
 
-	<loginexample:AppConfig/>
+	<loginexample:AppTestConfig
+		id="config"
+		/>
 
 	<flexUnitUIRunner:TestRunnerBase 
 		id="runner"

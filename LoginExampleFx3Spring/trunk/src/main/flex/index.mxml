@@ -17,9 +17,12 @@
 		[ResourceBundle("resources")]
 	</mx:Metadata>
 	
-	<loginexample:AppConfig/>
+	<loginexample:AppConfig
+		id="config"
+		/>
 	
 	<view:AppView
+		id="view"
 		/>
 	
 </mx:Application>
