@@ -44,4 +44,10 @@ Flex 4 (Halo) with [FlexApplicationArchitectureNoEvt "No Event" (NoEvt)]  Nanoar
 
 ...
 
+= More code examples =
+
+ * [ReligionChooser Religion Chooser] written in Flex 4 (Gumbo)
+
+...
+
 *Please feel free to post comments, suggestions or feature requests because the code is still work in progress.*
