@@ -2,14 +2,19 @@ package com.masuland.loginexample
 {
 	import com.masuland.loginexample.business.AppMockDelegate;
 	import com.masuland.loginexample.control.AppController;
-	import com.masuland.loginexample.view.AppView;
+	import com.masuland.loginexample.view.cb.AppStackCB;
+	import com.masuland.loginexample.view.cb.AppViewCB;
+	import com.masuland.loginexample.view.cb.LayoutStackCB;
+	import com.masuland.loginexample.view.cb.LoginBoxCB;
+	import com.masuland.loginexample.view.cb.SettingsBoxCB;
+	import com.masuland.loginexample.view.cb.UserBoxCB;
 	
 	import flash.events.Event;
 	import flash.events.EventDispatcher;
 	import flash.events.IOErrorEvent;
 	
 	import mx.controls.Alert;
-	import mx.core.Application;
+	import mx.core.FlexGlobals;
 	import mx.core.IMXMLObject;
 	import mx.events.FlexEvent;
 	
@@ -17,48 +22,72 @@ package com.masuland.loginexample
 	import org.springextensions.actionscript.core.event.EventBus;
 	import org.springextensions.actionscript.ioc.factory.config.EventHandlerMetadataProcessor;
 	import org.springextensions.actionscript.ioc.factory.config.RouteEventsMetaDataProcessor;
+	import org.springextensions.actionscript.ioc.factory.support.event.ObjectFactoryEvent;
 	import org.springextensions.actionscript.stage.DefaultAutowiringStageProcessor;
-
+	
+	import spark.components.Application;
+	
 	public class AppConfig extends EventDispatcher implements IMXMLObject
 	{
-		// Force inclusion of classes not referenced elsewhere in the code
-		{
-			AppController, AppMockDelegate, EventHandlerMetadataProcessor, DefaultAutowiringStageProcessor, RouteEventsMetaDataProcessor;
-		}
+		//----------------------
+		// Properties
+		//----------------------
+		
+//		[Embed(source='application-config.xml', mimeType ='application/octet-stream')]
+//		public var contextConfig:Class;
 		
 		public var applicationContext:FlexXMLApplicationContext;
-		private var component:Application;
 		
-		public function initialized(document:Object, id:String) : void
+		// Force inclusion of classes not referenced elsewhere in the code
 		{
-			component = document as Application;
-			
-			if (component)
-			{
-				component.addEventListener(FlexEvent.APPLICATION_COMPLETE, createContext);
-			}
-			else
-			{
-				throw new Error("The config should be included in the Application class.");
-			}
+			AppController, 
+			AppMockDelegate, 
+			EventHandlerMetadataProcessor, 
+			DefaultAutowiringStageProcessor, 
+			RouteEventsMetaDataProcessor,
+			SettingsBoxCB,
+			AppViewCB,
+			LayoutStackCB,
+			AppStackCB,
+			LoginBoxCB,
+			UserBoxCB
 		}
-			
-		private function createContext(event:FlexEvent) : void
+		
+		//----------------------
+		// Methods
+		//----------------------
+		
+		public function initialized(document:Object, id:String):void
 		{
 			applicationContext = new FlexXMLApplicationContext();
-			applicationContext.addConfigLocation("application-config-test.xml");
-			applicationContext.addEventListener(Event.COMPLETE, applicationContext_completeHandler);
-			applicationContext.addEventListener(IOErrorEvent.IO_ERROR, applicationContext_ioErrorHandler);
+			
+			// Embed
+//			applicationContext.addEmbeddedConfig(contextConfig);
+//			dispatchEvent(new AppEvent(AppEvent.INITIALIZE_CLIENT));
+			
+			// Load
+			(FlexGlobals.topLevelApplication as Application).addEventListener(FlexEvent.INITIALIZE, loadContext);
+		}
+		
+		public function loadContext(event:FlexEvent) : void
+		{
+			applicationContext.addConfigLocation('application-config.xml');
+			applicationContext.addEventListener(Event.COMPLETE, loadContext_completeHandler);
+			applicationContext.addEventListener(IOErrorEvent.IO_ERROR, loadContext_ioErrorHandler);
 			applicationContext.load();
 		}
 		
-		private function applicationContext_completeHandler(event:Event) : void 
+		//----------------------
+		// Handler
+		//----------------------
+		
+		protected function loadContext_completeHandler(event:Event):void 
 		{
 		}
 		
-		private function applicationContext_ioErrorHandler(event:IOErrorEvent) : void 
+		protected function loadContext_ioErrorHandler(event:IOErrorEvent):void 
 		{
-			Alert.show("An error occurred when loading the xml for the application context: '" + event.text + "'", "Error Loading Application Context");
+			Alert.show('An error occurred when loading the xml for the application context: "' + event.text + '"', 'Error Loading Application Context');
 		}
 	}
 }

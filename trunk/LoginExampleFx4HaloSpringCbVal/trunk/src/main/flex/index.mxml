@@ -7,70 +7,21 @@
 	xmlns:loginexample="com.masuland.loginexample.*" 
 	width="100%" height="100%" 
 	pageTitle="Spring (CB, Validation Lib) - Login Example (Fx4, Halo)"
-	creationComplete="creationCompleteHandler(event)"
-	viewSourceURL="srcview/index.html">
+	viewSourceURL="srcview/index.html"
+	>
 	
 	<fx:Metadata>
 		[ResourceBundle("resources")]
 	</fx:Metadata>
 	
-	<fx:Script>
-		<![CDATA[
-			
-			import com.masuland.loginexample.business.AppMockDelegate;
-			import com.masuland.loginexample.control.AppController;
-			import com.masuland.loginexample.control.event.AppEvent;
-			
-			import mx.controls.Alert;
-			import mx.events.FlexEvent;
-			
-			import org.springextensions.actionscript.context.support.FlexXMLApplicationContext;
-			import org.springextensions.actionscript.core.event.EventBus;
-			import org.springextensions.actionscript.ioc.factory.config.EventHandlerMetadataProcessor;
-			import org.springextensions.actionscript.ioc.factory.config.RouteEventsMetaDataProcessor;
-			import org.springextensions.actionscript.stage.DefaultAutowiringStageProcessor;
-			
-			private var _compiledClasses:Array = [AppController, AppMockDelegate, EventHandlerMetadataProcessor, DefaultAutowiringStageProcessor, RouteEventsMetaDataProcessor];
-			private var _appContext:FlexXMLApplicationContext;
-
-//			[Embed(source="application-config.xml", mimeType ="application/octet-stream")]
-//			public var contextConfig:Class;
-
-			private function creationCompleteHandler(event:FlexEvent):void 
-			{
-				_appContext = new FlexXMLApplicationContext();
-				
-				// Embed
-//				_appContext.addEmbeddedConfig( contextConfig );
-//				EventBus.dispatchEvent(new AppEvent(AppEvent.INITIALIZE_CLIENT));
-				
-				// Load
-				_appContext.addConfigLocation('application-config.xml');
-				_appContext.addEventListener(Event.COMPLETE, applicationContext_completeHandler);
-				_appContext.addEventListener(IOErrorEvent.IO_ERROR, applicationContext_ioErrorHandler);
-				_appContext.load();
-			}
-			
-			private function applicationContext_completeHandler(event:Event):void 
-			{
-				EventBus.dispatchEvent(new AppEvent(AppEvent.INITIALIZE_CLIENT));
-			}
-			
-			private function applicationContext_ioErrorHandler(event:IOErrorEvent):void 
-			{
-				Alert.show('An error occurred when loading the xml for the application context: "' + event.text + '"', 'Error Loading Application Context');
-			}
-			
-		]]>
-	</fx:Script>
-	
 	<fx:Declarations>
-<!--
-		<loginexample:AppConfig/>
--->	
+		<loginexample:AppConfig
+			id="config"
+			/>
 	</fx:Declarations>
 	
 	<view:AppView
+		id="view"
 		/>
 
 </s:Application>

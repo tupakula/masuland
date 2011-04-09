@@ -14,7 +14,7 @@ package com.masuland.loginexample.business
 	
 	// Don't forget to 
 	// import org.springextensions.actionscript.test.context.flexunit4.SpringFlexUnit4ClassRunner;
-	// in your code somewhere ... see index_test.mxml 
+	// in your code somewhere ... see com.masuland.loginexample.AppTestConfig 
 	[RunWith('org.springextensions.actionscript.test.context.flexunit4.SpringFlexUnit4ClassRunner')]
 	[ContextConfiguration(locations='application-config-test.xml')]
 	public class AppDelegateTest

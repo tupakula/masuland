@@ -2,7 +2,9 @@ package com.masuland.loginexample
 {
 	import com.masuland.loginexample.business.AppMockDelegate;
 	import com.masuland.loginexample.control.AppController;
-	import com.masuland.loginexample.control.event.AppEvent;
+	import com.masuland.loginexample.view.cb.LoginBoxCB;
+	import com.masuland.loginexample.view.cb.SettingsBoxCB;
+	import com.masuland.loginexample.view.cb.UserBoxCB;
 	
 	import flash.events.Event;
 	import flash.events.EventDispatcher;
@@ -18,12 +20,11 @@ package com.masuland.loginexample
 	import org.springextensions.actionscript.ioc.factory.config.EventHandlerMetadataProcessor;
 	import org.springextensions.actionscript.ioc.factory.config.RouteEventsMetaDataProcessor;
 	import org.springextensions.actionscript.stage.DefaultAutowiringStageProcessor;
+	import org.springextensions.actionscript.test.context.flexunit4.SpringFlexUnit4ClassRunner;
 	
 	import spark.components.Application;
-	
-//	[RouteEvents(events='AppEvent.INITIALIZE_CLIENT')]
-//	[Event(name='AppEvent.INITIALIZE_CLIENT',type='com.masuland.loginexample.control.event.AppEvent')]
-	public class AppConfig extends EventDispatcher implements IMXMLObject
+
+	public class AppTestConfig extends EventDispatcher implements IMXMLObject
 	{
 		//----------------------
 		// Properties
@@ -33,14 +34,18 @@ package com.masuland.loginexample
 //		public var contextConfig:Class;
 		
 		public var applicationContext:FlexXMLApplicationContext;
-		
+
 		// Force inclusion of classes not referenced elsewhere in the code
 		{
 			AppController, 
 			AppMockDelegate, 
 			EventHandlerMetadataProcessor, 
 			DefaultAutowiringStageProcessor, 
-			RouteEventsMetaDataProcessor
+			RouteEventsMetaDataProcessor,
+			SpringFlexUnit4ClassRunner, 
+			SettingsBoxCB, 
+			LoginBoxCB, 
+			UserBoxCB
 		}
 		
 		//----------------------
@@ -58,10 +63,10 @@ package com.masuland.loginexample
 			// Load
 			(FlexGlobals.topLevelApplication as Application).addEventListener(FlexEvent.INITIALIZE, loadContext);
 		}
-		
-		public function loadContext(event:FlexEvent) : void
+			
+		private function loadContext(event:FlexEvent) : void
 		{
-			applicationContext.addConfigLocation('application-config.xml');
+			applicationContext.addConfigLocation('application-config-test.xml');
 			applicationContext.addEventListener(Event.COMPLETE, loadContext_completeHandler);
 			applicationContext.addEventListener(IOErrorEvent.IO_ERROR, loadContext_ioErrorHandler);
 			applicationContext.load();
@@ -73,7 +78,6 @@ package com.masuland.loginexample
 		
 		protected function loadContext_completeHandler(event:Event):void 
 		{
-			EventBus.dispatchEvent(new AppEvent(AppEvent.INITIALIZE_CLIENT));
 		}
 		
 		protected function loadContext_ioErrorHandler(event:IOErrorEvent):void 
