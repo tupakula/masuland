@@ -6,23 +6,23 @@ There are three types of Nanoarchitectures:
 
 == Interactional Nanoarchitectures ==
 
- * MVC (or MVCtl)
- * MVCb
- * MVCbCtl
- * MVCmd
- * MVCtlCmd
- * MVTsk
- * MVStoTsk
+ * "Model - View - Controller" (MVC or MVCtl)
+ * [NanoarchitectureMVCb "Model - View - Code Behind" (MVCb)]
+ * "Model - View - Code Behind - Controller" (MVCbCtl)
+ * "Model - View - Code Behind - Command" (MVCbCmd)
+ * "Model - View - Code Behind - Controller/Command" (MVCbCtlCmd)
+ * "Model - View - Code Behind - Task" (MVCbTsk)
+ * "Model - View - Code Behind - Story/Task" (MVCbStoTsk)
 
 == Structural Nanoarchitectures ==
 
- * Ctl
- * Cmd
- * !CtlCmd
- * Tsk
- * !StoTsk
+ * "Controller" (Ctl)
+ * "Command" (Cmd)
+ * "Controller/Command" (!CtlCmd)
+ * "Task" (Tsk)
+ * "Story/Task" (!StoTsk)
 
 == Conceptual Nanoarchitectures ==
 
- * !NoEvt
- * Layer2package
+ * [NanoarchitectureNoEvt "No Event" (NoEvt)]
+ * "Layer to Package" (L2P)
