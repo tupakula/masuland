@@ -42,11 +42,58 @@
 		class="com.masuland.loginexample.business.AppMockDelegate"
 		/>
 	
-	<!-- CONTROLLER -->	
+	<!-- STORY -->	
 	
 	<object 
-		id="appController" 
-		class="com.masuland.loginexample.control.AppController"
+		id="appStories" 
+		class="com.masuland.loginexample.control.AppStories"
+		/>
+
+	<!-- TASK -->	
+
+	<object 
+		id="getSettingsSeqTask" 
+		class="com.masuland.loginexample.control.task.GetSettingsSeqTask"
+		/>
+
+	<object 
+		id="loadLayoutSeqTask" 
+		class="com.masuland.loginexample.control.task.LoadLayoutSeqTask"
+		/>
+
+	<object 
+		id="getSettingsTask" 
+		class="com.masuland.loginexample.control.task.GetSettingsTask"
+		/>
+
+	<object 
+		id="loadLayoutTask" 
+		class="com.masuland.loginexample.control.task.LoadLayoutTask"
+		/>
+
+	<object 
+		id="loadStyleTask" 
+		class="com.masuland.loginexample.control.task.LoadStyleTask"
+		/>
+
+	<object 
+		id="loadLocaleTask" 
+		class="com.masuland.loginexample.control.task.LoadLocaleTask"
+		/>
+
+	<object 
+		id="loginTask" 
+		class="com.masuland.loginexample.control.task.LoginTask"
+		/>
+
+	<object 
+		id="registerTask" 
+		class="com.masuland.loginexample.control.task.RegisterTask"
+		/>
+
+	<object 
+		id="updateUserTask" 
+		class="com.masuland.loginexample.control.task.UpdateUserTask"
 		/>
 	
 	<!-- MODEL -->	
