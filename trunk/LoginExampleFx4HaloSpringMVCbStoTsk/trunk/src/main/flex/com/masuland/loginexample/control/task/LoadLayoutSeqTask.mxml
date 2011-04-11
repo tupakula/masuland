@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cairngorm:SequenceTask 
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:cairngorm="http://ns.adobe.com/cairngorm" 
+	taskStart="sequencetask1_taskStartHandler(event)"
+	>
+	
+	<mx:Script>
+		<![CDATA[
+			import com.adobe.cairngorm.task.ParallelTask;
+			import com.adobe.cairngorm.task.TaskEvent;
+			import com.masuland.loginexample.model.AppModel;
+			
+			//----------------------
+			// Properties
+			//----------------------
+			
+			[Inject]
+			[Bindable]
+			public var appModel:AppModel;
+			
+			[Inject]
+			public var loadLayoutTask:LoadLayoutTask;
+			
+			[Inject]
+			public var loadStyleTask:LoadStyleTask;
+			
+			[Inject]
+			public var loadLocaleTask:LoadLocaleTask;
+			
+			//----------------------
+			// Handler
+			//----------------------
+			
+			protected function sequencetask1_taskStartHandler(event:TaskEvent):void
+			{
+				addChild(loadLayoutTask);
+				
+				var parallel:ParallelTask = new ParallelTask();
+				parallel.addChild(loadStyleTask);
+				parallel.addChild(loadLocaleTask);
+				
+				addChild(parallel);
+			}
+		]]>
+	</mx:Script>
+	
+	<mx:Binding source="appModel.currentStyle" destination="loadStyleTask.style" />
+	<mx:Binding source="appModel.currentLocale" destination="loadLocaleTask.locale" />
+	
+</cairngorm:SequenceTask>
