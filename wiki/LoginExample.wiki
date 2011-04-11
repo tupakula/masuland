@@ -1,6 +1,6 @@
 = Login Example =
 
-Please read the [LoginExampleFeatureSpec Feature Specification] of the Login Example application. Implementations with different Flex SDKs (Flex 3.5 and Flex 4), Microarchitecture (MVC) frameworks (Cairngorm 2.2.1, Parsley 2.4.0, Spring 1.1, Swiz 1.0), Cairngorm 3 Libraries and Testing frameworks (for now only !FlexUnit 4.0) are listed below. The code follows additional Flex coding conventions ([Flex3CodingConventions Flex 3], Flex 4 TODO). 
+Please read the [LoginExampleFeatureSpec Feature Specification] of the Login Example application. Implementations with different Flex SDKs (Flex 3.5 and Flex 4), Microarchitecture (MVC) frameworks (Cairngorm 2.2.1, Parsley 2.4.0, Spring 1.1, Swiz 1.0), [Nanoarchitecture Nanoarchitectures] ([NanoarchitectureMVCb MVCb], [NanoarchitectureNoEvt NoEvt]), Cairngorm 3 Libraries (Validation Library) and Testing frameworks (for now only !FlexUnit 4.0) are listed below. The code follows additional Flex coding conventions ([Flex3CodingConventions Flex 3], Flex 4 TODO). 
 
 http://masuland.googlecode.com/files/LoginExamplePrintScreen.png
 
