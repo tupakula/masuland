@@ -1,9 +1,28 @@
-#summary This page defines the word Nanoarchitecture
+#summary This page defines the meaning of the word "Nanoarchitecture"
 
 = Nanoarchitecture =
 
-There are three type of Nanoarchitectures:
+There are three types of Nanoarchitectures:
 
-  * Interactional Nanoarchitectures
-  * Structural Nanoarchitectures
-  * Conceptual Nanoarchitectures
+== Interactional Nanoarchitectures ==
+
+ * MVC (or MVCtl)
+ * MVCb
+ * MVCbCtl
+ * MVCmd
+ * MVCtlCmd
+ * MVTsk
+ * MVStoTsk
+
+== Structural Nanoarchitectures ==
+
+ * Ctl
+ * Cmd
+ * CtlCmd
+ * Tsk
+ * StoTsk
+
+== Conceptual Nanoarchitectures ==
+
+ * NoEvt
+ * layer2package
