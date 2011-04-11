@@ -47,7 +47,7 @@
 	<!-- TASK -->	
 	
 	<task:GetSettingsSeqTask 
-		id="initAppStory"
+		id="getSettingsSeqTask"
 		/>
 	
 	<task:LoadLayoutSeqTask 
