@@ -1,36 +1,3 @@
 = Flex Application Nanoarchitecture - "Model - View - Code Behind" (MVCb) =
 
-This document describes the application flow of an Adobe Flex 3 and Flex 4 application written in the "Model - View - Code Behind" (MVCb) nanoarchitecture. The presentation pattern "Code Behind" will be used in this architecture as a synonym to the "Presentation Model" because they have lots in common. Furthermore, because this architecture tries to create a clean and simple communication language in your development team, and also, trying to avoid the confusions caused by the word "Presentation Model" (which is a Model-Logic component in the Presentation Layer), this architecture proposes to use the word "Code Behind" instead. For a comparison of both presentation patterns please read the articles of Paul Williams about the [http://blogs.adobe.com/paulw/archives/2007/11/presentation_pa_5.html Code Behind] pattern and the [http://blogs.adobe.com/paulw/archives/2007/10/presentation_pa_3.html Presentation Model].
-
-http://masuland.googlecode.com/files/FlexApplicationArchitectureMVCb.png
-
-== Application Flows ==
-
-This architecture contains 3 types of application flows:
-
-1. Presentation Flow:
-  * (1) User Interface calls function in the Code Behind (Flex 3) / Component (Flex 4) class
-  * (9) Databinding updates User Interface
-
-2. Action Flow:
-  * (1) User Interface calls function in the Code Behind (Flex 3) / Component (Flex 4) class
-  * (2) Code Behind (Flex 3) / Component (Flex 4) class dispatches Event
-  * (7) Processed data will be written back to the Model
-  * (8) Databinding updates Code Behind (Flex 3) / Component (Flex 4) class
-  * (9) Databinding updates User Interface
-
-3. Business Flow:
-  * (1) User Interface calls function in the Code Behind (Flex 3) / Component (Flex 4) class
-  * (2) Code Behind (Flex 3) / Component (Flex 4) class dispatches Event
-  * (3) Registered Action (Event handler) calls the Delegate
-  * (4) Delegate calls its implemented Service
-  * (5) Service returns data
-  * (6) Delegate returns data to registered Action (Event handler)
-  * (7) Processed data will be written back to the Model
-  * (8) Databinding updates Code Behind (Flex 3) / Component (Flex 4) class
-  * (9) Databinding updates User Interface
-
-== Code Examples Implementing MVCb ==
-
-  * Login Example (Flex 3.5 and Flex 4), http://code.google.com/p/masuland/wiki/LoginExample
-  * Religion Chooser (Flex 4), http://code.google.com/p/masuland/wiki/ReligionChooser
+This content has move [NanoarchitectureMVCb here]. Happy moving!
