@@ -18,11 +18,11 @@ There are three types of Nanoarchitectures:
 
  * Ctl
  * Cmd
- * CtlCmd
+ * !CtlCmd
  * Tsk
- * StoTsk
+ * !StoTsk
 
 == Conceptual Nanoarchitectures ==
 
- * NoEvt
- * layer2package
+ * !NoEvt
+ * Layer2package
