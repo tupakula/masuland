@@ -33,3 +33,7 @@ Here are some code examples which implement some or all of these above mentioned
 
  * [LoginExample LoginExample] written in Flex 3.5 and Flex 4 (Halo)
  * [ReligionChooser ReligionChooser] written in Flex 4 (Gumbo)
+
+...
+
+*Please feel free to post comments, suggestions. This page is still under development.*
