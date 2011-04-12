@@ -36,4 +36,4 @@ Here are some code examples which implement some or all of these above mentioned
 
 ...
 
-*Please feel free to post comments, suggestions. This page is still under development.*
+*Please feel free to post comments or suggestions. This page is still under development.*
