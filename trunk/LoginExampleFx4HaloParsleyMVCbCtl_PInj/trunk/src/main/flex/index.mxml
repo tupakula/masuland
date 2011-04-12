@@ -6,7 +6,7 @@
 	xmlns:spicefactory="http://www.spicefactory.org/parsley"
 	xmlns:view="com.masuland.loginexample.view.*"
 	width="100%" height="100%" 
-	pageTitle="Parsley (MVCb) - Login Example (Fx4, Halo)"
+	pageTitle="Parsley (MVCbCtl, PInj) - Login Example (Fx4, Halo)"
 	viewSourceURL="srcview/index.html"
 	>
 
@@ -43,6 +43,7 @@
 	</fx:Declarations>
 
 	<view:AppView
+		id="view"
 		/>
 
 </s:Application>

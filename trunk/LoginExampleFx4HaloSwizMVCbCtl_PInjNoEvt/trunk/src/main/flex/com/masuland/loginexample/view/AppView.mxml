@@ -34,7 +34,7 @@
 				toolTip="You are just as bright as your surrounding"
 				/>
 			<mx:Label
-				text="Swiz (No Evt) - Login Example (Fx4, Halo)"
+				text="Swiz (MVCbCtl, PInj, NoEvt) - Login Example (Fx4, Halo)"
 				styleName="appTitle"
 				/>
 		</mx:HBox>
