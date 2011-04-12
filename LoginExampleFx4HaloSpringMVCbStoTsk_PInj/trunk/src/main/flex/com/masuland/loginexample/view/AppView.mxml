@@ -34,7 +34,7 @@
 				toolTip="You are just as bright as your surrounding"
 				/>
 			<mx:Label
-				text="Spring (MVCbStoTsk) - Login Example (Fx4, Halo)"
+				text="Spring (MVCbStoTsk, PInj) - Login Example (Fx4, Halo)"
 				styleName="appTitle"
 				/>
 		</mx:HBox>

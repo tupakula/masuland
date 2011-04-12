@@ -6,7 +6,7 @@
 	xmlns:view="com.masuland.loginexample.view.*"
 	xmlns:loginexample="com.masuland.loginexample.*" 
 	width="100%" height="100%" 
-	pageTitle="Spring (MVCbStoTsk) - Login Example (Fx4, Halo)"
+	pageTitle="Spring (MVCbStoTsk, PInj) - Login Example (Fx4, Halo)"
 	viewSourceURL="srcview/index.html"
 	>
 	

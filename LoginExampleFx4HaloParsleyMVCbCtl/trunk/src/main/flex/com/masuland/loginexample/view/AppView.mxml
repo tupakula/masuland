@@ -37,7 +37,7 @@
 				toolTip="You are just as bright as your surrounding"
 				/>
 			<mx:Label
-				text="Parsley (Code Behind) - Login Example (Fx4, Halo)"
+				text="Parsley (MVCbCtl) - Login Example (Fx4, Halo)"
 				styleName="appTitle"
 				/>
 		</mx:HBox>
