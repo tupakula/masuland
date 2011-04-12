@@ -4,7 +4,7 @@
 
 There are three types of Nanoarchitectures:
 
-== Interactional Nanoarchitectures ==
+*Interactional Nanoarchitectures*
 
  * "Model - View - Controller" (MVC or MVCtl)
  * [NanoarchitectureMVCb "Model - View - Code Behind" (MVCb)]
@@ -14,7 +14,7 @@ There are three types of Nanoarchitectures:
  * "Model - View - Code Behind - Task" (MVCbTsk)
  * "Model - View - Code Behind - Story/Task" (MVCbStoTsk)
 
-== Structural Nanoarchitectures ==
+*Structural Nanoarchitectures*
 
  * "Controller" (Ctl)
  * "Command" (Cmd)
@@ -22,7 +22,14 @@ There are three types of Nanoarchitectures:
  * "Task" (Tsk)
  * "Story/Task" (!StoTsk)
 
-== Conceptual Nanoarchitectures ==
+*Conceptual Nanoarchitectures*
 
  * [NanoarchitectureNoEvt "No Event" (NoEvt)]
  * "Layer to Package" (L2P)
+
+= Code Examples =
+
+Here are some code examples which implement some or all of these above mentioned Nanoarchitectures:
+
+ * [LoginExample LoginExample] written in Flex 3.5 and Flex 4 (Halo)
+ * [ReligionChooser ReligionChooser] written in Flex 4 (Gumbo)
