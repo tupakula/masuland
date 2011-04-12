@@ -16,7 +16,7 @@ http://masuland.googlecode.com/files/ReligionChooserPrintScreen.png
 
 = More code examples =
 
- * [LoginExample Login Example] written in Flex 3.5 and Flex 4
+ * [LoginExample Login Example] written in Flex 3.5 and Flex 4 (Halo)
 
 ...
 
