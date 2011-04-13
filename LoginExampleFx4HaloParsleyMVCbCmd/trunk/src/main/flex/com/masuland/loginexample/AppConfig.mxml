@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Object 
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:business="com.masuland.loginexample.business.*" 
+	xmlns:command="com.masuland.loginexample.control.command.*" 
+	xmlns:model="com.masuland.loginexample.model.*" 
+	xmlns:cb="com.masuland.loginexample.view.cb.*" 
+	>
+	
+	<mx:ChannelSet 
+		id="appDynamicChannel"
+		>
+		<mx:channels>
+			<mx:AMFChannel 
+				id="graniteAmfChannel"
+				url="http://localhost:8080/AppName/graniteamf/"
+				/>
+		</mx:channels>
+	</mx:ChannelSet> 
+	
+	<mx:RemoteObject
+		id="appRemoteObject" 
+		destination="appService"
+		source="com.masuland.loginexample.parsley.service.AppService"
+		channelSet="{ appDynamicChannel }"
+		/>
+	
+	<!-- DELEGATE -->	
+<!--	
+	<business:AppAmfDelegate 
+		id="appDelegate" 
+		/>
+-->	
+	<business:AppMockDelegate 
+		id="appDelegate" 
+		/>
+	
+	<!-- COMMAND -->	
+	
+	<command:InitAppCommand />
+	<command:GetSettingsCommand />
+	<command:LoadLayoutCommand />
+	<command:LoadStyleCommand />
+	<command:LoadLocaleCommand />
+	
+	<command:GotoLoginCommand />
+	<command:GotoRegisterCommand />
+	<command:LoginCommand />
+	<command:RegisterCommand />
+	<command:UpdateUserCommand />
+	<command:LogoutCommand />
+	
+	<!-- MODEL -->	
+	
+	<model:AppModel 
+		id="appModel"
+		/>
+	
+	<!-- CODE BEHIND -->
+	
+	<cb:SettingsBoxCB 
+		id="appViewCB"
+		/>
+	
+	<cb:LoginBoxCB
+		id="loginBoxCB"
+		/>
+	
+	<cb:UserBoxCB
+		id="userBoxCB"
+		/>
+	
+</mx:Object>
