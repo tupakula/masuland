@@ -43,6 +43,10 @@
 
 	<!-- COMMAND -->	
 	
+	<command:InitAppCommand 
+		id="initAppCommand"
+		/>
+	
 	<command:GetSettingsCommand
 		id="getSettingsCommand"
 		/>
@@ -81,10 +85,6 @@
 	
 	<command:LogoutCommand
 		id="logoutCommand"
-		/>
-	
-	<command:InitAppCommand 
-		id="initAppCommand"
 		/>
 
 	<!-- MODEL -->	
