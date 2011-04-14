@@ -70,7 +70,7 @@ http://masuland.googlecode.com/files/LoginExamplePrintScreen.png
 
 == Flex 4 (Gumbo) ==
 
-*Flex 4 (Halo) with [NanoarchitectureMVCb "Model - View - Code Behind" (MVCb)], "Controller" (Ctl) & "Property Injection" (PInj) Nanoarchitectures*
+*Flex 4 (Gumbo) with [NanoarchitectureMVCb "Model - View - Code Behind" (MVCb)], "Controller" (Ctl) & "Property Injection" (PInj) Nanoarchitectures*
 
  * Flex 4 (Gumbo) Login Example with Parsley 2.4.0 (MVCbCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboParsleyMVCbCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboParsleyMVCbCtl_PInj/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboParsleyMVCbCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboParsleyMVCbCtl_PInj/trunk/ svn repo])
  * Flex 4 (Gumbo) Login Example with Spring AS 1.1 (MVCbCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCbCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCbCtl_PInj/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCbCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboSpringMVCbCtl_PInj/trunk/ svn repo])
