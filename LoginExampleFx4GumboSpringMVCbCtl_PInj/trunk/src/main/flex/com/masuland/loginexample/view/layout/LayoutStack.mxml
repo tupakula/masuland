@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group 
+	xmlns:fx="http://ns.adobe.com/mxml/2009"
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:web="com.masuland.loginexample.view.layout.web.*" 
+	xmlns:phone="com.masuland.loginexample.view.layout.phone.*"
+	width="{ cb.currentLayout.width }" height="{ cb.currentLayout.height }"
+	resizeEffect="{ fx_resize }" 
+	>
+	
+	<s:states>
+		<s:State name="web" />
+		<s:State name="phone" />
+	</s:states>
+	
+	<fx:Script>
+		<![CDATA[
+			import com.masuland.loginexample.view.cb.LayoutStackCB;
+			
+			[Inject]
+			[Bindable]
+			public var cb:LayoutStackCB;
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<s:Resize
+			id="fx_resize"
+			duration="150"
+			/>
+	</fx:Declarations>
+	
+	<web:AppStack
+		id="layout_web"
+		currentState="{ cb.appStackState }"
+		visible="false"
+		includeInLayout="false"
+		visible.web="true"
+		includeInLayout.web="true"
+		/>
+
+	<phone:AppStack
+		id="layout_phone"
+		currentState="{ cb.appStackState }"
+		visible="false"
+		includeInLayout="false"
+		visible.phone="true"
+		includeInLayout.phone="true"
+		/>
+
+</s:Group>
