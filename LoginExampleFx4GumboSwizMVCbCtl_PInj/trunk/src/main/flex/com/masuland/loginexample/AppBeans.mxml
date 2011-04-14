@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<swiz:BeanProvider
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:swiz="http://swiz.swizframework.org"
+	xmlns:business="com.masuland.loginexample.business.*"
+	xmlns:control="com.masuland.loginexample.control.*"
+	xmlns:model="com.masuland.loginexample.model.*" 
+	xmlns:view="com.masuland.loginexample.view.*" 
+	xmlns:cb="com.masuland.loginexample.view.cb.*" 
+	>
+	
+	<swiz:ServiceHelper 
+		id="serviceHelper" 
+		/>
+	
+	<mx:ChannelSet 
+		id="appDynamicChannel"
+		>
+		<mx:channels>
+			<mx:AMFChannel 
+				id="graniteAmfChannel"
+				url="http://localhost:8080/AppName/graniteamf/"
+				/>
+		</mx:channels>
+	</mx:ChannelSet> 
+	
+	<mx:RemoteObject
+		id="appRemoteObject" 
+		destination="appService"
+		source="com.masuland.loginexample.swiz.service.AppService"
+		channelSet="{ appDynamicChannel }"
+		/>
+
+	<!-- DELEGATE -->	
+<!--	
+	<business:AppAmfDelegate 
+		id="appDelegate" 
+		/>
+-->
+	<business:AppMockDelegate 
+		id="appDelegate" 
+		/>
+	
+	<!-- CONTROLLER -->	
+
+	<control:AppController
+		id="appController"
+		/>
+
+	<!-- MODEL -->	
+
+	<model:AppModel 
+		id="appModel"
+		/>
+
+	<!-- CODE BEHIND -->
+	
+	<cb:AppViewCB 
+		id="appViewCB"
+		/>
+	
+	<cb:SettingsBoxCB 
+		id="settingsBoxCB"
+		/>
+
+	<cb:LayoutStackCB
+		id="layoutStackCB"
+		/>
+	
+	<cb:AppStackCB
+		id="appStackCB"
+		/>
+
+	<cb:LoginBoxCB
+		id="loginBoxCB"
+		/>
+	
+	<cb:UserBoxCB
+		id="userBoxCB"
+		/>
+
+</swiz:BeanProvider>
