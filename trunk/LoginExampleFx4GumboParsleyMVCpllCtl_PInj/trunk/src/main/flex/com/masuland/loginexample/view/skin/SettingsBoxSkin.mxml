@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin 
+	xmlns:fx="http://ns.adobe.com/mxml/2009"
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:parsley="http://www.spicefactory.org/parsley" 
+	>
+	
+	<s:layout>
+		<s:HorizontalLayout gap="1" />
+	</s:layout>
+	
+	<fx:Metadata>
+		[HostComponent("com.masuland.loginexample.view.component.SettingsBoxCP")]
+	</fx:Metadata>	
+	
+	<s:states>
+		<s:State name="closed" />
+		<s:State name="open" />
+	</s:states>
+	
+	<fx:Script>
+		<![CDATA[
+			import com.masuland.loginexample.view.component.SettingsBoxCP;
+			import com.masuland.loginexample.vo.LayoutVO;
+			import com.masuland.loginexample.vo.LocaleVO;
+			import com.masuland.loginexample.vo.StyleVO;
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<parsley:Configure />
+	</fx:Declarations>
+
+	<s:VGroup>
+		
+		<s:Group
+			height="5"
+			/>
+		
+		<s:Button
+			id="btn_settings"
+			width="37" height="32"
+			label.closed="&lt;&lt;"
+			label.open="&gt;&gt;"
+			styleName="settingsButton"
+			buttonMode="true" useHandCursor="true" mouseChildren="false"
+			click="hostComponent.btn_settings_clickHandler(event)"
+			/>
+		
+	</s:VGroup>
+	
+	<s:BorderContainer
+		id="bx_settings"
+		styleName="settingBox"
+		visible="false"
+		includeInLayout="false"
+		visible.open="true"
+		includeInLayout.open="true"
+		>
+		
+		<s:layout>
+			<s:VerticalLayout
+				paddingLeft="10" paddingRight="10" paddingTop="10" paddingBottom="10"
+				gap="10"
+				/>
+		</s:layout>
+		
+		<s:Label
+			text="{ resourceManager.getString('resources', 'txt_settings_title') }"
+			width="100%"
+			styleName="settingsHeader"
+			/>
+		
+		<s:VGroup
+			width="100%"
+			verticalAlign="middle"
+			gap="2"
+			>
+			<s:Label
+				width="100%"
+				text="{ resourceManager.getString('resources', 'txt_change_layout') }"
+				/>
+			<s:DropDownList
+				id="cb_layout"
+				width="100%" minWidth="130"
+				dataProvider="{ hostComponent.appModel.settings.layouts }"
+				selectedItem="{ hostComponent.appModel.currentLayout }"
+				requireSelection="true"
+				change="hostComponent.loadLayout(LayoutVO( cb_layout.selectedItem ))"
+				/>
+		</s:VGroup>
+		
+		<s:VGroup
+			width="100%"
+			verticalAlign="middle"
+			gap="2"
+			>
+			<s:Label
+				width="100%"
+				text="{ resourceManager.getString('resources', 'txt_change_style') }"
+				/>
+			<s:DropDownList
+				id="cb_style"
+				minWidth="130"
+				width="100%"
+				dataProvider="{ hostComponent.appModel.currentLayout.styles }"
+				selectedItem="{ hostComponent.appModel.currentStyle }"
+				requireSelection="true"
+				change="hostComponent.loadStyle(StyleVO( cb_style.selectedItem ))"
+				/>
+		</s:VGroup>
+		
+		<s:VGroup
+			width="100%"
+			verticalAlign="middle"
+			gap="2"
+			>
+			<s:Label
+				width="100%"
+				text="{ resourceManager.getString('resources', 'txt_change_locale') }"
+				/>
+			<s:DropDownList
+				id="cb_locale"
+				width="100%"
+				dataProvider="{ hostComponent.appModel.currentLayout.locales }"
+				selectedItem="{ hostComponent.appModel.currentLocale }"
+				change="hostComponent.loadLocale(LocaleVO( cb_locale.selectedItem ))"
+				/>
+		</s:VGroup>
+		
+	</s:BorderContainer>
+
+</s:Skin>
