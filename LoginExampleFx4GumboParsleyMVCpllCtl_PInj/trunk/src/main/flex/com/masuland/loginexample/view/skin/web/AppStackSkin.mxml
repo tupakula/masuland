@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin 
+	xmlns:fx="http://ns.adobe.com/mxml/2009"
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:component="com.masuland.loginexample.view.component.*"
+	xmlns:parsley="http://www.spicefactory.org/parsley"
+	width="100%" height="100%" 
+	>
+	
+	<fx:Metadata>
+		[HostComponent("com.masuland.loginexample.view.component.AppStackCP")]
+	</fx:Metadata>	
+	
+	<s:states>
+		<s:State name="login" />
+		<s:State name="user" />
+	</s:states>
+	
+	<fx:Declarations>
+		<parsley:Configure />
+	</fx:Declarations>
+	
+	<s:BorderContainer
+		width="100%" height="100%"
+		styleName="appBox"
+		>
+
+		<component:LoginBoxCP
+			id="bx_login"
+			width="100%" height="100%"
+			visible="false"
+			visible.login="true"
+			skinClass="com.masuland.loginexample.view.skin.web.LoginBoxSkin"
+			/>
+		
+		<component:UserBoxCP
+			id="bx_user"
+			width="100%" height="100%"
+			visible="false"
+			visible.user="true"
+			skinClass="com.masuland.loginexample.view.skin.web.UserBoxSkin"
+			/>
+
+	</s:BorderContainer>
+	
+</s:Skin>
