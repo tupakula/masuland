@@ -8,9 +8,9 @@ Please read the [LoginExampleFeatureSpec Feature Specification] of the Login Exa
 
 http://masuland.googlecode.com/files/LoginExamplePrintScreen.png
 
-= Flex 3 = 
+== Flex 3 == 
 
-=== Flex 3 with MVC ===
+==== Flex 3 with MVC ====
 
 Features: Flex 3 with "Model - View - Controller" (MVC) Nanoarchitecture
 
@@ -22,9 +22,9 @@ Features: Flex 3 with "Model - View - Controller" (MVC) Nanoarchitecture
 
 ...
 
-= Flex 4 (Halo) =
+== Flex 4 (Halo) ==
 
-=== Flex 4 (Halo) with MVC ===
+==== Flex 4 (Halo) with MVC ====
 
 Features: Flex 4 (Halo) with "Model - View - Controller" (MVC) Nanoarchitecture
 
@@ -32,7 +32,7 @@ Features: Flex 4 (Halo) with "Model - View - Controller" (MVC) Nanoarchitecture
  * Flex 4 (Halo) Login Example with Spring AS 1.1, ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpring/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpring/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpring/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpring/trunk/ svn repo])
  * Flex 4 (Halo) Login Example with Swiz 1.0, ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwiz/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwiz/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwiz/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSwiz/trunk/ svn repo])
 
-=== Flex 4 (Halo) with MVCbCmd ===
+==== Flex 4 (Halo) with MVCbCmd ====
 
 Features: Flex 4 (Halo) with [NanoarchitectureMVCb "Model - View - Code Behind" (MVCb)] & "Command" (Cmd) Nanoarchitectures
 
@@ -40,7 +40,7 @@ Features: Flex 4 (Halo) with [NanoarchitectureMVCb "Model - View - Code Behind" 
  * Flex 4 (Halo) Login Example with Spring AS 1.1 (MVCbCmd), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCmd/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCmd/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCmd/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpringMVCbCmd/trunk/ svn repo])
  * Flex 4 (Halo) Login Example with Swiz 1.0 (MVCbCmd), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCmd/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCmd/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCmd/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSwizMVCbCmd/trunk/ svn repo])
 
-=== Flex 4 with MVCbCtl ===
+==== Flex 4 with MVCbCtl ====
 
 Features: Flex 4 (Halo) with [NanoarchitectureMVCb "Model - View - Code Behind" (MVCb)] & "Controller" (Ctl) Nanoarchitectures
 
@@ -48,7 +48,7 @@ Features: Flex 4 (Halo) with [NanoarchitectureMVCb "Model - View - Code Behind" 
  * Flex 4 (Halo) Login Example with Spring AS 1.1 (MVCbCtl), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpringMVCbCtl/trunk/ svn repo])
  * Flex 4 (Halo) Login Example with Swiz 1.0 (MVCbCtl), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSwizMVCbCtl/trunk/ svn repo])
 
-=== Flex 4 (Halo) with MVCbCtl_Val ===
+==== Flex 4 (Halo) with MVCbCtl_Val ====
 
 Features: Flex 4 (Halo) with [NanoarchitectureMVCb "Model - View - Code Behind" (MVCb)], "Controller" (Ctl) & "Validation" (Val) Nanoarchitectures & Cairngorm 3 Validation Library
 
@@ -56,7 +56,7 @@ Features: Flex 4 (Halo) with [NanoarchitectureMVCb "Model - View - Code Behind" 
  * Flex 4 (Halo) Login Example with Spring AS 1.1 (MVCbCtl, Val), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_Val/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_Val/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_Val/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpringMVCbCtl_Val/trunk/ svn repo])
  * Flex 4 (Halo) Login Example with Swiz 1.0 (MVCbCtl, Val), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl_Val/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl_Val/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl_Val/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSwizMVCbCtl_Val/trunk/ svn repo])
 
-=== Flex 4 (Halo) with MVCbCtl_PInj ===
+==== Flex 4 (Halo) with MVCbCtl_PInj ====
 
 Features: Flex 4 (Halo) with [NanoarchitectureMVCb "Model - View - Code Behind" (MVCb)], "Controller" (Ctl) & "Property Injection" (PInj) Nanoarchitectures
 
@@ -64,7 +64,7 @@ Features: Flex 4 (Halo) with [NanoarchitectureMVCb "Model - View - Code Behind" 
  * Flex 4 (Halo) Login Example with Spring AS 1.1 (MVCbCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_PInj/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpringMVCbCtl_PInj/trunk/ svn repo])
  * Flex 4 (Halo) Login Example with Swiz 1.0 (MVCbCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl_PInj/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSwizMVCbCtl_PInj/trunk/ svn repo])
 
-=== Flex 4 (Halo) with MVCbCtl_PInjDdd ===
+==== Flex 4 (Halo) with MVCbCtl_PInjDdd ====
 
 Features: Flex 4 (Halo) with [NanoarchitectureMVCb "Model - View - Code Behind" (MVCb)], "Controller" (Ctl), "Property Injection" (PInj) & "Domain-Driven Design" (Ddd) Nanoarchitectures
 
@@ -72,7 +72,7 @@ Features: Flex 4 (Halo) with [NanoarchitectureMVCb "Model - View - Code Behind" 
  * Flex 4 (Halo) Login Example with Spring AS 1.1 (MVCbCtl, PInj, Ddd), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_PInjDdd/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_PInjDdd/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_PInjDdd/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpringMVCbCtl_PInjDdd/trunk/ svn repo])
  * Flex 4 (Halo) Login Example with Swiz 1.0 (MVCbCtl, PInj, Ddd), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl_PInjDdd/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl_PInjDdd/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl_PInjDdd/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSwizMVCbCtl_PInjDdd/trunk/ svn repo])
 
-=== Flex 4 (Halo) with MVCbCtl_PInjNoEvt ===
+==== Flex 4 (Halo) with MVCbCtl_PInjNoEvt ====
 
 Features: Flex 4 (Halo) with [NanoarchitectureMVCb "Model - View - Code Behind" (MVCb)], "Controller" (Ctl), "Property Injection" (PInj) & [NanoarchitectureNoEvt "No Event" (NoEvt)]  Nanoarchitectures
 
@@ -80,7 +80,7 @@ Features: Flex 4 (Halo) with [NanoarchitectureMVCb "Model - View - Code Behind" 
  * Flex 4 (Halo) Login Example with Spring AS 1.1 (MVCbCtl, PInj, !NoEvt), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_PInjNoEvt/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_PInjNoEvt/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_PInjNoEvt/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpringMVCbCtl_PInjNoEvt/trunk/ svn repo])
  * Flex 4 (Halo) Login Example with Swiz 1.0 (MVCbCtl, PInj, !NoEvt), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl_PInjNoEvt/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl_PInjNoEvt/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl_PInjNoEvt/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSwizMVCbCtl_PInjNoEvt/trunk/ svn repo])
 
-=== Flex 4 (Halo) with MVCbStoTsk_PInj ===
+==== Flex 4 (Halo) with MVCbStoTsk_PInj ====
 
 Features: Flex 4 (Halo) with [NanoarchitectureMVCb "Model - View - Code Behind" (MVCb)], "Story/Task" (!StoTsk) & "Property Injection" (PInj) Nanoarchitectures & Cairngorm 3 Task Library
 
@@ -90,9 +90,9 @@ Features: Flex 4 (Halo) with [NanoarchitectureMVCb "Model - View - Code Behind" 
 
 ...
 
-= Flex 4 (Gumbo) =
+== Flex 4 (Gumbo) ==
 
-=== Flex 4 (Gumbo) with MVCbCtl ===
+==== Flex 4 (Gumbo) with MVCbCtl ====
 
 Features: Flex 4 (Gumbo) with [NanoarchitectureMVCb "Model - View - Code Behind" (MVCb)] & "Controller" (Ctl) Nanoarchitectures
 
@@ -100,7 +100,7 @@ Features: Flex 4 (Gumbo) with [NanoarchitectureMVCb "Model - View - Code Behind"
  * Flex 4 (Gumbo) Login Example with Spring AS 1.1 (MVCbCtl), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCbCtl/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCbCtl/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCbCtl/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboSpringMVCbCtl/trunk/ svn repo])
  * Flex 4 (Gumbo) Login Example with Swiz 1.0 (MVCbCtl), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCbCtl/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCbCtl/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCbCtl/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboSwizMVCbCtl_/trunk/ svn repo])
 
-=== Flex 4 (Gumbo) with MVCbCtl_PInj ===
+==== Flex 4 (Gumbo) with MVCbCtl_PInj ====
 
 Features: Flex 4 (Gumbo) with [NanoarchitectureMVCb "Model - View - Code Behind" (MVCb)], "Controller" (Ctl) & "Property Injection" (PInj) Nanoarchitectures
 
