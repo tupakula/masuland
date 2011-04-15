@@ -10,7 +10,7 @@ http://masuland.googlecode.com/files/LoginExamplePrintScreen.png
 
 == Flex 3 == 
 
-*Flex 4 (Halo) with "Model - View - Controller" (MVC) Nanoarchitecture*
+*Flex 3 with "Model - View - Controller" (MVC) Nanoarchitecture*
 
  * Flex 3 Login Example with Cairngorm 2.2.1, ([http://dl.dropbox.com/u/352808/code/LoginExampleFx3Cairngorm221/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx3Cairngorm221/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx3Cairngorm221/trunk/ svn repo])
  * Flex 3 Login Example with Parsley 2.4.0, ([http://dl.dropbox.com/u/352808/code/LoginExampleFx3Parsley/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx3Parsley/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx3Parsley/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx3Parsley/trunk/ svn repo])
