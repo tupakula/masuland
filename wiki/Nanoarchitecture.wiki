@@ -14,6 +14,8 @@ Microarchitectures like [http://cairngormdocs.org/ Cairngorm 2.2.1], [http://pur
  * "Model - View - Code Behind - Controller/Command" (MVCbCtlCmd)
  * "Model - View - Code Behind - Task" (MVCbTsk)
  * "Model - View - Code Behind - Story/Task" (MVCbStoTsk)
+ * "Model - View - Component (Pull)" (MVCpll)
+ * "Model - View - Component (Push)" (MVCpsh)
 
 *Structural Nanoarchitectures*
 
