@@ -195,6 +195,7 @@ package com.masuland.loginexample.control
 		[MessageHandler]
 		public function loadLayout(event:LoadLayoutEvent):void 
 		{
+//			appModel.currentLayout = null;
 			appModel.currentLayout = event.layout;
 			
 			// load style

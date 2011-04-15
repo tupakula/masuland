@@ -9,8 +9,11 @@ package com.masuland.loginexample.view.cb
 	import com.masuland.loginexample.vo.LocaleVO;
 	import com.masuland.loginexample.vo.SettingsVO;
 	import com.masuland.loginexample.vo.StyleVO;
+	
+	import flash.events.Event;
+	import flash.events.EventDispatcher;
 
-	public class SettingsBoxCB
+	public class SettingsBoxCB extends EventDispatcher
 	{
 		//----------------------
 		// Properties
@@ -19,7 +22,7 @@ package com.masuland.loginexample.view.cb
 		[Inject]
 		[Bindable]
 		public var appModel:AppModel;
-		
+
 		[MessageDispatcher]
 		public var dispatcher:Function;
 
@@ -33,7 +36,7 @@ package com.masuland.loginexample.view.cb
 		
 		[Subscribe(scope='appModel', objectId='currentStyle')]
 		[Bindable]
-		public var currentStyle:StyleVO;
+		public var currentStyle:LocaleVO;
 		
 		[Subscribe(scope='appModel', objectId='currentLocale')]
 		[Bindable]

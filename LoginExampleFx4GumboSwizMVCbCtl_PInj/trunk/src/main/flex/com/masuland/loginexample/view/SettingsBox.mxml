@@ -74,9 +74,10 @@
 				/>
 			<s:DropDownList
 				id="cb_layout"
-				width="100%"
+				width="100%" minWidth="130"
 				dataProvider="{ cb.settings.layouts }"
 				selectedItem="{ cb.currentLayout }"
+				requireSelection="true"
 				change="cb.loadLayout(LayoutVO( cb_layout.selectedItem ))"
 				/>
 		</s:VGroup>
@@ -95,6 +96,7 @@
 				width="100%"
 				dataProvider="{ cb.currentLayout.styles }"
 				selectedItem="{ cb.currentStyle }"
+				requireSelection="true"
 				change="cb.loadStyle(StyleVO( cb_style.selectedItem ))"
 				/>
 		</s:VGroup>
@@ -113,6 +115,7 @@
 				width="100%"
 				dataProvider="{ cb.currentLayout.locales }"
 				selectedItem="{ cb.currentLocale }"
+				requireSelection="true"
 				change="cb.loadLocale(LocaleVO( cb_locale.selectedItem ))"
 				/>
 		</s:VGroup>
