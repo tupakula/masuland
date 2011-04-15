@@ -32,4 +32,11 @@ See [LoginExample#Flex_4_(Gumbo)_with_MVCpllCtl_PInj Flex 4 (Gumbo) Login Exampl
 
 ...
 
+= Further Readings =
+
+ * Mihai Corlan & Alin Achim: [http://www.adobe.com/devnet/flex/articles/upgrading-flex3-to-flex4-techguide.html Upgrading Flex 3 to Flex 4 Techguide] ([http://wwwimages.adobe.com/www.adobe.com/content/dam/Adobe/en/devnet/flex/pdfs/upgrading-flex3-to-flex4-techguide.pdf PDF Version])
+ * Renaun Erickson: [http://renaun.com/blog/2010/04/converting-flex-3-microphone-application-to-flex-4-part-1/ Converting Flex 3 Microphone application to Flex 4]
+
+...
+
 *Please feel free to post comments or suggestions because the page is still work in progress.*
