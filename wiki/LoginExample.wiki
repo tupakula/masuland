@@ -108,6 +108,14 @@ Features: Flex 4 (Gumbo) with [NanoarchitectureMVCb "Model - View - Code Behind"
  * Flex 4 (Gumbo) Login Example with Spring AS 1.1 (MVCbCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCbCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCbCtl_PInj/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCbCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboSpringMVCbCtl_PInj/trunk/ svn repo])
  * Flex 4 (Gumbo) Login Example with Swiz 1.0 (MVCbCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCbCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCbCtl_PInj/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCbCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboSwizMVCbCtl_PInj/trunk/ svn repo])
 
+==== Flex 4 (Gumbo) with MVCpllCtl_PInj ====
+
+Features: Flex 4 (Gumbo) with [NanoarchitectureMVCb "Model - View - Component (Pull)" (MVCpll)], "Controller" (Ctl) & "Property Injection" (PInj)  Nanoarchitectures
+
+ * Flex 4 (Gumbo) Login Example with Parsley 2.4.0 (MVCpllCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboParsleyMVCpllCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboParsleyMVCpllCtl_PInj/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboParsleyMVCpllCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboParsleyMVCpllCtl_PInj/trunk/ svn repo])
+ * Flex 4 (Gumbo) Login Example with Spring AS 1.1 (MVCpllCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCpllCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCpllCtl_PInj/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCpllCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboSpringMVCpllCtl_PInj/trunk/ svn repo])
+ * Flex 4 (Gumbo) Login Example with Swiz 1.0 (MVCpllCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCpllCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCpllCtl_PInj/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCpllCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboSwizMVCpllCtl_PInj/trunk/ svn repo])
+
 ...
 
 == Frequently Asked Questions (FAQs) ==
