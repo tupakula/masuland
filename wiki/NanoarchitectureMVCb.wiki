@@ -30,7 +30,7 @@ This architecture contains 3 types of application flows:
   * (8) Databinding updates Code Behind (Flex 3) / Component (Flex 4) class
   * (9) Databinding updates User Interface
 
-== Code Examples Implementing MVCb or MVCp ==
+== Code Examples Implementing MVCb / MVCp ==
 
   * Login Example (Flex 3.5 and Flex 4), http://code.google.com/p/masuland/wiki/LoginExample
   * Religion Chooser (Flex 4), http://code.google.com/p/masuland/wiki/ReligionChooser
