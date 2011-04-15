@@ -8,7 +8,7 @@ See [LoginExample#Flex_4_(Halo)_with_MVC Flex 4 (Halo) Login Example with MVC]
 
 ...
 
-=== 2. Create Code Behind classes for your MXML files and link them together ===
+=== 2. Create Code Behind classes for your MXML files ===
 
 See [LoginExample#Flex_4_with_MVCbCtl Flex 4 (Halo) Login Example with MVCbCtl]
 
