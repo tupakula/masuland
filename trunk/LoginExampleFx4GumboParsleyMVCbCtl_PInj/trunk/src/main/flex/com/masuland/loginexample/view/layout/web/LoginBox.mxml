@@ -143,7 +143,7 @@
 							useHandCursor="true"
 							click="cb.ctaLoginOrRegister(vo_auth, currentState)"
 							/>
-						<s:Button
+						<mx:LinkButton
 							id="btn_gotoRegister"
 							label="{ resourceManager.getString('resources', 'cta_goto_register') }"
 							click="cb.gotoRegister()"
@@ -163,7 +163,7 @@
 							useHandCursor="true"
 							click="cb.ctaLoginOrRegister(vo_auth, currentState)"
 							/>
-						<s:Button
+						<mx:LinkButton
 							id="btn_gotoLogin"
 							label="{ resourceManager.getString('resources', 'cta_goto_login') }"
 							click="cb.gotoLogin()"
