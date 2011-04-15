@@ -2,7 +2,8 @@
 
 = Nanoarchitecture =
 
-There are three types of Nanoarchitectures:
+Nanoarchitectures are small, architectural design solutions based on
+Microarchitectures like [http://cairngormdocs.org/ Cairngorm 2.2.1], [http://puremvc.org/ PureMVC], [http://www.spicefactory.org/parsley/ Parsley], [http://www.springactionscript.org/ Spring Actionscript], [http://www.swizframework.org/ Swiz], [http://mate.asfusion.com/ Mate], [http://www.robotlegs.org/ Robotlegs], [http://flicc.sourceforge.net/ Flicc] ... and others. There are three types of Nanoarchitectures: Interactional, structual and conceptual Nanoarchitectures.
 
 *Interactional Nanoarchitectures*
 
