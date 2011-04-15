@@ -1,13 +1,25 @@
 #summary This page explains how you could migrate a Flex 3 application to a Flex 4 application.
 
-= Introduction =
+= How to migrate from Flex 3 to Flex 4? =
 
-Add your content here.
+== 1. Switch your Flex 3 SDK to the Flex 4 SDK ==
 
+...
 
-= Details =
+== 2. Create Code Behind classes for your MXML files and link them together ==
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+...
+
+== 3. Change your Flex 3 (Halo) components to Flex 4 (Spark) components ==
+
+...
+
+== 4. Change your Code Behind classes to !SkinnableComponents or !SkinnableContainers ==
+
+...
+
+*Please feel free to post comments, suggestions or feature requests because the code is still work in progress.*
+
+= Code Examples =
+
+ * [LoginExample Login Example] written in Flex 3 and Flex 4
