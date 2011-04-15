@@ -6,7 +6,9 @@ http://masuland.googlecode.com/files/ReligionChooserPrintScreen.png
 
 == Flex 4 (Gumbo) ==
 
-*Flex 4 (Gumbo) with [NanoarchitectureMVCb "Model - View - Code Behind" (MVCb)] Nanoarchitecture*
+==== Flex 4 (Gumbo) with MVCb ====
+
+Features: Flex 4 (Gumbo) with [NanoarchitectureMVCb "Model - View - Code Behind" (MVCb)] Nanoarchitecture
 
  * Flex 4 (Gumbo) Religion Chooser with Parsley 2.3.1 (MVCb), ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboParsleyMVCb/index.html live app]) ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboParsleyMVCb/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/ReligionChooserGumboParsleyMVCb/trunk/ svn repo])
  * Flex 4 (Gumbo) Religion Chooser with Spring 1.0 (MVCb), ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSpringMVCb/index.html live app]) ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSpringMVCb/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/ReligionChooserGumboSpringMVCb/trunk/ svn repo])
@@ -16,7 +18,7 @@ http://masuland.googlecode.com/files/ReligionChooserPrintScreen.png
 
 == Frequently Asked Questions (FAQs) ==
 
-=== What's a Nanoarchitecture? === 
+==== What's a Nanoarchitecture? ==== 
 Please read this page about [Nanoarchitecture Nanoarchitectures].
 
 ...
