@@ -38,4 +38,4 @@ Just like [NanoarchitectureMVCb MVCb] this nanoarchitecture contains 3 types of 
 
 == Code Examples Implementing !NoEvt ==
 
-  * Login Example (Flex 3.5 and Flex 4), http://code.google.com/p/masuland/wiki/LoginExample
+  * [LoginExample Login Example] with Flex 3 and Flex 4 (Halo, Gumbo
