@@ -13,6 +13,7 @@
 	
 	<fx:Script>
 		<![CDATA[
+			import com.masuland.loginexample.model.AppModel;
 			import com.masuland.loginexample.view.cb.SettingsBoxCB;
 			import com.masuland.loginexample.vo.LayoutVO;
 			import com.masuland.loginexample.vo.LocaleVO;
@@ -21,6 +22,10 @@
 			[Inject]
 			[Bindable]
 			public var cb:SettingsBoxCB;
+			
+			[Inject]
+			[Bindable]
+			public var appModel:AppModel;
 		]]>
 	</fx:Script>
 	
@@ -79,9 +84,10 @@
 				/>
 			<s:DropDownList
 				id="cb_layout"
-				width="100%"
-				dataProvider="{ cb.settings.layouts }"
-				selectedItem="{ cb.currentLayout }"
+				width="100%" minWidth="130"
+				dataProvider="{ appModel.settings.layouts }"
+				selectedItem="{ appModel.currentLayout }"
+				requireSelection="true"
 				change="cb.loadLayout(LayoutVO( cb_layout.selectedItem ))"
 				/>
 		</s:VGroup>
@@ -99,8 +105,9 @@
 				id="cb_style"
 				minWidth="130"
 				width="100%"
-				dataProvider="{ cb.currentLayout.styles }"
-				selectedItem="{ cb.currentStyle }"
+				dataProvider="{ appModel.currentLayout.styles }"
+				selectedItem="{ appModel.currentStyle }"
+				requireSelection="true"
 				change="cb.loadStyle(StyleVO( cb_style.selectedItem ))"
 				/>
 		</s:VGroup>
@@ -117,8 +124,8 @@
 			<s:DropDownList
 				id="cb_locale"
 				width="100%"
-				dataProvider="{ cb.currentLayout.locales }"
-				selectedItem="{ cb.currentLocale }"
+				dataProvider="{ appModel.currentLayout.locales }"
+				selectedItem="{ appModel.currentLocale }"
 				change="cb.loadLocale(LocaleVO( cb_locale.selectedItem ))"
 				/>
 		</s:VGroup>
