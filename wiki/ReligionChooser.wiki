@@ -14,6 +14,13 @@ http://masuland.googlecode.com/files/ReligionChooserPrintScreen.png
 
 ...
 
+== Frequently Asked Questions (FAQs) ==
+
+=== What's a Nanoarchitecture? === 
+Please read this page about [Nanoarchitecture Nanoarchitectures].
+
+...
+
 = More code examples =
 
  * [LoginExample Login Example] written in Flex 3 and Flex 4 (Halo, Gumbo)
