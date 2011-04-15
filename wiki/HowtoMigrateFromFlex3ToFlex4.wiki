@@ -4,17 +4,25 @@
 
 == 1. Switch your Flex 3 SDK to the Flex 4 SDK ==
 
+See [LoginExample#Flex_4_(Halo)_with_MVC Flex 4 (Halo) Login Example with MVC]
+
 ...
 
 == 2. Create Code Behind classes for your MXML files and link them together ==
+
+See [LoginExample#Flex_4_with_MVCbCtl Flex 4 (Halo) Login Example with MVCbCtl]
 
 ...
 
 == 3. Change your Flex 3 (Halo) components to Flex 4 (Spark) components ==
 
+See [LoginExample#Flex_4_(Gumbo)_with_MVCbCtl Flex 4 (Gumbo) Login Example with MVCbCtl]
+
 ...
 
 == 4. Change your Code Behind classes to !SkinnableComponents or !SkinnableContainers ==
+
+See [LoginExample#Flex_4_(Gumbo)_with_MVCpllCtl_PInj Flex 4 (Gumbo) Login Example with MVCpllCtl_PInj]
 
 ...
 
