@@ -32,7 +32,7 @@ Microarchitectures like [http://cairngormdocs.org/ Cairngorm 2.2.1], [http://pur
 
 Here are some code examples which implement some or all of these above mentioned Nanoarchitectures:
 
- * [LoginExample LoginExample] written in Flex 3.5 and Flex 4 (Halo)
+ * [LoginExample LoginExample] written in Flex 3 and Flex 4
  * [ReligionChooser ReligionChooser] written in Flex 4 (Gumbo)
 
 ...
