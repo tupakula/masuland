@@ -84,8 +84,11 @@ http://masuland.googlecode.com/files/LoginExamplePrintScreen.png
 
 == Frequently Asked Questions (FAQs) ==
 
- * What's a Nanoarchitecture? Please read this page about [Nanoarchitecture Nanoarchitectures]
- * How can I migrate my Flex 3 application to a Flex 4 application? Please read this [HowtoMigrateFromFlex3ToFlex4 migration guide].
+=== What's a Nanoarchitecture? === 
+Please read this page about [Nanoarchitecture Nanoarchitectures].
+
+=== How can I migrate my Flex 3 application to a Flex 4 application? ===
+Please read this [HowtoMigrateFromFlex3ToFlex4 migration guide].
 
 ...
 
