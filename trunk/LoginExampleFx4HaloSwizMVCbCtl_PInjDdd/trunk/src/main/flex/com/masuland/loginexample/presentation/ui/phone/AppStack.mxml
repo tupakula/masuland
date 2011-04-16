@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mx:Canvas 
 	xmlns:mx="http://www.adobe.com/2006/mxml"
-	xmlns:web="com.masuland.loginexample.presentation.layout.web.*"
-	width="100%" height="100%" 
+	xmlns:phone="com.masuland.loginexample.presentation.ui.phone.*"
+	width="100%" height="100%"
 	styleName="defaultBox"
 	>
 	
@@ -14,10 +14,10 @@
 			<mx:SetProperty target="{ bx_user }" name="visible" value="true" />
 		</mx:State>
 	</mx:states>
-
+	
 	<mx:Script>
 		<![CDATA[
-			import com.masuland.loginexample.presentation.cb.AppStackCB;
+			import com.masuland.loginexample.presentation.codebehind.AppStackCB;
 			
 			[Inject]
 			[Bindable]
@@ -25,13 +25,13 @@
 		]]>
 	</mx:Script>
 
-	<web:LoginBox
+	<phone:LoginBox
 		id="bx_login"
 		currentState="{ cb.loginBoxState }"
 		visible="false"
 		/>
 	
-	<web:UserBox
+	<phone:UserBox
 		id="bx_user"
 		visible="false"
 		/>

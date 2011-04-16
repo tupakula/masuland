@@ -1,4 +1,4 @@
-package com.masuland.loginexample.presentation.cb
+package com.masuland.loginexample.presentation.codebehind
 {
 	public class AppStackCB
 	{
