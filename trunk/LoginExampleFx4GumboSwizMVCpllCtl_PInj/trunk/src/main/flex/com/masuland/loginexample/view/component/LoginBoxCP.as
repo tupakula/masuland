@@ -1,11 +1,11 @@
 package com.masuland.loginexample.view.component
 {
-	import com.masuland.loginexample.control.event.AppEvent;
-	import com.masuland.loginexample.control.event.LoginEvent;
-	import com.masuland.loginexample.control.event.RegisterEvent;
-	import com.masuland.loginexample.model.AppModel;
-	import com.masuland.loginexample.state.LoginBoxState;
-	import com.masuland.loginexample.vo.AuthenticationVO;
+	import com.masuland.loginexample.action.event.AppEvent;
+	import com.masuland.loginexample.action.event.LoginEvent;
+	import com.masuland.loginexample.action.event.RegisterEvent;
+	import com.masuland.loginexample.data.AppModel;
+	import com.masuland.loginexample.data.state.LoginBoxState;
+	import com.masuland.loginexample.data.vo.AuthenticationVO;
 	
 	import flash.events.IEventDispatcher;
 	
