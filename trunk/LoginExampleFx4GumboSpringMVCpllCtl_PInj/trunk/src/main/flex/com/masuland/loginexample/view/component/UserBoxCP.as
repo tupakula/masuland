@@ -1,8 +1,8 @@
 package com.masuland.loginexample.view.component
 {
-	import com.masuland.loginexample.control.event.AppEvent;
-	import com.masuland.loginexample.control.event.UpdateUserEvent;
-	import com.masuland.loginexample.vo.UserVO;
+	import com.masuland.loginexample.action.event.AppEvent;
+	import com.masuland.loginexample.action.event.UpdateUserEvent;
+	import com.masuland.loginexample.data.vo.UserVO;
 	
 	import org.springextensions.actionscript.core.event.EventBus;
 	

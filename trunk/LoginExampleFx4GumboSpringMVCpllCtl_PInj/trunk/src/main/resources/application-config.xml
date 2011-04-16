@@ -46,14 +46,14 @@
 	
 	<object 
 		id="appController" 
-		class="com.masuland.loginexample.control.AppController"
+		class="com.masuland.loginexample.action.AppController"
 		/>
 	
 	<!-- MODEL -->	
 	
 	<object 
 		id="appModel" 
-		class="com.masuland.loginexample.model.AppModel"
+		class="com.masuland.loginexample.data.AppModel"
 		/>
 
 	<!-- CODE BEHIND -->
