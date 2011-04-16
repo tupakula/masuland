@@ -1,7 +1,7 @@
 package com.masuland.loginexample
 {
 	import com.masuland.loginexample.business.AppMockDelegate;
-	import com.masuland.loginexample.control.AppController;
+	import com.masuland.loginexample.action.AppController;
 	import com.masuland.loginexample.view.component.LoginBoxCP;
 	import com.masuland.loginexample.view.component.SettingsBoxCP;
 	import com.masuland.loginexample.view.component.UserBoxCP;

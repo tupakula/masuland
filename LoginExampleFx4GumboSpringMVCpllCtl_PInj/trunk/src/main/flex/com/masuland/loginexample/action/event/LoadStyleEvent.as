@@ -1,6 +1,6 @@
-package com.masuland.loginexample.control.event
+package com.masuland.loginexample.action.event
 {	
-	import com.masuland.loginexample.vo.StyleVO;
+	import com.masuland.loginexample.data.vo.StyleVO;
 	
 	import flash.events.Event;
 	import flash.utils.getQualifiedClassName;

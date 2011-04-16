@@ -1,6 +1,6 @@
 package com.masuland.loginexample.view.component
 {
-	import com.masuland.loginexample.vo.LayoutVO;
+	import com.masuland.loginexample.data.vo.LayoutVO;
 	
 	import spark.components.supportClasses.SkinnableComponent;
 
