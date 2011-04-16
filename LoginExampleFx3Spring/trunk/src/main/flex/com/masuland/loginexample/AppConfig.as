@@ -36,7 +36,7 @@ package com.masuland.loginexample
 			
 			if (component)
 			{
-				component.addEventListener(FlexEvent.APPLICATION_COMPLETE, createContext);
+				component.addEventListener(FlexEvent.INITIALIZE, createContext);
 			}
 			else
 			{
