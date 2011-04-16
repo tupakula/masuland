@@ -1,8 +1,8 @@
 package com.masuland.loginexample.cairngorm221.business
 {
 	import com.adobe.cairngorm.business.ServiceLocator;
-	import com.masuland.loginexample.vo.AuthenticationVO;
-	import com.masuland.loginexample.vo.UserVO;
+	import com.masuland.loginexample.data.vo.AuthenticationVO;
+	import com.masuland.loginexample.data.vo.UserVO;
 	
 	import mx.rpc.AsyncToken;
 	import mx.rpc.IResponder;
