@@ -1,12 +1,12 @@
 package com.masuland.loginexample.business
 {
-	import com.masuland.loginexample.util.MockDelegateHelper;
-	import com.masuland.loginexample.vo.AuthenticationVO;
-	import com.masuland.loginexample.vo.LayoutVO;
-	import com.masuland.loginexample.vo.LocaleVO;
-	import com.masuland.loginexample.vo.SettingsVO;
-	import com.masuland.loginexample.vo.StyleVO;
-	import com.masuland.loginexample.vo.UserVO;
+	import com.masuland.loginexample.business.helper.MockDelegateHelper;
+	import com.masuland.loginexample.data.vo.AuthenticationVO;
+	import com.masuland.loginexample.data.vo.LayoutVO;
+	import com.masuland.loginexample.data.vo.LocaleVO;
+	import com.masuland.loginexample.data.vo.SettingsVO;
+	import com.masuland.loginexample.data.vo.StyleVO;
+	import com.masuland.loginexample.data.vo.UserVO;
 	
 	import mx.collections.ArrayCollection;
 	import mx.rpc.AsyncToken;
