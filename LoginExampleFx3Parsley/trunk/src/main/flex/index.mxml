@@ -17,13 +17,13 @@
 	<mx:Metadata>
 		[ResourceBundle("resources")]
 		[ManagedEvents("AppEvent.INITIALIZE_CLIENT")]
-		[Event(name="AppEvent.INITIALIZE_CLIENT", type="com.masuland.loginexample.control.event.AppEvent")]
+		[Event(name="AppEvent.INITIALIZE_CLIENT", type="com.masuland.loginexample.action.event.AppEvent")]
 	</mx:Metadata>
 	
 	<mx:Script>
 		<![CDATA[
 			import com.masuland.loginexample.AppConfig;
-			import com.masuland.loginexample.control.event.AppEvent;
+			import com.masuland.loginexample.action.event.AppEvent;
 			
 			import mx.events.FlexEvent;
 
@@ -41,6 +41,7 @@
 	</parsley:ContextBuilder> 
 	
 	<view:AppView
+		id="view"
 		/>
 	
 </mx:Application>
