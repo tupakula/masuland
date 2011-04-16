@@ -3,7 +3,7 @@
 	xmlns:s="library://ns.adobe.com/flex/spark" 
 	xmlns:mx="library://ns.adobe.com/flex/mx" 
 	xmlns:cairngorm="com.adobe.cairngorm.*"
-	xmlns:spicefactory="http://www.spicefactory.org/parsley"
+	xmlns:parsley="http://www.spicefactory.org/parsley"
 	xmlns:view="com.masuland.loginexample.view.*"
 	width="100%" height="100%" 
 	pageTitle="Parsley (MVCbCmd) - Login Example (Fx4, Halo)"
@@ -25,10 +25,10 @@
 	</fx:Script>
 	
 	<fx:Declarations>
-		<spicefactory:ContextBuilder>
-			<spicefactory:FlexConfig type="{ AppConfig }"/>
-			<spicefactory:MessageSettings unhandledErrors="{ ErrorPolicy.RETHROW }"/> 
-		</spicefactory:ContextBuilder>
+		<parsley:ContextBuilder>
+			<parsley:FlexConfig type="{ AppConfig }"/>
+			<parsley:MessageSettings unhandledErrors="{ ErrorPolicy.RETHROW }"/> 
+		</parsley:ContextBuilder>
 		
 		<s:TraceTarget level="{ LogEventLevel.DEBUG }">
 			<s:filters>
@@ -38,7 +38,7 @@
 			</s:filters>
 		</s:TraceTarget>
 		
-		<spicefactory:Configure />
+		<parsley:Configure />
 	</fx:Declarations>
 
 	<view:AppView

@@ -124,7 +124,7 @@
 					<mx:DateField
 						id="df_birthday"
 						width="100%"
-						text="{ cb.currentUser.birthday }"
+						selectedDate="{ cb.currentUser.birthday }"
 						/>
 				</mx:FormItem>
 				<mx:FormItem

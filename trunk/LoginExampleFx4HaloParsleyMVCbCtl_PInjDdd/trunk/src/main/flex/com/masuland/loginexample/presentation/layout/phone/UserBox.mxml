@@ -2,7 +2,7 @@
 <mx:Canvas 
 	xmlns:mx="http://www.adobe.com/2006/mxml" 
 	xmlns:vo="com.masuland.loginexample.domain.vo.*"
-	xmlns:spicefactory="http://www.spicefactory.org/parsley"
+	xmlns:parsley="http://www.spicefactory.org/parsley"
 	width="100%" height="100%"
 	>
 	
@@ -16,7 +16,7 @@
 		]]>
 	</mx:Script>
 	
-	<spicefactory:Configure />
+	<parsley:Configure />
 	
 	<vo:UserVO
 		id="vo_user"
