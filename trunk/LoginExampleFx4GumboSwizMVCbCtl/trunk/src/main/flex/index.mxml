@@ -30,7 +30,7 @@
 			<swiz:config>
 				<swiz:SwizConfig
 					eventPackages="com.masuland.loginexample.action.event"
-					viewPackages="com.masuland.loginexample.view.ui" 
+					viewPackages="com.masuland.loginexample.view" 
 					/>
 			</swiz:config>
 		</swiz:Swiz>
