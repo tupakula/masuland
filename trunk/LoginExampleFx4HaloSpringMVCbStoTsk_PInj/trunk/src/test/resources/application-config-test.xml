@@ -46,61 +46,61 @@
 	
 	<object 
 		id="appStories" 
-		class="com.masuland.loginexample.control.AppStories"
+		class="com.masuland.loginexample.action.AppStories"
 		/>
 
 	<!-- TASK -->	
 
 	<object 
 		id="getSettingsSeqTask" 
-		class="com.masuland.loginexample.control.task.GetSettingsSeqTask"
+		class="com.masuland.loginexample.action.task.GetSettingsSeqTask"
 		/>
 
 	<object 
 		id="loadLayoutSeqTask" 
-		class="com.masuland.loginexample.control.task.LoadLayoutSeqTask"
+		class="com.masuland.loginexample.action.task.LoadLayoutSeqTask"
 		/>
 
 	<object 
 		id="getSettingsTask" 
-		class="com.masuland.loginexample.control.task.GetSettingsTask"
+		class="com.masuland.loginexample.action.task.GetSettingsTask"
 		/>
 
 	<object 
 		id="loadLayoutTask" 
-		class="com.masuland.loginexample.control.task.LoadLayoutTask"
+		class="com.masuland.loginexample.action.task.LoadLayoutTask"
 		/>
 
 	<object 
 		id="loadStyleTask" 
-		class="com.masuland.loginexample.control.task.LoadStyleTask"
+		class="com.masuland.loginexample.action.task.LoadStyleTask"
 		/>
 
 	<object 
 		id="loadLocaleTask" 
-		class="com.masuland.loginexample.control.task.LoadLocaleTask"
+		class="com.masuland.loginexample.action.task.LoadLocaleTask"
 		/>
 
 	<object 
 		id="loginTask" 
-		class="com.masuland.loginexample.control.task.LoginTask"
+		class="com.masuland.loginexample.action.task.LoginTask"
 		/>
 
 	<object 
 		id="registerTask" 
-		class="com.masuland.loginexample.control.task.RegisterTask"
+		class="com.masuland.loginexample.action.task.RegisterTask"
 		/>
 
 	<object 
 		id="updateUserTask" 
-		class="com.masuland.loginexample.control.task.UpdateUserTask"
+		class="com.masuland.loginexample.action.task.UpdateUserTask"
 		/>
 	
 	<!-- MODEL -->	
 	
 	<object 
 		id="appModel" 
-		class="com.masuland.loginexample.model.AppModel"
+		class="com.masuland.loginexample.data.AppModel"
 		/>
 
 </objects>

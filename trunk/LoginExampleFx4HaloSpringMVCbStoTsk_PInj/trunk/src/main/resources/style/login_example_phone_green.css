@@ -1,6 +1,6 @@
 @namespace mx "library://ns.adobe.com/flex/mx";
 @namespace s "library://ns.adobe.com/flex/spark";
-@namespace phone "com.masuland.loginexample.view.layout.phone.*";
+@namespace phone "com.masuland.loginexample.view.ui.phone.*";
 
 mx|global
 {
