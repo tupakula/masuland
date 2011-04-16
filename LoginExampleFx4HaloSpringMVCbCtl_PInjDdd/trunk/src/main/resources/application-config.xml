@@ -60,32 +60,32 @@
 	
 	<object 
 		id="appViewCB" 
-		class="com.masuland.loginexample.presentation.cb.AppViewCB"
+		class="com.masuland.loginexample.presentation.codebehind.AppViewCB"
 		/>
 
 	<object 
 		id="settingsBoxCB" 
-		class="com.masuland.loginexample.presentation.cb.SettingsBoxCB"
+		class="com.masuland.loginexample.presentation.codebehind.SettingsBoxCB"
 		/>
 	
 	<object
 		id="layoutStackCB"
-		class="com.masuland.loginexample.presentation.cb.LayoutStackCB"
+		class="com.masuland.loginexample.presentation.codebehind.LayoutStackCB"
 		/>
 	
 	<object
 		id="appStackCB"
-		class="com.masuland.loginexample.presentation.cb.AppStackCB"
+		class="com.masuland.loginexample.presentation.codebehind.AppStackCB"
 		/>
 	
 	<object 
 		id="loginBoxCB" 
-		class="com.masuland.loginexample.presentation.cb.LoginBoxCB"
+		class="com.masuland.loginexample.presentation.codebehind.LoginBoxCB"
 		/>
 
 	<object 
 		id="userBoxCB" 
-		class="com.masuland.loginexample.presentation.cb.UserBoxCB"
+		class="com.masuland.loginexample.presentation.codebehind.UserBoxCB"
 		/>
 
 </objects>
