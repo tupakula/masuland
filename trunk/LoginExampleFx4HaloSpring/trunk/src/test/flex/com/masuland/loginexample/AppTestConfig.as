@@ -1,7 +1,7 @@
 package com.masuland.loginexample
 {
 	import com.masuland.loginexample.business.AppMockDelegate;
-	import com.masuland.loginexample.control.AppController;
+	import com.masuland.loginexample.action.AppController;
 	
 	import flash.events.Event;
 	import flash.events.EventDispatcher;
