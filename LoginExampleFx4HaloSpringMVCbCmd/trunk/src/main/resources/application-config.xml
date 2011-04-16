@@ -44,41 +44,41 @@
 	
 	<!-- COMMAND -->	
 	
-	<object class="com.masuland.loginexample.control.command.InitAppCommand" />
-	<object class="com.masuland.loginexample.control.command.GetSettingsCommand" />
-	<object class="com.masuland.loginexample.control.command.LoadLayoutCommand" />
-	<object class="com.masuland.loginexample.control.command.LoadStyleCommand" />
-	<object class="com.masuland.loginexample.control.command.LoadLocaleCommand" />
+	<object class="com.masuland.loginexample.action.command.InitAppCommand" />
+	<object class="com.masuland.loginexample.action.command.GetSettingsCommand" />
+	<object class="com.masuland.loginexample.action.command.LoadLayoutCommand" />
+	<object class="com.masuland.loginexample.action.command.LoadStyleCommand" />
+	<object class="com.masuland.loginexample.action.command.LoadLocaleCommand" />
 	
-	<object class="com.masuland.loginexample.control.command.GotoLoginCommand" />
-	<object class="com.masuland.loginexample.control.command.GotoRegisterCommand" />
-	<object class="com.masuland.loginexample.control.command.LoginCommand" />
-	<object class="com.masuland.loginexample.control.command.RegisterCommand" />
-	<object class="com.masuland.loginexample.control.command.UpdateUserCommand" />
-	<object class="com.masuland.loginexample.control.command.LogoutCommand" />
+	<object class="com.masuland.loginexample.action.command.GotoLoginCommand" />
+	<object class="com.masuland.loginexample.action.command.GotoRegisterCommand" />
+	<object class="com.masuland.loginexample.action.command.LoginCommand" />
+	<object class="com.masuland.loginexample.action.command.RegisterCommand" />
+	<object class="com.masuland.loginexample.action.command.UpdateUserCommand" />
+	<object class="com.masuland.loginexample.action.command.LogoutCommand" />
 	
 	<!-- MODEL -->	
 	
 	<object 
 		id="appModel" 
-		class="com.masuland.loginexample.model.AppModel"
+		class="com.masuland.loginexample.data.AppModel"
 		/>
 
 	<!-- CODE BEHIND -->
 	
 	<object 
 		id="settingsBoxCB" 
-		class="com.masuland.loginexample.view.cb.SettingsBoxCB"
+		class="com.masuland.loginexample.view.codebehind.SettingsBoxCB"
 		/>
 
 	<object 
 		id="loginBoxCB" 
-		class="com.masuland.loginexample.view.cb.LoginBoxCB"
+		class="com.masuland.loginexample.view.codebehind.LoginBoxCB"
 		/>
 
 	<object 
 		id="userBoxCB" 
-		class="com.masuland.loginexample.view.cb.UserBoxCB"
+		class="com.masuland.loginexample.view.codebehind.UserBoxCB"
 		/>
 
 </objects>

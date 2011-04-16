@@ -1,18 +1,18 @@
 package com.masuland.loginexample
 {
 	import com.masuland.loginexample.business.AppMockDelegate;
-	import com.masuland.loginexample.control.command.GetSettingsCommand;
-	import com.masuland.loginexample.control.command.GotoLoginCommand;
-	import com.masuland.loginexample.control.command.GotoRegisterCommand;
-	import com.masuland.loginexample.control.command.InitAppCommand;
-	import com.masuland.loginexample.control.command.LoadLayoutCommand;
-	import com.masuland.loginexample.control.command.LoadLocaleCommand;
-	import com.masuland.loginexample.control.command.LoadStyleCommand;
-	import com.masuland.loginexample.control.command.LoginCommand;
-	import com.masuland.loginexample.control.command.LogoutCommand;
-	import com.masuland.loginexample.control.command.RegisterCommand;
-	import com.masuland.loginexample.control.command.UpdateUserCommand;
-	import com.masuland.loginexample.control.event.AppEvent;
+	import com.masuland.loginexample.action.command.GetSettingsCommand;
+	import com.masuland.loginexample.action.command.GotoLoginCommand;
+	import com.masuland.loginexample.action.command.GotoRegisterCommand;
+	import com.masuland.loginexample.action.command.InitAppCommand;
+	import com.masuland.loginexample.action.command.LoadLayoutCommand;
+	import com.masuland.loginexample.action.command.LoadLocaleCommand;
+	import com.masuland.loginexample.action.command.LoadStyleCommand;
+	import com.masuland.loginexample.action.command.LoginCommand;
+	import com.masuland.loginexample.action.command.LogoutCommand;
+	import com.masuland.loginexample.action.command.RegisterCommand;
+	import com.masuland.loginexample.action.command.UpdateUserCommand;
+	import com.masuland.loginexample.action.event.AppEvent;
 	
 	import flash.events.Event;
 	import flash.events.EventDispatcher;
