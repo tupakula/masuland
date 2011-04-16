@@ -1,7 +1,7 @@
 package com.masuland.loginexample.business
 {
-	import com.masuland.loginexample.vo.AuthenticationVO;
-	import com.masuland.loginexample.vo.UserVO;
+	import com.masuland.loginexample.data.vo.AuthenticationVO;
+	import com.masuland.loginexample.data.vo.UserVO;
 	
 	import mx.rpc.AsyncToken;
  

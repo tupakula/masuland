@@ -1,10 +1,10 @@
-package com.masuland.loginexample.control
+package com.masuland.loginexample.action
 {
-	import com.masuland.loginexample.control.event.LoadLayoutEvent;
-	import com.masuland.loginexample.control.event.LoadStyleEvent;
-	import com.masuland.loginexample.control.event.LoginEvent;
-	import com.masuland.loginexample.control.event.RegisterEvent;
-	import com.masuland.loginexample.control.event.UpdateUserEvent;
+	import com.masuland.loginexample.action.event.LoadLayoutEvent;
+	import com.masuland.loginexample.action.event.LoadStyleEvent;
+	import com.masuland.loginexample.action.event.LoginEvent;
+	import com.masuland.loginexample.action.event.RegisterEvent;
+	import com.masuland.loginexample.action.event.UpdateUserEvent;
 
 	[Bindable]
 	public class AppEventNames

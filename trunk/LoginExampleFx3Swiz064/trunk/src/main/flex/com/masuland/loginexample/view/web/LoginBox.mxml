@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mx:Canvas 
 	xmlns:mx="http://www.adobe.com/2006/mxml" 
-	xmlns:vo="com.masuland.loginexample.vo.*"
+	xmlns:vo="com.masuland.loginexample.data.vo.*"
 	width="100%" height="100%"
 	>
 	
@@ -33,11 +33,11 @@
 	
 	<mx:Script>
 		<![CDATA[
-			import com.masuland.loginexample.control.AppEventNames;
-			import com.masuland.loginexample.control.event.LoginEvent;
-			import com.masuland.loginexample.control.event.RegisterEvent;
-			import com.masuland.loginexample.model.AppModel;
-			import com.masuland.loginexample.state.LoginBoxState;
+			import com.masuland.loginexample.action.AppEventNames;
+			import com.masuland.loginexample.action.event.LoginEvent;
+			import com.masuland.loginexample.action.event.RegisterEvent;
+			import com.masuland.loginexample.data.AppModel;
+			import com.masuland.loginexample.data.state.LoginBoxState;
 			
 			import org.swizframework.Swiz;
 			

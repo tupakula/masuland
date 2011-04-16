@@ -1,4 +1,4 @@
-package com.masuland.loginexample.state
+package com.masuland.loginexample.data.state
 {
 	public class LoginBoxState
 	{
