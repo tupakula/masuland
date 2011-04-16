@@ -6,7 +6,7 @@
 	xmlns:application="com.masuland.loginexample.application.*"
 	xmlns:domain="com.masuland.loginexample.domain.*" 
 	xmlns:presentation="com.masuland.loginexample.presentation.*" 
-	xmlns:cb="com.masuland.loginexample.presentation.cb.*" 
+	xmlns:codebehind="com.masuland.loginexample.presentation.codebehind.*" 
 	>
 	
 	<swiz:ServiceHelper 
@@ -55,27 +55,27 @@
 
 	<!-- CODE BEHIND -->
 	
-	<cb:AppViewCB 
+	<codebehind:AppViewCB 
 		id="appViewCB"
 		/>
 	
-	<cb:SettingsBoxCB 
+	<codebehind:SettingsBoxCB 
 		id="settingsBoxCB"
 		/>
 
-	<cb:LayoutStackCB
+	<codebehind:LayoutStackCB
 		id="layoutStackCB"
 		/>
 	
-	<cb:AppStackCB
+	<codebehind:AppStackCB
 		id="appStackCB"
 		/>
 
-	<cb:LoginBoxCB
+	<codebehind:LoginBoxCB
 		id="loginBoxCB"
 		/>
 	
-	<cb:UserBoxCB
+	<codebehind:UserBoxCB
 		id="userBoxCB"
 		/>
 

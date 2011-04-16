@@ -1,4 +1,4 @@
-package com.masuland.loginexample.presentation.cb
+package com.masuland.loginexample.presentation.codebehind
 {
 	import com.masuland.loginexample.application.event.AppEvent;
 	import com.masuland.loginexample.application.event.LoginEvent;
