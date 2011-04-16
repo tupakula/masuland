@@ -2,9 +2,9 @@
 <mx:Object 
 	xmlns:mx="http://www.adobe.com/2006/mxml" 
 	xmlns:business="com.masuland.loginexample.business.*" 
-	xmlns:control="com.masuland.loginexample.control.*" 
-	xmlns:model="com.masuland.loginexample.model.*" 
-	xmlns:cb="com.masuland.loginexample.view.cb.*" 
+	xmlns:action="com.masuland.loginexample.action.*" 
+	xmlns:data="com.masuland.loginexample.data.*" 
+	xmlns:codebehind="com.masuland.loginexample.view.codebehind.*" 
 	>
 	
 	<mx:ChannelSet 
@@ -37,39 +37,39 @@
 	
 	<!-- CONTROLLER -->	
 	
-	<control:AppController
+	<action:AppController
 		id="appController"
 		/>
 	
 	<!-- MODEL -->	
 	
-	<model:AppModel 
+	<data:AppModel 
 		id="appModel"
 		/>
 	
 	<!-- CODE BEHIND -->
 	
-	<cb:AppViewCB 
+	<codebehind:AppViewCB 
 		id="appViewCB"
 		/>
 	
-	<cb:SettingsBoxCB 
+	<codebehind:SettingsBoxCB 
 		id="settingsBoxCB"
 		/>
 	
-	<cb:LayoutStackCB
+	<codebehind:LayoutStackCB
 		id="layoutStackCB"
 		/>
 	
-	<cb:AppStackCB
+	<codebehind:AppStackCB
 		id="appStackCB"
 		/>
 	
-	<cb:LoginBoxCB
+	<codebehind:LoginBoxCB
 		id="loginBoxCB"
 		/>
 	
-	<cb:UserBoxCB
+	<codebehind:UserBoxCB
 		id="userBoxCB"
 		/>
 	
