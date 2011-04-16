@@ -29,8 +29,8 @@
 			>
 			<swiz:config>
 				<swiz:SwizConfig
-					eventPackages="com.masuland.loginexample.control.event"
-					viewPackages="com.masuland.loginexample.view" 
+					eventPackages="com.masuland.loginexample.action.event"
+					viewPackages="com.masuland.loginexample.view.skin" 
 					/>
 			</swiz:config>
 		</swiz:Swiz>
