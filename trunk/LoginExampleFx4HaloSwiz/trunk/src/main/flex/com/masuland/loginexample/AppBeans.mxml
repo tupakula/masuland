@@ -3,8 +3,8 @@
 	xmlns:mx="http://www.adobe.com/2006/mxml"
 	xmlns:swiz="http://swiz.swizframework.org"
 	xmlns:business="com.masuland.loginexample.business.*"
-	xmlns:control="com.masuland.loginexample.control.*"
-	xmlns:model="com.masuland.loginexample.model.*" 
+	xmlns:action="com.masuland.loginexample.action.*"
+	xmlns:data="com.masuland.loginexample.data.*" 
 	>
 	
 	<swiz:ServiceHelper 
@@ -41,13 +41,13 @@
 	
 	<!-- CONTROLLER -->	
 
-	<control:AppController
+	<action:AppController
 		id="appController"
 		/>
 
 	<!-- MODEL -->	
 
-	<model:AppModel 
+	<data:AppModel 
 		id="appModel"
 		/>
 	

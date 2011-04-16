@@ -17,7 +17,7 @@
 
 	<mx:Script>
 		<![CDATA[
-			import com.masuland.loginexample.model.AppModel;
+			import com.masuland.loginexample.data.AppModel;
 			
 			[Inject]
 			[Bindable]
