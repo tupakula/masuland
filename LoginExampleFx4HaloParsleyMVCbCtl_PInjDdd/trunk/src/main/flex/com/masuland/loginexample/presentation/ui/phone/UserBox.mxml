@@ -8,7 +8,7 @@
 	
 	<mx:Script>
 		<![CDATA[
-			import com.masuland.loginexample.presentation.cb.UserBoxCB;
+			import com.masuland.loginexample.presentation.codebehind.UserBoxCB;
 			
 			[Inject]
 			[Bindable]

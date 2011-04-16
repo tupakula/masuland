@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mx:HBox 
 	xmlns:mx="http://www.adobe.com/2006/mxml" 
-	xmlns:presentation="com.masuland.loginexample.presentation.*"
 	xmlns:parsley="http://www.spicefactory.org/parsley" 
-	xmlns:layout="com.masuland.loginexample.presentation.layout.*" 
+	xmlns:ui="com.masuland.loginexample.presentation.ui.*" 
 	width="100%" height="100%"
 	visible="{ cb.isApplicationVisible }" 
 	paddingLeft="10" paddingRight="10" paddingTop="10" paddingBottom="10" 
@@ -11,7 +10,7 @@
 	
 	<mx:Script>
 		<![CDATA[
-			import com.masuland.loginexample.presentation.cb.AppViewCB;
+			import com.masuland.loginexample.presentation.codebehind.AppViewCB;
 			
 			[Inject]
 			[Bindable]
@@ -46,7 +45,7 @@
 			width="100%" height="100%"
 			>
 			
-			<layout:LayoutStack
+			<ui:LayoutStack
 				horizontalCenter="0" verticalCenter="0"
 				currentState="{ cb.currentLayout.stateName }"
 				/>
@@ -55,7 +54,7 @@
 		
 	</mx:VBox>
 	
-	<presentation:SettingsBox
+	<ui:SettingsBox
 		currentState="{ cb.settingsBoxState }"
 		/>
 	

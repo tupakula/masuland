@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mx:Canvas 
 	xmlns:mx="http://www.adobe.com/2006/mxml" 
-	xmlns:web="com.masuland.loginexample.presentation.layout.web.*" 
-	xmlns:phone="com.masuland.loginexample.presentation.layout.phone.*"
+	xmlns:web="com.masuland.loginexample.presentation.ui.web.*" 
+	xmlns:phone="com.masuland.loginexample.presentation.ui.phone.*"
 	xmlns:parsley="http://www.spicefactory.org/parsley"
 	width="{ cb.currentLayout.width }" height="{ cb.currentLayout.height }"
 	resizeEffect="{ fx_resize }" 
@@ -21,7 +21,7 @@
 	
 	<mx:Script>
 		<![CDATA[
-			import com.masuland.loginexample.presentation.cb.LayoutStackCB;
+			import com.masuland.loginexample.presentation.codebehind.LayoutStackCB;
 			
 			[Inject]
 			[Bindable]
