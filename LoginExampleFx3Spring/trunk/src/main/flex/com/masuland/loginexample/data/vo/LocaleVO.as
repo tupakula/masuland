@@ -1,16 +1,16 @@
-package com.masuland.loginexample.vo
+package com.masuland.loginexample.data.vo
 {
 	[Bindable]
 	/**
 	 * 
 	 * @author Sebastian.Mohr (masuland@gmail.com)
 	 */
-	public class StyleVO
+	public class LocaleVO
 	{
 		public var name:String;
-		public var path:String;
+		public var code:String;
 		
-		public function StyleVO() {}
+		public function LocaleVO() {}
 		
 		public function toString() : String
 		{
