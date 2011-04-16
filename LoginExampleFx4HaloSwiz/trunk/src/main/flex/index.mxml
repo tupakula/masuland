@@ -29,7 +29,7 @@
 			>
 			<swiz:config>
 				<swiz:SwizConfig
-					eventPackages="com.masuland.loginexample.control.event"
+					eventPackages="com.masuland.loginexample.action.event"
 					viewPackages="com.masuland.loginexample.view" 
 					/>
 			</swiz:config>
@@ -38,6 +38,7 @@
 	</fx:Declarations>
 	
 	<view:AppView
+		id="view"
 		/>
 	
 </s:Application>
