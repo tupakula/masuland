@@ -34,7 +34,7 @@
 	
 	<mx:Script>
 		<![CDATA[
-			import com.masuland.loginexample.presentation.cb.LoginBoxCB;
+			import com.masuland.loginexample.presentation.codebehind.LoginBoxCB;
 			
 			[Inject]
 			[Bindable]
