@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:HGroup 
+	xmlns:fx="http://ns.adobe.com/mxml/2009"
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:mx="library://ns.adobe.com/flex/mx" 
+	xmlns:ui="com.masuland.loginexample.view.ui.*" 
+	width="100%" height="100%"
+	visible="{ cb.isApplicationVisible }" 
+	paddingLeft="10" paddingRight="10" paddingTop="10" paddingBottom="10" 
+	>
+	
+	<fx:Script>
+		<![CDATA[
+			import com.masuland.loginexample.view.codebehind.AppViewCB;
+			
+			[Inject]
+			[Bindable]
+			public var cb:AppViewCB;
+		]]>
+	</fx:Script>
+	
+	<s:VGroup 
+		width="100%" height="100%"
+		>
+		
+		<s:HGroup
+			verticalAlign="middle"
+			>
+			<mx:Image
+				source="@Embed(source='images/icon_masuland.png')"
+				buttonMode="true"
+				useHandCursor="true"
+				mouseChildren="true"
+				click="navigateToURL(new URLRequest('http://www.masuland.com'))"
+				toolTip="You are just as bright as your surrounding"
+				/>
+			<s:Label
+				text="Spring (MVCbCtl, PInj) - Login Example (Fx4, Gumbo)"
+				styleName="appTitle"
+				/>
+		</s:HGroup>
+		
+		<s:Group
+			width="100%" height="100%"
+			>
+			
+			<ui:LayoutStack
+				horizontalCenter="0" verticalCenter="0"
+				currentState="{ cb.currentLayout.stateName }"
+				/>
+			
+		</s:Group>
+		
+	</s:VGroup>
+	
+	<ui:SettingsBox
+		currentState="{ cb.settingsBoxState }"
+		/>
+	
+</s:HGroup>
