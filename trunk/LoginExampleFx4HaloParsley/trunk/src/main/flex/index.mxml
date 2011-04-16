@@ -14,14 +14,14 @@
 	
 	<fx:Metadata>
 		[ResourceBundle("resources")]
-		[Event(name="AppEvent.INITIALIZE_CLIENT", type="com.masuland.loginexample.control.event.AppEvent")]
+		[Event(name="AppEvent.INITIALIZE_CLIENT", type="com.masuland.loginexample.action.event.AppEvent")]
 		[ManagedEvents("AppEvent.INITIALIZE_CLIENT")]
 	</fx:Metadata>
 
 	<fx:Script>
 		<![CDATA[
 			import com.masuland.loginexample.AppConfig;
-			import com.masuland.loginexample.control.event.AppEvent;
+			import com.masuland.loginexample.action.event.AppEvent;
 			
 			import mx.events.FlexEvent;
 			import mx.logging.LogEventLevel;
@@ -53,6 +53,7 @@
 	</fx:Declarations>
 
 	<view:AppView
+		id="view"
 		/>
 
 </s:Application>
