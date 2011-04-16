@@ -3,10 +3,10 @@
 	xmlns:mx="http://www.adobe.com/2006/mxml"
 	xmlns:swiz="http://swiz.swizframework.org"
 	xmlns:business="com.masuland.loginexample.business.*"
-	xmlns:command="com.masuland.loginexample.control.command.*" 
-	xmlns:model="com.masuland.loginexample.model.*" 
+	xmlns:command="com.masuland.loginexample.action.command.*" 
+	xmlns:data="com.masuland.loginexample.data.*" 
 	xmlns:view="com.masuland.loginexample.view.*" 
-	xmlns:cb="com.masuland.loginexample.view.cb.*" 
+	xmlns:codebehind="com.masuland.loginexample.view.codebehind.*" 
 	>
 	
 	<swiz:ServiceHelper 
@@ -89,21 +89,21 @@
 
 	<!-- MODEL -->	
 
-	<model:AppModel 
+	<data:AppModel 
 		id="appModel"
 		/>
 
 	<!-- CODE BEHIND -->
 	
-	<cb:SettingsBoxCB 
+	<codebehind:SettingsBoxCB 
 		id="appViewCB"
 		/>
 	
-	<cb:LoginBoxCB
+	<codebehind:LoginBoxCB
 		id="loginBoxCB"
 		/>
 	
-	<cb:UserBoxCB
+	<codebehind:UserBoxCB
 		id="userBoxCB"
 		/>
 
