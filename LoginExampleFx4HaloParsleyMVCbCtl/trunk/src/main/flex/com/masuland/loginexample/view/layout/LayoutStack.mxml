@@ -3,7 +3,7 @@
 	xmlns:mx="http://www.adobe.com/2006/mxml" 
 	xmlns:web="com.masuland.loginexample.view.layout.web.*" 
 	xmlns:phone="com.masuland.loginexample.view.layout.phone.*"
-	xmlns:spicefactory="http://www.spicefactory.org/parsley"
+	xmlns:parsley="http://www.spicefactory.org/parsley"
 	width="{ appModel.currentLayout.width }" height="{ appModel.currentLayout.height }"
 	resizeEffect="{ fx_resize }" 
 	>
@@ -29,7 +29,7 @@
 		]]>
 	</mx:Script>
 	
-	<spicefactory:Configure />
+	<parsley:Configure />
 	
 	<mx:Resize
 		id="fx_resize"
