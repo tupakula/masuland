@@ -4,7 +4,7 @@
 	xmlns:mx="library://ns.adobe.com/flex/mx" 
 	xmlns:cairngorm="com.adobe.cairngorm.*"
 	xmlns:parsley="http://www.spicefactory.org/parsley"
-	xmlns:view="com.masuland.loginexample.view.*"
+	xmlns:ui="com.masuland.loginexample.view.ui.*"
 	width="100%" height="100%" 
 	pageTitle="Parsley (MVCbCtl, Val) - Login Example (Fx4, Halo)"
 	viewSourceURL="srcview/index.html"
@@ -41,7 +41,7 @@
 		<parsley:Configure />
 	</fx:Declarations>
 
-	<view:AppView
+	<ui:AppView
 		id="view"
 		/>
 
