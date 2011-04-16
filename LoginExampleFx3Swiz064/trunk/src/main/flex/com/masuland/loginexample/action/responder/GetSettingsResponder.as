@@ -1,9 +1,9 @@
-package com.masuland.loginexample.control.responder
+package com.masuland.loginexample.action.responder
 {	
-	import com.masuland.loginexample.control.event.LoadLayoutEvent;
-	import com.masuland.loginexample.model.AppModel;
-	import com.masuland.loginexample.vo.LayoutVO;
-	import com.masuland.loginexample.vo.SettingsVO;
+	import com.masuland.loginexample.action.event.LoadLayoutEvent;
+	import com.masuland.loginexample.data.AppModel;
+	import com.masuland.loginexample.data.vo.LayoutVO;
+	import com.masuland.loginexample.data.vo.SettingsVO;
 	
 	import mx.controls.Alert;
 	import mx.rpc.IResponder;

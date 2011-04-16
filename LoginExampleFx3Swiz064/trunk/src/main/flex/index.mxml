@@ -21,8 +21,8 @@
 	<mx:Script>
 		<![CDATA[
 			import com.masuland.loginexample.business.AppBean;
-			import com.masuland.loginexample.control.AppEventNames;
-			import com.masuland.loginexample.model.AppModel;
+			import com.masuland.loginexample.action.AppEventNames;
+			import com.masuland.loginexample.data.AppModel;
 			
 			import mx.events.FlexEvent;
 			import mx.logging.LogEventLevel;
@@ -42,14 +42,15 @@
 	
 	<swizframework:SwizConfig 
 		strict="true" 
-		eventPackages="com.masuland.login.controller.event"
+		eventPackages="com.masuland.loginexample.action.event"
+		viewPackages="com.masuland.loginexample.view"
 		mediateBubbledEvents="true"
-		viewPackages=""
 		beanLoaders="{ [AppBean] }"
 		logEventLevel="{ LogEventLevel.WARN }"
 		/>
 	
 	<view:AppView
+		id="view"
 		/>
 	
 </mx:Application>

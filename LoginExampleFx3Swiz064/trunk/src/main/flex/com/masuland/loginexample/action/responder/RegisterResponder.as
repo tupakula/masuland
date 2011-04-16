@@ -1,9 +1,9 @@
-package com.masuland.loginexample.control.responder
+package com.masuland.loginexample.action.responder
 {	
-	import com.masuland.loginexample.model.AppModel;
-	import com.masuland.loginexample.state.AppStackState;
-	import com.masuland.loginexample.state.LoginBoxState;
-	import com.masuland.loginexample.vo.UserVO;
+	import com.masuland.loginexample.data.AppModel;
+	import com.masuland.loginexample.data.state.AppStackState;
+	import com.masuland.loginexample.data.state.LoginBoxState;
+	import com.masuland.loginexample.data.vo.UserVO;
 	
 	import flash.events.Event;
 	
@@ -12,7 +12,7 @@ package com.masuland.loginexample.control.responder
 	import org.swizframework.Swiz;
 
 	/**  */
-	public class LoginResponder implements IResponder
+	public class RegisterResponder implements IResponder
 	{
 		/**  */
 		[Bindable]
@@ -23,7 +23,7 @@ package com.masuland.loginexample.control.responder
 		
 		
 		/** Konstruktur */
-		public function LoginResponder(nextEvent:Event = null) 
+		public function RegisterResponder(nextEvent:Event = null) 
 		{
 			Swiz.autowire(this);
 			

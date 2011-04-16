@@ -1,21 +1,21 @@
-package com.masuland.loginexample.control
+package com.masuland.loginexample.action
 {
 	import com.masuland.loginexample.business.IAppDelegate;
-	import com.masuland.loginexample.control.event.LoadLocaleEvent;
-	import com.masuland.loginexample.control.event.LoadStyleEvent;
-	import com.masuland.loginexample.control.responder.GetSettingsResponder;
-	import com.masuland.loginexample.control.responder.LoginResponder;
-	import com.masuland.loginexample.control.responder.RegisterResponder;
-	import com.masuland.loginexample.control.responder.UpdateUserResponder;
-	import com.masuland.loginexample.model.AppModel;
-	import com.masuland.loginexample.state.AppStackState;
-	import com.masuland.loginexample.state.LoginBoxState;
-	import com.masuland.loginexample.state.SettingsBoxState;
-	import com.masuland.loginexample.vo.AuthenticationVO;
-	import com.masuland.loginexample.vo.LayoutVO;
-	import com.masuland.loginexample.vo.LocaleVO;
-	import com.masuland.loginexample.vo.StyleVO;
-	import com.masuland.loginexample.vo.UserVO;
+	import com.masuland.loginexample.action.event.LoadLocaleEvent;
+	import com.masuland.loginexample.action.event.LoadStyleEvent;
+	import com.masuland.loginexample.action.responder.GetSettingsResponder;
+	import com.masuland.loginexample.action.responder.LoginResponder;
+	import com.masuland.loginexample.action.responder.RegisterResponder;
+	import com.masuland.loginexample.action.responder.UpdateUserResponder;
+	import com.masuland.loginexample.data.AppModel;
+	import com.masuland.loginexample.data.state.AppStackState;
+	import com.masuland.loginexample.data.state.LoginBoxState;
+	import com.masuland.loginexample.data.state.SettingsBoxState;
+	import com.masuland.loginexample.data.vo.AuthenticationVO;
+	import com.masuland.loginexample.data.vo.LayoutVO;
+	import com.masuland.loginexample.data.vo.LocaleVO;
+	import com.masuland.loginexample.data.vo.StyleVO;
+	import com.masuland.loginexample.data.vo.UserVO;
 	
 	import flash.events.Event;
 	import flash.events.IEventDispatcher;

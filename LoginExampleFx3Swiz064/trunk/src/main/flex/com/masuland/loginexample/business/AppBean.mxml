@@ -2,8 +2,8 @@
 <BeanLoader 
 	xmlns="org.swizframework.util.*"
 	xmlns:business="com.masuland.loginexample.business.*"
-	xmlns:control="com.masuland.loginexample.control.*"
-	xmlns:model="com.masuland.loginexample.model.*"
+	xmlns:action="com.masuland.loginexample.action.*"
+	xmlns:data="com.masuland.loginexample.data.*"
 	>
 	
 	<business:AppDynamicChannelSet 
@@ -33,17 +33,17 @@
 
 	<!-- CONTROLLER -->	
 
-	<control:AppEventNames
+	<action:AppEventNames
 		id="appEventNames"
 		/>
 	
-	<control:AppController
+	<action:AppController
 		id="appController"
 		/>
 
 	<!-- MODEL -->	
 
-	<model:AppModel 
+	<data:AppModel 
 		id="appModel"
 		/>
 	
