@@ -2,9 +2,9 @@ package com.masuland.loginexample
 {
 	import com.masuland.loginexample.infrastructure.business.AppMockDelegate;
 	import com.masuland.loginexample.application.AppController;
-	import com.masuland.loginexample.presentation.cb.LoginBoxCB;
-	import com.masuland.loginexample.presentation.cb.SettingsBoxCB;
-	import com.masuland.loginexample.presentation.cb.UserBoxCB;
+	import com.masuland.loginexample.presentation.codebehind.LoginBoxCB;
+	import com.masuland.loginexample.presentation.codebehind.SettingsBoxCB;
+	import com.masuland.loginexample.presentation.codebehind.UserBoxCB;
 	
 	import flash.events.Event;
 	import flash.events.EventDispatcher;
