@@ -1,6 +1,6 @@
 package com.masuland.loginexample.business
 {
-	import com.masuland.loginexample.business.util.MockDelegateHelper;
+	import com.masuland.loginexample.business.helper.MockDelegateHelper;
 	import com.masuland.loginexample.data.vo.AuthenticationVO;
 	import com.masuland.loginexample.data.vo.LayoutVO;
 	import com.masuland.loginexample.data.vo.LocaleVO;
