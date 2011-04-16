@@ -46,7 +46,7 @@
 	
 	<object 
 		id="appController" 
-		class="com.masuland.loginexample.control.AppController"
+		class="com.masuland.loginexample.action.AppController"
 		init-method="initApp"
 		/>
 	
@@ -54,39 +54,39 @@
 	
 	<object 
 		id="appModel" 
-		class="com.masuland.loginexample.model.AppModel"
+		class="com.masuland.loginexample.data.AppModel"
 		/>
 
 	<!-- CODE BEHIND -->
 	
 	<object 
 		id="appViewCB" 
-		class="com.masuland.loginexample.view.cb.AppViewCB"
+		class="com.masuland.loginexample.view.codebehind.AppViewCB"
 		/>
 	
 	<object 
 		id="settingsBoxCB" 
-		class="com.masuland.loginexample.view.cb.SettingsBoxCB"
+		class="com.masuland.loginexample.view.codebehind.SettingsBoxCB"
 		/>
 	
 	<object
 		id="layoutStackCB"
-		class="com.masuland.loginexample.view.cb.LayoutStackCB"
+		class="com.masuland.loginexample.view.codebehind.LayoutStackCB"
 		/>
 	
 	<object
 		id="appStackCB"
-		class="com.masuland.loginexample.view.cb.AppStackCB"
+		class="com.masuland.loginexample.view.codebehind.AppStackCB"
 		/>
 	
 	<object 
 		id="loginBoxCB" 
-		class="com.masuland.loginexample.view.cb.LoginBoxCB"
+		class="com.masuland.loginexample.view.codebehind.LoginBoxCB"
 		/>
 
 	<object 
 		id="userBoxCB" 
-		class="com.masuland.loginexample.view.cb.UserBoxCB"
+		class="com.masuland.loginexample.view.codebehind.UserBoxCB"
 		/>
 
 </objects>
