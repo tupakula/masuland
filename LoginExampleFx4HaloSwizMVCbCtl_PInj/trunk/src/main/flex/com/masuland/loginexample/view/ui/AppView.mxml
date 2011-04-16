@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox 
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:ui="com.masuland.loginexample.view.ui.*" 
+	width="100%" height="100%"
+	visible="{ cb.isApplicationVisible }" 
+	paddingLeft="10" paddingRight="10" paddingTop="10" paddingBottom="10" 
+	>
+	
+	<mx:Script>
+		<![CDATA[
+			import com.masuland.loginexample.view.codebehind.AppViewCB;
+			
+			[Inject]
+			[Bindable]
+			public var cb:AppViewCB;
+		]]>
+	</mx:Script>
+	
+	<mx:VBox 
+		width="100%" height="100%"
+		>
+		
+		<mx:HBox
+			verticalAlign="middle"
+			>
+			<mx:Image
+				source="@Embed(source='images/icon_masuland.png')"
+				buttonMode="true"
+				useHandCursor="true"
+				mouseChildren="true"
+				click="navigateToURL(new URLRequest('http://www.masuland.com'))"
+				toolTip="You are just as bright as your surrounding"
+				/>
+			<mx:Label
+				text="Swiz (MVCbCtl, PInj) - Login Example (Fx4, Halo)"
+				styleName="appTitle"
+				/>
+		</mx:HBox>
+		
+		<mx:Canvas
+			width="100%" height="100%"
+			>
+			
+			<ui:LayoutStack
+				horizontalCenter="0" verticalCenter="0"
+				currentState="{ cb.currentLayout.stateName }"
+				/>
+			
+		</mx:Canvas>
+		
+	</mx:VBox>
+	
+	<ui:SettingsBox
+		currentState="{ cb.settingsBoxState }"
+		/>
+	
+</mx:HBox>
