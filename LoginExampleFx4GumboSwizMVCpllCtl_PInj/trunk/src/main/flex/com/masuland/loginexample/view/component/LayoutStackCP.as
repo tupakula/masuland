@@ -11,9 +11,6 @@ package com.masuland.loginexample.view.component
 		//----------------------
 		// Properties
 		//----------------------
-		
-		[MessageDispatcher]
-		public var dispatcher:Function;
 
 		[Inject(source='appModel.appStackState', bind='true')]
 		[Bindable]

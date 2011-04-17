@@ -13,18 +13,12 @@ package com.masuland.loginexample.view.component
 	import flash.events.IEventDispatcher;
 	import flash.events.MouseEvent;
 	
-	import mx.automation.IAutomationObject;
-	
-	import spark.components.Button;
 	import spark.components.supportClasses.SkinnableComponent;
 
 	[SkinState('closed')]
 	[SkinState('open')]
 	public class SettingsBoxCP extends SkinnableComponent
 	{
-		[SkinPart(required='true')]
-		public var btn_settings:Button;
-		
 		//----------------------
 		// Properties
 		//----------------------
