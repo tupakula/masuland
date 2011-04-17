@@ -156,7 +156,14 @@ package com.masuland.loginexample.business
 		 */
 		public function updateUser(user:UserVO):AsyncToken
 		{
-			return _helper.createMockResult(user, 500);
+			var userClone:UserVO = new UserVO();
+			userClone.username = user.username;
+			userClone.firstname = user.firstname;
+			userClone.lastname = user.lastname;
+			userClone.email = user.email;
+			userClone.birthday = user.birthday;
+			
+			return _helper.createMockResult(userClone, 500);
 		}
 	}
 }

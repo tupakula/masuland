@@ -12,9 +12,6 @@ package com.masuland.loginexample.view.component
 
 		private var _appStackState:String;
 
-		[MessageDispatcher]
-		public var dispatcher:Function;
-
 		//----------------------
 		// Getter / Setter
 		//----------------------
