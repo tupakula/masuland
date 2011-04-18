@@ -149,7 +149,7 @@ I am not decided, either. Three nice Microarchitectures are in the house, and, y
 I am thinking of adding other Microarchitectures, too. If they fit into the concept I will definitely add them. One issue I have with PureMVC and Robotlegs is that they are using the Mediator pattern for their views. This feels kind of contradictory to the idea of how !SkinnableComponents in Flex 4 should work. If you have a good solution please let me know. Thanks!
 
 ==== Which Nanoarchitectures do you prefer? ==== 
-For Flex 4 applications, I recommend, you should have a look at the [LoginExample#Flex_4_(Gumbo)_with_MVCpshStoTsk_PInjNoEvt Flex 4 (Gumbo) with MVCpshStoTsk_PInjNoEvt Login Example].  
+For Flex 4 applications, I recommend, you should have a look at the [LoginExample#Flex_4_(Gumbo)_with_MVCpshStoTsk_PInjNoEvt Login Example for Flex 4 (Gumbo) with MVCpshStoTsk_PInjNoEvt]. For Flex 3 application, try to consider some kind of "Code Behind" approach as in the [LoginExample#Flex_4_(Halo)_with_MVCbCtl LoginExample for Flex 4 (Halo) with MVCbCtl].
 
 ==== How can I migrate my Flex 3 application to a Flex 4 application? ====
 Please read this [HowtoMigrateFromFlex3ToFlex4 Flex 3 to Flex 4 Migration Guide].
