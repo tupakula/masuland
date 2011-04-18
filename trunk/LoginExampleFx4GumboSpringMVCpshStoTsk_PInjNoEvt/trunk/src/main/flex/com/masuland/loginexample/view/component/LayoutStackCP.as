@@ -12,10 +12,6 @@ package com.masuland.loginexample.view.component
 		// Properties
 		//----------------------
 
-		[Inject(name='appModel', property='appStackState')]
-		[Bindable]
-		public var appStackState:String;
-
 		private var _currentLayout:LayoutVO;
 		private var _isCurrentLayoutSizeDirty:Boolean;
 		
