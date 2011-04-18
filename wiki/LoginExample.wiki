@@ -146,7 +146,7 @@ Don't know. Maybe somebody could create performance tests for it ;)
 I am not decided, either. Three nice Microarchitectures are in the house, and, you are about to decide which one suites best to your needs.
 
 ==== Why haven't you choosen Microarchitectures like PureMVC, Robotlegs or Mate ... etc. for your Login Example? ==== 
-I am thinking of adding other Microarchitectures, too. If they fit into the concept I will definitely add them. One issue I have with PureMVC and Robotlegs is that they are using the Mediator pattern for their views. This feels kind of contradictory to the idea of how !SkinnableComponents in Flex 4 should work. If you have a good solution please let me know. Thanks!
+I am thinking of adding other Microarchitectures, too. If they fit into the concept I will definitely add them. One issue I have with PureMVC and Robotlegs is that they are using the Mediator pattern for their views. This feels kind of contradictory to the idea of how !SkinnableComponents in Flex 4 work. If you have a good solution please let me know. Thanks!
 
 ==== Which Nanoarchitectures do you prefer? ==== 
 For Flex 4 applications, I recommend, you should have a look at the [LoginExample#Flex_4_(Gumbo)_with_MVCpshStoTsk_PInjNoEvt Login Example for Flex 4 (Gumbo) with MVCpshStoTsk_PInjNoEvt] Nanoarchitectures. For Flex 3 applications, consider to use the [NanoarchitectureMVCb "Model - View - Code Behind" (MVCb)] Nanoarchitecture as shown in the [LoginExample#Flex_4_(Halo)_with_MVCbCtl LoginExample for Flex 4 (Halo) with MVCbCtl].
