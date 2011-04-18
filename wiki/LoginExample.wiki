@@ -40,7 +40,7 @@ Features: Flex 4 (Halo) with [NanoarchitectureMVCb "Model - View - Code Behind" 
  * Flex 4 (Halo) Login Example with Spring AS 1.1 (MVCbCmd), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCmd/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCmd/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCmd/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpringMVCbCmd/trunk/ svn repo])
  * Flex 4 (Halo) Login Example with Swiz 1.0 (MVCbCmd), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCmd/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCmd/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCmd/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSwizMVCbCmd/trunk/ svn repo])
 
-==== Flex 4 with MVCbCtl ====
+==== Flex 4 (Halo) with MVCbCtl ====
 
 Features: Flex 4 (Halo) with [NanoarchitectureMVCb "Model - View - Code Behind" (MVCb)] & "Controller" (Ctl) Nanoarchitectures
 
@@ -147,6 +147,9 @@ I am not decided, either. Three nice Microarchitectures are in the house, and, y
 
 ==== Why haven't you choosen Microarchitectures like PureMVC, Robotlegs or Mate ... etc. for your Login Example? ==== 
 I am thinking of adding other Microarchitectures, too. If they fit into the concept I will definitely add them. One issue I have with PureMVC and Robotlegs is that they are using the Mediator pattern for their views. This feels kind of contradictory to the idea of how !SkinnableComponents in Flex 4 should work. If you have a good solution please let me know. Thanks!
+
+==== Which Nanoarchitectures do you prefer? ==== 
+For Flex 4 applications, I recommend, you should have a look at the [LoginExample#Flex_4_(Gumbo)_with_MVCpshStoTsk_PInjNoEvt Flex 4 (Gumbo) with MVCpshStoTsk_PInjNoEvt Login Example].  
 
 ==== How can I migrate my Flex 3 application to a Flex 4 application? ====
 Please read this [HowtoMigrateFromFlex3ToFlex4 Flex 3 to Flex 4 Migration Guide].
