@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects
+	xmlns="http://www.springactionscript.org/schema/objects"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springactionscript.org/schema/objects
+		http://www.springactionscript.org/schema/objects/spring-actionscript-objects-1.0.xsd"
+	>
+	
+	<!-- PROCESSOR -->	
+	
+	<object 
+		id="autowiringStageProcessor" 
+		class="org.springextensions.actionscript.stage.DefaultAutowiringStageProcessor"
+		/>
+		
+	<object 
+		id="eventhandlerProcessor" 
+		class="org.springextensions.actionscript.ioc.factory.config.EventHandlerMetadataProcessor"
+		/>
+		
+	<object 
+		id="routeEventsProcessor" 
+		class="org.springextensions.actionscript.ioc.factory.config.RouteEventsMetaDataProcessor"
+		/>
+	
+	<!-- SERVICE -->	
+<!--	
+	<object 
+		id="appRemoteObject" 
+		class="mx.rpc.remoting.mxml.RemoteObject"
+		/>
+-->	
+	<!-- DELEGATE -->	
+<!--	
+	<object 
+		id="appDelegate" 
+		class="com.masuland.loginexample.business.AppAmfDelegate"
+		/>
+-->	
+	<object 
+		id="appDelegate" 
+		class="com.masuland.loginexample.business.AppMockDelegate"
+		/>
+	
+	<!-- STORY -->	
+	
+	<object 
+		id="appStories" 
+		class="com.masuland.loginexample.action.AppStories"
+		init-method="initApp"
+		/>
+
+	<!-- TASK -->	
+
+	<object 
+		id="getSettingsSeqTask" 
+		class="com.masuland.loginexample.action.task.GetSettingsSeqTask"
+		/>
+
+	<object 
+		id="loadLayoutSeqTask" 
+		class="com.masuland.loginexample.action.task.LoadLayoutSeqTask"
+		/>
+
+	<object 
+		id="getSettingsTask" 
+		class="com.masuland.loginexample.action.task.GetSettingsTask"
+		/>
+
+	<object 
+		id="loadLayoutTask" 
+		class="com.masuland.loginexample.action.task.LoadLayoutTask"
+		/>
+
+	<object 
+		id="loadStyleTask" 
+		class="com.masuland.loginexample.action.task.LoadStyleTask"
+		/>
+
+	<object 
+		id="loadLocaleTask" 
+		class="com.masuland.loginexample.action.task.LoadLocaleTask"
+		/>
+
+	<object 
+		id="loginTask" 
+		class="com.masuland.loginexample.action.task.LoginTask"
+		/>
+
+	<object 
+		id="registerTask" 
+		class="com.masuland.loginexample.action.task.RegisterTask"
+		/>
+
+	<object 
+		id="updateUserTask" 
+		class="com.masuland.loginexample.action.task.UpdateUserTask"
+		/>
+	
+	<!-- MODEL -->	
+	
+	<object 
+		id="appModel" 
+		class="com.masuland.loginexample.data.AppModel"
+		/>
+
+	<!-- CODE BEHIND -->
+	
+	<object 
+		id="appViewCP" 
+		class="com.masuland.loginexample.view.component.AppViewCP"
+		/>
+
+	<object 
+		id="settingsBoxCP" 
+		class="com.masuland.loginexample.view.component.SettingsBoxCP"
+		/>
+	
+	<object
+		id="layoutStackCP"
+		class="com.masuland.loginexample.view.component.LayoutStackCP"
+		/>
+	
+	<object
+		id="appStackCP"
+		class="com.masuland.loginexample.view.component.AppStackCP"
+		/>
+	
+	<object 
+		id="loginBoxCP" 
+		class="com.masuland.loginexample.view.component.LoginBoxCP"
+		/>
+
+	<object 
+		id="userBoxCP" 
+		class="com.masuland.loginexample.view.component.UserBoxCP"
+		/>
+
+</objects>
+
+
+
+
+
