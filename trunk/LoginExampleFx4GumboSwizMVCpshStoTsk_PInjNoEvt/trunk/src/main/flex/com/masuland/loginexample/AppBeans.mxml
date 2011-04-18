@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<swiz:BeanProvider
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:swiz="http://swiz.swizframework.org"
+	xmlns:business="com.masuland.loginexample.business.*"
+	xmlns:action="com.masuland.loginexample.action.*"
+	xmlns:task="com.masuland.loginexample.action.task.*" 
+	xmlns:data="com.masuland.loginexample.data.*" 
+	xmlns:component="com.masuland.loginexample.view.component.*" 
+	>
+	
+	<swiz:ServiceHelper 
+		id="serviceHelper" 
+		/>
+	
+	<mx:ChannelSet 
+		id="appDynamicChannel"
+		>
+		<mx:channels>
+			<mx:AMFChannel 
+				id="graniteAmfChannel"
+				url="http://localhost:8080/AppName/graniteamf/"
+				/>
+		</mx:channels>
+	</mx:ChannelSet> 
+	
+	<mx:RemoteObject
+		id="appRemoteObject" 
+		destination="appService"
+		source="com.masuland.loginexample.swiz.service.AppService"
+		channelSet="{ appDynamicChannel }"
+		/>
+
+	<!-- DELEGATE -->	
+<!--	
+	<business:AppAmfDelegate 
+		id="appDelegate" 
+		/>
+-->
+	<business:AppMockDelegate 
+		id="appDelegate" 
+		/>
+	
+	<!-- STORY -->	
+	
+	<action:AppStories
+		id="appStories"
+		/>
+	
+	<!-- TASK -->	
+	
+	<task:GetSettingsSeqTask 
+		id="getSettingsSeqTask"
+		/>
+	
+	<task:LoadLayoutSeqTask 
+		id="loadLayoutSeqTask"
+		/>
+	
+	<task:GetSettingsTask 
+		id="getSettingsTask"
+		/>
+	
+	<task:LoadLayoutTask 
+		id="loadLayoutTask"
+		/>
+	
+	<task:LoadStyleTask 
+		id="loadStyleTask"
+		/>
+	
+	<task:LoadLocaleTask 
+		id="loadLocaleTask"
+		/>
+	
+	<task:LoginTask
+		id="loginTask"
+		/>
+	
+	<task:RegisterTask
+		id="registerTask"
+		/>
+	
+	<task:UpdateUserTask
+		id="updateUserTask"
+		/>
+
+	<!-- MODEL -->	
+
+	<data:AppModel 
+		id="appModel"
+		/>
+
+	<!-- CODE BEHIND -->
+	
+	<component:AppViewCP 
+		id="appViewCP"
+		/>
+	
+	<component:SettingsBoxCP 
+		id="settingsBoxCP"
+		/>
+
+	<component:LayoutStackCP
+		id="layoutStackCP"
+		/>
+	
+	<component:AppStackCP
+		id="appStackCP"
+		/>
+
+	<component:LoginBoxCP
+		id="loginBoxCP"
+		/>
+	
+	<component:UserBoxCP
+		id="userBoxCP"
+		/>
+
+</swiz:BeanProvider>
