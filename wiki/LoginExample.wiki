@@ -5,6 +5,7 @@ Please read the [LoginExampleFeatureSpec Feature Specification] of the Login Exa
   * [LoginExample#Flex_3 Flex 3]
   * [LoginExample#Flex_4_(Halo) Flex 4 (Halo)]
   * [LoginExample#Flex_4_(Gumbo) Flex 4 (Gumbo)]
+  * [LoginExample#Flex_4_(Hero) Flex 4 (Hero)]
 
 http://masuland.googlecode.com/files/LoginExamplePrintScreen.png
 
