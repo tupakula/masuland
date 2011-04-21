@@ -134,6 +134,26 @@ Features: Flex 4 (Gumbo) with [NanoarchitectureMVCb "Model - View - Component (P
 
 ...
 
+== Flex 4 (Hero) ==
+
+==== Flex 4 (Hero) with MVCpshCtl_PInj ====
+
+Features: Flex 4 (Hero) with [NanoarchitectureMVCb "Model - View - Component (Push)" (MVCpsh)], "Controller" (Ctl) & "Property Injection" (PInj)  Nanoarchitectures
+
+ * Flex 4 (Hero) Login Example for Web with Parsley 2.4.0 (MVCpshCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroParsleyWebMVCpshCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroParsleyWebMVCpshCtl_PInj/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroParsleyWebMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroParsleyWebMVCpshCtl_PInj/trunk/ svn repo])
+ * Flex 4 (Hero) Login Example for Web with Spring AS 1.1 (MVCpshCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroSpringWebMVCpshCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroSpringWebMVCpshCtl_PInj/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroSpringWebMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroSpringWebMVCpshCtl_PInj/trunk/ svn repo])
+ * Flex 4 (Hero) Login Example for Web with Swiz 1.0 (MVCpshCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroSwizWebMVCpshCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroSwizWebMVCpshCtl_PInj/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroSwizWebMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroSwizWebMVCpshCtl_PInj/trunk/ svn repo])
+
+ * TODO Flex 4 (Hero) Login Example for Desktop with Parsley 2.4.0 (MVCpshCtl, PInj)
+ * TODO Flex 4 (Hero) Login Example for Desktop with Spring AS 1.1 (MVCpshCtl, PInj) 
+ * TODO Flex 4 (Hero) Login Example for Desktop with Swiz 1.0 (MVCpshCtl, PInj)
+
+ * TODO Flex 4 (Hero) Login Example for Mobile with Parsley 2.4.0 (MVCpshCtl, PInj)
+ * TODO Flex 4 (Hero) Login Example for Mobile with Spring AS 1.1 (MVCpshCtl, PInj) 
+ * TODO Flex 4 (Hero) Login Example for Mobile with Swiz 1.0 (MVCpshCtl, PInj)
+
+...
+
 == Frequently Asked Questions (FAQs) ==
 
 ==== What's a Nanoarchitecture? ==== 
