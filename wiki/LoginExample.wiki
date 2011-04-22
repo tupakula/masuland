@@ -9,11 +9,11 @@ Please read the [LoginExampleFeatureSpec Feature Specification] of the Login Exa
 
 == Pictures == 
 
-*Login Example for Web*
+==== Login Example for Web ====
 
 http://masuland.googlecode.com/files/LoginExamplePrintScreenWeb.png
 
-*Login Example for Mobile*
+==== Login Example for Mobile ====
 http://masuland.googlecode.com/files/LoginExamplePrintScreenMobile.png
 
 == Flex 3 == 
