@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin 
+	xmlns:fx="http://ns.adobe.com/mxml/2009"
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:mx="library://ns.adobe.com/flex/mx" 
+	xmlns:component="com.masuland.loginexample.view.component.*" 
+	>
+	
+	<s:layout>
+		<s:HorizontalLayout
+			paddingLeft="10" paddingRight="10" paddingTop="10" paddingBottom="10" 
+			/>
+	</s:layout>
+	
+	<fx:Metadata>
+		[HostComponent("com.masuland.loginexample.view.component.AppViewCP")]
+	</fx:Metadata>	
+	
+	<s:VGroup 
+		width="100%" height="100%"
+		>
+		
+		<s:HGroup
+			id="bx_header"
+			verticalAlign="middle"
+			>
+			<mx:Image
+				source="@Embed(source='images/icon_masuland.png')"
+				buttonMode="true"
+				useHandCursor="true"
+				mouseChildren="true"
+				click="navigateToURL(new URLRequest('http://www.masuland.com'))"
+				toolTip="You are just as bright as your surrounding"
+				/>
+			<s:Label
+				text="Parsley (MVCpshCtl, PInj) - Login Example (Fx4, Hero)"
+				styleName="appTitle"
+				/>
+		</s:HGroup>
+		
+		<s:Group
+			width="100%" height="100%"
+			>
+			
+			<component:LayoutStackCP
+				id="cp_layout"
+				horizontalCenter="0" verticalCenter="0"
+				skinClass="com.masuland.loginexample.view.skin.LayoutStackSkin"
+				/>
+			
+		</s:Group>
+		
+	</s:VGroup>
+	
+	<component:SettingsBoxCP 
+		id="cp_settings"
+		skinClass="com.masuland.loginexample.view.skin.SettingsBoxSkin"
+		/>
+	
+</s:Skin>
