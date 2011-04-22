@@ -7,7 +7,14 @@ Please read the [LoginExampleFeatureSpec Feature Specification] of the Login Exa
   * [LoginExample#Flex_4_(Gumbo) Flex 4 (Gumbo)]
   * [LoginExample#Flex_4_(Hero) Flex 4 (Hero)]
 
-http://masuland.googlecode.com/files/LoginExamplePrintScreen.png
+== Pictures == 
+
+*Login Example for Web*
+
+http://masuland.googlecode.com/files/LoginExamplePrintScreenWeb.png
+
+*Login Example for Mobile*
+http://masuland.googlecode.com/files/LoginExamplePrintScreenMobile.png
 
 == Flex 3 == 
 
