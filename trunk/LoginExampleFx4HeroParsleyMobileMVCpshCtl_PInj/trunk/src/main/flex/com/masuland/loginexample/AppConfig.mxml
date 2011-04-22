@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fx:Object 
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:business="com.masuland.loginexample.business.*" 
+	xmlns:action="com.masuland.loginexample.action.*" 
+	xmlns:data="com.masuland.loginexample.data.*" 
+	xmlns:component="com.masuland.loginexample.view.component.*" 
+	xmlns:parsley="http://www.spicefactory.org/parsley" 
+	>
+	
+	<fx:Script>
+		<![CDATA[
+			import com.masuland.loginexample.view.component.AppStackCP;
+			import com.masuland.loginexample.view.component.AppViewCP;
+			import com.masuland.loginexample.view.component.LayoutStackCP;
+			import com.masuland.loginexample.view.component.LoginBoxCP;
+			import com.masuland.loginexample.view.component.SettingsBoxCP;
+			import com.masuland.loginexample.view.component.UserBoxCP;
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+
+		<s:ChannelSet 
+			id="appDynamicChannel"
+			>
+			<s:channels>
+				<s:AMFChannel 
+					id="graniteAmfChannel"
+					url="http://localhost:8080/AppName/graniteamf/"
+					/>
+			</s:channels>
+		</s:ChannelSet> 
+		
+		<s:RemoteObject
+			id="appRemoteObject" 
+			destination="appService"
+			source="com.masuland.loginexample.parsley.service.AppService"
+			channelSet="{ appDynamicChannel }"
+			/>
+		
+		<!-- DELEGATE -->	
+<!--	
+		<business:AppAmfDelegate 
+			id="appDelegate" 
+			/>
+-->	
+		<business:AppMockDelegate 
+			id="appDelegate" 
+			/>
+		
+		<!-- CONTROLLER -->	
+		
+		<action:AppController
+			id="appController"
+			/>
+		
+		<!-- MODEL -->	
+		
+		<data:AppModel 
+			id="appModel"
+			/>
+		
+		<!-- CODE BEHIND -->
+		
+		<parsley:View type="{ AppViewCP }" />
+		<parsley:View type="{ SettingsBoxCP }" />
+		<parsley:View type="{ LayoutStackCP }" />
+		<parsley:View type="{ AppStackCP }" />
+		<parsley:View type="{ LoginBoxCP }" />
+		<parsley:View type="{ UserBoxCP }" />
+
+	</fx:Declarations>
+	
+</fx:Object>

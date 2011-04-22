@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<swiz:BeanProvider
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:swiz="http://swiz.swizframework.org"
+	xmlns:business="com.masuland.loginexample.business.*"
+	xmlns:action="com.masuland.loginexample.action.*"
+	xmlns:data="com.masuland.loginexample.data.*" 
+	xmlns:view="com.masuland.loginexample.view.*" 
+	xmlns:component="com.masuland.loginexample.view.component.*"
+	>	
+	
+	<fx:Declarations>
+
+		<swiz:ServiceHelper 
+			id="serviceHelper" 
+			/>
+		
+		<s:ChannelSet 
+			id="appDynamicChannel"
+			>
+			<s:channels>
+				<s:AMFChannel 
+					id="graniteAmfChannel"
+					url="http://localhost:8080/AppName/graniteamf/"
+					/>
+			</s:channels>
+		</s:ChannelSet> 
+		
+		<s:RemoteObject
+			id="appRemoteObject" 
+			destination="appService"
+			source="com.masuland.loginexample.swiz.service.AppService"
+			channelSet="{ appDynamicChannel }"
+			/>
+		
+		<!-- DELEGATE -->	
+<!--	
+		<business:AppAmfDelegate 
+			id="appDelegate" 
+			/>
+-->
+		<business:AppMockDelegate 
+			id="appDelegate" 
+			/>
+		
+		<!-- CONTROLLER -->	
+		
+		<action:AppController
+			id="appController"
+			/>
+		
+		<!-- MODEL -->	
+		
+		<data:AppModel 
+			id="appModel"
+			/>
+		
+		<!-- CODE BEHIND -->
+		
+		<component:AppViewCP 
+			id="appViewCP"
+			/>
+		
+		<component:SettingsBoxCP 
+			id="settingsBoxCP"
+			/>
+		
+		<component:LayoutStackCP
+			id="layoutStackCP"
+			/>
+		
+		<component:AppStackCP
+			id="appStackCP"
+			/>
+		
+		<component:LoginBoxCP
+			id="loginBoxCP"
+			/>
+		
+		<component:UserBoxCP
+			id="userBoxCP"
+			/>
+
+	</fx:Declarations>
+
+</swiz:BeanProvider>

@@ -1,0 +1,106 @@
+@namespace s "library://ns.adobe.com/flex/spark";
+
+s|global
+{
+	theme-color: #D29910;
+	color: #C74803;
+}
+
+.appTitle
+{
+	text-align: center;
+	font-weight: bold;
+	font-size: 15;
+}
+
+.logoBox
+{
+	backgroundAlpha: 1;
+	
+	borderStyle: solid;
+	borderThickness: 1;
+	borderColor: #D29910;
+	backgroundColor: #FFFFFF;
+	
+	cornerRadius: 10;
+}
+
+.appBox
+{
+	backgroundAlpha: 0.7;
+	
+	borderStyle: solid;
+	borderThickness: 1;
+	borderColor: #D29910;
+	backgroundColor: #F5F2E2;
+	
+	cornerRadius: 10;
+	
+	dropShadowColor: #000000;
+	dropShadowEnabled: true;
+	shadowDirection: top;
+	shadow-distance: 0;
+}
+
+.settingBox
+{
+	backgroundAlpha: 0.7;
+	
+	borderStyle: solid;
+	borderThickness: 1;
+	borderColor: #D29910;
+	backgroundColor: #F5F2E2;
+	
+	cornerRadius: 10;
+	
+	dropShadowColor: #000000;
+	dropShadowEnabled: true;
+	shadowDirection: top;
+	shadow-distance: 0;
+	
+	padding-left: 10;
+	padding-right: 10;
+	padding-top: 10;
+	padding-bottom: 10;
+}
+
+.settingsButton
+{
+	font-size: 14;
+}
+
+.settingsHeader
+{
+	text-align: center;
+}
+
+.loginHeader
+{
+	text-align: left;
+	text-indent: 5;
+	font-weight: bold;
+	font-size: 25;
+	paddingTop: 23;
+	paddingBottom: 19;
+}
+
+.descriptor
+{
+	font-size: 23;
+	fontWeight: bold;
+}
+
+.line
+{
+	borderColor: #D29910;
+}
+
+s|Form
+{
+	backgroundAlpha: 0;
+}
+
+s|FormItem
+{
+	backgroundAlpha: 0;
+}
