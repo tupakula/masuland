@@ -23,5 +23,10 @@ package com.masuland.loginexample.action.event
 			
 			this.nextEvent = nextEvent;
 		}
+		
+		override public function clone():Event
+		{
+			return new RegisterEvent(auth);
+		}
 	}
 }

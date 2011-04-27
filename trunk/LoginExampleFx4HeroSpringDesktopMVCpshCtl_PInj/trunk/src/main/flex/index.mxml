@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<s:WindowedApplication 
-	xmlns:fx="http://ns.adobe.com/mxml/2009" 
-	xmlns:s="library://ns.adobe.com/flex/spark" 
-	xmlns:component="com.masuland.loginexample.view.component.*"
-	xmlns:loginexample="com.masuland.loginexample.*" 
-	width="900" height="600" 
-	pageTitle="Spring (MVCpshCtl, PInj) - Login Example (Fx4, Hero)"
-	viewSourceURL="srcview/index.html" 
-	>
+<s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009"
+					   xmlns:s="library://ns.adobe.com/flex/spark"
+					   xmlns:component="com.masuland.loginexample.view.component.*"
+					   xmlns:loginexample="com.masuland.loginexample.*"
+					   width="900" height="600"
+					   pageTitle="Spring (MVCpshCtl, PInj) - Login Example (Fx4, Hero)">
 	
 	<fx:Metadata>
 		[ResourceBundle("resources")]

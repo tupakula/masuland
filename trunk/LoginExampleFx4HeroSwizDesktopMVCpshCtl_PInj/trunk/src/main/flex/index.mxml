@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<s:WindowedApplication 
-	xmlns:fx="http://ns.adobe.com/mxml/2009" 
-	xmlns:s="library://ns.adobe.com/flex/spark" 
-	xmlns:mx="library://ns.adobe.com/flex/mx" 
-	xmlns:swiz="http://swiz.swizframework.org"
-	xmlns:component="com.masuland.loginexample.view.component.*"
-	width="900" height="600"
-	pageTitle="Swiz (MVCpshCtl, PInj) - Login Example (Fx4, Hero)"
-	backgroundAlpha="0"
-	backgroundColor="#FFFFFF"
-	viewSourceURL="srcview/index.html"
-	>
+<s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009"
+					   xmlns:s="library://ns.adobe.com/flex/spark"
+					   xmlns:mx="library://ns.adobe.com/flex/mx"
+					   xmlns:swiz="http://swiz.swizframework.org"
+					   xmlns:component="com.masuland.loginexample.view.component.*"
+					   width="900" height="600" backgroundAlpha="0" backgroundColor="#FFFFFF"
+					   pageTitle="Swiz (MVCpshCtl, PInj) - Login Example (Fx4, Hero)">
 	
 	<fx:Metadata>
 		[ResourceBundle("resources")]

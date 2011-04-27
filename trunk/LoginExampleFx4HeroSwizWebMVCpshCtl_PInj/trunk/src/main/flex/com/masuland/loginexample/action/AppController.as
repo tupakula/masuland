@@ -78,7 +78,7 @@ package com.masuland.loginexample.action
 		}
 		
 		[EventHandler(event='LoginEvent.EVENT_NAME', properties='auth')]
-		public function login(auth:AuthenticationVO, nextEvent:Event=null):void
+		public function login(auth:AuthenticationVO):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN_PROGRESS;
 			
@@ -96,7 +96,7 @@ package com.masuland.loginexample.action
 		}
 		
 		[EventHandler(event='RegisterEvent.EVENT_NAME', properties='auth')]
-		public function register(auth:AuthenticationVO, nextEvent:Event=null):void
+		public function register(auth:AuthenticationVO):void
 		{
 			appModel.loginBoxState = LoginBoxState.REGISTER_PROGRESS;
 			
@@ -214,7 +214,7 @@ package com.masuland.loginexample.action
 		//----------------------
 		
 		/**  */
-		public function getSettings_resultHandler(event:ResultEvent):void
+		protected function getSettings_resultHandler(event:ResultEvent):void
 		{
 			appModel.settings = SettingsVO( event.result );
 			
@@ -223,13 +223,13 @@ package com.masuland.loginexample.action
 		}
 		
 		/**  */
-		public function getSettings_faultHandler(event:FaultEvent):void
+		protected function getSettings_faultHandler(event:FaultEvent):void
 		{
 			Alert.show('getSettings_fault: ' + event.fault);
 		}
 		
 		/**  */
-		public function login_resultHandler(event:ResultEvent):void
+		protected function login_resultHandler(event:ResultEvent):void
 		{
 			appModel.currentUser = UserVO( event.result );
 			appModel.appStackState = AppStackState.USER;
@@ -237,13 +237,13 @@ package com.masuland.loginexample.action
 		}
 		
 		/**  */
-		public function login_faultHandler(event:FaultEvent):void
+		protected function login_faultHandler(event:FaultEvent):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
 		}
 		
 		/**  */
-		public function register_resultHandler(event:ResultEvent):void
+		protected function register_resultHandler(event:ResultEvent):void
 		{
 			appModel.currentUser = UserVO( event.result );
 			appModel.appStackState = AppStackState.USER;
@@ -251,19 +251,19 @@ package com.masuland.loginexample.action
 		}
 		
 		/**  */
-		public function register_faultHandler(event:FaultEvent):void
+		protected function register_faultHandler(event:FaultEvent):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
 		}
 		
 		/**  */
-		public function updateUser_resultHandler(event:ResultEvent):void
+		protected function updateUser_resultHandler(event:ResultEvent):void
 		{
 			appModel.currentUser = UserVO( event.result );
 		}
 		
 		/**  */
-		public function updateUser_faultHandler(event:FaultEvent):void
+		protected function updateUser_faultHandler(event:FaultEvent):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
 		}
@@ -271,7 +271,7 @@ package com.masuland.loginexample.action
 		/**
 		 * 
 		 */
-		private function loadLocale_completeHandler(event:ResourceEvent):void
+		protected function loadLocale_completeHandler(event:ResourceEvent):void
 		{	    	
 			ResourceManager.getInstance().localeChain = [ appModel.currentLocale.code ];
 		}
@@ -279,14 +279,14 @@ package com.masuland.loginexample.action
 		/**
 		 * 
 		 */
-		private function loadLocale_errorHandler(event:ResourceEvent):void
+		protected function loadLocale_errorHandler(event:ResourceEvent):void
 		{	    	
 		}
 
 		/**
 		 * 
 		 */
-		private function loadStyle_completeHandler(event:StyleEvent):void
+		protected function loadStyle_completeHandler(event:StyleEvent):void
 		{
 			appModel.isApplicationVisible = true;
 		}
@@ -294,7 +294,7 @@ package com.masuland.loginexample.action
 		/**
 		 * 
 		 */
-		private function loadStyle_errorHandler(event:StyleEvent):void
+		protected function loadStyle_errorHandler(event:StyleEvent):void
 		{
 			appModel.isApplicationVisible = true;
 		}

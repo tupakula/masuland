@@ -20,5 +20,10 @@ package com.masuland.loginexample.action.event
 			
 			this.locale = locale;
 		}
+		
+		override public function clone():Event
+		{
+			return new LoadLocaleEvent(locale);
+		}
 	}
 }

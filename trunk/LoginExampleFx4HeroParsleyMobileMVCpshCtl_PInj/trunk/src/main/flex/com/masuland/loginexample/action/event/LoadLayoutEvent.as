@@ -22,5 +22,10 @@ package com.masuland.loginexample.action.event
 			this.layout = layout;
 			this.refreshStyleAndLocales = refreshStyleAndLocales;
 		}
+		
+		override public function clone():Event
+		{
+			return new LoadLayoutEvent(layout);
+		}
 	}
 }
