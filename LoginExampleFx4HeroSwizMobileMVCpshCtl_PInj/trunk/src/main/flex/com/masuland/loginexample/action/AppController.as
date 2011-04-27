@@ -87,7 +87,7 @@ package com.masuland.loginexample.action
 		}
 		
 		[EventHandler(event='LoginEvent.EVENT_NAME', properties='auth')]
-		public function login(auth:AuthenticationVO, nextEvent:Event=null):void
+		public function login(auth:AuthenticationVO):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN_PROGRESS;
 			
@@ -105,7 +105,7 @@ package com.masuland.loginexample.action
 		}
 		
 		[EventHandler(event='RegisterEvent.EVENT_NAME', properties='auth')]
-		public function register(auth:AuthenticationVO, nextEvent:Event=null):void
+		public function register(auth:AuthenticationVO):void
 		{
 			appModel.loginBoxState = LoginBoxState.REGISTER_PROGRESS;
 			

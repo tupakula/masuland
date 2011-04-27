@@ -20,5 +20,10 @@ package com.masuland.loginexample.action.event
 			
 			this.layout = layout;
 		}
+		
+		override public function clone():Event
+		{
+			return new LoadLayoutEvent(layout);
+		}
 	}
 }

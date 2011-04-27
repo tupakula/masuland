@@ -12,7 +12,6 @@ package com.masuland.loginexample.action.event
 		public static const EVENT_NAME:String = 'LoginEvent.EVENT_NAME';
 		
 		public var auth:AuthenticationVO;
-		public var nextEvent:Event;
 		
 		/**  */
 		public function LoginEvent(auth:AuthenticationVO, bubbles:Boolean=true, cancelable:Boolean=true)
@@ -20,7 +19,11 @@ package com.masuland.loginexample.action.event
 			super(EVENT_NAME, bubbles, cancelable);
 			
 			this.auth = auth;
-			this.nextEvent = nextEvent;
+		}
+		
+		override public function clone():Event
+		{
+			return new LoginEvent(auth);
 		}
 	}
 }

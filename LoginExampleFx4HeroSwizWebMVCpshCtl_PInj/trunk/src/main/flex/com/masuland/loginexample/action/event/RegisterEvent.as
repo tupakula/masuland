@@ -12,7 +12,6 @@ package com.masuland.loginexample.action.event
 		public static const EVENT_NAME:String = 'com.masuland.loginexample.swiz.control.event.RegisterEvent.EVENT_NAME';
 		
 		public var auth:AuthenticationVO;
-		public var nextEvent:Event;
 		
 		/**  */
 		public function RegisterEvent(auth:AuthenticationVO, cancelable:Boolean=false)
@@ -20,8 +19,11 @@ package com.masuland.loginexample.action.event
 			super(EVENT_NAME, true, cancelable);
 			
 			this.auth = auth;
-			
-			this.nextEvent = nextEvent;
+		}
+		
+		override public function clone():Event
+		{
+			return new RegisterEvent(auth);
 		}
 	}
 }

@@ -20,5 +20,10 @@ package com.masuland.loginexample.action.event
 			
 			this.user = user;
 		}
+		
+		override public function clone():Event
+		{
+			return new UpdateUserEvent(user);
+		}
 	}
 }

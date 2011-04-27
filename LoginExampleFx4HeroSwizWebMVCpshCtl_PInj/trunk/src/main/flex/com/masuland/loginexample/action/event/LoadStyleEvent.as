@@ -20,5 +20,10 @@ package com.masuland.loginexample.action.event
 			
 			this.style = style;
 		}
+		
+		override public function clone():Event
+		{
+			return new LoadStyleEvent(style);
+		}
 	}
 }
