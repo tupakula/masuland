@@ -1,0 +1,242 @@
+= Additional Adobe Flex 4 Coding Conventions =
+
+This document proposes additional Flex 4 coding conventions to the existing Flex coding conventions provided by Adobe, see http://opensource.adobe.com/wiki/display/flexsdk/Coding+Conventions
+
+== 1. MXML File Conventions ==
+
+- For indentation always use tabs<br/>
+- When using string notation in <fx:Script /> tag always use single quotes, e.g. 'Hallo String'<br/>
+- Use a consistent MXML node order:
+ # <fx:Metadata/>
+ # <s:State/>
+ # <s:Transition/>
+ # <fx:Script/>
+   # Constants
+   # Properties
+   # Constructor
+   # Getter / Setter
+   # Methods
+   # Handler
+ # <fx:Declarations/>
+ # <mx:UIComponent/>
+
+- Use a consistent attribute order inside MXML nodes:
+ # Name spaces
+ # Component Id
+ # Layout information
+ # Component values
+ # Style information
+ # Effects
+ # Events
+
+{{{
+	<s:BorderContainer
+		xmlns:fx="http://ns.adobe.com/mxml/2009"  // Name spaces
+		xmlns:s="library://ns.adobe.com/flex/spark"
+		id="bx_myContainer"  // Component id
+		x="0" y="0"  // Layout information
+		width="100%" height="100%"
+		backgroundAlpha="0.5"  // Style information
+		backgroundColor="#FF00FF"
+		styleName="myBoxStyle"
+		showEffect="{ fx_fadeIn }"  // Effects
+		click="bx_myContainer_clickHandler(event)"  // Events
+		>
+		<s:layout>
+			<s:VerticalLayout />
+		</s:layout>
+		<s:DataGroup
+			id="dg_myDataGroup"  // Component Id
+			dataProvider="{ model.repeaterData }"  // Component values
+			>
+			<s:itemRenderer>
+				<fx:Component>
+					<s:ItemRenderer>
+						<s:Image
+							source="{ PersonVO( data ).profileImage }"
+							/>
+					</s:ItemRenderer>
+				</fx:Component>
+			</s:itemRenderer>
+		</s:DataGroup>
+	</s:BorderContainer>
+	
+	<s:List
+		id="li_myList"  // Component Id
+		width="100%" height="100%"  // Layout information
+		dataProvider="{ model.listData }"  // Component values
+		horizontalScrollPolicy="off"
+		verticalScrollPolicy="off"
+		selectionColor="#FFFFFF"  // Style information
+		styleName="myListStyle"
+		hideEffect="{ fx_fadeOut }"  // Effects
+		dragStart="li_myList_dragStartHandler(event)"  // Events
+		>
+		<s:layout>
+			<s:TileLayout
+				requestedColumnCount="1"
+				requestedRowCount="1"
+				verticalGap="5"
+				/>
+		</s:layout>
+	</s:List>
+}}}
+
+- Dependent on the number of attributes and embedded MXML nodes inside one MXML node use the following convention:
+
+{{{
+        <s:TextInput />
+
+        <s:TextInput
+                text="{ model.selectedUser.firstname }"
+                />
+
+        <s:TextInput>
+                <s:text>{ model.selectedUser.firstname }</s:text>
+        </s:TextInput>
+
+        <s:TextInput
+                width="100%"
+                >
+                <s:text>{ model.selectedUser.firstname }</s:text>
+        </s:TextInput>
+}}}
+
+
+- Use a consistent naming convention for id attributes in MXML nodes extending UIComponent:
+
+{{{
+        <s:Text
+                id="txt_myText"
+                />
+        <s:TextInput
+                id="tip_myTextInput"
+                />
+        <s:TextArea
+                id="ta_myTextArea"
+                />
+        <s:CheckBox
+                id="cb_myCheckBox"
+                />
+        <s:ComboBox
+                id="cbb_myComboBox"
+                />
+        <s:Button
+                id="btn_myButton"
+                />
+}}}
+
+|| *Prefix* || *Flex 4 SDK Component (Control)* ||
+|| {{{btn_}}} || Button ||
+|| {{{cb_}}} || CheckBox ||
+|| {{{cbb_}}} || ComboBox ||
+|| {{{li_}}} || List ||
+|| {{{sl_}}} || HSlider, VSlider ||
+|| {{{img_}}} || Image ||
+|| {{{pb_}}} || ProgressBar ||
+|| {{{rb_}}} || RadioButton ||
+|| {{{rbg_}}} || RadioButtonGroup ||
+|| {{{sl_}}} || SWFLoader ||
+|| {{{ta_}}} || TextArea ||
+|| {{{txt_}}} || Label, RichText, RichEditableText ||
+|| {{{tip_}}} || TextInput ||
+|| {{{vd_}}} || VideoDisplay ||
+
+|| *Prefix* || *Flex 4 SDK Component (Layout)* ||
+|| {{{bx_}}} || Group, HGroup, VGroup ||
+|| {{{f_}}} || Form ||
+|| {{{fh_}}} || FormHeading ||
+|| {{{fi_}}} || FormItem ||
+|| {{{ml_}}} || ModuleLoader ||
+|| {{{pn_}}} || Panel ||
+
+== 2. Actionscript File Conventions ==
+
+- For indentation always use tabs<br/>
+- When using string notation always use single quotes, e.g. 'Hallo String'<br/>
+- Use a consistent AS layout:
+ # Constants
+ # Properties
+ # Constructor
+ # Getter / Setter
+ # Methods
+ # Handler
+
+{{{
+package com.masuland.loginexample.vo
+{
+	[Bindable]
+	/**
+	 * A single user
+	 */
+	public class UserVO
+	{
+		//----------------------
+		// Properties
+		//----------------------
+
+		public var username:String;
+		public var firstname:String;
+		public var lastname:String;
+		public var email:String;
+		public var birthday:Date;
+
+		//----------------------
+		// Constructor
+		//----------------------
+		
+		public function UserVO() {
+			super();
+		}
+
+		//----------------------
+		// Methods
+		//----------------------
+
+		public function toString():String
+		{
+			return firstname + ' ' + lastname;
+		}
+	}
+}
+}}}
+
+== 3. CSS File Conventions ==
+
+- For indentation always use tabs<br/>
+
+{{{
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/mx";
+@namespace view "com.masuland.loginexample.view.*";
+
+s|global
+{
+	theme-color: #319B6B;
+	color: #435544;
+}
+
+view|AppStack
+{
+	backgroundAlpha: 0.7;
+	
+	borderStyle: solid;
+	borderThickness: 1;
+	borderColor: #319B6B;
+	backgroundColor: #DCECDC;
+	
+	cornerRadius: 10;
+	
+	dropShadowColor: #000000;
+	dropShadowEnabled: true;
+	shadowDirection: top;
+	shadow-distance: 0;
+}
+
+.appTitle
+{
+	text-align: center;
+	font-weight: bold;
+	font-size: 15;
+}
+}}}
