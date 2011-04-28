@@ -125,7 +125,7 @@ This document proposes additional Flex 3 coding conventions to the existing Flex
 || {{{dg_}}} || DataGrid, AdvancedDataGrid, OLAPDataGrid ||
 || {{{dc_}}} || DateChooser ||
 || {{{df_}}} || DateField ||
-|| {{{ls_}}} || List, HorizontalList, TileList ||
+|| {{{li_}}} || List, HorizontalList, TileList ||
 || {{{sl_}}} || HSlider, VSlider ||
 || {{{img_}}} || Image ||
 || {{{nst_}}} || NumericStepper ||
