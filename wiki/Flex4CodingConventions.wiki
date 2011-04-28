@@ -245,7 +245,7 @@ view|AppStack
 }
 }}}
 
-= Code Examples ==
+= Code Examples =
 
 Code Examples which implement these Coding Conventions:
 
