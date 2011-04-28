@@ -249,5 +249,5 @@ view|AppStack
 
 Code Examples which implement these Coding Conventions:
 
-  * [LoginExample Login Example] with Flex 3 and Flex 4 (Halo, Gumbo)
+  * [LoginExample Login Example] with Flex 3 and Flex 4 (Halo, Gumbo, Hero)
   * [ReligionChooser Religion Chooser] with Flex 4 (Gumbo)
