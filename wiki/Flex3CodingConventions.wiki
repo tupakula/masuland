@@ -2,7 +2,11 @@
 
 This document proposes additional Flex 3 coding conventions to the existing Flex coding conventions provided by Adobe, see http://opensource.adobe.com/wiki/display/flexsdk/Coding+Conventions
 
-== 1. MXML File Conventions ==
+  * [Flex3CodingConventions#MXML_File_Conventions MXML File Conventions]
+  * [Flex3CodingConventions#Actionscript_File_Conventions Actionscript File Conventions]
+  * [Flex3CodingConventions#CSS_File_Conventions CSS File Conventions]
+
+== MXML File Conventions ==
 
 - For indentation always use tabs<br/>
 - When using string notation in <mx:Script /> tag always use single quotes, e.g. 'Hallo String'<br/>
@@ -152,7 +156,7 @@ This document proposes additional Flex 3 coding conventions to the existing Flex
 || {{{tl_}}} || Tile ||
 || {{{tlw_}}} || TileWindow ||
 
-== 2. Actionscript File Conventions ==
+== Actionscript File Conventions ==
 
 - For indentation always use tabs<br/>
 - When using string notation always use single quotes, e.g. 'Hallo String'<br/>
@@ -203,7 +207,7 @@ package com.masuland.loginexample.vo
 }
 }}}
 
-== 3. CSS File Conventions ==
+== CSS File Conventions ==
 
 - For indentation always use tabs<br/>
 
