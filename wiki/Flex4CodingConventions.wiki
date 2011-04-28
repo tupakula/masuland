@@ -240,3 +240,8 @@ view|AppStack
 	font-size: 15;
 }
 }}}
+
+== Code Examples Implementing these Coding Conventions ==
+
+  * [LoginExample Login Example] with Flex 3 and Flex 4 (Halo, Gumbo)
+  * [ReligionChooser Religion Chooser] with Flex 4 (Gumbo)
