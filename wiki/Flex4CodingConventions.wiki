@@ -2,7 +2,11 @@
 
 This document proposes additional Flex 4 coding conventions to the existing Flex coding conventions provided by Adobe, see http://opensource.adobe.com/wiki/display/flexsdk/Coding+Conventions
 
-== 1. MXML File Conventions ==
+  * [Flex4CodingConventions#MXML_File_Conventions MXML File Conventions]
+  * [Flex4CodingConventions#Actionscript_File_Conventions Actionscript File Conventions]
+  * [Flex4CodingConventions#CSS_File_Conventions CSS File Conventions]
+
+== MXML File Conventions ==
 
 - For indentation always use tabs<br/>
 - When using string notation in <fx:Script /> tag always use single quotes, e.g. 'Hallo String'<br/>
@@ -150,7 +154,7 @@ This document proposes additional Flex 4 coding conventions to the existing Flex
 || {{{ml_}}} || ModuleLoader ||
 || {{{pn_}}} || Panel ||
 
-== 2. Actionscript File Conventions ==
+== Actionscript File Conventions ==
 
 - For indentation always use tabs<br/>
 - When using string notation always use single quotes, e.g. 'Hallo String'<br/>
@@ -201,7 +205,7 @@ package com.masuland.loginexample.vo
 }
 }}}
 
-== 3. CSS File Conventions ==
+== CSS File Conventions ==
 
 - For indentation always use tabs<br/>
 
@@ -241,7 +245,9 @@ view|AppStack
 }
 }}}
 
-== Code Examples Implementing these Coding Conventions ==
+= Code Examples ==
+
+Code Examples which implement these Coding Conventions:
 
   * [LoginExample Login Example] with Flex 3 and Flex 4 (Halo, Gumbo)
   * [ReligionChooser Religion Chooser] with Flex 4 (Gumbo)
