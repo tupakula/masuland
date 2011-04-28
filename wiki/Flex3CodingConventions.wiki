@@ -191,7 +191,8 @@ package com.masuland.loginexample.vo
 		// Constructor
 		//----------------------
 		
-		public function UserVO() {
+		public function UserVO()
+		{
 			super();
 		}
 
