@@ -162,8 +162,8 @@ Features: Flex 4 (Hero) with [NanoarchitectureMVCb "Model - View - Component (Pu
  * Flex 4 (Hero) Login Example for Desktop with Swiz 1.0 (MVCpshCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroSwizDesktopMVCpshCtl_PInj.air live app]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroSwizDesktopMVCpshCtl_PInj/trunk/ svn repo])
 
  * Flex 4 (Hero) Login Example for Mobile with Parsley 2.4.0 (MVCpshCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroParsleyMobileMVCpshCtl_PInj.air live app]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroParsleyMobileMVCpshCtl_PInj/trunk/ svn repo])
- * Flex 4 (Hero) Login Example for Mobile with Spring AS 1.1 (MVCpshCtl, PInj), ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroSpringMobileMVCpshCtl_PInj/trunk/ svn repo])
- * Flex 4 (Hero) Login Example for Mobile with Swiz 1.0 (MVCpshCtl, PInj), ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroSwizMobileMVCpshCtl_PInj/trunk/ svn repo])
+ * Flex 4 (Hero) Login Example for Mobile with Spring AS 1.1 (MVCpshCtl, PInj), (live app TODO) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroSpringMobileMVCpshCtl_PInj/trunk/ svn repo])
+ * Flex 4 (Hero) Login Example for Mobile with Swiz 1.0 (MVCpshCtl, PInj), (live app TODO) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroSwizMobileMVCpshCtl_PInj/trunk/ svn repo])
 
 ...
 
@@ -176,7 +176,7 @@ Please read this page about [Nanoarchitecture Nanoarchitectures].
 Don't know. Maybe somebody could create performance tests for it ;)
 
 ==== Which Microarchitecture do you prefer? ==== 
-I am not decided, either. Three nice Microarchitectures are in the house, and, you are about to decide which one suites best to your needs.
+I am not decided, either. There are three nice Microarchitectures, and, you are about to decide which one suites best to your needs.
 
 ==== Why haven't you choosen Microarchitectures like PureMVC, Robotlegs or Mate ... etc. for your Login Example? ==== 
 I am thinking of adding other Microarchitectures, too. If they fit into the concept I will definitely add them. One issue I have with PureMVC and Robotlegs is that they are using the Mediator pattern for their views. This feels kind of contradictory to the idea of how !SkinnableComponents in Flex 4 work. If you have a good solution please let me know. Thanks!
