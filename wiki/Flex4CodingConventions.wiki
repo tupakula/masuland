@@ -110,8 +110,8 @@ This document proposes additional Flex 4 coding conventions to the existing Flex
 - Use a consistent naming convention for id attributes in MXML nodes extending UIComponent:
 
 {{{
-        <s:Text
-                id="txt_myText"
+        <s:RichText
+                id="txt_myRichText"
                 />
         <s:TextInput
                 id="tip_myTextInput"
