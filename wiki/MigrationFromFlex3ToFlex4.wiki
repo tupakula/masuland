@@ -1,6 +1,6 @@
 #summary This page explains how you could migrate a Flex 3 application to a Flex 4 application.
 
-= How to migrate from Flex 3 to Flex 4? =
+= Migration from Flex 3 to Flex 4 =
 
 === 1. Switch your Flex 3 SDK to the Flex 4 SDK ===
 
