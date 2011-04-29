@@ -207,6 +207,160 @@ package com.masuland.loginexample.vo
 }
 }}}
 
+or
+
+{{{
+package com.masuland.loginexample.view.component
+{
+	[...]
+	
+	[Event(name="newDateSet",type="flash.events.Event")]
+	public class DatePickerCP extends SkinnableComponent
+	{
+		//----------------------
+		// Skin Parts
+		//----------------------
+		
+		[SkinPart(required='true')]
+		public var txt_dateSummary:Label;
+
+		[SkinPart(required='true')]
+		public var txt_day:Label;
+
+		[SkinPart(required='true')]
+		public var txt_month:Label;
+
+		[SkinPart(required='true')]
+		public var txt_year:Label;
+		
+		[...]
+		
+		[SkinPart(required='true')]
+		public var btn_set:Button;
+
+		[SkinPart(required='true')]
+		public var btn_cancel:Button;
+
+		//----------------------
+		// Properties
+		//----------------------
+		
+		private var _currentDate:Date;
+		private var _tempDate:Date;
+		private var _isCurrentDateDirty:Boolean;
+		
+		//----------------------
+		// Getter / Setter
+		//----------------------
+
+		public function get currentDate():Date
+		{
+			return _currentDate;
+		}
+
+		public function set currentDate(value:Date):void
+		{
+			if (value != null)
+			{
+				_currentDate = value;
+				_tempDate = new Date(_currentDate.fullYear, _currentDate.month, _currentDate.date);
+				
+				_isCurrentDateDirty = true;
+				invalidateProperties();
+			}
+		}
+		
+		//----------------------
+		// Methods
+		//----------------------
+		
+		override protected function createChildren():void
+		{
+			super.createChildren();
+			
+			var date:Date = new Date();
+			
+			// Set to 20 years back
+			date.fullYear -= 20;
+			
+			currentDate = date;
+		}
+		
+		override protected function partAdded(partName:String, instance:Object):void 
+		{
+			super.partAdded(partName, instance);
+			[...]
+		}
+		
+		override protected function partRemoved(partName:String, instance:Object):void 
+		{
+			super.partRemoved(partName, instance);
+			[...]
+		}
+		
+		override protected function commitProperties():void
+		{
+			super.commitProperties();
+			
+			if (_isCurrentDateDirty)
+			{
+				txt_dateSummary.text = _tempDate.toDateString();
+				txt_day.text = _tempDate.getDate().toString();
+				txt_month.text = (_tempDate.getMonth() + 1).toString();
+				txt_year.text = _tempDate.getFullYear().toString();
+				
+				_isCurrentDateDirty = false;
+			}
+		}
+		
+		//----------------------
+		// Handler
+		//----------------------
+		
+		protected function btn_increaseDay_clickHandler(event:MouseEvent):void
+		{
+			_tempDate.setDate(_tempDate.getDate() + 1);
+			
+			_isCurrentDateDirty = true;
+			invalidateProperties();
+		}
+		
+		protected function btn_increaseMonth_clickHandler(event:MouseEvent):void
+		{
+			_tempDate.setMonth(_tempDate.getMonth() + 1);
+			
+			_isCurrentDateDirty = true;
+			invalidateProperties();
+		}
+		
+		protected function btn_increaseYear_clickHandler(event:MouseEvent):void
+		{
+			_tempDate.setFullYear(_tempDate.getFullYear() + 1);
+			
+			_isCurrentDateDirty = true;
+			invalidateProperties();
+		}
+		
+		[...]		
+		
+		protected function btn_set_clickHandler(event:MouseEvent):void
+		{
+			_currentDate.setDate(_tempDate.date);
+			_currentDate.setMonth(_tempDate.month);
+			_currentDate.setFullYear(_tempDate.fullYear);
+			
+			PopUpManager.removePopUp(this);
+			dispatchEvent(new Event('newDateSet'));
+		}
+		
+		protected function btn_cancel_clickHandler(event:MouseEvent):void
+		{
+			PopUpManager.removePopUp(this);
+		}
+	}
+}
+}}}
+
 == CSS File Conventions ==
 
 - For indentation always use tabs<br/>
