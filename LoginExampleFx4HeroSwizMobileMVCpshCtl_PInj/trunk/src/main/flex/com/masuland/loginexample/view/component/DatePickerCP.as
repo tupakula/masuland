@@ -189,7 +189,7 @@ package com.masuland.loginexample.view.component
 		}
 		
 		//----------------------
-		// Methods
+		// Handler
 		//----------------------
 		
 		protected function btn_increaseDay_clickHandler(event:MouseEvent):void
