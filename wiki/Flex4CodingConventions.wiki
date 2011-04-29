@@ -167,6 +167,8 @@ This document proposes additional Flex 4 coding conventions to the existing Flex
  # Methods
  # Handler
 
+Example for Value Object:
+
 {{{
 package com.masuland.loginexample.vo
 {
@@ -207,7 +209,7 @@ package com.masuland.loginexample.vo
 }
 }}}
 
-... or:
+Example for SkinnableComponent:
 
 {{{
 package com.masuland.loginexample.view.component
