@@ -159,6 +159,7 @@ This document proposes additional Flex 4 coding conventions to the existing Flex
 - For indentation always use tabs<br/>
 - When using string notation always use single quotes, e.g. 'Hallo String'<br/>
 - Use a consistent AS layout:
+ # Skin Parts
  # Constants
  # Properties
  # Constructor
