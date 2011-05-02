@@ -5,6 +5,7 @@
       <compilerSourcePathEntry kind="1" linkType="1" path="src/main/resources"/>
       <compilerSourcePathEntry kind="1" linkType="1" path="src/main/locales/{locale}"/>
       <compilerSourcePathEntry kind="1" linkType="1" path="src/test/flex"/>
+      <compilerSourcePathEntry kind="1" linkType="1" path="libs"/>
     </compilerSourcePath>
     <libraryPath defaultLinkType="1">
       <libraryPathEntry kind="4" path="">
