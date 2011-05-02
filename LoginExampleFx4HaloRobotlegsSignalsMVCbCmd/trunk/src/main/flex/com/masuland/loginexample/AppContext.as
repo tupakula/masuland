@@ -29,7 +29,6 @@ package com.masuland.loginexample
 	import com.masuland.loginexample.view.codebehind.SettingsBoxCB;
 	import com.masuland.loginexample.view.codebehind.UserBoxCB;
 	
-	import org.robotlegs.adapters.SwiftSuspendersInjector;
 	import org.robotlegs.base.ContextEvent;
 	import org.robotlegs.mvcs.SignalContext;
 	
@@ -39,8 +38,6 @@ package com.masuland.loginexample
 		
 		override public function startup():void
 		{
-//			injector = new SwiftSuspendersInjector();
-			
 			viewMap.mapPackage(VIEW_PACKAGE);
 			
 			// Data
