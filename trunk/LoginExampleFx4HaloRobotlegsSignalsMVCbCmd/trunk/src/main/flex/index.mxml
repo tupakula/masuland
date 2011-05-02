@@ -14,7 +14,7 @@
 	</fx:Metadata>
 	
 	<fx:Declarations>
-		<loginexample:AppContext contextView="{this}"/>
+		<loginexample:AppContext contextView="{ this }"/>
 	</fx:Declarations>
 
 	<ui:AppView
