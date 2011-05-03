@@ -1,0 +1,104 @@
+@namespace mx "library://ns.adobe.com/flex/mx";
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace phone "com.masuland.loginexample.view.ui.phone.*";
+
+mx|global
+{
+	theme-color: #319B6B;
+	color: #435544;
+}
+
+.appTitle
+{
+	text-align: center;
+	font-weight: bold;
+	font-size: 15;
+}
+
+phone|AppStack
+{
+	backgroundAlpha: 0.7;
+	
+	borderStyle: solid;
+	borderThickness: 1;
+	borderColor: #319B6B;
+	backgroundColor: #DCECDC;
+	
+	cornerRadius: 10;
+	
+	dropShadowColor: #000000;
+	dropShadowEnabled: true;
+	shadowDirection: top;
+	shadow-distance: 0;
+}
+
+.settingBox
+{
+	backgroundAlpha: 0.7;
+	
+	borderStyle: solid;
+	borderThickness: 1;
+	borderColor: #319B6B;
+	backgroundColor: #DCECDC;
+	
+	cornerRadius: 10;
+	
+	dropShadowColor: #000000;
+	dropShadowEnabled: true;
+	shadowDirection: top;
+	shadow-distance: 0;
+	
+	padding-left: 10;
+	padding-right: 10;
+	padding-top: 10;
+	padding-bottom: 10;
+}
+
+.settingsButton
+{
+	font-size: 14;
+}
+
+.settingsHeader
+{
+	text-align: left;
+	font-weight: bold;
+	font-size: 14;
+}
+
+.loginHeader
+{
+	text-align: left;
+	text-indent: 5;
+	font-weight: bold;
+	font-size: 20;
+}
+
+.descriptor
+{
+	font-size: 17;
+}
+
+mx|Button
+{
+	font-size: 15;
+}
+
+mx|TextInput
+{
+	font-size: 17;
+}
+
+mx|ComboBox
+{
+	font-size: 10;
+}
+
+mx|HRule
+{
+	strokeColor: #319B6B;
+	
+	dropShadowEnabled: true;
+	shadowDirection: top;
+	shadow-distance: 0;
+}
