@@ -170,7 +170,7 @@ Features: Flex 4 (Hero) with [NanoarchitectureMVCb "Model - View - Component (Pu
 
  * Flex 4 (Hero) Login Example for Mobile with Parsley 2.4.0 (MVCpshCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroParsleyMobileMVCpshCtl_PInj.air live app for Adobe AIR]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroParsleyMobileMVCpshCtl_PInj.apk live app for Google Android]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroParsleyMobileMVCpshCtl_PInj/trunk/ svn repo])
  * Flex 4 (Hero) Login Example for Mobile with Spring AS 1.1 (MVCpshCtl, PInj), (live app TODO) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroSpringMobileMVCpshCtl_PInj/trunk/ svn repo])
- * Flex 4 (Hero) Login Example for Mobile with Swiz 1.0 (MVCpshCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroSwizMobileMVCpshCtl_PInj.air live app for Adobe AIR]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroSwizMobileMVCpshCtl_PInj.apk live app for Google Android])  ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroSwizMobileMVCpshCtl_PInj/trunk/ svn repo])
+ * Flex 4 (Hero) Login Example for Mobile with Swiz 1.1 (MVCpshCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroSwizMobileMVCpshCtl_PInj.air live app for Adobe AIR]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroSwizMobileMVCpshCtl_PInj.apk live app for Google Android])  ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroSwizMobileMVCpshCtl_PInj/trunk/ svn repo])
 
 
 ...
