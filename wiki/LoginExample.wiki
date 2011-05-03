@@ -1,6 +1,6 @@
 = Login Example =
 
-Please read the [LoginExampleFeatureSpec Feature Specification] of the Login Example application. Implementations with different Flex SDKs (Flex 3.5 and Flex 4), MVC Microarchitectures (for now only Cairngorm 2.2.1), IoC Microarchitectures (Parsley 2.4.0, Spring 1.1, Swiz 1.0, Robotlegs 1.4), Nanoarchitectures ([NanoarchitectureMVCb MVCb], Ctl, Cmd, [NanoarchitectureNoEvt NoEvt], PInj ... etc.), Cairngorm 3 Libraries (Validation Library, Task Library) and Testing frameworks (!FlexUnit 4.0, Flex 4 Automation with RIATest ... etc.) are listed below. The code follows additional Flex coding conventions ([Flex3CodingConventions Flex 3], [Flex4CodingConventions Flex 4]). 
+Please read the [LoginExampleFeatureSpec Feature Specification] of the Login Example application. Implementations with different Flex SDKs (Flex 3.5 and Flex 4), MVC Microarchitectures (for now only Cairngorm 2.2.1), IoC Microarchitectures (Parsley 2.4.0, Spring 1.1, Swiz 1.0, Robotlegs 1.4, Mate 0.9.1), Nanoarchitectures ([NanoarchitectureMVCb MVCb], Ctl, Cmd, [NanoarchitectureNoEvt NoEvt], PInj ... etc.), Cairngorm 3 Libraries (Validation Library, Task Library) and Testing frameworks (!FlexUnit 4.0, Flex 4 Automation with RIATest ... etc.) are listed below. The code follows additional Flex coding conventions ([Flex3CodingConventions Flex 3], [Flex4CodingConventions Flex 4]). 
 
   * [LoginExample#Flex_3 Flex 3]
   * [LoginExample#Flex_4_(Halo) Flex 4 (Halo)]
@@ -53,6 +53,12 @@ Features: Flex 4 (Halo) with [NanoarchitectureMVCb "Model - View - Code Behind" 
  * Flex 4 (Halo) Login Example with Robotlegs 1.4 / AS3-Signals 0.8 (MVCbCmd), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloRobotlegsSignalsMVCbCmd/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloRobotlegsSignalsMVCbCmd/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloRobotlegsSignalsMVCbCmd/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloRobotlegsSignalsMVCbCmd/trunk/ svn repo])
  * Flex 4 (Halo) Login Example with Spring AS 1.1 (MVCbCmd), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCmd/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCmd/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCmd/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpringMVCbCmd/trunk/ svn repo])
  * Flex 4 (Halo) Login Example with Swiz 1.0 (MVCbCmd), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCmd/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCmd/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCmd/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSwizMVCbCmd/trunk/ svn repo])
+
+==== Flex 4 (Halo) with MVCbCtlCmd ====
+
+Features: Flex 4 (Halo) with [NanoarchitectureMVCb "Model - View - Code Behind" (MVCb)], "Controller" (Ctl) & "Command" (Cmd) Nanoarchitectures
+
+ * Flex 4 (Halo) Login Example with Mate 0.9.1 (MVCbCmd), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloMateMVCbCtlCmd/index.html live app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloMateMVCbCtlCmd/index_test.html live test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloMateMVCbCtlCmd/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloMateMVCbCtlCmd/trunk/ svn repo])
 
 ==== Flex 4 (Halo) with MVCbCtl ====
 
@@ -178,10 +184,13 @@ Please read this page about [Nanoarchitecture Nanoarchitectures].
 Don't know. Maybe somebody could create performance tests for it ;)
 
 ==== Which Microarchitecture do you prefer? ==== 
-I am not decided, either. There are three nice Microarchitectures, and, you are about to decide which one suites best to your needs.
+I am not taking that decision for you. It is up to you to decide which one suites best to your needs.
 
-==== Why haven't you choosen Microarchitectures like PureMVC, Mate or Flicc ... etc. for your Login Example? ==== 
-I am thinking of adding other Microarchitectures, too. If they fit into the concept I will definitely add them. One issue I have with PureMVC (and Robotlegs) is that they are using the Mediator pattern for their views. This feels kind of contradictory to the idea of how !SkinnableComponents in Flex 4 work. If you have a good solution please let me know. Thanks!
+==== Why haven't you choosen Microarchitectures like PureMVC, SmartyPants or Flicc ... etc. for your Login Example? ==== 
+I am thinking of adding other Microarchitectures, too. If they fit into the concept I will definitely add them. One issue I have with PureMVC and Robotlegs (without AS3-Signals) is that they are using the Mediator pattern for their views. This feels contradictory to the idea how !SkinnableComponents in Flex 4 are used (3 classes = Skin + SkinnableComponent + Mediator). If you have a good solution please let me know. Thanks!
+
+==== Why do you only have so few Robotlegs and Mate examples for the Login Example? Are you biased? ==== 
+No! I just have started adding Robotlegs and Mate examples to the Login Example.
 
 ==== Which Nanoarchitectures do you prefer? ==== 
 For Flex 4 applications, I recommend, you should have a look at the [LoginExample#Flex_4_(Gumbo)_with_MVCpshStoTsk_PInjNoEvt Login Example for Flex 4 (Gumbo) with MVCpshStoTsk_PInjNoEvt] Nanoarchitectures. For Flex 3 applications, consider to use the [NanoarchitectureMVCb "Model - View - Code Behind" (MVCb)] Nanoarchitecture as shown in the [LoginExample#Flex_4_(Halo)_with_MVCbCtl LoginExample for Flex 4 (Halo) with MVCbCtl].
