@@ -184,7 +184,7 @@ Please read this page about [Nanoarchitecture Nanoarchitectures].
 Don't know. Maybe somebody could create performance tests for it ;)
 
 ==== Which Microarchitecture do you prefer? ==== 
-I am not taking that decision for you. It is up to you to decide which one suites best to your needs.
+I am not making that decision for you. It is up to you to decide which one suites best to your needs.
 
 ==== Why haven't you choosen Microarchitectures like PureMVC, !SmartyPants or Flicc ... etc. for your Login Example? ==== 
 I am thinking of adding other Microarchitectures, too. If they fit into the concept I will definitely add them. One issue I have with PureMVC and Robotlegs (without AS3-Signals) is that they are using the Mediator pattern for their views. This feels quiet massive when you want to work with !SkinnableComponents in Flex 4 (3 classes = Skin class + !SkinnableComponent + Mediator). If you have a good solution please let me know. Thanks!
