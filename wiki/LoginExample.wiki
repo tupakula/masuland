@@ -151,6 +151,12 @@ Features: Flex 4 (Gumbo) with [NanoarchitectureMVCb "Model - View - Component (P
 
 == Flex 4 (Hero) ==
 
+==== Flex 4 (Hero) with MVCpshCmd ====
+
+Features: Flex 4 (Hero) with [NanoarchitectureMVCb "Model - View - Component (Push)" (MVCpsh)] & "Command" (Cmd) Nanoarchitectures
+
+ * Flex 4 (Hero) Login Example for Mobile with  with Robotlegs 1.4 / AS3-Signals 0.8 (MVCpshCmd), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroRobotlegsSignalsMobileMVCpshCmd.air live app for Adobe AIR]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroRobotlegsSignalsMobileMVCpshCmd.apk live app for Google Android]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroRobotlegsSignalsMobileMVCpshCmd/trunk/ svn repo])
+
 ==== Flex 4 (Hero) with MVCpshCtl_PInj ====
 
 Features: Flex 4 (Hero) with [NanoarchitectureMVCb "Model - View - Component (Push)" (MVCpsh)], "Controller" (Ctl) & "Property Injection" (PInj)  Nanoarchitectures
