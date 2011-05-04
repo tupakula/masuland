@@ -1,0 +1,13 @@
+Signals-Extension SignalCommandMap Library:
+
+see libs/org.osflash.signals.* package
+
+Version: March 18, 2011
+Author: Joelhooks (author)
+
+Commit:
+https://github.com/joelhooks/signals-extensions-CommandSignal/commit/cf791cc7de6d56433719be320aa2d3de465a175f
+
+Tree View:
+https://github.com/joelhooks/signals-extensions-CommandSignal/tree/cf791cc7de6d56433719be320aa2d3de465a175f
+
