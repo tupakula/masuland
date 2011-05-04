@@ -1,0 +1,13 @@
+AS3-Signals Library:
+
+see libs/org.robotlegs.mvcs.* package
+
+Version: v0.8 (April 22, 2011)
+Author: robertpenner (author)
+
+Commit:
+https://github.com/robertpenner/as3-signals/commit/217b886c438a07bf1fcd4b3307382ea11fa080b1
+
+Tree View:
+https://github.com/robertpenner/as3-signals/tree/217b886c438a07bf1fcd4b3307382ea11fa080b1
+
