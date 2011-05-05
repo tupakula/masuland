@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EventMap 
+	xmlns="http://mate.asfusion.com/" 
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:business="com.masuland.loginexample.business.*" 
+	>
+	
+	<mx:Script>
+		<![CDATA[
+			import com.masuland.loginexample.action.command.GetSettingsCommand;
+			import com.masuland.loginexample.action.command.GotoLoginCommand;
+			import com.masuland.loginexample.action.command.GotoRegisterCommand;
+			import com.masuland.loginexample.action.command.InitAppCommand;
+			import com.masuland.loginexample.action.command.LoadLayoutCommand;
+			import com.masuland.loginexample.action.command.LoadLocaleCommand;
+			import com.masuland.loginexample.action.command.LoadStyleCommand;
+			import com.masuland.loginexample.action.command.LoginCommand;
+			import com.masuland.loginexample.action.command.LogoutCommand;
+			import com.masuland.loginexample.action.command.RegisterCommand;
+			import com.masuland.loginexample.action.command.UpdateUserCommand;
+			import com.masuland.loginexample.action.event.AppEvent;
+			import com.masuland.loginexample.action.event.LoadLayoutEvent;
+			import com.masuland.loginexample.action.event.LoadLocaleEvent;
+			import com.masuland.loginexample.action.event.LoadStyleEvent;
+			import com.masuland.loginexample.action.event.LoginEvent;
+			import com.masuland.loginexample.action.event.RegisterEvent;
+			import com.masuland.loginexample.action.event.UpdateUserEvent;
+			import com.masuland.loginexample.business.AppMockDelegate;
+			import com.masuland.loginexample.data.AppModel;
+			import com.masuland.loginexample.view.component.AppStackCP;
+			import com.masuland.loginexample.view.component.AppViewCP;
+			import com.masuland.loginexample.view.component.LayoutStackCP;
+			import com.masuland.loginexample.view.component.LoginBoxCP;
+			import com.masuland.loginexample.view.component.SettingsBoxCP;
+			import com.masuland.loginexample.view.component.UserBoxCP;
+			
+			import mx.events.FlexEvent;
+			
+			[Bindable]
+			private var isDebugging:Boolean = true;
+		]]>
+	</mx:Script>
+	
+	<Debugger 
+		id="debugger"
+		/>
+	
+	<business:AppMockDelegate
+		id="appMockDelegate"
+		/>
+	
+	<!-- EventHandlers -->
+	
+	<EventHandlers 
+		type="{ FlexEvent.PREINITIALIZE }" 
+		debug="{ isDebugging }"
+		>
+		<ObjectBuilder generator="{ AppModel }" />
+		<ObjectBuilder generator="{ AppViewCP }" />
+		<ObjectBuilder generator="{ SettingsBoxCP }">
+			<Properties dispatcher="{ scope.dispatcher }" />
+		</ObjectBuilder>
+		<ObjectBuilder generator="{ LayoutStackCP }" />
+		<ObjectBuilder generator="{ AppStackCP }" />
+		<ObjectBuilder generator="{ LoginBoxCP }">
+			<Properties dispatcher="{ scope.dispatcher }" />
+		</ObjectBuilder>
+		<ObjectBuilder generator="{ UserBoxCP }">
+			<Properties dispatcher="{ scope.dispatcher }" />
+		</ObjectBuilder>
+	</EventHandlers>
+
+	<EventHandlers
+		type="{ FlexEvent.APPLICATION_COMPLETE }"
+		debug="{ isDebugging }"
+		>
+		<MethodInvoker 
+			generator="{ InitAppCommand }" 
+			method="initApp" 
+			constructorArguments="{ scope.dispatcher }"
+			/>
+	</EventHandlers>
+
+	<EventHandlers
+		type="{ AppEvent.GET_SETTINGS }"
+		debug="{ isDebugging }"
+		>
+		<DelegateInvoker 
+			instance="{ appMockDelegate }" 
+			method="getSettings"
+			>
+			<resultHandlers>
+				<MethodInvoker 
+					generator="{ GetSettingsCommand }" 
+					method="getSettings_resultHandler" 
+					arguments="{ resultObject }"
+					constructorArguments="{ scope.dispatcher }"
+					/>
+			</resultHandlers>
+		</DelegateInvoker>
+	</EventHandlers>
+	
+	<EventHandlers
+		type="{ LoadLayoutEvent.EVENT_NAME }"
+		debug="{ isDebugging }"
+		>
+		<MethodInvoker 
+			generator="{ LoadLayoutCommand }" 
+			method="loadLayout" 
+			arguments="{ [event.layout, event.refreshStyleAndLocales] }"
+			constructorArguments="{ scope.dispatcher }"
+			/>
+	</EventHandlers>
+
+	<EventHandlers
+		type="{ LoadStyleEvent.EVENT_NAME }"
+		debug="{ isDebugging }"
+		>
+		<MethodInvoker 
+			generator="{ LoadStyleCommand }" 
+			method="loadStyle" 
+			arguments="{ event.style }"
+			/>
+	</EventHandlers>
+	
+	<EventHandlers
+		type="{ LoadLocaleEvent.EVENT_NAME }"
+		debug="{ isDebugging }"
+		>
+		<MethodInvoker 
+			generator="{ LoadLocaleCommand }" 
+			method="loadLocale" 
+			arguments="{ event.locale }"
+			/>
+	</EventHandlers>
+
+	<EventHandlers
+		type="{ AppEvent.GOTO_LOGIN }"
+		debug="{ isDebugging }"
+		>
+		<MethodInvoker 
+			generator="{ GotoLoginCommand }" 
+			method="gotoLogin" 
+			/>
+	</EventHandlers>
+	
+	<EventHandlers
+		type="{ AppEvent.GOTO_REGISTER }"
+		debug="{ isDebugging }"
+		>
+		<MethodInvoker 
+			generator="{ GotoRegisterCommand }" 
+			method="gotoRegister" 
+			/>
+	</EventHandlers>
+	
+	<EventHandlers
+		type="{ LoginEvent.EVENT_NAME }"
+		debug="{ isDebugging }"
+		>
+		<MethodInvoker 
+			generator="{ LoginCommand }" 
+			method="beforeLogin" 
+			/>
+		<DelegateInvoker 
+			instance="{ appMockDelegate }" 
+			method="login"
+			arguments="{ event.auth }"
+			>
+			<resultHandlers>
+				<MethodInvoker 
+					generator="{ LoginCommand }" 
+					method="login_resultHandler" 
+					arguments="{ resultObject }"
+					/>
+			</resultHandlers>
+		</DelegateInvoker>
+	</EventHandlers>
+	
+	<EventHandlers
+		type="{ RegisterEvent.EVENT_NAME }"
+		debug="{ isDebugging }"
+		>
+		<MethodInvoker 
+			generator="{ RegisterCommand }" 
+			method="beforeRegister" 
+			/>
+		<DelegateInvoker 
+			instance="{ appMockDelegate }" 
+			method="register"
+			arguments="{ event.auth }"
+			>
+			<resultHandlers>
+				<MethodInvoker 
+					generator="{ RegisterCommand }" 
+					method="register_resultHandler" 
+					arguments="{ resultObject }"
+					/>
+			</resultHandlers>
+		</DelegateInvoker>
+	</EventHandlers>
+	
+	<EventHandlers
+		type="{ UpdateUserEvent.EVENT_NAME }"
+		debug="{ isDebugging }"
+		>
+		<DelegateInvoker 
+			instance="{ appMockDelegate }" 
+			method="updateUser"
+			arguments="{ event.user }"
+			>
+			<resultHandlers>
+				<MethodInvoker 
+					generator="{ UpdateUserCommand }" 
+					method="updateUser_resultHandler" 
+					arguments="{ resultObject }"
+					/>
+			</resultHandlers>
+		</DelegateInvoker>
+	</EventHandlers>
+
+	<EventHandlers
+		type="{ AppEvent.LOGOUT }"
+		debug="{ isDebugging }"
+		>
+		<MethodInvoker 
+			generator="{ LogoutCommand }" 
+			method="logout" 
+			/>
+	</EventHandlers>
+	
+	<!-- Injectors -->
+
+	<Injectors
+		target="{ AppViewCP }"
+		debug="{ isDebugging }"
+		>
+		<PropertyInjector
+			source="{ AppModel }"
+			sourceKey="isApplicationVisible"
+			targetKey="isApplicationVisible"
+			/>
+	</Injectors>
+	
+	<Injectors
+		target="{ SettingsBoxCP }"
+		debug="{ isDebugging }"
+		>
+		<PropertyInjector
+			source="{ AppModel }"
+			sourceKey="settingsBoxState"
+			targetKey="settingsBoxState"
+			/>
+		<PropertyInjector
+			source="{ AppModel }"
+			sourceKey="settings"
+			targetKey="settings"
+			/>
+		<PropertyInjector
+			source="{ AppModel }"
+			sourceKey="currentLayout"
+			targetKey="currentLayout"
+			/>
+		<PropertyInjector
+			source="{ AppModel }"
+			sourceKey="currentStyle"
+			targetKey="currentStyle"
+			/>
+		<PropertyInjector
+			source="{ AppModel }"
+			sourceKey="currentLocale"
+			targetKey="currentLocale"
+			/>
+	</Injectors>
+	
+	<Injectors
+		target="{ LayoutStackCP }"
+		debug="{ isDebugging }"
+		>
+		<PropertyInjector
+			source="{ AppModel }"
+			sourceKey="settings"
+			targetKey="settings"
+			/>
+		<PropertyInjector
+			source="{ AppModel }"
+			sourceKey="currentLayout"
+			targetKey="currentLayout"
+			/>
+	</Injectors>
+	
+	<Injectors
+		target="{ AppStackCP }"
+		debug="{ isDebugging }"
+		>
+		<PropertyInjector
+			source="{ AppModel }"
+			sourceKey="appStackState"
+			targetKey="appStackState"
+			/>
+	</Injectors>
+	
+	<Injectors
+		target="{ LoginBoxCP }"
+		debug="{ isDebugging }"
+		>
+		<PropertyInjector
+			source="{ AppModel }"
+			sourceKey="loginBoxState"
+			targetKey="loginBoxState"
+			/>
+		<PropertyInjector
+			source="{ SettingsBoxCP }"
+			targetKey="cp_settings"
+			/>
+	</Injectors>
+	
+	<Injectors
+		target="{ UserBoxCP }"
+		debug="{ isDebugging }"
+		>
+		<PropertyInjector
+			source="{ AppModel }"
+			sourceKey="currentUser"
+			targetKey="currentUser"
+			/>
+		<PropertyInjector
+			source="{ SettingsBoxCP }"
+			targetKey="cp_settings"
+			/>
+	</Injectors>
+	
+	<Injectors
+		targets="{ [InitAppCommand, GetSettingsCommand, LoadLayoutCommand, LoadStyleCommand, LoadLocaleCommand,
+		GotoLoginCommand, GotoRegisterCommand, LoginCommand, RegisterCommand, UpdateUserCommand, LogoutCommand] }"
+		debug="{ isDebugging }"
+		>
+		<PropertyInjector
+			targetKey="appModel"
+			source="{ AppModel }"
+			/>
+	</Injectors>
+
+</EventMap>
