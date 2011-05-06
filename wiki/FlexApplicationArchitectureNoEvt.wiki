@@ -1,3 +1,0 @@
-= Flex Application Nanoarchitecture - "No Event" (!NoEvt) =
-
-This content has moved *[NanoarchitectureNoEvt here]*. Happy moving!
