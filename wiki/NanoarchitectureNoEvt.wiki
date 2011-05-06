@@ -14,7 +14,7 @@ http://masuland.googlecode.com/files/ApplicationLayerDependencyNoEvt.png
 
 Just like [NanoarchitectureMVCb MVCb] this nanoarchitecture contains 3 types of application flows:
 
-1. Presentation Flow:
+1. View Flow:
   * (1) User Interface calls function in the Code Behind (Flex 3) / Component (Flex 4) class
   * (9) Databinding updates User Interface
 
