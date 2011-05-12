@@ -6,6 +6,9 @@ package com.masuland.loginexample.action.command
 	
 	import org.robotlegs.mvcs.SignalCommand;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class LogoutCommand extends SignalCommand
 	{
 		//----------------------

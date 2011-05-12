@@ -15,6 +15,9 @@ package com.masuland.loginexample.action.command
 	import mx.rpc.events.FaultEvent;
 	import mx.rpc.events.ResultEvent;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class GetSettingsCommand
 	{
 		//----------------------
@@ -45,7 +48,6 @@ package com.masuland.loginexample.action.command
 		// Handler
 		//----------------------
 		
-		/**  */
 		protected function getSettings_resultHandler(event:ResultEvent):void
 		{
 			appModel.settings = SettingsVO( event.result );
@@ -54,7 +56,6 @@ package com.masuland.loginexample.action.command
 			dispatcher.dispatchEvent(new LoadLayoutEvent(LayoutVO( appModel.settings.layouts.getItemAt(0) )));
 		}
 		
-		/**  */
 		protected function getSettings_faultHandler(event:FaultEvent):void
 		{
 			Alert.show('getSettings_fault: ' + event.fault);

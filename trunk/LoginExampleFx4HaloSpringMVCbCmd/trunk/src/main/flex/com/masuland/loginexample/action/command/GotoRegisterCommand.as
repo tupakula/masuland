@@ -3,6 +3,9 @@ package com.masuland.loginexample.action.command
 	import com.masuland.loginexample.data.AppModel;
 	import com.masuland.loginexample.data.state.LoginBoxState;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class GotoRegisterCommand
 	{
 		//----------------------
@@ -16,9 +19,6 @@ package com.masuland.loginexample.action.command
 		// Methods
 		//----------------------
 		
-		/**
-		 * 
-		 */
 		[EventHandler(name='AppEvent.GOTO_REGISTER')]
 		public function gotoRegister():void 
 		{

@@ -8,6 +8,9 @@ package com.masuland.loginexample.action.command
 	
 	import flash.events.IEventDispatcher;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class InitAppCommand
 	{
 		//----------------------
@@ -30,9 +33,6 @@ package com.masuland.loginexample.action.command
 			dispatcher.dispatchEvent(new AppEvent(AppEvent.INIT_APP));
 		}
 		
-		/**
-		 * 
-		 */
 		[EventHandler(event='AppEvent.INIT_APP')]
 		public function initApp(event:AppEvent):void
 		{

@@ -4,10 +4,8 @@ package com.masuland.loginexample.action.signal
 	
 	import org.osflash.signals.Signal;
 
-	/**  */
 	public class UpdateUserSignal extends Signal
 	{	
-		/**  */
 		public function UpdateUserSignal()
 		{
 			super(UserVO);

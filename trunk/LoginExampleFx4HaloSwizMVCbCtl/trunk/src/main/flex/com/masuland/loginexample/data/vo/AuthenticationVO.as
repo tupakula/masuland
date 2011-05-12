@@ -2,17 +2,16 @@ package com.masuland.loginexample.data.vo
 {
 	[Bindable]
 	/**
-	 * A single user
-	 * @author Sebastian.Mohr (masuland@gmail.com)
+	 * @author masuland.com
 	 */
 	public class AuthenticationVO
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		public var username:String;
 		public var password:String;
 		public var email:String;
-		
-		public function AuthenticationVO()
-		{
-		}
 	}
 }

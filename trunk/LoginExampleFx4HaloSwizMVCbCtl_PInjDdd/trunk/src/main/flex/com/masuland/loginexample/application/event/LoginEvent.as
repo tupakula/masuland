@@ -3,24 +3,33 @@ package com.masuland.loginexample.application.event
 	import com.masuland.loginexample.domain.vo.AuthenticationVO;
 	
 	import flash.events.Event;
-	import flash.utils.getQualifiedClassName;
 
-	/**  */
+	/**
+	 * @author masuland.com
+	 */
 	public class LoginEvent extends Event
 	{	
-		/**  */
+		//----------------------
+		// Constants
+		//----------------------
+		
 		public static const EVENT_NAME:String = 'com.masuland.loginexample.swiz.control.event.LoginEvent.EVENT_NAME';
 		
-		public var auth:AuthenticationVO;
-		public var nextEvent:Event;
+		//----------------------
+		// Properties
+		//----------------------
 		
-		/**  */
+		public var auth:AuthenticationVO;
+		
+		//----------------------
+		// Constructor
+		//----------------------
+		
 		public function LoginEvent(auth:AuthenticationVO, cancelable:Boolean=false)
 		{
 			super(EVENT_NAME, true, cancelable);
 			
 			this.auth = auth;
-			this.nextEvent = nextEvent;
 		}
 	}
 }

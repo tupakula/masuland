@@ -5,6 +5,9 @@ package com.masuland.loginexample.action.command
 	
 	import org.robotlegs.mvcs.SignalCommand;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class GotoRegisterCommand extends SignalCommand
 	{
 		//----------------------
@@ -18,9 +21,6 @@ package com.masuland.loginexample.action.command
 		// Methods
 		//----------------------
 		
-		/**
-		 * 
-		 */
 		override public function execute():void
 		{
 			appModel.loginBoxState = LoginBoxState.REGISTER;

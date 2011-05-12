@@ -10,6 +10,9 @@ package com.masuland.loginexample.action.command
 	import mx.events.ResourceEvent;
 	import mx.resources.ResourceManager;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class LoadLocaleCommand
 	{
 		//----------------------
@@ -26,9 +29,6 @@ package com.masuland.loginexample.action.command
 		// Methods
 		//----------------------
 		
-		/**
-		 * 
-		 */
 		[EventHandler(event='LoadLocaleEvent.EVENT_NAME', properties='locale')]
 		public function loadLocale(locale:LocaleVO):void 
 		{
@@ -68,17 +68,11 @@ package com.masuland.loginexample.action.command
 		// Handler
 		//----------------------
 		
-		/**
-		 * 
-		 */
 		protected function loadLocale_completeHandler(event:ResourceEvent):void
 		{	    	
 			ResourceManager.getInstance().localeChain = [ appModel.currentLocale.code ];
 		}
 		
-		/**
-		 * 
-		 */
 		protected function loadLocale_errorHandler(event:ResourceEvent):void
 		{	    	
 		}

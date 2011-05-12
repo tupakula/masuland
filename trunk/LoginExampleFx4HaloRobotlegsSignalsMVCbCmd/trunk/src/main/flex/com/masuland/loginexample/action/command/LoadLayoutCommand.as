@@ -9,6 +9,9 @@ package com.masuland.loginexample.action.command
 	
 	import org.robotlegs.mvcs.SignalCommand;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class LoadLayoutCommand extends SignalCommand
 	{
 		//----------------------
@@ -31,9 +34,6 @@ package com.masuland.loginexample.action.command
 		// Methods
 		//----------------------
 		
-		/**
-		 * 
-		 */
 		override public function execute():void
 		{
 			appModel.currentLayout = layout;
