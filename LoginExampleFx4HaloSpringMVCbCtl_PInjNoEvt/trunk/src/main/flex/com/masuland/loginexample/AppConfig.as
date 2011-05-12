@@ -63,7 +63,7 @@ package com.masuland.loginexample
 			
 			// Embed
 //			applicationContext.addEmbeddedConfig(contextConfig);
-//			dispatchEvent(new AppEvent(AppEvent.INITIALIZE_CLIENT));
+//			dispatchEvent(new AppEvent(AppEvent.INIT_APP));
 			
 			// Load
 			(FlexGlobals.topLevelApplication as Application).addEventListener(FlexEvent.INITIALIZE, loadContext);

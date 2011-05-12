@@ -12,6 +12,9 @@ package com.masuland.loginexample.action.command
 	[RouteEvents(events='LoadStyleEvent.EVENT_NAME, LoadLocaleEvent.EVENT_NAME')]
 	[Event(name='LoadStyleEvent.EVENT_NAME', type='com.masuland.loginexample.control.event.LoadStyleEvent')]
 	[Event(name='LoadLocaleEvent.EVENT_NAME', type='com.masuland.loginexample.control.event.LoadLocaleEvent')]
+	/**
+	 * @author masuland.com
+	 */
 	public class LoadLayoutCommand extends EventDispatcher
 	{
 		//----------------------
@@ -25,9 +28,6 @@ package com.masuland.loginexample.action.command
 		// Methods
 		//----------------------
 		
-		/**
-		 * 
-		 */
 		[EventHandler(name='LoadLayoutEvent.EVENT_NAME')]
 		public function loadLayout(event:LoadLayoutEvent):void 
 		{

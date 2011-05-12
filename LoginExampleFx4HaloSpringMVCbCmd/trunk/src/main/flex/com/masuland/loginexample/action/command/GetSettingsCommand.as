@@ -17,6 +17,9 @@ package com.masuland.loginexample.action.command
 
 	[RouteEvents(events='LoadLayoutEvent.EVENT_NAME')]
 	[Event(name='LoadLayoutEvent.EVENT_NAME', type='com.masuland.loginexample.control.event.LoadLayoutEvent')]
+	/**
+	 * @author masuland.com
+	 */
 	public class GetSettingsCommand extends EventDispatcher
 	{
 		//----------------------
@@ -44,7 +47,6 @@ package com.masuland.loginexample.action.command
 		// Handler
 		//----------------------
 		
-		/**  */
 		protected function getSettings_resultHandler(event:ResultEvent):void
 		{
 			appModel.settings = SettingsVO( event.result );
@@ -53,7 +55,6 @@ package com.masuland.loginexample.action.command
 			dispatchEvent(new LoadLayoutEvent(LayoutVO( appModel.settings.layouts.getItemAt(0) )));
 		}
 		
-		/**  */
 		protected function getSettings_faultHandler(event:FaultEvent):void
 		{
 			Alert.show('getSettings_fault: ' + event.fault);

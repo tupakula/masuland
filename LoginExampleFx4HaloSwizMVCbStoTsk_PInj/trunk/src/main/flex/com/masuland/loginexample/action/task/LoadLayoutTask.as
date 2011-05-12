@@ -6,6 +6,9 @@ package com.masuland.loginexample.action.task
 	import com.masuland.loginexample.data.vo.LocaleVO;
 	import com.masuland.loginexample.data.vo.StyleVO;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class LoadLayoutTask extends Task
 	{
 		//----------------------

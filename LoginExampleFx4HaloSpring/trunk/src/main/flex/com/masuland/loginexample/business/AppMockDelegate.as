@@ -13,7 +13,7 @@ package com.masuland.loginexample.business
 	
 	/**
 	 * 
-	 * @author masu
+	 * @author masuland.com
 	 */
 	public class AppMockDelegate implements IAppDelegate
 	{

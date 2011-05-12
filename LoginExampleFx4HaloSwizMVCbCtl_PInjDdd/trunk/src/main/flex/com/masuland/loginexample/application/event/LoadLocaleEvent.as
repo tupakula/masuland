@@ -3,17 +3,28 @@ package com.masuland.loginexample.application.event
 	import com.masuland.loginexample.domain.vo.LocaleVO;
 	
 	import flash.events.Event;
-	import flash.utils.getQualifiedClassName;
 
-	/**  */
+	/**
+	 * @author masuland.com
+	 */
 	public class LoadLocaleEvent extends Event
 	{	
-		/**  */
+		//----------------------
+		// Constants
+		//----------------------
+		
 		public static const EVENT_NAME:String = 'com.masuland.loginexample.swiz.control.event.LoadLocaleEvent.EVENT_NAME';
+		
+		//----------------------
+		// Properties
+		//----------------------
 		
 		public var locale:LocaleVO;
 		
-		/**  */
+		//----------------------
+		// Constructor
+		//----------------------
+		
 		public function LoadLocaleEvent(locale:LocaleVO, cancelable:Boolean=false)
 		{
 			super(EVENT_NAME, true, cancelable);

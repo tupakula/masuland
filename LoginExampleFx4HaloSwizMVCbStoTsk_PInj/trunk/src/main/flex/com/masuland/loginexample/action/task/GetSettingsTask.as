@@ -14,6 +14,9 @@ package com.masuland.loginexample.action.task
 	import mx.rpc.events.FaultEvent;
 	import mx.rpc.events.ResultEvent;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class GetSettingsTask extends Task
 	{
 		//----------------------

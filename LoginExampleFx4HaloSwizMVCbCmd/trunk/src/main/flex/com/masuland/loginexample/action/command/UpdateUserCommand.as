@@ -11,6 +11,9 @@ package com.masuland.loginexample.action.command
 	import mx.rpc.events.FaultEvent;
 	import mx.rpc.events.ResultEvent;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class UpdateUserCommand
 	{
 		//----------------------
@@ -38,13 +41,11 @@ package com.masuland.loginexample.action.command
 		// Handler
 		//----------------------
 		
-		/**  */
 		protected function updateUser_resultHandler(event:ResultEvent):void
 		{
 			appModel.currentUser = UserVO( event.result );
 		}
 		
-		/**  */
 		protected function updateUser_faultHandler(event:FaultEvent):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;

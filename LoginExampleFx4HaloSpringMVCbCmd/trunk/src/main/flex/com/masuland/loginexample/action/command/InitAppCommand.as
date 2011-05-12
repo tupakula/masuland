@@ -10,6 +10,9 @@ package com.masuland.loginexample.action.command
 
 	[RouteEvents(events='AppEvent.GET_SETTINGS')]
 	[Event(name='AppEvent.GET_SETTINGS', type='com.masuland.loginexample.control.event.AppEvent')]
+	/**
+	 * @author masuland.com
+	 */
 	public class InitAppCommand extends EventDispatcher
 	{
 		//----------------------
@@ -23,9 +26,6 @@ package com.masuland.loginexample.action.command
 		// Methods
 		//----------------------
 		
-		/**
-		 * 
-		 */
 		[EventHandler(name='AppEvent.INIT_APP')]
 		public function initApp(event:AppEvent):void
 		{

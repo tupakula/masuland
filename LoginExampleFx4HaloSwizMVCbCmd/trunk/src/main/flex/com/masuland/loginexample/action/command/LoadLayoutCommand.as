@@ -10,6 +10,9 @@ package com.masuland.loginexample.action.command
 	
 	import flash.events.IEventDispatcher;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class LoadLayoutCommand
 	{
 		//----------------------
@@ -26,9 +29,6 @@ package com.masuland.loginexample.action.command
 		// Methods
 		//----------------------
 		
-		/**
-		 * 
-		 */
 		[EventHandler(event='LoadLayoutEvent.EVENT_NAME', properties='layout')]
 		public function loadLayout(layout:LayoutVO):void 
 		{

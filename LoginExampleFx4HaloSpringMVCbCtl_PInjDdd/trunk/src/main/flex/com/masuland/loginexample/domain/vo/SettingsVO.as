@@ -4,18 +4,14 @@ package com.masuland.loginexample.domain.vo
 
 	[Bindable]
 	/**
-	 * 
-	 * @author Sebastian.Mohr (masuland@gmail.com)
+	 * @author masuland.com
 	 */
 	public class SettingsVO
 	{
-		public var name:String;
-		public var description:String;
-		public var version:String;
-		public var date:Date;
+		//----------------------
+		// Properties
+		//----------------------
 		
 		public var layouts:ArrayCollection;
-		
-		public function SettingsVO() {}
 	}
 }

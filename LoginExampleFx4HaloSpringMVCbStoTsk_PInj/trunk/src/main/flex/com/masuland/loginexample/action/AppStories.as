@@ -69,7 +69,7 @@ package com.masuland.loginexample.action
 		/**
 		 * 
 		 */
-		[EventHandler(name='AppEvent.INITIALIZE_CLIENT')]
+		[EventHandler(name='AppEvent.INIT_APP')]
 		public function initApp(event:AppEvent):void
 		{
 			appModel.appStackState = AppStackState.LOGIN;

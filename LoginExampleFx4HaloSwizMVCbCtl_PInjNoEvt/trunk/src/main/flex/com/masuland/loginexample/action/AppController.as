@@ -26,7 +26,9 @@ package com.masuland.loginexample.action
 	
 	import org.swizframework.utils.services.ServiceHelper;
 	
-	[Bindable]
+	/**
+	 * @author masuland.com
+	 */
 	public class AppController implements IAppController
 	{
 		//----------------------
@@ -46,9 +48,6 @@ package com.masuland.loginexample.action
 		// Methods
 		//----------------------
 		
-		/**
-		 * 
-		 */ 
 		[EventHandler(event="mx.events.FlexEvent.APPLICATION_COMPLETE")]
 		public function initApp():void
 		{
@@ -102,25 +101,16 @@ package com.masuland.loginexample.action
 				updateUser_faultHandler);
 		}
 		
-		/**
-		 * 
-		 */
 		public function gotoLogin():void 
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
 		}
 		
-		/**
-		 * 
-		 */
 		public function gotoRegister():void 
 		{
 			appModel.loginBoxState = LoginBoxState.REGISTER;
 		}
 		
-		/**
-		 * 
-		 */
 		public function loadLocale(locale:LocaleVO):void 
 		{
 			appModel.currentLocale = locale;
@@ -154,9 +144,6 @@ package com.masuland.loginexample.action
 			}
 */		}
 		
-		/**
-		 * 
-		 */
 		public function loadStyle(style:StyleVO):void 
 		{
 			var myEvent:IEventDispatcher;
@@ -177,9 +164,6 @@ package com.masuland.loginexample.action
 			}
 		}
 		
-		/**
-		 * 
-		 */
 		public function loadLayout(layout:LayoutVO):void 
 		{
 			appModel.currentLayout = layout;
@@ -195,7 +179,6 @@ package com.masuland.loginexample.action
 		// Handler
 		//----------------------
 		
-		/**  */
 		protected function getSettings_resultHandler(event:ResultEvent):void
 		{
 			appModel.settings = SettingsVO( event.result );
@@ -204,13 +187,11 @@ package com.masuland.loginexample.action
 			loadLayout(LayoutVO( appModel.settings.layouts.getItemAt(0) ));
 		}
 		
-		/**  */
 		protected function getSettings_faultHandler(event:FaultEvent):void
 		{
 			Alert.show("getSettings_fault: " + event.fault);
 		}
 		
-		/**  */
 		protected function login_resultHandler(event:ResultEvent):void
 		{
 			appModel.currentUser = UserVO( event.result );
@@ -218,13 +199,11 @@ package com.masuland.loginexample.action
 			appModel.loginBoxState = LoginBoxState.HIDDEN;
 		}
 		
-		/**  */
 		protected function login_faultHandler(event:FaultEvent):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
 		}
 		
-		/**  */
 		protected function register_resultHandler(event:ResultEvent):void
 		{
 			appModel.currentUser = UserVO( event.result );
@@ -232,50 +211,35 @@ package com.masuland.loginexample.action
 			appModel.loginBoxState = LoginBoxState.HIDDEN;
 		}
 		
-		/**  */
 		protected function register_faultHandler(event:FaultEvent):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
 		}
 		
-		/**  */
 		protected function updateUser_resultHandler(event:ResultEvent):void
 		{
 			appModel.currentUser = UserVO( event.result );
 		}
 		
-		/**  */
 		protected function updateUser_faultHandler(event:FaultEvent):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
 		}
 		
-		/**
-		 * 
-		 */
 		protected function loadLocale_completeHandler(event:ResourceEvent):void
 		{	    	
 			ResourceManager.getInstance().localeChain = [ appModel.currentLocale.code ];
 		}
 		
-		/**
-		 * 
-		 */
 		protected function loadLocale_errorHandler(event:ResourceEvent):void
 		{	    	
 		}
 
-		/**
-		 * 
-		 */
 		protected function loadStyle_completeHandler(event:StyleEvent):void
 		{
 			appModel.isApplicationVisible = true;
 		}
 		
-		/**
-		 * 
-		 */
 		protected function loadStyle_errorHandler(event:StyleEvent):void
 		{
 			appModel.isApplicationVisible = true;

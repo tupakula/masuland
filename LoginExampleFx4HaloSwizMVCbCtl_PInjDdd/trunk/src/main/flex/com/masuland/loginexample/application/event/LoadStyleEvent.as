@@ -3,17 +3,28 @@ package com.masuland.loginexample.application.event
 	import com.masuland.loginexample.domain.vo.StyleVO;
 	
 	import flash.events.Event;
-	import flash.utils.getQualifiedClassName;
 
-	/**  */
+	/**
+	 * @author masuland.com
+	 */
 	public class LoadStyleEvent extends Event
 	{	
-		/**  */
+		//----------------------
+		// Constants
+		//----------------------
+		
 		public static const EVENT_NAME:String = 'com.masuland.loginexample.swiz.control.event.LoadStyleEvent.EVENT_NAME';
+		
+		//----------------------
+		// Properties
+		//----------------------
 		
 		public var style:StyleVO;
 		
-		/**  */
+		//----------------------
+		// Constructor
+		//----------------------
+		
 		public function LoadStyleEvent(style:StyleVO, cancelable:Boolean=false)
 		{
 			super(EVENT_NAME, true, cancelable);
