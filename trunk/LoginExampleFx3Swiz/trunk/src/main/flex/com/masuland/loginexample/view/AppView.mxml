@@ -33,7 +33,7 @@
 				toolTip="You are just as bright as your surrounding"
 				/>
 			<mx:Label
-				text="Swiz 1.0 - Login Example (Fx3)"
+				text="Swiz - Login Example (Fx3)"
 				styleName="appTitle"
 				/>
 		</mx:HBox>

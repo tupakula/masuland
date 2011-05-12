@@ -63,14 +63,14 @@ package com.masuland.loginexample.action
 		[Init]
 		public function init():void
 		{
-			dispatcher(new AppEvent(AppEvent.INITIALIZE_CLIENT));
+			dispatcher(new AppEvent(AppEvent.INIT_APP));
 		}
 
 		/**
 		 * 
 		 */
-		[MessageHandler(selector='AppEvent.INITIALIZE_CLIENT')]
-		public function initializeClient(event:AppEvent):void
+		[MessageHandler(selector='AppEvent.INIT_APP')]
+		public function initApp(event:AppEvent):void
 		{
 			appModel.appStackState = AppStackState.LOGIN;
 			appModel.loginBoxState = LoginBoxState.LOGIN;

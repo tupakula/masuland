@@ -8,6 +8,9 @@ package com.masuland.loginexample.action.task
 	
 	import mx.resources.ResourceManager;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class LoadLocaleTask extends Task
 	{
 		//----------------------

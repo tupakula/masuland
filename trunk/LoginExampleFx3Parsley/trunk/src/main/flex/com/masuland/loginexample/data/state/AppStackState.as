@@ -1,13 +1,16 @@
 package com.masuland.loginexample.data.state
 {
+	/**
+	 * @author masuland.com
+	 */
 	public class AppStackState
 	{
-		public static const HIDDEN:String = "";
-		public static const LOGIN:String = "login";
-		public static const USER:String = "user";
+		//----------------------
+		// Constants
+		//----------------------
 		
-		public function AppStackState()
-		{
-		}
+		public static const HIDDEN:String = '';
+		public static const LOGIN:String = 'login';
+		public static const USER:String = 'user';
 	}
 }

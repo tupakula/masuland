@@ -11,6 +11,9 @@ package com.masuland.loginexample.action.task
 	import mx.styles.IStyleManager2;
 	import mx.styles.StyleManager;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class LoadStyleTask extends Task
 	{
 		//----------------------

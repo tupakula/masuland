@@ -11,8 +11,15 @@ package com.masuland.loginexample.action.command
 	
 	import mx.rpc.IResponder;
 	
+	/**
+	 * @author masuland.com
+	 */
 	public class UpdateUserCommand implements ICommand, IResponder
 	{
+		//----------------------
+		// Methods
+		//----------------------
+		
 		public function execute(event:CairngormEvent):void
 		{
 			var delegate:IAppDelegate = new AppMockDelegate(this);

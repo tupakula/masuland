@@ -52,7 +52,7 @@ package com.masuland.loginexample.action
 		/**
 		 * 
 		 */
-		[Mediate(event='${appEventNames.INITIALIZE_CLIENT}')]
+		[Mediate(event='${appEventNames.INIT_APP}')]
 		public function onInitComplete(event:Event):void 
 		{	
 			appModel.appStackState = AppStackState.LOGIN;

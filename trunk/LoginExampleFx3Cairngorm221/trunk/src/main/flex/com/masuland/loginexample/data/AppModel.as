@@ -9,6 +9,9 @@ package com.masuland.loginexample.data
 	import mx.collections.ArrayCollection;
 
     [Bindable]
+	/**
+	 * @author masuland.com
+	 */
 	public class AppModel 
 	{
 		//---------------

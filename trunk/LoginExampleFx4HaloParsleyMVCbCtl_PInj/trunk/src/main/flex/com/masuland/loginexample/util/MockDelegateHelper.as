@@ -9,8 +9,15 @@ package com.masuland.loginexample.util
 	
 	use namespace mx_internal;
 	
+	/**
+	 * @author masuland.com
+	 */
 	public class MockDelegateHelper
 	{
+		//----------------------
+		// Methods
+		//----------------------
+		
 		public static function createMockResult(result:Object, delay:Number=0, showBusyCursor:Boolean=false):AsyncToken
 		{
 			if (showBusyCursor)

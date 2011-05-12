@@ -13,21 +13,29 @@ package com.masuland.loginexample.business
 	import mx.rpc.IResponder;
 
 	/**
-	 * 
-	 * @author Sebastian.Mohr (masuland@gmail.com)
+	 * @author masuland.com
 	 */
 	public class AppMockDelegate implements IAppDelegate
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		private var responder:IResponder;
+		
+		//----------------------
+		// Constructor
+		//----------------------
 		
 		public function AppMockDelegate(responder:IResponder)
 		{
 			this.responder = responder;
 		}
 		
-		/**
-		 * 
-		 */
+		//----------------------
+		// Methods
+		//----------------------
+		
 		public function getSettings():void
 		{
 			var token:AsyncToken;
@@ -69,7 +77,7 @@ package com.masuland.loginexample.business
 			var layout:LayoutVO = new LayoutVO();
 			layout.name = 'Web, 450x320';
 			layout.width = 450;
-			layout.heigth = 320;
+			layout.height = 320;
 			layout.stateName = 'web';
 			layout.styles = styles;
 			layout.locales = locales;
@@ -78,7 +86,7 @@ package com.masuland.loginexample.business
 			layout = new LayoutVO();
 			layout.name = 'Web, 500x350';
 			layout.width = 500;
-			layout.heigth = 350;
+			layout.height = 350;
 			layout.stateName = 'web';
 			layout.styles = styles;
 			layout.locales = locales;
@@ -87,7 +95,7 @@ package com.masuland.loginexample.business
 			layout = new LayoutVO();
 			layout.name = 'Web, 600x400';
 			layout.width = 600;
-			layout.heigth = 400;
+			layout.height = 400;
 			layout.stateName = 'web';
 			layout.styles = styles;
 			layout.locales = locales;
@@ -112,7 +120,7 @@ package com.masuland.loginexample.business
 			layout = new LayoutVO();
 			layout.name = 'Phone, 280x420';
 			layout.width = 280;
-			layout.heigth = 420;
+			layout.height = 420;
 			layout.stateName = 'phone';
 			layout.styles = styles;
 			layout.locales = locales;
@@ -121,7 +129,7 @@ package com.masuland.loginexample.business
 			layout = new LayoutVO();
 			layout.name = 'Phone, 300x500';
 			layout.width = 300;
-			layout.heigth = 500;
+			layout.height = 500;
 			layout.stateName = 'phone';
 			layout.styles = styles;
 			layout.locales = locales;
@@ -131,9 +139,6 @@ package com.masuland.loginexample.business
 			token.addResponder(responder);
 		}
 
-		/**
-		 * 
-		 */
 		public function login(auth:AuthenticationVO):void
 		{
 			var token:AsyncToken;
@@ -145,9 +150,6 @@ package com.masuland.loginexample.business
 			token.addResponder(responder);
 		}
 
-		/**
-		 * 
-		 */
 		public function register(auth:AuthenticationVO):void
 		{
 			var token:AsyncToken;
@@ -160,14 +162,11 @@ package com.masuland.loginexample.business
 			token.addResponder(responder);
 		}
 
-		/**
-		 * 
-		 */
 		public function updateUser(user:UserVO):void
 		{
 			var token:AsyncToken;
 
-			token = MockDelegateHelper.createMockResult(user, 500, true);
+			token = MockDelegateHelper.createMockResult(user.clone(), 500, true);
 			token.addResponder(responder);
 		}
 	}

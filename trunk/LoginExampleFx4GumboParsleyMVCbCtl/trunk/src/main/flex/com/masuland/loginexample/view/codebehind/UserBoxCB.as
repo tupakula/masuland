@@ -4,6 +4,9 @@ package com.masuland.loginexample.view.codebehind
 	import com.masuland.loginexample.action.event.UpdateUserEvent;
 	import com.masuland.loginexample.data.vo.UserVO;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class UserBoxCB
 	{
 		//----------------------

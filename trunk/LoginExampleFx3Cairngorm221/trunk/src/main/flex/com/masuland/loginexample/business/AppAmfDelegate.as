@@ -9,22 +9,30 @@ package com.masuland.loginexample.cairngorm221.business
 	import mx.rpc.remoting.RemoteObject;
 
 	/**
-	 * 
-	 * @author Sebastian.Mohr (masuland@gmail.com)
+	 * @author masuland.com
 	 */
-	public class AppMockDelegate implements IAppDelegate
+	public class AppAmfDelegate implements IAppDelegate
 	{
+		//----------------------
+		// Constants
+		//----------------------
+		
 		private var service:RemoteObject = ServiceLocator.getInstance().getRemoteObject(AppServices.APP_SERVICE);
 		private var responder:IResponder;
 		
-		public function AppMockDelegate(responder:IResponder)
+		//----------------------
+		// Constructor
+		//----------------------
+		
+		public function AppAmfDelegate(responder:IResponder)
 		{
 			this.responder = responder;
 		}
 		
-		/**
-		 * 
-		 */
+		//----------------------
+		// Methods
+		//----------------------
+		
 		public function getSettings():void
 		{
 			var token:AsyncToken;
@@ -33,9 +41,6 @@ package com.masuland.loginexample.cairngorm221.business
 			token.addResponder(responder);
 		}
 
-		/**
-		 * 
-		 */
 		public function login(auth:AuthenticationVO):void
 		{
 			var token:AsyncToken;
@@ -44,9 +49,6 @@ package com.masuland.loginexample.cairngorm221.business
 			token.addResponder(responder);
 		}
 
-		/**
-		 * 
-		 */
 		public function register(auth:AuthenticationVO):void
 		{
 			var token:AsyncToken;
@@ -55,9 +57,6 @@ package com.masuland.loginexample.cairngorm221.business
 			token.addResponder(responder);
 		}
 
-		/**
-		 * 
-		 */
 		public function updateUser(user:UserVO):void
 		{
 			var token:AsyncToken;

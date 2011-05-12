@@ -6,6 +6,9 @@ package com.masuland.loginexample.action.command
 	import com.masuland.loginexample.data.state.LoginBoxState;
 	import com.masuland.loginexample.data.state.SettingsBoxState;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class InitAppCommand
 	{
 		//----------------------
@@ -28,9 +31,6 @@ package com.masuland.loginexample.action.command
 			dispatcher(new AppEvent(AppEvent.INIT_APP));
 		}
 		
-		/**
-		 * 
-		 */
 		[MessageHandler(selector='AppEvent.INIT_APP')]
 		public function initApp(event:AppEvent):void
 		{

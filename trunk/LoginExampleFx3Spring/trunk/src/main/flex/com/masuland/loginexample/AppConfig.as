@@ -20,6 +20,9 @@ package com.masuland.loginexample
 	import org.springextensions.actionscript.ioc.factory.config.RouteEventsMetaDataProcessor;
 	import org.springextensions.actionscript.stage.DefaultAutowiringStageProcessor;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class AppConfig extends EventDispatcher implements IMXMLObject
 	{
 		// Force inclusion of classes not referenced elsewhere in the code
@@ -55,7 +58,7 @@ package com.masuland.loginexample
 		
 		private function applicationContext_completeHandler(event:Event) : void 
 		{
-			EventBus.dispatchEvent(new AppEvent(AppEvent.INITIALIZE_CLIENT));
+			EventBus.dispatchEvent(new AppEvent(AppEvent.INIT_APP));
 		}
 		
 		private function applicationContext_ioErrorHandler(event:IOErrorEvent) : void 

@@ -40,6 +40,9 @@ package com.masuland.loginexample.action
 	[Event(name='LoadStyleEvent.EVENT_NAME', type='com.masuland.loginexample.control.event.LoadStyleEvent')]
 	[Event(name='LoadLocaleEvent.EVENT_NAME', type='com.masuland.loginexample.control.event.LoadLocaleEvent')]
 	
+	/**
+	 * @author masuland.com
+	 */
 	public class AppController extends EventDispatcher
 	{
 		//----------------------
@@ -56,10 +59,7 @@ package com.masuland.loginexample.action
 		// Methods
 		//----------------------
 		
-		/**
-		 * 
-		 */
-		[EventHandler(name='AppEvent.INITIALIZE_CLIENT')]
+		[EventHandler(name='AppEvent.INIT_APP')]
 		public function initApp(event:AppEvent):void
 		{
 			appModel.appStackState = AppStackState.LOGIN;
@@ -74,7 +74,7 @@ package com.masuland.loginexample.action
 		public function getSettings(event:AppEvent):void
 		{
 			var token:AsyncToken = appDelegate.getSettings();
-			token.addResponder(new Responder(getSettings_result, getSettings_fault));
+			token.addResponder(new Responder(getSettings_resultHandler, getSettings_faultHandler));
 		}
 		
 		[EventHandler(name='LoginEvent.EVENT_NAME')]
@@ -83,7 +83,7 @@ package com.masuland.loginexample.action
 			appModel.loginBoxState = LoginBoxState.LOGIN_PROGRESS;
 			
 			var token:AsyncToken = appDelegate.login(event.auth);
-			token.addResponder(new Responder(login_result, login_fault));
+			token.addResponder(new Responder(login_resultHandler, login_faultHandler));
 		}
 		
 		[EventHandler(name='AppEvent.LOGOUT')]
@@ -99,38 +99,28 @@ package com.masuland.loginexample.action
 			appModel.loginBoxState = LoginBoxState.REGISTER_PROGRESS;
 			
 			var token:AsyncToken = appDelegate.register(event.auth);
-			token.addResponder(new Responder(register_result, register_fault));
+			token.addResponder(new Responder(register_resultHandler, register_faultHandler));
 		}
 		
 		[EventHandler(name='UpdateUserEvent.EVENT_NAME')]
 		public function updateUser(event:UpdateUserEvent):void
 		{
 			var token:AsyncToken = appDelegate.updateUser(event.user);
-			token.addResponder(new Responder(updateUser_result, updateUser_fault));
+			token.addResponder(new Responder(updateUser_resultHandler, updateUser_faultHandler));
 		}
 		
-		/**
-		 * 
-		 */
 		[EventHandler(name='AppEvent.GOTO_LOGIN')]
 		public function gotoLogin():void 
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
 		}
 		
-		/**
-		 * 
-		 */
 		[EventHandler(name='AppEvent.GOTO_REGISTER')]
 		public function gotoRegister():void 
 		{
 			appModel.loginBoxState = LoginBoxState.REGISTER;
 		}
 		
-		
-		/**
-		 * 
-		 */
 		[EventHandler(name='LoadLocaleEvent.EVENT_NAME')]
 		public function loadLocale(event:LoadLocaleEvent):void 
 		{
@@ -166,9 +156,6 @@ package com.masuland.loginexample.action
 */
 		}
 		
-		/**
-		 * 
-		 */
 		[EventHandler(name='LoadStyleEvent.EVENT_NAME')]
 		public function loadStyle(event:LoadStyleEvent):void 
 		{
@@ -185,14 +172,11 @@ package com.masuland.loginexample.action
 				appModel.currentStyle = event.style;
 				
 				myEvent = myStyleManager.loadStyleDeclarations(event.style.path, true);
-				myEvent.addEventListener(StyleEvent.COMPLETE, onLoadStyleComplete);
-				myEvent.addEventListener(StyleEvent.ERROR, onLoadStyleError);
+				myEvent.addEventListener(StyleEvent.COMPLETE, loadStyle_completeHandler);
+				myEvent.addEventListener(StyleEvent.ERROR, loadStyle_errorHandler);
 			}
 		}
 		
-		/**
-		 * 
-		 */
 		[EventHandler(name='LoadLayoutEvent.EVENT_NAME')]
 		public function loadLayout(event:LoadLayoutEvent):void 
 		{
@@ -209,8 +193,7 @@ package com.masuland.loginexample.action
 		// Handler
 		//----------------------
 		
-		/**  */
-		public function getSettings_result(event:ResultEvent):void
+		protected function getSettings_resultHandler(event:ResultEvent):void
 		{
 			appModel.settings = SettingsVO( event.result );
 			
@@ -218,79 +201,60 @@ package com.masuland.loginexample.action
 			dispatchEvent(new LoadLayoutEvent(LayoutVO( appModel.settings.layouts.getItemAt(0) )));
 		}
 		
-		/**  */
-		public function getSettings_fault(event:FaultEvent):void
+		protected function getSettings_faultHandler(event:FaultEvent):void
 		{
 			Alert.show('getSettings_fault: ' + event.fault);
 		}
 		
-		/**  */
-		public function login_result(event:ResultEvent):void
+		protected function login_resultHandler(event:ResultEvent):void
 		{
 			appModel.currentUser = UserVO( event.result );
 			appModel.appStackState = AppStackState.USER;
 			appModel.loginBoxState = LoginBoxState.HIDDEN;
 		}
 		
-		/**  */
-		public function login_fault(event:FaultEvent):void
+		protected function login_faultHandler(event:FaultEvent):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
 		}
 		
-		/**  */
-		public function register_result(event:ResultEvent):void
+		protected function register_resultHandler(event:ResultEvent):void
 		{
 			appModel.currentUser = UserVO( event.result );
 			appModel.appStackState = AppStackState.USER;
 			appModel.loginBoxState = LoginBoxState.HIDDEN;
 		}
 		
-		/**  */
-		public function register_fault(event:FaultEvent):void
+		protected function register_faultHandler(event:FaultEvent):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
 		}
 		
-		/**  */
-		public function updateUser_result(event:ResultEvent):void
+		protected function updateUser_resultHandler(event:ResultEvent):void
 		{
 			appModel.currentUser = UserVO( event.result );
 		}
 		
-		/**  */
-		public function updateUser_fault(event:FaultEvent):void
+		protected function updateUser_faultHandler(event:FaultEvent):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
 		}
 		
-		/**
-		 * 
-		 */
-		private function onLoadLocaleComplete(event:ResourceEvent):void
+		protected function loadLocale_completeHandler(event:ResourceEvent):void
 		{	    	
 			ResourceManager.getInstance().localeChain = [ appModel.currentLocale.code ];
 		}
 		
-		/**
-		 * 
-		 */
-		private function onLoadLocaleError(event:ResourceEvent):void
+		protected function loadLocale_errorHandler(event:ResourceEvent):void
 		{	    	
 		}
 
-		/**
-		 * 
-		 */
-		private function onLoadStyleComplete(event:StyleEvent):void
+		protected function loadStyle_completeHandler(event:StyleEvent):void
 		{
 			appModel.isApplicationVisible = true;
 		}
 		
-		/**
-		 * 
-		 */
-		private function onLoadStyleError(event:StyleEvent):void
+		protected function loadStyle_errorHandler(event:StyleEvent):void
 		{
 			appModel.isApplicationVisible = true;
 		}

@@ -8,6 +8,9 @@ package com.masuland.loginexample.action.command
 	
 	import flash.events.IEventDispatcher;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class InitAppCommand
 	{
 		//----------------------

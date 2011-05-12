@@ -61,7 +61,7 @@ package com.masuland.loginexample
 		
 		private function applicationContext_completeHandler(event:Event) : void 
 		{
-			EventBus.dispatchEvent(new AppEvent(AppEvent.INITIALIZE_CLIENT));
+			EventBus.dispatchEvent(new AppEvent(AppEvent.INIT_APP));
 		}
 		
 		private function applicationContext_ioErrorHandler(event:IOErrorEvent) : void 

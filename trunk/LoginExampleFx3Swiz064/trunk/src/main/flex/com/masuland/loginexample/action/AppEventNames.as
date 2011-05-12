@@ -9,7 +9,7 @@ package com.masuland.loginexample.action
 	[Bindable]
 	public class AppEventNames
 	{
-		public static const INITIALIZE_CLIENT:String = 'InitializeClientEvent';
+		public static const INIT_APP:String = 'InitializeClientEvent';
 		
 		public static const GET_SETTINGS:String = 'getSettings';
 		public static const LOAD_LOCALE:String = 'LoadLocaleEvent';
