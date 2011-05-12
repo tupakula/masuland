@@ -10,8 +10,15 @@ package com.masuland.loginexample.action.command
 	import mx.events.StyleEvent;
 	import mx.styles.StyleManager;
 	
+	/**
+	 * @author masuland.com
+	 */
 	public class LoadStyleCommand implements ICommand
 	{
+		//----------------------
+		// Methods
+		//----------------------
+		
 		public function execute(event:CairngormEvent):void
 		{
 			var appModel:AppModel = AppModel.getInstance();
@@ -32,9 +39,6 @@ package com.masuland.loginexample.action.command
 			}
 		}
 		
-		/**
-		 * 
-		 */
 		private function onLoadStyleComplete(event:StyleEvent):void
 		{
 			var appModel:AppModel = AppModel.getInstance();
@@ -42,9 +46,6 @@ package com.masuland.loginexample.action.command
 			appModel.isApplicationVisible = true;
 		}
 		
-		/**
-		 * 
-		 */
 		private function onLoadStyleError(event:StyleEvent):void
 		{
 			var appModel:AppModel = AppModel.getInstance();

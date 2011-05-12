@@ -11,18 +11,25 @@ package com.masuland.loginexample.action.responder
 	
 	import org.swizframework.Swiz;
 
-	/**  */
+	/**
+	 * @author masuland.com
+	 */
 	public class LoginResponder implements IResponder
 	{
-		/**  */
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[Bindable]
 		[Autowire]
 		public var appModel:AppModel;
 		
 		public var nextEvent:Event;
 		
+		//----------------------
+		// Constructor
+		//----------------------
 		
-		/** Konstruktur */
 		public function LoginResponder(nextEvent:Event = null) 
 		{
 			Swiz.autowire(this);
@@ -30,7 +37,10 @@ package com.masuland.loginexample.action.responder
 			this.nextEvent = nextEvent;
 		}
 
-		/**  */
+		//----------------------
+		// Methods
+		//----------------------
+		
 		public function result(data:Object):void
 		{
 			appModel.currentUser = UserVO( data.result );
@@ -38,7 +48,6 @@ package com.masuland.loginexample.action.responder
 			appModel.loginBoxState = LoginBoxState.HIDDEN;
 		}
 		
-		/**  */
 		public function fault(info:Object):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;

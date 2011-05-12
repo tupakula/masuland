@@ -7,6 +7,9 @@ package com.masuland.loginexample.view.codebehind
 	import com.masuland.loginexample.data.state.LoginBoxState;
 	import com.masuland.loginexample.data.vo.AuthenticationVO;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class LoginBoxCB
 	{
 		//----------------------

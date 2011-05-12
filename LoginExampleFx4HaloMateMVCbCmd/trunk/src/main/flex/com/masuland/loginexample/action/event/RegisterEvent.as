@@ -3,25 +3,33 @@ package com.masuland.loginexample.action.event
 	import com.masuland.loginexample.data.vo.AuthenticationVO;
 	
 	import flash.events.Event;
-	import flash.utils.getQualifiedClassName;
 
-	/**  */
+	/**
+	 * @author masuland.com
+	 */
 	public class RegisterEvent extends Event
 	{	
-		/**  */
+		//----------------------
+		// Constants
+		//----------------------
+		
 		public static const EVENT_NAME:String = 'RegisterEvent.EVENT_NAME';
 		
-		public var auth:AuthenticationVO;
-		public var nextEvent:Event;
+		//----------------------
+		// Properties
+		//----------------------
 		
-		/**  */
+		public var auth:AuthenticationVO;
+		
+		//----------------------
+		// Constructor
+		//----------------------
+		
 		public function RegisterEvent(auth:AuthenticationVO, bubbles:Boolean=true, cancelable:Boolean=false)
 		{
 			super(EVENT_NAME, bubbles, cancelable);
 			
 			this.auth = auth;
-			
-			this.nextEvent = nextEvent;
 		}
 	}
 }

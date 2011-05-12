@@ -35,6 +35,7 @@
 	</swiz:Swiz>
 	
 	<view:AppView
+		id="view"
 		/>
 	
 </mx:Application>

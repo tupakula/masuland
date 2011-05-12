@@ -8,6 +8,9 @@ package com.masuland.loginexample.action.command
 	import mx.events.ResourceEvent;
 	import mx.resources.ResourceManager;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class LoadLocaleCommand
 	{
 		//----------------------

@@ -2,17 +2,22 @@ package com.masuland.loginexample.vo
 {
 	[Bindable]
 	/**
-	 * 
-	 * @author Sebastian.Mohr (masuland@gmail.com)
+	 * @author masuland.com
 	 */
 	public class LocaleVO
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		public var name:String;
 		public var code:String;
 		
-		public function LocaleVO() {}
+		//----------------------
+		// Methods
+		//----------------------
 		
-		public function toString() : String
+		public function toString():String
 		{
 			return name;
 		}

@@ -7,6 +7,9 @@ package com.masuland.loginexample.action.command
 	import com.masuland.loginexample.data.vo.LocaleVO;
 	import com.masuland.loginexample.data.vo.StyleVO;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class LoadLayoutCommand
 	{
 		//----------------------
@@ -23,9 +26,6 @@ package com.masuland.loginexample.action.command
 		// Methods
 		//----------------------
 		
-		/**
-		 * 
-		 */
 		[MessageHandler]
 		public function loadLayout(event:LoadLayoutEvent):void 
 		{

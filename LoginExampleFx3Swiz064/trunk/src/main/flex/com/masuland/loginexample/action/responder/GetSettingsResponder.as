@@ -10,21 +10,32 @@ package com.masuland.loginexample.action.responder
 	
 	import org.swizframework.Swiz;
 
-	/**  */
+	/**
+	 * @author masuland.com
+	 */
 	public class GetSettingsResponder implements IResponder
 	{
-		/**  */
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[Bindable]
 		[Autowire]
 		public var appModel:AppModel;
 		
-		/** Konstruktur */
+		//----------------------
+		// Constructor
+		//----------------------
+		
 		public function GetSettingsResponder() 
 		{
 			Swiz.autowire(this);
 		}
 
-		/**  */
+		//----------------------
+		// Methods
+		//----------------------
+		
 		public function result(data:Object):void
 		{
 			appModel.settings = SettingsVO( data.result );
@@ -33,7 +44,6 @@ package com.masuland.loginexample.action.responder
 			Swiz.dispatchEvent(new LoadLayoutEvent(LayoutVO( appModel.settings.layouts.getItemAt(0) )));
 		}
 		
-		/**  */
 		public function fault(info:Object):void
 		{
 			Alert.show('GetSettingsResponder.fault(info:Object)');

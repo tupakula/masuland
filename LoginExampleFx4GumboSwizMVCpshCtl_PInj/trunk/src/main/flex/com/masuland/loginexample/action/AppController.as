@@ -31,7 +31,9 @@ package com.masuland.loginexample.action
 	
 	import org.swizframework.utils.services.ServiceHelper;
 	
-	[Bindable]
+	/**
+	 * @author masuland.com
+	 */
 	public class AppController
 	{
 		//----------------------
@@ -54,9 +56,6 @@ package com.masuland.loginexample.action
 		// Methods
 		//----------------------
 		
-		/**
-		 * 
-		 */ 
 		[EventHandler(event='mx.events.FlexEvent.APPLICATION_COMPLETE')]
 		public function initApp():void
 		{
@@ -115,27 +114,18 @@ package com.masuland.loginexample.action
 				updateUser_faultHandler);
 		}
 		
-		/**
-		 * 
-		 */
 		[EventHandler(event='AppEvent.GOTO_LOGIN')]
 		public function gotoLogin():void 
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
 		}
 		
-		/**
-		 * 
-		 */
 		[EventHandler(event='AppEvent.GOTO_REGISTER')]
 		public function gotoRegister():void 
 		{
 			appModel.loginBoxState = LoginBoxState.REGISTER;
 		}
 		
-		/**
-		 * 
-		 */
 		[EventHandler(event='LoadLocaleEvent.EVENT_NAME', properties='locale')]
 		public function loadLocale(locale:LocaleVO):void 
 		{
@@ -170,9 +160,6 @@ package com.masuland.loginexample.action
 			}
 */		}
 		
-		/**
-		 * 
-		 */
 		[EventHandler(event='LoadStyleEvent.EVENT_NAME', properties='style')]
 		public function loadStyle(style:StyleVO):void 
 		{
@@ -194,9 +181,6 @@ package com.masuland.loginexample.action
 			}
 		}
 		
-		/**
-		 * 
-		 */
 		[EventHandler(event='LoadLayoutEvent.EVENT_NAME', properties='layout')]
 		public function loadLayout(layout:LayoutVO):void 
 		{
@@ -213,8 +197,7 @@ package com.masuland.loginexample.action
 		// Handler
 		//----------------------
 		
-		/**  */
-		public function getSettings_resultHandler(event:ResultEvent):void
+		protected function getSettings_resultHandler(event:ResultEvent):void
 		{
 			appModel.settings = SettingsVO( event.result );
 			
@@ -222,79 +205,60 @@ package com.masuland.loginexample.action
 			dispatcher.dispatchEvent(new LoadLayoutEvent(LayoutVO( appModel.settings.layouts.getItemAt(0) )));
 		}
 		
-		/**  */
-		public function getSettings_faultHandler(event:FaultEvent):void
+		protected function getSettings_faultHandler(event:FaultEvent):void
 		{
 			Alert.show('getSettings_fault: ' + event.fault);
 		}
 		
-		/**  */
-		public function login_resultHandler(event:ResultEvent):void
+		protected function login_resultHandler(event:ResultEvent):void
 		{
 			appModel.currentUser = UserVO( event.result );
 			appModel.appStackState = AppStackState.USER;
 			appModel.loginBoxState = LoginBoxState.HIDDEN;
 		}
 		
-		/**  */
-		public function login_faultHandler(event:FaultEvent):void
+		protected function login_faultHandler(event:FaultEvent):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
 		}
 		
-		/**  */
-		public function register_resultHandler(event:ResultEvent):void
+		protected function register_resultHandler(event:ResultEvent):void
 		{
 			appModel.currentUser = UserVO( event.result );
 			appModel.appStackState = AppStackState.USER;
 			appModel.loginBoxState = LoginBoxState.HIDDEN;
 		}
 		
-		/**  */
-		public function register_faultHandler(event:FaultEvent):void
+		protected function register_faultHandler(event:FaultEvent):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
 		}
 		
-		/**  */
-		public function updateUser_resultHandler(event:ResultEvent):void
+		protected function updateUser_resultHandler(event:ResultEvent):void
 		{
 			appModel.currentUser = UserVO( event.result );
 		}
 		
-		/**  */
-		public function updateUser_faultHandler(event:FaultEvent):void
+		protected function updateUser_faultHandler(event:FaultEvent):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
 		}
 		
-		/**
-		 * 
-		 */
-		private function loadLocale_completeHandler(event:ResourceEvent):void
+		protected function loadLocale_completeHandler(event:ResourceEvent):void
 		{	    	
 			ResourceManager.getInstance().localeChain = [ appModel.currentLocale.code ];
 		}
 		
-		/**
-		 * 
-		 */
-		private function loadLocale_errorHandler(event:ResourceEvent):void
+		protected function loadLocale_errorHandler(event:ResourceEvent):void
 		{	    	
 		}
 
-		/**
-		 * 
-		 */
-		private function loadStyle_completeHandler(event:StyleEvent):void
+		protected function loadStyle_completeHandler(event:StyleEvent):void
 		{
 			appModel.isApplicationVisible = true;
 		}
 		
-		/**
-		 * 
-		 */
-		private function loadStyle_errorHandler(event:StyleEvent):void
+		protected function loadStyle_errorHandler(event:StyleEvent):void
 		{
 			appModel.isApplicationVisible = true;
 		}

@@ -30,6 +30,9 @@ package com.masuland.loginexample.action
 	import mx.rpc.events.ResultEvent;
 	import mx.styles.StyleManager;
 	
+	/**
+	 * @author masuland.com
+	 */
 	public class AppController
 	{
 		//----------------------
@@ -49,10 +52,7 @@ package com.masuland.loginexample.action
 		// Methods
 		//----------------------
 		
-		/**
-		 * 
-		 */
-		[MessageHandler(selector="AppEvent.INITIALIZE_CLIENT")]
+		[MessageHandler(selector="AppEvent.INIT_APP")]
 		public function initApp(event:AppEvent):void
 		{
 			appModel.appStackState = AppStackState.LOGIN;
@@ -200,7 +200,6 @@ package com.masuland.loginexample.action
 		// Handler
 		//----------------------
 		
-		/**  */
 		protected function getSettings_resultHandler(event:ResultEvent):void
 		{
 			appModel.settings = SettingsVO( event.result );
@@ -209,13 +208,11 @@ package com.masuland.loginexample.action
 			dispatcher(new LoadLayoutEvent(LayoutVO( appModel.settings.layouts.getItemAt(0) )));
 		}
 		
-		/**  */
 		protected function getSettings_faultHandler(event:FaultEvent):void
 		{
 			Alert.show("getSettings_fault: " + event.fault);
 		}
 		
-		/**  */
 		protected function login_resultHandler(event:ResultEvent):void
 		{
 			appModel.currentUser = UserVO( event.result );
@@ -223,13 +220,11 @@ package com.masuland.loginexample.action
 			appModel.loginBoxState = LoginBoxState.HIDDEN;
 		}
 		
-		/**  */
 		protected function login_faultHandler(event:FaultEvent):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
 		}
 		
-		/**  */
 		protected function register_resultHandler(event:ResultEvent):void
 		{
 			appModel.currentUser = UserVO( event.result );
@@ -237,50 +232,35 @@ package com.masuland.loginexample.action
 			appModel.loginBoxState = LoginBoxState.HIDDEN;
 		}
 		
-		/**  */
 		protected function register_faultHandler(event:FaultEvent):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
 		}
 		
-		/**  */
 		protected function updateUser_resultHandler(event:ResultEvent):void
 		{
 			appModel.currentUser = UserVO( event.result );
 		}
 		
-		/**  */
 		protected function updateUser_faultHandler(event:FaultEvent):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;
 		}
 		
-		/**
-		 * 
-		 */
 		protected function loadLocale_completeHandler(event:ResourceEvent):void
 		{	    	
 			ResourceManager.getInstance().localeChain = [ appModel.currentLocale.code ];
 		}
 		
-		/**
-		 * 
-		 */
 		protected function loadLocale_errorHandler(event:ResourceEvent):void
 		{	    	
 		}
 
-		/**
-		 * 
-		 */
 		protected function loadStyle_completeHandler(event:StyleEvent):void
 		{
 			appModel.isApplicationVisible = true;
 		}
 		
-		/**
-		 * 
-		 */
 		protected function loadStyle_errorHandler(event:StyleEvent):void
 		{
 			appModel.isApplicationVisible = true;

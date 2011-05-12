@@ -4,13 +4,14 @@ package com.masuland.loginexample.vo
 
 	[Bindable]
 	/**
-	 * 
-	 * @author Sebastian.Mohr (masuland@gmail.com)
+	 * @author masuland.com
 	 */
 	public class SettingsVO
 	{
-		public var layouts:ArrayCollection;
+		//----------------------
+		// Properties
+		//----------------------
 		
-		public function SettingsVO() {}
+		public var layouts:ArrayCollection;
 	}
 }

@@ -14,8 +14,8 @@
 	
 	<fx:Metadata>
 		[ResourceBundle("resources")]
-		[Event(name="AppEvent.INITIALIZE_CLIENT", type="com.masuland.loginexample.action.event.AppEvent")]
-		[ManagedEvents("AppEvent.INITIALIZE_CLIENT")]
+		[Event(name="AppEvent.INIT_APP", type="com.masuland.loginexample.action.event.AppEvent")]
+		[ManagedEvents("AppEvent.INIT_APP")]
 	</fx:Metadata>
 
 	<fx:Script>
@@ -30,7 +30,7 @@
 			
 			protected function application1_applicationCompleteHandler(event:FlexEvent):void
 			{
-				dispatchEvent(new AppEvent(AppEvent.INITIALIZE_CLIENT));
+				dispatchEvent(new AppEvent(AppEvent.INIT_APP));
 			}
 		]]>
 	</fx:Script>

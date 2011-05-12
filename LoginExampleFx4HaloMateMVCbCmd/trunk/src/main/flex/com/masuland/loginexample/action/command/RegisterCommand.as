@@ -7,6 +7,9 @@ package com.masuland.loginexample.action.command
 	
 	import mx.rpc.events.FaultEvent;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class RegisterCommand
 	{
 		//----------------------
@@ -28,7 +31,6 @@ package com.masuland.loginexample.action.command
 		// Handler
 		//----------------------
 		
-		/**  */
 		public function register_resultHandler(user:UserVO):void
 		{
 			appModel.currentUser = user;
@@ -36,7 +38,6 @@ package com.masuland.loginexample.action.command
 			appModel.loginBoxState = LoginBoxState.HIDDEN;
 		}
 		
-		/**  */
 		public function register_faultHandler(event:FaultEvent):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;

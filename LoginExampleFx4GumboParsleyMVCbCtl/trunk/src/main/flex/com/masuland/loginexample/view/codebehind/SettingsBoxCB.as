@@ -8,6 +8,9 @@ package com.masuland.loginexample.view.codebehind
 	import com.masuland.loginexample.data.vo.LocaleVO;
 	import com.masuland.loginexample.data.vo.StyleVO;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class SettingsBoxCB
 	{
 		//----------------------

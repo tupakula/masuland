@@ -8,46 +8,36 @@ package com.masuland.loginexample.business
  
 	/**
 	 * 
-	 * @author masu
+	 * @author masuland.com
 	 */
-	public class AppAmfDelegate  implements IAppDelegate
+	public class AppAmfDelegate implements IAppDelegate
 	{
-		/**  */
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[Inject]
 		public var appRemoteObject:RemoteObject;
 
-		/**
-		 * 
-		 */
-		public function AppAmfDelegate () {}
- 
-		/**
-		 * 
-		 */
+		//----------------------
+		// Methods
+		//----------------------
+		
 		public function getSettings():AsyncToken
 		{
 			return appRemoteObject.getStyles.send();
 		}
 
-		/**
-		 * 
-		 */
 		public function login(auth:AuthenticationVO):AsyncToken
 		{
 			return appRemoteObject.login.send(auth);
 		}
 
-		/**
-		 * 
-		 */
 		public function register(auth:AuthenticationVO):AsyncToken
 		{
 			return appRemoteObject.register.send(auth);
 		}
 
-		/**
-		 * 
-		 */
 		public function updateUser(user:UserVO):AsyncToken
 		{
 			return appRemoteObject.updateUser.send(user);

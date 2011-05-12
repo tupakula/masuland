@@ -11,6 +11,9 @@ package com.masuland.loginexample.action.task
 	import mx.styles.IStyleManager2;
 	import mx.styles.StyleManager;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class LoadStyleTask extends Task
 	{
 		//----------------------
@@ -50,9 +53,6 @@ package com.masuland.loginexample.action.task
 		// Properties
 		//----------------------
 		
-		/**
-		 * 
-		 */
 		private function loadStyle_completeHandler(event:StyleEvent):void
 		{
 			appModel.isApplicationVisible = true;
@@ -60,9 +60,6 @@ package com.masuland.loginexample.action.task
 			complete();
 		}
 		
-		/**
-		 * 
-		 */
 		private function loadStyle_errorHandler(event:StyleEvent):void
 		{
 			appModel.isApplicationVisible = true;

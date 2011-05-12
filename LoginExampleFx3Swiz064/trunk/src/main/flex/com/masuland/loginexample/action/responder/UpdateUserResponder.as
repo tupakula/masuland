@@ -11,27 +11,37 @@ package com.masuland.loginexample.action.responder
 	
 	import org.swizframework.Swiz;
 
-	/**  */
+	/**
+	 * @author masuland.com
+	 */
 	public class UpdateUserResponder implements IResponder
 	{
-		/**  */
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[Bindable]
 		[Autowire]
 		public var appModel:AppModel;
 		
-		/** Konstruktur */
+		//----------------------
+		// Constructor
+		//----------------------
+		
 		public function UpdateUserResponder() 
 		{
 			Swiz.autowire(this);
 		}
 
-		/**  */
+		//----------------------
+		// Methods
+		//----------------------
+		
 		public function result(data:Object):void
 		{
 			appModel.currentUser = UserVO( data.result );
 		}
 		
-		/**  */
 		public function fault(info:Object):void
 		{
 			appModel.loginBoxState = LoginBoxState.LOGIN;

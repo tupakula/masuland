@@ -12,8 +12,15 @@ package com.masuland.loginexample.action.command
 	
 	import mx.rpc.IResponder;
 	
+	/**
+	 * @author masuland.com
+	 */
 	public class RegisterCommand implements ICommand, IResponder
 	{
+		//----------------------
+		// Methods
+		//----------------------
+		
 		public function execute(event:CairngormEvent):void
 		{
 			var appModel:AppModel = AppModel.getInstance();

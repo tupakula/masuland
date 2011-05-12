@@ -11,6 +11,9 @@ package com.masuland.loginexample.action.command
 	import mx.styles.IStyleManager2;
 	import mx.styles.StyleManager;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class LoadStyleCommand
 	{
 		//----------------------
@@ -27,9 +30,6 @@ package com.masuland.loginexample.action.command
 		// Methods
 		//----------------------
 		
-		/**
-		 * 
-		 */
 		[MessageHandler]
 		public function loadStyle(event:LoadStyleEvent):void 
 		{
@@ -55,17 +55,11 @@ package com.masuland.loginexample.action.command
 		// Handler
 		//----------------------
 		
-		/**
-		 * 
-		 */
 		protected function loadStyle_completeHandler(event:StyleEvent):void
 		{
 			appModel.isApplicationVisible = true;
 		}
 		
-		/**
-		 * 
-		 */
 		protected function loadStyle_errorHandler(event:StyleEvent):void
 		{
 			appModel.isApplicationVisible = true;

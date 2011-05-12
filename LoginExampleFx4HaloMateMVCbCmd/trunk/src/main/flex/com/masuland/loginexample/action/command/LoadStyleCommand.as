@@ -10,6 +10,9 @@ package com.masuland.loginexample.action.command
 	import mx.styles.IStyleManager2;
 	import mx.styles.StyleManager;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class LoadStyleCommand
 	{
 		//----------------------

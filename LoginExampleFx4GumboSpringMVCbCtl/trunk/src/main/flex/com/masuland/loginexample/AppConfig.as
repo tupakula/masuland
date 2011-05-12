@@ -21,8 +21,8 @@ package com.masuland.loginexample
 	
 	import spark.components.Application;
 	
-//	[RouteEvents(events='AppEvent.INITIALIZE_CLIENT')]
-//	[Event(name='AppEvent.INITIALIZE_CLIENT',type='com.masuland.loginexample.control.event.AppEvent')]
+//	[RouteEvents(events='AppEvent.INIT_APP')]
+//	[Event(name='AppEvent.INIT_APP',type='com.masuland.loginexample.control.event.AppEvent')]
 	public class AppConfig extends EventDispatcher implements IMXMLObject
 	{
 		//----------------------
@@ -53,7 +53,7 @@ package com.masuland.loginexample
 			
 			// Embed
 //			applicationContext.addEmbeddedConfig(contextConfig);
-//			dispatchEvent(new AppEvent(AppEvent.INITIALIZE_CLIENT));
+//			dispatchEvent(new AppEvent(AppEvent.INIT_APP));
 			
 			// Load
 			(FlexGlobals.topLevelApplication as Application).addEventListener(FlexEvent.INITIALIZE, loadContext);
@@ -73,7 +73,7 @@ package com.masuland.loginexample
 		
 		protected function loadContext_completeHandler(event:Event):void 
 		{
-			EventBus.dispatchEvent(new AppEvent(AppEvent.INITIALIZE_CLIENT));
+			EventBus.dispatchEvent(new AppEvent(AppEvent.INIT_APP));
 		}
 		
 		protected function loadContext_ioErrorHandler(event:IOErrorEvent):void 

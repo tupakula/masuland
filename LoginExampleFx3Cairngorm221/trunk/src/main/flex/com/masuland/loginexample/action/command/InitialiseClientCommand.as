@@ -11,8 +11,15 @@ package com.masuland.loginexample.action.command
 	
 	import mx.core.Application;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class InitialiseClientCommand implements ICommand
 	{
+		//----------------------
+		// Methods
+		//----------------------
+		
 		public function execute(event:CairngormEvent):void
 		{
 			var appModel:AppModel = AppModel.getInstance();

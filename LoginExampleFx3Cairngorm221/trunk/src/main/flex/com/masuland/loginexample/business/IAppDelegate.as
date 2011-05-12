@@ -3,8 +3,15 @@ package com.masuland.loginexample.business
 	import com.masuland.loginexample.data.vo.AuthenticationVO;
 	import com.masuland.loginexample.data.vo.UserVO;
 
+	/**
+	 * @author masuland.com
+	 */
 	public interface IAppDelegate
 	{
+		//----------------------
+		// Methods
+		//----------------------
+		
 		/**
 		 * getSettings()
 		 * 

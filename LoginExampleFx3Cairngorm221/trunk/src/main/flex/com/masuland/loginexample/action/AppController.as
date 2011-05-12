@@ -24,8 +24,15 @@ package com.masuland.loginexample.action
 	import com.masuland.loginexample.action.event.RegisterEvent;
 	import com.masuland.loginexample.action.event.UpdateUserEvent;
 	
+	/**
+	 * @author masuland.com
+	 */
 	public class AppController extends FrontController
 	{
+		//----------------------
+		// Constructor
+		//----------------------
+		
 		public function AppController()
 		{
 			super();

@@ -13,19 +13,14 @@ package com.masuland.loginexample.business
 	import org.swizframework.util.TestUtil;
  
 	/**
-	 * 
-	 * @author masu
+	 * @author masuland.com
 	 */
 	public class AppMockDelegate implements IAppDelegate
 	{
-		/**
-		 * 
-		 */
-		public function AppMockDelegate() {}
- 
-		/**
-		 * 
-		 */
+		//----------------------
+		// Methods
+		//----------------------
+		
 		public function getSettings():AsyncToken
 		{
 			var settings:SettingsVO = new SettingsVO();
@@ -126,9 +121,6 @@ package com.masuland.loginexample.business
 			return TestUtil.mockResult(settings, 500, true);
 		}
 
-		/**
-		 * 
-		 */
 		public function login(auth:AuthenticationVO):AsyncToken
 		{
 			var user:UserVO = new UserVO();
@@ -137,9 +129,6 @@ package com.masuland.loginexample.business
 			return TestUtil.mockResult(user, 500, true);
 		}
 
-		/**
-		 * 
-		 */
 		public function register(auth:AuthenticationVO):AsyncToken
 		{
 			var user:UserVO = new UserVO();
@@ -149,12 +138,9 @@ package com.masuland.loginexample.business
 			return TestUtil.mockResult(user, 500, true);
 		}
 
-		/**
-		 * 
-		 */
 		public function updateUser(user:UserVO):AsyncToken
 		{
-			return TestUtil.mockResult(user, 500, true);
+			return TestUtil.mockResult(user.clone(), 500, true);
 		}
 	}
 }

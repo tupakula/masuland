@@ -9,8 +9,15 @@ package com.masuland.loginexample.action.command
 	import com.masuland.loginexample.data.vo.LocaleVO;
 	import com.masuland.loginexample.data.vo.StyleVO;
 	
+	/**
+	 * @author masuland.com
+	 */
 	public class LoadLayoutCommand implements ICommand
 	{
+		//----------------------
+		// Methods
+		//----------------------
+		
 		public function execute(event:CairngormEvent):void
 		{
 			var appModel:AppModel = AppModel.getInstance();
