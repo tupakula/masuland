@@ -16,6 +16,9 @@ package com.masuland.loginexample.view.component
 	import spark.components.TextInput;
 	import spark.components.supportClasses.SkinnableComponent;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class UserBoxCP extends SkinnableComponent
 	{
 		//----------------------

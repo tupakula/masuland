@@ -10,6 +10,9 @@ package com.masuland.loginexample.view.component
 
 	[SkinState('login')]
 	[SkinState('user')]
+	/**
+	 * @author masuland.com
+	 */
 	public class AppStackCP extends SkinnableComponent
 	{
 		//----------------------

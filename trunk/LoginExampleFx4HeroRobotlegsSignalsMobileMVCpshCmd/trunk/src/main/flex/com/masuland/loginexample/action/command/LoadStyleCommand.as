@@ -14,6 +14,9 @@ package com.masuland.loginexample.action.command
 	
 	import org.robotlegs.mvcs.SignalCommand;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class LoadStyleCommand extends SignalCommand
 	{
 		//----------------------
@@ -33,9 +36,6 @@ package com.masuland.loginexample.action.command
 		// Methods
 		//----------------------
 		
-		/**
-		 * 
-		 */
 		override public function execute():void
 		{
 			var myEvent:IEventDispatcher;
@@ -60,17 +60,11 @@ package com.masuland.loginexample.action.command
 		// Handler
 		//----------------------
 		
-		/**
-		 * 
-		 */
 		protected function loadStyle_completeHandler(event:StyleEvent):void
 		{
 			appModel.isApplicationVisible = true;
 		}
 		
-		/**
-		 * 
-		 */
 		protected function loadStyle_errorHandler(event:StyleEvent):void
 		{
 			appModel.isApplicationVisible = true;

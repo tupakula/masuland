@@ -20,6 +20,9 @@ package com.masuland.loginexample.view.component
 	[SkinState('register')]
 	[SkinState('registerProgress')]
 	[SkinState('loggedIn')]
+	/**
+	 * @author masuland.com
+	 */
 	public class LoginBoxCP extends SkinnableComponent
 	{
 		//----------------------

@@ -5,7 +5,10 @@ package com.masuland.loginexample.business
 	
 	import mx.rpc.AsyncToken;
 	import mx.rpc.IResponder;
- 
+	
+	/**
+	 * @author masuland.com
+	 */
 	public interface IAppDelegate
 	{
 		/**

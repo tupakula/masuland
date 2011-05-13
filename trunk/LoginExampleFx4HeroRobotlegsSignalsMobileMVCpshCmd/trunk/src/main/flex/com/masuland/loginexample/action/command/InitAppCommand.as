@@ -8,6 +8,9 @@ package com.masuland.loginexample.action.command
 	
 	import org.robotlegs.mvcs.SignalCommand;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class InitAppCommand extends SignalCommand
 	{
 		//----------------------
@@ -24,9 +27,6 @@ package com.masuland.loginexample.action.command
 		// Methods
 		//----------------------
 		
-		/**
-		 * 
-		 */
 		override public function execute():void
 		{
 			appModel.appStackState = AppStackState.LOGIN;

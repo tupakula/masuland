@@ -6,6 +6,9 @@ package com.masuland.loginexample.view.component
 
 	[SkinState('web')]
 	[SkinState('phone')]
+	/**
+	 * @author masuland.com
+	 */
 	public class LayoutStackCP extends SkinnableComponent
 	{
 		//----------------------
@@ -58,8 +61,10 @@ package com.masuland.loginexample.view.component
 			if (_isCurrentLayoutSizeDirty)
 			{
 				// TODO resize effect
+//				skin.setActualSize(_currentLayout.width, _currentLayout.height);
 				skin.width = _currentLayout.width;
 				skin.height = _currentLayout.height;
+				
 				_isCurrentLayoutSizeDirty = false;
 			}
 		}

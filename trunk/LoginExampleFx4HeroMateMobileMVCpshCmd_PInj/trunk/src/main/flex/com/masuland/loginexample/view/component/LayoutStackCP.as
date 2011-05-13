@@ -4,12 +4,19 @@ package com.masuland.loginexample.view.component
 	import com.masuland.loginexample.data.vo.LayoutVO;
 	import com.masuland.loginexample.data.vo.SettingsVO;
 	
+	import flash.events.IEventDispatcher;
+	
+	import mx.core.FlexGlobals;
 	import mx.events.ResizeEvent;
 	
+	import spark.components.Application;
 	import spark.components.supportClasses.SkinnableComponent;
 
 	[SkinState('portrait')]
 	[SkinState('landscape')]
+	/**
+	 * @author masuland.com
+	 */
 	public class LayoutStackCP extends SkinnableComponent
 	{
 		//----------------------
@@ -20,7 +27,7 @@ package com.masuland.loginexample.view.component
 		private var _currentLayout:LayoutVO;
 		private var _isCurrentLayoutSizeDirty:Boolean;
 		
-		public var dispatcher:Function;
+		public var dispatcher:IEventDispatcher = (FlexGlobals.topLevelApplication as Application);
 
 		//----------------------
 		// Getter / Setter
@@ -98,11 +105,11 @@ package com.masuland.loginexample.view.component
 			{
 				if (width < height)
 				{
-					dispatcher(new LoadLayoutEvent(_settings.layouts.getItemAt(0) as LayoutVO, false));
+					dispatcher.dispatchEvent(new LoadLayoutEvent(_settings.layouts.getItemAt(0) as LayoutVO, false));
 				}
 				else
 				{
-					dispatcher(new LoadLayoutEvent(_settings.layouts.getItemAt(1) as LayoutVO, false));
+					dispatcher.dispatchEvent(new LoadLayoutEvent(_settings.layouts.getItemAt(1) as LayoutVO, false));
 				}
 				
 				invalidateSkinState();

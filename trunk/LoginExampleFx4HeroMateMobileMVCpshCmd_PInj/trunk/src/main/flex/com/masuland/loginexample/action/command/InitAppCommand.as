@@ -8,6 +8,9 @@ package com.masuland.loginexample.action.command
 	
 	import flash.events.IEventDispatcher;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class InitAppCommand
 	{
 		//----------------------
@@ -31,9 +34,6 @@ package com.masuland.loginexample.action.command
 		// Methods
 		//----------------------
 		
-		/**
-		 * 
-		 */
 		public function initApp():void
 		{
 			appModel.appStackState = AppStackState.LOGIN;

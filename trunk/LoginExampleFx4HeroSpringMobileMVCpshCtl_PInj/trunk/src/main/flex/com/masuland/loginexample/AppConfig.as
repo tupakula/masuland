@@ -1,28 +1,30 @@
 package com.masuland.loginexample
 {
-	import com.masuland.loginexample.business.AppMockDelegate;
 	import com.masuland.loginexample.action.AppController;
 	import com.masuland.loginexample.action.event.AppEvent;
+	import com.masuland.loginexample.business.AppMockDelegate;
 	
 	import flash.events.Event;
 	import flash.events.EventDispatcher;
 	import flash.events.IOErrorEvent;
 	
-//	import mx.controls.Alert;
 	import mx.core.FlexGlobals;
 	import mx.core.IMXMLObject;
 	import mx.events.FlexEvent;
 	
-	import org.springextensions.actionscript.context.support.FlexXMLApplicationContext;
+	import org.springextensions.actionscript.context.support.XMLApplicationContext;
 	import org.springextensions.actionscript.core.event.EventBus;
+	import org.springextensions.actionscript.ioc.autowire.DefaultFlexAutowireProcessor;
 	import org.springextensions.actionscript.ioc.factory.config.EventHandlerMetadataProcessor;
 	import org.springextensions.actionscript.ioc.factory.config.RouteEventsMetaDataProcessor;
 	import org.springextensions.actionscript.stage.DefaultAutowiringStageProcessor;
+	import org.springextensions.actionscript.stage.FlashStageProcessorRegistry;
+	import org.springextensions.actionscript.stage.FlexStageDefaultObjectSelector;
 	
 	import spark.components.Application;
 	
-//	[RouteEvents(events='AppEvent.INITIALIZE_CLIENT')]
-//	[Event(name='AppEvent.INITIALIZE_CLIENT',type='com.masuland.loginexample.control.event.AppEvent')]
+//	[RouteEvents(events='AppEvent.INIT_APP')]
+//	[Event(name='AppEvent.INIT_APP',type='com.masuland.loginexample.control.event.AppEvent')]
 	public class AppConfig extends EventDispatcher implements IMXMLObject
 	{
 		//----------------------
@@ -32,12 +34,13 @@ package com.masuland.loginexample
 //		[Embed(source='application-config.xml', mimeType ='application/octet-stream')]
 //		public var contextConfig:Class;
 		
-		public var applicationContext:FlexXMLApplicationContext;
+		public var applicationContext:XMLApplicationContext;
 		
 		// Force inclusion of classes not referenced elsewhere in the code
 		{
 			AppController, 
 			AppMockDelegate, 
+			FlexStageDefaultObjectSelector,
 			EventHandlerMetadataProcessor, 
 			DefaultAutowiringStageProcessor, 
 			RouteEventsMetaDataProcessor
@@ -49,11 +52,12 @@ package com.masuland.loginexample
 		
 		public function initialized(document:Object, id:String):void
 		{
-			applicationContext = new FlexXMLApplicationContext();
+			FlashStageProcessorRegistry.getInstance().stage = (FlexGlobals.topLevelApplication as Application).stage;
+			applicationContext = new XMLApplicationContext();
 			
 			// Embed
 //			applicationContext.addEmbeddedConfig(contextConfig);
-//			dispatchEvent(new AppEvent(AppEvent.INITIALIZE_CLIENT));
+//			dispatchEvent(new AppEvent(AppEvent.INIT_APP));
 			
 			// Load
 			(FlexGlobals.topLevelApplication as Application).addEventListener(FlexEvent.INITIALIZE, loadContext);
@@ -73,7 +77,7 @@ package com.masuland.loginexample
 		
 		protected function loadContext_completeHandler(event:Event):void 
 		{
-			EventBus.dispatchEvent(new AppEvent(AppEvent.INITIALIZE_CLIENT));
+			EventBus.dispatchEvent(new AppEvent(AppEvent.INIT_APP));
 		}
 		
 		protected function loadContext_ioErrorHandler(event:IOErrorEvent):void 

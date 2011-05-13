@@ -10,6 +10,9 @@ package com.masuland.loginexample.view.component
 	import spark.components.supportClasses.SkinnableComponent;
 
 	[Event(name='newDateSet', type='flash.events.Event')]
+	/**
+	 * @author masuland.com
+	 */
 	public class DatePickerCP extends SkinnableComponent
 	{
 		//----------------------

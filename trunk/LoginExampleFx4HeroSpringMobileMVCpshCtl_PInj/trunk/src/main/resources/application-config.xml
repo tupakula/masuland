@@ -8,6 +8,14 @@
 	
 	<!-- PROCESSOR -->	
 	
+<!--	<object -->
+<!--		id="autowiringStageProcessor" -->
+<!--		class="org.springextensions.actionscript.stage.DefaultAutowiringStageProcessor"-->
+<!--		class="org.springextensions.actionscript.ioc.autowire.DefaultFlexAutowireProcessor"-->
+<!--		autowire="byType"-->
+<!--		singleton="true"-->
+<!--		/>-->
+
 	<object 
 		id="autowiringStageProcessor" 
 		class="org.springextensions.actionscript.stage.DefaultAutowiringStageProcessor"

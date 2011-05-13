@@ -12,6 +12,9 @@ package com.masuland.loginexample.view.component
 
 	[SkinState('portrait')]
 	[SkinState('landscape')]
+	/**
+	 * @author masuland.com
+	 */
 	public class LayoutStackCP extends SkinnableComponent
 	{
 		//----------------------

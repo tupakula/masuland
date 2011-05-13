@@ -10,6 +10,9 @@ package com.masuland.loginexample.view.component
 	import spark.components.Group;
 	import spark.components.supportClasses.SkinnableComponent;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class AppViewCP extends SkinnableComponent
 	{
 		//----------------------
