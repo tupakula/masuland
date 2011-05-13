@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<s:Application 
-	xmlns:fx="http://ns.adobe.com/mxml/2009" 
-	xmlns:s="library://ns.adobe.com/flex/spark" 
-	xmlns:loginexample="com.masuland.loginexample.*"
-	xmlns:component="com.masuland.loginexample.view.component.*"
-	width="100%" height="100%" 
-	pageTitle="Robotlegs/Signals (MVCbCmd) - Login Example (Fx4, Hero)"
-	viewSourceURL="srcview/index.html" 
-	>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+			   xmlns:s="library://ns.adobe.com/flex/spark"
+			   xmlns:loginexample="com.masuland.loginexample.*"
+			   xmlns:component="com.masuland.loginexample.view.component.*"
+			   width="100%" height="100%"
+			   pageTitle="Robotlegs/Signals (MVCbCmd) - Login Example (Fx4, Hero)">
 	
 	<fx:Metadata>
 		[ResourceBundle("resources")]

@@ -4,11 +4,14 @@ package com.masuland.loginexample.data.vo
 
 	[Bindable]
 	/**
-	 * 
-	 * @author Sebastian.Mohr (masuland@gmail.com)
+	 * @author masuland.com
 	 */
 	public class LayoutVO
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		public var name:String;
 		public var width:Number;
 		public var height:Number;
@@ -16,9 +19,11 @@ package com.masuland.loginexample.data.vo
 		public var styles:ArrayCollection; // List of StyleVOs
 		public var locales:ArrayCollection; // List of LocaleVOs
 		
-		public function LayoutVO() {}
-
-		public function toString() : String
+		//----------------------
+		// Methods
+		//----------------------
+		
+		public function toString():String
 		{
 			return name;
 		}

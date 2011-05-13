@@ -11,23 +11,22 @@ package com.masuland.loginexample.business
 	import mx.rpc.AsyncToken;
 	
 	import org.swizframework.utils.services.MockDelegateHelper;
- 
+	
 	/**
-	 * 
-	 * @author masu
+	 * @author masuland.com
 	 */
 	public class AppMockDelegate implements IAppDelegate
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		protected var _helper:MockDelegateHelper = new MockDelegateHelper(); 
-
-		/**
-		 * 
-		 */
-		public function AppMockDelegate() {}
- 
-		/**
-		 * 
-		 */
+		
+		//----------------------
+		// Methods
+		//----------------------
+		
 		public function getSettings():AsyncToken
 		{
 			var settings:SettingsVO = new SettingsVO();
@@ -127,10 +126,7 @@ package com.masuland.loginexample.business
 			
 			return _helper.createMockResult(settings, 500);
 		}
-
-		/**
-		 * 
-		 */
+		
 		public function login(auth:AuthenticationVO):AsyncToken
 		{
 			var user:UserVO = new UserVO();
@@ -138,10 +134,7 @@ package com.masuland.loginexample.business
 			
 			return _helper.createMockResult(user, 500);
 		}
-
-		/**
-		 * 
-		 */
+		
 		public function register(auth:AuthenticationVO):AsyncToken
 		{
 			var user:UserVO = new UserVO();
@@ -150,20 +143,10 @@ package com.masuland.loginexample.business
 			
 			return _helper.createMockResult(user, 500);
 		}
-
-		/**
-		 * 
-		 */
+		
 		public function updateUser(user:UserVO):AsyncToken
 		{
-			var userClone:UserVO = new UserVO();
-			userClone.username = user.username;
-			userClone.firstname = user.firstname;
-			userClone.lastname = user.lastname;
-			userClone.email = user.email;
-			userClone.birthday = user.birthday;
-			
-			return _helper.createMockResult(userClone, 500);
+			return _helper.createMockResult(user.clone(), 500);
 		}
 	}
 }

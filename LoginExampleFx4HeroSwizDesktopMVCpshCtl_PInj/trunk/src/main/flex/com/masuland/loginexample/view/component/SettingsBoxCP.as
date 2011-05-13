@@ -21,6 +21,9 @@ package com.masuland.loginexample.view.component
 
 	[SkinState('closed')]
 	[SkinState('open')]
+	/**
+	 * @author masuland.com
+	 */
 	public class SettingsBoxCP extends SkinnableComponent
 	{
 		//----------------------

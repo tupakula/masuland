@@ -24,6 +24,9 @@ package com.masuland.loginexample.view.component
 
 	[SkinState('portrait')]
 	[SkinState('landscape')]
+	/**
+	 * @author masuland.com
+	 */
 	public class SettingsBoxCP extends SkinnableComponent
 	{
 		//----------------------
@@ -47,7 +50,6 @@ package com.masuland.loginexample.view.component
 		//----------------------
 		
 		[Inject]
-//		[Bindable]
 		public var appModel:AppModel;
 		
 		[Inject]

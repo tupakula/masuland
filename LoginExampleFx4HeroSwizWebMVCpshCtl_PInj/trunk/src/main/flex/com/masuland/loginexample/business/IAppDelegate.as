@@ -4,7 +4,10 @@ package com.masuland.loginexample.business
 	import com.masuland.loginexample.data.vo.UserVO;
 	
 	import mx.rpc.AsyncToken;
- 
+	
+	/**
+	 * @author masuland.com
+	 */
 	public interface IAppDelegate
 	{
 		/**

@@ -6,6 +6,9 @@ package com.masuland.loginexample.view.component
 
 	[SkinState('web')]
 	[SkinState('phone')]
+	/**
+	 * @author masuland.com
+	 */
 	public class LayoutStackCP extends SkinnableComponent
 	{
 		//----------------------

@@ -2,17 +2,22 @@ package com.masuland.loginexample.data.vo
 {
 	[Bindable]
 	/**
-	 * 
-	 * @author Sebastian.Mohr (masuland@gmail.com)
+	 * @author masuland.com
 	 */
 	public class StyleVO
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		public var name:String;
 		public var path:String;
 		
-		public function StyleVO() {}
+		//----------------------
+		// Methods
+		//----------------------
 		
-		public function toString() : String
+		public function toString():String
 		{
 			return name;
 		}

@@ -12,19 +12,14 @@ package com.masuland.loginexample.business
 	import mx.rpc.AsyncToken;
 	
 	/**
-	 * 
-	 * @author masu
+	 * @author masuland.com
 	 */
 	public class AppMockDelegate implements IAppDelegate
 	{
-		/**
-		 * 
-		 */
-		public function AppMockDelegate() {}
+		//----------------------
+		// Methods
+		//----------------------
 		
-		/**
-		 * 
-		 */
 		public function getSettings():AsyncToken
 		{
 			var settings:SettingsVO = new SettingsVO();
@@ -76,10 +71,7 @@ package com.masuland.loginexample.business
 			
 			return MockDelegateHelper.createMockResult(settings, 500, true);
 		}
-
-		/**
-		 * 
-		 */
+		
 		public function login(auth:AuthenticationVO):AsyncToken
 		{
 			var user:UserVO = new UserVO();
@@ -87,10 +79,7 @@ package com.masuland.loginexample.business
 			
 			return MockDelegateHelper.createMockResult(user, 500, true);
 		}
-
-		/**
-		 * 
-		 */
+		
 		public function register(auth:AuthenticationVO):AsyncToken
 		{
 			var user:UserVO = new UserVO();
@@ -99,20 +88,10 @@ package com.masuland.loginexample.business
 			
 			return MockDelegateHelper.createMockResult(user, 500, true);
 		}
-
-		/**
-		 * 
-		 */
+		
 		public function updateUser(user:UserVO):AsyncToken
 		{
-			var userClone:UserVO = new UserVO();
-			userClone.username = user.username;
-			userClone.firstname = user.firstname;
-			userClone.lastname = user.lastname;
-			userClone.email = user.email;
-			userClone.birthday = user.birthday;
-			
-			return MockDelegateHelper.createMockResult(userClone, 500, true);
+			return MockDelegateHelper.createMockResult(user.clone(), 500, true);
 		}
 	}
 }

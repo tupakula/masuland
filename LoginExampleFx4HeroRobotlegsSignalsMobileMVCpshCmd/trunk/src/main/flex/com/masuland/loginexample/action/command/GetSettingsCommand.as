@@ -13,6 +13,9 @@ package com.masuland.loginexample.action.command
 	
 	import org.robotlegs.mvcs.SignalCommand;
 	
+	/**
+	 * @author masuland.com
+	 */
 	public class GetSettingsCommand extends SignalCommand
 	{
 		//----------------------
@@ -42,7 +45,6 @@ package com.masuland.loginexample.action.command
 		// Handler
 		//----------------------
 		
-		/**  */
 		protected function getSettings_resultHandler(event:ResultEvent):void
 		{
 			appModel.settings = SettingsVO( event.result );
@@ -51,7 +53,6 @@ package com.masuland.loginexample.action.command
 			loadLayoutSignal.dispatch(LayoutVO( appModel.settings.layouts.getItemAt(0) ), true);
 		}
 		
-		/**  */
 		protected function getSettings_faultHandler(event:FaultEvent):void
 		{
 //			Alert.show('getSettings_fault: ' + event.fault);

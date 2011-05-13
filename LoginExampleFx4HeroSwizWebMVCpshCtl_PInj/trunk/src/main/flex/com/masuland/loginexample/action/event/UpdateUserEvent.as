@@ -3,23 +3,38 @@ package com.masuland.loginexample.action.event
 	import com.masuland.loginexample.data.vo.UserVO;
 	
 	import flash.events.Event;
-	import flash.utils.getQualifiedClassName;
 
-	/**  */
+	/**
+	 * @author masuland.com
+	 */
 	public class UpdateUserEvent extends Event
 	{	
-		/**  */
-		public static const EVENT_NAME:String = 'com.masuland.loginexample.swiz.control.event.UpdateUserEvent.EVENT_NAME';
+		//----------------------
+		// Constants
+		//----------------------
+		
+		public static const EVENT_NAME:String = 'UpdateUserEvent.EVENT_NAME';
+		
+		//----------------------
+		// Properties
+		//----------------------
 		
 		public var user:UserVO;
 		
-		/**  */
-		public function UpdateUserEvent(user:UserVO, cancelable:Boolean=false)
+		//----------------------
+		// Constructor
+		//----------------------
+		
+		public function UpdateUserEvent(user:UserVO, bubbles:Boolean=true, cancelable:Boolean=true)
 		{
-			super(EVENT_NAME, true, cancelable);
+			super(EVENT_NAME, bubbles, cancelable);
 			
 			this.user = user;
 		}
+		
+		//----------------------
+		// Methods
+		//----------------------
 		
 		override public function clone():Event
 		{

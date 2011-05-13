@@ -1,6 +1,5 @@
 package com.masuland.loginexample.business
 {
-	import com.masuland.loginexample.business.helper.MockDelegateHelper;
 	import com.masuland.loginexample.data.vo.AuthenticationVO;
 	import com.masuland.loginexample.data.vo.LayoutVO;
 	import com.masuland.loginexample.data.vo.LocaleVO;
@@ -11,20 +10,23 @@ package com.masuland.loginexample.business
 	import mx.collections.ArrayCollection;
 	import mx.rpc.AsyncToken;
 	
+	import org.swizframework.utils.services.MockDelegateHelper;
+	
 	/**
-	 * 
-	 * @author masu
+	 * @author masuland.com
 	 */
 	public class AppMockDelegate implements IAppDelegate
 	{
-		/**
-		 * 
-		 */
-		public function AppMockDelegate() {}
+		//----------------------
+		// Properties
+		//----------------------
 		
-		/**
-		 * 
-		 */
+		protected var _helper:MockDelegateHelper = new MockDelegateHelper(); 
+		
+		//----------------------
+		// Methods
+		//----------------------
+		
 		public function getSettings():AsyncToken
 		{
 			var settings:SettingsVO = new SettingsVO();
@@ -122,45 +124,29 @@ package com.masuland.loginexample.business
 			layout.locales = locales;
 			settings.layouts.addItem(layout);
 			
-			return MockDelegateHelper.createMockResult(settings, 500, true);
+			return _helper.createMockResult(settings, 500);
 		}
-
-		/**
-		 * 
-		 */
+		
 		public function login(auth:AuthenticationVO):AsyncToken
 		{
 			var user:UserVO = new UserVO();
 			user.username = auth.username;
 			
-			return MockDelegateHelper.createMockResult(user, 500, true);
+			return _helper.createMockResult(user, 500);
 		}
-
-		/**
-		 * 
-		 */
+		
 		public function register(auth:AuthenticationVO):AsyncToken
 		{
 			var user:UserVO = new UserVO();
 			user.username = auth.username;
 			user.email = auth.email;
 			
-			return MockDelegateHelper.createMockResult(user, 500, true);
+			return _helper.createMockResult(user, 500);
 		}
-
-		/**
-		 * 
-		 */
+		
 		public function updateUser(user:UserVO):AsyncToken
 		{
-			var userClone:UserVO = new UserVO();
-			userClone.username = user.username;
-			userClone.firstname = user.firstname;
-			userClone.lastname = user.lastname;
-			userClone.email = user.email;
-			userClone.birthday = user.birthday;
-			
-			return MockDelegateHelper.createMockResult(userClone, 500, true);
+			return _helper.createMockResult(user.clone(), 500);
 		}
 	}
 }

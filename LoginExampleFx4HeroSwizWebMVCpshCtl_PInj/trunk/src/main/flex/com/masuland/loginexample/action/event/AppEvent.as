@@ -2,18 +2,37 @@ package com.masuland.loginexample.action.event
 {
 	import flash.events.Event;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class AppEvent extends Event
 	{
-		public static const INITIALIZE_CLIENT:String = 'com.masuland.loginexample.swiz.control.event.AppEvent.INITIALIZE_CLIENT';
-		public static const GET_SETTINGS:String = 'com.masuland.loginexample.swiz.control.event.AppEvent.GET_SETTINGS';
-		public static const GOTO_LOGIN:String = 'com.masuland.loginexample.swiz.control.event.AppEvent.GOTO_LOGIN';
-		public static const GOTO_REGISTER:String = 'com.masuland.loginexample.swiz.control.event.AppEvent.GOTO_REGISTER';
-		public static const LOGOUT:String = 'com.masuland.loginexample.swiz.control.event.AppEvent.LOGOUT';
+		//----------------------
+		// Constants
+		//----------------------
+		
+		public static const INIT_APP:String = 'AppEvent.INIT_APP';
+		public static const GET_SETTINGS:String = 'AppEvent.GET_SETTINGS';
+		public static const GOTO_LOGIN:String = 'AppEvent.GOTO_LOGIN';
+		public static const GOTO_REGISTER:String = 'AppEvent.GOTO_REGISTER';
+		public static const LOGOUT:String = 'AppEvent.LOGOUT';
 
-		/**  */
-		public function AppEvent(type:String, cancelable:Boolean=false)
+		//----------------------
+		// Constructor
+		//----------------------
+		
+		public function AppEvent(type:String, bubbles:Boolean=true, cancelable:Boolean=true)
 		{
-			super(type, true, cancelable);
+			super(type, bubbles, cancelable);
+		}
+		
+		//----------------------
+		// Methods
+		//----------------------
+		
+		override public function clone():Event
+		{
+			return new AppEvent(type);
 		}
 	}
 }

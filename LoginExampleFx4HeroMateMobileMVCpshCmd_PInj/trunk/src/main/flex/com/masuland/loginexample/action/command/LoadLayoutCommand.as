@@ -9,6 +9,9 @@ package com.masuland.loginexample.action.command
 	
 	import flash.events.IEventDispatcher;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class LoadLayoutCommand
 	{
 		//----------------------
@@ -32,9 +35,6 @@ package com.masuland.loginexample.action.command
 		// Methods
 		//----------------------
 		
-		/**
-		 * 
-		 */
 		public function loadLayout(layout:LayoutVO, refreshStyleAndLocales:Boolean):void 
 		{
 			appModel.currentLayout = layout;

@@ -10,8 +10,7 @@ package com.masuland.loginexample.data
 
 	[Bindable]
 	/**
-	 * The Model
-	 * @author Sebastian.Mohr (masuland@gmail.com)
+	 * @author masuland.com
 	 */
 	public class AppModel
 	{		
@@ -22,7 +21,6 @@ package com.masuland.loginexample.data
 		public var currentUser:UserVO;
 		
 		public var settings:SettingsVO;
-		
 		public var currentStyle:StyleVO;
 		public var currentLayout:LayoutVO;
 		public var currentLocale:LocaleVO;
