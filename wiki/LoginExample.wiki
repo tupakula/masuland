@@ -11,15 +11,15 @@ Please read the [LoginExampleFeatureSpec Feature Specification] of the Login Exa
 
 === Login Example for Web ===
 
-http://masuland.googlecode.com/files/LoginExamplePrintScreenWeb.png
+http://masuland.googlecode.com/files/LoginExampleScreenshotWeb.png
 
 === Login Example for Desktop ===
 
-http://masuland.googlecode.com/files/LoginExamplePrintScreenDesktop.png
+http://masuland.googlecode.com/files/LoginExampleScreenshotDesktop.png
 
 === Login Example for Mobile ===
 
-http://masuland.googlecode.com/files/LoginExamplePrintScreenMobile.png
+http://masuland.googlecode.com/files/LoginExampleScreenshotMobile.png
 
 == Flex 3 == 
 
