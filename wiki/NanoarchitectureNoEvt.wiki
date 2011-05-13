@@ -2,13 +2,13 @@
 
 This document describes the application flow of an Adobe Flex 3 and Flex 4 application written in the "No Event" (!NoEvt) nanoarchitecture. It is based on the [NanoarchitectureMVCb "Model - View - Code Behind" (MVCb)] nanoarchitecture but avoids dispatching events inside the application, see arrow (2) and (3) in the following diagram:
 
-http://masuland.googlecode.com/files/FlexApplicationArchitectureNoEvt.png
+http://masuland.googlecode.com/files/NanoarchitectureNoEvt.png
 
 == Application Layer Dependency ==
 
 This Nanoarchitecture assumes to have the following dependency between their application layers:
 
-http://masuland.googlecode.com/files/ApplicationLayerDependencyNoEvt.png
+http://masuland.googlecode.com/files/LayerDependencyNoEvt.png
 
 == Application Flows ==
 
