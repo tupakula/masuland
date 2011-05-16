@@ -110,16 +110,6 @@ package com.masuland.religionchooser.action
 			ResourceManager.getInstance().localeChain = [ appModel.currentLocale.code ];
 			ResourceManager.getInstance().update();
 			
-			// TODO ... Resource update bug
-			
-/*			var oldLoginBoxState:String = appModel.loginBoxState;
-			appModel.loginBoxState = LoginBoxState.HIDDEN;
-			appModel.loginBoxState = oldLoginBoxState;
-			
-			var oldAppStackState:String = appModel.appStackState;
-			appModel.appStackState = AppStackState.HIDDEN;
-			appModel.appStackState = oldAppStackState;
-*/			
 /*			var resourceModuleURL:String;
 			var eventDispatcher:IEventDispatcher;
 			
