@@ -26,8 +26,15 @@ package com.masuland.religionchooser.action
 	import mx.styles.IStyleManager2;
 	import mx.styles.StyleManager;
 	
+	/**
+	 * @author masuland.com
+	 */
 	public class AppController
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[MessageDispatcher]
 		public var dispatcher:Function;
 		
@@ -37,10 +44,10 @@ package com.masuland.religionchooser.action
 /*		[Inject]
 		public var appDelegate:IAppDelegate;
 */		
-
-		/**
-		 * Initialises the application
-		 */
+		//----------------------
+		// Methods
+		//----------------------
+		
 		[MessageHandler(selector='AppEvent.INIT_APP')]
 		public function initApp(event:AppEvent):void
 		{
@@ -52,53 +59,20 @@ package com.masuland.religionchooser.action
 		public function getSettings():void
 		{
 			var service:SettingsXmlService = new SettingsXmlService();
-			service.addEventListener(ResultEvent.RESULT, getSettingsResult);
-			service.addEventListener(FaultEvent.FAULT, getSettingsFault);
+			service.addEventListener(ResultEvent.RESULT, getSettings_resultHandler);
+			service.addEventListener(FaultEvent.FAULT, getSettings_faultHandler);
 			service.getData();
 		}
 		
-		protected function getSettingsResult(event:ResultEvent):void
-		{
-			var settings:SettingsVO = event.result as SettingsVO;
-			
-			if (settings)
-			{
-				appModel.settings = settings;
-				
-				dispatcher(new LoadLayoutEvent(LayoutVO( settings.layoutVO.getItemAt(0) )));
-			}
-		}
-		
-		protected function getSettingsFault(event:FaultEvent):void
-		{
-			Alert.show('getSettingsFault(): ' + event.fault.faultString);
-		}
-
 		[MessageHandler(selector='AppEvent.GET_CONTENT')]
 		public function getContent():void
 		{
 			var service:ContentXmlService = new ContentXmlService();
-			service.addEventListener(ResultEvent.RESULT, getContentResult);
-			service.addEventListener(FaultEvent.FAULT, getContentFault);
+			service.addEventListener(ResultEvent.RESULT, getContent_resultHandler);
+			service.addEventListener(FaultEvent.FAULT, getContent_faultHandler);
 			service.getData();
 		}
-
-		protected function getContentResult(event:ResultEvent):void
-		{
-			appModel.rootQuestion = QuestionVO( event.result );
-			appModel.selectedQuestion = QuestionVO( event.result );
-			
-			appModel.appViewState = ContentBoxState.QUESTION;
-		}
 		
-		protected function getContentFault(event:FaultEvent):void
-		{
-			Alert.show('getContentFault(): ' + event.fault.faultString);
-		}
-		
-		/**
-		 * Changes the selected question
-		 */
 		[MessageHandler(selector='AppEvent.CHANGE_SELECTED_QUESTION')]
 		public function changeSelectedQuestion(event:AppEvent):void
 		{
@@ -106,19 +80,13 @@ package com.masuland.religionchooser.action
 			appModel.selectedQuestion = event.question;
 		}
 		
-		/**
-		 * Show result
-		 */
 		[MessageHandler(selector='AppEvent.SHOW_RESULT')]
 		public function showResult(event:AppEvent):void
 		{
 			appModel.appViewState = ContentBoxState.RESULT;
 			appModel.selectedResult = event.result;
 		}
-
-		/**
-		 * Restart
-		 */
+		
 		[MessageHandler(selector='AppEvent.RESTART')]
 		public function restart(event:AppEvent):void
 		{
@@ -126,14 +94,6 @@ package com.masuland.religionchooser.action
 			appModel.selectedQuestion = appModel.rootQuestion;
 		}
 		
-
-		//---------------
-		// GUI Loading
-		//---------------
-
-		/**
-		 * 
-		 */
 		[MessageHandler]
 		public function loadLayout(event:LoadLayoutEvent):void 
 		{
@@ -146,10 +106,6 @@ package com.masuland.religionchooser.action
 			dispatcher(new LoadLocaleEvent(LocaleVO( appModel.currentLayout.localeVO.getItemAt(0) )));
 		}
 		
-
-		/**
-		 * 
-		 */
 		[MessageHandler]
 		public function loadLocale(event:LoadLocaleEvent):void 
 		{
@@ -168,42 +124,23 @@ package com.masuland.religionchooser.action
 			appModel.appStackState = AppStackState.HIDDEN;
 			appModel.appStackState = oldAppStackState;
 */			
-			/*			var resourceModuleURL:String;
+/*			var resourceModuleURL:String;
 			var eventDispatcher:IEventDispatcher;
 			
 			if (appModel.currentLocale != null)
 			{
-			resourceModuleURL = 'AppResources_' + appModel.currentLocale.code + '.swf';
-			eventDispatcher = ResourceManager.getInstance().loadResourceModule(resourceModuleURL);
-			
-			if (eventDispatcher != null)
-			{
-			eventDispatcher.addEventListener(ResourceEvent.COMPLETE, onLoadLocaleComplete);
-			eventDispatcher.addEventListener(ResourceEvent.ERROR, onLoadLocaleError);
+				resourceModuleURL = 'AppResources_' + appModel.currentLocale.code + '.swf';
+				eventDispatcher = ResourceManager.getInstance().loadResourceModule(resourceModuleURL);
+				
+				if (eventDispatcher != null)
+				{
+					eventDispatcher.addEventListener(ResourceEvent.COMPLETE, onLoadLocaleComplete);
+					eventDispatcher.addEventListener(ResourceEvent.ERROR, onLoadLocaleError);
+				}
 			}
-			}
-		*/
-		}
-
-		/**
-		 * 
-		 */
-		private function onLoadLocaleComplete(event:ResourceEvent):void
-		{	    	
-			ResourceManager.getInstance().localeChain = [ appModel.currentLocale.code ];
+*/
 		}
 		
-		/**
-		 * 
-		 */
-		private function onLoadLocaleError(event:ResourceEvent):void
-		{	    	
-		}
-		
-
-		/**
-		 * 
-		 */
 		[MessageHandler]
 		public function loadStyle(event:LoadStyleEvent):void 
 		{
@@ -222,29 +159,62 @@ package com.masuland.religionchooser.action
 				appModel.currentStyle = event.style;
 				
 				myEvent = myStyleManager.loadStyleDeclarations(event.style.path, true);
-				myEvent.addEventListener(StyleEvent.COMPLETE, onLoadStyleComplete);
-				myEvent.addEventListener(StyleEvent.ERROR, onLoadStyleError);
+				myEvent.addEventListener(StyleEvent.COMPLETE, loadStyle_completeHandler);
+				myEvent.addEventListener(StyleEvent.ERROR, loadStyle_errorHandler);
 			}
 		}
 		
-		/**
-		 * 
-		 */
-		private function onLoadStyleComplete(event:StyleEvent):void
+		//----------------------
+		// Handler
+		//----------------------
+		
+		protected function getSettings_resultHandler(event:ResultEvent):void
 		{
-			trace('');
+			var settings:SettingsVO = event.result as SettingsVO;
 			
-//			appModel.isApplicationVisible = true;
+			if (settings)
+			{
+				appModel.settings = settings;
+				
+				dispatcher(new LoadLayoutEvent(LayoutVO( settings.layoutVO.getItemAt(0) )));
+			}
 		}
 		
-		/**
-		 * 
-		 */
-		private function onLoadStyleError(event:StyleEvent):void
+		protected function getSettings_faultHandler(event:FaultEvent):void
 		{
-			trace('');
+			Alert.show('getSettingsFault(): ' + event.fault.faultString);
+		}
+
+		protected function getContent_resultHandler(event:ResultEvent):void
+		{
+			appModel.rootQuestion = QuestionVO( event.result );
+			appModel.selectedQuestion = QuestionVO( event.result );
 			
-//			appModel.isApplicationVisible = true;
+			appModel.appViewState = ContentBoxState.QUESTION;
+		}
+		
+		protected function getContent_faultHandler(event:FaultEvent):void
+		{
+			Alert.show('getContentFault(): ' + event.fault.faultString);
+		}
+
+		protected function loadLocale_completeHandler(event:ResourceEvent):void
+		{	    	
+			ResourceManager.getInstance().localeChain = [ appModel.currentLocale.code ];
+		}
+		
+		protected function loadLocale_errorHandler(event:ResourceEvent):void
+		{	    	
+		}
+		
+		protected function loadStyle_completeHandler(event:StyleEvent):void
+		{
+			appModel.isApplicationVisible = true;
+		}
+		
+		protected function loadStyle_errorHandler(event:StyleEvent):void
+		{
+			appModel.isApplicationVisible = true;
 		}
 	}
 }
