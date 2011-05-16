@@ -8,32 +8,43 @@ package com.masuland.religionchooser.view.component
 	
 	import spark.components.supportClasses.SkinnableComponent;
 	
-	[SkinState("question")]
-	[SkinState("result")]
+	[SkinState('question')]
+	[SkinState('result')]
+	/**
+	 * @author masuland.com
+	 */
 	public class ContentBoxCP extends SkinnableComponent
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[MessageDispatcher]
 		public var dispatcher:Function;
 
-		[Subscribe(objectId="currentLayout")]
+		[Subscribe(scope='appModel', objectId='currentLayout')]
 		[Bindable]
 		public var currentLayout:LayoutVO;
 
-		[Subscribe(objectId="currentLocale")]
+		[Subscribe(scope='appModel', objectId='currentLocale')]
 		[Bindable]
 		public var currentLocale:LocaleVO;
 
-		[Subscribe(objectId="selectedQuestion")]
+		[Subscribe(scope='appModel', objectId='selectedQuestion')]
 		[Bindable]
 		public var selectedQuestion:QuestionVO;
 
-		[Subscribe(objectId="selectedResult")]
+		[Subscribe(scope='appModel', objectId='selectedResult')]
 		[Bindable]
 		public var selectedResult:ResultVO;
 
-		[Subscribe(objectId="appViewState")]
+		[Subscribe(scope='appModel', objectId='appViewState')]
 		[Bindable]
 		public var appViewState:String;
+		
+		//----------------------
+		// Constructor
+		//----------------------
 		
 		public function ContentBoxCP()
 		{
@@ -42,6 +53,10 @@ package com.masuland.religionchooser.view.component
 				dispatchEvent(new Event('configureIOC', true));
 			});
 		}
+		
+		//----------------------
+		// Methods
+		//----------------------
 		
 		public function restart():void
 		{

@@ -11,29 +11,40 @@ package com.masuland.religionchooser.view.component
 	import spark.components.ToggleButton;
 	import spark.components.supportClasses.SkinnableComponent;
 	
-	[SkinState("closed")]
-	[SkinState("open")]
-	[SkinState("openMore")]
+	[SkinState('closed')]
+	[SkinState('open')]
+	[SkinState('openMore')]
+	/**
+	 * @author masuland.com
+	 */
 	public class SettingsBoxCP extends SkinnableComponent
 	{
+		//----------------------
+		// Skin Parts
+		//----------------------
+		
+		[SkinPart(require='true')]
+		public var btn_settings:ToggleButton;
+		
+		[SkinPart(require='false')]
+		public var btn_moreSettings:ToggleButton;
+
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[MessageDispatcher]
 		public var dispatcher:Function;
 
-		[SkinPart(require="true")]
-		public var btn_settings:ToggleButton;
-
-		[SkinPart(require="false")]
-		public var btn_moreSettings:ToggleButton;
-
-		[Subscribe(objectId="currentLayout")]
+		[Subscribe(scope='appModel', objectId='currentLayout')]
 		[Bindable]
 		public var currentLayout:LayoutVO;
 		
-		[Subscribe(objectId="currentStyle")]
+		[Subscribe(scope='appModel', objectId='currentStyle')]
 		[Bindable]
 		public var currentStyle:StyleVO;
 		
-		[Subscribe(objectId="currentLocale")]
+		[Subscribe(scope='appModel', objectId='currentLocale')]
 		[Bindable]
 		public var currentLocale:LocaleVO;
 		
@@ -43,6 +54,10 @@ package com.masuland.religionchooser.view.component
 		[Bindable]
 		public var moreSettingsButtonSelected:Boolean = false;
 
+		//----------------------
+		// Skin Parts
+		//----------------------
+		
 		public function SettingsBoxCP()
 		{
 			addEventListener(Event.ADDED_TO_STAGE, function():void
@@ -51,6 +66,10 @@ package com.masuland.religionchooser.view.component
 			});
 		}
 
+		//----------------------
+		// Skin Parts
+		//----------------------
+		
 		override protected function getCurrentSkinState():String
 		{
 			if (settingsButtonSelected && moreSettingsButtonSelected)
@@ -77,7 +96,11 @@ package com.masuland.religionchooser.view.component
 			dispatcher(new LoadLocaleEvent(locale));
 		}
 		
-		public function settingsButton_clickHandler(event:MouseEvent):void
+		//----------------------
+		// Skin Parts
+		//----------------------
+		
+		public function btn_settings_clickHandler(event:MouseEvent):void
 		{
 			if (settingsButtonSelected)
 			{
@@ -91,7 +114,7 @@ package com.masuland.religionchooser.view.component
 			invalidateSkinState();
 		}
 		
-		public function moreSettingsButton_clickHandler(event:MouseEvent):void
+		public function btn_moreSettings_clickHandler(event:MouseEvent):void
 		{
 			if (moreSettingsButtonSelected)
 			{

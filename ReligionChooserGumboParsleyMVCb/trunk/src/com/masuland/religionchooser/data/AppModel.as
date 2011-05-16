@@ -21,40 +21,41 @@ package com.masuland.religionchooser.data
 		
 		// Settings
 		
-		[Publish(objectId='settings')]
+		[Publish(scope='appModel', objectId='settings')]
 		public var settings:SettingsVO;
 
-		[Publish(objectId='currentLayout')]
+		[Publish(scope='appModel', objectId='currentLayout')]
 		public var currentLayout:LayoutVO;
 
-		[Publish(objectId='currentLocale')]
+		[Publish(scope='appModel', objectId='currentLocale')]
 		public var currentLocale:LocaleVO;
 		
-		[Publish(objectId='currentStyle')]
+		[Publish(scope='appModel', objectId='currentStyle')]
 		public var currentStyle:StyleVO;
 		
 		// Content
 		
-		[Publish(objectId='rootQuestion')]
+		[Publish(scope='appModel', objectId='rootQuestion')]
 		public var rootQuestion:QuestionVO;
 		
-		[Publish(objectId='selectedQuestion')]
+		[Publish(scope='appModel', objectId='selectedQuestion')]
 		public var selectedQuestion:QuestionVO;
 		
-		[Publish(objectId='selectedResult')]
+		[Publish(scope='appModel', objectId='selectedResult')]
 		public var selectedResult:ResultVO;
-		
-		[Publish(objectId='appViewState')]
-		public var appViewState:String;
 
 		//---------------
 		// Flags
 		//---------------
 		
+		[Publish(scope='appModel', objectId='isApplicationVisible')]
+		public var isApplicationVisible:Boolean;
 		
 		//---------------
 		// States
 		//---------------
 		
+		[Publish(scope='appModel', objectId='appViewState')]
+		public var appViewState:String;
 	}
 }
