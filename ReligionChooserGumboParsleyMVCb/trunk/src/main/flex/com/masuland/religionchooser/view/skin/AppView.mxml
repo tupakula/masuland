@@ -49,7 +49,7 @@
 				>
 
 				<mx:Image
-					source="content/sun_icon.png"
+					source="images/icon_masuland.png"
 					buttonMode="true"
 					useHandCursor="true"
 					mouseChildren="true"

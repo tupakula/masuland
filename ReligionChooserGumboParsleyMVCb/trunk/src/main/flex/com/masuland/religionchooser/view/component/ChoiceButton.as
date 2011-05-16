@@ -1,10 +1,10 @@
 package com.masuland.religionchooser.view.component
 {
 	import com.masuland.religionchooser.action.event.AppEvent;
-	import com.masuland.religionchooser.vo.ChoiceVO;
-	import com.masuland.religionchooser.vo.LangVO;
-	import com.masuland.religionchooser.vo.LayoutVO;
-	import com.masuland.religionchooser.vo.LocaleVO;
+	import com.masuland.religionchooser.data.vo.ChoiceVO;
+	import com.masuland.religionchooser.data.vo.LangVO;
+	import com.masuland.religionchooser.data.vo.LayoutVO;
+	import com.masuland.religionchooser.data.vo.LocaleVO;
 	
 	import flash.events.Event;
 	import flash.events.MouseEvent;
