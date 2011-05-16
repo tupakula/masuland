@@ -1,11 +1,11 @@
 package com.masuland.religionchooser.data
 {
-	import com.masuland.religionchooser.vo.LayoutVO;
-	import com.masuland.religionchooser.vo.LocaleVO;
-	import com.masuland.religionchooser.vo.QuestionVO;
-	import com.masuland.religionchooser.vo.ResultVO;
-	import com.masuland.religionchooser.vo.SettingsVO;
-	import com.masuland.religionchooser.vo.StyleVO;
+	import com.masuland.religionchooser.data.vo.LayoutVO;
+	import com.masuland.religionchooser.data.vo.LocaleVO;
+	import com.masuland.religionchooser.data.vo.QuestionVO;
+	import com.masuland.religionchooser.data.vo.ResultVO;
+	import com.masuland.religionchooser.data.vo.SettingsVO;
+	import com.masuland.religionchooser.data.vo.StyleVO;
 	
 	import mx.collections.ArrayCollection;
 
