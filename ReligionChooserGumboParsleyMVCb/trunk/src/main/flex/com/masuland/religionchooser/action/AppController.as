@@ -4,15 +4,16 @@ package com.masuland.religionchooser.action
 	import com.masuland.religionchooser.action.event.LoadLayoutEvent;
 	import com.masuland.religionchooser.action.event.LoadLocaleEvent;
 	import com.masuland.religionchooser.action.event.LoadStyleEvent;
+	import com.masuland.religionchooser.business.IAppDelegate;
 	import com.masuland.religionchooser.data.AppModel;
-	import com.masuland.religionchooser.service.contentxml.ContentXmlService;
-	import com.masuland.religionchooser.service.settingsxml.SettingsXmlService;
 	import com.masuland.religionchooser.data.state.ContentBoxState;
 	import com.masuland.religionchooser.data.vo.LayoutVO;
 	import com.masuland.religionchooser.data.vo.LocaleVO;
 	import com.masuland.religionchooser.data.vo.QuestionVO;
 	import com.masuland.religionchooser.data.vo.SettingsVO;
 	import com.masuland.religionchooser.data.vo.StyleVO;
+	import com.masuland.religionchooser.service.contentxml.ContentXmlService;
+	import com.masuland.religionchooser.service.settingsxml.SettingsXmlService;
 	
 	import flash.events.IEventDispatcher;
 	
@@ -21,6 +22,7 @@ package com.masuland.religionchooser.action
 	import mx.events.ResourceEvent;
 	import mx.events.StyleEvent;
 	import mx.resources.ResourceManager;
+	import mx.rpc.AsyncToken;
 	import mx.rpc.events.FaultEvent;
 	import mx.rpc.events.ResultEvent;
 	import mx.styles.IStyleManager2;
@@ -41,9 +43,9 @@ package com.masuland.religionchooser.action
 		[Inject]
 		public var appModel:AppModel;
 		
-/*		[Inject]
+		[Inject]
 		public var appDelegate:IAppDelegate;
-*/		
+		
 		//----------------------
 		// Methods
 		//----------------------
@@ -58,19 +60,13 @@ package com.masuland.religionchooser.action
 		[MessageHandler(selector='AppEvent.GET_SETTINGS')]
 		public function getSettings():void
 		{
-			var service:SettingsXmlService = new SettingsXmlService();
-			service.addEventListener(ResultEvent.RESULT, getSettings_resultHandler);
-			service.addEventListener(FaultEvent.FAULT, getSettings_faultHandler);
-			service.getData();
+			appDelegate.getSettings(getSettings_resultHandler, getSettings_faultHandler);
 		}
 		
 		[MessageHandler(selector='AppEvent.GET_CONTENT')]
 		public function getContent():void
 		{
-			var service:ContentXmlService = new ContentXmlService();
-			service.addEventListener(ResultEvent.RESULT, getContent_resultHandler);
-			service.addEventListener(FaultEvent.FAULT, getContent_faultHandler);
-			service.getData();
+			appDelegate.getContent(getContent_resultHandler, getContent_faultHandler);
 		}
 		
 		[MessageHandler(selector='AppEvent.CHANGE_SELECTED_QUESTION')]
