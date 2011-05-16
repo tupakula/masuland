@@ -1,4 +1,4 @@
-package com.masuland.religionchooser.model
+package com.masuland.religionchooser.data
 {
 	import com.masuland.religionchooser.vo.LayoutVO;
 	import com.masuland.religionchooser.vo.LocaleVO;
@@ -11,8 +11,7 @@ package com.masuland.religionchooser.model
 
 	[Bindable]
 	/**
-	 * The Model
-	 * @author Sebastian.Mohr (masuland@gmail.com)
+	 * @author masuland.com
 	 */
 	public class AppModel
 	{		
@@ -22,30 +21,30 @@ package com.masuland.religionchooser.model
 		
 		// Settings
 		
-		[Publish(objectId="settings")]
+		[Publish(objectId='settings')]
 		public var settings:SettingsVO;
 
-		[Publish(objectId="currentLayout")]
+		[Publish(objectId='currentLayout')]
 		public var currentLayout:LayoutVO;
 
-		[Publish(objectId="currentLocale")]
+		[Publish(objectId='currentLocale')]
 		public var currentLocale:LocaleVO;
 		
-		[Publish(objectId="currentStyle")]
+		[Publish(objectId='currentStyle')]
 		public var currentStyle:StyleVO;
 		
 		// Content
 		
-		[Publish(objectId="rootQuestion")]
+		[Publish(objectId='rootQuestion')]
 		public var rootQuestion:QuestionVO;
 		
-		[Publish(objectId="selectedQuestion")]
+		[Publish(objectId='selectedQuestion')]
 		public var selectedQuestion:QuestionVO;
 		
-		[Publish(objectId="selectedResult")]
+		[Publish(objectId='selectedResult')]
 		public var selectedResult:ResultVO;
 		
-		[Publish(objectId="appViewState")]
+		[Publish(objectId='appViewState')]
 		public var appViewState:String;
 
 		//---------------

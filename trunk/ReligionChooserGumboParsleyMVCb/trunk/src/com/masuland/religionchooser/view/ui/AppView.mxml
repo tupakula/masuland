@@ -10,7 +10,7 @@
 	>
 	
 	<fx:Metadata>
-		[HostComponent("com.masuland.religionchooser.view.component.AppViewCB")]
+		[HostComponent("com.masuland.religionchooser.view.component.AppViewCP")]
 	</fx:Metadata>
 
 	<fx:Declarations>
@@ -19,13 +19,13 @@
 
 	<fx:Script>
 		<![CDATA[
-			import com.masuland.religionchooser.view.component.AppViewCB;
+			import com.masuland.religionchooser.view.component.AppViewCP;
 			
 			import mx.events.FlexEvent;
 			
 			[Inject]
 			[Bindable]
-			public var cb:AppViewCB;
+			public var cb:AppViewCP;
 			
 			protected function group1_initializeHandler(event:FlexEvent):void
 			{
@@ -57,14 +57,14 @@
 				
 			</s:HGroup>
 			
-			<component:ContentBoxCB 
+			<component:ContentBoxCP 
 				id="bx_content"
 				width="100%" height="100%"
 				/>
 
 		</s:VGroup>
 	
-		<component:SettingsBoxCB
+		<component:SettingsBoxCP
 			id="bx_settings"
 			/>
 

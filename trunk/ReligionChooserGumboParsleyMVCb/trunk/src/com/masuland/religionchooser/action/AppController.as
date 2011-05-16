@@ -1,13 +1,13 @@
-package com.masuland.religionchooser.control
+package com.masuland.religionchooser.action
 {
-	import com.masuland.religionchooser.event.AppEvent;
-	import com.masuland.religionchooser.event.LoadLayoutEvent;
-	import com.masuland.religionchooser.event.LoadLocaleEvent;
-	import com.masuland.religionchooser.event.LoadStyleEvent;
-	import com.masuland.religionchooser.model.AppModel;
+	import com.masuland.religionchooser.action.event.AppEvent;
+	import com.masuland.religionchooser.action.event.LoadLayoutEvent;
+	import com.masuland.religionchooser.action.event.LoadLocaleEvent;
+	import com.masuland.religionchooser.action.event.LoadStyleEvent;
+	import com.masuland.religionchooser.data.AppModel;
 	import com.masuland.religionchooser.service.contentxml.ContentXmlService;
 	import com.masuland.religionchooser.service.settingsxml.SettingsXmlService;
-	import com.masuland.religionchooser.view.component.ContentBoxState;
+	import com.masuland.religionchooser.data.state.ContentBoxState;
 	import com.masuland.religionchooser.vo.LayoutVO;
 	import com.masuland.religionchooser.vo.LocaleVO;
 	import com.masuland.religionchooser.vo.QuestionVO;
@@ -37,19 +37,18 @@ package com.masuland.religionchooser.control
 /*		[Inject]
 		public var appDelegate:IAppDelegate;
 */		
-		public function AppController() {}
 
 		/**
 		 * Initialises the application
 		 */
-		[MessageHandler(selector="AppEvent.INIT_APP")]
+		[MessageHandler(selector='AppEvent.INIT_APP')]
 		public function initApp(event:AppEvent):void
 		{
 			dispatcher(new AppEvent(AppEvent.GET_SETTINGS));
 			dispatcher(new AppEvent(AppEvent.GET_CONTENT));
 		}
 
-		[MessageHandler(selector="AppEvent.GET_SETTINGS")]
+		[MessageHandler(selector='AppEvent.GET_SETTINGS')]
 		public function getSettings():void
 		{
 			var service:SettingsXmlService = new SettingsXmlService();
@@ -75,7 +74,7 @@ package com.masuland.religionchooser.control
 			Alert.show('getSettingsFault(): ' + event.fault.faultString);
 		}
 
-		[MessageHandler(selector="AppEvent.GET_CONTENT")]
+		[MessageHandler(selector='AppEvent.GET_CONTENT')]
 		public function getContent():void
 		{
 			var service:ContentXmlService = new ContentXmlService();
@@ -100,7 +99,7 @@ package com.masuland.religionchooser.control
 		/**
 		 * Changes the selected question
 		 */
-		[MessageHandler(selector="AppEvent.CHANGE_SELECTED_QUESTION")]
+		[MessageHandler(selector='AppEvent.CHANGE_SELECTED_QUESTION')]
 		public function changeSelectedQuestion(event:AppEvent):void
 		{
 			appModel.appViewState = ContentBoxState.QUESTION;
@@ -110,7 +109,7 @@ package com.masuland.religionchooser.control
 		/**
 		 * Show result
 		 */
-		[MessageHandler(selector="AppEvent.SHOW_RESULT")]
+		[MessageHandler(selector='AppEvent.SHOW_RESULT')]
 		public function showResult(event:AppEvent):void
 		{
 			appModel.appViewState = ContentBoxState.RESULT;
@@ -120,7 +119,7 @@ package com.masuland.religionchooser.control
 		/**
 		 * Restart
 		 */
-		[MessageHandler(selector="AppEvent.RESTART")]
+		[MessageHandler(selector='AppEvent.RESTART')]
 		public function restart(event:AppEvent):void
 		{
 			appModel.appViewState = ContentBoxState.QUESTION;
@@ -174,7 +173,7 @@ package com.masuland.religionchooser.control
 			
 			if (appModel.currentLocale != null)
 			{
-			resourceModuleURL = "AppResources_" + appModel.currentLocale.code + ".swf";
+			resourceModuleURL = 'AppResources_' + appModel.currentLocale.code + '.swf';
 			eventDispatcher = ResourceManager.getInstance().loadResourceModule(resourceModuleURL);
 			
 			if (eventDispatcher != null)

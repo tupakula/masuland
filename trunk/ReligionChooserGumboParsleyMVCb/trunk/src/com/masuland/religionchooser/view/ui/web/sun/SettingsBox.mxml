@@ -6,7 +6,7 @@
 	>
 	
 	<fx:Metadata>
-		[HostComponent("com.masuland.religionchooser.view.component.SettingsBoxCB")]
+		[HostComponent("com.masuland.religionchooser.view.component.SettingsBoxCP")]
 	</fx:Metadata>
 
 	<fx:Script>

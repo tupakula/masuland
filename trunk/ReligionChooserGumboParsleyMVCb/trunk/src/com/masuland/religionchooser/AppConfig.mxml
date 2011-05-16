@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mx:Object 
 	xmlns:mx="http://www.adobe.com/2006/mxml" 
-	xmlns:model="com.masuland.religionchooser.model.*" 
-	xmlns:control="com.masuland.religionchooser.control.*" 
+	xmlns:data="com.masuland.religionchooser.data.*" 
+	xmlns:action="com.masuland.religionchooser.action.*" 
 	xmlns:component="com.masuland.religionchooser.view.component.*" 
 	>
 	
@@ -10,27 +10,27 @@
 	
 	<!-- CONTROLLER -->	
 	
-	<control:AppController
+	<action:AppController
 		id="appController"
 		/>
 	
 	<!-- MODEL -->	
 	
-	<model:AppModel 
+	<data:AppModel 
 		id="appModel"
 		/>
 
 	<!-- CODE BEHIND -->	
 	
-	<component:AppViewCB
+	<component:AppViewCP
 		id="appViewCB"
 		/>
 	
-	<component:SettingsBoxCB
+	<component:SettingsBoxCP
 		id="settingsBoxCB"
 		/>
 	
-	<component:ContentBoxCB
+	<component:ContentBoxCP
 		id="contentBoxCB"
 		/>
 	

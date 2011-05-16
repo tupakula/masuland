@@ -9,7 +9,7 @@
 	>
 	
 	<fx:Metadata>
-		[HostComponent("com.masuland.religionchooser.view.component.ContentBoxCB")]
+		[HostComponent("com.masuland.religionchooser.view.component.ContentBoxCP")]
 	</fx:Metadata>
 	
 	<s:states>
