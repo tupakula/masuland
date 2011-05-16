@@ -1,7 +1,7 @@
 package com.masuland.religionchooser.view.component
 {
-	import com.masuland.religionchooser.event.LoadLocaleEvent;
-	import com.masuland.religionchooser.event.LoadStyleEvent;
+	import com.masuland.religionchooser.action.event.LoadLocaleEvent;
+	import com.masuland.religionchooser.action.event.LoadStyleEvent;
 	import com.masuland.religionchooser.vo.LayoutVO;
 	import com.masuland.religionchooser.vo.LocaleVO;
 	import com.masuland.religionchooser.vo.StyleVO;
@@ -14,7 +14,7 @@ package com.masuland.religionchooser.view.component
 	[SkinState("closed")]
 	[SkinState("open")]
 	[SkinState("openMore")]
-	public class SettingsBoxCB extends SkinnableComponent
+	public class SettingsBoxCP extends SkinnableComponent
 	{
 		[MessageDispatcher]
 		public var dispatcher:Function;
@@ -43,7 +43,7 @@ package com.masuland.religionchooser.view.component
 		[Bindable]
 		public var moreSettingsButtonSelected:Boolean = false;
 
-		public function SettingsBoxCB()
+		public function SettingsBoxCP()
 		{
 			addEventListener(Event.ADDED_TO_STAGE, function():void
 			{

@@ -3,12 +3,12 @@
 @namespace mx "library://ns.adobe.com/flex/mx";
 @namespace component "com.masuland.religionchooser.view.component.*";
 
-component|SettingsBoxCB
+component|SettingsBoxCP
 {
 	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.SettingsBox");
 }
 
-component|ContentBoxCB
+component|ContentBoxCP
 {
 	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.ContentBox");
 }

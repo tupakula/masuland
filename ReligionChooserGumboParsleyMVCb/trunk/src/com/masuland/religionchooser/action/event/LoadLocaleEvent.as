@@ -1,4 +1,4 @@
-package com.masuland.religionchooser.event
+package com.masuland.religionchooser.action.event
 {	
 	import com.masuland.religionchooser.vo.LocaleVO;
 	

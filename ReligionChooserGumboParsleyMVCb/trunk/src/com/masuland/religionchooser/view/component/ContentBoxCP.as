@@ -1,6 +1,6 @@
 package com.masuland.religionchooser.view.component
 {
-	import com.masuland.religionchooser.event.AppEvent;
+	import com.masuland.religionchooser.action.event.AppEvent;
 	import com.masuland.religionchooser.vo.LayoutVO;
 	import com.masuland.religionchooser.vo.LocaleVO;
 	import com.masuland.religionchooser.vo.QuestionVO;
@@ -10,7 +10,7 @@ package com.masuland.religionchooser.view.component
 	
 	[SkinState("question")]
 	[SkinState("result")]
-	public class ContentBoxCB extends SkinnableComponent
+	public class ContentBoxCP extends SkinnableComponent
 	{
 		[MessageDispatcher]
 		public var dispatcher:Function;
@@ -35,7 +35,7 @@ package com.masuland.religionchooser.view.component
 		[Bindable]
 		public var appViewState:String;
 		
-		public function ContentBoxCB()
+		public function ContentBoxCP()
 		{
 			addEventListener(Event.ADDED_TO_STAGE, function():void
 			{

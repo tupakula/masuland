@@ -1,6 +1,6 @@
 package com.masuland.religionchooser.view.component
 {
-	import com.masuland.religionchooser.event.AppEvent;
+	import com.masuland.religionchooser.action.event.AppEvent;
 	import com.masuland.religionchooser.vo.ChoiceVO;
 	import com.masuland.religionchooser.vo.LangVO;
 	import com.masuland.religionchooser.vo.LayoutVO;
@@ -11,7 +11,7 @@ package com.masuland.religionchooser.view.component
 	
 	import spark.components.Button;
 
-	public class ChoiceBtn extends Button
+	public class ChoiceButton extends Button
 	{
 		[MessageDispatcher]
 		public var dispatcher:Function;
@@ -24,7 +24,7 @@ package com.masuland.religionchooser.view.component
 
 		private var _choice:ChoiceVO;
 		
-		public function ChoiceBtn()
+		public function ChoiceButton()
 		{
 			addEventListener(Event.ADDED_TO_STAGE, function():void
 			{

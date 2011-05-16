@@ -14,13 +14,13 @@
 	<fx:Metadata>
 		[ResourceBundle("resources")]
 		[ManagedEvents("AppEvent.INIT_APP")]
-		[Event(name="AppEvent.INIT_APP", type="com.masuland.religionchooser.event.AppEvent")]
+		[Event(name="AppEvent.INIT_APP", type="com.masuland.religionchooser.action.event.AppEvent")]
 	</fx:Metadata>
 	
 	<fx:Script>
 		<![CDATA[
 			import com.masuland.religionchooser.AppConfig;
-			import com.masuland.religionchooser.event.AppEvent;
+			import com.masuland.religionchooser.action.event.AppEvent;
 			
 			import mx.events.FlexEvent;
 			import mx.logging.LogEventLevel;
