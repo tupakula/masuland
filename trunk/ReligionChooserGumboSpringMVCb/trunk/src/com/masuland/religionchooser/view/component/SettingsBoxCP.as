@@ -16,7 +16,7 @@ package com.masuland.religionchooser.view.component
 	[SkinState("closed")]
 	[SkinState("open")]
 	[SkinState("openMore")]
-	public class SettingsBoxCB extends SkinnableComponent
+	public class SettingsBoxCP extends SkinnableComponent
 	{
 		[SkinPart(require="true")]
 		public var btn_settings:ToggleButton;

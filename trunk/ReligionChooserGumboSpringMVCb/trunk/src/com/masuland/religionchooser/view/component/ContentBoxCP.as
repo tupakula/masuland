@@ -12,7 +12,7 @@ package com.masuland.religionchooser.view.component
 	
 	[SkinState("question")]
 	[SkinState("result")]
-	public class ContentBoxCB extends SkinnableComponent
+	public class ContentBoxCP extends SkinnableComponent
 	{
 		[Autowired(name='appModel', property='currentLayout')]
 		[Bindable]
