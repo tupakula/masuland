@@ -16,8 +16,8 @@
 	
 	<fx:Script>
 		<![CDATA[
-			import com.masuland.religionchooser.control.AppController;
-			import com.masuland.religionchooser.event.AppEvent;
+			import com.masuland.religionchooser.action.AppController;
+			import com.masuland.religionchooser.action.event.AppEvent;
 			
 			import mx.controls.Alert;
 			import mx.events.FlexEvent;

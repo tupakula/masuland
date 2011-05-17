@@ -19,7 +19,7 @@
 	
 	<fx:Script>
 		<![CDATA[
-			import com.masuland.religionchooser.vo.LangVO;
+			import com.masuland.religionchooser.data.vo.LangVO;
 		]]>
 	</fx:Script>
 	

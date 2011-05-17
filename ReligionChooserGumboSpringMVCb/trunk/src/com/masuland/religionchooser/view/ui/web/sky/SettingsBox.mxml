@@ -11,8 +11,8 @@
 
 	<fx:Script>
 		<![CDATA[
-			import com.masuland.religionchooser.vo.LocaleVO;
-			import com.masuland.religionchooser.vo.StyleVO;
+			import com.masuland.religionchooser.data.vo.LocaleVO;
+			import com.masuland.religionchooser.data.vo.StyleVO;
 		]]>
 	</fx:Script>
 
