@@ -6,8 +6,15 @@ package com.masuland.religionchooser.action.event
 	
 	import flash.events.Event;
 
+	/**
+	 * @author masuland.com
+	 */
 	public class AppEvent extends Event
 	{
+		//----------------------
+		// Constants
+		//----------------------
+		
 		public static const INIT_APP:String = 'AppEvent.INIT_APP';
 		public static const GET_SETTINGS:String = 'AppEvent.GET_SETTINGS';
 		public static const GET_CONTENT:String = 'AppEvent.GET_CONTENT';
@@ -15,11 +22,18 @@ package com.masuland.religionchooser.action.event
 		public static const SHOW_RESULT:String = 'AppEvent.SHOW_RESULT';
 		public static const RESTART:String = 'AppEvent.RESTART';
 		
+		//----------------------
+		// Properties
+		//----------------------
+		
 		public var locale:LocaleVO;
 		public var question:QuestionVO;
 		public var result:ResultVO;
 		
-		/**  */
+		//----------------------
+		// Constructor
+		//----------------------
+		
 		public function AppEvent(type:String, bubbles:Boolean=true, cancelable:Boolean=true)
 		{
 			super(type, bubbles, cancelable);

@@ -57,7 +57,7 @@
 					toolTip="You are just as bright as your surrounding"
 					/>
 				<s:Label
-					text="{ resourceManager.getString('resources', 'txt_app_description') }"
+					text="{ resourceManager.getString('resources', 'txt_app_title') }"
 					styleName="appTitle"
 					/>
 				

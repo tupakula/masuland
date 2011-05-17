@@ -4,9 +4,8 @@ package com.masuland.religionchooser.action
 	import com.masuland.religionchooser.action.event.LoadLayoutEvent;
 	import com.masuland.religionchooser.action.event.LoadLocaleEvent;
 	import com.masuland.religionchooser.action.event.LoadStyleEvent;
+	import com.masuland.religionchooser.business.IAppDelegate;
 	import com.masuland.religionchooser.data.AppModel;
-	import com.masuland.religionchooser.service.contentxml.ContentXmlService;
-	import com.masuland.religionchooser.service.settingsxml.SettingsXmlService;
 	import com.masuland.religionchooser.data.state.ContentBoxState;
 	import com.masuland.religionchooser.data.vo.LayoutVO;
 	import com.masuland.religionchooser.data.vo.LocaleVO;
@@ -20,6 +19,7 @@ package com.masuland.religionchooser.action
 	import mx.core.FlexGlobals;
 	import mx.events.ResourceEvent;
 	import mx.events.StyleEvent;
+	import mx.managers.BrowserManager;
 	import mx.resources.ResourceManager;
 	import mx.rpc.events.FaultEvent;
 	import mx.rpc.events.ResultEvent;
@@ -40,9 +40,9 @@ package com.masuland.religionchooser.action
 		[Inject]
 		public var appModel:AppModel;
 		
-/*		[Inject]
+		[Inject]
 		public var appDelegate:IAppDelegate;
-*/		
+		
 		//----------------------
 		// Methods
 		//----------------------
@@ -57,19 +57,13 @@ package com.masuland.religionchooser.action
 		[EventHandler(name='AppEvent.GET_SETTINGS')]
 		public function getSettings():void
 		{
-			var service:SettingsXmlService = new SettingsXmlService();
-			service.addEventListener(ResultEvent.RESULT, getSettingsResult);
-			service.addEventListener(FaultEvent.FAULT, getSettingsFault)
-			service.getData();
+			appDelegate.getSettings(getSettings_resultHandler, getSettings_faultHandler);
 		}
 		
 		[EventHandler(name='AppEvent.GET_CONTENT')]
 		public function getContent():void
 		{
-			var service:ContentXmlService = new ContentXmlService();
-			service.addEventListener(ResultEvent.RESULT, getContentResult);
-			service.addEventListener(FaultEvent.FAULT, getContentFault)
-			service.getData();
+			appDelegate.getContent(getContent_resultHandler, getContent_faultHandler);
 		}
 		
 		[EventHandler(name='AppEvent.CHANGE_SELECTED_QUESTION')]
@@ -113,6 +107,8 @@ package com.masuland.religionchooser.action
 			ResourceManager.getInstance().localeChain = [ appModel.currentLocale.code ];
 			ResourceManager.getInstance().update();
 			
+			BrowserManager.getInstance().setTitle(ResourceManager.getInstance().getString('resources', 'txt_app_title'));
+			
 /*			var resourceModuleURL:String;
 			var eventDispatcher:IEventDispatcher;
 			
@@ -148,8 +144,8 @@ package com.masuland.religionchooser.action
 				appModel.currentStyle = event.style;
 				
 				myEvent = myStyleManager.loadStyleDeclarations(event.style.path, true);
-				myEvent.addEventListener(StyleEvent.COMPLETE, onLoadStyleComplete);
-				myEvent.addEventListener(StyleEvent.ERROR, onLoadStyleError);
+				myEvent.addEventListener(StyleEvent.COMPLETE, loadStyle_completeHandler);
+				myEvent.addEventListener(StyleEvent.ERROR, loadStyle_errorHandler);
 			}
 		}
 		
@@ -157,7 +153,7 @@ package com.masuland.religionchooser.action
 		// Handler
 		//----------------------
 		
-		protected function getSettingsResult(event:ResultEvent):void
+		protected function getSettings_resultHandler(event:ResultEvent):void
 		{
 			var settings:SettingsVO = event.result as SettingsVO;
 			
@@ -169,12 +165,12 @@ package com.masuland.religionchooser.action
 			}
 		}
 		
-		protected function getSettingsFault(event:FaultEvent):void
+		protected function getSettings_faultHandler(event:FaultEvent):void
 		{
 			Alert.show('getSettingsFault(): ' + event.fault.faultString);
 		}
 
-		protected function getContentResult(event:ResultEvent):void
+		protected function getContent_resultHandler(event:ResultEvent):void
 		{
 			appModel.rootQuestion = QuestionVO( event.result );
 			appModel.selectedQuestion = QuestionVO( event.result );
@@ -182,26 +178,26 @@ package com.masuland.religionchooser.action
 			appModel.appViewState = ContentBoxState.QUESTION;
 		}
 		
-		protected function getContentFault(event:FaultEvent):void
+		protected function getContent_faultHandler(event:FaultEvent):void
 		{
 			Alert.show('getContentFault(): ' + event.fault.faultString);
 		}
 
-		protected function onLoadLocaleComplete(event:ResourceEvent):void
+		protected function loadLocale_completeHandler(event:ResourceEvent):void
 		{	    	
 			ResourceManager.getInstance().localeChain = [ appModel.currentLocale.code ];
 		}
 		
-		protected function onLoadLocaleError(event:ResourceEvent):void
+		protected function loadLocale_ErrorHandler(event:ResourceEvent):void
 		{	    	
 		}
 		
-		protected function onLoadStyleComplete(event:StyleEvent):void
+		protected function loadStyle_completeHandler(event:StyleEvent):void
 		{
 			appModel.isApplicationVisible = true;
 		}
 		
-		protected function onLoadStyleError(event:StyleEvent):void
+		protected function loadStyle_errorHandler(event:StyleEvent):void
 		{
 			appModel.isApplicationVisible = true;
 		}

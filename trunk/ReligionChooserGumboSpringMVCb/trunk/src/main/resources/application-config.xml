@@ -24,24 +24,24 @@
 		/>
 	
 	<!-- SERVICE -->	
-<!--	
+	
 	<object 
-		id="appRemoteObject" 
-		class="mx.rpc.remoting.mxml.RemoteObject"
+		id="settingsXmlService" 
+		class="com.masuland.religionchooser.service.settingsxml.SettingsXmlService"
 		/>
--->	
+
+	<object 
+		id="contentXmlService" 
+		class="com.masuland.religionchooser.service.contentxml.ContentXmlService"
+		/>
+	
 	<!-- BUSINESS -->	
-<!--	
-	<object 
-		id="appDelegate" 
-		class="com.masuland.religionchooser.business.AppAmfDelegate"
-		/>
 	
 	<object 
 		id="appDelegate" 
-		class="com.masuland.religionchooser.business.AppMockDelegate"
+		class="com.masuland.religionchooser.business.AppXmlDelegate"
 		/>
--->	
+		
 	<!-- ACTION -->	
 	
 	<object 

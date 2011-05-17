@@ -21,6 +21,7 @@ package com.masuland.religionchooser.action
 	import mx.core.FlexGlobals;
 	import mx.events.ResourceEvent;
 	import mx.events.StyleEvent;
+	import mx.managers.BrowserManager;
 	import mx.resources.ResourceManager;
 	import mx.rpc.AsyncToken;
 	import mx.rpc.events.FaultEvent;
@@ -109,6 +110,8 @@ package com.masuland.religionchooser.action
 			
 			ResourceManager.getInstance().localeChain = [ appModel.currentLocale.code ];
 			ResourceManager.getInstance().update();
+			
+			BrowserManager.getInstance().setTitle(ResourceManager.getInstance().getString('resources', 'txt_app_title'));
 			
 /*			var resourceModuleURL:String;
 			var eventDispatcher:IEventDispatcher;
