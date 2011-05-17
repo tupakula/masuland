@@ -1,4 +1,4 @@
-package com.masuland.religionchooser.model
+package com.masuland.religionchooser.data
 {
 	import com.masuland.religionchooser.vo.LayoutVO;
 	import com.masuland.religionchooser.vo.LocaleVO;

@@ -48,11 +48,16 @@
 				>
 				
 				<mx:Image
-					source="content/sun_icon.png"
+					source="images/icon_masuland.png"
+					buttonMode="true"
+					useHandCursor="true"
+					mouseChildren="true"
+					click="navigateToURL(new URLRequest('http://www.masuland.com'))"
+					toolTip="You are just as bright as your surrounding"
 					/>
-				
 				<s:Label
-					text="{ resourceManager.getString('resources', 'txt_app_description') }"
+					text="{ resourceManager.getString('resources', 'txt_app_title') }"
+					styleName="appTitle"
 					/>
 				
 			</s:HGroup>

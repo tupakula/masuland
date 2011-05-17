@@ -2,8 +2,8 @@
 <swiz:BeanProvider
 	xmlns:mx="http://www.adobe.com/2006/mxml"
 	xmlns:swiz="http://swiz.swizframework.org" 
-	xmlns:control="com.masuland.religionchooser.control.*" 
-	xmlns:model="com.masuland.religionchooser.model.*" 
+	xmlns:action="com.masuland.religionchooser.action.*" 
+	xmlns:data="com.masuland.religionchooser.data.*" 
 	xmlns:component="com.masuland.religionchooser.view.component.*"
 	>
 	
@@ -11,13 +11,13 @@
 	
 	<!-- CONTROLLER -->	
 	
-	<control:AppController
+	<action:AppController
 		id="appController"
 		/>
 	
 	<!-- MODEL -->	
 	
-	<model:AppModel 
+	<data:AppModel 
 		id="appModel"
 		/>
 	
