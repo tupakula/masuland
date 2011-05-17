@@ -13,7 +13,7 @@
 		]]>
 	</fx:Script>
 	
-	<component:ChoiceBtn 
+	<component:ChoiceButton 
 		choice="{ ChoiceVO( data ) }"
 		styleName="actionButton"
 		/>

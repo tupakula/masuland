@@ -10,27 +10,27 @@
 	color: #C46F41;
 }
 
-component|SettingsBoxCB
+component|SettingsBoxCP
 {
-	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.SettingsBox");
+	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.SettingsBoxSkin");
 }
 
-component|ContentBoxCB
+component|ContentBoxCP
 {
-	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.ContentBox");
+	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.ContentBoxSkin");
 }
 
 .settingsButton
 {
-	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.SettingsButton");
+	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.SettingsButtonSkin");
 }
 
 .actionButton
 {
-	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.ActionButton");
+	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.ActionButtonSkin");
 }
 
 .moreButton
 {
-	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.MoreButton");
+	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.MoreButtonSkin");
 }

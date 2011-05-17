@@ -10,27 +10,27 @@
 	color: #5D7693;
 }
 
-component|SettingsBoxCB
+component|SettingsBoxCP
 {
-	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sky.SettingsBox");
+	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sky.SettingsBoxSkin");
 }
 
-component|ContentBoxCB
+component|ContentBoxCP
 {
-	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sky.ContentBox");
+	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sky.ContentBoxSkin");
 }
 
 .settingsButton
 {
-	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sky.SettingsButton");
+	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sky.SettingsButtonSkin");
 }
 
 .actionButton
 {
-	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sky.ActionButton");
+	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sky.ActionButtonSkin");
 }
 
 .moreButton
 {
-	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sky.MoreButton");
+	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sky.MoreButtonSkin");
 }

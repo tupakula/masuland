@@ -2,37 +2,54 @@
 <swiz:BeanProvider
 	xmlns:mx="http://www.adobe.com/2006/mxml"
 	xmlns:swiz="http://swiz.swizframework.org" 
+	xmlns:settingsxml="com.masuland.religionchooser.service.settingsxml.*"
+	xmlns:contentxml="com.masuland.religionchooser.service.contentxml.*"
+	xmlns:business="com.masuland.religionchooser.business.*"
 	xmlns:action="com.masuland.religionchooser.action.*" 
 	xmlns:data="com.masuland.religionchooser.data.*" 
 	xmlns:component="com.masuland.religionchooser.view.component.*"
 	>
+
+	<!-- SERVICE -->	
 	
-	<!-- DELEGATE -->	
+	<settingsxml:SettingsXmlService
+		id="settingsXmlService"
+		/>
 	
-	<!-- CONTROLLER -->	
+	<contentxml:ContentXmlService
+		id="contentXmlService"
+		/>
+	
+	<!-- BUSINESS -->	
+	
+	<business:AppXmlDelegate
+		id="appXmlDelegate"
+		/>
+	
+	<!-- ACTION -->	
 	
 	<action:AppController
 		id="appController"
 		/>
 	
-	<!-- MODEL -->	
+	<!-- DATA -->	
 	
 	<data:AppModel 
 		id="appModel"
 		/>
 	
-	<!-- CODE BEHIND -->	
+	<!-- VIEW -->	
 	
-	<component:AppViewCB
-		id="appViewCB"
+	<component:AppViewCP
+		id="appViewCP"
 		/>
 	
-	<component:SettingsBoxCB
-		id="settingsBoxCB"
+	<component:SettingsBoxCP
+		id="settingsBoxCP"
 		/>
 	
-	<component:ContentBoxCB
-		id="contentBoxCB"
+	<component:ContentBoxCP
+		id="contentBoxCP"
 		/>
 
 </swiz:BeanProvider>

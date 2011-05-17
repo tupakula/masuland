@@ -6,7 +6,7 @@
 	>
 	
 	<fx:Metadata>
-		[HostComponent("com.masuland.religionchooser.view.component.SettingsBoxCB")]
+		[HostComponent("com.masuland.religionchooser.view.component.SettingsBoxCP")]
 	</fx:Metadata>
 
 	<fx:Script>
@@ -55,7 +55,7 @@
 		selected="{ hostComponent.settingsButtonSelected }"
 		buttonMode="true" useHandCursor="true" mouseChildren="false"
 		styleName="settingsButton"
-		click="hostComponent.settingsButton_clickHandler(event)"
+		click="hostComponent.btn_settings_clickHandler(event)"
 		/>
 	
 	<s:Group
@@ -70,14 +70,14 @@
 			>
 			<s:stroke>
 				<s:LinearGradientStroke caps="round" joints="miter" miterLimit="4" rotation="90" weight="1">
-					<s:GradientEntry alpha="1.0" color="#81A6DD" ratio="0"/>
-					<s:GradientEntry alpha="1.0" color="#95ABC1" ratio="1"/>
+					<s:GradientEntry alpha="1.0" color="#FF5800" ratio="0"/>
+					<s:GradientEntry alpha="1.0" color="#CE9365" ratio="1"/>
 				</s:LinearGradientStroke>
 			</s:stroke>
 			<s:fill>
 				<s:LinearGradient rotation="200.225">
-					<s:GradientEntry alpha="1.0" color="#F2F4F7" ratio="0.027450980392156862"/>
-					<s:GradientEntry alpha="1.0" color="#BAD1F7" ratio="1"/>
+					<s:GradientEntry alpha="1.0" color="#F4E7AE" ratio="0.027450980392156862"/>
+					<s:GradientEntry alpha="1.0" color="#E59367" ratio="1"/>
 				</s:LinearGradient>
 			</s:fill>
 		</s:Rect>
@@ -114,7 +114,7 @@
 					buttonMode="true" useHandCursor="true" mouseChildren="false"
 					styleName="moreButton"
 					selected="{ hostComponent.moreSettingsButtonSelected }"
-					click="hostComponent.moreSettingsButton_clickHandler(event)"
+					click="hostComponent.btn_moreSettings_clickHandler(event)"
 					/>
 				
 			</s:Group>
