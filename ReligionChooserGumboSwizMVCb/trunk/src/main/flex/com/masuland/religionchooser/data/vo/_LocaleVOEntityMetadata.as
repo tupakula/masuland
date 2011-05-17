@@ -2,7 +2,7 @@
 /**
  * This is a generated class and is not intended for modification.  
  */
-package com.masuland.religionchooser.vo
+package com.masuland.religionchooser.data.vo
 {
 import com.adobe.fiber.styles.IStyle;
 import com.adobe.fiber.styles.Style;
@@ -18,62 +18,62 @@ import mx.events.PropertyChangeEvent;
 use namespace model_internal;
 
 [ExcludeClass]
-internal class _LangVOEntityMetadata extends com.adobe.fiber.valueobjects.AbstractEntityMetadata
+internal class _LocaleVOEntityMetadata extends com.adobe.fiber.valueobjects.AbstractEntityMetadata
 {
     private static var emptyArray:Array = new Array();
 
-    model_internal static var allProperties:Array = new Array("code", "value");
+    model_internal static var allProperties:Array = new Array("name", "code");
     model_internal static var allAssociationProperties:Array = new Array();
-    model_internal static var allRequiredProperties:Array = new Array("code", "value");
-    model_internal static var allAlwaysAvailableProperties:Array = new Array("code", "value");
+    model_internal static var allRequiredProperties:Array = new Array("name", "code");
+    model_internal static var allAlwaysAvailableProperties:Array = new Array("name", "code");
     model_internal static var guardedProperties:Array = new Array();
-    model_internal static var dataProperties:Array = new Array("code", "value");
+    model_internal static var dataProperties:Array = new Array("name", "code");
     model_internal static var derivedProperties:Array = new Array();
     model_internal static var collectionProperties:Array = new Array();
     model_internal static var collectionBaseMap:Object;
-    model_internal static var entityName:String = "LangVO";
+    model_internal static var entityName:String = "LocaleVO";
     model_internal static var dependentsOnMap:Object;
     model_internal static var dependedOnServices:Array = new Array();
 
+    
+    model_internal var _nameIsValid:Boolean;
+    model_internal var _nameValidator:com.adobe.fiber.styles.StyleValidator;
+    model_internal var _nameIsValidCacheInitialized:Boolean = false;
+    model_internal var _nameValidationFailureMessages:Array;
     
     model_internal var _codeIsValid:Boolean;
     model_internal var _codeValidator:com.adobe.fiber.styles.StyleValidator;
     model_internal var _codeIsValidCacheInitialized:Boolean = false;
     model_internal var _codeValidationFailureMessages:Array;
-    
-    model_internal var _valueIsValid:Boolean;
-    model_internal var _valueValidator:com.adobe.fiber.styles.StyleValidator;
-    model_internal var _valueIsValidCacheInitialized:Boolean = false;
-    model_internal var _valueValidationFailureMessages:Array;
 
-    model_internal var _instance:_Super_LangVO;
+    model_internal var _instance:_Super_LocaleVO;
     model_internal static var _nullStyle:com.adobe.fiber.styles.Style = new com.adobe.fiber.styles.Style();
 
-    public function _LangVOEntityMetadata(value : _Super_LangVO)
+    public function _LocaleVOEntityMetadata(value : _Super_LocaleVO)
     {
         // initialize property maps
         if (model_internal::dependentsOnMap == null)
         {
             // depenents map
             model_internal::dependentsOnMap = new Object();
+            model_internal::dependentsOnMap["name"] = new Array();
             model_internal::dependentsOnMap["code"] = new Array();
-            model_internal::dependentsOnMap["value"] = new Array();
 
             // collection base map
             model_internal::collectionBaseMap = new Object()
         }
 
         model_internal::_instance = value;
+        model_internal::_nameValidator = new StyleValidator(model_internal::_instance.model_internal::_doValidationForName);
+        model_internal::_nameValidator.required = true;
+        model_internal::_nameValidator.requiredFieldError = "name is required";
+        //model_internal::_nameValidator.source = model_internal::_instance;
+        //model_internal::_nameValidator.property = "name";
         model_internal::_codeValidator = new StyleValidator(model_internal::_instance.model_internal::_doValidationForCode);
         model_internal::_codeValidator.required = true;
         model_internal::_codeValidator.requiredFieldError = "code is required";
         //model_internal::_codeValidator.source = model_internal::_instance;
         //model_internal::_codeValidator.property = "code";
-        model_internal::_valueValidator = new StyleValidator(model_internal::_instance.model_internal::_doValidationForValue);
-        model_internal::_valueValidator.required = true;
-        model_internal::_valueValidator.requiredFieldError = "value is required";
-        //model_internal::_valueValidator.source = model_internal::_instance;
-        //model_internal::_valueValidator.property = "value";
     }
 
     override public function getEntityName():String
@@ -114,7 +114,7 @@ internal class _LangVOEntityMetadata extends com.adobe.fiber.valueobjects.Abstra
     override public function getDependants(propertyName:String):Array
     {
        if (model_internal::dataProperties.indexOf(propertyName) == -1)
-            throw new Error(propertyName + " is not a data property of entity LangVO");  
+            throw new Error(propertyName + " is not a data property of entity LocaleVO");  
             
        return model_internal::dependentsOnMap[propertyName] as Array;  
     }
@@ -132,7 +132,7 @@ internal class _LangVOEntityMetadata extends com.adobe.fiber.valueobjects.Abstra
     override public function getCollectionBase(propertyName:String):String
     {
         if (model_internal::collectionProperties.indexOf(propertyName) == -1)
-            throw new Error(propertyName + " is not a collection property of entity LangVO");  
+            throw new Error(propertyName + " is not a collection property of entity LocaleVO");  
 
         return model_internal::collectionBaseMap[propertyName];
     }
@@ -146,7 +146,7 @@ internal class _LangVOEntityMetadata extends com.adobe.fiber.valueobjects.Abstra
     {
         if (model_internal::allProperties.indexOf(propertyName) == -1)
         {
-            throw new Error(propertyName + " does not exist for entity LangVO");
+            throw new Error(propertyName + " does not exist for entity LocaleVO");
         }
 
         return model_internal::_instance[propertyName];
@@ -156,7 +156,7 @@ internal class _LangVOEntityMetadata extends com.adobe.fiber.valueobjects.Abstra
     {
         if (model_internal::dataProperties.indexOf(propertyName) == -1)
         {
-            throw new Error(propertyName + " is not a data property of entity LangVO");
+            throw new Error(propertyName + " is not a data property of entity LocaleVO");
         }
 
         model_internal::_instance[propertyName] = value;
@@ -188,7 +188,7 @@ internal class _LangVOEntityMetadata extends com.adobe.fiber.valueobjects.Abstra
     {
         if (model_internal::allProperties.indexOf(propertyName) == -1)
         {
-            throw new Error(propertyName + " does not exist for entity LangVO");
+            throw new Error(propertyName + " does not exist for entity LocaleVO");
         }
 
         if (model_internal::allAlwaysAvailableProperties.indexOf(propertyName) != -1)
@@ -283,13 +283,13 @@ internal class _LangVOEntityMetadata extends com.adobe.fiber.valueobjects.Abstra
     }
 
     [Bindable(event="propertyChange")]
-    public function get isCodeAvailable():Boolean
+    public function get isNameAvailable():Boolean
     {
         return true;
     }
 
     [Bindable(event="propertyChange")]
-    public function get isValueAvailable():Boolean
+    public function get isCodeAvailable():Boolean
     {
         return true;
     }
@@ -298,6 +298,14 @@ internal class _LangVOEntityMetadata extends com.adobe.fiber.valueobjects.Abstra
     /**
      * derived property recalculation
      */
+    public function invalidateDependentOnName():void
+    {
+        if (model_internal::_nameIsValidCacheInitialized )
+        {
+            model_internal::_instance.model_internal::_doValidationCacheOfName = null;
+            model_internal::calculateNameIsValid();
+        }
+    }
     public function invalidateDependentOnCode():void
     {
         if (model_internal::_codeIsValidCacheInitialized )
@@ -306,18 +314,110 @@ internal class _LangVOEntityMetadata extends com.adobe.fiber.valueobjects.Abstra
             model_internal::calculateCodeIsValid();
         }
     }
-    public function invalidateDependentOnValue():void
-    {
-        if (model_internal::_valueIsValidCacheInitialized )
-        {
-            model_internal::_instance.model_internal::_doValidationCacheOfValue = null;
-            model_internal::calculateValueIsValid();
-        }
-    }
 
     model_internal function fireChangeEvent(propertyName:String, oldValue:Object, newValue:Object):void
     {
         this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, propertyName, oldValue, newValue));
+    }
+
+    [Bindable(event="propertyChange")]   
+    public function get nameStyle():com.adobe.fiber.styles.Style
+    {
+        return model_internal::_nullStyle;
+    }
+
+    public function get nameValidator() : StyleValidator
+    {
+        return model_internal::_nameValidator;
+    }
+
+    model_internal function set _nameIsValid_der(value:Boolean):void 
+    {
+        var oldValue:Boolean = model_internal::_nameIsValid;         
+        if (oldValue !== value)
+        {
+            model_internal::_nameIsValid = value;
+            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "nameIsValid", oldValue, value));
+        }                             
+    }
+
+    [Bindable(event="propertyChange")]
+    public function get nameIsValid():Boolean
+    {
+        if (!model_internal::_nameIsValidCacheInitialized)
+        {
+            model_internal::calculateNameIsValid();
+        }
+
+        return model_internal::_nameIsValid;
+    }
+
+    model_internal function calculateNameIsValid():void
+    {
+        var valRes:ValidationResultEvent = model_internal::_nameValidator.validate(model_internal::_instance.name)
+        model_internal::_nameIsValid_der = (valRes.results == null);
+        model_internal::_nameIsValidCacheInitialized = true;
+        if (valRes.results == null)
+             model_internal::nameValidationFailureMessages_der = emptyArray;
+        else
+        {
+            var _valFailures:Array = new Array();
+            for (var a:int = 0 ; a<valRes.results.length ; a++)
+            {
+                _valFailures.push(valRes.results[a].errorMessage);
+            }
+            model_internal::nameValidationFailureMessages_der = _valFailures;
+        }
+    }
+
+    [Bindable(event="propertyChange")]
+    public function get nameValidationFailureMessages():Array
+    {
+        if (model_internal::_nameValidationFailureMessages == null)
+            model_internal::calculateNameIsValid();
+
+        return _nameValidationFailureMessages;
+    }
+
+    model_internal function set nameValidationFailureMessages_der(value:Array) : void
+    {
+        var oldValue:Array = model_internal::_nameValidationFailureMessages;
+
+        var needUpdate : Boolean = false;
+        if (oldValue == null)
+            needUpdate = true;
+    
+        // avoid firing the event when old and new value are different empty arrays
+        if (!needUpdate && (oldValue !== value && (oldValue.length > 0 || value.length > 0)))
+        {
+            if (oldValue.length == value.length)
+            {
+                for (var a:int=0; a < oldValue.length; a++)
+                {
+                    if (oldValue[a] !== value[a])
+                    {
+                        needUpdate = true;
+                        break;
+                    }
+                }
+            }
+            else
+            {
+                needUpdate = true;
+            }
+        }
+
+        if (needUpdate)
+        {
+            model_internal::_nameValidationFailureMessages = value;   
+            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "nameValidationFailureMessages", oldValue, value));
+            // Only execute calculateIsValid if it has been called before, to update the validationFailureMessages for
+            // the entire entity.
+            if (model_internal::_instance.model_internal::_cacheInitialized_isValid)
+            {
+                model_internal::_instance.model_internal::isValid_der = model_internal::_instance.model_internal::calculateIsValid();
+            }
+        }
     }
 
     [Bindable(event="propertyChange")]   
@@ -420,106 +520,6 @@ internal class _LangVOEntityMetadata extends com.adobe.fiber.valueobjects.Abstra
         }
     }
 
-    [Bindable(event="propertyChange")]   
-    public function get valueStyle():com.adobe.fiber.styles.Style
-    {
-        return model_internal::_nullStyle;
-    }
-
-    public function get valueValidator() : StyleValidator
-    {
-        return model_internal::_valueValidator;
-    }
-
-    model_internal function set _valueIsValid_der(value:Boolean):void 
-    {
-        var oldValue:Boolean = model_internal::_valueIsValid;         
-        if (oldValue !== value)
-        {
-            model_internal::_valueIsValid = value;
-            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "valueIsValid", oldValue, value));
-        }                             
-    }
-
-    [Bindable(event="propertyChange")]
-    public function get valueIsValid():Boolean
-    {
-        if (!model_internal::_valueIsValidCacheInitialized)
-        {
-            model_internal::calculateValueIsValid();
-        }
-
-        return model_internal::_valueIsValid;
-    }
-
-    model_internal function calculateValueIsValid():void
-    {
-        var valRes:ValidationResultEvent = model_internal::_valueValidator.validate(model_internal::_instance.value)
-        model_internal::_valueIsValid_der = (valRes.results == null);
-        model_internal::_valueIsValidCacheInitialized = true;
-        if (valRes.results == null)
-             model_internal::valueValidationFailureMessages_der = emptyArray;
-        else
-        {
-            var _valFailures:Array = new Array();
-            for (var a:int = 0 ; a<valRes.results.length ; a++)
-            {
-                _valFailures.push(valRes.results[a].errorMessage);
-            }
-            model_internal::valueValidationFailureMessages_der = _valFailures;
-        }
-    }
-
-    [Bindable(event="propertyChange")]
-    public function get valueValidationFailureMessages():Array
-    {
-        if (model_internal::_valueValidationFailureMessages == null)
-            model_internal::calculateValueIsValid();
-
-        return _valueValidationFailureMessages;
-    }
-
-    model_internal function set valueValidationFailureMessages_der(value:Array) : void
-    {
-        var oldValue:Array = model_internal::_valueValidationFailureMessages;
-
-        var needUpdate : Boolean = false;
-        if (oldValue == null)
-            needUpdate = true;
-    
-        // avoid firing the event when old and new value are different empty arrays
-        if (!needUpdate && (oldValue !== value && (oldValue.length > 0 || value.length > 0)))
-        {
-            if (oldValue.length == value.length)
-            {
-                for (var a:int=0; a < oldValue.length; a++)
-                {
-                    if (oldValue[a] !== value[a])
-                    {
-                        needUpdate = true;
-                        break;
-                    }
-                }
-            }
-            else
-            {
-                needUpdate = true;
-            }
-        }
-
-        if (needUpdate)
-        {
-            model_internal::_valueValidationFailureMessages = value;   
-            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "valueValidationFailureMessages", oldValue, value));
-            // Only execute calculateIsValid if it has been called before, to update the validationFailureMessages for
-            // the entire entity.
-            if (model_internal::_instance.model_internal::_cacheInitialized_isValid)
-            {
-                model_internal::_instance.model_internal::isValid_der = model_internal::_instance.model_internal::calculateIsValid();
-            }
-        }
-    }
-
 
      /**
      * 
@@ -545,13 +545,13 @@ internal class _LangVOEntityMetadata extends com.adobe.fiber.valueobjects.Abstra
      {
          switch(propertyName)
          {
+            case("name"):
+            {
+                return nameValidationFailureMessages;
+            }
             case("code"):
             {
                 return codeValidationFailureMessages;
-            }
-            case("value"):
-            {
-                return valueValidationFailureMessages;
             }
             default:
             {

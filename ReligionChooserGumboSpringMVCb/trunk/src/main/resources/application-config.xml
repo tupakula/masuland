@@ -38,7 +38,7 @@
 	<!-- BUSINESS -->	
 	
 	<object 
-		id="appDelegate" 
+		id="appXmlDelegate" 
 		class="com.masuland.religionchooser.business.AppXmlDelegate"
 		/>
 		

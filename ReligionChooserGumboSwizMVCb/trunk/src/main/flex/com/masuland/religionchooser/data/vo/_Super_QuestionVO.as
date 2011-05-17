@@ -1,16 +1,15 @@
 /**
  * This is a generated class and is not intended for modification.  To customize behavior
- * of this value object you may modify the generated sub-class of this class - ChoiceVO.as.
+ * of this value object you may modify the generated sub-class of this class - QuestionVO.as.
  */
 
-package com.masuland.religionchooser.vo
+package com.masuland.religionchooser.data.vo
 {
 import com.adobe.fiber.services.IFiberManagingService;
 import com.adobe.fiber.util.FiberUtils;
 import com.adobe.fiber.valueobjects.IValueObject;
-import com.masuland.religionchooser.vo.LangVO;
-import com.masuland.religionchooser.vo.QuestionVO;
-import com.masuland.religionchooser.vo.ResultVO;
+import com.masuland.religionchooser.data.vo.ChoiceVO;
+import com.masuland.religionchooser.data.vo.LangVO;
 import flash.events.Event;
 import flash.events.EventDispatcher;
 import mx.binding.utils.ChangeWatcher;
@@ -28,7 +27,7 @@ import com.adobe.fiber.valueobjects.AvailablePropertyIterator;
 use namespace model_internal;
 
 [ExcludeClass]
-public class _Super_ChoiceVO extends flash.events.EventDispatcher implements com.adobe.fiber.valueobjects.IValueObject
+public class _Super_QuestionVO extends flash.events.EventDispatcher implements com.adobe.fiber.valueobjects.IValueObject
 {
     model_internal static function initRemoteClassAliasSingle(cz:Class) : void
     {
@@ -36,21 +35,19 @@ public class _Super_ChoiceVO extends flash.events.EventDispatcher implements com
 
     model_internal static function initRemoteClassAliasAllRelated() : void
     {
-        com.masuland.religionchooser.vo.ResultVO.initRemoteClassAliasSingleChild();
-        com.masuland.religionchooser.vo.LangVO.initRemoteClassAliasSingleChild();
-        com.masuland.religionchooser.vo.QuestionVO.initRemoteClassAliasSingleChild();
+        com.masuland.religionchooser.data.vo.LangVO.initRemoteClassAliasSingleChild();
+        com.masuland.religionchooser.data.vo.ChoiceVO.initRemoteClassAliasSingleChild();
     }
 
-    model_internal var _dminternal_model : _ChoiceVOEntityMetadata;
+    model_internal var _dminternal_model : _QuestionVOEntityMetadata;
 
     /**
      * properties
      */
-    private var _internal_type : String;
-    private var _internal_resultVO : com.masuland.religionchooser.vo.ResultVO;
     private var _internal_langVO : ArrayCollection;
-    model_internal var _internal_langVO_leaf:com.masuland.religionchooser.vo.LangVO;
-    private var _internal_questionVO : com.masuland.religionchooser.vo.QuestionVO;
+    model_internal var _internal_langVO_leaf:com.masuland.religionchooser.data.vo.LangVO;
+    private var _internal_choiceVO : ArrayCollection;
+    model_internal var _internal_choiceVO_leaf:com.masuland.religionchooser.data.vo.ChoiceVO;
 
     private static var emptyArray:Array = new Array();
 
@@ -62,15 +59,13 @@ public class _Super_ChoiceVO extends flash.events.EventDispatcher implements com
 
     model_internal var _changeWatcherArray:Array = new Array();
 
-    public function _Super_ChoiceVO()
+    public function _Super_QuestionVO()
     {
-        _model = new _ChoiceVOEntityMetadata(this);
+        _model = new _QuestionVOEntityMetadata(this);
 
         // Bind to own data properties for cache invalidation triggering
-        model_internal::_changeWatcherArray.push(mx.binding.utils.ChangeWatcher.watch(this, "type", model_internal::setterListenerType));
-        model_internal::_changeWatcherArray.push(mx.binding.utils.ChangeWatcher.watch(this, "resultVO", model_internal::setterListenerResultVO));
         model_internal::_changeWatcherArray.push(mx.binding.utils.ChangeWatcher.watch(this, "langVO", model_internal::setterListenerLangVO));
-        model_internal::_changeWatcherArray.push(mx.binding.utils.ChangeWatcher.watch(this, "questionVO", model_internal::setterListenerQuestionVO));
+        model_internal::_changeWatcherArray.push(mx.binding.utils.ChangeWatcher.watch(this, "choiceVO", model_internal::setterListenerChoiceVO));
 
     }
 
@@ -79,52 +74,20 @@ public class _Super_ChoiceVO extends flash.events.EventDispatcher implements com
      */
 
     [Bindable(event="propertyChange")]
-    public function get type() : String
-    {
-        return _internal_type;
-    }
-
-    [Bindable(event="propertyChange")]
-    public function get resultVO() : com.masuland.religionchooser.vo.ResultVO
-    {
-        return _internal_resultVO;
-    }
-
-    [Bindable(event="propertyChange")]
     public function get langVO() : ArrayCollection
     {
         return _internal_langVO;
     }
 
     [Bindable(event="propertyChange")]
-    public function get questionVO() : com.masuland.religionchooser.vo.QuestionVO
+    public function get choiceVO() : ArrayCollection
     {
-        return _internal_questionVO;
+        return _internal_choiceVO;
     }
 
     /**
      * data property setters
      */
-
-    public function set type(value:String) : void
-    {
-        var oldValue:String = _internal_type;
-        if (oldValue !== value)
-        {
-            _internal_type = value;
-            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "type", oldValue, _internal_type));
-        }
-    }
-
-    public function set resultVO(value:com.masuland.religionchooser.vo.ResultVO) : void
-    {
-        var oldValue:com.masuland.religionchooser.vo.ResultVO = _internal_resultVO;
-        if (oldValue !== value)
-        {
-            _internal_resultVO = value;
-            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "resultVO", oldValue, _internal_resultVO));
-        }
-    }
 
     public function set langVO(value:*) : void
     {
@@ -147,13 +110,24 @@ public class _Super_ChoiceVO extends flash.events.EventDispatcher implements com
         }
     }
 
-    public function set questionVO(value:com.masuland.religionchooser.vo.QuestionVO) : void
+    public function set choiceVO(value:*) : void
     {
-        var oldValue:com.masuland.religionchooser.vo.QuestionVO = _internal_questionVO;
+        var oldValue:ArrayCollection = _internal_choiceVO;
         if (oldValue !== value)
         {
-            _internal_questionVO = value;
-            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "questionVO", oldValue, _internal_questionVO));
+            if (value is ArrayCollection)
+            {
+                _internal_choiceVO = value;
+            }
+            else if (value is Array)
+            {
+                _internal_choiceVO = new ArrayCollection(value);
+            }
+            else
+            {
+                throw new Error("value of choiceVO must be a collection");
+            }
+            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "choiceVO", oldValue, _internal_choiceVO));
         }
     }
 
@@ -169,16 +143,6 @@ public class _Super_ChoiceVO extends flash.events.EventDispatcher implements com
      *  - the validity of the property (and the containing entity) if the given data property is required.
      */
 
-    model_internal function setterListenerType(value:flash.events.Event):void
-    {
-        _model.invalidateDependentOnType();
-    }
-
-    model_internal function setterListenerResultVO(value:flash.events.Event):void
-    {
-        _model.invalidateDependentOnResultVO();
-    }
-
     model_internal function setterListenerLangVO(value:flash.events.Event):void
     {
         if (value is mx.events.PropertyChangeEvent)
@@ -191,9 +155,16 @@ public class _Super_ChoiceVO extends flash.events.EventDispatcher implements com
         _model.invalidateDependentOnLangVO();
     }
 
-    model_internal function setterListenerQuestionVO(value:flash.events.Event):void
+    model_internal function setterListenerChoiceVO(value:flash.events.Event):void
     {
-        _model.invalidateDependentOnQuestionVO();
+        if (value is mx.events.PropertyChangeEvent)
+        {
+            if (mx.events.PropertyChangeEvent(value).newValue)
+            {
+                mx.events.PropertyChangeEvent(value).newValue.addEventListener(mx.events.CollectionEvent.COLLECTION_CHANGE, model_internal::setterListenerChoiceVO);
+            }
+        }
+        _model.invalidateDependentOnChoiceVO();
     }
 
 
@@ -217,25 +188,15 @@ public class _Super_ChoiceVO extends flash.events.EventDispatcher implements com
         var validationFailureMessages:Array = new Array();
 
         var propertyValidity:Boolean = true;
-        if (!_model.typeIsValid)
-        {
-            propertyValidity = false;
-            com.adobe.fiber.util.FiberUtils.arrayAdd(validationFailureMessages, _model.model_internal::_typeValidationFailureMessages);
-        }
-        if (!_model.resultVOIsValid)
-        {
-            propertyValidity = false;
-            com.adobe.fiber.util.FiberUtils.arrayAdd(validationFailureMessages, _model.model_internal::_resultVOValidationFailureMessages);
-        }
         if (!_model.langVOIsValid)
         {
             propertyValidity = false;
             com.adobe.fiber.util.FiberUtils.arrayAdd(validationFailureMessages, _model.model_internal::_langVOValidationFailureMessages);
         }
-        if (!_model.questionVOIsValid)
+        if (!_model.choiceVOIsValid)
         {
             propertyValidity = false;
-            com.adobe.fiber.util.FiberUtils.arrayAdd(validationFailureMessages, _model.model_internal::_questionVOValidationFailureMessages);
+            com.adobe.fiber.util.FiberUtils.arrayAdd(validationFailureMessages, _model.model_internal::_choiceVOValidationFailureMessages);
         }
 
         model_internal::_cacheInitialized_isValid = true;
@@ -264,14 +225,14 @@ public class _Super_ChoiceVO extends flash.events.EventDispatcher implements com
 
     [Transient]
     [Bindable(event="propertyChange")]
-    public function get _model() : _ChoiceVOEntityMetadata
+    public function get _model() : _QuestionVOEntityMetadata
     {
         return model_internal::_dminternal_model;
     }
 
-    public function set _model(value : _ChoiceVOEntityMetadata) : void
+    public function set _model(value : _QuestionVOEntityMetadata) : void
     {
-        var oldValue : _ChoiceVOEntityMetadata = model_internal::_dminternal_model;
+        var oldValue : _QuestionVOEntityMetadata = model_internal::_dminternal_model;
         if (oldValue !== value)
         {
             model_internal::_dminternal_model = value;
@@ -316,60 +277,6 @@ public class _Super_ChoiceVO extends flash.events.EventDispatcher implements com
         }
     }
 
-    model_internal var _doValidationCacheOfType : Array = null;
-    model_internal var _doValidationLastValOfType : String;
-
-    model_internal function _doValidationForType(valueIn:Object):Array
-    {
-        var value : String = valueIn as String;
-
-        if (model_internal::_doValidationCacheOfType != null && model_internal::_doValidationLastValOfType == value)
-           return model_internal::_doValidationCacheOfType ;
-
-        _model.model_internal::_typeIsValidCacheInitialized = true;
-        var validationFailures:Array = new Array();
-        var errorMessage:String;
-        var failure:Boolean;
-
-        var valRes:ValidationResult;
-        if (_model.isTypeAvailable && _internal_type == null)
-        {
-            validationFailures.push(new ValidationResult(true, "", "", "type is required"));
-        }
-
-        model_internal::_doValidationCacheOfType = validationFailures;
-        model_internal::_doValidationLastValOfType = value;
-
-        return validationFailures;
-    }
-    
-    model_internal var _doValidationCacheOfResultVO : Array = null;
-    model_internal var _doValidationLastValOfResultVO : com.masuland.religionchooser.vo.ResultVO;
-
-    model_internal function _doValidationForResultVO(valueIn:Object):Array
-    {
-        var value : com.masuland.religionchooser.vo.ResultVO = valueIn as com.masuland.religionchooser.vo.ResultVO;
-
-        if (model_internal::_doValidationCacheOfResultVO != null && model_internal::_doValidationLastValOfResultVO == value)
-           return model_internal::_doValidationCacheOfResultVO ;
-
-        _model.model_internal::_resultVOIsValidCacheInitialized = true;
-        var validationFailures:Array = new Array();
-        var errorMessage:String;
-        var failure:Boolean;
-
-        var valRes:ValidationResult;
-        if (_model.isResultVOAvailable && _internal_resultVO == null)
-        {
-            validationFailures.push(new ValidationResult(true, "", "", "resultVO is required"));
-        }
-
-        model_internal::_doValidationCacheOfResultVO = validationFailures;
-        model_internal::_doValidationLastValOfResultVO = value;
-
-        return validationFailures;
-    }
-    
     model_internal var _doValidationCacheOfLangVO : Array = null;
     model_internal var _doValidationLastValOfLangVO : ArrayCollection;
 
@@ -397,29 +304,29 @@ public class _Super_ChoiceVO extends flash.events.EventDispatcher implements com
         return validationFailures;
     }
     
-    model_internal var _doValidationCacheOfQuestionVO : Array = null;
-    model_internal var _doValidationLastValOfQuestionVO : com.masuland.religionchooser.vo.QuestionVO;
+    model_internal var _doValidationCacheOfChoiceVO : Array = null;
+    model_internal var _doValidationLastValOfChoiceVO : ArrayCollection;
 
-    model_internal function _doValidationForQuestionVO(valueIn:Object):Array
+    model_internal function _doValidationForChoiceVO(valueIn:Object):Array
     {
-        var value : com.masuland.religionchooser.vo.QuestionVO = valueIn as com.masuland.religionchooser.vo.QuestionVO;
+        var value : ArrayCollection = valueIn as ArrayCollection;
 
-        if (model_internal::_doValidationCacheOfQuestionVO != null && model_internal::_doValidationLastValOfQuestionVO == value)
-           return model_internal::_doValidationCacheOfQuestionVO ;
+        if (model_internal::_doValidationCacheOfChoiceVO != null && model_internal::_doValidationLastValOfChoiceVO == value)
+           return model_internal::_doValidationCacheOfChoiceVO ;
 
-        _model.model_internal::_questionVOIsValidCacheInitialized = true;
+        _model.model_internal::_choiceVOIsValidCacheInitialized = true;
         var validationFailures:Array = new Array();
         var errorMessage:String;
         var failure:Boolean;
 
         var valRes:ValidationResult;
-        if (_model.isQuestionVOAvailable && _internal_questionVO == null)
+        if (_model.isChoiceVOAvailable && _internal_choiceVO == null)
         {
-            validationFailures.push(new ValidationResult(true, "", "", "questionVO is required"));
+            validationFailures.push(new ValidationResult(true, "", "", "choiceVO is required"));
         }
 
-        model_internal::_doValidationCacheOfQuestionVO = validationFailures;
-        model_internal::_doValidationLastValOfQuestionVO = value;
+        model_internal::_doValidationCacheOfChoiceVO = validationFailures;
+        model_internal::_doValidationLastValOfChoiceVO = value;
 
         return validationFailures;
     }

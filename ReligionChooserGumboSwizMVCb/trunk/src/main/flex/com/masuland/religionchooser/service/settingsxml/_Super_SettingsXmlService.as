@@ -6,7 +6,7 @@ package com.masuland.religionchooser.service.settingsxml
 {
 import com.adobe.fiber.core.model_internal;
 import com.adobe.fiber.services.wrapper.HTTPServiceWrapper;
-import com.masuland.religionchooser.vo.SettingsVO;
+import com.masuland.religionchooser.data.vo.SettingsVO;
 import mx.rpc.AbstractOperation;
 import mx.rpc.AsyncToken;
 import mx.rpc.http.HTTPMultiService;
@@ -34,7 +34,7 @@ internal class _Super_SettingsXmlService extends com.adobe.fiber.services.wrappe
          operation.serializationFilter = serializer0;
          operation.properties = new Object();
          operation.properties["xPath"] = "/::settingsVO";
-         operation.resultType = com.masuland.religionchooser.vo.SettingsVO;
+         operation.resultType = com.masuland.religionchooser.data.vo.SettingsVO;
          operations.push(operation);
 
          _serviceControl.operationList = operations;  

@@ -1,19 +1,16 @@
 /**
  * This is a generated class and is not intended for modification.  To customize behavior
- * of this value object you may modify the generated sub-class of this class - SettingsVO.as.
+ * of this value object you may modify the generated sub-class of this class - LangVO.as.
  */
 
-package com.masuland.religionchooser.vo
+package com.masuland.religionchooser.data.vo
 {
 import com.adobe.fiber.services.IFiberManagingService;
 import com.adobe.fiber.util.FiberUtils;
 import com.adobe.fiber.valueobjects.IValueObject;
-import com.masuland.religionchooser.vo.LayoutVO;
 import flash.events.Event;
 import flash.events.EventDispatcher;
 import mx.binding.utils.ChangeWatcher;
-import mx.collections.ArrayCollection;
-import mx.events.CollectionEvent;
 import mx.events.PropertyChangeEvent;
 import mx.validators.ValidationResult;
 
@@ -26,7 +23,7 @@ import com.adobe.fiber.valueobjects.AvailablePropertyIterator;
 use namespace model_internal;
 
 [ExcludeClass]
-public class _Super_SettingsVO extends flash.events.EventDispatcher implements com.adobe.fiber.valueobjects.IValueObject
+public class _Super_LangVO extends flash.events.EventDispatcher implements com.adobe.fiber.valueobjects.IValueObject
 {
     model_internal static function initRemoteClassAliasSingle(cz:Class) : void
     {
@@ -34,18 +31,15 @@ public class _Super_SettingsVO extends flash.events.EventDispatcher implements c
 
     model_internal static function initRemoteClassAliasAllRelated() : void
     {
-        com.masuland.religionchooser.vo.LayoutVO.initRemoteClassAliasSingleChild();
-        com.masuland.religionchooser.vo.StyleVO.initRemoteClassAliasSingleChild();
-        com.masuland.religionchooser.vo.LocaleVO.initRemoteClassAliasSingleChild();
     }
 
-    model_internal var _dminternal_model : _SettingsVOEntityMetadata;
+    model_internal var _dminternal_model : _LangVOEntityMetadata;
 
     /**
      * properties
      */
-    private var _internal_layoutVO : ArrayCollection;
-    model_internal var _internal_layoutVO_leaf:com.masuland.religionchooser.vo.LayoutVO;
+    private var _internal_code : String;
+    private var _internal_value : String;
 
     private static var emptyArray:Array = new Array();
 
@@ -57,12 +51,13 @@ public class _Super_SettingsVO extends flash.events.EventDispatcher implements c
 
     model_internal var _changeWatcherArray:Array = new Array();
 
-    public function _Super_SettingsVO()
+    public function _Super_LangVO()
     {
-        _model = new _SettingsVOEntityMetadata(this);
+        _model = new _LangVOEntityMetadata(this);
 
         // Bind to own data properties for cache invalidation triggering
-        model_internal::_changeWatcherArray.push(mx.binding.utils.ChangeWatcher.watch(this, "layoutVO", model_internal::setterListenerLayoutVO));
+        model_internal::_changeWatcherArray.push(mx.binding.utils.ChangeWatcher.watch(this, "code", model_internal::setterListenerCode));
+        model_internal::_changeWatcherArray.push(mx.binding.utils.ChangeWatcher.watch(this, "value", model_internal::setterListenerValue));
 
     }
 
@@ -71,33 +66,38 @@ public class _Super_SettingsVO extends flash.events.EventDispatcher implements c
      */
 
     [Bindable(event="propertyChange")]
-    public function get layoutVO() : ArrayCollection
+    public function get code() : String
     {
-        return _internal_layoutVO;
+        return _internal_code;
+    }
+
+    [Bindable(event="propertyChange")]
+    public function get value() : String
+    {
+        return _internal_value;
     }
 
     /**
      * data property setters
      */
 
-    public function set layoutVO(value:*) : void
+    public function set code(value:String) : void
     {
-        var oldValue:ArrayCollection = _internal_layoutVO;
+        var oldValue:String = _internal_code;
         if (oldValue !== value)
         {
-            if (value is ArrayCollection)
-            {
-                _internal_layoutVO = value;
-            }
-            else if (value is Array)
-            {
-                _internal_layoutVO = new ArrayCollection(value);
-            }
-            else
-            {
-                throw new Error("value of layoutVO must be a collection");
-            }
-            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "layoutVO", oldValue, _internal_layoutVO));
+            _internal_code = value;
+            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "code", oldValue, _internal_code));
+        }
+    }
+
+    public function set value(value:String) : void
+    {
+        var oldValue:String = _internal_value;
+        if (oldValue !== value)
+        {
+            _internal_value = value;
+            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "value", oldValue, _internal_value));
         }
     }
 
@@ -113,16 +113,14 @@ public class _Super_SettingsVO extends flash.events.EventDispatcher implements c
      *  - the validity of the property (and the containing entity) if the given data property is required.
      */
 
-    model_internal function setterListenerLayoutVO(value:flash.events.Event):void
+    model_internal function setterListenerCode(value:flash.events.Event):void
     {
-        if (value is mx.events.PropertyChangeEvent)
-        {
-            if (mx.events.PropertyChangeEvent(value).newValue)
-            {
-                mx.events.PropertyChangeEvent(value).newValue.addEventListener(mx.events.CollectionEvent.COLLECTION_CHANGE, model_internal::setterListenerLayoutVO);
-            }
-        }
-        _model.invalidateDependentOnLayoutVO();
+        _model.invalidateDependentOnCode();
+    }
+
+    model_internal function setterListenerValue(value:flash.events.Event):void
+    {
+        _model.invalidateDependentOnValue();
     }
 
 
@@ -146,10 +144,15 @@ public class _Super_SettingsVO extends flash.events.EventDispatcher implements c
         var validationFailureMessages:Array = new Array();
 
         var propertyValidity:Boolean = true;
-        if (!_model.layoutVOIsValid)
+        if (!_model.codeIsValid)
         {
             propertyValidity = false;
-            com.adobe.fiber.util.FiberUtils.arrayAdd(validationFailureMessages, _model.model_internal::_layoutVOValidationFailureMessages);
+            com.adobe.fiber.util.FiberUtils.arrayAdd(validationFailureMessages, _model.model_internal::_codeValidationFailureMessages);
+        }
+        if (!_model.valueIsValid)
+        {
+            propertyValidity = false;
+            com.adobe.fiber.util.FiberUtils.arrayAdd(validationFailureMessages, _model.model_internal::_valueValidationFailureMessages);
         }
 
         model_internal::_cacheInitialized_isValid = true;
@@ -178,14 +181,14 @@ public class _Super_SettingsVO extends flash.events.EventDispatcher implements c
 
     [Transient]
     [Bindable(event="propertyChange")]
-    public function get _model() : _SettingsVOEntityMetadata
+    public function get _model() : _LangVOEntityMetadata
     {
         return model_internal::_dminternal_model;
     }
 
-    public function set _model(value : _SettingsVOEntityMetadata) : void
+    public function set _model(value : _LangVOEntityMetadata) : void
     {
-        var oldValue : _SettingsVOEntityMetadata = model_internal::_dminternal_model;
+        var oldValue : _LangVOEntityMetadata = model_internal::_dminternal_model;
         if (oldValue !== value)
         {
             model_internal::_dminternal_model = value;
@@ -230,29 +233,56 @@ public class _Super_SettingsVO extends flash.events.EventDispatcher implements c
         }
     }
 
-    model_internal var _doValidationCacheOfLayoutVO : Array = null;
-    model_internal var _doValidationLastValOfLayoutVO : ArrayCollection;
+    model_internal var _doValidationCacheOfCode : Array = null;
+    model_internal var _doValidationLastValOfCode : String;
 
-    model_internal function _doValidationForLayoutVO(valueIn:Object):Array
+    model_internal function _doValidationForCode(valueIn:Object):Array
     {
-        var value : ArrayCollection = valueIn as ArrayCollection;
+        var value : String = valueIn as String;
 
-        if (model_internal::_doValidationCacheOfLayoutVO != null && model_internal::_doValidationLastValOfLayoutVO == value)
-           return model_internal::_doValidationCacheOfLayoutVO ;
+        if (model_internal::_doValidationCacheOfCode != null && model_internal::_doValidationLastValOfCode == value)
+           return model_internal::_doValidationCacheOfCode ;
 
-        _model.model_internal::_layoutVOIsValidCacheInitialized = true;
+        _model.model_internal::_codeIsValidCacheInitialized = true;
         var validationFailures:Array = new Array();
         var errorMessage:String;
         var failure:Boolean;
 
         var valRes:ValidationResult;
-        if (_model.isLayoutVOAvailable && _internal_layoutVO == null)
+        if (_model.isCodeAvailable && _internal_code == null)
         {
-            validationFailures.push(new ValidationResult(true, "", "", "layoutVO is required"));
+            validationFailures.push(new ValidationResult(true, "", "", "code is required"));
         }
 
-        model_internal::_doValidationCacheOfLayoutVO = validationFailures;
-        model_internal::_doValidationLastValOfLayoutVO = value;
+        model_internal::_doValidationCacheOfCode = validationFailures;
+        model_internal::_doValidationLastValOfCode = value;
+
+        return validationFailures;
+    }
+    
+    model_internal var _doValidationCacheOfValue : Array = null;
+    model_internal var _doValidationLastValOfValue : String;
+
+    model_internal function _doValidationForValue(valueIn:Object):Array
+    {
+        var value : String = valueIn as String;
+
+        if (model_internal::_doValidationCacheOfValue != null && model_internal::_doValidationLastValOfValue == value)
+           return model_internal::_doValidationCacheOfValue ;
+
+        _model.model_internal::_valueIsValidCacheInitialized = true;
+        var validationFailures:Array = new Array();
+        var errorMessage:String;
+        var failure:Boolean;
+
+        var valRes:ValidationResult;
+        if (_model.isValueAvailable && _internal_value == null)
+        {
+            validationFailures.push(new ValidationResult(true, "", "", "value is required"));
+        }
+
+        model_internal::_doValidationCacheOfValue = validationFailures;
+        model_internal::_doValidationLastValOfValue = value;
 
         return validationFailures;
     }

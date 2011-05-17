@@ -2,7 +2,7 @@
 /**
  * This is a generated class and is not intended for modification.  
  */
-package com.masuland.religionchooser.vo
+package com.masuland.religionchooser.data.vo
 {
 import com.adobe.fiber.styles.IStyle;
 import com.adobe.fiber.styles.Style;
@@ -10,6 +10,7 @@ import com.adobe.fiber.styles.StyleValidator;
 import com.adobe.fiber.valueobjects.AbstractEntityMetadata;
 import com.adobe.fiber.valueobjects.AvailablePropertyIterator;
 import com.adobe.fiber.valueobjects.IPropertyIterator;
+import com.masuland.religionchooser.data.vo.LayoutVO;
 import mx.events.ValidationResultEvent;
 import com.adobe.fiber.core.model_internal;
 import com.adobe.fiber.valueobjects.IModelType;
@@ -18,62 +19,52 @@ import mx.events.PropertyChangeEvent;
 use namespace model_internal;
 
 [ExcludeClass]
-internal class _LocaleVOEntityMetadata extends com.adobe.fiber.valueobjects.AbstractEntityMetadata
+internal class _SettingsVOEntityMetadata extends com.adobe.fiber.valueobjects.AbstractEntityMetadata
 {
     private static var emptyArray:Array = new Array();
 
-    model_internal static var allProperties:Array = new Array("name", "code");
+    model_internal static var allProperties:Array = new Array("layoutVO");
     model_internal static var allAssociationProperties:Array = new Array();
-    model_internal static var allRequiredProperties:Array = new Array("name", "code");
-    model_internal static var allAlwaysAvailableProperties:Array = new Array("name", "code");
+    model_internal static var allRequiredProperties:Array = new Array("layoutVO");
+    model_internal static var allAlwaysAvailableProperties:Array = new Array("layoutVO");
     model_internal static var guardedProperties:Array = new Array();
-    model_internal static var dataProperties:Array = new Array("name", "code");
+    model_internal static var dataProperties:Array = new Array("layoutVO");
     model_internal static var derivedProperties:Array = new Array();
-    model_internal static var collectionProperties:Array = new Array();
+    model_internal static var collectionProperties:Array = new Array("layoutVO");
     model_internal static var collectionBaseMap:Object;
-    model_internal static var entityName:String = "LocaleVO";
+    model_internal static var entityName:String = "SettingsVO";
     model_internal static var dependentsOnMap:Object;
     model_internal static var dependedOnServices:Array = new Array();
 
     
-    model_internal var _nameIsValid:Boolean;
-    model_internal var _nameValidator:com.adobe.fiber.styles.StyleValidator;
-    model_internal var _nameIsValidCacheInitialized:Boolean = false;
-    model_internal var _nameValidationFailureMessages:Array;
-    
-    model_internal var _codeIsValid:Boolean;
-    model_internal var _codeValidator:com.adobe.fiber.styles.StyleValidator;
-    model_internal var _codeIsValidCacheInitialized:Boolean = false;
-    model_internal var _codeValidationFailureMessages:Array;
+    model_internal var _layoutVOIsValid:Boolean;
+    model_internal var _layoutVOValidator:com.adobe.fiber.styles.StyleValidator;
+    model_internal var _layoutVOIsValidCacheInitialized:Boolean = false;
+    model_internal var _layoutVOValidationFailureMessages:Array;
 
-    model_internal var _instance:_Super_LocaleVO;
+    model_internal var _instance:_Super_SettingsVO;
     model_internal static var _nullStyle:com.adobe.fiber.styles.Style = new com.adobe.fiber.styles.Style();
 
-    public function _LocaleVOEntityMetadata(value : _Super_LocaleVO)
+    public function _SettingsVOEntityMetadata(value : _Super_SettingsVO)
     {
         // initialize property maps
         if (model_internal::dependentsOnMap == null)
         {
             // depenents map
             model_internal::dependentsOnMap = new Object();
-            model_internal::dependentsOnMap["name"] = new Array();
-            model_internal::dependentsOnMap["code"] = new Array();
+            model_internal::dependentsOnMap["layoutVO"] = new Array();
 
             // collection base map
             model_internal::collectionBaseMap = new Object()
+            model_internal::collectionBaseMap["layoutVO"] = "com.masuland.religionchooser.data.vo.LayoutVO";
         }
 
         model_internal::_instance = value;
-        model_internal::_nameValidator = new StyleValidator(model_internal::_instance.model_internal::_doValidationForName);
-        model_internal::_nameValidator.required = true;
-        model_internal::_nameValidator.requiredFieldError = "name is required";
-        //model_internal::_nameValidator.source = model_internal::_instance;
-        //model_internal::_nameValidator.property = "name";
-        model_internal::_codeValidator = new StyleValidator(model_internal::_instance.model_internal::_doValidationForCode);
-        model_internal::_codeValidator.required = true;
-        model_internal::_codeValidator.requiredFieldError = "code is required";
-        //model_internal::_codeValidator.source = model_internal::_instance;
-        //model_internal::_codeValidator.property = "code";
+        model_internal::_layoutVOValidator = new StyleValidator(model_internal::_instance.model_internal::_doValidationForLayoutVO);
+        model_internal::_layoutVOValidator.required = true;
+        model_internal::_layoutVOValidator.requiredFieldError = "layoutVO is required";
+        //model_internal::_layoutVOValidator.source = model_internal::_instance;
+        //model_internal::_layoutVOValidator.property = "layoutVO";
     }
 
     override public function getEntityName():String
@@ -114,7 +105,7 @@ internal class _LocaleVOEntityMetadata extends com.adobe.fiber.valueobjects.Abst
     override public function getDependants(propertyName:String):Array
     {
        if (model_internal::dataProperties.indexOf(propertyName) == -1)
-            throw new Error(propertyName + " is not a data property of entity LocaleVO");  
+            throw new Error(propertyName + " is not a data property of entity SettingsVO");  
             
        return model_internal::dependentsOnMap[propertyName] as Array;  
     }
@@ -132,7 +123,7 @@ internal class _LocaleVOEntityMetadata extends com.adobe.fiber.valueobjects.Abst
     override public function getCollectionBase(propertyName:String):String
     {
         if (model_internal::collectionProperties.indexOf(propertyName) == -1)
-            throw new Error(propertyName + " is not a collection property of entity LocaleVO");  
+            throw new Error(propertyName + " is not a collection property of entity SettingsVO");  
 
         return model_internal::collectionBaseMap[propertyName];
     }
@@ -146,7 +137,7 @@ internal class _LocaleVOEntityMetadata extends com.adobe.fiber.valueobjects.Abst
     {
         if (model_internal::allProperties.indexOf(propertyName) == -1)
         {
-            throw new Error(propertyName + " does not exist for entity LocaleVO");
+            throw new Error(propertyName + " does not exist for entity SettingsVO");
         }
 
         return model_internal::_instance[propertyName];
@@ -156,7 +147,7 @@ internal class _LocaleVOEntityMetadata extends com.adobe.fiber.valueobjects.Abst
     {
         if (model_internal::dataProperties.indexOf(propertyName) == -1)
         {
-            throw new Error(propertyName + " is not a data property of entity LocaleVO");
+            throw new Error(propertyName + " is not a data property of entity SettingsVO");
         }
 
         model_internal::_instance[propertyName] = value;
@@ -188,7 +179,7 @@ internal class _LocaleVOEntityMetadata extends com.adobe.fiber.valueobjects.Abst
     {
         if (model_internal::allProperties.indexOf(propertyName) == -1)
         {
-            throw new Error(propertyName + " does not exist for entity LocaleVO");
+            throw new Error(propertyName + " does not exist for entity SettingsVO");
         }
 
         if (model_internal::allAlwaysAvailableProperties.indexOf(propertyName) != -1)
@@ -283,13 +274,7 @@ internal class _LocaleVOEntityMetadata extends com.adobe.fiber.valueobjects.Abst
     }
 
     [Bindable(event="propertyChange")]
-    public function get isNameAvailable():Boolean
-    {
-        return true;
-    }
-
-    [Bindable(event="propertyChange")]
-    public function get isCodeAvailable():Boolean
+    public function get isLayoutVOAvailable():Boolean
     {
         return true;
     }
@@ -298,20 +283,12 @@ internal class _LocaleVOEntityMetadata extends com.adobe.fiber.valueobjects.Abst
     /**
      * derived property recalculation
      */
-    public function invalidateDependentOnName():void
+    public function invalidateDependentOnLayoutVO():void
     {
-        if (model_internal::_nameIsValidCacheInitialized )
+        if (model_internal::_layoutVOIsValidCacheInitialized )
         {
-            model_internal::_instance.model_internal::_doValidationCacheOfName = null;
-            model_internal::calculateNameIsValid();
-        }
-    }
-    public function invalidateDependentOnCode():void
-    {
-        if (model_internal::_codeIsValidCacheInitialized )
-        {
-            model_internal::_instance.model_internal::_doValidationCacheOfCode = null;
-            model_internal::calculateCodeIsValid();
+            model_internal::_instance.model_internal::_doValidationCacheOfLayoutVO = null;
+            model_internal::calculateLayoutVOIsValid();
         }
     }
 
@@ -321,44 +298,44 @@ internal class _LocaleVOEntityMetadata extends com.adobe.fiber.valueobjects.Abst
     }
 
     [Bindable(event="propertyChange")]   
-    public function get nameStyle():com.adobe.fiber.styles.Style
+    public function get layoutVOStyle():com.adobe.fiber.styles.Style
     {
         return model_internal::_nullStyle;
     }
 
-    public function get nameValidator() : StyleValidator
+    public function get layoutVOValidator() : StyleValidator
     {
-        return model_internal::_nameValidator;
+        return model_internal::_layoutVOValidator;
     }
 
-    model_internal function set _nameIsValid_der(value:Boolean):void 
+    model_internal function set _layoutVOIsValid_der(value:Boolean):void 
     {
-        var oldValue:Boolean = model_internal::_nameIsValid;         
+        var oldValue:Boolean = model_internal::_layoutVOIsValid;         
         if (oldValue !== value)
         {
-            model_internal::_nameIsValid = value;
-            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "nameIsValid", oldValue, value));
+            model_internal::_layoutVOIsValid = value;
+            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "layoutVOIsValid", oldValue, value));
         }                             
     }
 
     [Bindable(event="propertyChange")]
-    public function get nameIsValid():Boolean
+    public function get layoutVOIsValid():Boolean
     {
-        if (!model_internal::_nameIsValidCacheInitialized)
+        if (!model_internal::_layoutVOIsValidCacheInitialized)
         {
-            model_internal::calculateNameIsValid();
+            model_internal::calculateLayoutVOIsValid();
         }
 
-        return model_internal::_nameIsValid;
+        return model_internal::_layoutVOIsValid;
     }
 
-    model_internal function calculateNameIsValid():void
+    model_internal function calculateLayoutVOIsValid():void
     {
-        var valRes:ValidationResultEvent = model_internal::_nameValidator.validate(model_internal::_instance.name)
-        model_internal::_nameIsValid_der = (valRes.results == null);
-        model_internal::_nameIsValidCacheInitialized = true;
+        var valRes:ValidationResultEvent = model_internal::_layoutVOValidator.validate(model_internal::_instance.layoutVO)
+        model_internal::_layoutVOIsValid_der = (valRes.results == null);
+        model_internal::_layoutVOIsValidCacheInitialized = true;
         if (valRes.results == null)
-             model_internal::nameValidationFailureMessages_der = emptyArray;
+             model_internal::layoutVOValidationFailureMessages_der = emptyArray;
         else
         {
             var _valFailures:Array = new Array();
@@ -366,22 +343,22 @@ internal class _LocaleVOEntityMetadata extends com.adobe.fiber.valueobjects.Abst
             {
                 _valFailures.push(valRes.results[a].errorMessage);
             }
-            model_internal::nameValidationFailureMessages_der = _valFailures;
+            model_internal::layoutVOValidationFailureMessages_der = _valFailures;
         }
     }
 
     [Bindable(event="propertyChange")]
-    public function get nameValidationFailureMessages():Array
+    public function get layoutVOValidationFailureMessages():Array
     {
-        if (model_internal::_nameValidationFailureMessages == null)
-            model_internal::calculateNameIsValid();
+        if (model_internal::_layoutVOValidationFailureMessages == null)
+            model_internal::calculateLayoutVOIsValid();
 
-        return _nameValidationFailureMessages;
+        return _layoutVOValidationFailureMessages;
     }
 
-    model_internal function set nameValidationFailureMessages_der(value:Array) : void
+    model_internal function set layoutVOValidationFailureMessages_der(value:Array) : void
     {
-        var oldValue:Array = model_internal::_nameValidationFailureMessages;
+        var oldValue:Array = model_internal::_layoutVOValidationFailureMessages;
 
         var needUpdate : Boolean = false;
         if (oldValue == null)
@@ -409,108 +386,8 @@ internal class _LocaleVOEntityMetadata extends com.adobe.fiber.valueobjects.Abst
 
         if (needUpdate)
         {
-            model_internal::_nameValidationFailureMessages = value;   
-            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "nameValidationFailureMessages", oldValue, value));
-            // Only execute calculateIsValid if it has been called before, to update the validationFailureMessages for
-            // the entire entity.
-            if (model_internal::_instance.model_internal::_cacheInitialized_isValid)
-            {
-                model_internal::_instance.model_internal::isValid_der = model_internal::_instance.model_internal::calculateIsValid();
-            }
-        }
-    }
-
-    [Bindable(event="propertyChange")]   
-    public function get codeStyle():com.adobe.fiber.styles.Style
-    {
-        return model_internal::_nullStyle;
-    }
-
-    public function get codeValidator() : StyleValidator
-    {
-        return model_internal::_codeValidator;
-    }
-
-    model_internal function set _codeIsValid_der(value:Boolean):void 
-    {
-        var oldValue:Boolean = model_internal::_codeIsValid;         
-        if (oldValue !== value)
-        {
-            model_internal::_codeIsValid = value;
-            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "codeIsValid", oldValue, value));
-        }                             
-    }
-
-    [Bindable(event="propertyChange")]
-    public function get codeIsValid():Boolean
-    {
-        if (!model_internal::_codeIsValidCacheInitialized)
-        {
-            model_internal::calculateCodeIsValid();
-        }
-
-        return model_internal::_codeIsValid;
-    }
-
-    model_internal function calculateCodeIsValid():void
-    {
-        var valRes:ValidationResultEvent = model_internal::_codeValidator.validate(model_internal::_instance.code)
-        model_internal::_codeIsValid_der = (valRes.results == null);
-        model_internal::_codeIsValidCacheInitialized = true;
-        if (valRes.results == null)
-             model_internal::codeValidationFailureMessages_der = emptyArray;
-        else
-        {
-            var _valFailures:Array = new Array();
-            for (var a:int = 0 ; a<valRes.results.length ; a++)
-            {
-                _valFailures.push(valRes.results[a].errorMessage);
-            }
-            model_internal::codeValidationFailureMessages_der = _valFailures;
-        }
-    }
-
-    [Bindable(event="propertyChange")]
-    public function get codeValidationFailureMessages():Array
-    {
-        if (model_internal::_codeValidationFailureMessages == null)
-            model_internal::calculateCodeIsValid();
-
-        return _codeValidationFailureMessages;
-    }
-
-    model_internal function set codeValidationFailureMessages_der(value:Array) : void
-    {
-        var oldValue:Array = model_internal::_codeValidationFailureMessages;
-
-        var needUpdate : Boolean = false;
-        if (oldValue == null)
-            needUpdate = true;
-    
-        // avoid firing the event when old and new value are different empty arrays
-        if (!needUpdate && (oldValue !== value && (oldValue.length > 0 || value.length > 0)))
-        {
-            if (oldValue.length == value.length)
-            {
-                for (var a:int=0; a < oldValue.length; a++)
-                {
-                    if (oldValue[a] !== value[a])
-                    {
-                        needUpdate = true;
-                        break;
-                    }
-                }
-            }
-            else
-            {
-                needUpdate = true;
-            }
-        }
-
-        if (needUpdate)
-        {
-            model_internal::_codeValidationFailureMessages = value;   
-            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "codeValidationFailureMessages", oldValue, value));
+            model_internal::_layoutVOValidationFailureMessages = value;   
+            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "layoutVOValidationFailureMessages", oldValue, value));
             // Only execute calculateIsValid if it has been called before, to update the validationFailureMessages for
             // the entire entity.
             if (model_internal::_instance.model_internal::_cacheInitialized_isValid)
@@ -545,13 +422,9 @@ internal class _LocaleVOEntityMetadata extends com.adobe.fiber.valueobjects.Abst
      {
          switch(propertyName)
          {
-            case("name"):
+            case("layoutVO"):
             {
-                return nameValidationFailureMessages;
-            }
-            case("code"):
-            {
-                return codeValidationFailureMessages;
+                return layoutVOValidationFailureMessages;
             }
             default:
             {

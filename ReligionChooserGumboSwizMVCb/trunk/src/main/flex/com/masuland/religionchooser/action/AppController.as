@@ -7,11 +7,11 @@ package com.masuland.religionchooser.action
 	import com.masuland.religionchooser.event.LoadLayoutEvent;
 	import com.masuland.religionchooser.event.LoadLocaleEvent;
 	import com.masuland.religionchooser.event.LoadStyleEvent;
-	import com.masuland.religionchooser.vo.LayoutVO;
-	import com.masuland.religionchooser.vo.LocaleVO;
-	import com.masuland.religionchooser.vo.QuestionVO;
-	import com.masuland.religionchooser.vo.SettingsVO;
-	import com.masuland.religionchooser.vo.StyleVO;
+	import com.masuland.religionchooser.data.vo.LayoutVO;
+	import com.masuland.religionchooser.data.vo.LocaleVO;
+	import com.masuland.religionchooser.data.vo.QuestionVO;
+	import com.masuland.religionchooser.data.vo.SettingsVO;
+	import com.masuland.religionchooser.data.vo.StyleVO;
 	
 	import flash.events.IEventDispatcher;
 	
@@ -195,10 +195,12 @@ package com.masuland.religionchooser.action
 		
 		protected function loadStyle_completeHandler(event:StyleEvent):void
 		{
+			appModel.isApplicationVisible = true;
 		}
 		
 		protected function loadStyle_errorHandler(event:StyleEvent):void
 		{
+			appModel.isApplicationVisible = true;
 		}
 	}
 }
