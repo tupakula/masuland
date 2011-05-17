@@ -13,7 +13,7 @@ package com.masuland.religionchooser.view.component
 	
 	import spark.components.Button;
 
-	public class ChoiceBtn extends Button
+	public class ChoiceButton extends Button
 	{
 		[Autowired(name='appModel', property='currentLayout')]
 		[Bindable]
@@ -23,7 +23,7 @@ package com.masuland.religionchooser.view.component
 
 		private var _choice:ChoiceVO;
 		
-		public function ChoiceBtn()
+		public function ChoiceButton()
 		{
 			buttonMode = true;
 			useHandCursor = true;

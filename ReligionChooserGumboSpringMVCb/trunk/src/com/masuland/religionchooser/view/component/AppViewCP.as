@@ -2,12 +2,12 @@ package com.masuland.religionchooser.view.component
 {
 	import spark.components.supportClasses.SkinnableComponent;
 	
-	public class AppViewCB extends SkinnableComponent
+	public class AppViewCP extends SkinnableComponent
 	{
 		[SkinPart(require="true")]
-		public var bx_content:ContentBoxCB;
+		public var bx_content:ContentBoxCP;
 		
 		[SkinPart(require="true")]
-		public var bx_settings:SettingsBoxCB;
+		public var bx_settings:SettingsBoxCP;
 	}
 }
