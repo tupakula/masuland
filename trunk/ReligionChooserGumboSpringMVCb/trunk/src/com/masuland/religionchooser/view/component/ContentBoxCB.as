@@ -1,10 +1,10 @@
 package com.masuland.religionchooser.view.component
 {
-	import com.masuland.religionchooser.event.AppEvent;
-	import com.masuland.religionchooser.vo.LayoutVO;
-	import com.masuland.religionchooser.vo.LocaleVO;
-	import com.masuland.religionchooser.vo.QuestionVO;
-	import com.masuland.religionchooser.vo.ResultVO;
+	import com.masuland.religionchooser.action.event.AppEvent;
+	import com.masuland.religionchooser.data.vo.LayoutVO;
+	import com.masuland.religionchooser.data.vo.LocaleVO;
+	import com.masuland.religionchooser.data.vo.QuestionVO;
+	import com.masuland.religionchooser.data.vo.ResultVO;
 	
 	import org.springextensions.actionscript.core.event.EventBus;
 	
