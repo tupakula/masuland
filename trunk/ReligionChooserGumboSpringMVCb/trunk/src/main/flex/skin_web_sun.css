@@ -1,29 +1,36 @@
-/* CSS file */
 @namespace s "library://ns.adobe.com/flex/spark";
 @namespace mx "library://ns.adobe.com/flex/mx";
 @namespace component "com.masuland.religionchooser.view.component.*";
 
+.appTitle
+{
+	text-align: center;
+	font-weight: bold;
+	font-size: 15;
+	color: #C46F41;
+}
+
 component|SettingsBoxCP
 {
-	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.SettingsBox");
+	skin-class: ClassReference("com.masuland.religionchooser.view.skin.web.sun.SettingsBoxSkin");
 }
 
 component|ContentBoxCP
 {
-	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.ContentBox");
+	skin-class: ClassReference("com.masuland.religionchooser.view.skin.web.sun.ContentBoxSkin");
 }
 
 .settingsButton
 {
-	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.SettingsButton");
+	skin-class: ClassReference("com.masuland.religionchooser.view.skin.web.sun.SettingsButtonSkin");
 }
 
 .actionButton
 {
-	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.ActionButton");
+	skin-class: ClassReference("com.masuland.religionchooser.view.skin.web.sun.ActionButtonSkin");
 }
 
 .moreButton
 {
-	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.MoreButton");
+	skin-class: ClassReference("com.masuland.religionchooser.view.skin.web.sun.MoreButtonSkin");
 }
