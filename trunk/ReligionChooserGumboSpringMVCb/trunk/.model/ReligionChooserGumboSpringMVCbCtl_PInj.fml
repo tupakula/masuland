@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model xmlns="http://ns.adobe.com/Fiber/1.0">
+  <annotation name="ActionScriptGeneration">
+    <item name="FullyQualifyReferences">true</item>
+  </annotation>
+  <service name="SettingsXmlService">
+    <annotation name="ActionScriptGeneration">
+      <item name="ServiceType">HTTPMultiService</item>
+      <item name="Package">com.masuland.religionchooser.service.settingsxml</item>
+    </annotation>
+    <annotation name="ServiceTypeGroup">
+      <item name="ServiceBackendType">XML</item>
+    </annotation>
+    <annotation name="ServiceConfig">
+      <item name="LINKED_FILE"></item>
+      <item name="DEFAULT_ENTITY_PACKAGE">com.masuland.religionchooser.data.vo</item>
+    </annotation>
+    <function name="getData" return-type="SettingsVO">
+      <annotation name="ActionScriptGeneration">
+        <item name="url">SettingsXmlService.xml</item>
+        <item name="method">GET</item>
+        <item name="SerializationFilter">com.adobe.serializers.xml.XMLSerializationFilter</item>
+      </annotation>
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="returnType">opaque</item>
+      </annotation>
+      <annotation name="url group">
+        <item name="completeURL">/Users/masu/Workspace/Code/Examples/ReligionChooserGumboSpringMVCbCtl_PInj/src/main/resources/SettingsXmlService.xml</item>
+        <item name="displayUrl">/Users/masu/Workspace/Code/Examples/ReligionChooserGumboSpringMVCbCtl_PInj/src/main/resources/SettingsXmlService.xml</item>
+        <item name="isUrl">false</item>
+      </annotation>
+      <annotation name="Properties">
+        <item name="xPath">/::settingsVO</item>
+      </annotation>
+    </function>
+  </service>
+  <entity name="LocaleVO">
+    <annotation name="EntityProperties">
+      <item name="EntityOriginalName">LocaleVO</item>
+    </annotation>
+    <annotation name="service Group">
+      <item name="service">SettingsXmlService</item>
+    </annotation>
+    <annotation name="ServerProperties">
+      <item name="IncludeRemoteClass">nonempty</item>
+    </annotation>
+    <annotation name="ActionScriptGeneration">
+      <item name="Package">com.masuland.religionchooser.data.vo</item>
+    </annotation>
+    <property name="name" type="string" required="true"/>
+    <property name="code" type="string" required="true"/>
+  </entity>
+  <entity name="StyleVO">
+    <annotation name="EntityProperties">
+      <item name="EntityOriginalName">StyleVO</item>
+    </annotation>
+    <annotation name="service Group">
+      <item name="service">SettingsXmlService</item>
+    </annotation>
+    <annotation name="ServerProperties">
+      <item name="IncludeRemoteClass">nonempty</item>
+    </annotation>
+    <annotation name="ActionScriptGeneration">
+      <item name="Package">com.masuland.religionchooser.data.vo</item>
+    </annotation>
+    <property name="name" type="string" required="true"/>
+    <property name="path" type="string" required="true"/>
+  </entity>
+  <entity name="SettingsVO">
+    <annotation name="EntityProperties">
+      <item name="EntityOriginalName">SettingsVO</item>
+    </annotation>
+    <annotation name="service Group">
+      <item name="service">SettingsXmlService</item>
+    </annotation>
+    <annotation name="ServerProperties">
+      <item name="IncludeRemoteClass">nonempty</item>
+    </annotation>
+    <annotation name="ActionScriptGeneration">
+      <item name="Package">com.masuland.religionchooser.data.vo</item>
+    </annotation>
+    <property name="layoutVO" type="LayoutVO[]" required="true"/>
+  </entity>
+  <entity name="LayoutVO">
+    <annotation name="EntityProperties">
+      <item name="EntityOriginalName">LayoutVO</item>
+    </annotation>
+    <annotation name="service Group">
+      <item name="service">SettingsXmlService</item>
+    </annotation>
+    <annotation name="ServerProperties">
+      <item name="IncludeRemoteClass">nonempty</item>
+    </annotation>
+    <annotation name="ActionScriptGeneration">
+      <item name="Package">com.masuland.religionchooser.data.vo</item>
+    </annotation>
+    <property name="name" type="string" required="true"/>
+    <property name="width" type="string" required="true"/>
+    <property name="height" type="string" required="true"/>
+    <property name="stateName" type="string" required="true"/>
+    <property name="styleVO" type="StyleVO[]" required="true"/>
+    <property name="localeVO" type="LocaleVO[]" required="true"/>
+  </entity>
+  <service name="ContentXmlService">
+    <annotation name="ActionScriptGeneration">
+      <item name="ServiceType">HTTPMultiService</item>
+      <item name="Package">com.masuland.religionchooser.service.contentxml</item>
+    </annotation>
+    <annotation name="ServiceTypeGroup">
+      <item name="ServiceBackendType">XML</item>
+    </annotation>
+    <annotation name="ServiceConfig">
+      <item name="LINKED_FILE"></item>
+      <item name="DEFAULT_ENTITY_PACKAGE">com.masuland.religionchooser.data.vo</item>
+    </annotation>
+    <function name="getData" return-type="QuestionVO">
+      <annotation name="ActionScriptGeneration">
+        <item name="url">ContentXmlService.xml</item>
+        <item name="method">GET</item>
+        <item name="SerializationFilter">com.adobe.serializers.xml.XMLSerializationFilter</item>
+      </annotation>
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="returnType">opaque</item>
+      </annotation>
+      <annotation name="url group">
+        <item name="completeURL">/Users/masu/Workspace/Code/Examples/ReligionChooserGumboSpringMVCbCtl_PInj/src/main/resources/ContentXmlService.xml</item>
+        <item name="displayUrl">/Users/masu/Workspace/Code/Examples/ReligionChooserGumboSpringMVCbCtl_PInj/src/main/resources/ContentXmlService.xml</item>
+        <item name="isUrl">false</item>
+      </annotation>
+      <annotation name="Properties">
+        <item name="xPath">/::questionVO</item>
+      </annotation>
+    </function>
+  </service>
+  <entity name="ChoiceVO">
+    <annotation name="EntityProperties">
+      <item name="EntityOriginalName">ChoiceVO</item>
+    </annotation>
+    <annotation name="service Group">
+      <item name="service">ContentXmlService</item>
+    </annotation>
+    <annotation name="ServerProperties">
+      <item name="IncludeRemoteClass">nonempty</item>
+    </annotation>
+    <annotation name="ActionScriptGeneration">
+      <item name="Package">com.masuland.religionchooser.data.vo</item>
+    </annotation>
+    <property name="type" type="string" required="true"/>
+    <property name="langVO" type="LangVO[]" required="true"/>
+    <property name="resultVO" type="ResultVO" required="true"/>
+    <property name="questionVO" type="QuestionVO" required="true"/>
+  </entity>
+  <entity name="ResultVO">
+    <annotation name="EntityProperties">
+      <item name="EntityOriginalName">ResultVO</item>
+    </annotation>
+    <annotation name="service Group">
+      <item name="service">ContentXmlService</item>
+    </annotation>
+    <annotation name="ServerProperties">
+      <item name="IncludeRemoteClass">nonempty</item>
+    </annotation>
+    <annotation name="ActionScriptGeneration">
+      <item name="Package">com.masuland.religionchooser.data.vo</item>
+    </annotation>
+    <property name="imgUrl" type="string" required="true"/>
+    <property name="langVO" type="LangVO[]" required="true"/>
+  </entity>
+  <entity name="QuestionVO">
+    <annotation name="EntityProperties">
+      <item name="EntityOriginalName">QuestionVO</item>
+    </annotation>
+    <annotation name="service Group">
+      <item name="service">ContentXmlService</item>
+    </annotation>
+    <annotation name="ServerProperties">
+      <item name="IncludeRemoteClass">nonempty</item>
+    </annotation>
+    <annotation name="ActionScriptGeneration">
+      <item name="Package">com.masuland.religionchooser.data.vo</item>
+    </annotation>
+    <property name="langVO" type="LangVO[]" required="true"/>
+    <property name="choiceVO" type="ChoiceVO[]" required="true"/>
+  </entity>
+  <entity name="LangVO">
+    <annotation name="EntityProperties">
+      <item name="EntityOriginalName">LangVO</item>
+    </annotation>
+    <annotation name="service Group">
+      <item name="service">ContentXmlService</item>
+    </annotation>
+    <annotation name="ServerProperties">
+      <item name="IncludeRemoteClass">nonempty</item>
+    </annotation>
+    <annotation name="ActionScriptGeneration">
+      <item name="Package">com.masuland.religionchooser.data.vo</item>
+    </annotation>
+    <property name="code" type="string" required="true"/>
+    <property name="value" type="string" required="true"/>
+  </entity>
+</model>
