@@ -16,7 +16,7 @@
 	<fx:Script>
 		<![CDATA[
 			import com.masuland.religionchooser.view.component.AppViewCP;
-			import com.masuland.religionchooser.vo.LocaleVO;
+			import com.masuland.religionchooser.data.vo.LocaleVO;
 			
 			import mx.events.FlexEvent;
 			

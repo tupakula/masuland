@@ -6,7 +6,7 @@ package com.masuland.religionchooser.service.contentxml
 {
 import com.adobe.fiber.core.model_internal;
 import com.adobe.fiber.services.wrapper.HTTPServiceWrapper;
-import com.masuland.religionchooser.vo.QuestionVO;
+import com.masuland.religionchooser.data.vo.QuestionVO;
 import mx.rpc.AbstractOperation;
 import mx.rpc.AsyncToken;
 import mx.rpc.http.HTTPMultiService;
@@ -34,7 +34,7 @@ internal class _Super_ContentXmlService extends com.adobe.fiber.services.wrapper
          operation.serializationFilter = serializer0;
          operation.properties = new Object();
          operation.properties["xPath"] = "/::questionVO";
-         operation.resultType = com.masuland.religionchooser.vo.QuestionVO;
+         operation.resultType = com.masuland.religionchooser.data.vo.QuestionVO;
          operations.push(operation);
 
          _serviceControl.operationList = operations;  

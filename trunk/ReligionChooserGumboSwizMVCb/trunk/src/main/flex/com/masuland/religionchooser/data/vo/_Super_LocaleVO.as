@@ -1,19 +1,16 @@
 /**
  * This is a generated class and is not intended for modification.  To customize behavior
- * of this value object you may modify the generated sub-class of this class - ResultVO.as.
+ * of this value object you may modify the generated sub-class of this class - LocaleVO.as.
  */
 
-package com.masuland.religionchooser.vo
+package com.masuland.religionchooser.data.vo
 {
 import com.adobe.fiber.services.IFiberManagingService;
 import com.adobe.fiber.util.FiberUtils;
 import com.adobe.fiber.valueobjects.IValueObject;
-import com.masuland.religionchooser.vo.LangVO;
 import flash.events.Event;
 import flash.events.EventDispatcher;
 import mx.binding.utils.ChangeWatcher;
-import mx.collections.ArrayCollection;
-import mx.events.CollectionEvent;
 import mx.events.PropertyChangeEvent;
 import mx.validators.ValidationResult;
 
@@ -26,7 +23,7 @@ import com.adobe.fiber.valueobjects.AvailablePropertyIterator;
 use namespace model_internal;
 
 [ExcludeClass]
-public class _Super_ResultVO extends flash.events.EventDispatcher implements com.adobe.fiber.valueobjects.IValueObject
+public class _Super_LocaleVO extends flash.events.EventDispatcher implements com.adobe.fiber.valueobjects.IValueObject
 {
     model_internal static function initRemoteClassAliasSingle(cz:Class) : void
     {
@@ -34,17 +31,15 @@ public class _Super_ResultVO extends flash.events.EventDispatcher implements com
 
     model_internal static function initRemoteClassAliasAllRelated() : void
     {
-        com.masuland.religionchooser.vo.LangVO.initRemoteClassAliasSingleChild();
     }
 
-    model_internal var _dminternal_model : _ResultVOEntityMetadata;
+    model_internal var _dminternal_model : _LocaleVOEntityMetadata;
 
     /**
      * properties
      */
-    private var _internal_imgUrl : String;
-    private var _internal_langVO : ArrayCollection;
-    model_internal var _internal_langVO_leaf:com.masuland.religionchooser.vo.LangVO;
+    private var _internal_name : String;
+    private var _internal_code : String;
 
     private static var emptyArray:Array = new Array();
 
@@ -56,13 +51,13 @@ public class _Super_ResultVO extends flash.events.EventDispatcher implements com
 
     model_internal var _changeWatcherArray:Array = new Array();
 
-    public function _Super_ResultVO()
+    public function _Super_LocaleVO()
     {
-        _model = new _ResultVOEntityMetadata(this);
+        _model = new _LocaleVOEntityMetadata(this);
 
         // Bind to own data properties for cache invalidation triggering
-        model_internal::_changeWatcherArray.push(mx.binding.utils.ChangeWatcher.watch(this, "imgUrl", model_internal::setterListenerImgUrl));
-        model_internal::_changeWatcherArray.push(mx.binding.utils.ChangeWatcher.watch(this, "langVO", model_internal::setterListenerLangVO));
+        model_internal::_changeWatcherArray.push(mx.binding.utils.ChangeWatcher.watch(this, "name", model_internal::setterListenerName));
+        model_internal::_changeWatcherArray.push(mx.binding.utils.ChangeWatcher.watch(this, "code", model_internal::setterListenerCode));
 
     }
 
@@ -71,49 +66,38 @@ public class _Super_ResultVO extends flash.events.EventDispatcher implements com
      */
 
     [Bindable(event="propertyChange")]
-    public function get imgUrl() : String
+    public function get name() : String
     {
-        return _internal_imgUrl;
+        return _internal_name;
     }
 
     [Bindable(event="propertyChange")]
-    public function get langVO() : ArrayCollection
+    public function get code() : String
     {
-        return _internal_langVO;
+        return _internal_code;
     }
 
     /**
      * data property setters
      */
 
-    public function set imgUrl(value:String) : void
+    public function set name(value:String) : void
     {
-        var oldValue:String = _internal_imgUrl;
+        var oldValue:String = _internal_name;
         if (oldValue !== value)
         {
-            _internal_imgUrl = value;
-            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "imgUrl", oldValue, _internal_imgUrl));
+            _internal_name = value;
+            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "name", oldValue, _internal_name));
         }
     }
 
-    public function set langVO(value:*) : void
+    public function set code(value:String) : void
     {
-        var oldValue:ArrayCollection = _internal_langVO;
+        var oldValue:String = _internal_code;
         if (oldValue !== value)
         {
-            if (value is ArrayCollection)
-            {
-                _internal_langVO = value;
-            }
-            else if (value is Array)
-            {
-                _internal_langVO = new ArrayCollection(value);
-            }
-            else
-            {
-                throw new Error("value of langVO must be a collection");
-            }
-            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "langVO", oldValue, _internal_langVO));
+            _internal_code = value;
+            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "code", oldValue, _internal_code));
         }
     }
 
@@ -129,21 +113,14 @@ public class _Super_ResultVO extends flash.events.EventDispatcher implements com
      *  - the validity of the property (and the containing entity) if the given data property is required.
      */
 
-    model_internal function setterListenerImgUrl(value:flash.events.Event):void
+    model_internal function setterListenerName(value:flash.events.Event):void
     {
-        _model.invalidateDependentOnImgUrl();
+        _model.invalidateDependentOnName();
     }
 
-    model_internal function setterListenerLangVO(value:flash.events.Event):void
+    model_internal function setterListenerCode(value:flash.events.Event):void
     {
-        if (value is mx.events.PropertyChangeEvent)
-        {
-            if (mx.events.PropertyChangeEvent(value).newValue)
-            {
-                mx.events.PropertyChangeEvent(value).newValue.addEventListener(mx.events.CollectionEvent.COLLECTION_CHANGE, model_internal::setterListenerLangVO);
-            }
-        }
-        _model.invalidateDependentOnLangVO();
+        _model.invalidateDependentOnCode();
     }
 
 
@@ -167,15 +144,15 @@ public class _Super_ResultVO extends flash.events.EventDispatcher implements com
         var validationFailureMessages:Array = new Array();
 
         var propertyValidity:Boolean = true;
-        if (!_model.imgUrlIsValid)
+        if (!_model.nameIsValid)
         {
             propertyValidity = false;
-            com.adobe.fiber.util.FiberUtils.arrayAdd(validationFailureMessages, _model.model_internal::_imgUrlValidationFailureMessages);
+            com.adobe.fiber.util.FiberUtils.arrayAdd(validationFailureMessages, _model.model_internal::_nameValidationFailureMessages);
         }
-        if (!_model.langVOIsValid)
+        if (!_model.codeIsValid)
         {
             propertyValidity = false;
-            com.adobe.fiber.util.FiberUtils.arrayAdd(validationFailureMessages, _model.model_internal::_langVOValidationFailureMessages);
+            com.adobe.fiber.util.FiberUtils.arrayAdd(validationFailureMessages, _model.model_internal::_codeValidationFailureMessages);
         }
 
         model_internal::_cacheInitialized_isValid = true;
@@ -204,14 +181,14 @@ public class _Super_ResultVO extends flash.events.EventDispatcher implements com
 
     [Transient]
     [Bindable(event="propertyChange")]
-    public function get _model() : _ResultVOEntityMetadata
+    public function get _model() : _LocaleVOEntityMetadata
     {
         return model_internal::_dminternal_model;
     }
 
-    public function set _model(value : _ResultVOEntityMetadata) : void
+    public function set _model(value : _LocaleVOEntityMetadata) : void
     {
-        var oldValue : _ResultVOEntityMetadata = model_internal::_dminternal_model;
+        var oldValue : _LocaleVOEntityMetadata = model_internal::_dminternal_model;
         if (oldValue !== value)
         {
             model_internal::_dminternal_model = value;
@@ -256,56 +233,56 @@ public class _Super_ResultVO extends flash.events.EventDispatcher implements com
         }
     }
 
-    model_internal var _doValidationCacheOfImgUrl : Array = null;
-    model_internal var _doValidationLastValOfImgUrl : String;
+    model_internal var _doValidationCacheOfName : Array = null;
+    model_internal var _doValidationLastValOfName : String;
 
-    model_internal function _doValidationForImgUrl(valueIn:Object):Array
+    model_internal function _doValidationForName(valueIn:Object):Array
     {
         var value : String = valueIn as String;
 
-        if (model_internal::_doValidationCacheOfImgUrl != null && model_internal::_doValidationLastValOfImgUrl == value)
-           return model_internal::_doValidationCacheOfImgUrl ;
+        if (model_internal::_doValidationCacheOfName != null && model_internal::_doValidationLastValOfName == value)
+           return model_internal::_doValidationCacheOfName ;
 
-        _model.model_internal::_imgUrlIsValidCacheInitialized = true;
+        _model.model_internal::_nameIsValidCacheInitialized = true;
         var validationFailures:Array = new Array();
         var errorMessage:String;
         var failure:Boolean;
 
         var valRes:ValidationResult;
-        if (_model.isImgUrlAvailable && _internal_imgUrl == null)
+        if (_model.isNameAvailable && _internal_name == null)
         {
-            validationFailures.push(new ValidationResult(true, "", "", "imgUrl is required"));
+            validationFailures.push(new ValidationResult(true, "", "", "name is required"));
         }
 
-        model_internal::_doValidationCacheOfImgUrl = validationFailures;
-        model_internal::_doValidationLastValOfImgUrl = value;
+        model_internal::_doValidationCacheOfName = validationFailures;
+        model_internal::_doValidationLastValOfName = value;
 
         return validationFailures;
     }
     
-    model_internal var _doValidationCacheOfLangVO : Array = null;
-    model_internal var _doValidationLastValOfLangVO : ArrayCollection;
+    model_internal var _doValidationCacheOfCode : Array = null;
+    model_internal var _doValidationLastValOfCode : String;
 
-    model_internal function _doValidationForLangVO(valueIn:Object):Array
+    model_internal function _doValidationForCode(valueIn:Object):Array
     {
-        var value : ArrayCollection = valueIn as ArrayCollection;
+        var value : String = valueIn as String;
 
-        if (model_internal::_doValidationCacheOfLangVO != null && model_internal::_doValidationLastValOfLangVO == value)
-           return model_internal::_doValidationCacheOfLangVO ;
+        if (model_internal::_doValidationCacheOfCode != null && model_internal::_doValidationLastValOfCode == value)
+           return model_internal::_doValidationCacheOfCode ;
 
-        _model.model_internal::_langVOIsValidCacheInitialized = true;
+        _model.model_internal::_codeIsValidCacheInitialized = true;
         var validationFailures:Array = new Array();
         var errorMessage:String;
         var failure:Boolean;
 
         var valRes:ValidationResult;
-        if (_model.isLangVOAvailable && _internal_langVO == null)
+        if (_model.isCodeAvailable && _internal_code == null)
         {
-            validationFailures.push(new ValidationResult(true, "", "", "langVO is required"));
+            validationFailures.push(new ValidationResult(true, "", "", "code is required"));
         }
 
-        model_internal::_doValidationCacheOfLangVO = validationFailures;
-        model_internal::_doValidationLastValOfLangVO = value;
+        model_internal::_doValidationCacheOfCode = validationFailures;
+        model_internal::_doValidationLastValOfCode = value;
 
         return validationFailures;
     }

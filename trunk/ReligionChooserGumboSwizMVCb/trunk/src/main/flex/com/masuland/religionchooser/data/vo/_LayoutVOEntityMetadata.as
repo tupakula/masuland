@@ -2,7 +2,7 @@
 /**
  * This is a generated class and is not intended for modification.  
  */
-package com.masuland.religionchooser.vo
+package com.masuland.religionchooser.data.vo
 {
 import com.adobe.fiber.styles.IStyle;
 import com.adobe.fiber.styles.Style;
@@ -10,8 +10,8 @@ import com.adobe.fiber.styles.StyleValidator;
 import com.adobe.fiber.valueobjects.AbstractEntityMetadata;
 import com.adobe.fiber.valueobjects.AvailablePropertyIterator;
 import com.adobe.fiber.valueobjects.IPropertyIterator;
-import com.masuland.religionchooser.vo.LocaleVO;
-import com.masuland.religionchooser.vo.StyleVO;
+import com.masuland.religionchooser.data.vo.LocaleVO;
+import com.masuland.religionchooser.data.vo.StyleVO;
 import mx.events.ValidationResultEvent;
 import com.adobe.fiber.core.model_internal;
 import com.adobe.fiber.valueobjects.IModelType;
@@ -87,8 +87,8 @@ internal class _LayoutVOEntityMetadata extends com.adobe.fiber.valueobjects.Abst
 
             // collection base map
             model_internal::collectionBaseMap = new Object()
-            model_internal::collectionBaseMap["styleVO"] = "com.masuland.religionchooser.vo.StyleVO";
-            model_internal::collectionBaseMap["localeVO"] = "com.masuland.religionchooser.vo.LocaleVO";
+            model_internal::collectionBaseMap["styleVO"] = "com.masuland.religionchooser.data.vo.StyleVO";
+            model_internal::collectionBaseMap["localeVO"] = "com.masuland.religionchooser.data.vo.LocaleVO";
         }
 
         model_internal::_instance = value;

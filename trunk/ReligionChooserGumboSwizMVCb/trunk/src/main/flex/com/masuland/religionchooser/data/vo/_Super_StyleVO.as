@@ -1,9 +1,9 @@
 /**
  * This is a generated class and is not intended for modification.  To customize behavior
- * of this value object you may modify the generated sub-class of this class - LocaleVO.as.
+ * of this value object you may modify the generated sub-class of this class - StyleVO.as.
  */
 
-package com.masuland.religionchooser.vo
+package com.masuland.religionchooser.data.vo
 {
 import com.adobe.fiber.services.IFiberManagingService;
 import com.adobe.fiber.util.FiberUtils;
@@ -23,7 +23,7 @@ import com.adobe.fiber.valueobjects.AvailablePropertyIterator;
 use namespace model_internal;
 
 [ExcludeClass]
-public class _Super_LocaleVO extends flash.events.EventDispatcher implements com.adobe.fiber.valueobjects.IValueObject
+public class _Super_StyleVO extends flash.events.EventDispatcher implements com.adobe.fiber.valueobjects.IValueObject
 {
     model_internal static function initRemoteClassAliasSingle(cz:Class) : void
     {
@@ -33,13 +33,13 @@ public class _Super_LocaleVO extends flash.events.EventDispatcher implements com
     {
     }
 
-    model_internal var _dminternal_model : _LocaleVOEntityMetadata;
+    model_internal var _dminternal_model : _StyleVOEntityMetadata;
 
     /**
      * properties
      */
     private var _internal_name : String;
-    private var _internal_code : String;
+    private var _internal_path : String;
 
     private static var emptyArray:Array = new Array();
 
@@ -51,13 +51,13 @@ public class _Super_LocaleVO extends flash.events.EventDispatcher implements com
 
     model_internal var _changeWatcherArray:Array = new Array();
 
-    public function _Super_LocaleVO()
+    public function _Super_StyleVO()
     {
-        _model = new _LocaleVOEntityMetadata(this);
+        _model = new _StyleVOEntityMetadata(this);
 
         // Bind to own data properties for cache invalidation triggering
         model_internal::_changeWatcherArray.push(mx.binding.utils.ChangeWatcher.watch(this, "name", model_internal::setterListenerName));
-        model_internal::_changeWatcherArray.push(mx.binding.utils.ChangeWatcher.watch(this, "code", model_internal::setterListenerCode));
+        model_internal::_changeWatcherArray.push(mx.binding.utils.ChangeWatcher.watch(this, "path", model_internal::setterListenerPath));
 
     }
 
@@ -72,9 +72,9 @@ public class _Super_LocaleVO extends flash.events.EventDispatcher implements com
     }
 
     [Bindable(event="propertyChange")]
-    public function get code() : String
+    public function get path() : String
     {
-        return _internal_code;
+        return _internal_path;
     }
 
     /**
@@ -91,13 +91,13 @@ public class _Super_LocaleVO extends flash.events.EventDispatcher implements com
         }
     }
 
-    public function set code(value:String) : void
+    public function set path(value:String) : void
     {
-        var oldValue:String = _internal_code;
+        var oldValue:String = _internal_path;
         if (oldValue !== value)
         {
-            _internal_code = value;
-            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "code", oldValue, _internal_code));
+            _internal_path = value;
+            this.dispatchEvent(mx.events.PropertyChangeEvent.createUpdateEvent(this, "path", oldValue, _internal_path));
         }
     }
 
@@ -118,9 +118,9 @@ public class _Super_LocaleVO extends flash.events.EventDispatcher implements com
         _model.invalidateDependentOnName();
     }
 
-    model_internal function setterListenerCode(value:flash.events.Event):void
+    model_internal function setterListenerPath(value:flash.events.Event):void
     {
-        _model.invalidateDependentOnCode();
+        _model.invalidateDependentOnPath();
     }
 
 
@@ -149,10 +149,10 @@ public class _Super_LocaleVO extends flash.events.EventDispatcher implements com
             propertyValidity = false;
             com.adobe.fiber.util.FiberUtils.arrayAdd(validationFailureMessages, _model.model_internal::_nameValidationFailureMessages);
         }
-        if (!_model.codeIsValid)
+        if (!_model.pathIsValid)
         {
             propertyValidity = false;
-            com.adobe.fiber.util.FiberUtils.arrayAdd(validationFailureMessages, _model.model_internal::_codeValidationFailureMessages);
+            com.adobe.fiber.util.FiberUtils.arrayAdd(validationFailureMessages, _model.model_internal::_pathValidationFailureMessages);
         }
 
         model_internal::_cacheInitialized_isValid = true;
@@ -181,14 +181,14 @@ public class _Super_LocaleVO extends flash.events.EventDispatcher implements com
 
     [Transient]
     [Bindable(event="propertyChange")]
-    public function get _model() : _LocaleVOEntityMetadata
+    public function get _model() : _StyleVOEntityMetadata
     {
         return model_internal::_dminternal_model;
     }
 
-    public function set _model(value : _LocaleVOEntityMetadata) : void
+    public function set _model(value : _StyleVOEntityMetadata) : void
     {
-        var oldValue : _LocaleVOEntityMetadata = model_internal::_dminternal_model;
+        var oldValue : _StyleVOEntityMetadata = model_internal::_dminternal_model;
         if (oldValue !== value)
         {
             model_internal::_dminternal_model = value;
@@ -260,29 +260,29 @@ public class _Super_LocaleVO extends flash.events.EventDispatcher implements com
         return validationFailures;
     }
     
-    model_internal var _doValidationCacheOfCode : Array = null;
-    model_internal var _doValidationLastValOfCode : String;
+    model_internal var _doValidationCacheOfPath : Array = null;
+    model_internal var _doValidationLastValOfPath : String;
 
-    model_internal function _doValidationForCode(valueIn:Object):Array
+    model_internal function _doValidationForPath(valueIn:Object):Array
     {
         var value : String = valueIn as String;
 
-        if (model_internal::_doValidationCacheOfCode != null && model_internal::_doValidationLastValOfCode == value)
-           return model_internal::_doValidationCacheOfCode ;
+        if (model_internal::_doValidationCacheOfPath != null && model_internal::_doValidationLastValOfPath == value)
+           return model_internal::_doValidationCacheOfPath ;
 
-        _model.model_internal::_codeIsValidCacheInitialized = true;
+        _model.model_internal::_pathIsValidCacheInitialized = true;
         var validationFailures:Array = new Array();
         var errorMessage:String;
         var failure:Boolean;
 
         var valRes:ValidationResult;
-        if (_model.isCodeAvailable && _internal_code == null)
+        if (_model.isPathAvailable && _internal_path == null)
         {
-            validationFailures.push(new ValidationResult(true, "", "", "code is required"));
+            validationFailures.push(new ValidationResult(true, "", "", "path is required"));
         }
 
-        model_internal::_doValidationCacheOfCode = validationFailures;
-        model_internal::_doValidationLastValOfCode = value;
+        model_internal::_doValidationCacheOfPath = validationFailures;
+        model_internal::_doValidationLastValOfPath = value;
 
         return validationFailures;
     }

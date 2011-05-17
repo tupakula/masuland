@@ -1,5 +1,5 @@
 /**
- * This is a generated sub-class of _LocaleVO.as and is intended for behavior
+ * This is a generated sub-class of _ResultVO.as and is intended for behavior
  * customization.  This class is only generated when there is no file already present
  * at its target location.  Thus custom behavior that you add here will survive regeneration
  * of the super-class. 
@@ -10,12 +10,12 @@
  * corresponding entity 
  **/ 
  
-package com.masuland.religionchooser.vo
+package com.masuland.religionchooser.data.vo
 {
 
 import com.adobe.fiber.core.model_internal;
 
-public class LocaleVO extends _Super_LocaleVO
+public class ResultVO extends _Super_ResultVO
 {
     /** 
      * DO NOT MODIFY THIS STATIC INITIALIZER - IT IS NECESSARY
@@ -30,17 +30,17 @@ public class LocaleVO extends _Super_LocaleVO
      */     
     public static function _initRemoteClassAlias() : void
     {
-        _Super_LocaleVO.model_internal::initRemoteClassAliasSingle(com.masuland.religionchooser.vo.LocaleVO);
-        _Super_LocaleVO.model_internal::initRemoteClassAliasAllRelated();
+        _Super_ResultVO.model_internal::initRemoteClassAliasSingle(com.masuland.religionchooser.data.vo.ResultVO);
+        _Super_ResultVO.model_internal::initRemoteClassAliasAllRelated();
     }
      
     model_internal static function initRemoteClassAliasSingleChild() : void
     {
-        _Super_LocaleVO.model_internal::initRemoteClassAliasSingle(com.masuland.religionchooser.vo.LocaleVO);
+        _Super_ResultVO.model_internal::initRemoteClassAliasSingle(com.masuland.religionchooser.data.vo.ResultVO);
     }
     
     {
-        _Super_LocaleVO.model_internal::initRemoteClassAliasSingle(com.masuland.religionchooser.vo.LocaleVO);
+        _Super_ResultVO.model_internal::initRemoteClassAliasSingle(com.masuland.religionchooser.data.vo.ResultVO);
     }
     /** 
      * END OF DO NOT MODIFY SECTION

@@ -3,13 +3,13 @@
  * of this value object you may modify the generated sub-class of this class - LayoutVO.as.
  */
 
-package com.masuland.religionchooser.vo
+package com.masuland.religionchooser.data.vo
 {
 import com.adobe.fiber.services.IFiberManagingService;
 import com.adobe.fiber.util.FiberUtils;
 import com.adobe.fiber.valueobjects.IValueObject;
-import com.masuland.religionchooser.vo.LocaleVO;
-import com.masuland.religionchooser.vo.StyleVO;
+import com.masuland.religionchooser.data.vo.LocaleVO;
+import com.masuland.religionchooser.data.vo.StyleVO;
 import flash.events.Event;
 import flash.events.EventDispatcher;
 import mx.binding.utils.ChangeWatcher;
@@ -35,8 +35,8 @@ public class _Super_LayoutVO extends flash.events.EventDispatcher implements com
 
     model_internal static function initRemoteClassAliasAllRelated() : void
     {
-        com.masuland.religionchooser.vo.StyleVO.initRemoteClassAliasSingleChild();
-        com.masuland.religionchooser.vo.LocaleVO.initRemoteClassAliasSingleChild();
+        com.masuland.religionchooser.data.vo.StyleVO.initRemoteClassAliasSingleChild();
+        com.masuland.religionchooser.data.vo.LocaleVO.initRemoteClassAliasSingleChild();
     }
 
     model_internal var _dminternal_model : _LayoutVOEntityMetadata;
@@ -49,9 +49,9 @@ public class _Super_LayoutVO extends flash.events.EventDispatcher implements com
     private var _internal_height : String;
     private var _internal_stateName : String;
     private var _internal_styleVO : ArrayCollection;
-    model_internal var _internal_styleVO_leaf:com.masuland.religionchooser.vo.StyleVO;
+    model_internal var _internal_styleVO_leaf:com.masuland.religionchooser.data.vo.StyleVO;
     private var _internal_localeVO : ArrayCollection;
-    model_internal var _internal_localeVO_leaf:com.masuland.religionchooser.vo.LocaleVO;
+    model_internal var _internal_localeVO_leaf:com.masuland.religionchooser.data.vo.LocaleVO;
 
     private static var emptyArray:Array = new Array();
 

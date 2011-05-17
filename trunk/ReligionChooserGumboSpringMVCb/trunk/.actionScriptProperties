@@ -26,8 +26,7 @@
   </applications>
   <modules/>
   <buildCSSFiles>
-    <buildCSSFileEntry destPath="bin-debug" sourcePath="src/skin_web_sky.css"/>
-    <buildCSSFileEntry destPath="bin-debug" sourcePath="src/religion_chooser_web_blue.css"/>
-    <buildCSSFileEntry destPath="bin-debug" sourcePath="src/skin_web_sun.css"/>
+    <buildCSSFileEntry destPath="bin-debug" sourcePath="src/main/flex/skin_web_sun.css"/>
+    <buildCSSFileEntry destPath="bin-debug" sourcePath="src/main/flex/skin_web_sky.css"/>
   </buildCSSFiles>
 </actionScriptProperties>

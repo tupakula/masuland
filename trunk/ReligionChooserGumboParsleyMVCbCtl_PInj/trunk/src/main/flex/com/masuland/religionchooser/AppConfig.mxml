@@ -40,15 +40,15 @@
 	<!-- VIEW -->	
 	
 	<component:AppViewCP
-		id="appViewCB"
+		id="appViewCP"
 		/>
 	
 	<component:SettingsBoxCP
-		id="settingsBoxCB"
+		id="settingsBoxCP"
 		/>
 	
 	<component:ContentBoxCP
-		id="contentBoxCB"
+		id="contentBoxCP"
 		/>
 	
 </mx:Object>

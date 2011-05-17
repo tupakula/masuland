@@ -1,6 +1,6 @@
 package com.masuland.religionchooser.event
 {	
-	import com.masuland.religionchooser.vo.LocaleVO;
+	import com.masuland.religionchooser.data.vo.LocaleVO;
 	
 	import flash.events.Event;
 
