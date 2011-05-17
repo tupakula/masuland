@@ -10,32 +10,43 @@ package com.masuland.religionchooser.view.component
 	
 	import spark.components.supportClasses.SkinnableComponent;
 	
-	[SkinState("question")]
-	[SkinState("result")]
-	public class ContentBoxCB extends SkinnableComponent
+	[SkinState('question')]
+	[SkinState('result')]
+	/**
+	 * @author masuland.com
+	 */
+	public class ContentBoxCP extends SkinnableComponent
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[Dispatcher]
 		public var dispatcher:IEventDispatcher;
 
-		[Inject(source="appModel.currentLayout", bind="true")]
+		[Inject(source='appModel.currentLayout', bind='true')]
 		[Bindable]
 		public var currentLayout:LayoutVO;
 
-		[Inject(source="appModel.currentLocale", bind="true")]
+		[Inject(source='appModel.currentLocale', bind='true')]
 		[Bindable]
 		public var currentLocale:LocaleVO;
 
-		[Inject(source="appModel.selectedQuestion", bind="true")]
+		[Inject(source='appModel.selectedQuestion', bind='true')]
 		[Bindable]
 		public var selectedQuestion:QuestionVO;
 
-		[Inject(source="appModel.selectedResult", bind="true")]
+		[Inject(source='appModel.selectedResult', bind='true')]
 		[Bindable]
 		public var selectedResult:ResultVO;
 
-		[Inject(source="appModel.appViewState", bind="true")]
+		[Inject(source='appModel.appViewState', bind='true')]
 		[Bindable]
 		public var appViewState:String;
+		
+		//----------------------
+		// Methods
+		//----------------------
 		
 		public function restart():void
 		{

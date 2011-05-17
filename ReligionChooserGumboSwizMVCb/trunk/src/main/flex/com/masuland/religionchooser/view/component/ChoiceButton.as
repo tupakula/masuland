@@ -13,12 +13,19 @@ package com.masuland.religionchooser.view.component
 	
 	import spark.components.Button;
 
-	public class ChoiceBtn extends Button
+	/**
+	 * @author masuland.com
+	 */
+	public class ChoiceButton extends Button
 	{
+		//----------------------
+		// Properties
+		//----------------------
+		
 		[Dispatcher]
 		public var dispatcher:IEventDispatcher;
 		
-		[Inject(source="appModel.currentLayout", bind="true")]
+		[Inject(source='appModel.currentLayout', bind='true')]
 		[Bindable]
 		public var currentLayout:LayoutVO;
 		
@@ -26,7 +33,11 @@ package com.masuland.religionchooser.view.component
 
 		private var _choice:ChoiceVO;
 		
-		public function ChoiceBtn()
+		//----------------------
+		// Constructor
+		//----------------------
+		
+		public function ChoiceButton()
 		{
 			SwizManager.setUp(this);
 
@@ -34,15 +45,19 @@ package com.masuland.religionchooser.view.component
 			useHandCursor = true;
 			mouseChildren = false;
 
-			addEventListener(MouseEvent.CLICK, handleMouseClick);
+			addEventListener(MouseEvent.CLICK, this_clickHandler);
 		}
 
+		//----------------------
+		// Getter / Setter
+		//----------------------
+		
 		public function get currentLocale():LocaleVO
 		{
 			return _currentLocale;
 		}
 		
-		[Inject(source="appModel.currentLocale", bind="true")]
+		[Inject(source='appModel.currentLocale', bind='true')]
 		[Bindable]
 		public function set currentLocale(value:LocaleVO):void
 		{
@@ -63,6 +78,10 @@ package com.masuland.religionchooser.view.component
 			updateChoiceLabel();
 		}
 		
+		//----------------------
+		// Methods
+		//----------------------
+		
 		protected function updateChoiceLabel():void
 		{
 			if (_choice && currentLayout && currentLocale)
@@ -74,7 +93,11 @@ package com.masuland.religionchooser.view.component
 			}
 		}
 		
-		public function handleMouseClick(event:MouseEvent):void
+		//----------------------
+		// Handler
+		//----------------------
+		
+		public function this_clickHandler(event:MouseEvent):void
 		{
 			var e:AppEvent;
 			

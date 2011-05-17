@@ -11,7 +11,6 @@ package com.masuland.religionchooser.data
 
 	[Bindable]
 	/**
-	 * The Model
 	 * @author masuland.com
 	 */
 	public class AppModel
@@ -37,6 +36,7 @@ package com.masuland.religionchooser.data
 		// Flags
 		//---------------
 		
+		public var isApplicationVisible:Boolean;
 		
 		//---------------
 		// States
