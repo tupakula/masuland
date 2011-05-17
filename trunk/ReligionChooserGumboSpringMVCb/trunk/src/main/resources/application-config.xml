@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects
+	xmlns="http://www.springactionscript.org/schema/objects"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springactionscript.org/schema/objects
+		http://www.springactionscript.org/schema/objects/spring-actionscript-objects-1.0.xsd"
+	>
+	
+	<!-- PROCESSOR -->	
+	
+	<object 
+		id="autowiringStageProcessor" 
+		class="org.springextensions.actionscript.stage.DefaultAutowiringStageProcessor"
+		/>
+		
+	<object 
+		id="eventhandlerProcessor" 
+		class="org.springextensions.actionscript.ioc.factory.config.EventHandlerMetadataProcessor"
+		/>
+		
+	<object 
+		id="routeEventsProcessor" 
+		class="org.springextensions.actionscript.ioc.factory.config.RouteEventsMetaDataProcessor"
+		/>
+	
+	<!-- SERVICE -->	
+<!--	
+	<object 
+		id="appRemoteObject" 
+		class="mx.rpc.remoting.mxml.RemoteObject"
+		/>
+-->	
+	<!-- BUSINESS -->	
+<!--	
+	<object 
+		id="appDelegate" 
+		class="com.masuland.religionchooser.business.AppAmfDelegate"
+		/>
+	
+	<object 
+		id="appDelegate" 
+		class="com.masuland.religionchooser.business.AppMockDelegate"
+		/>
+-->	
+	<!-- ACTION -->	
+	
+	<object 
+		id="appController" 
+		class="com.masuland.religionchooser.action.AppController"
+		/>
+	
+	<!-- DATA -->	
+	
+	<object 
+		id="appModel" 
+		class="com.masuland.religionchooser.data.AppModel"
+		/>
+
+	<!-- VIEW -->
+	
+	<object 
+		id="appViewCP" 
+		class="com.masuland.religionchooser.view.component.AppViewCP"
+		/>
+
+	<object
+		id="settingsBoxCP"
+		class="com.masuland.religionchooser.view.component.SettingsBoxCP"
+		/>
+	
+	<object
+		id="contentBoxCP"
+		class="com.masuland.religionchooser.view.component.ContentBoxCP"
+		/>
+	
+	<object
+		id="choiceButton"
+		class="com.masuland.religionchooser.view.component.ChoiceButton"
+		/>
+	
+</objects>
