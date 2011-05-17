@@ -1,0 +1,29 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/mx";
+@namespace component "com.masuland.religionchooser.view.component.*";
+
+component|SettingsBoxCP
+{
+	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.SettingsBox");
+}
+
+component|ContentBoxCP
+{
+	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.ContentBox");
+}
+
+.settingsButton
+{
+	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.SettingsButton");
+}
+
+.actionButton
+{
+	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.ActionButton");
+}
+
+.moreButton
+{
+	skin-class: ClassReference("com.masuland.religionchooser.view.ui.web.sun.MoreButton");
+}
