@@ -1,4 +1,4 @@
-package com.masuland.religionchooser.model
+package com.masuland.religionchooser.data
 {
 	public class AppConstants
 	{

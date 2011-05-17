@@ -1,7 +1,14 @@
-/* CSS file */
 @namespace s "library://ns.adobe.com/flex/spark";
 @namespace mx "library://ns.adobe.com/flex/mx";
 @namespace component "com.masuland.religionchooser.view.component.*";
+
+.appTitle
+{
+	text-align: center;
+	font-weight: bold;
+	font-size: 15;
+	color: #5D7693;
+}
 
 component|SettingsBoxCB
 {

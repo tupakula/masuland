@@ -1,13 +1,13 @@
-package com.masuland.religionchooser.control
+package com.masuland.religionchooser.action
 {
+	import com.masuland.religionchooser.data.AppModel;
 	import com.masuland.religionchooser.event.AppEvent;
 	import com.masuland.religionchooser.event.LoadLayoutEvent;
 	import com.masuland.religionchooser.event.LoadLocaleEvent;
 	import com.masuland.religionchooser.event.LoadStyleEvent;
-	import com.masuland.religionchooser.model.AppModel;
 	import com.masuland.religionchooser.service.contentxml.ContentXmlService;
 	import com.masuland.religionchooser.service.settingsxml.SettingsXmlService;
-	import com.masuland.religionchooser.view.component.ContentBoxState;
+	import com.masuland.religionchooser.data.state.ContentBoxState;
 	import com.masuland.religionchooser.vo.LayoutVO;
 	import com.masuland.religionchooser.vo.LocaleVO;
 	import com.masuland.religionchooser.vo.QuestionVO;
@@ -20,6 +20,7 @@ package com.masuland.religionchooser.control
 	import mx.core.FlexGlobals;
 	import mx.events.ResourceEvent;
 	import mx.events.StyleEvent;
+	import mx.managers.BrowserManager;
 	import mx.resources.ResourceManager;
 	import mx.rpc.events.FaultEvent;
 	import mx.rpc.events.ResultEvent;
@@ -158,6 +159,8 @@ package com.masuland.religionchooser.control
 			
 			ResourceManager.getInstance().localeChain = [ appModel.currentLocale.code ];
 			ResourceManager.getInstance().update();
+			
+			BrowserManager.getInstance().setTitle(ResourceManager.getInstance().getString('resources', 'txt_app_title'));
 			
 			// TODO ... Resource update bug
 			

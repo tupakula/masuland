@@ -29,7 +29,7 @@ internal class _Super_SettingsXmlService extends com.adobe.fiber.services.wrappe
          var argsArray:Array;
 
          operation = new mx.rpc.http.Operation(null, "getData");
-         operation.url = "content/SettingsXmlService.xml";
+         operation.url = "SettingsXmlService.xml";
          operation.method = "GET";
          operation.serializationFilter = serializer0;
          operation.properties = new Object();

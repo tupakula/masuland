@@ -29,7 +29,7 @@ internal class _Super_ContentXmlService extends com.adobe.fiber.services.wrapper
          var argsArray:Array;
 
          operation = new mx.rpc.http.Operation(null, "getData");
-         operation.url = "content/ContentXmlService.xml";
+         operation.url = "ContentXmlService.xml";
          operation.method = "GET";
          operation.serializationFilter = serializer0;
          operation.properties = new Object();
