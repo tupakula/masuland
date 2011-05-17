@@ -1,0 +1,53 @@
+<data
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	>
+	<settingsVO
+		>
+		<layoutVO
+			name="Web, 640x480"
+			width="640"
+			height="480"
+			stateName="web"
+			>
+			<styleVO
+				name="Web, Sun"
+				path="skin_web_sun.swf"
+				/>
+			<styleVO
+				name="Web, Sky"
+				path="skin_web_sky.swf"
+				/>
+			<localeVO
+				name="English"
+				code="en_US"
+				/>
+			<localeVO
+				name="Deutsch"
+				code="de_DE"
+				/>
+		</layoutVO>
+		<layoutVO
+			name="Mobile, 400x230"
+			width="400"
+			height="230"
+			stateName="web"
+			>
+			<styleVO
+				name="Web, Sun"
+				path="skin_web_sun.swf"
+				/>
+			<styleVO
+				name="Web, Sky"
+				path="skin_web_sky.swf"
+				/>
+			<localeVO
+				name="English"
+				code="en_US"
+				/>
+			<localeVO
+				name="Deutsch"
+				code="de_DE"
+				/>
+		</layoutVO>
+	</settingsVO>
+</data>
