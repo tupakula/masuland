@@ -12,7 +12,7 @@ package com.masuland.religionchooser.model
 	[Bindable]
 	/**
 	 * The Model
-	 * @author Sebastian.Mohr (masuland@gmail.com)
+	 * @author masuland.com
 	 */
 	public class AppModel
 	{		
