@@ -4,11 +4,17 @@ This document describes the application flow of an Adobe Flex 3 and Flex 4 appli
 
 http://masuland.googlecode.com/files/NanoarchitectureNoEvt.png
 
+_Drawing created with the [http://www.yworks.com/en/products_yed_about.html yEd Graph Editor].
+Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleDocs/trunk/yed_diagram/NanoarchitectureNoEvt.graphml svn repo]._
+
 == Application Layer Dependency ==
 
 This Nanoarchitecture assumes to have the following dependency between their application layers:
 
 http://masuland.googlecode.com/files/LayerDependencyNoEvt.png
+
+_Drawing created with the [http://www.yworks.com/en/products_yed_about.html yEd Graph Editor].
+Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleDocs/trunk/yed_diagram/LayerDependencyNoEvt.graphml svn repo]._
 
 == Application Flows ==
 
