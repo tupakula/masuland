@@ -8,6 +8,9 @@ With the Login Example application you will be guided through a simple login or 
 
 http://masuland.googlecode.com/files/LoginExampleStateChart.png
 
+_Created with [http://argouml.tigris.org ArgoUML].
+Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleDocs/trunk/argouml/LoginExample.uml svn repo]._
+
 Furthermore, the Login Example application lets you choose between different layouts (“web” or “phone” layout). Depending on the layout you have chosen you can select between different coloring styles (“red” or “green”) and languages (“English” or “German”). Since the coloring style and the language of an application is always dependent on its application layout – imagine an application with different writing directions (for example English or Chinese) or an application which is running on different devices (web browser or mobile phone) with different coloring styles (“Summer” or “Winter” theme) – the Login Example application should be able to deal with that, too.
 
 == 1.2. Value Objects ==
@@ -15,6 +18,9 @@ Furthermore, the Login Example application lets you choose between different lay
 The Login Example application uses the following value objects.
 
 http://masuland.googlecode.com/files/LoginExampleValueObjects.png
+
+_Created with [http://argouml.tigris.org ArgoUML].
+Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleDocs/trunk/argouml/LoginExample.uml svn repo]._
 
 {{{
 
@@ -56,6 +62,9 @@ UserVO
 The client-server communication will be defined in delegate classes. The Login Example application uses the following methods for client-server communication. 
 
 http://masuland.googlecode.com/files/LoginExampleDelegates.png
+
+_Created with [http://argouml.tigris.org ArgoUML].
+Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleDocs/trunk/argouml/LoginExample.uml svn repo]._
 
 {{{
 
