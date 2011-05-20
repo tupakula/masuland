@@ -46,10 +46,21 @@ Just like [NanoarchitectureMVCb MVCb] this nanoarchitecture contains 3 types of 
 
   * [LoginExample Login Example] with Flex 3 and Flex 4 (Halo, Gumbo)
 
+...
+
 == More Nanoarchitectures ==
 
  * [NanoarchitectureMVCb "Model - View - Code Behind / Component" (MVCb / MVCp)]
  * [NanoarchitecturePInj "Property Injection" (PInj)]
+
+...
+
+== Frequently Asked Questions (FAQs) ==
+
+==== What's a Nanoarchitecture? ==== 
+Please read this page about [Nanoarchitecture Nanoarchitectures].
+
+...
 
 == Feedback ==
 
