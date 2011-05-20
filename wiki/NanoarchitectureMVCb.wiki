@@ -1,4 +1,4 @@
-= Nanoarchitecture - "Model - View - Code Behind / Component" (MVCb / MVCp) =
+= "Model - View - Code Behind / Component" (MVCb / MVCp) Nanoarchitecture =
 
 This document describes the application flow of an Adobe Flex 3 and Flex 4 application written in the "Model - View - Code Behind" (MVCb) or "Model - View - Component" (MVCp)  Nanoarchitecture. The presentation pattern "Code Behind" will be used in this architecture as a synonym to the "Presentation Model" because they have lots in common. Furthermore, because this architecture tries to create a clean and simple communication language in your development team, and also, trying to avoid the confusions caused by the word "Presentation Model" (which is the Model-Logic component in the View Layer), this architecture proposes to use the word "Code Behind" instead. For a comparison of both presentation patterns please read the articles of Paul Williams about the [http://blogs.adobe.com/paulw/archives/2007/11/presentation_pa_5.html Code Behind] pattern and the [http://blogs.adobe.com/paulw/archives/2007/10/presentation_pa_3.html Presentation Model].
 
