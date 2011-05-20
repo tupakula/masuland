@@ -23,10 +23,10 @@ Please read this page about [Nanoarchitecture Nanoarchitectures].
 
 ...
 
-= More code examples =
+== More code examples ==
 
  * [LoginExample Login Example] written in Flex 3 and Flex 4 (Halo, Gumbo)
 
-= Feedback =
+== Feedback ==
 
 Please feel free to post comments, suggestions or feature requests because this page is still work in progress.
