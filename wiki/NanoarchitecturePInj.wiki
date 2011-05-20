@@ -4,29 +4,85 @@
 
 ...
 
+=== Observing Properties with the ChangeWatcher  ===
+
+The following example is from a Robotlegs / Signals project
+
+{{{
+	[Inject]
+	public var appModel:AppModel;
+
+	public function postConstruct():void
+	{
+		ChangeWatcher.watch(appModel, 'settings', settings_changeHandler);
+	}
+
+	protected function settings_changeHandler(event:Event):void
+	{
+		_settings = appModel.settings;
+			
+		_isSettingsDirty = true;
+		invalidateProperties();
+	}
+}}}
+_Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroRobotlegsSignalsMobileMVCpshCmd/trunk/src/main/flex/com/masuland/loginexample/view/component/SettingsBoxCP.as svn repo]._
+
 === Property Injection with Parsley ===
 {{{
 	[Subscribe(scope='appModel', objectId='settings')]
 	[Bindable]
-	public var settings:SettingsVO;
+	public function get settings():SettingsVO
+	{
+		return _settings;
+	}
+		
+	public function set settings(value:SettingsVO):void
+	{
+		_settings = value;
+		
+		_isSettingsDirty = true;
+		invalidateProperties();
+	}
 }}}
-_Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloParsleyMVCbCtl_PInj/trunk/src/main/flex/com/masuland/loginexample/view/cb/SettingsBoxCB.as svn repo]._
+_Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroParsleyMobileMVCpshCtl_PInj/trunk/src/main/flex/com/masuland/loginexample/view/component/SettingsBoxCP.as svn repo]._
 
 === Property Injection with Spring ===
 {{{
 	[Inject(name='appModel', property='settings')]
 	[Bindable]
-	public var settings:SettingsVO;
+	public function get settings():SettingsVO
+	{
+		return _settings;
+	}
+		
+	public function set settings(value:SettingsVO):void
+	{
+		_settings = value;
+		
+		_isSettingsDirty = true;
+		invalidateProperties();
+	}
 }}}
-_Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpringMVCbCtl_PInj/trunk/src/main/flex/com/masuland/loginexample/view/codebehind/SettingsBoxCB.as svn repo]._
+_Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroSpringMobileMVCpshCtl_PInj/trunk/src/main/flex/com/masuland/loginexample/view/component/SettingsBoxCP.as svn repo]._
 
 === Property Injection with Swiz ===
 {{{
-	[Inject(source="appModel.settings", bind="true")]
+	[Inject(source='appModel.settings', bind='true')]
 	[Bindable]
-	public var settings:SettingsVO;
+	public function get settings():SettingsVO
+	{
+		return _settings;
+	}
+	
+	public function set settings(value:SettingsVO):void
+	{
+		_settings = value;
+		
+		_isSettingsDirty = true;
+		invalidateProperties();
+	}
 }}}
-_Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSwizMVCbCtl_PInj/trunk/src/main/flex/com/masuland/loginexample/view/codebehind/SettingsBoxCB.as svn repo]._
+_Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroSwizMobileMVCpshCtl_PInj/trunk/src/main/flex/com/masuland/loginexample/view/component/SettingsBoxCP.as svn repo]._
 
 = Feedback =
 
