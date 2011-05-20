@@ -21,7 +21,11 @@ Features: Flex 4 (Gumbo) with [NanoarchitectureMVCb "Model - View - Component (P
 ==== What's a Nanoarchitecture? ==== 
 Please read this page about [Nanoarchitecture Nanoarchitectures].
 
-...
+==== Which Microarchitecture has the best performance? ==== 
+Don't know. Maybe somebody could create performance tests for it ;)
+
+==== Which Microarchitecture do you prefer? ==== 
+I am not making that decision for you. It is up to you to decide which one suites best to your needs.
 
 == More code examples ==
 
