@@ -7,6 +7,11 @@ http://masuland.googlecode.com/files/NanoarchitectureMVCb.png
 _Created with the [http://www.yworks.com/en/products_yed_about.html yEd Graph Editor].
 Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleDocs/trunk/yed_diagram/NanoarchitectureMVCb.graphml svn repo]._
 
+http://masuland.googlecode.com/files/ApplicationWithNanoarchitectureMVCb.png
+
+_Created with the [http://www.yworks.com/en/products_yed_about.html yEd Graph Editor].
+Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleDocs/trunk/yed_diagram/ApplicationWithNanoarchitectureMVCb.graphml svn repo]._
+
 == Application Flows ==
 
 This architecture contains 3 types of application flows:
