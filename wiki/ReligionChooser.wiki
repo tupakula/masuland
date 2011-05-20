@@ -8,7 +8,7 @@ http://masuland.googlecode.com/files/ReligionChooserScreenshotWeb.png
 
 ==== Flex 4 (Gumbo) with MVCpllCtl_PInj ====
 
-Features: Flex 4 (Gumbo) with [NanoarchitectureMVCb "Model - View - Component (Pull)" (MVCpll)], "Controller" (Ctl) & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
+Features: Flex 4 (Gumbo) with [NanoarchitectureMVCb "Model - View - Component" (MVCp)], [NanoarchitectureCpll "C-Pull" (Cpll)], "Controller" (Ctl) & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
 
  * Flex 4 (Gumbo) Religion Chooser with Parsley 2.4 (MVCb), ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboParsleyMVCpllCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboParsleyMVCpllCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/ReligionChooserGumboParsleyMVCpllCtl_PInj/trunk/ svn repo])
  * Flex 4 (Gumbo) Religion Chooser with Spring 1.1 (MVCb), ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSpringMVCpllCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSpringMVCpllCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/ReligionChooserGumboSpringMVCpllCtl_PInj/trunk/ svn repo])
