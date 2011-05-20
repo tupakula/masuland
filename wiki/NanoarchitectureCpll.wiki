@@ -36,7 +36,7 @@ _Complete source available in the  [http://masuland.googlecode.com/svn/trunk/Log
 }}}
 _Complete source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboParsleyMVCpllCtl_PInj/trunk/src/main/flex/com/masuland/loginexample/view/component/SettingsBoxCP.as svn repo]._
 
-== Code Examples Implementing PInj ==
+== Code Examples Implementing Cpll ==
 
   * [LoginExample Login Example] with Flex 3 and Flex 4 (Halo, Gumbo, Hero)
 
