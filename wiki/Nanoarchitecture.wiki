@@ -8,20 +8,22 @@ Microarchitectures like [http://cairngormdocs.org/ Cairngorm 2.2.1], [http://pur
 *Interactional Nanoarchitectures*
 
  * "Model - View - Controller" (MVC or MVCtl)
+ * "Model - View - Command" (MVCmd)
  * [NanoarchitectureMVCb "Model - View - Code Behind" (MVCb)]
  * "Model - View - Code Behind - Controller" (MVCbCtl)
  * "Model - View - Code Behind - Command" (MVCbCmd)
- * "Model - View - Code Behind - Controller/Command" (MVCbCtlCmd)
  * "Model - View - Code Behind - Task" (MVCbTsk)
  * "Model - View - Code Behind - Story/Task" (MVCbStoTsk)
- * "Model - View - Component (Pull)" (MVCpll)
- * "Model - View - Component (Push)" (MVCpsh)
+ * [NanoarchitectureMVCb "Model - View - Component" (MVCp)]
+ * "Model - View - Component - Controller" (MVCbCtl)
+ * "Model - View - Component - Command" (MVCbCmd)
+ * "Model - View - Component - Task" (MVCbTsk)
+ * "Model - View - Component - Story/Task" (MVCbStoTsk)
 
 *Structural Nanoarchitectures*
 
  * "Controller" (Ctl)
  * "Command" (Cmd)
- * "Controller/Command" (!CtlCmd)
  * "Task" (Tsk)
  * "Story/Task" (!StoTsk)
 
@@ -29,6 +31,8 @@ Microarchitectures like [http://cairngormdocs.org/ Cairngorm 2.2.1], [http://pur
 
  * [NanoarchitectureNoEvt "No Event" (NoEvt)]
  * [NanoarchitecturePInj "Property Injection" (PInj)]
+ * [NanoarchitectureCpll "C-Pull" (Cpll)]
+ * [NanoarchitectureCpsh "C-Push" (Cpsh)]
  * "Layer to Package" (L2P)
 
 = Code Examples =
