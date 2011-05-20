@@ -1,0 +1,33 @@
+#summary This page explains the "Property Injection" (PInj) Nanoarchitecture
+
+= "Property Injection" (PInj) Nanoarchitecture =
+
+...
+
+=== Property Injection with Parsley ===
+{{{
+	[Subscribe(scope='appModel', objectId='settings')]
+	[Bindable]
+	public var settings:SettingsVO;
+}}}
+_Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloParsleyMVCbCtl_PInj/trunk/src/main/flex/com/masuland/loginexample/view/cb/SettingsBoxCB.as svn repo]._
+
+=== Property Injection with Spring ===
+{{{
+	[Inject(name='appModel', property='settings')]
+	[Bindable]
+	public var settings:SettingsVO;
+}}}
+_Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpringMVCbCtl_PInj/trunk/src/main/flex/com/masuland/loginexample/view/cb/SettingsBoxCB.as svn repo]._
+
+=== Property Injection with Swiz ===
+{{{
+	[Inject(source="appModel.settings", bind="true")]
+	[Bindable]
+	public var settings:SettingsVO;
+}}}
+_Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSwizMVCbCtl_PInj/trunk/src/main/flex/com/masuland/loginexample/view/cb/SettingsBoxCB.as svn repo]._
+
+= Feedback =
+
+Please feel free to post comments, suggestions or feature requests because this page is still work in progress.
