@@ -42,3 +42,12 @@ This architecture contains 3 types of application flows:
 
   * [LoginExample Login Example] with Flex 3 and Flex 4 (Halo, Gumbo)
   * [ReligionChooser Religion Chooser] with Flex 4 (Gumbo)
+
+== More Nanoarchitectures ==
+
+ * [NanoarchitectureNoEvt "No Event" (NoEvt)]
+ * [NanoarchitecturePInj "Property Injection" (PInj)]
+
+== Feedback ==
+
+Please feel free to post comments, suggestions or feature requests because this page is still work in progress.
