@@ -35,7 +35,7 @@ See [LoginExample#Flex_4_(Gumbo)_with_MVCpllCtl_PInj Flex 4 (Gumbo) Login Exampl
 
 == Code Examples ==
 
- * [LoginExample Login Example] written in Flex 3 and Flex 4
+ * [LoginExample Login Example] written in Flex 3 and Flex 4 (Halo, Gumbo, Hero)
 
 ...
 
