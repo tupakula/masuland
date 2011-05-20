@@ -209,7 +209,7 @@ package com.masuland.loginexample.vo
 }
 }}}
 
-Example for SkinnableComponent:
+Example for !SkinnableComponent:
 
 {{{
 package com.masuland.loginexample.view.component
