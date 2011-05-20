@@ -1,6 +1,6 @@
 #summary This page explains the "C-Pull" (Cpll) Nanoarchitecture
 
-*Note:* The letter "C" means "Code Behind" in Flex 3 applications and "Component" in Flex 4 applications.
+*Please note:* The letter "C" means "Code Behind" in Flex 3 applications and "Component" in Flex 4 applications.
 
 = C-Pull (Cpll) Nanoarchitecture =
 
@@ -47,6 +47,7 @@ _Complete source available in the  [http://masuland.googlecode.com/svn/trunk/Log
  * [NanoarchitectureMVCb "Model - View - Code Behind / Component" (MVCb / MVCp)]
  * [NanoarchitectureNoEvt "No Event" (NoEvt)]
  * [NanoarchitecturePInj "Property Injection" (PInj)]
+ * [NanoarchitectureCpsh "C-Push" (Cpsh)
 
 ...
 
