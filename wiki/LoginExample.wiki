@@ -81,7 +81,7 @@ Features: Flex 4 (Halo) with [NanoarchitectureMVCb "Model - View - Code Behind" 
 
 ==== Flex 4 (Halo) with MVCbCtl_PInjDdd ====
 
-Features: Flex 4 (Halo) with [NanoarchitectureMVCb "Model - View - Code Behind" (MVCb)], "Controller" (Ctl), "Property Injection" (PInj) & "Domain-Driven Design" (Ddd) Nanoarchitectures
+Features: Flex 4 (Halo) with [NanoarchitectureMVCb "Model - View - Code Behind" (MVCb)], "Controller" (Ctl) & "Property Injection" (PInj) Nanoarchitectures & [http://en.wikipedia.org/wiki/Domain-driven_design "Domain-Driven Design" (Ddd)] approach
 
  * Flex 4 (Halo) Login Example with Parsley 2.4.0 (MVCbCtl, PInj, Ddd), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbCtl_PInjDdd/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbCtl_PInjDdd/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbCtl_PInjDdd/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloParsleyMVCbCtl_PInjDdd/trunk/ svn repo])
  * Flex 4 (Halo) Login Example with Spring AS 1.1 (MVCbCtl, PInj, Ddd), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_PInjDdd/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_PInjDdd/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_PInjDdd/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpringMVCbCtl_PInjDdd/trunk/ svn repo])
