@@ -20,7 +20,7 @@ Features: Flex 4 (Gumbo) with [NanoarchitectureMVCb "Model - View - Component (P
 
  * [NanoarchitectureMVCb "Model - View - Component" (MVCp)]
  * "Controller" (Ctl)
- * "Component Pull" (Cpll)
+ * [NanoarchitectureCpll "C-Pull" (Cpll)]
  * [NanoarchitecturePInj "Property Injection" (PInj)]
 
 ...
