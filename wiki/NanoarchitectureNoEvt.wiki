@@ -45,3 +45,12 @@ Just like [NanoarchitectureMVCb MVCb] this nanoarchitecture contains 3 types of 
 == Code Examples Implementing !NoEvt ==
 
   * [LoginExample Login Example] with Flex 3 and Flex 4 (Halo, Gumbo)
+
+== More Nanoarchitectures ==
+
+ * [NanoarchitectureMVCb "Model - View - Code Behind / Component" (MVCb / MVCp)]
+ * [NanoarchitecturePInj "Property Injection" (PInj)]
+
+== Feedback ==
+
+Please feel free to post comments, suggestions or feature requests because this page is still work in progress.
