@@ -93,6 +93,8 @@ _Complete source available in the  [http://masuland.googlecode.com/svn/trunk/Log
 
  * [NanoarchitectureMVCb "Model - View - Code Behind / Component" (MVCb / MVCp)]
  * [NanoarchitectureNoEvt "No Event" (NoEvt)]
+ * [NanoarchitectureCpll "C-Pull" (Cpll)]
+ * [NanoarchitectureCpsh "C-Push" (Cpsh)]
 
 ...
 
