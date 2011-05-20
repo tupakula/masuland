@@ -30,13 +30,13 @@ Microarchitectures like [http://cairngormdocs.org/ Cairngorm 2.2.1], [http://pur
  * [NanoarchitectureNoEvt "No Event" (NoEvt)]
  * "Layer to Package" (L2P)
 
-= Feedback =
-
-*Please feel free to post comments or suggestions because the page is still work in progress.*
-
 = Code Examples =
 
 Here are some code examples which implement some or all of these above mentioned Nanoarchitectures:
 
  * [LoginExample LoginExample] written in Flex 3 and Flex 4 (Halo, Gumbo)
  * [ReligionChooser ReligionChooser] written in Flex 4 (Gumbo)
+
+= Feedback =
+
+Please feel free to post comments or suggestions because this page is still work in progress.
