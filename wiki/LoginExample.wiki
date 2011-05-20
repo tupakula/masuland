@@ -191,6 +191,7 @@ Features: Flex 4 (Hero) with [NanoarchitectureMVCb "Model - View - Component (Pu
  * "Component Pull" (Cpll)
  * "Component Push" (Cpsh)
  * [NanoarchitecturePInj "Property Injection" (PInj)]
+ * [NanoarchitectureNoEvt "No Event" (NoEvt)]
 
 ...
 
