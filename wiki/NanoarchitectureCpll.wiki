@@ -1,0 +1,62 @@
+#summary This page explains the "C-Pull" (Cpll) Nanoarchitecture
+
+*Note:* The letter "C" means "Code Behind" in Flex 3 applications and "Component" in Flex 4 applications.
+
+= C-Pull (Cpll) Nanoarchitecture =
+
+==== UIComponent (Flex 3) / Skin (Flex 4) with C-Pull ====
+
+{{{
+	<s:DropDownList
+		id="cb_style"
+		minWidth="130"
+		width="100%"
+		dataProvider="{ hostComponent.appModel.currentLayout.styles }"
+		selectedItem="{ hostComponent.appModel.currentStyle }"
+		requireSelection="true"
+		change="hostComponent.loadStyle(StyleVO( cb_style.selectedItem ))"
+		/>
+}}}
+_Complete source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboParsleyMVCpllCtl_PInj/trunk/src/main/flex/com/masuland/loginexample/view/skin/SettingsBoxSkin.mxml svn repo]._
+
+==== Code Behind (Flex 3) / Component (Flex 4) with C-Pull ====
+
+{{{
+	[Inject]
+	[Bindable]
+	public var appModel:AppModel;
+
+	[MessageDispatcher]
+	public var dispatcher:Function;
+
+	public function loadStyle(style:StyleVO):void
+	{
+		dispatcher(new LoadStyleEvent(style));
+	}
+}}}
+_Complete source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboParsleyMVCpllCtl_PInj/trunk/src/main/flex/com/masuland/loginexample/view/component/SettingsBoxCP.as svn repo]._
+
+== Code Examples Implementing PInj ==
+
+  * [LoginExample Login Example] with Flex 3 and Flex 4 (Halo, Gumbo, Hero)
+
+...
+
+== More Nanoarchitectures ==
+
+ * [NanoarchitectureMVCb "Model - View - Code Behind / Component" (MVCb / MVCp)]
+ * [NanoarchitectureNoEvt "No Event" (NoEvt)]
+ * [NanoarchitecturePInj "Property Injection" (PInj)]
+
+...
+
+== Frequently Asked Questions (FAQs) ==
+
+==== What's a Nanoarchitecture? ==== 
+Please read this page about [Nanoarchitecture Nanoarchitectures].
+
+...
+
+== Feedback ==
+
+Please feel free to post comments, suggestions or feature requests because this page is still work in progress.
