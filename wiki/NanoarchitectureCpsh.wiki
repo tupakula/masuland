@@ -1,6 +1,6 @@
 #summary This page explains the "C-Push" (Cpsh) Nanoarchitecture
 
-*Note:* The letter "C" means "Code Behind" in Flex 3 applications and "Component" in Flex 4 applications.
+*Please note:* The letter "C" means "Code Behind" in Flex 3 applications and "Component" in Flex 4 applications.
 
 = C-Push (Cpsh) Nanoarchitecture =
 
