@@ -4,7 +4,7 @@
 
 ...
 
-=== Observing Properties with the ChangeWatcher  ===
+=== Observing Properties with the !ChangeWatcher  ===
 
 The following example is from a Robotlegs / Signals project
 
