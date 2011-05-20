@@ -181,6 +181,19 @@ Features: Flex 4 (Hero) with [NanoarchitectureMVCb "Model - View - Component (Pu
 
 ...
 
+== Used Nanoarchitectures ==
+
+ * [NanoarchitectureMVCb "Model - View - Code Behind" (MVCb)]
+ * [NanoarchitectureMVCb "Model - View - Component" (MVCp)]
+ * "Controller" (Ctl)
+ * "Command" (Cmd)
+ * "Story/Task" (!StoTsk)
+ * "Component Pull" (Cpll)
+ * "Component Push" (Cpsh)
+ * [NanoarchitecturePInj "Property Injection" (PInj)]
+
+...
+
 == Frequently Asked Questions (FAQs) ==
 
 ==== What's a Nanoarchitecture? ==== 
