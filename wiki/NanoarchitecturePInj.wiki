@@ -2,7 +2,7 @@
 
 = "Property Injection" (PInj) Nanoarchitecture =
 
-==== Observing Properties with the !ChangeWatcher  ====
+==== Observing Properties of injected objects with the !ChangeWatcher  ====
 
 The following example is from a Robotlegs / Signals project
 
