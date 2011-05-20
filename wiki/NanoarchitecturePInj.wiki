@@ -18,7 +18,7 @@ _Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExample
 	[Bindable]
 	public var settings:SettingsVO;
 }}}
-_Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpringMVCbCtl_PInj/trunk/src/main/flex/com/masuland/loginexample/view/cb/SettingsBoxCB.as svn repo]._
+_Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpringMVCbCtl_PInj/trunk/src/main/flex/com/masuland/loginexample/view/codebehind/SettingsBoxCB.as svn repo]._
 
 === Property Injection with Swiz ===
 {{{
@@ -26,7 +26,7 @@ _Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExample
 	[Bindable]
 	public var settings:SettingsVO;
 }}}
-_Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSwizMVCbCtl_PInj/trunk/src/main/flex/com/masuland/loginexample/view/cb/SettingsBoxCB.as svn repo]._
+_Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSwizMVCbCtl_PInj/trunk/src/main/flex/com/masuland/loginexample/view/codebehind/SettingsBoxCB.as svn repo]._
 
 = Feedback =
 
