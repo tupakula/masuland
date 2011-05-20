@@ -1,6 +1,6 @@
 #summary This page defines the meaning of the word "Nanoarchitecture"
 
-= Nanoarchitecture (Beta) =
+= Nanoarchitecture (Codename) =
 
 Nanoarchitectures are small, architectural design solutions (or [http://en.wikipedia.org/wiki/Architectural_pattern_(computer_science) Architectual Patterns]) based on
 Microarchitectures like [http://cairngormdocs.org/ Cairngorm 2.2.1], [http://puremvc.org/ PureMVC], [http://www.spicefactory.org/parsley/ Parsley], [http://www.springactionscript.org/ Spring Actionscript], [http://www.swizframework.org/ Swiz], [http://mate.asfusion.com/ Mate], [http://www.robotlegs.org/ Robotlegs], [http://flicc.sourceforge.net/ Flicc], [http://code.google.com/p/smartypants-ioc/ SmartyPants] ... and others. Nanoarchitectures differ from the concept of [http://en.wikipedia.org/wiki/Design_pattern_(computer_science) Design Patterns] because Nanoarchitectures focus on defining conventional patterns for the whole application architecture. There are three types of Nanoarchitectures: Interactional, structual and conceptual Nanoarchitectures.
