@@ -4,7 +4,7 @@
 
 ...
 
-=== Observing Properties with the !ChangeWatcher  ===
+==== Observing Properties with the !ChangeWatcher  ====
 
 The following example is from a Robotlegs / Signals project
 
@@ -27,7 +27,7 @@ The following example is from a Robotlegs / Signals project
 }}}
 _Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroRobotlegsSignalsMobileMVCpshCmd/trunk/src/main/flex/com/masuland/loginexample/view/component/SettingsBoxCP.as svn repo]._
 
-=== Property Injection with Parsley ===
+==== Property Injection with Parsley ====
 {{{
 	[Subscribe(scope='appModel', objectId='settings')]
 	[Bindable]
@@ -46,7 +46,7 @@ _Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExample
 }}}
 _Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroParsleyMobileMVCpshCtl_PInj/trunk/src/main/flex/com/masuland/loginexample/view/component/SettingsBoxCP.as svn repo]._
 
-=== Property Injection with Spring ===
+==== Property Injection with Spring ====
 {{{
 	[Inject(name='appModel', property='settings')]
 	[Bindable]
@@ -65,7 +65,7 @@ _Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExample
 }}}
 _Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroSpringMobileMVCpshCtl_PInj/trunk/src/main/flex/com/masuland/loginexample/view/component/SettingsBoxCP.as svn repo]._
 
-=== Property Injection with Swiz ===
+==== Property Injection with Swiz ====
 {{{
 	[Inject(source='appModel.settings', bind='true')]
 	[Bindable]
@@ -84,6 +84,16 @@ _Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExample
 }}}
 _Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroSwizMobileMVCpshCtl_PInj/trunk/src/main/flex/com/masuland/loginexample/view/component/SettingsBoxCP.as svn repo]._
 
-= Feedback =
+== Code Examples Implementing PInj ==
+
+  * [LoginExample Login Example] with Flex 3 and Flex 4 (Halo, Gumbo)
+  * [ReligionChooser Religion Chooser] with Flex 4 (Gumbo)
+
+== More Nanoarchitectures ==
+
+ * [NanoarchitectureMVCb "Model - View - Code Behind / Component" (MVCb / MVCp)]
+ * [NanoarchitectureNoEvt "No Event" (NoEvt)]
+
+== Feedback ==
 
 Please feel free to post comments, suggestions or feature requests because this page is still work in progress.
