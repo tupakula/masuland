@@ -159,7 +159,7 @@ Features: Flex 4 (Hero) with [NanoarchitectureMVCb "Model - View - Component" (M
 
 ==== Flex 4 (Hero) with MVCpshCmd_PInj ====
 
-Features: Flex 4 (Hero) with [NanoarchitectureMVCb "Model - View - Component" (MVCp)], [NanoarchitectureCpsh "C-Push" (Cpsh)] & "Command" (Cmd) Nanoarchitectures
+Features: Flex 4 (Hero) with [NanoarchitectureMVCb "Model - View - Component" (MVCp)], [NanoarchitectureCpsh "C-Push" (Cpsh)], "Command" (Cmd) & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
 
  * Flex 4 (Hero) Login Example for Mobile with Mate 0.9.1 (MVCpshCmd, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroMateMobileMVCpshCmd_PInj.air air app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroMateMobileMVCpshCmd_PInj.apk android app]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroMateMobileMVCpshCmd_PInj/trunk/ svn repo])
 
