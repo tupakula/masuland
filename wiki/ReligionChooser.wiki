@@ -1,6 +1,6 @@
 = Religion Chooser =
 
-The Religion Chooser application aims to be a fun application based on a choice tree structure created by [http://www.holytaco.com/flowchart-determine-what-religion-you-should-follow holytaco.com]. For more information about the application please read the [ReligionChooserFeatureSpec Religion Chooser Feature Specification] document. Implementations with different Flex versions (Flex 4) and IoC Microarchitectures (Parsley 2.4, Spring 1.1, Swiz 1.0) are listed below. The code follows additional Flex coding conventions ([Flex4CodingConventions Flex 4]). 
+The Religion Chooser application aims to be a fun application based on a decision tree structure created by [http://www.holytaco.com/flowchart-determine-what-religion-you-should-follow holytaco.com]. For more information about the application please read the [ReligionChooserFeatureSpec Religion Chooser Feature Specification] document. Implementations with different Flex versions (Flex 4) and IoC Microarchitectures (Parsley 2.4, Spring 1.1, Swiz 1.0) are listed below. The code follows additional Flex coding conventions ([Flex4CodingConventions Flex 4]). 
 
 http://masuland.googlecode.com/files/ReligionChooserScreenshotWeb.png
 
