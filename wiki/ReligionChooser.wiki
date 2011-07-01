@@ -40,7 +40,7 @@ I am not making that decision for you. It is up to you to decide which one suite
 
 == More code examples ==
 
- * [LoginExample Login Example] written in Flex 3 and Flex 4 (Halo, Gumbo)
+ * [LoginExample Login Example] written in Flex 3 and Flex 4 (Halo, Gumbo, Hero)
 
 == Feedback ==
 
