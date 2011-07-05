@@ -33,7 +33,6 @@ Microarchitectures like [http://cairngormdocs.org/ Cairngorm 2.2.1], [http://pur
  * [NanoarchitecturePInj "Property Injection" (PInj)]
  * [NanoarchitectureCpll "C-Pull" (Cpll)]
  * [NanoarchitectureCpsh "C-Push" (Cpsh)]
- * "Layer to Package" (L2P)
 
 = Code Examples =
 
