@@ -6,13 +6,13 @@ http://masuland.googlecode.com/files/ReligionChooserScreenshotWeb.png
 
 == Flex 4 (Gumbo) ==
 
-==== Flex 4 (Gumbo) with MVCpllCtl_PInj ====
+==== Flex 4 (Gumbo) with MVCpshCtl_PInj ====
 
 Features: Flex 4 (Gumbo) with [NanoarchitectureMVCb "Model - View - Component" (MVCp)], [NanoarchitectureCpsh "C-Push" (Cpsh)], "Controller" (Ctl) & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
 
- * Flex 4 (Gumbo) Religion Chooser with Parsley 2.4 (MVCb), ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboParsleyMVCpllCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboParsleyMVCpllCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/ReligionChooserGumboParsleyMVCpllCtl_PInj/trunk/ svn repo])
- * Flex 4 (Gumbo) Religion Chooser with Spring 1.1 (MVCb), ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSpringMVCpllCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSpringMVCpllCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/ReligionChooserGumboSpringMVCpllCtl_PInj/trunk/ svn repo])
- * Flex 4 (Gumbo) Religion Chooser with Swiz 1.2 (MVCb), ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSwizMVCpllCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSwizMVCpllCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/ReligionChooserGumboSwizMVCpllCtl_PInj/trunk/ svn repo])
+ * Flex 4 (Gumbo) Religion Chooser with Parsley 2.4 (MVCb), ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboParsleyMVCpshCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboParsleyMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/ReligionChooserGumboParsleyMVCpshCtl_PInj/trunk/ svn repo])
+ * Flex 4 (Gumbo) Religion Chooser with Spring 1.1 (MVCb), ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSpringMVCpshCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSpringMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/ReligionChooserGumboSpringMVCpshCtl_PInj/trunk/ svn repo])
+ * Flex 4 (Gumbo) Religion Chooser with Swiz 1.2 (MVCb), ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSwizMVCpshCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSwizMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/ReligionChooserGumboSwizMVCpshCtl_PInj/trunk/ svn repo])
 
 ...
 
