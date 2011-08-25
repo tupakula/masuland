@@ -83,8 +83,6 @@ IAppDelegate
 
 }}}
 
-...
-
 = Code example which implements this Feature Specification =
 
  * [LoginExample Login Example] written in Flex 3 and Flex 4 (Halo, Gumbo, Hero)
