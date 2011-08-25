@@ -1,6 +1,6 @@
 = Login Example Feature Specification =
 
-This document outlines the basic architecture of the Login Example application. You will get an overview about the application flow and states. Furthermore, types of value objects and client-server interface (Delegates) will be discussed.
+This document outlines the basic architecture of the [LoginExample Login Example] application. You will get an overview about the application flow and states. Furthermore, types of value objects and client-server interface (Delegates) will be discussed.
 
 == 1.1. Application Flow and States ==
 
@@ -82,3 +82,9 @@ IAppDelegate
  - updateUser(user : UserVO) : UserVO
 
 }}}
+
+...
+
+= Code example which implements this Feature Specification =
+
+ * [LoginExample Login Example] written in Flex 3 and Flex 4 (Halo, Gumbo, Hero)
