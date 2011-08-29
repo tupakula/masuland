@@ -75,7 +75,7 @@ Features: Flex 4 (Halo) with [NanoarchitectureMVCb "Model - View - Code Behind" 
 
 Features: Flex 4 (Halo) with [NanoarchitectureMVCb "Model - View - Code Behind" (MVCb)], "Controller" (Ctl) & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
 
-*Please note: Two Parsley projects. First: Parsley 2.4.1 (MVCbCtl, PInj) uses the Publish/Subscribe-Tags from Parsley. Second: Parsley 2.4.1 (MVCbCtl, PInj, Wire) uses the Wire-tag from Cairngorm 3 Observer Library*
+*Please note:* Two Parsley projects. First project Parsley 2.4.1 (MVCbCtl, PInj) uses the Publish/Subscribe-Tags from Parsley. Second project Parsley 2.4.1 (MVCbCtl, PInj, Wire) uses the Wire-tag from Cairngorm 3 Observer Library
 
  * Flex 4 (Halo) Login Example with Parsley 2.4.1 (MVCbCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloParsleyMVCbCtl_PInj/trunk/ svn repo])
  * Flex 4 (Halo) Login Example with Parsley 2.4.1 (MVCbCtl, PInj, Wire), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbCtl_PInj_Wire/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbCtl_PInj_Wire/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbCtl_PInj_Wire/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloParsleyMVCbCtl_PInj_Wire/trunk/ svn repo])
