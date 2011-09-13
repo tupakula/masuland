@@ -1,0 +1,10 @@
+#summary The sitebar
+
+  * Code Examples
+    * [LoginExample Login Example]
+    * [ReligionChooser Religion Chooser]
+  * [Nanoarchitecture Nanoarchitecture]
+    * [NanoarchitectureMVCb Mode-View-Codebehind (MVCb)]
+    * [NanoarchitectureNoEvt No Event (NoEvt)]
+    * [NanoarchitectureCpll C-Pull (Cpll)]
+    * [NanoarchitectureCpsh C-Push (Cpsh)]
