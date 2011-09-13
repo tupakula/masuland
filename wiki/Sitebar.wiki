@@ -5,6 +5,11 @@
     * [ReligionChooser Religion Chooser]
   * [Nanoarchitecture Nanoarchitecture]
     * [NanoarchitectureMVCb Mode-View-Codebehind (MVCb)]
+    * [NanoarchitectureMVCb Mode-View-Component (MVCp)]
     * [NanoarchitectureNoEvt No Event (NoEvt)]
+    * [NanoarchitecturePInj Property Injection (PInj)]
     * [NanoarchitectureCpll C-Pull (Cpll)]
     * [NanoarchitectureCpsh C-Push (Cpsh)]
+  * Coding Conventions
+    * [Flex3CodingConventions Flex 3 Coding Conventions]
+    * [Flex4CodingConventions Flex 4 Coding Conventions]
