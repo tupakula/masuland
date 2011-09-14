@@ -2,7 +2,9 @@
 
   * Code Examples
     * [LoginExample Login Example]
+      * [LoginExampleFeatureSpec Feature Specification]
     * [ReligionChooser Religion Chooser]
+      * [ReligionChooserFeatureSpec Feature Specification]
   * [Nanoarchitecture Nanoarchitecture]
     * [NanoarchitectureMVCb Mode-View-Codebehind (MVCb)]
     * [NanoarchitectureMVCb Mode-View-Component (MVCp)]
