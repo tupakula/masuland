@@ -15,3 +15,5 @@
   * Coding Conventions
     * [Flex3CodingConventions Flex 3 Coding Conventions]
     * [Flex4CodingConventions Flex 4 Coding Conventions]
+  * Best Coding Practices
+    * [MigrationFromFlex3ToFlex4 Migration from Flex 3 to Flex 4]
