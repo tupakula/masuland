@@ -6,23 +6,30 @@ Why have I created these code examples?
   # When applying for new jobs as Flex developer I usually show my clients these code examples so that they can evaluate if my Flex skills are of need to them. 
   # I am trying to get feedback from the development community to improve the way I am suggesting coding Flex.
   # Because Flex is still a very young programming language I am trying to give Flex beginners the opportunity to compare existing frameworks and architectures so that they can speed up their development time, and thereby, using less bad coding practices. 
-  # Usually I tend to say that Flex development is expensive, and, in the following I will explain why this seems to be the case
+  # Usually I tend to say that "Flex development is expensive", and, in the following I will explain why this seems to be the case
 
 *Please note:* The following information only reflects my personal experience and does not necessarily reflect the view of the development community and Adobe.
 
-== Flex development is expensive ==
+== "Flex development is expensive" ==
 
 Flex development is expensive because:
 
-==== 1. Flex is a very young ====
+==== 1. Flex is very young ====
 
 Flex is a very new technology. Flex 1 just came out in 2004 [http://en.wikipedia.org/wiki/Adobe_Flex see Wikipedia].
 
-==== 2. Flashplayer and Flex framework have fast release cycles ====
+==== 2. Evolution of the Flashplayer and the Flex framework ====
 
-Adobe plans to update their Flashplayer and Flex framework on a quarter basis. While this also has pros, for developers this means your application constantly has to be updated 
+Adobe plans to update their Flashplayer and Flex framework on faster release cycles (for times a year). While this also has pros, for developers this means your application constantly has to be updated and this could be an issue for big long-term projects.
 
-  * continues evolution microarchitectures like Mate, Parsley, Robotlegs, Spring Actionscript & Swiz
+==== 3. Evolution of Microarchitectures ====
+
+Since the release of the Cairngorm 3 specification Adobe [http://sourceforge.net/adobe/cairngorm/home/Home/ suggests] the use of third party open source Inversion-of-Control (IoC) Microarchitectures like ([http://www.spicefactory.org/parsley/ Parsley], [http://www.springactionscript.org/ Spring Actionscript], [http://www.swizframework.org/ Swiz], [http://www.robotlegs.org/ Robotlegs], [http://mate.asfusion.com/ Mate]). While this can be seen as a great opportunity to the open source community which create these Microarchitectures it also could have drawbacks 
+
+http://sourceforge.net/adobe/cairngorm/home/Home/
+
+
+
   * young developer community (compared to other communities like Java ... etc)
   * missing coding conventions
   * a lack of code generation tools and wizards to speedup development productivity
