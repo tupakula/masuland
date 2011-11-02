@@ -34,8 +34,18 @@ Because Flex is a fairly new technology, the development community is very small
 
 Even though there are many Flex code examples out there - most of them cover the topic "Component Development in Flex" (like Spark- and MX-Components) - only few information can be found on professional "Application-Architecture Development in Flex" in combination with third party Microarchitectures. Because of the lack of these information many Flex projects tend to implement their required application-features with unconventional coding practices.
 
-  * missing coding conventions
-  * a lack of code generation tools and wizards to speedup development productivity
-  * developer have different coding backgrounds (PHP, Java, ASP, HTML, Javascript ... etc)
-  * only very few universities worldwide teach flex development
+==== 6. Missing Coding Conventions ====
 
+Even though Adobe promotes the usage of the following [http://opensource.adobe.com/wiki/display/flexsdk/Coding+Conventions Coding Conventions] the Flex community still seems to be unhappy, and therefore, very creative regarding their own conventions. 
+
+==== 7. Only few code generation tools ====
+
+a lack of code generation tools and wizards to speedup development productivity
+
+==== 8. Differing Developer Coding Backgrounds ====
+
+developer have different coding backgrounds (PHP, Java, ASP, HTML, Javascript ... etc)
+
+==== 9. Only few universities teaching Flex Development ====
+
+only very few universities worldwide teach flex development
