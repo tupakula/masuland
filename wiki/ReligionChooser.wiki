@@ -27,6 +27,9 @@ Features: Flex 4 (Gumbo) with [NanoarchitectureMVCb "Model - View - Component" (
 
 == Frequently Asked Questions (FAQs) ==
 
+==== Why have you created the Religion Chooser? ==== 
+Please read my [MotivationLetter Motivation Letter].
+
 ==== What's a Nanoarchitecture? ==== 
 Please read this page about [Nanoarchitecture Nanoarchitectures].
 
