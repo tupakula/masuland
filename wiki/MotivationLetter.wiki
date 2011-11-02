@@ -1,0 +1,30 @@
+#summary This page explains the reason why I have created these code examples
+
+= Motivation Letter =
+
+Why have I created these code examples?
+  # When applying for new jobs as Flex developer I usually show my clients these code examples so that they can evaluate if my Flex skills are of need to them. 
+  # I am trying to get feedback from the development community to improve the way I am suggesting coding Flex.
+  # Because Flex is still a very young programming language I am trying to give Flex beginners the opportunity to compare existing frameworks and architectures so that they can speed up their development time, and thereby, using less bad coding practices. 
+  # Usually I tend to say that Flex development is expensive, and, in the following I will explain why this seems to be the case
+
+*Please note:* The following information only reflects my personal experience and does not necessarily reflect the view of the development community and Adobe.
+
+== Flex development is expensive ==
+
+Flex development is expensive because:
+
+==== 1. Flex is a very young ====
+
+Flex is a very new technology. Flex 1 just came out in 2004 [http://en.wikipedia.org/wiki/Adobe_Flex see Wikipedia].
+
+==== 2. Flashplayer and Flex framework have fast release cycles ====
+
+Adobe plans to update their Flashplayer and Flex framework on a quarter basis. While this also has pros, for developers this means your application constantly has to be updated 
+
+  * continues evolution microarchitectures like Mate, Parsley, Robotlegs, Spring Actionscript & Swiz
+  * young developer community (compared to other communities like Java ... etc)
+  * missing coding conventions
+  * a lack of code generation tools and wizards to speedup development productivity
+  * developer have different coding backgrounds (PHP, Java, ASP, HTML, Javascript ... etc)
+  * only very few universities worldwide teach flex development
