@@ -10,7 +10,7 @@
 	backgroundColor="0xffffff"
 	backgroundGradientAlphas="[1, 1]"
 	backgroundGradientColors="[#ffffff, #ffffff]"
-	pageTitle="Cairngorm 2.2.1 - Login Example (Fx3)"
+	pageTitle="Cairngorm 2.2.2 - Login Example (Fx3)"
 	applicationComplete="new InitialiseClientEvent().dispatch()"
 	viewSourceURL="srcview/index.html"
 	>
