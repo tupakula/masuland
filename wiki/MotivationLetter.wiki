@@ -36,7 +36,7 @@ Even though there are many Flex code examples out there - most of them cover the
 
 ==== 6. Missing Coding Conventions ====
 
-Even though Adobe promotes the usage of the following [http://opensource.adobe.com/wiki/display/flexsdk/Coding+Conventions Coding Conventions] the Flex community still seems to be unhappy, and therefore, very creative regarding their own conventions. 
+Even though Adobe promotes the usage of [http://opensource.adobe.com/wiki/display/flexsdk/Coding+Conventions Coding Conventions] the Flex community still seems to be unhappy, and therefore, very creative regarding their own conventions. 
 
 ==== 7. Only few code generation tools ====
 
