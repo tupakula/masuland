@@ -2,7 +2,7 @@
 
 = Motivation Letter =
 
-In the following I'd like to explain the reason why I have created these code examples:
+Here I'd like to explain the reason why I have created these code examples:
 
 == Code Examples ==
 
