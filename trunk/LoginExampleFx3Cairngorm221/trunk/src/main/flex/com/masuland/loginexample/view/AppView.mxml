@@ -32,7 +32,7 @@
 				toolTip="You are just as bright as your surrounding"
 				/>
 			<mx:Label
-				text="Cairngorm 2.2.1 - Login Example (Fx3)"
+				text="Cairngorm 2.2.2 - Login Example (Fx3)"
 				styleName="appTitle"
 				/>
 		</mx:HBox>
