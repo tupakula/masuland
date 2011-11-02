@@ -2,7 +2,15 @@
 
 = Motivation Letter =
 
-Why have I created these code examples?
+In the following I'd like to explain the reason why I have created these code examples:
+
+== Code Examples ==
+
+  * [LoginExample Login Example] with Flex 3 and Flex 4 (Halo, Gumbo, Hero)
+  * [ReligionChooser Religion Chooser] with Flex 4 (Gumbo)
+
+== Why have I created these code examples? ==
+
   # When applying for new jobs as Flex developer I usually show my clients these code examples so that they can evaluate if my Flex skills are of need to them. 
   # I am trying to get feedback from the development community to improve the way I am suggesting coding Flex.
   # Because Flex is still a very young programming language I am trying to give Flex beginners the opportunity to compare existing frameworks and architectures so that they can speed up their development time, and thereby, using less bad coding practices. 
