@@ -6,7 +6,7 @@ Why have I created these code examples?
   # When applying for new jobs as Flex developer I usually show my clients these code examples so that they can evaluate if my Flex skills are of need to them. 
   # I am trying to get feedback from the development community to improve the way I am suggesting coding Flex.
   # Because Flex is still a very young programming language I am trying to give Flex beginners the opportunity to compare existing frameworks and architectures so that they can speed up their development time, and thereby, using less bad coding practices. 
-  # Usually I tend to say that "Flex development is expensive", and, in the following I will explain why this seems to be the case ...
+  # For the moment, I tend to say that "Flex development is expensive", and, in the following I will explain why this seems to be the case ...
 
 *Please note:* The following information only reflects my personal experience and does not necessarily reflect the view of the development community and Adobe.
 
@@ -14,7 +14,7 @@ Why have I created these code examples?
 
 Flex development is expensive because:
 
-==== 1. Flex is very young ====
+==== 1. Flex is "New" ====
 
 Flex is a very new technology. Flex 1 just came out in 2004 [http://en.wikipedia.org/wiki/Adobe_Flex see Wikipedia].
 
@@ -24,14 +24,18 @@ Adobe plans to update their Flashplayer and Flex framework on faster release cyc
 
 ==== 3. Evolution of Microarchitectures ====
 
-Since the release of the Cairngorm 3 specification Adobe [http://sourceforge.net/adobe/cairngorm/home/Home/ suggests] the use of third party open source Inversion-of-Control (IoC) Microarchitectures like ([http://www.spicefactory.org/parsley/ Parsley], [http://www.springactionscript.org/ Spring Actionscript], [http://www.swizframework.org/ Swiz], [http://www.robotlegs.org/ Robotlegs], [http://mate.asfusion.com/ Mate]). While this can be seen as a great opportunity to the open source community and opens up lots of creativity to these Microarchitectures, this also means for applications that use these Microarchitectures that they have to trust into the continuity of a certain Microarchitecture which they use. Furthermore, updating Microarchitectures to their latest version could be an issue for big long-term projects, too.
+Since the release of the Cairngorm 3 specification Adobe Consulting [http://sourceforge.net/adobe/cairngorm/home/Home/ suggests] the use of third party open source Inversion-of-Control (IoC) Microarchitectures like ([http://www.spicefactory.org/parsley/ Parsley], [http://www.springactionscript.org/ Spring Actionscript], [http://www.swizframework.org/ Swiz], [http://www.robotlegs.org/ Robotlegs], [http://mate.asfusion.com/ Mate]). While this can be seen as a great opportunity to the open source community and opens up lots of creativity to these Microarchitectures, this also means for applications that use these Microarchitectures that they have to trust into the continuity of a certain Microarchitecture which they use. Furthermore, updating Microarchitectures to their latest version could be an issue for big long-term projects, too.
 
-==== 4. Young Developer Community ====
+==== 4. Small Developer Community ====
 
+Because Flex is a fairly new technology, the development community is very small, and, in this community there are only a few very experienced Flex Evangelists out there from whom "normal experienced" Flex developers, like me, could learn from. If you are curious just compare the size of this community with the size of the Java community ... etc.
 
+==== 5. Missleading Coding Examples ====
 
-  * young developer community (compared to other communities like Java ... etc)
+Even though there are many Flex code examples out there - most of them cover the topic "Component Development in Flex" (like Spark- and MX-Components) - only few information can be found on professional "Application-Architecture Development in Flex" in combination with third party Microarchitectures. Because of the lack of these information many Flex projects tend to implement their required application-features with unconventional coding practices.
+
   * missing coding conventions
   * a lack of code generation tools and wizards to speedup development productivity
   * developer have different coding backgrounds (PHP, Java, ASP, HTML, Javascript ... etc)
   * only very few universities worldwide teach flex development
+
