@@ -28,7 +28,7 @@ Flex is a very new technology. Flex 1 just came out in 2004 [http://en.wikipedia
 
 ==== 2. Evolution of the Flashplayer and the Flex Framework ====
 
-Adobe plans to update their Flashplayer and Flex framework on faster release cycles (for times a year). While this also has pros, for developers this means your application constantly has to be updated and this could be an issue for big long-term projects.
+Adobe plans to update their Flashplayer and Flex framework on faster release cycles (four times a year). While this also has pros, for developers this means your application constantly has to be updated and this could be an issue for big long-term projects.
 
 ==== 3. Evolution of Microarchitectures ====
 
