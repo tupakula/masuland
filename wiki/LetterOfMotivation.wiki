@@ -1,6 +1,6 @@
 #summary This page explains the reason why I have created these code examples
 
-= Motivation Letter =
+= Letter of Motivation =
 
 Here I'd like to explain the reason why I have created these code examples:
 
