@@ -39,7 +39,7 @@ Since the release of the Cairngorm 3 specification Adobe Consulting [http://sour
 
 Because Flex is a fairly new technology, the development community is still very small, and, in this community there are only a few very well experienced Flex Evangelists out there from whom "normal experienced" Flex developers, like me, could learn from. If you are curious, just compare the size of this community with the size of the Java community ... etc.
 
-==== 5. Missleading Coding Examples ====
+==== 5. Missleading Code Examples ====
 
 Even though there are many Flex code examples out there - most of them cover the topic "Component Development in Flex" (like Spark- and MX-Components) - only few information can be found on professional and sustainable "Application-Architecture Development in Flex" in combination with third party Microarchitectures. Because of the lack of these information many Flex projects tend to implement their required application-features with unconventional coding practices.
 
