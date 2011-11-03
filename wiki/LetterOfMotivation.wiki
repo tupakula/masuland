@@ -49,7 +49,8 @@ Even though Adobe promotes the usage of [http://opensource.adobe.com/wiki/displa
 
 ==== 7. Only few code generation tools ====
 
-a lack of code generation tools and wizards to speedup development productivity with Microarchitectures
+A lack of code generation tools and wizards to speedup development productivity with Microarchitectures
+
   * Ant and Maven code generators
   * Flash Catalyst
   * Flash Builder
@@ -57,7 +58,7 @@ a lack of code generation tools and wizards to speedup development productivity 
 
 ==== 8. Differing Developer Coding Backgrounds ====
 
-developer have different coding backgrounds:
+Developers have different coding backgrounds:
 
   * Flash Developers with different coding skills based on the Flash Version (e.g. Flash 7, 8, 9, 10, 11)
   * PHP Developers
@@ -67,8 +68,8 @@ developer have different coding backgrounds:
   * Javascript Developers
   * ... etc.
 
-==== 9. Only few universities teaching Flex Development ====
+==== 9. Only few Universities teach Flex Development ====
 
-only very few universities worldwide teach flex development
+Only very few universities worldwide teach flex development
 
 ==== 10. Black-Box Coding  ====
