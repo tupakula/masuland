@@ -57,7 +57,15 @@ a lack of code generation tools and wizards to speedup development productivity 
 
 ==== 8. Differing Developer Coding Backgrounds ====
 
-developer have different coding backgrounds (PHP, Java, ASP, HTML, Javascript ... etc)
+developer have different coding backgrounds:
+
+  * Flash Developers with different coding backgrounds based on the Flash Version (e.g. Flash 7, 8, 9, 10, 11)
+  * PHP Developers
+  * Java Developers
+  * ASP Developers 
+  * HTML Developers
+  * Javascript Developers
+  * ... etc.
 
 ==== 9. Only few universities teaching Flex Development ====
 
