@@ -35,9 +35,9 @@ Adobe plans to update their Flashplayer and Flex framework on faster release cyc
 
 Since the release of the Cairngorm 3 specification Adobe Consulting [http://sourceforge.net/adobe/cairngorm/home/Home/ suggests] the use of third party open source Inversion-of-Control (IoC) Microarchitectures like ([http://www.spicefactory.org/parsley/ Parsley], [http://www.springactionscript.org/ Spring Actionscript], [http://www.swizframework.org/ Swiz], [http://www.robotlegs.org/ Robotlegs], [http://mate.asfusion.com/ Mate]). While this can be seen as a great opportunity to the open source community and opens up lots of creativity to these Microarchitectures, this also means for applications, that use these Microarchitectures, that they have to trust into the continuity of a certain Microarchitecture which they use. Furthermore, updating Microarchitectures to their latest version could be an issue for big long-term projects, too.
 
-==== 4. Small Developer Community ====
+==== 4. "Unexperienced" Developer Community ====
 
-Because Flex is a fairly new technology, the development community is still fairly "unexperienced", and, in this community there are only a few "very well experienced" Flex Evangelists out there from whom "normal experienced" Flex developers, like me, could learn from. If you are curious, just compare the size of this community with the size of the Java community ... etc.
+Because Flex is a fairly new technology, the development community is still fairly "unexperienced", and, in this community there are only a few "very well experienced" Flex Evangelists out there from whom "normal experienced" Flex developers, like me, could learn from. Communities like the Java community are much more settled down ... and the chance to find a helping hand in the Java community is much more probable.
 
 ==== 5. Missleading Code Examples ====
 
