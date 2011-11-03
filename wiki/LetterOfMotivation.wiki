@@ -56,7 +56,7 @@ A lack of code generation tools and wizards to speedup development productivity 
   * Flash Builder
   * Creative Suite Products
 
-Because of that the development of well featured real world applications using Microarchitectures potentially produces an development overhead when adding new features to this application.
+Because of that the development of well featured real world applications using Microarchitectures potentially produces an development overhead when adding new features to these applications.
 
 ==== 8. Differing Developer Coding Backgrounds ====
 
