@@ -1,0 +1,62 @@
+#summary This page explains the reason why I have created these code examples
+
+= Motivation Letter =
+
+Here I'd like to explain the reason why I have created these code examples:
+
+== Code Examples ==
+
+  * [LoginExample Login Example] with Flex 3 and Flex 4 (Halo, Gumbo, Hero)
+  * [ReligionChooser Religion Chooser] with Flex 4 (Gumbo)
+
+== Why have I created these code examples? ==
+
+  # When applying for new jobs as Flex developer I usually show my clients these code examples so that they can evaluate if my Flex skills are of need to them. 
+  # I am trying to get feedback from the development community to improve the way I am suggesting coding Flex.
+  # Because Flex is still a very young technology I am trying to give Flex beginners the opportunity to compare existing frameworks and architectures so that they can speed up their development time, and thereby, using less bad coding practices. 
+  # For the moment, I tend to say that "Flex development is expensive", and, in the following I will explain why this seems to be the case ...
+
+*Please note:* 
+The following information only reflects my personal experience and does not necessarily reflect the view of the development community and Adobe.
+
+== "Flex development is expensive" ==
+
+Flex development is expensive because:
+
+==== 1. Flex is "New" ====
+
+Flex is a very new technology. Flex 1 just came out in 2004 [http://en.wikipedia.org/wiki/Adobe_Flex see Wikipedia].
+
+==== 2. Evolution of the Flashplayer and the Flex Framework ====
+
+Adobe plans to update their Flashplayer and Flex framework on faster release cycles (four times a year). While this also has pros, for developers this means your application constantly has to be updated and this could be an issue for big long-term projects.
+
+==== 3. Evolution of Microarchitectures ====
+
+Since the release of the Cairngorm 3 specification Adobe Consulting [http://sourceforge.net/adobe/cairngorm/home/Home/ suggests] the use of third party open source Inversion-of-Control (IoC) Microarchitectures like ([http://www.spicefactory.org/parsley/ Parsley], [http://www.springactionscript.org/ Spring Actionscript], [http://www.swizframework.org/ Swiz], [http://www.robotlegs.org/ Robotlegs], [http://mate.asfusion.com/ Mate]). While this can be seen as a great opportunity to the open source community and opens up lots of creativity to these Microarchitectures, this also means for applications, that use these Microarchitectures, that they have to trust into the continuity of a certain Microarchitecture which they use. Furthermore, updating Microarchitectures to their latest version could be an issue for big long-term projects, too.
+
+==== 4. Small Developer Community ====
+
+Because Flex is a fairly new technology, the development community is still very small, and, in this community there are only a few very well experienced Flex Evangelists out there from whom "normal experienced" Flex developers, like me, could learn from. If you are curious, just compare the size of this community with the size of the Java community ... etc.
+
+==== 5. Missleading Coding Examples ====
+
+Even though there are many Flex code examples out there - most of them cover the topic "Component Development in Flex" (like Spark- and MX-Components) - only few information can be found on professional and sustainable "Application-Architecture Development in Flex" in combination with third party Microarchitectures. Because of the lack of these information many Flex projects tend to implement their required application-features with unconventional coding practices.
+
+==== 6. Missing Coding Conventions ====
+
+Even though Adobe promotes the usage of [http://opensource.adobe.com/wiki/display/flexsdk/Coding+Conventions Coding Conventions] the Flex community still seems to be unhappy, and therefore, very creative regarding their own conventions. 
+
+==== 7. Only few code generation tools ====
+
+a lack of code generation tools and wizards to speedup development productivity
+
+==== 8. Differing Developer Coding Backgrounds ====
+
+developer have different coding backgrounds (PHP, Java, ASP, HTML, Javascript ... etc)
+
+==== 9. Only few universities teaching Flex Development ====
+
+only very few universities worldwide teach flex development
+
+==== 10. Black-Box Coding  ====
