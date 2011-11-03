@@ -51,10 +51,10 @@ Even though Adobe promotes the usage of [http://opensource.adobe.com/wiki/displa
 
 A lack of code generation tools and wizards to speedup development productivity with Microarchitectures
 
-  * Ant and Maven code generators
-  * Flash Catalyst
-  * Flash Builder
-  * Creative Suite Products
+  * Ant and Maven code generators for services and value objects (VO) ... etc.
+  * Flash Catalyst (Generating skins for SkinnableComponent classes)
+  * Flash Builder (Generating services & code templates)
+  * Creative Suite Products (Generating skins)
 
 Because of that the development of well featured real world applications using Microarchitectures potentially produces an development overhead when adding new features to these applications.
 
