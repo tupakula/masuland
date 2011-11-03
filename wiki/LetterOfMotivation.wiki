@@ -37,7 +37,7 @@ Since the release of the Cairngorm 3 specification Adobe Consulting [http://sour
 
 ==== 4. "Unexperienced" Developer Community ====
 
-Because Flex is a fairly new technology, the development community is still fairly "unexperienced", and, in this community there are only a few "very well experienced" Flex Evangelists out there from whom "normal experienced" Flex developers, like me, could learn from. Communities like the Java community are much more settled down ... and the chance to find a helping hand in the Java community is much more probable.
+Because Flex is a fairly new technology, the development community is still fairly "unexperienced", and, in this community there are only a few "very well experienced" Flex Evangelists out there from whom "normal experienced" Flex developers, like me, could learn from. Communities like the Java community is much more settled down ... and the chance to find a helping hand in the Java community is much more probable.
 
 ==== 5. Missleading Code Examples ====
 
