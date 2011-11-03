@@ -50,6 +50,9 @@ Even though Adobe promotes the usage of [http://opensource.adobe.com/wiki/displa
 ==== 7. Only few code generation tools ====
 
 a lack of code generation tools and wizards to speedup development productivity
+  * Flash Catalyst
+  * Flash Builder
+  * Creative Suite Products
 
 ==== 8. Differing Developer Coding Backgrounds ====
 
