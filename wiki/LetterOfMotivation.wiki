@@ -59,7 +59,7 @@ a lack of code generation tools and wizards to speedup development productivity 
 
 developer have different coding backgrounds:
 
-  * Flash Developers with different coding backgrounds based on the Flash Version (e.g. Flash 7, 8, 9, 10, 11)
+  * Flash Developers with different coding skills based on the Flash Version (e.g. Flash 7, 8, 9, 10, 11)
   * PHP Developers
   * Java Developers
   * ASP Developers 
