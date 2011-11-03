@@ -50,7 +50,7 @@ Even though Adobe promotes the usage of [http://opensource.adobe.com/wiki/displa
 ==== 7. Only few code generation tools ====
 
 a lack of code generation tools and wizards to speedup development productivity
-  * Ant and Maven Code Generation
+  * Ant and Maven code generators
   * Flash Catalyst
   * Flash Builder
   * Creative Suite Products
