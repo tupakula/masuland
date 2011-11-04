@@ -105,7 +105,7 @@ Only very few universities worldwide teach flex development
   * Highly productive and fast development environment
   * Flex code should be easily mergeable across different flex projects worldwide
   * Flex code should be based on coding standards
-  * Flex code should be sustainable
+  * Flex code should be sustainable and easily maintainable
 
 ...
 
