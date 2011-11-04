@@ -100,7 +100,7 @@ Only very few universities worldwide teach flex development
 
 ...
 
-== What should be the Goals of Flex coding? ==
+== What should be the goals of Flex coding? ==
 
   * Highly productive and fast development environment
   * Flex code should be easily mergeable across different flex projects worldwide
@@ -120,6 +120,6 @@ Only very few universities worldwide teach flex development
 ...
 
 
-== Where should be Flex coding in the year 2050? ==
+== Where should Flex coding be in the year 2050? ==
 
 ...
