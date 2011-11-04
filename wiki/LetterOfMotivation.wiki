@@ -27,9 +27,9 @@ Flex development is expensive because:
 
 Flex is a very new technology. Flex 1 just came out in 2004 ... more information [http://en.wikipedia.org/wiki/Adobe_Flex here].
 
-==== 2. Flex 4.x is "Beta" ====
+==== 2. Flex 4.x is an "Hybrid" ====
 
-This is maybe a harsh way of saying that, but, Flex 4.x seems to be "Beta" software because Flex 4.x still relies on the old MX-namespace for two main reasons:
+Flex 4.x is "Hybrid" technology because Flex 4.x still relies on the old MX-namespace for two main reasons:
 
   # Downward-compatibility with Flex 3 UIComponents
   # Some MX-components have not been transfered to the Spark-component set yet (e.g. MX-!DateChooser, MX-!ColorPicker, MX-!TabNavigator ... etc.)
