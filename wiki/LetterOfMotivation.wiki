@@ -4,12 +4,12 @@
 
 Here I'd like to explain the reason why I have created these code examples:
 
-== Code Examples ==
+==== Code Examples ====
 
   * [LoginExample Login Example] with Flex 3 and Flex 4 (Halo, Gumbo, Hero)
   * [ReligionChooser Religion Chooser] with Flex 4 (Gumbo)
 
-== Why have I created these code examples? ==
+==== Why have I created these code examples? ====
 
   # When applying for new jobs as Flex developer I usually show my clients these code examples so that they can evaluate if my Flex skills are of need to them. 
   # I am trying to get feedback from the development community to improve the way I am suggesting coding Flex.
@@ -19,9 +19,11 @@ Here I'd like to explain the reason why I have created these code examples:
 *Please note:* 
 The following information only reflects my personal experience and does not necessarily reflect the view of the development community and Adobe.
 
-== "Flex development is expensive" ==
+= "Flex development is expensive" =
 
-Flex development is expensive because:
+== How is Flex coding for the moment? ==
+
+...
 
 ==== 1. Flex is "New" ====
 
@@ -93,10 +95,6 @@ Developers have different coding backgrounds:
 Only very few universities worldwide teach flex development
 
 ==== 12. Black-Box Coding  ====
-
-== How is Flex coding for the moment? ==
-
-...
 
 == How would you evaluate the current state of Flex coding? ==
 
