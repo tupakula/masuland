@@ -31,9 +31,9 @@ Flex is a very new technology. Flex 1 just came out in 2004 ... more information
 
 Adobe plans to update their Flashplayer and Flex framework on faster release cycles (four times a year). While this also has pros, for developers this means your application constantly has to be updated and this could be an issue for big long-term projects.
 
-==== 3. Flex 4.x is an "Hybrid" ====
+==== 3. Flex 4.x is a "Hybrid" ====
 
-Flex 4.x is "Hybrid" technology because Flex 4.x still relies on the old MX-namespace for two main reasons:
+Flex 4.x is a "Hybrid" SDK because Flex 4.x still relies on the old MX-namespace for two main reasons:
 
   # Downward-compatibility with Flex 3 UIComponents
   # Some MX-components have not been transfered to the Spark-component set yet (e.g. MX-!DateChooser, MX-!ColorPicker, MX-!TabNavigator ... etc.)
