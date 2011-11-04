@@ -94,15 +94,15 @@ Only very few universities worldwide teach flex development
 
 ==== 12. Black-Box Coding  ====
 
-== How is Flex development for the moment? ==
+== How is Flex coding for the moment? ==
 
 ...
 
-== How would you evaluate the current state of Flex development? ==
+== How would you evaluate the current state of Flex coding? ==
 
 ...
 
-== What should be the Goals of Flex Development? ==
+== What should be the Goals of Flex coding? ==
 
   * Highly productive and fast development environment
   * Flex code should be easily mergeable across different flex projects worldwide
@@ -122,6 +122,6 @@ Only very few universities worldwide teach flex development
 ...
 
 
-== Where should be Flex development in the year 2050? ==
+== Where should be Flex coding in the year 2050? ==
 
 ...
