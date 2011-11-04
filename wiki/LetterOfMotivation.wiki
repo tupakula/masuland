@@ -27,7 +27,11 @@ Flex development is expensive because:
 
 Flex is a very new technology. Flex 1 just came out in 2004 ... more information [http://en.wikipedia.org/wiki/Adobe_Flex here].
 
-==== 2. Flex 4.x is an "Hybrid" ====
+==== 2. Evolution of the Flashplayer and the Flex Framework ====
+
+Adobe plans to update their Flashplayer and Flex framework on faster release cycles (four times a year). While this also has pros, for developers this means your application constantly has to be updated and this could be an issue for big long-term projects.
+
+==== 3. Flex 4.x is an "Hybrid" ====
 
 Flex 4.x is "Hybrid" technology because Flex 4.x still relies on the old MX-namespace for two main reasons:
 
@@ -36,7 +40,7 @@ Flex 4.x is "Hybrid" technology because Flex 4.x still relies on the old MX-name
 
 Flex 5 promises to tie off this dependency to the MX-namespace, and therefore can be seen again as a pure Flex SDK (just like Flex 3).
 
-==== 3. Restrictive Designer/Developer Workflow ====
+==== 4. Restrictive Designer/Developer Workflow ====
 
 The designer/developer workflow introduced with Flash Catalyst CS5.5 and Flash Builder 4.5 is fairly restrictive, and therefore, not very productive. For more information about this topic please read these two articles:
 
@@ -44,10 +48,6 @@ http://learn.adobe.com/wiki/display/fcc/Flash+Catalyst+CS5.5+compatibility+schem
 http://www.adobe.com/devnet/flashcatalyst/articles/flashcatalyst-compatibility-checker.html
 
 I hope this issue will be improved when Flex 5, Flash Builder 5 and Flash Catalyst CS6 has been released.
-
-==== 4. Evolution of the Flashplayer and the Flex Framework ====
-
-Adobe plans to update their Flashplayer and Flex framework on faster release cycles (four times a year). While this also has pros, for developers this means your application constantly has to be updated and this could be an issue for big long-term projects.
 
 ==== 5. Evolution of Microarchitectures ====
 
