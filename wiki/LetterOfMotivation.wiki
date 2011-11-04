@@ -31,7 +31,11 @@ Flex is a very new technology. Flex 1 just came out in 2004 ... more information
 
 Adobe plans to update their Flashplayer and Flex framework on faster release cycles (four times a year). While this also has pros, for developers this means your application constantly has to be updated and this could be an issue for big long-term projects.
 
-==== 3. Flex 4.x is a "Hybrid" ====
+==== 3. Evolution of Microarchitectures ====
+
+Since the release of the Cairngorm 3 specification Adobe Consulting [http://sourceforge.net/adobe/cairngorm/home/Home/ suggests] the use of third party open source Inversion-of-Control (IoC) Microarchitectures like ([http://www.spicefactory.org/parsley/ Parsley], [http://www.springactionscript.org/ Spring Actionscript], [http://www.swizframework.org/ Swiz], [http://www.robotlegs.org/ Robotlegs], [http://mate.asfusion.com/ Mate]). While this can be seen as a great opportunity to the open source community and opens up lots of creativity to these Microarchitectures, this also means for applications, that use these Microarchitectures, that they have to trust into the continuity of a certain Microarchitecture which they use. Furthermore, updating Microarchitectures to their latest version could also be an issue for big long-term projects.
+
+==== 4. Flex 4.x is a "Hybrid" ====
 
 Flex 4.x is a "Hybrid" SDK because Flex 4.x still relies on the old MX-namespace for two main reasons:
 
@@ -40,7 +44,7 @@ Flex 4.x is a "Hybrid" SDK because Flex 4.x still relies on the old MX-namespace
 
 Flex 5 promises to tie off this dependency to the MX-namespace, and therefore can be seen again as a pure Flex SDK (just like Flex 3).
 
-==== 4. Restrictive Designer/Developer Workflow ====
+==== 5. Restrictive Designer/Developer Workflow ====
 
 The designer/developer workflow introduced with Flash Catalyst CS5.5 and Flash Builder 4.5 is fairly restrictive, and therefore, not very productive. For more information about this topic please read these two articles:
 
@@ -48,10 +52,6 @@ http://learn.adobe.com/wiki/display/fcc/Flash+Catalyst+CS5.5+compatibility+schem
 http://www.adobe.com/devnet/flashcatalyst/articles/flashcatalyst-compatibility-checker.html
 
 I hope this issue will be improved when Flex 5, Flash Builder 5 and Flash Catalyst CS6 has been released.
-
-==== 5. Evolution of Microarchitectures ====
-
-Since the release of the Cairngorm 3 specification Adobe Consulting [http://sourceforge.net/adobe/cairngorm/home/Home/ suggests] the use of third party open source Inversion-of-Control (IoC) Microarchitectures like ([http://www.spicefactory.org/parsley/ Parsley], [http://www.springactionscript.org/ Spring Actionscript], [http://www.swizframework.org/ Swiz], [http://www.robotlegs.org/ Robotlegs], [http://mate.asfusion.com/ Mate]). While this can be seen as a great opportunity to the open source community and opens up lots of creativity to these Microarchitectures, this also means for applications, that use these Microarchitectures, that they have to trust into the continuity of a certain Microarchitecture which they use. Furthermore, updating Microarchitectures to their latest version could also be an issue for big long-term projects.
 
 ==== 6. "Fairly Unexperienced" Developer Community ====
 
@@ -93,3 +93,13 @@ Developers have different coding backgrounds:
 Only very few universities worldwide teach flex development
 
 ==== 12. Black-Box Coding  ====
+
+== How to make Flex development cheaper? ==
+
+Possible solutions:
+
+  * Funding for the developer teams which create Microarchitecture frameworks to speed up their development cycles
+  * Open up a Flex Coding Standard Foundation (together with Flex community and Adobe) ... maybe the Spoon Project will help: http://www.spoon.as
+  * Less release cycles starting with Flex 6 and Flashplayer 12
+  * Integration of a MVC framework to Flex 6 in collaboration with existing Microarchitecture developers
+  * MVC code generators In Flash Builder 6 on the basis of the Flex 6 MVC framework
