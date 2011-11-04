@@ -94,12 +94,29 @@ Only very few universities worldwide teach flex development
 
 ==== 12. Black-Box Coding  ====
 
-== How to make Flex development cheaper? ==
+== How is Flex development for the moment? ==
 
-Possible solutions:
+...
 
+== How would you evaluate the current state of Flex development? ==
+
+...
+
+== What should be the Goals of Flex Development? ==
+
+  * Highly productive and fast development environment
+  * Flex code should be easily mergeable across different flex projects worldwide
+  * Flex code should be based on coding standards
+  * Flex code should be sustainable
+
+...
+
+== How to achieve these goals? ==
+
+  * Less release cycles starting with Flex 6 and Flashplayer 12
   * Funding for the developer teams which create Microarchitecture frameworks to speed up their development cycles
   * Open up a Flex Coding Standard Foundation (together with Flex community and Adobe) ... maybe the Spoon Project will help: http://www.spoon.as
-  * Less release cycles starting with Flex 6 and Flashplayer 12
   * Integration of a MVC framework to Flex 6 in collaboration with existing Microarchitecture developers
   * MVC code generators In Flash Builder 6 on the basis of the Flex 6 MVC framework
+
+...
