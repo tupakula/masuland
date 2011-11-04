@@ -34,7 +34,7 @@ Flex 4.x is "Hybrid" technology because Flex 4.x still relies on the old MX-name
   # Downward-compatibility with Flex 3 UIComponents
   # Some MX-components have not been transfered to the Spark-component set yet (e.g. MX-!DateChooser, MX-!ColorPicker, MX-!TabNavigator ... etc.)
 
-Flex 5 promises to tie off this dependency to the MX-namespace, and therefore can again be seen feature complete.
+Flex 5 promises to tie off this dependency to the MX-namespace, and therefore can be seen again as a pure Flex SDK (just like Flex 3).
 
 ==== 3. Restrictive Designer/Developer Workflow ====
 
