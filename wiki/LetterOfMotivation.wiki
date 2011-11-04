@@ -38,10 +38,12 @@ Flex 5 promises to tie off this dependency to the MX-namespace, and therefore ca
 
 ==== 3. Restrictive Designer/Developer Workflow ====
 
-The designer/developer workflow introduced with Flash Catalyst CS5.5 and Flash Builder 4.5, for the moment, is fairly restrictive. For more information about this topic please read these two articles:
+The designer/developer workflow introduced with Flash Catalyst CS5.5 and Flash Builder 4.5 is fairly restrictive, and therefore, not very productive. For more information about this topic please read these two articles:
 
 http://learn.adobe.com/wiki/display/fcc/Flash+Catalyst+CS5.5+compatibility+schema
 http://www.adobe.com/devnet/flashcatalyst/articles/flashcatalyst-compatibility-checker.html
+
+I hope this issue will be improved when Flex 5, Flash Builder 5 and Flash Catalyst CS6 has been released.
 
 ==== 4. Evolution of the Flashplayer and the Flex Framework ====
 
