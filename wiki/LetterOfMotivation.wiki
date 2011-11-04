@@ -29,32 +29,41 @@ Flex is a very new technology. Flex 1 just came out in 2004 ... more information
 
 ==== 2. Flex 4.x is "Beta" ====
 
-This is maybe a harsh way of saying that, but, Flex 4.x seems to be "Beta" software - even though very usable for development - because Flex 4.x still relies on the old MX-namespace for two main reasons:
+This is maybe a harsh way of saying that, but, Flex 4.x seems to be "Beta" software because Flex 4.x still relies on the old MX-namespace for two main reasons:
+
   # Downward-compatibility with Flex 3 UIComponents
-  # Some MX-components have not been transfered to the Spark-component set yet (e.g. MX-!DateChooser, MX-!ColorPicker, MX-TabNavigator ... etc.)
+  # Some MX-components have not been transfered to the Spark-component set yet (e.g. MX-!DateChooser, MX-!ColorPicker, MX-!TabNavigator ... etc.)
+
 Flex 5 promises to tie off this dependency to the MX-namespace, and therefore can again be seen feature complete.
 
-==== 3. Evolution of the Flashplayer and the Flex Framework ====
+==== 3. Restrictive Designer/Developer Workflow ====
+
+The designer/developer workflow introduced with Flash Catalyst CS5.5 and Flash Builder 4.5, for the moment, is fairly restrictive. For more information about this topic please read these two articles:
+
+http://learn.adobe.com/wiki/display/fcc/Flash+Catalyst+CS5.5+compatibility+schema
+http://www.adobe.com/devnet/flashcatalyst/articles/flashcatalyst-compatibility-checker.html
+
+==== 4. Evolution of the Flashplayer and the Flex Framework ====
 
 Adobe plans to update their Flashplayer and Flex framework on faster release cycles (four times a year). While this also has pros, for developers this means your application constantly has to be updated and this could be an issue for big long-term projects.
 
-==== 4. Evolution of Microarchitectures ====
+==== 5. Evolution of Microarchitectures ====
 
 Since the release of the Cairngorm 3 specification Adobe Consulting [http://sourceforge.net/adobe/cairngorm/home/Home/ suggests] the use of third party open source Inversion-of-Control (IoC) Microarchitectures like ([http://www.spicefactory.org/parsley/ Parsley], [http://www.springactionscript.org/ Spring Actionscript], [http://www.swizframework.org/ Swiz], [http://www.robotlegs.org/ Robotlegs], [http://mate.asfusion.com/ Mate]). While this can be seen as a great opportunity to the open source community and opens up lots of creativity to these Microarchitectures, this also means for applications, that use these Microarchitectures, that they have to trust into the continuity of a certain Microarchitecture which they use. Furthermore, updating Microarchitectures to their latest version could also be an issue for big long-term projects.
 
-==== 5. "Fairly Unexperienced" Developer Community ====
+==== 6. "Fairly Unexperienced" Developer Community ====
 
 Because Flex is a fairly new technology, the development community in average is still "fairly unexperienced", and, in this community there are only a few "very well experienced" Flex Evangelists out there from whom "normal experienced" Flex developers, like me, could learn from. Communities like the Java, ASP.NET or PHP community are much more settled down ... and the chance to find a helping hand in these communities is much more likely than in ours.
 
-==== 6. Missleading Code Examples ====
+==== 7. Missleading Code Examples ====
 
 Even though there are many Flex code examples out there - most of them cover the topic "Component Development in Flex" (like Spark- and MX-Components) - only few information can be found on professional and sustainable "Application-Architecture Development in Flex" in combination with third party Microarchitectures. Because of the lack of these information many Flex projects tend to implement their required application-features with unconventional coding practices.
 
-==== 7. Missing Coding Conventions ====
+==== 8. Missing Coding Conventions ====
 
 Even though Adobe promotes the usage of [http://opensource.adobe.com/wiki/display/flexsdk/Coding+Conventions Coding Conventions] the Flex community still seems to be unhappy, and therefore, very creative regarding their own conventions. 
 
-==== 8. Only few code generation tools ====
+==== 9. Only few code generation tools ====
 
 A lack of code generation tools and wizards to speedup development productivity with Microarchitectures
 
@@ -65,7 +74,7 @@ A lack of code generation tools and wizards to speedup development productivity 
 
 Because of that the development of well featured real world applications using Microarchitectures potentially produces an development overhead when adding new features to these applications.
 
-==== 9. Differing Developer Coding Backgrounds ====
+==== 10. Differing Developer Coding Backgrounds ====
 
 Developers have different coding backgrounds:
 
@@ -77,8 +86,8 @@ Developers have different coding backgrounds:
   * Javascript Developers
   * ... etc.
 
-==== 10. Only few Universities teach Flex Development ====
+==== 11. Only few Universities teach Flex Development ====
 
 Only very few universities worldwide teach flex development
 
-==== 11. Black-Box Coding  ====
+==== 12. Black-Box Coding  ====
