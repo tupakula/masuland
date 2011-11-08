@@ -9,7 +9,7 @@ Please read the [LoginExampleFeatureSpec Feature Specification] of the Login Exa
   * [LoginExample#Flex_4_(Hero) Flex 4 (Hero)]
  * [LoginExample#Server Server]
   * [LoginExample#AmfPHP AmfPHP]
-  * [LoginExample#Zend-AMF Zend AMF]
+  * [LoginExample#Zend_AMF Zend AMF]
 
 == Pictures == 
 
