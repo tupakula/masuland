@@ -2,10 +2,13 @@
 
 Please read the [LoginExampleFeatureSpec Feature Specification] of the Login Example application. Implementations with different Flex SDKs (Flex 3.5, Flex 4.1 and Flex 4.5), mobile platforms (Google Android, Apple iOS TODO and !BlackBerry Tablet OS TODO), MVC Microarchitectures ([http://sourceforge.net/adobe/cairngorm Cairngorm 2.2.2],  [http://trac.puremvc.org/PureMVC_AS3/ PureMVC] TODO), IoC Microarchitectures ([http://www.spicefactory.org/parsley/ Parsley 2.4.1], [http://www.springactionscript.org/ Spring AS 1.1], [http://www.swizframework.org/ Swiz 1.3.1], [http://www.robotlegs.org/ Robotlegs 1.5.2], [http://mate.asfusion.com/ Mate 0.9.1]), Eventarchitectures ([https://github.com/robertpenner/as3-signals/wiki AS3-Signals]), Nanoarchitectures ([NanoarchitectureMVCb MVCb],  Presentation Model, Code Behind, Presenter, MVP TODO, Ctl, Cmd, [NanoarchitectureNoEvt NoEvt], [NanoarchitecturePInj PInj] ... etc.), [http://sourceforge.net/adobe/cairngorm/wiki/CairngormLibraries/ Cairngorm 3 Libraries] ([http://sourceforge.net/adobe/cairngorm/wiki/CairngormLibraries/#Validation Validation Library], [http://sourceforge.net/adobe/cairngorm/wiki/CairngormLibraries/#Task Task Library], [http://sourceforge.net/adobe/cairngorm/wiki/CairngormLibraries/#Observer Observer Library]), Continuous Integration and Deployment Tools (Maven, [http://flexmojos.sonatype.org/ Flexmojos] TODO, Ant with !FlexTask) and Testing frameworks ([http://flexunit.org/ FlexUnit 4.0]), Flex Automation ([http://www.riatest.com/ RIATest], [http://www.gorillalogic.com/flexmonkey FlexMonkey] ... etc.) are listed below. The code follows additional Flex coding conventions ([Flex3CodingConventions Flex 3], [Flex4CodingConventions Flex 4]). 
 
+ * [LoginExample#Client Client]
   * [LoginExample#Flex_3 Flex 3]
   * [LoginExample#Flex_4_(Halo) Flex 4 (Halo)]
   * [LoginExample#Flex_4_(Gumbo) Flex 4 (Gumbo)]
   * [LoginExample#Flex_4_(Hero) Flex 4 (Hero)]
+ * [LoginExample#Server Server]
+   ...
 
 == Pictures == 
 
@@ -20,6 +23,8 @@ http://masuland.googlecode.com/files/LoginExampleScreenshotDesktop.png
 === Login Example for Mobile ===
 
 http://masuland.googlecode.com/files/LoginExampleScreenshotMobile.png
+
+= Client = 
 
 == Flex 3 == 
 
@@ -181,6 +186,10 @@ Features: Flex 4 (Hero) with [NanoarchitectureMVCb "Model - View - Component" (M
  * Flex 4 (Hero) Login Example for Mobile with Parsley 2.4.1 (MVCpshCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroParsleyMobileMVCpshCtl_PInj.air air app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroParsleyMobileMVCpshCtl_PInj.apk android app]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroParsleyMobileMVCpshCtl_PInj/trunk/ svn repo])
  * Flex 4 (Hero) Login Example for Mobile with Spring AS 1.1 (MVCpshCtl, PInj), (air app TODO) (android app TODO) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroSpringMobileMVCpshCtl_PInj/trunk/ svn repo])
  * Flex 4 (Hero) Login Example for Mobile with Swiz 1.3.1 (MVCpshCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroSwizMobileMVCpshCtl_PInj.air air app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroSwizMobileMVCpshCtl_PInj.apk android app])  ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroSwizMobileMVCpshCtl_PInj/trunk/ svn repo])
+
+...
+
+= Server = 
 
 ...
 
