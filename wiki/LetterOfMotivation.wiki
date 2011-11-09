@@ -6,18 +6,19 @@ Here I'd like to explain the reason why I have created these code examples:
 
 ==== Code Examples ====
 
-  * [LoginExample Login Example] with Flex 3 and Flex 4 (Halo, Gumbo, Hero)
-  * [ReligionChooser Religion Chooser] with Flex 4 (Gumbo)
+ * [LoginExample Login Example] with Flex 3 and Flex 4 (Halo, Gumbo, Hero)
+ * [ReligionChooser Religion Chooser] with Flex 4 (Gumbo)
 
 ==== Why have I created these code examples? ====
 
-  # When applying for new jobs as Flex developer I usually show my clients these code examples so that they can evaluate if my Flex skills are of need to them. 
-  # I am trying to get feedback from the development community to improve the way I am suggesting coding Flex.
-  # Because Flex is still a very young technology I am trying to give Flex beginners the opportunity to compare existing frameworks and architectures so that they can speed up their development time, and thereby, using less bad coding practices. 
-  # For the moment, I tend to say that "Flex development is expensive", and, in the following I will explain why this seems to be the case ...
+ # I love Flex :)
+ # When applying for new jobs as Flex developer I usually show my clients these code examples so that they can evaluate if my Flex skills are of need to them. 
+ # I am trying to get feedback from the Flex community to improve the way I am suggesting coding Flex.
+ # Because Flex is still a very young technology I am trying to give Flex beginners the opportunity to compare existing frameworks and architectures so that they can speed up their development time, and thereby, using less bad coding practices. 
+ # For the moment, I tend to say that "Flex development is expensive", and, in the following I will explain why this seems to be the case ...
 
 *Please note:* 
-The following information only reflects my personal experience and does not necessarily reflect the view of the development community and Adobe.
+The following information only reflects my personal experience and does not necessarily reflect the view of the Flex community and Adobe.
 
 = "Flex development is expensive" =
 
@@ -57,7 +58,7 @@ I hope this issue will be improved when Flex 5, Flash Builder 5 and Flash Cataly
 
 ==== 6. "Fairly Unexperienced" Developer Community ====
 
-Because Flex is a fairly new technology, the development community in average is still "fairly unexperienced", and, in this community there are only a few "very well experienced" Flex Evangelists out there from whom "normal experienced" Flex developers, like me, could learn from. Communities like the Java, ASP.NET or PHP community are much more settled down ... and the chance to find a helping hand in these communities is much more likely than in ours.
+Because Flex is a fairly new technology, the Flex community in average is still "fairly unexperienced", and, in this community there are only a few "very well experienced" Flex Evangelists out there from whom "normal experienced" Flex developers, like me, could learn from. Communities like the Java, ASP.NET or PHP community are much more settled down ... and the chance to find a helping hand in these communities is much more likely than in ours.
 
 ==== 7. Missleading Code Examples ====
 
@@ -71,10 +72,10 @@ Even though Adobe promotes the usage of [http://opensource.adobe.com/wiki/displa
 
 A lack of code generation tools and wizards to speedup development productivity with Microarchitectures
 
-  * Ant and Maven code generators for services and value objects (VO) ... etc.
-  * Flash Catalyst (Generating skins for !SkinnableComponent classes)
-  * Flash Builder (Generating services & code templates)
-  * Creative Suite Products (Generating skins)
+ * Ant and Maven code generators for services and value objects (VO) ... etc.
+ * Flash Catalyst (Generating skins for !SkinnableComponent classes)
+ * Flash Builder (Generating services & code templates)
+ * Creative Suite Products (Generating skins)
 
 Because of that the development of well featured real world applications using Microarchitectures potentially produces an development overhead when adding new features to these applications.
 
@@ -83,12 +84,12 @@ Because of that the development of well featured real world applications using M
 Developers have different coding backgrounds:
 
   * Flash Developers with different coding skills based on the Flashplayer version (e.g. Flashplayer 7, 8, 9, 10, 11)
-  * PHP Developers
-  * Java Developers
-  * ASP Developers 
-  * HTML Developers
-  * Javascript Developers
-  * ... etc.
+ * PHP Developers
+ * Java Developers
+ * ASP Developers 
+ * HTML Developers
+ * Javascript Developers
+ * ... etc.
 
 ==== 11. Only few Universities teach Flex Development ====
 
@@ -102,20 +103,20 @@ Only very few universities worldwide teach flex development
 
 == What should be the goals of Flex coding? ==
 
-  * Highly productive and fast development environment
-  * Flex code should be easily mergeable across different flex projects worldwide
-  * Flex code should be based on coding standards
-  * Flex code should be sustainable and easily maintainable
+ * Highly productive and fast development environment
+ * Flex code should be easily mergeable across different flex projects worldwide
+ * Flex code should be based on coding standards
+ * Flex code should be sustainable and easily maintainable
 
 ...
 
 == How to achieve these goals? ==
 
-  * Less release cycles starting with Flex 6 and Flashplayer 12
-  * Funding for the developer teams which create Microarchitecture frameworks to speed up their development cycles
-  * Open up a Flex Coding Standard Foundation (together with Flex community and Adobe) ... maybe the Spoon Project will help: http://www.spoon.as
-  * Integration of a MVC framework to Flex 6 in collaboration with existing Microarchitecture developers
-  * MVC code generators In Flash Builder 6 on the basis of the Flex 6 MVC framework
+ * Less release cycles starting with Flex 6 and Flashplayer 12
+ * Funding for the developer teams which create Microarchitecture frameworks to speed up their development cycles
+ * Open up a Flex Coding Standard Foundation (together with Flex community and Adobe) ... maybe the Spoon Project will help: http://www.spoon.as
+ * Integration of a MVC framework to Flex 6 in collaboration with existing Microarchitecture developers
+ * MVC code generators In Flash Builder 6 on the basis of the Flex 6 MVC framework
 
 ...
 
