@@ -98,9 +98,9 @@ Only very few universities worldwide teach flex development
 
 ==== 12. Black-Box Coding  ====
 
-== How would you evaluate the current state of Flex coding? ==
-
 ==== 13. Content Management Systems  ====
+
+== How would you evaluate the current state of Flex coding? ==
 
 ...
 
