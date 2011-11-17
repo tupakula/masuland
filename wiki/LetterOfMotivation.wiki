@@ -48,7 +48,7 @@ Flex 4.x is a "Hybrid" SDK because Flex 4.x still relies on the old MX-namespace
 
 Flex 5 promises to tie off this dependency to the MX-namespace, and therefore can be seen again as a pure Flex SDK (just like Flex 3 is).
 
-=== 1.5. Restrictive Designer/Developer Workflow ===
+=== 1.5. Designer/Developer Workflow ===
 
 The designer/developer workflow introduced with Flash Catalyst CS5.5 and Flash Builder 4.5 is fairly restrictive, and therefore, not very productive. For more information about this topic please read these two articles:
 
@@ -61,15 +61,15 @@ I hope this issue will be improved when Flex 5, Flash Builder 5 and Flash Cataly
 
 Because Flex is a fairly new technology, the Flex community in average is still "fairly unexperienced", and, in this community there are only a few "very well experienced" Flex Evangelists out there from whom "normal experienced" Flex developers, like me, could learn from. Communities like the Java, ASP.NET or PHP community are much more settled down ... and the chance to find a helping hand in these communities is much more likely than in ours.
 
-=== 1.7. Missleading Code Examples ===
+=== 1.7. Flex Code Examples ===
 
 Even though there are many Flex code examples out there - most of them cover the topic "Component Development in Flex" (like Spark- and MX-Components) - only few information can be found on professional and sustainable "Application-Architecture Development in Flex" in combination with third party Microarchitectures. Because of the lack of these information many Flex projects tend to implement their required application-features with unconventional coding practices.
 
-=== 1.8. Missing Coding Conventions ===
+=== 1.8. Coding Conventions ===
 
 Even though Adobe promotes the usage of [http://opensource.adobe.com/wiki/display/flexsdk/Coding+Conventions Coding Conventions] the Flex community still seems to be unhappy, and therefore, very creative regarding their own conventions. 
 
-=== 1.9. Only few code generation tools ===
+=== 1.9. Code generation tools ===
 
 A lack of code generation tools and wizards to speedup development productivity with Microarchitectures
 
@@ -94,25 +94,31 @@ Developers have different coding backgrounds:
 
 ... Combining this with the circumstance that Flex is open to all kinds of coding techniques (OOP-Coding, Functional-Coding, "All-Into-A-Single-File"-Coding ... etc.) the emerging Flex-Code could easily result into [http://en.wikipedia.org/wiki/Spaghetti_code "Spaghetti code"] without any coding-conventions at all ... and therefore: this could lead to massive code-refactoring efforts years later. 
 
-=== 1.11. Few Universities teach Flex Development ===
+=== 1.11. Teaching Flex Development ===
 
 Only very few universities worldwide teach flex development. Furthermore, because the Flashplayer and Adobe AIR constantly evolves, teachers have to be update their knowledge constantly, which is not always the case.
 
-=== 1.12. Black-Box Coding with Flashplayer and Adobe AIR ===
-
 == 2. Evaluation: How would I evaluate the current state of Flex-Coding? ==
 
-=== 2.1. What's good? ===
+=== 2.1. Positive: Flex Developers are needed ===
 
-=== 2.1.1. Good: Flex Developers are needed ===
+The current situation is good for all Flex Developers. Working in such an uncertain and constantly changing market means: There is lots of work to do, and, there is always something that needs to be fixed ... for clarification watch [http://www.youtube.com/watch?v=Tt1W0F0yObg this scene] of the movie "The Fifth Element" in which Gary Oldman explains why "Graffiti" (and "a bad Flex coding practice" respectively) is "good for the world"!
 
-This is good for all Flex Developers. Working in such an uncertain and constantly changing market means: There is lots of work to do. 
+=== 2.2. Positive: Adobe is getting payed for their Investments ===
 
-=== 2.1.2. Good: Adobe is getting payed for their Investments ===
+The work from 
 
-"Gary Oldman explains why graffiti is good for the world!" ... watch [http://www.youtube.com/watch?v=Tt1W0F0yObg this video]
-
-=== 2.2. What's bad? ===
+=== 2.3. Negative: Release cycles of Flashplayer, Adobe AIR and Flex to fast ===
+=== 2.4. Negative: The use of Microarchitectures uncertain ===
+=== 2.5. Negative: Flex 4.x is still Beta Software ===
+=== 2.6. Negative: Restrictive Designer/Developer Workflow ===
+=== 2.7. Negative: "Fairly unexperienced" Developer Community ===
+=== 2.8. Negative: Missleading Code Examples ===
+=== 2.9. Negative: Missing Coding Conventions ===
+=== 2.10. Negative: Only few code generation tools ===
+=== 2.11. Negative: Varying Developer Coding Backgrounds ===
+=== 2.12. Negative: Few Universities teach Flex Development ===
+=== 2.13. Negative: Black-Box Coding with Flashplayer and Adobe AIR ===
 
 
 == 3. Goals: How should Flex-Coding be? ==
@@ -147,4 +153,3 @@ Flash- and Flex-Coding would still be relevant in 2050 unless the W3C does not c
 === 5.3. HTML/Javascript should go Binary ===
 
 Flash- and Flex-Coding would still be relevant in 2050 unless HTML/Javascript cannot be compiled into binary code so that search engines, crawlers and bots will be restricted to only communicate to the "Future HTML" document via a certain separated Semantic Webservices API ... for more information read [http://www.w3.org/standards/semanticweb/ Semantic Web] and [http://www.w3.org/standards/techs/rdf RDF], [http://www.w3.org/standards/techs/owl OWL] ... etc.
-
