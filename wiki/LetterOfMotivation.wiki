@@ -33,7 +33,7 @@ Flex is a very new technology. Flex 1 just came out in 2004 ... more information
 
 ==== 1.2. Evolution of the Flashplayer, Adobe AIR and the Flex Framework ====
 
-Adobe plans to update their Flashplayer, Adobe AIR and Flex framework on faster release cycles (four times a year). While this also has pros, for developers this means your application constantly has to be updated and this could be an issue for big long-term projects.
+Adobe plans to update their Flashplayer, Adobe AIR and Flex framework on faster release cycles (four times a year). 
 
 ==== 1.3. Evolution of Microarchitectures ====
 
@@ -99,6 +99,8 @@ The current situation is good for all Flex Developers. Working in such an uncert
 ... 
 
 ==== 2.3. Negative: Release cycles of Flashplayer, Adobe AIR and Flex to fast ====
+
+While this also has pros to update the Flashplayer, Adobe AIR and Flex framework on faster release cycles (four times a year), for developers this means your application constantly has to be updated and this could be an issue for big long-term projects.
 
 ==== 2.4. Negative: The use of Microarchitectures uncertain ====
 
