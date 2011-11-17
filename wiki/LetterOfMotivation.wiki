@@ -23,7 +23,7 @@ The following information only reflects my personal experience and does not nece
 
 = "Flex development is expensive" =
 
-== How is Flex coding for the moment? ==
+== 1. Analysis: How is Flex coding for the moment? ==
 
 ...
 
@@ -92,19 +92,19 @@ Developers have different coding backgrounds:
  * Javascript Developers
  * ... etc.
 
-==== 11. Only few Universities teach Flex Development ====
+==== 11. Few Universities teach Flex Development ====
 
-Only very few universities worldwide teach flex development
+Only very few universities worldwide teach flex development. Furthermore, because the Flashplayer and Adobe AIR constantly evolves, teachers have to be update their knowledge constantly, which is not always the case.
 
-==== 12. Black-Box Coding  ====
+==== 12. Black-Box Coding with Flashplayer and Adobe AIR ====
 
 ==== 13. Content Management Systems  ====
 
-== How would you evaluate the current state of Flex coding? ==
+== 2. Evaluation: How would you evaluate the current state of Flex coding? ==
 
 ...
 
-== What should be the goals of Flex coding? ==
+== 3. Goals: What should be the goals of Flex coding? ==
 
  * Highly productive and fast development environment
  * Flex code should be easily mergeable across different flex projects worldwide
@@ -113,7 +113,7 @@ Only very few universities worldwide teach flex development
 
 ...
 
-== How to achieve these goals? ==
+== 4. Alternatives: How to achieve these goals? ==
 
  * Less release cycles starting with Flex 6 and Flashplayer 12
  * Funding for the developer teams which create Microarchitecture frameworks to speed up their development cycles
@@ -123,7 +123,6 @@ Only very few universities worldwide teach flex development
 
 ...
 
-
-== Where should Flex coding be in the year 2050? ==
+== 5. Vision: Where should Flex coding be in the year 2050? ==
 
 ...
