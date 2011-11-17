@@ -166,7 +166,7 @@ A lack of code generation tools and wizards to speedup development productivity 
 
 === 5.1. The W3C should implement their Standards ===
 
-Flash- and Flex-Coding would still be relevant in 2050 unless the [http://www.w3.org World Wide Web Consortium (W3C)] and [http://www.w3.org/Consortium/Member/List their members] will decide that it is not just enough to define a standard for the web - and HTML in particular. Instead, they would also take care of its implementation into a freely available and open World Wide Web with a *_single_* web browser. Still having so many versions of web browsers out there simply means: the World Wide Web is still very young and we (including the W3C) don't know yet where it should lead us to.
+Flash- and Flex-Coding would still be relevant in 2050 unless the [http://www.w3.org World Wide Web Consortium (W3C)] and [http://www.w3.org/Consortium/Member/List their members] will decide that it is not just enough to define a standard for the web - and HTML in particular. Instead, they would also take care of its implementation into a freely available and open World Wide Web with a *_single_* web browser. Still having so many versions of web browsers out there simply means: the World Wide Web is still very new and we (including the W3C) probably don't know yet where it should lead us to.
 
 === 5.2. HTML/Javascript should go RIA ===
 
