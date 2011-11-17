@@ -31,9 +31,9 @@ The following information only reflects my personal experience and does not nece
 
 Flex is a very new technology. Flex 1 just came out in 2004 ... more information [http://en.wikipedia.org/wiki/Adobe_Flex here].
 
-==== 1.2. Evolution of the Flashplayer and the Flex Framework ====
+==== 1.2. Evolution of the Flashplayer, Adobe AIR and the Flex Framework ====
 
-Adobe plans to update their Flashplayer and Flex framework on faster release cycles (four times a year). While this also has pros, for developers this means your application constantly has to be updated and this could be an issue for big long-term projects.
+Adobe plans to update their Flashplayer, Adobe AIR and Flex framework on faster release cycles (four times a year). While this also has pros, for developers this means your application constantly has to be updated and this could be an issue for big long-term projects.
 
 ==== 1.3. Evolution of Microarchitectures ====
 
@@ -84,7 +84,7 @@ Because of that the development of well featured real world applications using M
 
 Developers have different coding backgrounds:
 
-  * Flash Developers with different coding skills based on the Flashplayer version (e.g. Flashplayer 7, 8, 9, 10, 11)
+ * Flash Developers with different coding skills based on the Flashplayer version (e.g. Flashplayer 7, 8, 9, 10, 11)
  * PHP Developers
  * Java Developers
  * ASP Developers 
@@ -92,7 +92,7 @@ Developers have different coding backgrounds:
  * Javascript Developers
  * ... etc.
 
-... Combining this with the circumstance that Flex is open to all kinds of coding techniques (OOP-Coding, Functional-Coding, "All-Into-A-Single-File"-Coding ... etc.) the emerging Flex-Code could easily result into code which has no conventions at all, and therefore, could lead to massive code-refactoring efforts years later. 
+... Combining this with the circumstance that Flex is open to all kinds of coding techniques (OOP-Coding, Functional-Coding, "All-Into-A-Single-File"-Coding ... etc.) the emerging Flex-Code could easily result into [http://en.wikipedia.org/wiki/Spaghetti_code "Spaghetti code"] without any coding-conventions at all ... and therefore: this could lead to massive code-refactoring efforts years later. 
 
 ==== 1.11. Few Universities teach Flex Development ====
 
@@ -102,11 +102,11 @@ Only very few universities worldwide teach flex development. Furthermore, becaus
 
 ==== 1.13. Content Management Systems  ====
 
-== 2. Evaluation: How would you evaluate the current state of Flex coding? ==
+== 2. Evaluation: How would I evaluate the current state of Flex coding? ==
 
 ...
 
-== 3. Goals: What should be the goals of Flex coding? ==
+== 3. Goals: How should Flex-Coding be? ==
 
  * Highly productive and fast development environment
  * Flex code should be easily mergeable across different flex projects worldwide
@@ -115,7 +115,7 @@ Only very few universities worldwide teach flex development. Furthermore, becaus
 
 ...
 
-== 4. Alternatives: How to achieve these goals? ==
+== 4. Alternatives: How to achieve better Flex-Coding? ==
 
  * Less release cycles starting with Flex 6 and Flashplayer 12
  * Funding for the developer teams which create Microarchitecture frameworks to speed up their development cycles
