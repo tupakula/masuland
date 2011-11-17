@@ -23,7 +23,7 @@ The following information only reflects my personal experience and does not nece
 
 = "Flex development is expensive" =
 
-== 1. Analysis: How isFlex-Coding? ==
+== 1. Analysis: How is Flex-Coding? ==
 
 ...
 
