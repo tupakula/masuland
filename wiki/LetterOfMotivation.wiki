@@ -23,7 +23,7 @@ The following information only reflects my personal experience and does not nece
 
 = "Flex development is expensive" =
 
-== 1. Analysis: How is Flex coding for the moment? ==
+== 1. Analysis: How is Flex-Coding for the moment? ==
 
 ...
 
@@ -57,7 +57,7 @@ http://www.adobe.com/devnet/flashcatalyst/articles/flashcatalyst-compatibility-c
 
 I hope this issue will be improved when Flex 5, Flash Builder 5 and Flash Catalyst CS6 has been released.
 
-=== 1.6. "Fairly Unexperienced" Developer Community ===
+=== 1.6. Young Developer Community ===
 
 Because Flex is a fairly new technology, the Flex community in average is still "fairly unexperienced", and, in this community there are only a few "very well experienced" Flex Evangelists out there from whom "normal experienced" Flex developers, like me, could learn from. Communities like the Java, ASP.NET or PHP community are much more settled down ... and the chance to find a helping hand in these communities is much more likely than in ours.
 
@@ -80,7 +80,7 @@ A lack of code generation tools and wizards to speedup development productivity 
 
 Because of that the development of well featured real world applications using Microarchitectures potentially produces an development overhead when adding new features to these applications.
 
-=== 1.10. Differing Developer Coding Backgrounds ===
+=== 1.10. Varying Developer Coding Backgrounds ===
 
 Developers have different coding backgrounds:
 
@@ -100,11 +100,20 @@ Only very few universities worldwide teach flex development. Furthermore, becaus
 
 === 1.12. Black-Box Coding with Flashplayer and Adobe AIR ===
 
-=== 1.13. Content Management Systems  ===
+== 2. Evaluation: How would I evaluate the current state of Flex-Coding? ==
 
-== 2. Evaluation: How would I evaluate the current state of Flex coding? ==
+=== 2.1. What's good? ===
 
-...
+=== 2.1.1. Good: Flex Developers are needed ===
+
+This is good for all Flex Developers. Working in such an uncertain and constantly changing market means: There is lots of work to do. 
+
+=== 2.1.2. Good: Adobe is getting payed for their Investments ===
+
+"Gary Oldman explains why graffiti is good for the world!" ... watch [http://www.youtube.com/watch?v=Tt1W0F0yObg this video]
+
+=== 2.2. What's bad? ===
+
 
 == 3. Goals: How should Flex-Coding be? ==
 
@@ -125,6 +134,16 @@ Only very few universities worldwide teach flex development. Furthermore, becaus
 
 ...
 
-== 5. Vision: Where should Flex coding be in the year 2050? ==
+== 5. Vision: Where could Flex-Coding be in the year 2050? ==
 
-...
+=== 5.1. The W3C should implement their Standards ===
+
+Flash- and Flex-Coding will stay relevant unless the [http://www.w3.org World Wide Web Consortium (W3C)] and [http://www.w3.org/Consortium/Member/List their members] will realise that it is not just enough to define a standard for the web - and HTML in particular. They should also take care of its implementation into a freely available and open World Wide Web with a *single* webbrowser. Still having so many versions of web browsers out there simply means: the World Wide Web is still so young and we (including the W3C) don't know yet where it should lead us to.
+
+=== 5.2. HTML/Javascript should go RIA ===
+
+Flash- and Flex-Coding will stay relevant
+
+=== 5.3. HTML/Javascript should go Binary ===
+
+Flash- and Flex-Coding will stay relevant unless cannot be compiled into binary code. Search Engines, crawlers and bots should not be able to freely march in the web. And it is very sad that
