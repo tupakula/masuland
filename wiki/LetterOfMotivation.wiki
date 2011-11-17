@@ -141,6 +141,8 @@ A lack of code generation tools and wizards to speedup development productivity 
  * Flex code should be easily mergeable across different flex projects worldwide
  * Flex code should be based on coding standards
  * Flex code should be sustainable and easily maintainable
+ * There should be more highly skilled Flex Developers around
+ * Developer tools should be easy to be used and should help the designer/developer to be more productive
 
 ...
 
