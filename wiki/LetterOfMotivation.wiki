@@ -206,6 +206,6 @@ Benefits:
 
 ...
 
-== Feedback ==
+= Feedback =
 
 Please feel free to post comments, suggestions because the document is still work in progress.
