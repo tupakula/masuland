@@ -164,22 +164,42 @@ A lack of code generation tools and wizards to speedup development productivity 
 
 == 5. Vision: Where could Flex-Coding be in the year 2050? ==
 
+
+
 === 5.1. The W3C should implement their Standards ===
 
-Flash- and Flex-Coding would still be relevant in 2050 unless the [http://www.w3.org World Wide Web Consortium (W3C)] and [http://www.w3.org/Consortium/Member/List their members] will decide that it is not just enough to define a standard for the web - and HTML in particular. Instead, they would also take care of its implementation into a freely available and open World Wide Web with a *_single_* web browser. Still having so many versions of web browsers out there simply means: the World Wide Web is still very new and we (including the W3C) probably don't know yet where it should lead us to.
+Flash- and Flex-Coding would still be relevant in 2050 unless the [http://www.w3.org World Wide Web Consortium (W3C)] and [http://www.w3.org/Consortium/Member/List their members] will decide that it is not just enough to define a standard for the web - and HTML in particular. Instead, they would also take care of its implementation into a freely available and open World Wide Web with a *_single_* web browser. Still having so many versions of web browsers out there could mean: the World Wide Web is still very new and we (including the W3C) probably don't know yet where it should lead us to.
+
+Benefits:
+ * HTML/Javascript documents look and behave the same EVERYWHERE!
+
+Risks:
+ * The risk grows that the development of a single web browser inside the W3C could be misused in favor to a certain involved company.
+ * Different web browser stay in competition in growing features, speed and their user community. Removing that could result into a weaker WWW.
 
 === 5.2. HTML/Javascript should go RIA ===
 
-Flash- and Flex-Coding would still be relevant in 2050 unless the W3C does not combine SVG, WebGL, HTML, CSS & Javascript ... etc. into a single Rich Internet Application (RIA) document specification. For the moment the W3C still considers HTML to be a text document with additional multimedia features, whereas, a Flash document can be considered as a pure multimedia document.
+Flash- and Flex-Coding would still be relevant in 2050 unless the W3C does not combine SVG, WebGL, HTML, CSS & Javascript ... etc. into a single Rich Internet Application (RIA) document specification. For the moment the W3C still considers HTML to be a "text document with additional multimedia features", whereas, a Flash document can be considered as a "pure multimedia document" (Audio, Video, 3D, Text ... etc).
 
-=== 5.3. HTML/Javascript should go Binary ===
+Benefits:
+ * A "pure multimedia document" similar to MXML/FXG (Flex) or XAML (Silverlight) would be way more expressive 
 
-Flash- and Flex-Coding would still be relevant in 2050 unless HTML/Javascript cannot be compiled into binary code so that search engines, crawlers and bots will be restricted to only communicate to the "Future HTML" document via a certain separated Semantic Webservices API ... for more information read [http://www.w3.org/standards/semanticweb/ Semantic Web] and [http://www.w3.org/standards/techs/rdf RDF], [http://www.w3.org/standards/techs/owl OWL] ... etc.
+=== 5.3. HTML/Javascript should be binary with Semantic Webservice API ===
+
+Flash- and Flex-Coding would still be relevant in 2050 unless HTML/Javascript cannot be compiled into binary code so that search engines, crawlers and web bots will be restricted to only communicate to the future "RIA-HTML" document via a certain separated Semantic Webservices API ... for more information read [http://www.w3.org/standards/semanticweb/ Semantic Web] and [http://www.w3.org/standards/techs/rdf RDF], [http://www.w3.org/standards/techs/owl OWL] ... etc.
+
+Benefits:
+ * Compiled HTML/Javascript could significantly be transfered much faster between client and server
+ * Users don't have to run through any human-prove task in the web anymore ... e.g. "Prove you are human while typing in the letters below: k2eMSlo rUs4Kin"
+ * Search engines, crawlers or any type of web bots only get the information which is intended to them
+
+Risks:
+ * Users don't see what is inside an HTML/Javascript anymore (unless there is View Sourcecode API included)
 
 === 5.4. Javascript should become a type-safe OOP-language ===
 
 Flash- and Flex-Coding would still be relevant in 2050 unless Javascript will become a type-safe OOP-language ... which means: introducing *_castable_* typed objects and more powerful OOP features into the language.
 
-Advantages:
+Benefits:
  * Faster Javascript code execution 
- * better Tooling-support for Javascript
+ * better tooling-support for Javascript
