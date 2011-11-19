@@ -270,14 +270,14 @@ Risks:
 
 === 5.2. HTML/Javascript will go RIA ===
 
-Flash- and Flex-Coding would still be relevant in 2050 unless the W3C does not combine SVG, WebGL, HTML, CSS & Javascript ... etc. into a single Rich Internet Application (RIA) document specification. For the moment the W3C still considers HTML to be a "text document with additional multimedia features", whereas, a Flash document can be considered as a "pure multimedia document" (Audio, Video, 3D, Text ... etc).
+Flash- and Flex-Coding would still be relevant in 2050 unless the W3C does not combine SVG, WebGL, HTML, CSS & Javascript ... etc. into a single Rich Internet Application (RIA) document specification - hereby called "RIA-HTML". For the moment the W3C still considers HTML to be a "text document with additional multimedia features", whereas, a Flash document can be considered as a "pure multimedia document" (Audio, Video, 3D, Text ... etc).
 
 Benefits:
  * A "pure multimedia document" similar to MXML/FXG (Flex) or XAML (Silverlight) would be way more expressive 
 
 === 5.3. HTML/Javascript will be binary a with Semantic Webservice API ===
 
-Flash- and Flex-Coding would still be relevant in 2050 unless HTML/Javascript cannot be compiled into binary code so that search engines, crawlers and web bots will be restricted to only communicate to the future "RIA-HTML" document via a certain separated Semantic Webservices API ... for more information read [http://www.w3.org/standards/semanticweb/ Semantic Web] and [http://www.w3.org/standards/techs/rdf RDF], [http://www.w3.org/standards/techs/owl OWL] ... etc.
+Flash- and Flex-Coding would still be relevant in 2050 unless HTML/Javascript cannot be compiled into binary code so that search engines, crawlers and web bots will be restricted to only communicate to the "RIA-HTML" document via a certain separated Semantic Webservices API ... for more information read [http://www.w3.org/standards/semanticweb/ Semantic Web] and [http://www.w3.org/standards/techs/rdf RDF], [http://www.w3.org/standards/techs/owl OWL] ... etc.
 
 Benefits:
  * Compiled HTML/Javascript could significantly be transfered much faster between client and server
