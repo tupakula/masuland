@@ -25,17 +25,73 @@ The following information only reflects my personal experience and does not nece
 
 <wiki:toc />
 
-== 1. Analysis: How is Flex-Coding? ==
+== 1. Analysis: Flex-Coding ==
 
-...
-
-=== 1.1. Flex is "New" ===
-
-Flex is a very new technology. Flex 1 just came out in 2004 ... more information [http://en.wikipedia.org/wiki/Adobe_Flex here].
-
-=== 1.2. Evolution of the Flashplayer, Adobe AIR and the Flex Framework ===
+=== 1.1. Evolution of the Flashplayer, Adobe AIR and the Flex Framework ===
 
 Adobe plans to update their Flashplayer, Adobe AIR and Flex framework on faster release cycles (four times a year). 
+
+=== 1.2. What is Flex? ===
+
+Flex is new technology. First version has been released in 2004 ... more information [http://en.wikipedia.org/wiki/Adobe_Flex here].
+
+Flex is:
+ * A set of components & services
+ * A component lifecycle
+
+http://masuland.googlecode.com/files/FlexLayer-ApplicationFlow.png
+
+{{{
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:mx="library://ns.adobe.com/flex/mx"
+	>
+	
+	<fx:Declarations>
+		<s:RemoteObject
+			id="helloWorldServive"
+			destination="HelloWorldServive"
+			>
+			<s:method name="getHello" result="getHello_resultHandler(event)">
+				<s:arguments>
+					<name>{ tip_name.text }</name>
+				</s:arguments>
+			</s:method>
+		</s:RemoteObject>
+	</fx:Declarations>
+	
+	<fx:Script>
+		<![CDATA[
+			import mx.rpc.events.ResultEvent;
+			
+			private function getHello_resultHandler(event:ResultEvent):void
+			{
+				txt_result.text = 'Hello ' + event.result as String;
+			}
+		]]>
+	</fx:Script>
+	
+	<s:VGroup
+		horizontalCenter="0" verticalCenter="0"
+		>
+		<s:TextInput
+			id="tip_name"
+			prompt="Type in your name"
+			/>
+		<mx:Button
+			label="Get Hello"
+			click="helloWorldServive.getHello()"
+			/>
+		<mx:Label
+			id="txt_result"
+			/>
+	</s:VGroup>
+		
+</s:Application>
+}}}
+
 
 === 1.3. Evolution of Microarchitectures ===
 
