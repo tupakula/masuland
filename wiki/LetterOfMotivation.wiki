@@ -27,6 +27,14 @@ The following information only reflects my personal experience and does not nece
 
 == 1. Analysis: Flex-Coding ==
 
+Comparing the platforms:
+
+|| || HTML5 || Flashplayer 11 || Silverlight 4 || Java-Applets ||
+|| Runtime Features || dependent on browser || GPU support || GPU support  ||  GPU support, Multithreading ||
+|| Markup Language || HTML5 || FXG, MXML || XAML || - ||
+|| Interaction Design Tools || Adobe Muse, Adobe Edge || Adobe Flash Catalyst,  Adobe Flash Pro || Microsoft Expression Blend || - ||
+|| Developer Tools || Eclipse, Adobe Dreamweaver || Adobe Flash Pro, Adobe Flash Builder || Visual Studio || Eclipse  ||
+
 === 1.1. Evolution of the Flashplayer, Adobe AIR and the Flex Framework ===
 
 Adobe plans to update their Flashplayer, Adobe AIR and Flex framework on faster release cycles (four times a year). 
