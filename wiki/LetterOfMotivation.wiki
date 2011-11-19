@@ -313,9 +313,9 @@ Benefits:
 spoon-project-means-to-you/
  * http://www.spoon.as/core-values/
 
-== Occupy W3C! ==
+== 6.3. Occupy W3C! ==
 
-... then there wouldn't be any need to occupy Flash:
+... because then there wouldn't be the need to occupy Flash:
 http://www.occupyflash.org/
 
 = Feedback =
