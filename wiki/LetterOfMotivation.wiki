@@ -41,7 +41,7 @@ Flex is:
 
 http://masuland.googlecode.com/files/FlexLayers-ApplicationFlow.png
 
-This is a Flex 4 "Hello World" example which is (only) implementing the View-layer and Service-Layer:
+This is a Flex 4 "Hello World" example which is (only) implementing the View-Layer and Service-Layer:
 
 {{{
 <?xml version="1.0" encoding="utf-8"?>
@@ -101,7 +101,7 @@ Microarchitectures have been created because of the lack of separation of concer
 
 http://masuland.googlecode.com/files/FlexWithMvcLayers-ApplicationFlow.png
 
-Implementations of Flex applications With MVC Layers can be found here:
+Implementations of Flex applications with the above mentioned MVC Layers can be found here:
  * [LoginExample Login Example] with Flex 3 and Flex 4 (Halo, Gumbo, Hero)
  * [ReligionChooser Religion Chooser] with Flex 4 (Gumbo)
 
