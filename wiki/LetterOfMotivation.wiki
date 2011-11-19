@@ -309,8 +309,7 @@ Benefits:
 == 6.2. Spoon Project ==
 
  * http://zaa.tv/2011/04/360flex-denver-2011–day-2-keynote-spoon/
- * http://tv.adobe.com/watch/max-2011-develop/open-source-flex-what-the-
-spoon-project-means-to-you/
+ * http://tv.adobe.com/watch/max-2011-develop/open-source-flex-what-the-spoon-project-means-to-you/
  * http://www.spoon.as/core-values/
 
 == 6.3. Occupy W3C! ==
