@@ -41,7 +41,7 @@ Flex is:
 
 http://masuland.googlecode.com/files/FlexLayers-ApplicationFlow.png
 
-This is a Flex 4 "Hello World" example which is (only) implementing the View-Layer and Service-Layer:
+This is a Flex 4 "Hello World" example which is (only) implementing the View-Layer and Service-Layer *into a single file*:
 
 {{{
 <?xml version="1.0" encoding="utf-8"?>
@@ -94,10 +94,10 @@ This is a Flex 4 "Hello World" example which is (only) implementing the View-Lay
 </s:Application>
 }}}
 
+Using this approach for constantly growing applications would potentially result in [http://en.wikipedia.org/wiki/Spaghetti_code "Spaghetti code"].
+
 
 === 1.3. Evolution of Microarchitectures ===
-
-Microarchitectures have been created because of the lack of separation of concerns inside the Flex SDK.
 
 MVC Microarchitectures:
  * [http://sourceforge.net/adobe/cairngorm Cairngorm 2.2.2]  
@@ -109,6 +109,8 @@ IoC Microarchitectures:
  * [http://www.swizframework.org/ Swiz 1.3.1]
  * [http://www.robotlegs.org/ Robotlegs 1.5.2]
  * [http://mate.asfusion.com/ Mate 0.9.1]
+
+Microarchitectures have been created because of the lack of separation of concerns inside the Flex SDK.
 
 http://masuland.googlecode.com/files/FlexWithMvcLayers-ApplicationFlow.png
 
