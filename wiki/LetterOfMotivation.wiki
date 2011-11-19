@@ -321,7 +321,7 @@ Benefits:
  * http://tv.adobe.com/watch/max-2011-develop/open-source-flex-what-the-spoon-project-means-to-you/
  * http://www.spoon.as/core-values/
 
-== 6.3. Occupy W3C! ==
+== 6.3. Occupy W3C ... ==
 
 ... because then there wouldn't be the need to occupy Flash:
 
