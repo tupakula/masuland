@@ -99,6 +99,17 @@ This is a Flex 4 "Hello World" example which is (only) implementing the View-Lay
 
 Microarchitectures have been created because of the lack of separation of concerns inside the Flex SDK.
 
+MVC Microarchitectures:
+ * [http://sourceforge.net/adobe/cairngorm Cairngorm 2.2.2]  
+ * [http://trac.puremvc.org/PureMVC_AS3/ PureMVC 2.0.4]
+
+IoC Microarchitectures:
+ * [http://www.spicefactory.org/parsley/ Parsley 2.4.1]
+ * [http://www.springactionscript.org/ Spring AS 1.1]
+ * [http://www.swizframework.org/ Swiz 1.3.1]
+ * [http://www.robotlegs.org/ Robotlegs 1.5.2]
+ * [http://mate.asfusion.com/ Mate 0.9.1]
+
 http://masuland.googlecode.com/files/FlexWithMvcLayers-ApplicationFlow.png
 
 Implementations of Flex applications with the above mentioned MVC Layers can be found here:
