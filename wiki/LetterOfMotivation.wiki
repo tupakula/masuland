@@ -304,9 +304,7 @@ Flash- and Flex-Coding would still be relevant in 2050 unless Javascript will be
 
 Benefits:
  * Faster Javascript code execution 
- * better tooling-support for Javascript
-
-...
+ * Better tooling-support for Javascript
 
 = 6. Related Articles =
 
