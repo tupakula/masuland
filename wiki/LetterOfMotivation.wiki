@@ -33,7 +33,7 @@ Comparing the platforms:
 || *Runtime Features* || dependent on browser || GPU support || GPU support  ||  GPU support, Multithreading ||
 || *Markup Language* || HTML5 || FXG, MXML || XAML || - ||
 || *Interaction Design Tools* || Adobe Muse, Adobe Edge || Adobe Flash Catalyst,  Adobe Flash Pro || Microsoft Expression Blend || - ||
-|| *Developer Tools* || Eclipse, Adobe Dreamweaver || Adobe Flash Pro, Adobe Flash Builder || Visual Studio || Eclipse  ||
+|| *Developer Tools* || Eclipse, Adobe Dreamweaver || Adobe Flash Pro, Adobe Flash Builder || Microsoft Visual Studio || Eclipse  ||
 
 === 1.1. Evolution of the Flashplayer, Adobe AIR and the Flex Framework ===
 
