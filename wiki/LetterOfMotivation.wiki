@@ -49,7 +49,7 @@ Flex is:
  * accessible
 
 Flex has:
- * a application flow:
+ * a simple application flow:
 
 http://masuland.googlecode.com/files/FlexLayers-ApplicationFlow.png
 
