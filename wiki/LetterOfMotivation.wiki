@@ -27,19 +27,19 @@ The following information only reflects my personal experience and does not nece
 
 == 1. Analysis: Flex-Coding ==
 
-Comparing the platforms:
+=== 1.1. Comparing Flex with the Fellows ===
 
 || || *HTML5* || *Flashplayer 11* || *Silverlight 4* || *Java-Applets* ||
 || *Runtime Features* || dependent on browser || GPU support || GPU support  ||  GPU support, Multithreading ||
-|| *Markup Language* || HTML5 || FXG, MXML || XAML || - ||
-|| *Interaction Design Tools* || Adobe Muse, Adobe Edge || Adobe Flash Catalyst,  Adobe Flash Pro || Microsoft Expression Blend || - ||
-|| *Developer Tools* || Eclipse, Adobe Dreamweaver || Adobe Flash Pro, Adobe Flash Builder || Microsoft Visual Studio || Eclipse  ||
+|| *Markup Language* || [http://www.w3.org/TR/html5/ HTML5] || [http://opensource.adobe.com/wiki/display/flexsdk/FXG+2.0+Specification FXG 2.0], [http://opensource.adobe.com/wiki/display/flexsdk/MXML+2009 MXML] || [http://msdn.microsoft.com/en-us/library/ms752059.aspx XAML] || - ||
+|| *Interaction Design Tools* || [http://muse.adobe.com/ Adobe Muse], [http://labs.adobe.com/technologies/edge/ Adobe Edge] || [http://www.adobe.com/products/flashcatalyst.html Adobe Flash Catalyst],  [http://www.adobe.com/products/flash.html Adobe Flash Pro] || [http://www.microsoft.com/expression/products/blend_overview.aspx Microsoft Expression Blend] || - ||
+|| *Developer Tools* || [http://www.eclipse.org/ Eclipse], Adobe Dreamweaver || [http://www.adobe.com/products/flash.html Adobe Flash Pro], [http://www.adobe.com/products/flash-builder.html Adobe Flash Builder] || [http://www.microsoft.com/visualstudio/en-us Microsoft Visual Studio] || [http://www.eclipse.org/ Eclipse]  ||
 
-=== 1.1. Evolution of the Flashplayer, Adobe AIR and the Flex Framework ===
+=== 1.2. Evolution of the Flashplayer, Adobe AIR and the Flex Framework ===
 
 Adobe plans to update their Flashplayer, Adobe AIR and Flex framework on faster release cycles (four times a year). 
 
-=== 1.2. What is Flex? ===
+=== 1.3. What is Flex? ===
 
 Flex is:
  * "New" (First version has been released in 2004 ... more information [http://en.wikipedia.org/wiki/Adobe_Flex here])
@@ -109,7 +109,7 @@ This is a Flex 4 "Hello World" example which is (only) implementing the View-Lay
 Using this approach for constantly growing applications would potentially result in [http://en.wikipedia.org/wiki/Spaghetti_code "Spaghetti code"].
 
 
-=== 1.3. Evolution of Microarchitectures ===
+=== 1.4. Evolution of Microarchitectures ===
 
 MVC Microarchitectures:
  * [http://sourceforge.net/adobe/cairngorm Cairngorm 2.2.2]  
@@ -132,7 +132,7 @@ Implementations of Flex applications with the above mentioned MVC Layers can be 
 
 Since the release of the Cairngorm 3 specification Adobe Consulting [http://sourceforge.net/adobe/cairngorm/home/Home/ suggests] the use of third party open source Inversion-of-Control (IoC) Microarchitectures like ([http://www.spicefactory.org/parsley/ Parsley], [http://www.springactionscript.org/ Spring Actionscript], [http://www.swizframework.org/ Swiz], [http://www.robotlegs.org/ Robotlegs], [http://mate.asfusion.com/ Mate]) ... which means: Inject your things! 
 
-=== 1.4. Flex 4.x is a "Hybrid" ===
+=== 1.5. Flex 4.x is a "Hybrid" ===
 
 Flex 4.x is a "Hybrid" SDK because Flex 4.x still relies on the old MX-namespace for two main reasons:
 
@@ -141,29 +141,29 @@ Flex 4.x is a "Hybrid" SDK because Flex 4.x still relies on the old MX-namespace
 
 Flex 5 promises to tie off this dependency to the MX-namespace, and therefore can be seen again as a pure Flex SDK (just like Flex 3 is).
 
-=== 1.5. Designer/Developer Workflow ===
+=== 1.6. Designer/Developer Workflow ===
 
 The designer/developer workflow has been introduced with Flash Catalyst CS5.5 and Flash Builder 4.5. For more information about this topic please read these two articles:
 
 http://learn.adobe.com/wiki/display/fcc/Flash+Catalyst+CS5.5+compatibility+schema
 http://www.adobe.com/devnet/flashcatalyst/articles/flashcatalyst-compatibility-checker.html
 
-=== 1.6. Flex Developer Community ===
+=== 1.7. Flex Developer Community ===
 
-=== 1.7. Flex Code Examples ===
+=== 1.8. Flex Code Examples ===
 
-=== 1.8. Coding Conventions ===
+=== 1.9. Coding Conventions ===
 
 Adobe promotes the usage of [http://opensource.adobe.com/wiki/display/flexsdk/Coding+Conventions Coding Conventions].
 
-=== 1.9. Code generation tools ===
+=== 1.10. Code generation tools ===
 
  * Ant and Maven code generators for services and value objects (VO) ... etc.
  * Flash Catalyst (Generating skins for !SkinnableComponent classes)
  * Flash Builder (Generating services & code templates)
  * Creative Suite Products (Generating skins)
 
-=== 1.10. Varying Developer Coding Backgrounds ===
+=== 1.11. Varying Developer Coding Backgrounds ===
 
 Developers have different coding backgrounds:
 
@@ -177,7 +177,7 @@ Developers have different coding backgrounds:
 
 ... Combining this with the circumstance that Flex is open to all kinds of coding techniques (OOP-Coding, Functional-Coding, "All-Into-A-Single-File"-Coding ... etc.) the emerging Flex-Code could easily result into [http://en.wikipedia.org/wiki/Spaghetti_code "Spaghetti code"] without any coding-conventions at all ... and therefore: this could lead to massive code-refactoring efforts years later. 
 
-=== 1.11. Teaching Flex Development ===
+=== 1.12. Teaching Flex Development ===
 
 Ther are not many universities and institutions teaching flex development. Furthermore, because the Flashplayer and Adobe AIR constantly evolves, teachers have to be update their knowledge constantly, which is not always the case.
 
