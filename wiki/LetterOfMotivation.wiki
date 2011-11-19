@@ -33,11 +33,15 @@ Adobe plans to update their Flashplayer, Adobe AIR and Flex framework on faster 
 
 === 1.2. What is Flex? ===
 
-Flex is new technology. First version has been released in 2004 ... more information [http://en.wikipedia.org/wiki/Adobe_Flex here].
-
 Flex is:
- * A set of components & services
- * A component lifecycle
+ * "New" (First version has been released in 2004 ... more information [http://en.wikipedia.org/wiki/Adobe_Flex here])
+ * a set of components & services
+ * a component lifecycle
+ * Layout-Management Framework
+ * accessible
+
+Flex has:
+ * a application flow:
 
 http://masuland.googlecode.com/files/FlexLayers-ApplicationFlow.png
 
