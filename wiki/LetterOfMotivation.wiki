@@ -297,6 +297,27 @@ Benefits:
 
 ...
 
+= 6. Related Articles =
+
+== 6.1. Flex Future ==
+
+ * http://blog.hjaelpmignu.dk/2011/11/adobe-flash-and-html5-are-we-happy/
+ * http://www.adobe.com/devnet/flashplatform/articles/recent-updates.html
+ * http://blogs.adobe.com/flex/2011/11/your-questions-about-flex.html 
+ * 
+
+== 6.2. Spoon Project ==
+
+ * http://zaa.tv/2011/04/360flex-denver-2011–day-2-keynote-spoon/
+ * http://tv.adobe.com/watch/max-2011-develop/open-source-flex-what-the-
+spoon-project-means-to-you/
+ * http://www.spoon.as/core-values/
+
+== Occupy W3C! ==
+
+... then there wouldn't be any need to occupy Flash:
+http://www.occupyflash.org/
+
 = Feedback =
 
 Please feel free to post comments, suggestions because the document is still work in progress.
