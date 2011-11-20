@@ -320,6 +320,7 @@ Benefits:
  * http://blogs.adobe.com/flex/2011/11/your-questions-about-flex.html 
  * http://blog.hjaelpmignu.dk/2011/11/adobe-flash-and-html5-are-we-happy/
  * http://www.adobe.com/devnet/flashplatform/articles/recent-updates.html
+ * http://tv.adobe.com/watch/max-2011-develop/flash-platform-roadmap-flex-flash-builder-flash-player-air/
 
 == 6.2. Spoon Project ==
 
