@@ -330,9 +330,10 @@ Benefits:
 
 == 6.3. Occupy W3C and ECMA Int ... ==
 
-... because then there wouldn't be the need to occupy Flash:
+... because then there wouldn't be the need to occupy Flash or HTML:
 
 http://www.occupyflash.org/
+http://www.occupyhtml.org/
 
 = Feedback =
 
