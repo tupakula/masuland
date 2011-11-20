@@ -197,6 +197,10 @@ The current situation is good for all Flex Developers. Working in such an uncert
 
 ... 
 
+==== 2.1.3. Positive: The Flash-Platform is becoming more and more powerful ====
+
+...
+
 === 2.2. What's negative? ===
 
 ==== 2.2.1. Negative: Release cycles of Flashplayer, Adobe AIR and Flex to fast ====
