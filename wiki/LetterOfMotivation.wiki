@@ -185,7 +185,7 @@ Developers have different coding backgrounds:
 
 There are not many universities and institutions teaching flex development. Furthermore, because the Flashplayer and Adobe AIR constantly evolves, teachers have to be update their knowledge constantly, which is not always the case.
 
-== 2. Evaluation: How would I evaluate the current state of Flex-Coding? ==
+== 2. Evaluation: How could the current state of Flex-Coding be evaluated? ==
 
 === 2.1. What's positive? ===
 
