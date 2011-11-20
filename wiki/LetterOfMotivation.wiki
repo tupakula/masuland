@@ -270,22 +270,22 @@ A lack of code generation tools and wizards to speedup development productivity 
 
 == 5. Vision: Where could Flex-Coding be in the year 2050? ==
 
-I strongly believe that the World Wide Web (WWW) in 2050 should still be an open platform for both: their developers and their users. Therefore it is necessary that the future of the WWW follows the guidelines provided by [http://www.w3.org World Wide Web Consortium (W3C)] and [http://www.w3.org/Consortium/Member/List their members]. Depending on the future strategy of the W3C, their decisions will have direct implications for the future use of the Flash-Platform (and Silverlight). In the following I'd like to name a few things that might make Flash (and Silverlight) development irrelevant in 2050:
+I strongly believe that the World Wide Web (WWW) in 2050 should still be an open platform for both: their developers and their users. Therefore it is necessary that the future of the WWW follows the guidelines provided by [http://www.w3.org World Wide Web Consortium (W3C)] and [http://www.w3.org/Consortium/Member/List their members] and [http://www.ecma-international.org/ ECMA International] and [http://www.ecma-international.org/memento/members.htm their members]. Depending on the future strategy of the W3C and ECMA Int, their decisions will have direct implications for the future use of the Flash-Platform (and Silverlight). In the following I'd like to name a few things that might make Flash (and Silverlight) development irrelevant in 2050:
 
-=== 5.1. The W3C will implement their Standards ===
+=== 5.1. The W3C and ECMA Int will implement their standards ===
 
-Flash- and Flex-Coding would still be relevant in 2050 unless the W3C will decide that it is not just enough to define a standard for the web - and HTML in particular. Instead, they would also take care of its implementation into a freely available and open WWW with a *_single_* web browser. Still having so many versions of web browsers out there could mean: the WWW is still very new and we (including the W3C) probably don't know yet where it should lead us to.
+Flash- and Flex-Coding would still be relevant in 2050 unless the W3C and ECMA Int will decide that it is not just enough to define a standard for the web - and HTML in particular. Instead, they would also take care of its implementation into a freely available and open WWW with a *_single_* web browser. Still having so many versions of web browsers out there could mean: the WWW is still very new and we (including the W3C and ECMA Int) probably don't know yet where it should lead us to.
 
 Benefits:
  * HTML/Javascript documents look and behave the same EVERYWHERE!
 
 Risks:
- * The risk grows that the development of a single web browser inside the W3C could be misused in favor to a certain involved company.
+ * The risk grows that the development of a single web browser inside the W3C and ECMA Int could be misused in favor to a certain involved company.
  * Different web browser stay in competition in growing features, speed and their user community. Removing that could result into a weaker WWW.
 
 === 5.2. HTML/Javascript will go RIA ===
 
-Flash- and Flex-Coding would still be relevant in 2050 unless the W3C does not combine SVG, WebGL, HTML, CSS & Javascript ... etc. into a single Rich Internet Application (RIA) document specification - hereby called "RIA-HTML". For the moment the W3C still considers HTML to be a "text document with additional multimedia features", whereas, a Flash document can be considered as a "pure multimedia document" (Audio, Video, 3D, Text ... etc).
+Flash- and Flex-Coding would still be relevant in 2050 unless the W3C and ECMA Int does not combine SVG, WebGL, HTML, CSS & Javascript ... etc. into a single Rich Internet Application (RIA) document specification - hereby called "RIA-HTML". For the moment the W3C still considers HTML to be a "text document with additional multimedia features", whereas, a Flash document can be considered as a "pure multimedia document" (Audio, Video, 3D, Text ... etc).
 
 Benefits:
  * A "pure multimedia document" similar to MXML/FXG (Flex) or XAML (Silverlight) would be way more expressive 
@@ -325,7 +325,7 @@ Benefits:
  * http://tv.adobe.com/watch/max-2011-develop/open-source-flex-what-the-spoon-project-means-to-you/
  * http://www.spoon.as/core-values/
 
-== 6.3. Occupy W3C ... ==
+== 6.3. Occupy W3C and ECMA Int ... ==
 
 ... because then there wouldn't be the need to occupy Flash:
 
