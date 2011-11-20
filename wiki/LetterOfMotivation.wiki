@@ -270,7 +270,7 @@ A lack of code generation tools and wizards to speedup development productivity 
 
 == 5. Vision: Where could Flex-Coding be in the year 2050? ==
 
-I strongly believe that the World Wide Web (WWW) in 2050 should still be an open platform for both: their developers and their users. Therefore it is necessary that the future of the WWW follows the guidelines provided by [http://www.w3.org World Wide Web Consortium (W3C)] and [http://www.w3.org/Consortium/Member/List their members] and [http://www.ecma-international.org/ ECMA International] and [http://www.ecma-international.org/memento/members.htm their members]. Depending on the future strategy of the W3C and ECMA Int, their decisions will have direct implications for the future use of the Flash-Platform (and Silverlight). In the following I'd like to name a few things that might make Flash (and Silverlight) development irrelevant in 2050:
+I strongly believe that the World Wide Web (WWW) in 2050 should still be an open platform for both: their developers and their users. Therefore it is necessary that the future of the WWW follows the guidelines provided by [http://www.w3.org World Wide Web Consortium (W3C)] with [http://www.w3.org/Consortium/Member/List their members] and [http://www.ecma-international.org/ ECMA International] with [http://www.ecma-international.org/memento/members.htm their members]. Depending on the future strategy of the W3C and ECMA Int, their decisions will have direct implications for the future use of the Flash-Platform (and Silverlight). In the following I'd like to name a few things that might make Flash (and Silverlight) development irrelevant in 2050:
 
 === 5.1. The W3C and ECMA Int will implement their standards ===
 
