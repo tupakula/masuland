@@ -312,7 +312,7 @@ Benefits:
  * Faster Javascript code execution 
  * Better tooling-support for Javascript
 
-= 6. Related Articles =
+= 6. Related Resources =
 
 == 6.1. Flex Future ==
 
