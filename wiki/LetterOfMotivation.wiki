@@ -122,7 +122,7 @@ IoC Microarchitectures:
  * [http://www.robotlegs.org/ Robotlegs 1.5.2]
  * [http://mate.asfusion.com/ Mate 0.9.1]
 
-Microarchitectures have been created because of the lack of separation of concerns inside the Flex SDK.
+Microarchitectures have been created because of the lack of separation of concerns when creating Flex applications with the Flex SDK.
 
 http://masuland.googlecode.com/files/FlexWithMvcLayers-ApplicationFlow.png
 
