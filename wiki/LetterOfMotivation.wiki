@@ -255,7 +255,7 @@ A lack of code generation tools and wizards to speedup development productivity 
  * Flex code should be sustainable and easily maintainable
  * There should be more highly skilled Flex Developers around
  * Developer tools should be easy to be used and should help the designer/developer to be more productive
- * The Flashplayer should be as powerful as the "Java Virtual Machine" (JVM)
+ * The Flashplayer - "Actionscript Virtual Machine" (AVM) respectively - should be as powerful as the "Java Virtual Machine" (JVM)
  * The Adobe Flash Catalyst should be as powerful as Microsoft Expression Blend
 
 ...
