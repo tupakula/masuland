@@ -85,8 +85,8 @@ IAppDelegate
 
 }}}
 
-= Code example =
+= Code examples =
 
-Code example which implements this feature specification:
+Code examples which implements this feature specification:
 
  * [LoginExample Login Example] written in Flex 3 and Flex 4 (Halo, Gumbo, Hero)
