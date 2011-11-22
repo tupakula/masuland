@@ -2,6 +2,8 @@
 
 This document outlines the basic architecture of the [ReligionChooser Religion Chooser] application. You will get an overview about the application flow and states. Furthermore, types of value objects and client-server interface (Delegates) will be discussed.
 
+<wiki:toc />
+
 == 1.1. Application Flow and States ==
 
 The Religion Chooser application guides you through a decision process to find your religion. 
@@ -46,6 +48,8 @@ IAppDelegate
 
 }}}
 
-= Code example which implements this Feature Specification =
+= Code examples =
+
+Code examples which implements this feature specification:
 
  * [ReligionChooser Religion Chooser] written in Flex 4 (Gumbo)
