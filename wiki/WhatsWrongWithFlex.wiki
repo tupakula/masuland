@@ -3,7 +3,7 @@
 *Please note:* 
 The following information only reflects my personal experience and does not necessarily reflect the view of the Flex community and Adobe.
 
-= What's wrong with Flex =
+= What's Wrong with Flex =
 
 <wiki:toc />
 
