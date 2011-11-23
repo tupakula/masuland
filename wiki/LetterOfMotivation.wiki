@@ -20,4 +20,4 @@ Here I'd like to explain the reason why I have created these code examples:
 
 == 5. Vision: Where could Flex-Coding be in the year 2050? ==
 
-... The article has moved [WhatsWrongWithFlex#5._Vision:_Where_could_Flex-Coding_be_in_the_year_2050? here]
+The article has moved [WhatsWrongWithFlex#5._Vision:_Where_could_Flex-Coding_be_in_the_year_2050? here].
