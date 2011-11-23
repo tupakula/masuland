@@ -18,4 +18,4 @@
  * Best Coding Practices
    * [MigrationFromFlex3ToFlex4 Migration from Flex 3 to Flex 4]
  * [LetterOfMotivation Letter of Motivation]
- * [WhatsWrongWithFlex What's Wrong with Flex?]
+ * [WhatsWrongWithFlex What's wrong with Flex?]
