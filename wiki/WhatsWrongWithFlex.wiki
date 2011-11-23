@@ -1,0 +1,327 @@
+#summary One-sentence summary of this page.
+
+*Please note:* 
+The following information only reflects my personal experience and does not necessarily reflect the view of the Flex community and Adobe.
+
+= What's wrong with Flex =
+
+<wiki:toc />
+
+== 1. Analysis: Flex-Coding Past & Today ==
+
+=== 1.1. Comparing Flex with the Fellows ===
+
+|| || *HTML5* || *Flashplayer 11* || *Silverlight 4* || *Java-Applets* ||
+|| *Runtime Features* || dependent on web browser || GPU support || GPU support  ||  GPU support, Multithreading ||
+|| *Markup Language* || [http://www.w3.org/TR/html5/ HTML5] || [http://opensource.adobe.com/wiki/display/flexsdk/FXG+2.0+Specification FXG 2.0], [http://opensource.adobe.com/wiki/display/flexsdk/MXML+2009 MXML] || [http://msdn.microsoft.com/en-us/library/ms752059.aspx XAML] || - ||
+|| *Interaction Design Tools* || [http://muse.adobe.com/ Adobe Muse], [http://labs.adobe.com/technologies/edge/ Adobe Edge] || [http://www.adobe.com/products/flashcatalyst.html Adobe Flash Catalyst],  [http://www.adobe.com/products/flash.html Adobe Flash Pro] || [http://www.microsoft.com/expression/products/blend_overview.aspx Microsoft Expression Blend] || - ||
+|| *Developer Tools* || [http://www.eclipse.org/ Eclipse], [http://www.adobe.com/products/dreamweaver.html Adobe Dreamweaver] || [http://www.adobe.com/products/flash.html Adobe Flash Pro], [http://www.adobe.com/products/flash-builder.html Adobe Flash Builder] || [http://www.microsoft.com/visualstudio/en-us Microsoft Visual Studio] || [http://www.eclipse.org/ Eclipse]  ||
+
+=== 1.2. Evolution of the Flashplayer, Adobe AIR and the Flex Framework ===
+
+Adobe plans to update their Flashplayer, Adobe AIR and Flex framework on faster release cycles (four times a year). 
+
+=== 1.3. What is Flex? ===
+
+Flex is:
+ * "New" (First version has been released in 2004 ... more information [http://en.wikipedia.org/wiki/Adobe_Flex here])
+ * a set of components & services
+ * a component lifecycle
+ * Layout-Management Framework
+ * accessible
+
+Flex has:
+ * a simple application flow:
+
+http://masuland.googlecode.com/files/FlexLayers-ApplicationFlow.png
+
+This is a Flex 4 "Hello World" example which is (only) implementing the View-Layer and Service-Layer *into a single file*:
+
+{{{
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:mx="library://ns.adobe.com/flex/mx"
+	>
+	
+	<fx:Declarations>
+		<s:RemoteObject
+			id="helloWorldServive"
+			destination="HelloWorldServive"
+			>
+			<s:method name="getHello" result="getHello_resultHandler(event)">
+				<s:arguments>
+					<name>{ tip_name.text }</name>
+				</s:arguments>
+			</s:method>
+		</s:RemoteObject>
+	</fx:Declarations>
+	
+	<fx:Script>
+		<![CDATA[
+			import mx.rpc.events.ResultEvent;
+			
+			private function getHello_resultHandler(event:ResultEvent):void
+			{
+				txt_result.text = 'Hello ' + event.result as String;
+			}
+		]]>
+	</fx:Script>
+	
+	<s:VGroup
+		horizontalCenter="0" verticalCenter="0"
+		>
+		<s:TextInput
+			id="tip_name"
+			prompt="Type in your name"
+			/>
+		<mx:Button
+			label="Get Hello"
+			click="helloWorldServive.getHello()"
+			/>
+		<mx:Label
+			id="txt_result"
+			/>
+	</s:VGroup>
+		
+</s:Application>
+}}}
+
+Using this approach for constantly growing applications would potentially result in [http://en.wikipedia.org/wiki/Spaghetti_code "Spaghetti code"].
+
+
+=== 1.4. Evolution of Microarchitectures ===
+
+MVC Microarchitectures:
+ * [http://sourceforge.net/adobe/cairngorm Cairngorm 2.2.2]  
+ * [http://trac.puremvc.org/PureMVC_AS3/ PureMVC 2.0.4]
+
+IoC Microarchitectures:
+ * [http://www.spicefactory.org/parsley/ Parsley 2.4.1]
+ * [http://www.springactionscript.org/ Spring AS 1.1]
+ * [http://www.swizframework.org/ Swiz 1.3.1]
+ * [http://www.robotlegs.org/ Robotlegs 1.5.2]
+ * [http://mate.asfusion.com/ Mate 0.9.1]
+
+Microarchitectures have been created because of the lack of separation of concerns when creating applications with the Flex SDK.
+
+http://masuland.googlecode.com/files/FlexWithMvcLayers-ApplicationFlow.png
+
+Implementations of Flex applications with the above mentioned MVC Layers can be found here:
+ * [LoginExample Login Example] with Flex 3 and Flex 4 (Halo, Gumbo, Hero)
+ * [ReligionChooser Religion Chooser] with Flex 4 (Gumbo)
+
+Since the release of the Cairngorm 3 specification Adobe Consulting [http://sourceforge.net/adobe/cairngorm/home/Home/ suggests] the use of third party open source Inversion-of-Control (IoC) Microarchitectures like ([http://www.spicefactory.org/parsley/ Parsley], [http://www.springactionscript.org/ Spring Actionscript], [http://www.swizframework.org/ Swiz], [http://www.robotlegs.org/ Robotlegs], [http://mate.asfusion.com/ Mate]) ... which means: Inject your things! 
+
+=== 1.5. Flex 4.x is a "Hybrid" ===
+
+Flex 4.x is a "Hybrid" SDK because Flex 4.x still relies on the old MX-namespace for two main reasons:
+
+  # Downward-compatibility with Flex 3 UIComponents
+  # Some MX-components have not been transfered to the Spark-component set yet (e.g. MX-!DateChooser, MX-!ColorPicker, MX-!TabNavigator ... etc.)
+
+Flex 5 promises to tie off this dependency to the MX-namespace, and therefore can be seen again as a pure Flex SDK (just like Flex 3 is).
+
+=== 1.6. Designer/Developer Workflow ===
+
+The designer/developer workflow has been introduced with Flash Catalyst CS5.5 and Flash Builder 4.5. For more information about this topic please read these two articles:
+
+http://learn.adobe.com/wiki/display/fcc/Flash+Catalyst+CS5.5+compatibility+schema
+http://www.adobe.com/devnet/flashcatalyst/articles/flashcatalyst-compatibility-checker.html
+
+=== 1.7. Flex Developer Community ===
+
+...
+
+=== 1.8. Flex Code Examples ===
+
+...
+
+=== 1.9. Coding Conventions ===
+
+Adobe promotes the usage of [http://opensource.adobe.com/wiki/display/flexsdk/Coding+Conventions Coding Conventions].
+
+=== 1.10. Code generation tools ===
+
+ * Ant and Maven code generators for services and value objects (VO) ... etc.
+ * Flash Catalyst (Generating skins for !SkinnableComponent classes)
+ * Flash Builder (Generating services & code templates)
+ * Creative Suite Products (Generating skins)
+
+=== 1.11. Varying Developer Coding Backgrounds ===
+
+Developers have different coding backgrounds:
+
+ * Flash Developers with different coding skills based on the Flashplayer version (e.g. Flashplayer 7, 8, 9, 10, 11)
+ * PHP Developers
+ * Java Developers
+ * ASP Developers 
+ * HTML Developers
+ * Javascript Developers
+ * ... etc.
+
+... Combining this with the circumstance that Flex is open to all kinds of coding techniques (OOP-Coding, Functional-Coding, "All-Into-A-Single-File"-Coding ... etc.) the emerging Flex-Code could easily result into [http://en.wikipedia.org/wiki/Spaghetti_code "Spaghetti code"] without any coding-conventions at all ... and therefore: this could lead to massive code-refactoring efforts years later. 
+
+=== 1.12. Teaching Flex Development ===
+
+There are not many universities and institutions teaching flex development. Furthermore, because the Flashplayer and Adobe AIR constantly evolves, teachers have to be update their knowledge constantly, which is not always the case.
+
+== 2. Evaluation: How could Flex-Coding Past & Today be evaluated? ==
+
+=== 2.1. What's positive? ===
+
+==== 2.1.1. Positive: Flex Developers are needed ====
+
+The current situation is good for all Flex Developers. Working in such an uncertain and constantly changing market means: There is lots of work to do, and, there is always something that needs to be fixed ... for clarification watch [http://www.youtube.com/watch?v=Tt1W0F0yObg this scene] of the movie "The Fifth Element" in which Gary Oldman explains why "Graffiti" (and "a bad Flex coding practice" respectively) is "good for the world"!
+
+==== 2.1.2. Positive: Adobe is getting payed for their Investments ====
+
+... 
+
+==== 2.1.3. Positive: The Flash-Platform is becoming more and more powerful ====
+
+...
+
+=== 2.2. What's negative? ===
+
+==== 2.2.1. Negative: Release cycles of Flashplayer, Adobe AIR and Flex to fast ====
+
+While this also has pros to update the Flashplayer, Adobe AIR and Flex framework on faster release cycles (four times a year), for developers this means your application constantly has to be updated and this could be an issue for big long-term projects.
+
+==== 2.2.2. Negative: The use of Microarchitectures uncertain ====
+
+While this can be seen as a great opportunity to the open source community and opens up lots of creativity to these Microarchitectures, this also means for applications, that use these Microarchitectures, that they have to trust into the continuity of a certain Microarchitecture which they use. Furthermore, updating Microarchitectures to their latest version could also be an issue for big long-term projects.
+
+==== 2.2.3. Negative: Flex 4.x is still Beta Software ====
+
+...
+
+==== 2.2.4. Negative: Restrictive Designer/Developer Workflow ====
+
+The designer/developer workflow introduced with Flash Catalyst CS5.5 and Flash Builder 4.5 is fairly restrictive, and therefore, not very productive. Hopefully, this issue will be improved when Flex 5, Flash Builder 5 and Flash Catalyst CS6 has been released.
+
+==== 2.2.5. Negative: "Fairly unexperienced" Developer Community ====
+
+Because Flex is a fairly new technology, the Flex community in average is still "fairly unexperienced", and, in this community there are only a few "very well experienced" Flex Evangelists out there from whom "normal experienced" Flex developers, like me, could learn from. Communities like the Java, ASP.NET or PHP community are much more settled down ... and the chance to find a helping hand in these communities is much more likely than in ours.
+
+==== 2.2.6. Negative: Missleading Code Examples ====
+
+Even though there are many Flex code examples out there - most of them cover the topic "Component Development in Flex" (like Spark- and MX-Components) - only few information can be found on professional and sustainable "Application-Architecture Development in Flex" in combination with third party Microarchitectures. Because of the lack of these information many Flex projects tend to implement their required application-features with unconventional coding practices.
+
+==== 2.2.7. Negative: Missing Coding Conventions ====
+
+Even though Adobe promotes the usage of [http://opensource.adobe.com/wiki/display/flexsdk/Coding+Conventions Coding Conventions] the Flex community still seems to be unhappy, and therefore, very creative regarding their own conventions. 
+
+==== 2.2.8. Negative: Only few code generation tools ====
+
+A lack of code generation tools and wizards to speedup development productivity with Microarchitectures. Because of that the development of well featured real world applications using Microarchitectures potentially produces an development overhead when adding new features to these applications.
+
+==== 2.2.9. Negative: Varying Developer Coding Backgrounds ====
+
+...
+
+==== 2.2.10. Negative: Few Universities teach Flex Development ====
+
+...
+
+==== 2.2.11. Negative: Black-Box Coding with Flashplayer and Adobe AIR ====
+
+...
+
+== 3. Goals: How should Flex-Coding be? ==
+
+ * Highly productive and fast development environment
+ * Flex code should be easily mergeable across different flex projects worldwide
+ * Flex code should be based on coding standards
+ * Flex code should be sustainable and easily maintainable
+ * There should be more highly skilled Flex Developers around
+ * Developer tools should be easy to be used and should help the designer/developer to be more productive
+ * The Flashplayer - "Actionscript Virtual Machine" (AVM) respectively - should be as powerful as the "Java Virtual Machine" (JVM)
+ * The Adobe Flash Catalyst should be as powerful as Microsoft Expression Blend
+
+...
+
+== 4. Alternatives: How to achieve better Flex-Coding? ==
+
+ * Less release cycles starting with Flex 6 and Flashplayer 12
+ * Funding for the developer teams which create Microarchitecture frameworks to speed up their development cycles
+ * Open up a Flex Coding Standard Foundation (together with Flex community and Adobe) ... maybe the Spoon Project will help: http://www.spoon.as
+ * Integration of a MVC framework to Flex 6 in collaboration with existing Microarchitecture developers
+ * MVC code generators In Flash Builder 6 on the basis of the Flex 6 MVC framework
+
+...
+
+== 5. Vision: Where could Flex-Coding be in the year 2050? ==
+
+I strongly believe that the World Wide Web (WWW) in 2050 should still be an open platform for both: their developers and their users. Therefore it is necessary that the future of the WWW follows the guidelines provided by [http://www.w3.org World Wide Web Consortium (W3C)] with [http://www.w3.org/Consortium/Member/List their members] and [http://www.ecma-international.org/ ECMA International] with [http://www.ecma-international.org/memento/members.htm their members]. Depending on the future strategy of the W3C and ECMA Int, their decisions will have direct implications for the future use of the Flash-Platform (and Silverlight). In the following I'd like to name a few things that might make Flash (and Silverlight) development irrelevant in 2050:
+
+=== 5.1. The W3C and ECMA Int will implement their standards ===
+
+Flash- and Flex-Coding would still be relevant in 2050 unless the W3C and ECMA Int will decide that it is not just enough to define a standard for the web - and HTML in particular. Instead, they would also take care of its implementation into a freely available and open WWW with a *_single_* web browser. Still having so many versions of web browsers out there could mean: the WWW is still very new and we (including the W3C and ECMA Int) probably don't know yet where it should lead us to.
+
+Benefits:
+ * HTML/Javascript documents look and behave the same EVERYWHERE!
+
+Risks:
+ * The risk grows that the development of a single web browser inside the W3C and ECMA Int could be misused in favor to a certain involved company.
+ * Different web browser stay in competition in growing features, speed and their user community. Removing that could result into a weaker WWW.
+
+=== 5.2. HTML/Javascript will go RIA ===
+
+Flash- and Flex-Coding would still be relevant in 2050 unless the W3C and ECMA Int does not combine SVG, WebGL, HTML, CSS & Javascript ... etc. into a single Rich Internet Application (RIA) document specification - hereby called "RIA-HTML". For the moment the W3C still considers HTML to be a "text document with additional multimedia features", whereas, a Flash document can be considered as a "pure multimedia document" (Audio, Video, 3D, Text ... etc).
+
+Benefits:
+ * A "pure multimedia document" similar to MXML/FXG (Flex) or XAML (Silverlight) would be way more expressive 
+
+=== 5.3. HTML/Javascript will be binary a with Semantic Webservice API ===
+
+Flash- and Flex-Coding would still be relevant in 2050 unless HTML/Javascript cannot be compiled into binary code so that search engines, crawlers and web bots will be restricted to only communicate to the "RIA-HTML" document via a certain separated Semantic Webservices API ... for more information read [http://www.w3.org/standards/semanticweb/ Semantic Web] and [http://www.w3.org/standards/techs/rdf RDF], [http://www.w3.org/standards/techs/owl OWL] ... etc.
+
+Benefits:
+ * Compiled HTML/Javascript could significantly be transfered much faster between client and server
+ * Users don't have to run through any human-prove task in the web anymore ... e.g. "Prove you are human while typing in the letters below: k2eMSlo rUs4Kin"
+ * Search engines, crawlers or any type of web bots only get the information which is intended for them
+
+Risks:
+ * Users don't see what is inside an HTML/Javascript anymore (unless there is a "View Sourcecode API" included)
+
+=== 5.4. Javascript will become a type-safe OOP-language ===
+
+Flash- and Flex-Coding would still be relevant in 2050 unless Javascript will become a type-safe OOP-language ... which means: introducing *_castable_* typed objects and more powerful OOP features into the language.
+
+Benefits:
+ * Faster Javascript code execution 
+ * Better tooling-support for Javascript
+
+= 6. Related Resources =
+
+== 6.1. Flex Future ==
+
+ * http://www.riagora.com/2011/11/flex-is-open/
+ * http://blogs.adobe.com/flex/2011/11/your-questions-about-flex.html 
+ * http://blog.hjaelpmignu.dk/2011/11/adobe-flash-and-html5-are-we-happy/
+ * http://www.adobe.com/devnet/flashplatform/articles/recent-updates.html
+ * http://tv.adobe.com/watch/max-2011-develop/flash-platform-roadmap-flex-flash-builder-flash-player-air/
+
+== 6.2. Spoon Project ==
+
+ * http://zaa.tv/2011/04/360flex-denver-2011–day-2-keynote-spoon/
+ * http://tv.adobe.com/watch/max-2011-develop/open-source-flex-what-the-spoon-project-means-to-you/
+ * http://www.spoon.as/core-values/
+
+== 6.3. Occupy W3C and ECMA Int ... ==
+
+... because then there wouldn't be the need to occupy Flash:
+
+http://www.occupyflash.org/
+
+For more information check out:
+
+ * http://www.occupyhtml.org/
+ * http://www.occupyw3c.org/
+ * http://www.occupyecma.org/
+
+= Feedback =
+
+Please feel free to post comments, suggestions because the document is still work in progress.
