@@ -16,7 +16,7 @@ Here I'd like to explain the reason why I have created these code examples:
  * Because I haven't found any comparable Microarchitecture examples like this, I decided to create them myself.
  * I am trying to get feedback from the Flex community to improve the way I am suggesting coding Flex.
  * Because Flex is still a very young technology I am trying to give Flex beginners the opportunity to compare existing frameworks and architectures so that they can speed up their development time, and thereby, using less bad coding practices. 
- * For the moment, I see certain things that should to be improven in Flex development ... for more information please read the document [WhatsWrongWithFlex "What's wrong with Flex?"].
+ * For the moment, I see the need to point out certain things that should to be improven in Flex development ... for more information please read the document [WhatsWrongWithFlex "What's wrong with Flex?"].
 
 == 5. Vision: Where could Flex-Coding be in the year 2050? ==
 
