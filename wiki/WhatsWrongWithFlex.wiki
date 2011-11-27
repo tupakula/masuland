@@ -284,7 +284,7 @@ Benefits:
  * Search engines, crawlers or any type of web bots only get the information which is intended for them
 
 Risks:
- * Users don't see what is inside an HTML/Javascript anymore (unless there is a "View Sourcecode API" included)
+ * Users don't see what is inside a binary HTML/Javascript anymore (unless there is a "View Sourcecode API" included)
 
 === 5.4. Javascript will become a type-safe OOP-language ===
 
