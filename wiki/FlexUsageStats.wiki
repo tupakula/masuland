@@ -4,4 +4,13 @@
 
 Thanks for taking the time to complete the little survey ... The results of this survey will be discussed here soon.
 
-Thank you!
+Stay tuned!
+
+...
+
+= Flex Code Examples =
+
+For the moment check out my Flex code examples:
+
+ * [LoginExample LoginExample] written in Flex 3 and Flex 4 (Halo, Gumbo, Hero)
+ * [ReligionChooser ReligionChooser] written in Flex 4 (Gumbo)
