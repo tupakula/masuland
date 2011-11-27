@@ -48,8 +48,8 @@ IAppDelegate
 
 }}}
 
-= Code example =
+= Code examples =
 
-Code example which implements this feature specification:
+Code examples which implement this feature specification:
 
  * [ReligionChooser Religion Chooser] written in Flex 4 (Gumbo)
