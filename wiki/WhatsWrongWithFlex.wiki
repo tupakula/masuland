@@ -294,9 +294,9 @@ Benefits:
  * Faster Javascript code execution 
  * Better tooling-support for Javascript
 
-= 6. Related Resources =
+== 6. Related Resources ==
 
-== 6.1. Flex Future ==
+=== 6.1. Flex Future ===
 
  * http://www.riagora.com/2011/11/flex-is-open/
  * http://blogs.adobe.com/flex/2011/11/your-questions-about-flex.html 
@@ -304,13 +304,13 @@ Benefits:
  * http://www.adobe.com/devnet/flashplatform/articles/recent-updates.html
  * http://tv.adobe.com/watch/max-2011-develop/flash-platform-roadmap-flex-flash-builder-flash-player-air/
 
-== 6.2. Spoon Project ==
+=== 6.2. Spoon Project ===
 
  * http://zaa.tv/2011/04/360flex-denver-2011–day-2-keynote-spoon/
  * http://tv.adobe.com/watch/max-2011-develop/open-source-flex-what-the-spoon-project-means-to-you/
  * http://www.spoon.as/core-values/
 
-== 6.3. Occupy W3C and ECMA Int ... ==
+=== 6.3. Occupy W3C and ECMA Int ... ===
 
 ... because then there wouldn't be the need to occupy Flash:
 
