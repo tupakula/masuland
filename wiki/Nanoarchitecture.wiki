@@ -38,7 +38,7 @@ Microarchitectures like [http://sourceforge.net/adobe/cairngorm Cairngorm 2.2.1]
 
 Here are some code examples which implement some or all of these above mentioned Nanoarchitectures:
 
- * [LoginExample LoginExample] written in Flex 3 and Flex 4 (Halo, Gumbo)
+ * [LoginExample LoginExample] written in Flex 3 and Flex 4 (Halo, Gumbo, Hero)
  * [ReligionChooser ReligionChooser] written in Flex 4 (Gumbo)
 
 = Feedback =
