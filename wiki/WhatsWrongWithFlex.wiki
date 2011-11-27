@@ -279,7 +279,7 @@ Benefits:
 Flash- and Flex-Coding would still be relevant in 2050 unless HTML/Javascript cannot be compiled into binary code so that search engines, crawlers and web bots will be restricted to only communicate to the "RIA-HTML" document via a certain separated Semantic Webservices API ... for more information read [http://www.w3.org/standards/semanticweb/ Semantic Web] and [http://www.w3.org/standards/techs/rdf RDF], [http://www.w3.org/standards/techs/owl OWL] ... etc.
 
 Benefits:
- * Compiled HTML/Javascript could significantly be transfered much faster between client and server
+ * Compiled binary HTML/Javascript could significantly be transfered much faster between client and server
  * Users don't have to run through any human-prove task in the web anymore ... e.g. "Prove you are human while typing in the letters below: k2eMSlo rUs4Kin"
  * Search engines, crawlers or any type of web bots only get the information which is intended for them
 
