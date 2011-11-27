@@ -1,4 +1,4 @@
-#summary This page will show and evaluate the Flex usage statistics
+#summary This page will show Flex usage statistics
 
 = Flex Usage Statistics =
 
