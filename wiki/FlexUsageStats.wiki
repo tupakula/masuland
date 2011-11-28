@@ -2,9 +2,31 @@
 
 = Flex Usage Statistics =
 
-Thank you for taking the time to complete the little survey ... The results of this survey will be discussed here soon.
+Thank you for taking the time to complete this little survey!
 
-Stay tuned!
+= Participants =
+
+Flex Forums:
+
+ * http://www.flashforum.de/forum
+ * http://www.flexforum.de/
+ * http://tech.groups.yahoo.com/group/flexcoders/
+
+Social Sites:
+
+ * http://www.linkedin.com/groupsDirectory
+
+MVC Microarchitecture Forums:
+
+ * http://mate.asfusion.com/forums/
+ * http://knowledge.robotlegs.org/
+ * http://www.spicefactory.org/forum
+ * http://forum.springsource.org/forumdisplay.php?60-Spring-Actionscript
+ * http://groups.google.com/group/swiz-framework
+
+= Evaluation =
+
+The results of this survey will be discussed here soon ... Stay tuned!
 
 ...
 
@@ -14,3 +36,4 @@ For the moment, please check out my Flex code examples:
 
  * [LoginExample LoginExample] written in Flex 3 and Flex 4 (Halo, Gumbo, Hero)
  * [ReligionChooser ReligionChooser] written in Flex 4 (Gumbo)
+
