@@ -4,7 +4,7 @@
 
 Thank you for taking the time to complete this little survey!
 
-= Participants =
+== Participants ==
 
 Flex Forums:
 
@@ -24,7 +24,7 @@ MVC Microarchitecture Forums:
  * http://forum.springsource.org/forumdisplay.php?60-Spring-Actionscript
  * http://groups.google.com/group/swiz-framework
 
-= Evaluation =
+== Evaluation ==
 
 The results of this survey will be discussed here soon ... Stay tuned!
 
@@ -36,4 +36,3 @@ For the moment, please check out my Flex code examples:
 
  * [LoginExample LoginExample] written in Flex 3 and Flex 4 (Halo, Gumbo, Hero)
  * [ReligionChooser ReligionChooser] written in Flex 4 (Gumbo)
-
