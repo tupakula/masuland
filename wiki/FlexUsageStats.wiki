@@ -20,6 +20,7 @@ MVC Microarchitecture Forums:
 
  * http://mate.asfusion.com/forums/
  * http://knowledge.robotlegs.org/
+ * http://forums.puremvc.org/index.php?board=26.0
  * http://www.spicefactory.org/forum
  * http://forum.springsource.org/forumdisplay.php?60-Spring-Actionscript
  * http://groups.google.com/group/swiz-framework
