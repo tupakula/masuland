@@ -280,7 +280,9 @@ Flash- and Flex-Coding would still be relevant in 2050 unless HTML/Javascript ca
 
 Benefits:
  * Compiled binary HTML/Javascript could significantly be transfered much faster between client and server
- * Users don't have to run through any human-prove task in the web anymore ... e.g. "Prove you are human while typing in the letters below: k2eMSlo rUs4Kin"
+ * Users don't have to run through any human-prove task in the web anymore ... e.g. 
+   * "Prove you are human while typing in the letters below: k2eMSlo rUs4Kin"
+   * "ATTENTION: Spambots must die! Humans must visit http://contact.futurescale.com to request forum access."
  * Search engines, crawlers or any type of web bots only get the information which is intended for them
 
 Risks:
