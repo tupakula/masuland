@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary This page explains personal issues in Flex development that should be improved in later versions of the Flex SDK
 
 *Please note:* 
 The following information only reflects my personal experience and does not necessarily reflect the view of the Flex community and Adobe.
