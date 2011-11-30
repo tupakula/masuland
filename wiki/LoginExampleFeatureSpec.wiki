@@ -1,4 +1,4 @@
-#summary This page specifies the features of the Login Example
+#summary This page specifies the features of the Login Example application
 
 = Login Example Feature Specification =
 
