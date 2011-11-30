@@ -12,9 +12,10 @@ Flex Forums:
  * http://www.flexforum.de/
  * http://tech.groups.yahoo.com/group/flexcoders/
 
-Social Sites:
+Flex Groups:
 
  * http://www.linkedin.com/groupsDirectory
+ * http://www.facebook.com
 
 MVC Microarchitecture Forums:
 
