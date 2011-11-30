@@ -1,3 +1,5 @@
+#summary This page specifies the features of the Login Example
+
 = Login Example Feature Specification =
 
 This document outlines the basic architecture of the [LoginExample Login Example] application. You will get an overview about the application flow and states. Furthermore, types of value objects and client-server interface (Delegates) will be discussed.
