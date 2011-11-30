@@ -1,3 +1,5 @@
+#summary This page defines the coding conventions for a Flex 3 applications
+
 = Additional Adobe Flex 3 Coding Conventions =
 
 This document proposes additional Flex 3 coding conventions to the existing Flex coding conventions provided by Adobe, see http://opensource.adobe.com/wiki/display/flexsdk/Coding+Conventions
