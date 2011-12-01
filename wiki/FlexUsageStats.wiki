@@ -16,6 +16,7 @@ Flex Groups:
 
  * http://www.linkedin.com/groupsDirectory
  * http://www.facebook.com/groups
+ * http://www.xing.com/groups
 
 MVC Microarchitecture Forums:
 
