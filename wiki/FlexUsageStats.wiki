@@ -27,7 +27,7 @@ MVC Microarchitecture Forums:
  * http://forum.springsource.org/forumdisplay.php?60-Spring-Actionscript
  * http://groups.google.com/group/swiz-framework
 
-If you can recommend *other Flex Forums and Flex Group* please let me know.
+If you can recommend *other Flex Forums or Flex Group* please let me know.
 
 ...
 
