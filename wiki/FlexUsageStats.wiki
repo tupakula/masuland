@@ -8,9 +8,11 @@ Thank you for taking the time to complete this little survey!
 
 Flex Forums:
 
- * http://www.flashforum.de/forum
- * http://www.flexforum.de/
+ * http://forums.adobe.com/community/flex
+ * http://forums.adobe.com/community/opensource/cairngorm
  * http://tech.groups.yahoo.com/group/flexcoders/
+ * http://www.flexforum.de/
+ * http://www.flashforum.de/forum
 
 Flex Groups:
 
