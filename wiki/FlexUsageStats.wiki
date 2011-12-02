@@ -14,6 +14,8 @@ Flex Forums:
  * http://www.flexforum.de/
  * http://www.flashforum.de/forum
  * http://www.flexdeveloper.eu/
+ * http://www.flexfreaks.com/forums/
+ * http://www.codingforums.com/forumdisplay.php?f=63
 
 Flex Groups:
 
