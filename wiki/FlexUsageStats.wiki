@@ -13,6 +13,7 @@ Flex Forums:
  * http://tech.groups.yahoo.com/group/flexcoders/
  * http://www.flexforum.de/
  * http://www.flashforum.de/forum
+ * http://www.flexdeveloper.eu/
 
 Flex Groups:
 
