@@ -46,5 +46,5 @@ The results of this survey will be discussed here *the end of December 2011* ...
 
 For the moment, please check out my Flex code examples:
 
- * [LoginExample LoginExample] written in Flex 3 and Flex 4 (Halo, Gumbo, Hero)
- * [ReligionChooser ReligionChooser] written in Flex 4 (Gumbo)
+ * [LoginExample Login Example] written in Flex 3 and Flex 4.1 (Halo, Gumbo) and Flex 4.5 (Hero)
+ * [ReligionChooser Religion Chooser] with Flex 4.1 (Gumbo)
