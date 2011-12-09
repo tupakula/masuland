@@ -91,4 +91,4 @@ IAppDelegate
 
 Code examples which implements this feature specification:
 
- * [LoginExample Login Example] written in Flex 3 and Flex 4 (Halo, Gumbo, Hero)
+ * [LoginExample Login Example] written in Flex 3 and Flex 4.1 (Halo, Gumbo) and Flex 4.5 (Hero)
