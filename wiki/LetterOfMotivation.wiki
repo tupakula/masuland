@@ -17,7 +17,3 @@ Here I'd like to explain the reason why I have created these code examples:
  * I am trying to get feedback from the Flex community to improve the way I am suggesting coding Flex.
  * Because Flex is still a very young technology I am trying to give Flex beginners the opportunity to compare existing Flex SDKs and Microarchitectures so that they can speed up their development time, and thereby, using less bad coding practices. 
  * For the moment, I see the need to point out certain things that should to be improved in Flex development ... for more information please read the document [WhatsWrongWithFlex "What's wrong with Flex?"].
-
-== 5. Vision: Where could Flex-Coding be in the year 2050? ==
-
-This section has moved [WhatsWrongWithFlex#5._Vision:_Where_could_Flex-Coding_be_in_the_year_2050? here].
