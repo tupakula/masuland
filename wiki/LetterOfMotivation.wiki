@@ -6,8 +6,8 @@ Here I'd like to explain the reason why I have created these code examples:
 
 == Code Examples ==
 
- * [LoginExample Login Example] with Flex 3 and Flex 4 (Halo, Gumbo, Hero)
- * [ReligionChooser Religion Chooser] with Flex 4 (Gumbo)
+ * [LoginExample Login Example] written in Flex 3 and Flex 4.1 (Halo, Gumbo) and Flex 4.5 (Hero)
+ * [ReligionChooser Religion Chooser] with Flex 4.1 (Gumbo)
 
 == Why have I created these code examples? ==
 
