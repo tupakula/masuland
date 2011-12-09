@@ -1,4 +1,4 @@
-#summary This page shows different versions of the "Login Example" applications
+#summary This page shows different versions of the "Login Example" application
 
 = Login Example =
 
