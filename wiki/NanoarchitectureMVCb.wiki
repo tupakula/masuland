@@ -23,31 +23,31 @@ Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleD
 This architecture contains 3 types of application flows:
 
 1. View Flow:
-  * (1) User Interface calls function in the Code Behind (Flex 3) / Component (Flex 4) class
-  * (9) Databinding updates User Interface
+ * (1) User Interface calls function in the Code Behind (Flex 3) / Component (Flex 4) class
+ * (9) Databinding updates User Interface
 
 2. Action Flow:
-  * (1) User Interface calls function in the Code Behind (Flex 3) / Component (Flex 4) class
-  * (2) Code Behind (Flex 3) / Component (Flex 4) class dispatches Event
-  * (7) Processed data will be written back to the Model
-  * (8) Databinding updates Code Behind (Flex 3) / Component (Flex 4) class
-  * (9) Databinding updates User Interface
+ * (1) User Interface calls function in the Code Behind (Flex 3) / Component (Flex 4) class
+ * (2) Code Behind (Flex 3) / Component (Flex 4) class dispatches Event
+ * (7) Processed data will be written back to the Model
+ * (8) Databinding updates Code Behind (Flex 3) / Component (Flex 4) class
+ * (9) Databinding updates User Interface
 
 3. Business Flow:
-  * (1) User Interface calls function in the Code Behind (Flex 3) / Component (Flex 4) class
-  * (2) Code Behind (Flex 3) / Component (Flex 4) class dispatches Event
-  * (3) Registered Action (Event handler) calls the Delegate
-  * (4) Delegate calls its implemented Service
-  * (5) Service returns data
-  * (6) Delegate returns data to registered Action (Event handler)
-  * (7) Processed data will be written back to the Model
-  * (8) Databinding updates Code Behind (Flex 3) / Component (Flex 4) class
-  * (9) Databinding updates User Interface
+ * (1) User Interface calls function in the Code Behind (Flex 3) / Component (Flex 4) class
+ * (2) Code Behind (Flex 3) / Component (Flex 4) class dispatches Event
+ * (3) Registered Action (Event handler) calls the Delegate
+ * (4) Delegate calls its implemented Service
+ * (5) Service returns data
+ * (6) Delegate returns data to registered Action (Event handler)
+ * (7) Processed data will be written back to the Model
+ * (8) Databinding updates Code Behind (Flex 3) / Component (Flex 4) class
+ * (9) Databinding updates User Interface
 
 == Code Examples Implementing MVCb / MVCp ==
 
-  * [LoginExample Login Example] with Flex 3 and Flex 4 (Halo, Gumbo, Hero)
-  * [ReligionChooser Religion Chooser] with Flex 4 (Gumbo)
+ * [LoginExample Login Example] written in Flex 3 and Flex 4.1 (Halo, Gumbo) and Flex 4.5 (Hero)
+ * [ReligionChooser Religion Chooser] with Flex 4.1 (Gumbo)
 
 ...
 
