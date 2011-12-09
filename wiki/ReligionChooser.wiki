@@ -6,15 +6,15 @@ The Religion Chooser application aims to be a fun application based on a decisio
 
 http://masuland.googlecode.com/files/ReligionChooserScreenshotWeb.png
 
-== Flex 4 (Gumbo) ==
+== Flex 4.1 (Gumbo) ==
 
-==== Flex 4 (Gumbo) with MVCpshCtl_PInj ====
+==== Flex 4.1 (Gumbo) with MVCpshCtl_PInj ====
 
-Features: Flex 4 (Gumbo) with [NanoarchitectureMVCb "Model - View - Component" (MVCp)], [NanoarchitectureCpsh "C-Push" (Cpsh)], "Controller" (Ctl) & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
+Features: Flex 4.1 (Gumbo) with [NanoarchitectureMVCb "Model - View - Component" (MVCp)], [NanoarchitectureCpsh "C-Push" (Cpsh)], "Controller" (Ctl) & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
 
- * Flex 4 (Gumbo) Religion Chooser with Parsley 2.4.1 (MVCb), ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboParsleyMVCpshCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboParsleyMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/ReligionChooserGumboParsleyMVCpshCtl_PInj/trunk/ svn repo])
- * Flex 4 (Gumbo) Religion Chooser with Spring 1.1 (MVCb), ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSpringMVCpshCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSpringMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/ReligionChooserGumboSpringMVCpshCtl_PInj/trunk/ svn repo])
- * Flex 4 (Gumbo) Religion Chooser with Swiz 1.3.1 (MVCb), ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSwizMVCpshCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSwizMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/ReligionChooserGumboSwizMVCpshCtl_PInj/trunk/ svn repo])
+ * Flex 4.1 (Gumbo) Religion Chooser with Parsley 2.4.1 (MVCb), ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboParsleyMVCpshCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboParsleyMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/ReligionChooserGumboParsleyMVCpshCtl_PInj/trunk/ svn repo])
+ * Flex 4.1 (Gumbo) Religion Chooser with Spring 1.1 (MVCb), ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSpringMVCpshCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSpringMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/ReligionChooserGumboSpringMVCpshCtl_PInj/trunk/ svn repo])
+ * Flex 4.1 (Gumbo) Religion Chooser with Swiz 1.3.1 (MVCb), ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSwizMVCpshCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSwizMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/ReligionChooserGumboSwizMVCpshCtl_PInj/trunk/ svn repo])
 
 ...
 
@@ -45,7 +45,7 @@ I am not making that decision for you. It is up to you to decide which one suite
 
 == More code examples ==
 
- * [LoginExample Login Example] written in Flex 3 and Flex 4 (Halo, Gumbo, Hero)
+ * [LoginExample Login Example] written in Flex 3 and Flex 4.1 (Halo, Gumbo) and Flex 4.5 (Hero)
 
 == Feedback ==
 
