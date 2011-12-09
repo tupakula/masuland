@@ -1,4 +1,4 @@
-#summary This page shows different versions of the "Religion Chooser" applications
+#summary This page shows different versions of the "Religion Chooser" application
 
 = Religion Chooser =
 
