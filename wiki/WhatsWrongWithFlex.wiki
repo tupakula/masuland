@@ -182,6 +182,10 @@ The current situation is good for all Flex Developers. Working in such an uncert
 
 ...
 
+==== 2.1.4. Positive: Adobe continuously open sourcing technology ====
+
+...
+
 === 2.2. What's negative? ===
 
 ==== 2.2.1. Negative: Release cycles of Flashplayer, Adobe AIR and Flex to fast ====
