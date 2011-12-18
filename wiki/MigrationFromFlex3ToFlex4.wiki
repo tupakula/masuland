@@ -22,7 +22,7 @@ See [LoginExample#Flex_4.1_(Spark)_with_MVCbCtl Flex 4.1 (Spark) Login Example w
 
 ==== Step 4: Extend your Code Behind classes from !SkinnableComponent or !SkinnableContainer ====
 
-See [LoginExample#Flex_4.1_(Spark)_with_MVCpllCtl_PInj Flex 4.1 (MX) Login Example with MVCpllCtl_PInj] or [LoginExample#Flex_4.1_(Spark)_with_MVCpshCtl_PInj  Flex 4.1 (MX) Login Example with MVCpshCtl_PInj]
+See [LoginExample#Flex_4.1_(Spark)_with_MVCpllCtl_PInj Flex 4.1 (Spark) Login Example with MVCpllCtl_PInj] or [LoginExample#Flex_4.1_(Spark)_with_MVCpshCtl_PInj  Flex 4.1 (Spark) Login Example with MVCpshCtl_PInj]
 
 ...
 
