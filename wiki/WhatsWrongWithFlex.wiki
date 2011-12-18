@@ -108,8 +108,8 @@ Microarchitectures have been created because of the lack of separation of concer
 http://masuland.googlecode.com/files/FlexWithMvcLayers-ApplicationFlow.png
 
 Implementations of Flex applications with the above mentioned MVC Layers can be found here:
- * [LoginExample Login Example] with Flex 3 and Flex 4 (Halo, Gumbo, Hero)
- * [ReligionChooser Religion Chooser] with Flex 4 (Gumbo)
+ * [LoginExample Login Example] with Flex 3 and Flex 4.1 (MX, Spark) and Flex 4.5 (Spark)
+ * [ReligionChooser Religion Chooser] with Flex 4 (Spark)
 
 Since the release of the Cairngorm 3 specification Adobe Consulting [http://sourceforge.net/adobe/cairngorm/home/Home/ suggests] the use of third party open source Inversion-of-Control (IoC) Microarchitectures like ([http://www.spicefactory.org/parsley/ Parsley], [http://www.springactionscript.org/ Spring Actionscript], [http://www.swizframework.org/ Swiz], [http://www.robotlegs.org/ Robotlegs], [http://mate.asfusion.com/ Mate]) ... which means: Inject your things! 
 
