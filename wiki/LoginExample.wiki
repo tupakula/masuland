@@ -245,7 +245,7 @@ For Flex 4 applications, I recommend, you should have a look at the [LoginExampl
 Please read this [MigrationFromFlex3ToFlex4 Flex 3 to Flex 4 Migration Guide].
 
 ==== Who is this guy occupying land in the web? ====
-Details about me you can find [http://masuland.wordpress.com/about/ here]. 
+Details about me can be found [http://masuland.wordpress.com/about/ here].
 
 ...
 
