@@ -248,7 +248,7 @@ Please read this [MigrationFromFlex3ToFlex4 Flex 3 to Flex 4 Migration Guide].
 You can post problems and feature enhancements into my [http://code.google.com/p/masuland/issues/list issue tracker] or you can contact me [http://www.masuland.com?content=contact directly].
 
 ==== Can I participate in your project? ====
-Sure! There are still things left for me to do (see [http://code.google.com/p/masuland/issues/list issue tracker]) Any help would be appreciated!
+Sure! There are still things left for me to do (see [http://code.google.com/p/masuland/issues/list issue tracker]). Any help would be appreciated!
 
 ==== Who is this guy occupying land in the web? ====
 Details about me can be found [http://masuland.wordpress.com/about/ here].
