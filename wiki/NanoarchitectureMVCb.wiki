@@ -46,8 +46,8 @@ This architecture contains 3 types of application flows:
 
 == Code Examples Implementing MVCb / MVCp ==
 
- * [LoginExample Login Example] written in Flex 3 and Flex 4.1 (Halo, Gumbo) and Flex 4.5 (Hero)
- * [ReligionChooser Religion Chooser] with Flex 4.1 (Gumbo)
+ * [LoginExample Login Example] written in Flex 3 and Flex 4.1 (MX, Spark) and Flex 4.5 (Spark)
+ * [ReligionChooser Religion Chooser] with Flex 4.1 (Spark)
 
 ...
 
