@@ -42,7 +42,7 @@ Don't know. Maybe somebody could create performance tests for it ;)
 I am not making that decision for you. It is up to you to decide which one suites best to your needs.
 
 ==== I have found issues in your code examples. Where can I post them? ====
-You can post problems and feature enhancements into my [http://code.google.com/p/masuland/issues/list issue tracker] or you can contact me [http://www.masuland.com?content=contact directly].
+You can post problems and feature enhancements into my [http://code.google.com/p/masuland/issues/list issue tracker], or, you can contact me [http://www.masuland.com?content=contact directly].
 
 ==== Can I participate in your project? ====
 Sure! There are still things left for me to do (see [http://code.google.com/p/masuland/issues/list issue tracker]). Any help would be appreciated!
