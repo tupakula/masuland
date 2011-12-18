@@ -54,4 +54,4 @@ IAppDelegate
 
 Code examples which implement this feature specification:
 
- * [ReligionChooser Religion Chooser] written in Flex 4.1 (Gumbo)
+ * [ReligionChooser Religion Chooser] written in Flex 4.1 (Spark)
