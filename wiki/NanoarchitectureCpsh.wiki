@@ -73,6 +73,7 @@ _Complete source available in the  [http://masuland.googlecode.com/svn/trunk/Log
 == Code Examples Implementing Cpsh ==
 
  * [LoginExample Login Example] written in Flex 3 and Flex 4.1 (MX, Spark) and Flex 4.5 (Spark)
+ * [ReligionChooser Religion Chooser] with Flex 4.1 (Spark)
 
 ...
 
