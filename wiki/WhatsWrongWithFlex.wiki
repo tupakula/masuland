@@ -184,6 +184,9 @@ The current situation is good for all Flex Developers. Working in such an uncert
 
 ==== 2.1.4. Positive: Adobe continuously open sourcing technology ====
 
+ * http://opensource.adobe.com/
+ * http://sourceforge.net/adobe/
+
 ...
 
 === 2.2. What's negative? ===
