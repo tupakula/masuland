@@ -186,6 +186,7 @@ The current situation is good for all Flex Developers. Working in such an uncert
 
  * http://opensource.adobe.com/
  * http://sourceforge.net/adobe/
+ * Apache Flex, http://wiki.apache.org/incubator/FlexProposal
 
 ...
 
