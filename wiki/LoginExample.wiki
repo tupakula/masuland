@@ -2,7 +2,7 @@
 
 = Login Example =
 
-Please read the [LoginExampleFeatureSpec Feature Specification] of the Login Example application. The following code examples provide several solutions for dimensions in Flex development:
+Please read the [LoginExampleFeatureSpec Feature Specification] of the Login Example application. The following code examples provide solutions for several dimensions in Flex development:
 
  * *Flex SDKs* (Flex 3.5 "Halo", Flex 4.1 "Gumbo" and Flex 4.5 "Hero")
  * *Runtimes* (Adobe Flashplayer & Adobe AIR)
