@@ -2,7 +2,13 @@
 
 = Religion Chooser =
 
-The Religion Chooser application aims to be a fun application based on a decision tree structure created by [http://www.holytaco.com/flowchart-determine-what-religion-you-should-follow holytaco.com]. For more information about the application please read the [ReligionChooserFeatureSpec Religion Chooser Feature Specification] document. Implementations with different Flex versions like Flex 4.1 (codename "Gumbo") and Flex 4.5 (codename "Hero") TODO and IoC Microarchitectures ([http://www.spicefactory.org/parsley/ Parsley 2.4.1], [http://www.springactionscript.org/ Spring AS 1.1], [http://www.swizframework.org/ Swiz 1.3.1]) are listed below. The code follows additional Flex coding conventions ([Flex4CodingConventions Flex 4]). 
+The Religion Chooser application aims to be a fun application based on a decision tree structure created by [http://www.holytaco.com/flowchart-determine-what-religion-you-should-follow holytaco.com]. For more information about the application please read the [ReligionChooserFeatureSpec Religion Chooser Feature Specification] document. The following code examples provide several solutions for dimensions in Flex development:
+
+ * *Flex SDKs* (Flex 4.1 "Gumbo" and Flex 4.5 "Hero" TODO)
+ * *IoC Microarchitectures* ([http://www.spicefactory.org/parsley/ Parsley 2.4.1], [http://www.springactionscript.org/ Spring AS 1.1], [http://www.swizframework.org/ Swiz 1.3.1]) are listed below. 
+ * *Nanoarchitectures* ([NanoarchitectureMVCb MVCp], [NanoarchitectureCpsh Cpsh], Ctl, [NanoarchitecturePInj PInj])
+
+The code follows additional Flex coding conventions ([Flex4CodingConventions Flex 4]). 
 
 http://masuland.googlecode.com/files/ReligionChooserScreenshotWeb.png
 
