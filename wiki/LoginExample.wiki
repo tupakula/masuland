@@ -29,6 +29,7 @@ Please read the [LoginExampleFeatureSpec Feature Specification] of the Login Exa
  * *Flex Automation* ([http://www.riatest.com/ RIATest], [http://www.gorillalogic.com/flexmonkey FlexMonkey] ... etc.)
  * *Server projects* ([http://www.silexlabs.org/amfphp/ AmfPHP 1.9], [http://framework.zend.com/download/amf Zend AMF 1.11.11], BlazeDS TODO, GraniteDS TODO)
  * *Flex coding conventions* ([Flex3CodingConventions Flex 3], [Flex4CodingConventions Flex 4])
+ * *Project planning* (see [LoginExampleFeatureSpec Login Example Feature Specification])
 
 == Pictures == 
 
