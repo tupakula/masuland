@@ -18,8 +18,9 @@ Please read the [LoginExampleFeatureSpec Feature Specification] of the Login Exa
  * *Testing frameworks* ([http://flexunit.org/ FlexUnit 4.0])
  * *Flex Automation* ([http://www.riatest.com/ RIATest], [http://www.gorillalogic.com/flexmonkey FlexMonkey] ... etc.)
  * *Server projects* (with [http://www.silexlabs.org/amfphp/ AmfPHP 1.9], [http://framework.zend.com/download/amf Zend AMF 1.11.11], BlazeDS TODO, GraniteDS TODO)
+ * *Flex coding conventions* ([Flex3CodingConventions Flex 3], [Flex4CodingConventions Flex 4])
 
-The code follows additional Flex coding conventions ([Flex3CodingConventions Flex 3], [Flex4CodingConventions Flex 4]). 
+== Table of Content == 
 
  * [LoginExample#Client Client]
   * [LoginExample#Flex_3 Flex 3]
