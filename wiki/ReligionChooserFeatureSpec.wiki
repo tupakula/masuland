@@ -12,7 +12,11 @@ The Religion Chooser application guides you through a decision process to find y
 
 Depending on the layout you have chosen you can select between different coloring styles (“red” or “green”) and languages (“English” or “German”). Since the coloring style and the language of an application is always dependent on its application layout – imagine an application with different writing directions (for example English or Chinese) or an application which is running on different devices (web browser or mobile phone) with different coloring styles (“Summer” or “Winter” theme) – the Religion Chooser application should be able to deal with that, too.
 
-== 1.2. Value Objects ==
+== 1.2. Wireframe ==
+
+...
+
+== 1.3. Value Objects ==
 
 The Religion Chooser application uses the following value objects.
 
@@ -39,7 +43,7 @@ LocaleVO
 
 }}}
 
-== 1.3. Client-Server Interface (Delegates) ==
+== 1.4. Client-Server Interface (Delegates) ==
 
 The client-server communication will be defined in delegate classes. The Religion Chooser application uses the following methods for client-server communication. 
 
