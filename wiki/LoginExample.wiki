@@ -2,6 +2,15 @@
 
 = Login Example =
 
+ * [LoginExample#Client Client]
+  * [LoginExample#Flex_3 Flex 3]
+  * [LoginExample#Flex_4.1_(MX) Flex 4.1 (MX)]
+  * [LoginExample#Flex_4.1_(Spark) Flex 4.1 (Spark)]
+  * [LoginExample#Flex_4.5_(Spark) Flex 4.5 (Spark)]
+ * [LoginExample#Server Server]
+  * [LoginExample#AmfPHP AmfPHP]
+  * [LoginExample#Zend_AMF Zend AMF]
+
 Please read the [LoginExampleFeatureSpec Feature Specification] of the Login Example application. The following code examples provide solutions for several dimensions in Flex development:
 
  * *Flex SDKs* (Flex 3.5 "Halo", Flex 4.1 "Gumbo" and Flex 4.5 "Hero")
@@ -19,17 +28,6 @@ Please read the [LoginExampleFeatureSpec Feature Specification] of the Login Exa
  * *Flex Automation* ([http://www.riatest.com/ RIATest], [http://www.gorillalogic.com/flexmonkey FlexMonkey] ... etc.)
  * *Server projects* (with [http://www.silexlabs.org/amfphp/ AmfPHP 1.9], [http://framework.zend.com/download/amf Zend AMF 1.11.11], BlazeDS TODO, GraniteDS TODO)
  * *Flex coding conventions* ([Flex3CodingConventions Flex 3], [Flex4CodingConventions Flex 4])
-
-== Table of Content == 
-
- * [LoginExample#Client Client]
-  * [LoginExample#Flex_3 Flex 3]
-  * [LoginExample#Flex_4.1_(MX) Flex 4.1 (MX)]
-  * [LoginExample#Flex_4.1_(Spark) Flex 4.1 (Spark)]
-  * [LoginExample#Flex_4.5_(Spark) Flex 4.5 (Spark)]
- * [LoginExample#Server Server]
-  * [LoginExample#AmfPHP AmfPHP]
-  * [LoginExample#Zend_AMF Zend AMF]
 
 == Pictures == 
 
