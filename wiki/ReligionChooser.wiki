@@ -8,6 +8,7 @@ The Religion Chooser application aims to be a fun application based on a decisio
  * *IoC Microarchitectures* ([http://www.spicefactory.org/parsley/ Parsley 2.4.1], [http://www.springactionscript.org/ Spring AS 1.1], [http://www.swizframework.org/ Swiz 1.3.1])
  * *Nanoarchitectures* ([NanoarchitectureMVCb MVCp], [NanoarchitectureCpsh Cpsh], Ctl, [NanoarchitecturePInj PInj])
  * *Flex coding conventions* ([Flex4CodingConventions Flex 4]) 
+ * *Project planning* (see [ReligionChooserFeatureSpec Religion Chooser Feature Specification])
 
 == Pictures == 
 
