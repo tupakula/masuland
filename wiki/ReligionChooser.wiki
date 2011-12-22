@@ -2,6 +2,8 @@
 
 = Religion Chooser =
 
+<wiki:toc max_depth="3" />
+
 The Religion Chooser application aims to be a fun application based on a decision tree structure created by [http://www.holytaco.com/flowchart-determine-what-religion-you-should-follow holytaco.com]. For more information about the application please read the [ReligionChooserFeatureSpec Feature Specification] document. The following code examples provide solutions for several dimensions in Flex development:
 
  # *Flex SDKs* (Flex 4.1 "Gumbo" and Flex 4.5 "Hero" TODO)
@@ -10,13 +12,15 @@ The Religion Chooser application aims to be a fun application based on a decisio
  # *Flex coding conventions* ([Flex4CodingConventions Flex 4]) 
  # *Project planning* (see [ReligionChooserFeatureSpec Religion Chooser Feature Specification])
 
-== Pictures == 
+== Screenshots == 
 
 === Religion Chooser for Web ===
 
 http://masuland.googlecode.com/files/ReligionChooserScreenshotWeb.png
 
-== Flex 4.1 (Spark) ==
+== Client ==
+
+=== Flex 4.1 (Spark) ===
 
 ==== Flex 4.1 (Spark) with MVCpshCtl_PInj ====
 
@@ -62,7 +66,7 @@ Details about me can be found [http://masuland.wordpress.com/about/ here].
 
 ...
 
-== More code examples ==
+== More Code Examples ==
 
  * [LoginExample Login Example] written in Flex 3 and Flex 4.1 (MX, Spark) and Flex 4.5 (Spark)
 
