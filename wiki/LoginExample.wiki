@@ -2,14 +2,7 @@
 
 = Login Example =
 
- * [LoginExample#Client Client]
-  * [LoginExample#Flex_3 Flex 3]
-  * [LoginExample#Flex_4.1_(MX) Flex 4.1 (MX)]
-  * [LoginExample#Flex_4.1_(Spark) Flex 4.1 (Spark)]
-  * [LoginExample#Flex_4.5_(Spark) Flex 4.5 (Spark)]
- * [LoginExample#Server Server]
-  * [LoginExample#AmfPHP AmfPHP]
-  * [LoginExample#Zend_AMF Zend AMF]
+<wiki:toc max_depth="3" />
 
 Please read the [LoginExampleFeatureSpec Feature Specification] of the Login Example application. The following code examples provide solutions for several dimensions in Flex development:
 
@@ -31,7 +24,7 @@ Please read the [LoginExampleFeatureSpec Feature Specification] of the Login Exa
  # *Flex coding conventions* ([Flex3CodingConventions Flex 3], [Flex4CodingConventions Flex 4])
  # *Project planning* (see [LoginExampleFeatureSpec Login Example Feature Specification])
 
-== Pictures == 
+== Screenshots == 
 
 === Login Example for Web ===
 
@@ -45,9 +38,9 @@ http://masuland.googlecode.com/files/LoginExampleScreenshotDesktop.png
 
 http://masuland.googlecode.com/files/LoginExampleScreenshotMobile.png
 
-= Client = 
+== Client == 
 
-== Flex 3 == 
+=== Flex 3 === 
 
 ==== Flex 3 with MVC ====
 
@@ -61,7 +54,7 @@ Features: Flex 3 with "Model - View - Controller" (MVC) Nanoarchitecture
 
 ...
 
-== Flex 4.1 (MX) ==
+=== Flex 4.1 (MX) ===
 
 ==== Flex 4.1 (MX) with MVC ====
 
@@ -134,7 +127,7 @@ Features: Flex 4.1 (MX) with [NanoarchitectureMVCb "Model - View - Code Behind" 
 
 ...
 
-== Flex 4.1 (Spark) ==
+=== Flex 4.1 (Spark) ===
 
 ==== Flex 4.1 (Spark) with MVCbCtl ====
 
@@ -178,7 +171,7 @@ Features: Flex 4.1 (Spark) with [NanoarchitectureMVCb "Model - View - Component"
 
 ...
 
-== Flex 4.5 (Spark) ==
+=== Flex 4.5 (Spark) ===
 
 ==== Flex 4.5 (Spark) with MVCpshCmd ====
 
@@ -210,13 +203,13 @@ Features: Flex 4.5 (Spark) with [NanoarchitectureMVCb "Model - View - Component"
 
 ...
 
-= Server = 
+== Server == 
 
-==== AmfPHP ====
+=== AmfPHP ===
 
  * Login Example Server, AmfPHP 1.9, ([http://masuland.googlecode.com/svn/trunk/LoginExampleServerAmfPHP_1.9/trunk/ svn repo])
 
-==== Zend AMF ====
+=== Zend AMF ===
 
  * Login Example Server, Zend AMF 1.11.11, ([http://masuland.googlecode.com/svn/trunk/LoginExampleServerZendAmf_1.11.11/trunk/ svn repo])
 
