@@ -2,6 +2,7 @@ package com.masuland.loginexample.data.vo
 {
 	import mx.collections.ArrayCollection;
 
+	[RemoteClass(alias='com.masuland.loginexample.data.dto.LayoutDTO')]
 	[Bindable]
 	/**
 	 * @author masuland.com
