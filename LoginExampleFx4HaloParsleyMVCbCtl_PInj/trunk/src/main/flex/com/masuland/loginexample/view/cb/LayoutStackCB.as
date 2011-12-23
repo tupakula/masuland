@@ -1,6 +1,6 @@
 package com.masuland.loginexample.view.cb
 {
-	import com.masuland.loginexample.vo.LayoutVO;
+	import com.masuland.loginexample.model.vo.LayoutVO;
 
 	public class LayoutStackCB
 	{

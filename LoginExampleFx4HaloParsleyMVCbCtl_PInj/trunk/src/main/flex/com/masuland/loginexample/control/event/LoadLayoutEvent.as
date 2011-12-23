@@ -1,6 +1,6 @@
 package com.masuland.loginexample.control.event
 {	
-	import com.masuland.loginexample.vo.LayoutVO;
+	import com.masuland.loginexample.model.vo.LayoutVO;
 	
 	import flash.events.Event;
 

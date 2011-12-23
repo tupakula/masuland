@@ -1,17 +1,17 @@
-package com.masuland.loginexample.vo
+package com.masuland.loginexample.model.vo
 {
 	[Bindable]
 	/**
 	 * @author masuland.com
 	 */
-	public class LocaleVO
+	public class StyleVO
 	{
 		//----------------------
 		// Properties
 		//----------------------
 		
 		public var name:String;
-		public var code:String;
+		public var path:String;
 		
 		//----------------------
 		// Methods
