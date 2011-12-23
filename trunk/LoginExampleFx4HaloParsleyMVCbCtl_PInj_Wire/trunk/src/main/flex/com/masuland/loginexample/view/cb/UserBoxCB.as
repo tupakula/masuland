@@ -1,7 +1,7 @@
 package com.masuland.loginexample.view.cb
 {
-	import com.masuland.loginexample.control.event.AppEvent;
-	import com.masuland.loginexample.control.event.UpdateUserEvent;
+	import com.masuland.loginexample.action.event.AppEvent;
+	import com.masuland.loginexample.action.event.UpdateUserEvent;
 	import com.masuland.loginexample.vo.UserVO;
 
 	public class UserBoxCB

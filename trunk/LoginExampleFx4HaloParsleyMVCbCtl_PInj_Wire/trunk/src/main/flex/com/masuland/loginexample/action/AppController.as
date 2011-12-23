@@ -1,14 +1,14 @@
-package com.masuland.loginexample.control
+package com.masuland.loginexample.action
 {
 	import com.masuland.loginexample.business.IAppDelegate;
-	import com.masuland.loginexample.control.event.AppEvent;
-	import com.masuland.loginexample.control.event.LoadLayoutEvent;
-	import com.masuland.loginexample.control.event.LoadLocaleEvent;
-	import com.masuland.loginexample.control.event.LoadStyleEvent;
-	import com.masuland.loginexample.control.event.LoginEvent;
-	import com.masuland.loginexample.control.event.RegisterEvent;
-	import com.masuland.loginexample.control.event.UpdateUserEvent;
-	import com.masuland.loginexample.model.AppModel;
+	import com.masuland.loginexample.action.event.AppEvent;
+	import com.masuland.loginexample.action.event.LoadLayoutEvent;
+	import com.masuland.loginexample.action.event.LoadLocaleEvent;
+	import com.masuland.loginexample.action.event.LoadStyleEvent;
+	import com.masuland.loginexample.action.event.LoginEvent;
+	import com.masuland.loginexample.action.event.RegisterEvent;
+	import com.masuland.loginexample.action.event.UpdateUserEvent;
+	import com.masuland.loginexample.data.AppModel;
 	import com.masuland.loginexample.state.AppStackState;
 	import com.masuland.loginexample.state.LoginBoxState;
 	import com.masuland.loginexample.state.SettingsBoxState;
