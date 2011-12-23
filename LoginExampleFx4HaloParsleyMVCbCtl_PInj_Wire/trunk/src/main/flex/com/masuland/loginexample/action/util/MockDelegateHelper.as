@@ -1,4 +1,4 @@
-package com.masuland.loginexample.util 
+package com.masuland.loginexample.action.util 
 {
 	import flash.utils.setTimeout;
 	
