@@ -20,7 +20,7 @@
 	
 	<mx:Script>
 		<![CDATA[
-			import com.masuland.loginexample.business.AppBean;
+			import com.masuland.loginexample.AppBean;
 			import com.masuland.loginexample.action.AppEventNames;
 			import com.masuland.loginexample.data.AppModel;
 			
