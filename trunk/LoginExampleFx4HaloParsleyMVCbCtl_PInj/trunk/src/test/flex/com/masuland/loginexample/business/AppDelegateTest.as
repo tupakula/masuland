@@ -1,9 +1,9 @@
 package com.masuland.loginexample.business
 {
 	import com.masuland.loginexample.AppConfig;
-	import com.masuland.loginexample.vo.AuthenticationVO;
-	import com.masuland.loginexample.vo.SettingsVO;
-	import com.masuland.loginexample.vo.UserVO;
+	import com.masuland.loginexample.model.vo.AuthenticationVO;
+	import com.masuland.loginexample.model.vo.SettingsVO;
+	import com.masuland.loginexample.model.vo.UserVO;
 	
 	import mx.rpc.AsyncToken;
 	import mx.rpc.events.FaultEvent;

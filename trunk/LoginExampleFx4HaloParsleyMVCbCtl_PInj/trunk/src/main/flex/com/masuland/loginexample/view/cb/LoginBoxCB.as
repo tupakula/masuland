@@ -4,8 +4,8 @@ package com.masuland.loginexample.view.cb
 	import com.masuland.loginexample.control.event.LoginEvent;
 	import com.masuland.loginexample.control.event.RegisterEvent;
 	import com.masuland.loginexample.model.AppModel;
-	import com.masuland.loginexample.state.LoginBoxState;
-	import com.masuland.loginexample.vo.AuthenticationVO;
+	import com.masuland.loginexample.model.state.LoginBoxState;
+	import com.masuland.loginexample.model.vo.AuthenticationVO;
 
 	public class LoginBoxCB
 	{

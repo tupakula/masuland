@@ -9,14 +9,14 @@ package com.masuland.loginexample.control
 	import com.masuland.loginexample.control.event.RegisterEvent;
 	import com.masuland.loginexample.control.event.UpdateUserEvent;
 	import com.masuland.loginexample.model.AppModel;
-	import com.masuland.loginexample.state.AppStackState;
-	import com.masuland.loginexample.state.LoginBoxState;
-	import com.masuland.loginexample.state.SettingsBoxState;
-	import com.masuland.loginexample.vo.LayoutVO;
-	import com.masuland.loginexample.vo.LocaleVO;
-	import com.masuland.loginexample.vo.SettingsVO;
-	import com.masuland.loginexample.vo.StyleVO;
-	import com.masuland.loginexample.vo.UserVO;
+	import com.masuland.loginexample.model.state.AppStackState;
+	import com.masuland.loginexample.model.state.LoginBoxState;
+	import com.masuland.loginexample.model.state.SettingsBoxState;
+	import com.masuland.loginexample.model.vo.LayoutVO;
+	import com.masuland.loginexample.model.vo.LocaleVO;
+	import com.masuland.loginexample.model.vo.SettingsVO;
+	import com.masuland.loginexample.model.vo.StyleVO;
+	import com.masuland.loginexample.model.vo.UserVO;
 	
 	import flash.events.IEventDispatcher;
 	
