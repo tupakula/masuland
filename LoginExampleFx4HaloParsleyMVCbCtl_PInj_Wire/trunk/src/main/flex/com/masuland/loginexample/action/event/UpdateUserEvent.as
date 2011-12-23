@@ -1,35 +1,35 @@
-package com.masuland.loginexample.control.event
+package com.masuland.loginexample.action.event
 {	
-	import com.masuland.loginexample.vo.StyleVO;
+	import com.masuland.loginexample.vo.UserVO;
 	
 	import flash.events.Event;
 
 	/**
 	 * @author masuland.com
 	 */
-	public class LoadStyleEvent extends Event
+	public class UpdateUserEvent extends Event
 	{	
 		//----------------------
 		// Constants
 		//----------------------
 		
-		public static const EVENT_NAME:String = 'LoadStyleEvent.EVENT_NAME';
+		public static const EVENT_NAME:String = 'UpdateUserEvent.EVENT_NAME';
 		
 		//----------------------
 		// Properties
 		//----------------------
 		
-		public var style:StyleVO;
+		public var user:UserVO;
 		
 		//----------------------
 		// Constructor
 		//----------------------
 		
-		public function LoadStyleEvent(style:StyleVO, bubbles:Boolean=true, cancelable:Boolean=true)
+		public function UpdateUserEvent(user:UserVO, bubbles:Boolean=true, cancelable:Boolean=true)
 		{
 			super(EVENT_NAME, bubbles, cancelable);
 			
-			this.style = style;
+			this.user = user;
 		}
 	}
 }

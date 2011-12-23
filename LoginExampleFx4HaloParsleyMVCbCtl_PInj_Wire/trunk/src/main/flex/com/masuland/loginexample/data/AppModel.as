@@ -1,4 +1,4 @@
-package com.masuland.loginexample.model
+package com.masuland.loginexample.data
 {
 	import com.masuland.loginexample.vo.LayoutVO;
 	import com.masuland.loginexample.vo.LocaleVO;

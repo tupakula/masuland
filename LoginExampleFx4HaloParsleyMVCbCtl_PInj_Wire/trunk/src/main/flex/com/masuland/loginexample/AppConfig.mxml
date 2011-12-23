@@ -2,8 +2,8 @@
 <mx:Object 
 	xmlns:mx="http://www.adobe.com/2006/mxml" 
 	xmlns:business="com.masuland.loginexample.business.*" 
-	xmlns:control="com.masuland.loginexample.control.*" 
-	xmlns:model="com.masuland.loginexample.model.*" 
+	xmlns:action="com.masuland.loginexample.action.*" 
+	xmlns:data="com.masuland.loginexample.data.*" 
 	xmlns:cb="com.masuland.loginexample.view.cb.*" 
 	>
 	
@@ -82,13 +82,13 @@
 	
 	<!-- ACTION -->	
 	
-	<control:AppController
+	<action:AppController
 		id="appController"
 		/>
 	
 	<!-- DATA -->	
 	
-	<model:AppModel 
+	<data:AppModel 
 		id="appModel"
 		/>
 	
