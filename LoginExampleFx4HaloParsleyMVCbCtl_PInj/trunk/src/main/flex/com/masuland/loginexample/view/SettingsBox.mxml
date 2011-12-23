@@ -19,9 +19,9 @@
 	<mx:Script>
 		<![CDATA[
 			import com.masuland.loginexample.view.cb.SettingsBoxCB;
-			import com.masuland.loginexample.model.vo.LayoutVO;
-			import com.masuland.loginexample.model.vo.LocaleVO;
-			import com.masuland.loginexample.model.vo.StyleVO;
+			import com.masuland.loginexample.data.vo.LayoutVO;
+			import com.masuland.loginexample.data.vo.LocaleVO;
+			import com.masuland.loginexample.data.vo.StyleVO;
 			
 			[Inject]
 			[Bindable]

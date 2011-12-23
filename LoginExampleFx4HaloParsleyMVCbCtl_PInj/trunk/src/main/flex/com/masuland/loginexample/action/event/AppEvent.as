@@ -1,4 +1,4 @@
-package com.masuland.loginexample.control.event
+package com.masuland.loginexample.action.event
 {
 	import flash.events.Event;
 

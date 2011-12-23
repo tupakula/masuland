@@ -1,11 +1,11 @@
 package com.masuland.loginexample.view.cb
 {
-	import com.masuland.loginexample.control.event.AppEvent;
-	import com.masuland.loginexample.control.event.LoginEvent;
-	import com.masuland.loginexample.control.event.RegisterEvent;
-	import com.masuland.loginexample.model.AppModel;
-	import com.masuland.loginexample.model.state.LoginBoxState;
-	import com.masuland.loginexample.model.vo.AuthenticationVO;
+	import com.masuland.loginexample.action.event.AppEvent;
+	import com.masuland.loginexample.action.event.LoginEvent;
+	import com.masuland.loginexample.action.event.RegisterEvent;
+	import com.masuland.loginexample.data.AppModel;
+	import com.masuland.loginexample.data.state.LoginBoxState;
+	import com.masuland.loginexample.data.vo.AuthenticationVO;
 
 	public class LoginBoxCB
 	{

@@ -1,14 +1,14 @@
 package com.masuland.loginexample.view.cb
 {
-	import com.masuland.loginexample.control.event.LoadLayoutEvent;
-	import com.masuland.loginexample.control.event.LoadLocaleEvent;
-	import com.masuland.loginexample.control.event.LoadStyleEvent;
-	import com.masuland.loginexample.model.AppModel;
-	import com.masuland.loginexample.model.state.SettingsBoxState;
-	import com.masuland.loginexample.model.vo.LayoutVO;
-	import com.masuland.loginexample.model.vo.LocaleVO;
-	import com.masuland.loginexample.model.vo.SettingsVO;
-	import com.masuland.loginexample.model.vo.StyleVO;
+	import com.masuland.loginexample.action.event.LoadLayoutEvent;
+	import com.masuland.loginexample.action.event.LoadLocaleEvent;
+	import com.masuland.loginexample.action.event.LoadStyleEvent;
+	import com.masuland.loginexample.data.AppModel;
+	import com.masuland.loginexample.data.state.SettingsBoxState;
+	import com.masuland.loginexample.data.vo.LayoutVO;
+	import com.masuland.loginexample.data.vo.LocaleVO;
+	import com.masuland.loginexample.data.vo.SettingsVO;
+	import com.masuland.loginexample.data.vo.StyleVO;
 
 	public class SettingsBoxCB
 	{

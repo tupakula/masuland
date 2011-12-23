@@ -1,4 +1,4 @@
-package com.masuland.loginexample.model.vo
+package com.masuland.loginexample.data.vo
 {
 	import mx.collections.ArrayCollection;
 
