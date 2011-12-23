@@ -1,4 +1,4 @@
-package com.masuland.loginexample.state
+package com.masuland.loginexample.data.state
 {
 	/**
 	 * @author masuland.com

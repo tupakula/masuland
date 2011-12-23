@@ -4,11 +4,11 @@ package com.masuland.loginexample.view.cb
 	import com.masuland.loginexample.action.event.LoadLocaleEvent;
 	import com.masuland.loginexample.action.event.LoadStyleEvent;
 	import com.masuland.loginexample.data.AppModel;
-	import com.masuland.loginexample.state.SettingsBoxState;
-	import com.masuland.loginexample.vo.LayoutVO;
-	import com.masuland.loginexample.vo.LocaleVO;
-	import com.masuland.loginexample.vo.SettingsVO;
-	import com.masuland.loginexample.vo.StyleVO;
+	import com.masuland.loginexample.data.state.SettingsBoxState;
+	import com.masuland.loginexample.data.vo.LayoutVO;
+	import com.masuland.loginexample.data.vo.LocaleVO;
+	import com.masuland.loginexample.data.vo.SettingsVO;
+	import com.masuland.loginexample.data.vo.StyleVO;
 
 	public class SettingsBoxCB
 	{
