@@ -1,6 +1,6 @@
-package com.masuland.loginexample.control.event
+package com.masuland.loginexample.action.event
 {	
-	import com.masuland.loginexample.model.vo.LocaleVO;
+	import com.masuland.loginexample.data.vo.LocaleVO;
 	
 	import flash.events.Event;
 
