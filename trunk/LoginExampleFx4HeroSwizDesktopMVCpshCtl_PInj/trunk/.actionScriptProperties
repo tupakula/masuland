@@ -37,7 +37,7 @@
   <buildTargets>
     <buildTarget buildTargetName="default">
       <actionScriptSettings version="1"/>
-      <airSettings airCertificatePath="" airTimestamp="true" version="1">
+      <airSettings airCertificatePath="/Users/masu/Workspace/Code/FB4.5/masuland.p12" airTimestamp="true" version="1">
         <airExcludes/>
       </airSettings>
     </buildTarget>
