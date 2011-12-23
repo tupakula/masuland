@@ -6,26 +6,71 @@
 	xmlns:data="com.masuland.loginexample.data.*" 
 	xmlns:codebehind="com.masuland.loginexample.view.codebehind.*" 
 	>
-	
-	<mx:ChannelSet 
-		id="appDynamicChannel"
+
+	<!-- SERVICE -->	
+
+	<!-- AmfPHP -->
+<!--
+	<mx:RemoteObject
+		id="appRemoteObject" 
+		destination="amfphp"
+		source="AppMockDAO"
+		showBusyCursor="true"
 		>
-		<mx:channels>
-			<mx:AMFChannel 
-				id="graniteAmfChannel"
-				url="http://localhost:8080/AppName/graniteamf/"
-				/>
-		</mx:channels>
-	</mx:ChannelSet> 
+		<mx:channelSet>
+			<mx:ChannelSet>
+				<mx:channels>
+					<mx:AMFChannel 
+						url="http://localhost/LoginExampleServerAmfPHP_1.9/gateway.php"
+						/>
+				</mx:channels>
+			</mx:ChannelSet> 
+		</mx:channelSet>
+	</mx:RemoteObject>
+-->	
 	
+	<!-- ZendAMF -->
+<!--
+	<mx:RemoteObject
+		id="appRemoteObject" 
+		destination="zend"
+		source="AppMockDAO"
+		showBusyCursor="true"
+		>
+		<mx:channelSet>
+			<mx:ChannelSet>
+				<mx:channels>
+					<mx:AMFChannel 
+						url="http://localhost/LoginExampleServerZendAmf_1.11.11/"
+						/>
+				</mx:channels>
+			</mx:ChannelSet> 
+		</mx:channelSet>
+	</mx:RemoteObject>
+-->	
+	
+	<!-- GraniteDS -->
+<!--	
 	<mx:RemoteObject
 		id="appRemoteObject" 
 		destination="appService"
 		source="com.masuland.loginexample.parsley.service.AppService"
 		channelSet="{ appDynamicChannel }"
-		/>
+		>
+		<mx:channelSet>
+			<mx:ChannelSet>
+				<mx:channels>
+					<mx:AMFChannel 
+						url="http://localhost:8080/AppName/graniteamf/"
+						/>
+				</mx:channels>
+			</mx:ChannelSet> 
+		</mx:channelSet>
+	</mx:RemoteObject>
+-->	
 	
-	<!-- DELEGATE -->	
+	<!-- BUSINESS -->	
+
 <!--	
 	<business:AppAmfDelegate 
 		id="appDelegate" 
@@ -35,19 +80,19 @@
 		id="appDelegate" 
 		/>
 	
-	<!-- CONTROLLER -->	
+	<!-- ACTION -->	
 	
 	<action:AppController
 		id="appController"
 		/>
 	
-	<!-- MODEL -->	
+	<!-- DATA -->	
 	
 	<data:AppModel 
 		id="appModel"
 		/>
 	
-	<!-- CODE BEHIND -->
+	<!-- VIEW -->
 	
 	<codebehind:SettingsBoxCB 
 		id="appViewCB"
