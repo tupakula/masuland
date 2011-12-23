@@ -1,5 +1,6 @@
 package com.masuland.loginexample.data.vo
 {
+	[RemoteClass(alias='com.masuland.loginexample.data.dto.LocaleDTO')]
 	[Bindable]
 	/**
 	 * @author masuland.com
