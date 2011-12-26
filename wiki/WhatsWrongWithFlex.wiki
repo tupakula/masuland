@@ -10,7 +10,7 @@
 
 === 1.1. Comparing Flex with the Fellows ===
 
-Web History:
+Introduction of the Fellows:
 
  * http://en.wikipedia.org/wiki/Adobe_Flash
  * http://en.wikipedia.org/wiki/Microsoft_Silverlight_History
