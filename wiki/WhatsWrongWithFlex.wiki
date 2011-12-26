@@ -22,7 +22,7 @@ Introduction of the Fellows:
 
 http://masuland.googlecode.com/files/WebHistory.png
 
-|| 2011 || *HTML5* || *Flashplayer 11* || *Silverlight 5* || *Java-Applets* ||
+|| Today || *HTML5* || *Flashplayer 11* || *Silverlight 5* || *Java-Applets* ||
 || *Runtime Features* || dependent on web browser || GPU support || GPU support  ||  GPU support, Multithreading ||
 || *Markup Language* || [http://www.w3.org/TR/html5/ HTML5] || [http://opensource.adobe.com/wiki/display/flexsdk/FXG+2.0+Specification FXG 2.0], [http://opensource.adobe.com/wiki/display/flexsdk/MXML+2009 MXML] || [http://msdn.microsoft.com/en-us/library/ms752059.aspx XAML] || - ||
 || *Interaction Design Tools* || [http://muse.adobe.com/ Adobe Muse], [http://labs.adobe.com/technologies/edge/ Adobe Edge], [http://www.adobe.com/products/proto.html Adobe Proto] || [http://www.adobe.com/products/flashcatalyst.html Adobe Flash Catalyst],  [http://www.adobe.com/products/flash.html Adobe Flash Pro] || [http://www.microsoft.com/expression/products/blend_overview.aspx Microsoft Expression Blend] || - ||
