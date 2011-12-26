@@ -13,10 +13,11 @@
 Web History:
 
  * http://en.wikipedia.org/wiki/Adobe_Flash
+ * http://en.wikipedia.org/wiki/Microsoft_Silverlight_History
+ * http://en.wikipedia.org/wiki/Java_applet
+ * http://en.wikipedia.org/wiki/JavaFX
  * http://en.wikipedia.org/wiki/HTML
  * http://en.wikipedia.org/wiki/JavaScript
- * http://en.wikipedia.org/wiki/Microsoft_Silverlight_History
- * http://en.wikipedia.org/wiki/JavaFX
 
 http://masuland.googlecode.com/files/WebHistory.png
 
