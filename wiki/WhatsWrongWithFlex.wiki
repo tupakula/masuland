@@ -10,13 +10,15 @@
 
 === 1.1. Comparing Flex with the Fellows ===
 
-http://masuland.googlecode.com/files/WebHistory.png
+Web History:
 
  * http://en.wikipedia.org/wiki/Adobe_Flash
  * http://en.wikipedia.org/wiki/HTML
  * http://en.wikipedia.org/wiki/JavaScript
  * http://en.wikipedia.org/wiki/Microsoft_Silverlight_History
  * http://en.wikipedia.org/wiki/JavaFX
+
+http://masuland.googlecode.com/files/WebHistory.png
 
 || Today || *HTML5* || *Flashplayer 11* || *Silverlight 5* || *Java-Applets* ||
 || *Runtime Features* || dependent on web browser || GPU support || GPU support  ||  GPU support, Multithreading ||
