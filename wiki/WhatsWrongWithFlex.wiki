@@ -10,6 +10,9 @@
 
 === 1.1. Comparing Flex with the Fellows ===
 
+http://masuland.googlecode.com/files/WebHistory.png
+
+ * http://en.wikipedia.org/wiki/Adobe_Flash
  * http://en.wikipedia.org/wiki/HTML
  * http://en.wikipedia.org/wiki/JavaScript
  * http://en.wikipedia.org/wiki/Microsoft_Silverlight_History
