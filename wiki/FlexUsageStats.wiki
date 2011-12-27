@@ -32,7 +32,7 @@ MVC Microarchitecture Forums:
  * http://forum.springsource.org/forumdisplay.php?60-Spring-Actionscript
  * http://groups.google.com/group/swiz-framework
 
-If you can recommend *other Flex Forums or Flex Groups* please let me know.
+== Results ==
 
 ...
 
