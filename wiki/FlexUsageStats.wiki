@@ -1,10 +1,12 @@
 #summary This page will show Flex usage statistics
 
-= Flex Usage Statistics =
+= Surveys =
 
 <wiki:toc />
 
-== Participants ==
+== Flex Usage (Nov 27th - Dec 27th 2011) ==
+
+=== Participants ===
 
 This survey had 127 participants. Thank you for taking the time to complete this little survey! The following user groups and user forums had participated in this survey ...
 
@@ -34,33 +36,41 @@ MVC Microarchitecture Forums:
  * http://forum.springsource.org/forumdisplay.php?60-Spring-Actionscript
  * http://groups.google.com/group/swiz-framework
 
-== Survey Period ==
+=== Survey Period ===
 
 Nov 27th - Dec 27th 2011
 
-== Results ==
+=== Results ===
 
 The result of this can survey be reviewed [http://www.kwiksurveys.com/results-overview.php?surveyID=ONHDIF_3f38ba15&mode=4 online] or can be downloaded as [http://masuland.googlecode.com/files/Survey-Flex_Usage_2011-Result-Question_1-3.pdf PDF file].
 
-=== Question 1: How many MXML files do you have in your latest Flex projects? ===
+==== Question 1: How many MXML files do you have in your latest Flex projects? ====
 
 http://masuland.googlecode.com/files/Flex_Usage_2011-Result-Question_1.png
 
-=== Question 2: Which Model-View-Controller (MVC) Microarchitectures have you used in your Flex projects? ===
+==== Question 2: Which Model-View-Controller (MVC) Microarchitectures have you used in your Flex projects? ====
 
 http://masuland.googlecode.com/files/Flex_Usage_2011-Result-Question_2.png
 
-=== Question 2.1 (Optional): In case you have used other MVC Microarchitectures ... Could you please provide the Name & the Link to these MVC Microarchitectures? ===
+==== Question 2.1 (Optional): In case you have used other MVC Microarchitectures ... Could you please provide the Name & the Link to these MVC Microarchitectures? ====
 
 http://masuland.googlecode.com/files/Flex_Usage_2011-Result-Question_2.1.png
 
-=== Question 3: Which Cairngorm 3 Libraries have you used in your Flex projects? ===
+==== Question 3: Which Cairngorm 3 Libraries have you used in your Flex projects? ====
 
 http://masuland.googlecode.com/files/Flex_Usage_2011-Result-Question_3.png
 
-== Evaluation ==
+=== Analysis ===
 
-The evaluation will be discussed [WhatsWrongWithFlex here] shortly.
+...
+
+=== Evaluation ===
+
+...
+
+=== Implications ===
+
+The implications will be discussed [WhatsWrongWithFlex here] shortly.
 
 = Flex Code Examples =
 
