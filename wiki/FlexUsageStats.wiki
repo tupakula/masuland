@@ -40,7 +40,7 @@ Nov 27th - Dec 27th 2011
 
 == Results ==
 
-The PDF document of this survey with the results can be downloaded [http://masuland.googlecode.com/files/Survey-Flex_Usage_2011-Result-Question_1-3.pdf here].
+The result of this can survey be reviewed [http://www.kwiksurveys.com/results-overview.php?surveyID=ONHDIF_3f38ba15&mode=4 online] or can be downloaded as [http://masuland.googlecode.com/files/Survey-Flex_Usage_2011-Result-Question_1-3.pdf PDF file].
 
 === Question 1: How many MXML files do you have in your latest Flex projects? ===
 
