@@ -1,6 +1,6 @@
-This page has moved [Surveys here].
-
 #summary This page shows the results of made surveys
+
+This page has moved [Surveys here].
 
 = Surveys =
 
