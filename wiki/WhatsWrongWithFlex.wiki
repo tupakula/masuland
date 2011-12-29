@@ -35,7 +35,7 @@ Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleD
 
 Adobe plans to update their Flashplayer, Adobe AIR and Flex framework on faster release cycles (four times a year). 
 
-=== 1.3. What is Flex? ===
+=== 1.3. Evolution of Flex ===
 
 Flex is:
  * "New" (First version has been released in 2004 ... more information [http://en.wikipedia.org/wiki/Adobe_Flex here])
