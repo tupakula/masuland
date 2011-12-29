@@ -45,9 +45,11 @@ During the last years, due to heavy competition between involved companies ([htt
 
 === 1.2. Evolution of the Flashplayer, Adobe AIR ===
 
-Adobe plans to update its Flashplayer and Adobe AIR on faster release cycles (four times a year). 
+Due to heavy investments of Macromedia and Adobe into the Flash Runtime - which means the Flashplayer, and later Adobe AIR (the successor of [http://www.adobe.com/products/central/ Macromedia Central]) - and their tooling support ([http://www.adobe.com/products/flash.html Adobe Flash Pro]), the creative web industry was highly interested to build artistic Flash websites, to create compelling animations to attract customers and to use the Flash video delivery capabilities for years. Since the release of Flashplayer 11 Adobe plans to update its Flashplayer and Adobe AIR on faster release cycles (four times a year). 
 
 === 1.3. Evolution of Flex ===
+
+In 2004 enterprise businesses slowly moved away from building SWAs and showed a growing interest to build "asynchronous" Ajax-like web sites with Flash, but, it was hard to build RIAs with the existing Flash components. Therefore, Macromedia has developed the Flex SDK and the Flex Builder (the former version of [http://www.adobe.com/products/flash-builder.html Adobe Flash Builder]). 
 
 Flex is:
  * "New" (First version has been released in 2004 ... more information [http://en.wikipedia.org/wiki/Adobe_Flex here])
