@@ -12,14 +12,14 @@ In the following, I am trying to analyse the history of Flex-Coding until today 
 
 === 1.1. Comparing Flex with the Fellows ===
 
-Before reading further, please make sure you have a basic understanding of the following "Rich Internet Application" technologies:
+Before reading further, please make sure you have a basic understanding of the following [http://en.wikipedia.org/wiki/Rich_Internet_application "Rich Internet Application" (RIA)] technologies:
 
  * http://en.wikipedia.org/wiki/Adobe_Flash
  * http://en.wikipedia.org/wiki/Microsoft_Silverlight_History
  * http://en.wikipedia.org/wiki/Java_applet
  * http://en.wikipedia.org/wiki/JavaFX
 
- ... and "Web Application" technologies: 
+ ... and other "Standard Web Application" (SWA) technologies: 
 
  * http://en.wikipedia.org/wiki/HTML
  * http://en.wikipedia.org/wiki/Svg
@@ -27,14 +27,18 @@ Before reading further, please make sure you have a basic understanding of the f
  * http://en.wikipedia.org/wiki/Ajax_(programming)
  * http://en.wikipedia.org/wiki/Css
 
+The history of building [http://en.wikipedia.org/wiki/Web_application "Web Application" (WA)] between 2005 and 2011 could be summarised as follows (see diagram below):
+
 http://masuland.googlecode.com/files/WebHistory.png
 
 _Created with the [http://www.yworks.com/en/products_yed_about.html yEd Graph Editor].
 Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleDocs/trunk/yed_diagram/WebHistory.graphml svn repo]._
 
+During the last years, due to heavy competition between involved companies ([http://en.wikipedia.org/wiki/Adobe_Systems Adobe], [http://en.wikipedia.org/wiki/Microsoft Microsoft], [http://en.wikipedia.org/wiki/Oracle_Corporation Oracle]), all RIA technologies have evolved fairly dramatically. Also SWA technologies have evolved since inside the [http://www.w3.org World Wide Web Consortium (W3C)] and [http://www.ecma-international.org/ ECMA International], but, the evolution was significantly slower so far (see diagram above). Today, RIA and SWA technologies could be compared as follows:
+
 || Today || *HTML / Javascript* || *Flashplayer 11* || *Silverlight 5* || *Java (Applets)* ||
 || *Runtime Features* || Dependent on web browser || GPU support || GPU support  ||  GPU support, Multithreading ||
-|| *Markup Language* || [http://www.w3.org/2007/07/xhtml-basic-ref.html XHTML 1.1] [http://www.w3.org/TR/html5/ HTML5] || [http://opensource.adobe.com/wiki/display/flexsdk/FXG+2.0+Specification FXG 2.0], [http://opensource.adobe.com/wiki/display/flexsdk/MXML+2009 MXML] || [http://msdn.microsoft.com/en-us/library/ms752059.aspx XAML] || [http://docs.oracle.com/javafx/2.0/fxml_get_started/jfxpub-fxml_get_started.htm FXML] ||
+|| *Markup Language* || [http://www.w3.org/2007/07/xhtml-basic-ref.html XHTML 1.1], [http://www.w3.org/TR/html5/ HTML5], [http://www.w3.org/Graphics/SVG/ SVG] || [http://opensource.adobe.com/wiki/display/flexsdk/FXG+2.0+Specification FXG 2.0], [http://opensource.adobe.com/wiki/display/flexsdk/MXML+2009 MXML] || [http://msdn.microsoft.com/en-us/library/ms752059.aspx XAML] || [http://docs.oracle.com/javafx/2.0/fxml_get_started/jfxpub-fxml_get_started.htm FXML] ||
 || *Scripting Language* || Javascript || Actionscript || JScript  ||  Java, JRuby, Groovy ||
 || *Interaction Design Tools* || [http://muse.adobe.com/ Adobe Muse], [http://labs.adobe.com/technologies/edge/ Adobe Edge], [http://www.adobe.com/products/proto.html Adobe Proto] || [http://www.adobe.com/products/flashcatalyst.html Adobe Flash Catalyst],  [http://www.adobe.com/products/flash.html Adobe Flash Pro] || [http://www.microsoft.com/expression/products/blend_overview.aspx Microsoft Expression Blend] || [http://javafx.com/roadmap/#3 JavaFX Scene Builder] ||
 || *Developer Tools* || [http://www.eclipse.org/ Eclipse], [http://www.adobe.com/products/dreamweaver.html Adobe Dreamweaver] || [http://www.adobe.com/products/flash.html Adobe Flash Pro], [http://www.adobe.com/products/flash-builder.html Adobe Flash Builder] || [http://www.microsoft.com/visualstudio/en-us Microsoft Visual Studio] || [http://www.eclipse.org/ Eclipse]  ||
