@@ -8,18 +8,24 @@
 
 == 1. Analysis: Flex-Coding Past & Today ==
 
+In the following, I am trying to analyse the history of Flex-Coding until today from an objective point of view.
+
 === 1.1. Comparing Flex with the Fellows ===
 
-Introduction of the Fellows:
+Before reading further, please make sure you have a basic understanding of the following "Rich Internet Application" technologies:
 
- * http://www.adobe.com/svg/
- * http://en.wikipedia.org/wiki/Macromedia
  * http://en.wikipedia.org/wiki/Adobe_Flash
  * http://en.wikipedia.org/wiki/Microsoft_Silverlight_History
  * http://en.wikipedia.org/wiki/Java_applet
  * http://en.wikipedia.org/wiki/JavaFX
+
+ ... and "Web Application" technologies: 
+
  * http://en.wikipedia.org/wiki/HTML
+ * http://en.wikipedia.org/wiki/Svg
  * http://en.wikipedia.org/wiki/JavaScript
+ * http://en.wikipedia.org/wiki/Ajax_(programming)
+ * http://en.wikipedia.org/wiki/Css
 
 http://masuland.googlecode.com/files/WebHistory.png
 
