@@ -64,10 +64,6 @@ http://masuland.googlecode.com/files/Flex_Usage_2011-Result-Question_3.png
 
 ...
 
-=== Evaluation ===
-
-...
-
 === Implications ===
 
 The implications will be discussed [WhatsWrongWithFlex here] shortly.
