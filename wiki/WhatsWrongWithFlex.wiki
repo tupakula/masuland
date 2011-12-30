@@ -49,7 +49,7 @@ Due to heavy investments of Macromedia and Adobe into the Flashplayer - and late
 
 === 1.3. Evolution of Flex ===
 
-In 2004 enterprise businesses slowly moved away from building SWAs and showed a growing interest to build [http://en.wikipedia.org/wiki/Ajax_(programming) "asynchronous" Ajax-like] web sites with Flash, but, it was hard to build RIAs with the existing Flash components these days. Therefore, Macromedia has developed the Flex SDK and the Flex Builder (the former version of [http://www.adobe.com/products/flash-builder.html Adobe Flash Builder]). 
+In 2004 enterprise businesses slowly moved away from building SWAs and showed a growing interest to build [http://en.wikipedia.org/wiki/Ajax_(programming) "asynchronous" Ajax-like] web sites with Flash, but, it was hard to build RIAs with the existing Flash components these days. Therefore, Macromedia has developed the Flex SDK and the Macromedia Flex Builder (the former version of [http://www.adobe.com/products/flash-builder.html Adobe Flash Builder]). 
 
 Flex is:
  * "New" (First version has been released in 2004 ... more information [http://en.wikipedia.org/wiki/Adobe_Flex here])
