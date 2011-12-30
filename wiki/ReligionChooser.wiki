@@ -66,10 +66,10 @@ Details about me can be found [http://masuland.wordpress.com/about/ here].
 
 ...
 
-== More Code Examples ==
+= More Code Examples =
 
  * [LoginExample Login Example] written in Flex 3 and Flex 4.1 (MX, Spark) and Flex 4.5 (Spark)
 
-== Feedback ==
+= Feedback =
 
 Please feel free to post comments, suggestions or feature requests because this page is still work in progress.
