@@ -45,7 +45,7 @@ During the last years, due to heavy competition between involved companies (like
 
 === 1.2. Evolution of the Flashplayer, Adobe AIR ===
 
-Due to heavy investments of Macromedia (and later Adobe) into the Flashplayer - and later Adobe AIR (the successor of [http://www.adobe.com/products/central/ Macromedia Central]) - and their Flash platform tooling support ([http://www.adobe.com/products/flash.html Adobe Flash Pro]), the creative web industry was highly interested to build artistic Flash websites, to create compelling animations to attract customers and to use the Flash video delivery capabilities for years. 
+Due to heavy investments of Macromedia (and later Adobe) into the Flashplayer - and later Adobe AIR (the successor of [http://www.adobe.com/products/central/ Macromedia Central]) - and their Flash platform tools ([http://www.adobe.com/products/flash.html Adobe Flash Pro]), the creative web industry was highly interested to build artistic Flash websites, to create compelling animations to attract customers and to use the Flash video delivery capabilities for years. 
 
 Adobe plans to update its Flashplayer and Adobe AIR on faster release cycles (four times a year). 
 
