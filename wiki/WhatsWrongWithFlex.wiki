@@ -34,7 +34,7 @@ http://masuland.googlecode.com/files/WebHistory.png
 _Created with the [http://www.yworks.com/en/products_yed_about.html yEd Graph Editor].
 Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleDocs/trunk/yed_diagram/WebHistory.graphml svn repo]._
 
-During the last years, due to heavy competition between involved companies ([http://en.wikipedia.org/wiki/Adobe_Systems Adobe], [http://en.wikipedia.org/wiki/Microsoft Microsoft], [http://en.wikipedia.org/wiki/Oracle_Corporation Oracle]), all RIA technologies have evolved fairly dramatically. Also SWA technologies have evolved since inside the [http://www.w3.org World Wide Web Consortium (W3C)] and [http://www.ecma-international.org/ ECMA International], but, the evolution was significantly slower so far (see diagram above). Today, RIA and SWA technologies could be compared as follows:
+During the last years, due to heavy competition between involved companies (like [http://en.wikipedia.org/wiki/Adobe_Systems Adobe], [http://en.wikipedia.org/wiki/Microsoft Microsoft] and [http://en.wikipedia.org/wiki/Oracle_Corporation Oracle]), all RIA technologies have evolved fairly dramatically. Also SWA technologies have evolved since inside the [http://www.w3.org World Wide Web Consortium (W3C)] and [http://www.ecma-international.org/ ECMA International], but, the evolution was significantly slower so far (see diagram above). Today, RIA and SWA technologies could be compared as follows:
 
 || Today || *HTML / Javascript* || *Flashplayer 11* || *Silverlight 5* || *Java (Applets)* ||
 || *Runtime Features* || Dependent on web browser || GPU support || GPU support  ||  GPU support, Multithreading ||
