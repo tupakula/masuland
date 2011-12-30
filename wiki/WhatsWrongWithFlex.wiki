@@ -45,11 +45,13 @@ During the last years, due to heavy competition between involved companies (like
 
 === 1.2. Evolution of the Flashplayer, Adobe AIR ===
 
-Due to heavy investments of Macromedia and Adobe into the Flashplayer - and later Adobe AIR (the successor of [http://www.adobe.com/products/central/ Macromedia Central]) - and their Flash platform tooling support ([http://www.adobe.com/products/flash.html Adobe Flash Pro]), the creative web industry was highly interested to build artistic Flash websites, to create compelling animations to attract customers and to use the Flash video delivery capabilities for years. Since the release of Flashplayer 11 Adobe plans to update its Flashplayer and Adobe AIR on faster release cycles (four times a year). 
+Due to heavy investments of Macromedia (and later Adobe) into the Flashplayer - and later Adobe AIR (the successor of [http://www.adobe.com/products/central/ Macromedia Central]) - and their Flash platform tooling support ([http://www.adobe.com/products/flash.html Adobe Flash Pro]), the creative web industry was highly interested to build artistic Flash websites, to create compelling animations to attract customers and to use the Flash video delivery capabilities for years. 
+
+Adobe plans to update its Flashplayer and Adobe AIR on faster release cycles (four times a year). 
 
 === 1.3. Evolution of Flex ===
 
-In 2004 enterprise businesses slowly moved away from building SWAs and showed a growing interest to build [http://en.wikipedia.org/wiki/Ajax_(programming) "asynchronous" Ajax-like] web sites with Flash, but, it was hard to build RIAs with the existing Flash components these days. Therefore, Macromedia has developed the Flex SDK and the Macromedia Flex Builder (the former version of [http://www.adobe.com/products/flash-builder.html Adobe Flash Builder]). 
+In 2003-2004 enterprise businesses slowly moved away from building SWAs and showed a growing interest to build [http://en.wikipedia.org/wiki/Ajax_(programming) "asynchronous" Ajax-like] web sites with Flash, but, it was hard to build RIAs with the existing Flash components these days. Therefore, Macromedia has released its first version the Flex SDK and the Macromedia Flex Builder (the former version of [http://www.adobe.com/products/flash-builder.html Adobe Flash Builder]) in [http://en.wikipedia.org/wiki/Adobe_Flex March 2004]. After Adobe acquired Macromedia in [http://en.wikipedia.org/wiki/Macromedia#Purchase March 2005] Adobe showed big interest of being competitive with Silverlight (XAML) and its existing tools ([http://www.microsoft.com/expression/products/blend_overview.aspx Microsoft Expression Blend]), and therefore, began heavily working on Flex 4 features (FXG skins & the new SkinnableComponent model) and its own tools ([http://www.adobe.com/products/flashcatalyst.html Adobe Flash Catalyst]) in 2007.
 
 Flex is:
  * "New" (First version has been released in 2004 ... more information [http://en.wikipedia.org/wiki/Adobe_Flex here])
