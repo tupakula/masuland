@@ -266,10 +266,10 @@ Details about me can be found [http://masuland.wordpress.com/about/ here].
 
 ...
 
-== More Code Examples ==
+= More Code Examples =
 
  * [ReligionChooser Religion Chooser] written in Flex 4.1 (Spark)
 
-== Feedback ==
+= Feedback =
 
 Please feel free to post comments, suggestions or feature requests because the code is still work in progress.
