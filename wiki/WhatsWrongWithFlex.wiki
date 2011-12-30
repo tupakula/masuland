@@ -45,7 +45,7 @@ During the last years, due to heavy competition between involved companies ([htt
 
 === 1.2. Evolution of the Flashplayer, Adobe AIR ===
 
-Due to heavy investments of Macromedia and Adobe into the Flash Runtime - which means the Flashplayer, and later Adobe AIR (the successor of [http://www.adobe.com/products/central/ Macromedia Central]) - and their tooling support ([http://www.adobe.com/products/flash.html Adobe Flash Pro]), the creative web industry was highly interested to build artistic Flash websites, to create compelling animations to attract customers and to use the Flash video delivery capabilities for years. Since the release of Flashplayer 11 Adobe plans to update its Flashplayer and Adobe AIR on faster release cycles (four times a year). 
+Due to heavy investments of Macromedia and Adobe into the Flashplayer - and later Adobe AIR (the successor of [http://www.adobe.com/products/central/ Macromedia Central]) - and their Flash platform tooling support ([http://www.adobe.com/products/flash.html Adobe Flash Pro]), the creative web industry was highly interested to build artistic Flash websites, to create compelling animations to attract customers and to use the Flash video delivery capabilities for years. Since the release of Flashplayer 11 Adobe plans to update its Flashplayer and Adobe AIR on faster release cycles (four times a year). 
 
 === 1.3. Evolution of Flex ===
 
