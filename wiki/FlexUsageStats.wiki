@@ -1,4 +1,4 @@
-#summary This page shows the results of made Flex surveys
+#summary This page shows the results of made surveys
 
 = Flex Statistics =
 
