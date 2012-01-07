@@ -6,6 +6,8 @@
 
 == Survey 1: Adobe Flex Usage (Nov 27th - Dec 27th 2011) ==
 
+This has asked their participants 3 (plus 1 optional) questions about how Flex developers build their Flex applications. In the following the results of this survey will be discussed.
+
 === Participants ===
 
 This survey had 127 participants. Thank you for taking the time to complete this little survey! The following user groups and user forums had participated in this survey ...
