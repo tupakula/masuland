@@ -66,7 +66,7 @@ http://masuland.googlecode.com/files/Flex_Usage_2011-Result-Question_3.png
 
 === Analysis ===
 
-The data will be discussed on the page [WhatsWrongWithFlex What's wrong with Flex?] shortly.
+The result will be discussed on the page [WhatsWrongWithFlex What's wrong with Flex?] shortly.
 
 = Flex Code Examples =
 
