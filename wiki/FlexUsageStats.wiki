@@ -1,10 +1,10 @@
-#summary This page shows the results of made surveys
+#summary This page shows the results of made Flex surveys
 
-= Flex Usage Statistics =
+= Flex Statistics =
 
 <wiki:toc />
 
-== Survey 1: Adobe Flex Usage (Nov 27th - Dec 27th 2011) ==
+== Survey 1: Flex Usage (Nov 27th - Dec 27th 2011) ==
 
 === Participants ===
 
