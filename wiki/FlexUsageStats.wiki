@@ -48,6 +48,8 @@ The result of this survey can be reviewed [http://www.kwiksurveys.com/results-ov
 
 http://masuland.googlecode.com/files/Flex_Usage_2011-Result-Question_1.png
 
+You can also check the interactive chart [http://dl.dropbox.com/u/352808/code/FlexStats/mxml_count_step.html here].
+
 ==== Question 2: Which Model-View-Controller (MVC) Microarchitectures have you used in your Flex projects? ====
 
 http://masuland.googlecode.com/files/Flex_Usage_2011-Result-Question_2.png
