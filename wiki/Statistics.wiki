@@ -1,6 +1,6 @@
 #summary This page shows the results of made surveys
 
-= Flex Statistics =
+= Statistics =
 
 <wiki:toc />
 
