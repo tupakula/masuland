@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:mx="library://ns.adobe.com/flex/mx"
+	minWidth="955" minHeight="600"
+	initialize="this_initializeHandler(event)"
+	>
+	
+	<fx:Script source="data.as" />
+	
+	<fx:Script>
+		<![CDATA[
+			import mx.collections.ArrayCollection;
+			import mx.collections.Sort;
+			import mx.collections.SortField;
+			import mx.events.FlexEvent;
+			
+			private static const OPTIMUM_FACTOR:int = 15;
+
+			[Bindable]
+			public var mxmlCountAmounts:ArrayCollection = new ArrayCollection();
+			
+			protected function this_initializeHandler(event:FlexEvent):void
+			{
+				/* Create the SortField object for the "data" field in the ArrayCollection object, and make sure we do a numeric sort. */
+				var dataSortField:SortField = new SortField();
+				dataSortField.numeric = true;
+				
+				/* Create the Sort object and add the SortField object created earlier to the array of fields to sort on. */
+				var numericDataSort:Sort = new Sort();
+				numericDataSort.fields = [dataSortField];
+				
+				/* Set the ArrayCollection object's sort property to our custom sort, and refresh the ArrayCollection. */
+				mxmlCounts.sort = numericDataSort;
+				mxmlCounts.refresh();
+
+				var objCountZero:Object = {count:"0", amount:0, optimum:0};
+				var objCountTwentyFive:Object = {count:"1-25", amount:0, optimum:OPTIMUM_FACTOR+55};
+				var objCountFifty:Object = {count:"26-50", amount:0, optimum:OPTIMUM_FACTOR+45};
+				var objCountHundred:Object = {count:"51-100", amount:0, optimum:OPTIMUM_FACTOR+37};
+				var objCountHunderedFifty:Object = {count:"101-150", amount:0, optimum:OPTIMUM_FACTOR+31};
+				var objCountTwoHundered:Object = {count:"151-200", amount:0, optimum:OPTIMUM_FACTOR+25};
+				var objCountTwoHunderedFifty:Object = {count:"201-250", amount:0, optimum:OPTIMUM_FACTOR+20};
+				var objCountThreeHundered:Object = {count:"251-300", amount:0, optimum:OPTIMUM_FACTOR+15};
+				var objCountThreeHunderedFifty:Object = {count:"301-350", amount:0, optimum:OPTIMUM_FACTOR+12};
+				var objCountFourHundered:Object = {count:"351-400", amount:0, optimum:OPTIMUM_FACTOR+9};
+				var objCountFourHunderedFifty:Object = {count:"401-450", amount:0, optimum:OPTIMUM_FACTOR+7};
+				var objCountFiveHundered:Object = {count:"451-500", amount:0, optimum:OPTIMUM_FACTOR+5};
+				var objCountFiveHunderedFifty:Object = {count:"501-550", amount:0, optimum:OPTIMUM_FACTOR+3};
+				var objCountNineHunderedFifty:Object = {count:"551-950", amount:0, optimum:OPTIMUM_FACTOR+1};
+				var objCountRemain:Object = {count:"+1000", amount:0, optimum:OPTIMUM_FACTOR};
+
+				var arrCountAmounts:Array = [
+					objCountZero,
+					objCountTwentyFive,
+					objCountFifty,
+					objCountHundred,
+					objCountHunderedFifty,
+					objCountTwoHundered,
+					objCountTwoHunderedFifty,
+					objCountThreeHundered,
+					objCountThreeHunderedFifty,
+					objCountFourHundered,
+					objCountFourHunderedFifty,
+					objCountFiveHundered,
+					objCountFiveHunderedFifty,
+					objCountNineHunderedFifty,
+					objCountRemain];
+
+				for each (var i:int in mxmlCounts) 
+				{
+					if (i == 0)
+					{
+						objCountZero.amount++;
+					}
+					else if (1 <= i && i <= 25)
+					{
+						objCountTwentyFive.amount++;
+					}
+					else if (26 <= i && i <= 50)
+					{
+						objCountFifty.amount++;
+					}
+					else if (51 <= i && i <= 100)
+					{
+						objCountHundred.amount++;
+					}
+					else if (101 <= i && i <= 150)
+					{
+						objCountHunderedFifty.amount++;
+					}
+					else if (151 <= i && i <= 200)
+					{
+						objCountTwoHundered.amount++;
+					}
+					else if (201 <= i && i <= 250)
+					{
+						objCountTwoHunderedFifty.amount++;
+					}
+					else if (251 <= i && i <= 300)
+					{
+						objCountThreeHundered.amount++;
+					}
+					else if (301 <= i && i <= 350)
+					{
+						objCountThreeHunderedFifty.amount++;
+					}
+					else if (351 <= i && i <= 400)
+					{
+						objCountFourHundered.amount++;
+					}
+					else if (401 <= i && i <= 450)
+					{
+						objCountFourHunderedFifty.amount++;
+					}
+					else if (451 <= i && i <= 500)
+					{
+						objCountFiveHundered.amount++;
+					}
+					else if (501 <= i && i <= 550)
+					{
+						objCountFiveHunderedFifty.amount++;
+					}
+					else if (551 <= i && i <= 950)
+					{
+						objCountNineHunderedFifty.amount++;
+					}
+					else
+					{
+						objCountRemain.amount++;
+					}
+				}
+				
+				mxmlCountAmounts.source = arrCountAmounts;
+			}
+		]]>
+	</fx:Script>
+	
+	<mx:Panel
+		title="Amount of MXML files per Flex project"
+		left="10" right="10" top="10" bottom="10"
+		dropShadowVisible="false"
+		>
+		<mx:LineChart
+			id="myChart" 
+			width="100%" height="100%"
+			dataProvider="{ mxmlCountAmounts }" 
+			showDataTips="true"
+			>
+			<mx:horizontalAxis>
+				<mx:CategoryAxis 
+					dataProvider="{ mxmlCountAmounts }" 
+					categoryField="count"
+					/>
+			</mx:horizontalAxis>
+			<mx:series>
+				<mx:LineSeries 
+					yField="amount" 
+					displayName="Amount of MXML files per Flex project (Survey: Nov 27th - Dec 27th 2011)"
+					/>
+			</mx:series>
+		</mx:LineChart>
+		<s:HGroup
+			width="100%"
+			verticalAlign="middle"
+			>
+			<mx:Legend dataProvider="{ myChart }"/>
+			<s:Spacer width="100%" />
+			<s:HGroup
+				gap="3"
+				>
+				<s:Label
+					text="Horizontal axis"
+					fontWeight="bold"
+					fontSize="11"
+					/>
+				<s:Label
+					text="= MXML files"
+					fontSize="11"
+					/>
+				<s:Spacer width="10" />
+				<s:Label
+					text="Vertical axis"
+					fontWeight="bold"
+					fontSize="11"
+					/>
+				<s:Label
+					text="= Flex projects"
+					fontSize="11"
+					/>
+			</s:HGroup>
+			<s:Spacer width="0" />
+		</s:HGroup>
+	</mx:Panel>
+	
+</s:Application>
