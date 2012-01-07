@@ -4,7 +4,7 @@
 
 <wiki:toc />
 
-== Survey 1: Flex Usage (Nov 27th - Dec 27th 2011) ==
+== Survey 1: Adobe Flex Usage (Nov 27th - Dec 27th 2011) ==
 
 === Participants ===
 
