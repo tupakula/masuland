@@ -2,11 +2,9 @@
 
 = Additional Adobe Flex 4 Coding Conventions =
 
-This document proposes additional Flex 4 coding conventions to the existing Flex coding conventions provided by Adobe, see http://opensource.adobe.com/wiki/display/flexsdk/Coding+Conventions
+<wiki:toc />
 
-  * [Flex4CodingConventions#MXML_File_Conventions MXML File Conventions]
-  * [Flex4CodingConventions#Actionscript_File_Conventions Actionscript File Conventions]
-  * [Flex4CodingConventions#CSS_File_Conventions CSS File Conventions]
+This document proposes additional Flex 4 coding conventions to the existing Flex coding conventions provided by Adobe, see http://opensource.adobe.com/wiki/display/flexsdk/Coding+Conventions
 
 == MXML File Conventions ==
 
@@ -514,7 +512,7 @@ view|AppStack
 }
 }}}
 
-== Code Examples ==
+= Code Examples =
 
 Code Examples which implement these Coding Conventions:
 
@@ -523,6 +521,6 @@ Code Examples which implement these Coding Conventions:
 
 ...
 
-== Feedback ==
+= Feedback =
 
 Please feel free to post comments, suggestions or feature requests because this page is still work in progress.
