@@ -1,6 +1,6 @@
-#summary This page explains personal issues in Flex development that should be improved in later versions of the Flex SDK. Any advice of the direction of this document is highly welcome!
+#summary This page explains personal issues in Flex development that should be improved in later versions of the Flex SDK.
 
-*Please note:* The following information only reflects my personal experience and does not necessarily reflect the view of the Flex community and Adobe.
+*Please note:* The following information only reflects my personal experience and does not necessarily reflect the view of the Flex community and Adobe. Any advice of the direction of this document is highly welcome!
 
 = What's wrong with Flex? =
 
