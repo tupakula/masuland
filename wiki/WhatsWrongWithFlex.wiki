@@ -376,6 +376,13 @@ For more information check out:
  * http://www.occupyw3c.org/
  * http://www.occupyecma.org/
 
+= Code Examples =
+
+Please check out my code examples:
+
+ * [LoginExample Login Example] written in Flex 3 and Flex 4.1 (Halo, Gumbo) and Flex 4.5 (Hero)
+ * [ReligionChooser Religion Chooser] with Flex 4.1 (Gumbo)
+
 = Feedback =
 
 Please feel free to post comments, suggestions because the document is still work in progress.
