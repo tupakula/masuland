@@ -348,6 +348,16 @@ Benefits:
  * Faster Javascript code execution 
  * Better tooling-support for Javascript
 
+=== 5.5. Conclusion ===
+
+We should occupy W3C and ECMA Int, because then, there wouldn't be the need to occupy Flash: http://www.occupyflash.org/
+
+For more information check out:
+
+ * http://www.occupyhtml.org/
+ * http://www.occupyw3c.org/ (Not occupied yet)
+ * http://www.occupyecma.org/ (Not occupied yet)
+
 == 6. Related Resources ==
 
 === 6.1. Flex Future ===
@@ -363,16 +373,6 @@ Benefits:
  * http://zaa.tv/2011/04/360flex-denver-2011–day-2-keynote-spoon/
  * http://tv.adobe.com/watch/max-2011-develop/open-source-flex-what-the-spoon-project-means-to-you/
  * http://www.spoon.as/core-values/
-
-=== 6.3. Occupy W3C and ECMA Int ... ===
-
-... because then there wouldn't be the need to occupy Flash: http://www.occupyflash.org/
-
-For more information check out:
-
- * http://www.occupyhtml.org/
- * http://www.occupyw3c.org/ (Not occupied yet)
- * http://www.occupyecma.org/ (Not occupied yet)
 
 = Code Examples =
 
