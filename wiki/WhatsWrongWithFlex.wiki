@@ -373,8 +373,8 @@ http://www.occupyflash.org/
 For more information check out:
 
  * http://www.occupyhtml.org/
- * http://www.occupyw3c.org/
- * http://www.occupyecma.org/
+ * http://www.occupyw3c.org/ (Not occupied yet)
+ * http://www.occupyecma.org/ (Not occupied yet)
 
 = Code Examples =
 
