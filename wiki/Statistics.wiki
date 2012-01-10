@@ -68,9 +68,9 @@ http://masuland.googlecode.com/files/Flex_Usage_2011-Result-Question_3.png
 
 The result will be discussed on the page [WhatsWrongWithFlex What's wrong with Flex?] shortly.
 
-= Flex Code Examples =
+= Code Examples =
 
-Please check out my Flex code examples:
+Please check out my code examples:
 
  * [LoginExample Login Example] written in Flex 3 and Flex 4.1 (Halo, Gumbo) and Flex 4.5 (Hero)
  * [ReligionChooser Religion Chooser] with Flex 4.1 (Gumbo)
