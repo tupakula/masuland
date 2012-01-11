@@ -265,7 +265,7 @@ While this can be seen as a great opportunity to the open source community and o
 
 ==== 2.2.3. Negative: Flex 4.x has still an incomplete Spark component set ====
 
-... therefore we are forced to build to use the old MX components (e.g. MX-!DateChooser, MX-!ColorPicker, MX-!TabNavigator ... etc.), or, have to take the time to build them ourself.
+... therefore, we are forced to use the old MX components (e.g. MX-!DateChooser, MX-!ColorPicker, MX-!TabNavigator ... etc.), or, have to take the time to build them ourself.
 
 ==== 2.2.4. Negative: Restrictive Designer/Developer Workflow ====
 
