@@ -8,7 +8,7 @@
 
 == Abstract ==
 
-This document aims to be an objective and independent resource of the current state of Adobe Flex / Apache Flex. Furthermore, this document tries evaluate things that can be seen positive and negative in Flex, defines goals for future versions of Flex and shows up some ways how to get to these goals in future. This document is currently under construction and the author highly encourages the community to take part in the creation of this document, or, to build your own document with your personal ideas. 
+This document aims to be an objective and independent resource of the current state of Adobe Flex / Apache Flex. Furthermore, this document tries to evaluate things that can be seen positive and negative in Flex, defines goals for future versions of Flex and shows up some ways how to get to these goals in future. This document is currently under construction and the author highly encourages the community to take part in the creation of this document, or, to build your own document with your personal ideas. 
 
 == Before you start reading ... ==
 
