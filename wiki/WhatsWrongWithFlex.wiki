@@ -6,13 +6,13 @@
 
 <wiki:toc />
 
-== 1. Analysis: Flex-Coding Past & Today ==
+== Abstract ==
 
-In the following, I am trying to analyse the history of Flex-Coding until today from an objective point of view.
+This document aims to be an objective and independent resource of the current state of Adobe Flex / Apache Flex. Furthermore, this document tries evaluate things that can be seen positive and negative in Flex, defines goals for future versions of Flex and shows up some ways how to get to these goals in future. This document is currently under construction and author highly encourages the community to take part in the creation of this document, or, to build your own document with your personal ideas. 
 
-=== 1.1. Comparing Flex with the Fellows ===
+== Before you start reading ... ==
 
-Before reading further, please make sure you have a basic understanding of the following [http://en.wikipedia.org/wiki/Rich_Internet_application "Rich Internet Application" (RIA)] technologies:
+... please make sure you have a basic understanding of the following [http://en.wikipedia.org/wiki/Rich_Internet_application "Rich Internet Application" (RIA)] technologies:
 
  * http://en.wikipedia.org/wiki/Adobe_Flash
  * http://en.wikipedia.org/wiki/Microsoft_Silverlight_History
@@ -26,6 +26,12 @@ Before reading further, please make sure you have a basic understanding of the f
  * http://en.wikipedia.org/wiki/JavaScript
  * http://en.wikipedia.org/wiki/Ajax_(programming)
  * http://en.wikipedia.org/wiki/Css
+
+== 1. Analysis: Flex-Coding Past & Today ==
+
+In the following, I am trying to analyse the history of Flex-Coding until today from an objective point of view.
+
+=== 1.1. Comparing Flex with the Fellows ===
 
 The history of building [http://en.wikipedia.org/wiki/Web_application "Web Application" (WA)] between 2005 and 2011 could be summarised as follows (see diagram below):
 
@@ -132,6 +138,12 @@ This is a Flex 4 "Hello World" example which is (only) implementing the View-Lay
 
 Using this approach for constantly growing applications would potentially result in [http://en.wikipedia.org/wiki/Spaghetti_code "Spaghetti code"].
 
+*How many MXML files do you have in your latest Flex projects?*
+
+http://masuland.googlecode.com/files/Flex_Usage_2011-Result-Question_1.png
+
+_Original source: Question 1 from this [http://code.google.com/p/masuland/wiki/Statistics#Question_1:_How_many_MXML_files_do_you_have_in_your_latest_Flex survey]._
+
 === 1.4. Evolution of Microarchitectures ===
 
 MVC Microarchitectures:
@@ -157,6 +169,12 @@ Implementations of Flex applications with the above mentioned MVC Layers can be 
  * [ReligionChooser Religion Chooser] with Flex 4 (Spark)
 
 Since the release of the Cairngorm 3 specification Adobe Consulting [http://sourceforge.net/adobe/cairngorm/home/Home/ suggests] the use of third party open source Inversion-of-Control (IoC) Microarchitectures like ([http://www.spicefactory.org/parsley/ Parsley], [http://www.springactionscript.org/ Spring Actionscript], [http://www.swizframework.org/ Swiz], [http://www.robotlegs.org/ Robotlegs], [http://mate.asfusion.com/ Mate]) ... which means: Inject your things! 
+
+*Which Model-View-Controller (MVC) Microarchitectures have you used in your Flex projects?*
+
+http://masuland.googlecode.com/files/Flex_Usage_2011-Result-Question_2.png
+
+_Original source: Question 2 from this [http://code.google.com/p/masuland/wiki/Statistics#Question_2:_Which_Model-View-Controller_(MVC)_Microarchitectures survey]._
 
 === 1.5. Flex 4.x is a "Hybrid" ===
 
@@ -245,9 +263,9 @@ While this also has pros to update the Flashplayer, Adobe AIR and Flex framework
 
 While this can be seen as a great opportunity to the open source community and opens up lots of creativity to these Microarchitectures, this also means for applications, that use these Microarchitectures, that they have to trust into the continuity of a certain Microarchitecture which they use. Furthermore, updating Microarchitectures to their latest version could also be an issue for big long-term projects.
 
-==== 2.2.3. Negative: Flex 4.x is still Beta Software ====
+==== 2.2.3. Negative: Flex 4.x has still an incomplete Spark component set ====
 
-...
+... therefore we are forced to build to use the old MX components (e.g. MX-!DateChooser, MX-!ColorPicker, MX-!TabNavigator ... etc.), or, have to take the time to build them ourself.
 
 ==== 2.2.4. Negative: Restrictive Designer/Developer Workflow ====
 
