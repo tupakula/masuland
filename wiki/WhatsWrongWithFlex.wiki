@@ -301,14 +301,39 @@ A lack of code generation tools and wizards to speedup development productivity 
 
 == 3. Goals: How should Flex-Coding be? ==
 
- * Highly productive and fast development environment
- * Flex code should be easily mergeable across different flex projects worldwide
- * Flex code should be based on coding standards
- * Flex code should be sustainable and easily maintainable
- * There should be more highly skilled Flex Developers around
- * Developer tools should be easy to be used and should help the designer/developer to be more productive
- * The Flashplayer - "Actionscript Virtual Machine" (AVM) respectively - should be as powerful as the "Java Virtual Machine" (JVM)
- * The Adobe Flash Catalyst should be as powerful as Microsoft Expression Blend
+=== 3.1. Strengthening large-scale Flex applications ===
+
+http://masuland.googlecode.com/files/Flex_Usage_2011-Result-Question_1-Goal_2012+.png
+
+=== 3.2. Highly productive and fast development environment ===
+
+...
+
+=== 3.3. Flex code should be easily mergeable across different flex projects worldwide ===
+
+...
+
+=== 3.4. Flex code should be based on coding standards ===
+
+...
+
+=== 3.5. Flex code should be sustainable and easily maintainable ===
+
+...
+
+=== 3.6. There should be more highly skilled Flex Developers around ===
+
+...
+
+=== 3.7. Developer tools should be easy to be used and should help the designer/developer to be more productive ===
+
+...
+
+=== 3.8. The Flashplayer - "Actionscript Virtual Machine" (AVM) respectively - should be as powerful as the "Java Virtual Machine" (JVM) ===
+
+...
+
+=== 3.9. The Adobe Flash Catalyst should be as powerful as Microsoft Expression Blend ===
 
 ...
 
