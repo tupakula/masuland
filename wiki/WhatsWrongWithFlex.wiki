@@ -19,7 +19,7 @@ This document aims to be an objective and independent resource of the current st
  * http://en.wikipedia.org/wiki/Java_applet
  * http://en.wikipedia.org/wiki/JavaFX
 
- ... and other "Standard Web Application" (SWA) technologies: 
+... and other "Standard Web Application" (SWA) technologies: 
 
  * http://en.wikipedia.org/wiki/HTML
  * http://en.wikipedia.org/wiki/Svg
