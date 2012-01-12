@@ -1,6 +1,6 @@
 #summary This page proposes a possible Apache Flex Logo.
 
-= Apache Flex Logo =
+= Apache Flex Logo Proposal =
 
 This would be my version of the Apache Flex logo:
 
