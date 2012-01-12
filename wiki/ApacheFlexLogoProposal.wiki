@@ -6,7 +6,7 @@ This would be my version of the Apache Flex logo:
 
 http://masuland.googlecode.com/files/Apache_Flex-Logo-Scale.png
 
-_The Photoshop version is available [http://masuland.googlecode.com/files/Apache_Flex-Logo.psd.zip  here]_
+_The Photoshop version is available [http://masuland.googlecode.com/files/Apache_Flex-Logo.psd.zip  here]._
 
 = Feedback =
 
