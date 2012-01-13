@@ -6,7 +6,7 @@
 
 == Idea ==
 
-This logo implies to me *"Safety"* for Flex ... because the feather (Apache) is covering (or protecting) Flex. *"Stability over Philosophy"* should be the credo the new logo, and Flex doesn't need to be reinvented because *"Flex is still Flex, and, now even better managed by Apache"*.
+This logo implies to me *"Safety"* for Flex ... because the feather (Apache) is covering (or protecting) Flex. *"Stability over Philosophy"* should be the credo the new logo, and, Flex doesn't need to be reinvented because *"Flex is still Flex, and, now even better managed by Apache"*.
 
 == Logo ==
 
