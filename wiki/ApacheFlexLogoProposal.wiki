@@ -12,7 +12,25 @@ This logo implies to me *"Safety"* for Flex ... because the feather (Apache) is 
 
 This would be my version of the Apache Flex logo:
 
+=== "Standard" - Look (Scaled) ===
+
 http://masuland.googlecode.com/files/Apache_Flex-Logo-Scale.png
+
+=== "Green Peace" - Look ===
+
+http://masuland.googlecode.com/files/Apache_Flex-Logo-Green_Peace.jpg
+
+=== "Blue W3C" - Look ===
+
+http://masuland.googlecode.com/files/Apache_Flex-Logo-Blue_W3C.jpg
+
+=== "Red Head" - Look ===
+
+http://masuland.googlecode.com/files/Apache_Flex-Logo-Red_Head.jpg
+
+=== "Apache Style" - Look ===
+
+http://masuland.googlecode.com/files/Apache_Flex-Logo-Apache_Style.jpg
 
 _The Photoshop version is available [http://masuland.googlecode.com/files/Apache_Flex-Logo.psd.zip  here]._
 
