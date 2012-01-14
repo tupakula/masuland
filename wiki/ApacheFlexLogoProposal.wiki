@@ -12,7 +12,7 @@ This logo implies to me *"Safety"* for Flex ... because the feather (Apache) is 
 
 == Logo ==
 
-[http://dl.dropbox.com/u/352808/code/ApacheFlexLogo/index.html Here is a Flex app version] to dynamically change the colors of the logo proposal.
+[http://dl.dropbox.com/u/352808/code/ApacheFlexLogo/index.html Here is a Flex app version] to dynamically change the colors of the logo proposal. The source code for the Flex version can be found [http://dl.dropbox.com/u/352808/code/ApacheFlexLogo/srcview/index.html here].
 
 === "Standard" - Look (Scaled) ===
 
