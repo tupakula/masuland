@@ -2,6 +2,8 @@
 
 = Apache Flex Logo Proposal =
 
+This would be my version of the Apache Flex logo:
+
 <wiki:toc />
 
 == Idea ==
@@ -10,7 +12,7 @@ This logo implies to me *"Safety"* for Flex ... because the feather (Apache) is 
 
 == Logo ==
 
-This would be my version of the Apache Flex logo:
+[http://dl.dropbox.com/u/352808/code/ApacheFlexLogo/index.html Here is a Flex app version] to dynamically change the colors of the logo proposal.
 
 === "Standard" - Look (Scaled) ===
 
