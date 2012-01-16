@@ -34,6 +34,10 @@ http://masuland.googlecode.com/files/Apache_Flex-Logo-Red_Head.jpg
 
 http://masuland.googlecode.com/files/Apache_Flex-Logo-Apache_Style.jpg
 
+=== Look - Summary ===
+
+http://masuland.googlecode.com/files/Apache_Flex-Logo-Scale.png
+
 _The Photoshop version is available [http://masuland.googlecode.com/files/Apache_Flex-Logo.psd.zip  here]._
 
 == Feedback ==
