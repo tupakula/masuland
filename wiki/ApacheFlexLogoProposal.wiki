@@ -16,7 +16,7 @@ This logo implies to me *"Safety"* for Flex ... because the feather (Apache) is 
 
 === "Standard" - Look (Scaled) ===
 
-http://masuland.googlecode.com/files/Apache_Flex-Logo-Scale.png
+http://masuland.googlecode.com/files/Apache_Flex-Logo-Standard-Scaled.png
 
 === "Green Peace" - Look ===
 
