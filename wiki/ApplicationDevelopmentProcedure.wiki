@@ -4,29 +4,29 @@
 
 <wiki:toc />
 
-*Rule:* Before working on the [ApplicationDevelopmentProcedure#3._Application_Code code of your application] make sure you have specified the requirements of the application in a [ApplicationDevelopmentProcedure#1._Application_Specification Specification Document], and, you have defined an [ApplicationDevelopmentProcedure#2._Application_Coding_Standard Application Coding Standard].
+*Rule:* Before working on your [ApplicationDevelopmentProcedure#Application_Code Application Code] make sure you have specified the requirements of the application in a [ApplicationDevelopmentProcedure#Application_Specification Specification Document], and, you have defined an [ApplicationDevelopmentProcedure#Application_Coding_Standard Application Coding Standard].
 
 http://masuland.googlecode.com/files/ApplicationDevelopmentProcedure.png
 
-== 1. Specification Document ==
+== Specification Document ==
 
  * [LoginExampleFeatureSpec Login Example Spec]
  * [ReligionChooserFeatureSpec Religion Chooser Spec]
 
-== 2. Application Coding Standard ==
+== Application Coding Standard ==
 
 An Application Coding Standard consists of a set of Nanoarchitectures / Architectural Patterns which describe the structure of your application, and, some coding guidelines collected in a Coding Conventions document.
 
-=== 2.1. Nanoarchitecture / Architectural Pattern ===
+=== Nanoarchitecture / Architectural Pattern ===
 
  * [Nanoarchitecture]
 
-=== 2.2. Coding Conventions ===
+=== Coding Conventions ===
 
  * [Flex3CodingConventions Flex 3 Coding Conventions]
  * [Flex4CodingConventions Flex 4 Coding Conventions]
 
-== 3. Application Code ==
+== Application Code ==
 
  * [LoginExample Login Example]
  * [ReligionChooser Religion Chooser]
