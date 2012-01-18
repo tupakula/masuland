@@ -8,35 +8,20 @@ Before working on the code of your application make sure you have specified the 
 
 http://masuland.googlecode.com/files/ApplicationDevelopmentProcedure2.png
 
-== 1. Application Specification ==
+== 1. Specification Document ==
 
-=== 1.1. Application Flow and States ===
-
- * [LoginExampleFeatureSpec#1.1._Application_Flow_and_States Login Example Spec - Application Flow and States]
- * [ReligionChooserFeatureSpec#1.1._Application_Flow_and_States Religion Chooser Spec - Application Flow and States]
-
-=== 1.2. Wireframe ===
-
- * [LoginExampleFeatureSpec#1.2._Wireframe Login Example Spec - Wireframe]
- * [ReligionChooserFeatureSpec#1.2._Wireframe Religion Chooser Spec - Wireframe]
-
-=== 1.3. Value Objects ===
-
- * [ReligionChooserFeatureSpec#1.3._Value_Objects Login Example Spec - Value Objects]
- * [LoginExampleFeatureSpec#1.3._Value_Objects Religion Chooser Spec - Value Objects]
-
-=== 1.4. Client-Server Interface ===
-
- * [LoginExampleFeatureSpec#1.4._Client-Server_Interface Login Example Spec - Client-Server Interface]
- * [ReligionChooserFeatureSpec#1.4._Client-Server_Interface  Religion Chooser Spec - Client-Server Interface]
+ * [LoginExampleFeatureSpec Login Example Spec]
+ * [ReligionChooserFeatureSpec Religion Chooser Spec]
 
 == 2. Application Coding Standard ==
+
+An Application Coding Standard consists of a set of Nanoarchitectures / Architectural Patterns which describe the structure of your application, and, some coding guidelines collected in a Coding Conventions document.
 
 === 2.1. Nanoarchitecture / Architectural Pattern ===
 
  * [Nanoarchitecture]
 
-=== 2.2. Code Formatting ===
+=== 2.2. Coding Conventions ===
 
  * [Flex3CodingConventions Flex 3 Coding Conventions]
  * [Flex4CodingConventions Flex 4 Coding Conventions]
