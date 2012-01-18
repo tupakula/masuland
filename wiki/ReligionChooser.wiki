@@ -46,6 +46,9 @@ Features: Flex 4.1 (Spark) with [NanoarchitectureMVCb "Model - View - Component"
 ==== Why have you created the Religion Chooser? ==== 
 Please read my [LetterOfMotivation Letter of Motivation].
 
+==== I am new to this website. Where should I start? ==== 
+Please check out this [ApplicationDevelopmentProcedure page].
+
 ==== What's a Nanoarchitecture? ==== 
 Please read this page about [Nanoarchitecture Nanoarchitectures].
 
