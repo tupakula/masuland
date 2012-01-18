@@ -68,7 +68,7 @@ UserVO
 
 }}}
 
-== 1.4. Client-Server Interface (Delegates) ==
+== 1.4. Client-Server Interface ==
 
 The client-server communication will be defined in delegate classes. The Login Example application uses the following methods for client-server communication. 
 
