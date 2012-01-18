@@ -1,5 +1,6 @@
 #summary The sitebar
 
+ * [ApplicationDevelopmentProcedure Application Development Procedure]
  * Code Examples
    * [LoginExample Login Example]
      * [LoginExampleFeatureSpec Feature Specification]
@@ -21,4 +22,3 @@
  * [ApacheFlexLogoProposal Apache Flex Logo Proposal]
  * [LetterOfMotivation Letter of Motivation]
  * [WhatsWrongWithFlex What's wrong with Flex?]
- * [ApplicationDevelopmentProcedure Application Development Procedure]
