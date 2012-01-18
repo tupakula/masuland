@@ -15,7 +15,7 @@ http://masuland.googlecode.com/files/ApplicationDevelopmentProcedure.png
 
 == Application Coding Standard ==
 
-An Application Coding Standard consists of a set of Nanoarchitectures / Architectural Patterns which describe the structure of your application, and, some coding guidelines collected in a Coding Conventions document.
+An "Application Coding Standard" consists of a set of [ApplicationDevelopmentProcedure#Nanoarchitecture_/_Architectural_Pattern Nanoarchitectures / Architectural Patterns] which describe the structure of your application, and, some coding guidelines collected in a [ApplicationDevelopmentProcedure#Coding_Conventions Coding Conventions] document.
 
 === Nanoarchitecture / Architectural Pattern ===
 
