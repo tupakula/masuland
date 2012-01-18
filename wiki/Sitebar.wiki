@@ -19,6 +19,6 @@
  * Best Coding Practices
    * [MigrationFromFlex3ToFlex4 Migration from Flex 3 to Flex 4]
  * [Statistics]
- * [ApacheFlexLogoProposal Apache Flex Logo Proposal]
  * [LetterOfMotivation Letter of Motivation]
  * [WhatsWrongWithFlex What's wrong with Flex?]
+ * [ApacheFlexLogoProposal Apache Flex Logo Proposal]
