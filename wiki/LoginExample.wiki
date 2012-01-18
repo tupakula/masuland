@@ -234,6 +234,9 @@ Features: Flex 4.5 (Spark) with [NanoarchitectureMVCb "Model - View - Component"
 ==== Why have you created the Login Example? ==== 
 Please read my [LetterOfMotivation Letter of Motivation].
 
+==== I am new to this website. Where should I start? ==== 
+Please check out this [ApplicationDevelopmentProcedure page].
+
 ==== What's a Nanoarchitecture? ==== 
 Please read this page about [Nanoarchitecture Nanoarchitectures].
 
