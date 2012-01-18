@@ -4,7 +4,7 @@
 
 <wiki:toc />
 
-http://masuland.googlecode.com/files/ApplicationDevelopmentProcedure2.png
+http://masuland.googlecode.com/files/ApplicationDevelopmentProcedure.png
 
 == 1. Application Specification ==
 
