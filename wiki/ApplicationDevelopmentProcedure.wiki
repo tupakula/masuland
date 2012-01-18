@@ -6,7 +6,7 @@
 
 Before working on the code of your application make sure you have specified the requirements of the application in a [ApplicationDevelopmentProcedure#1._Application_Specification Specification Document], and, you have defined an [ApplicationDevelopmentProcedure#2._Application_Coding_Standard Application Coding Standard].
 
-http://masuland.googlecode.com/files/ApplicationDevelopmentProcedure2.png
+http://masuland.googlecode.com/files/ApplicationDevelopmentProcedure.png
 
 == 1. Specification Document ==
 
