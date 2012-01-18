@@ -4,7 +4,7 @@
 
 <wiki:toc />
 
-*Rule:* Before working on your [ApplicationDevelopmentProcedure#Application_Code Application Code] make sure you have specified the requirements of the application in a [ApplicationDevelopmentProcedure#Application_Specification Specification Document], and, you have defined an [ApplicationDevelopmentProcedure#Application_Coding_Standard Application Coding Standard].
+*Recommendation:* Before working on your [ApplicationDevelopmentProcedure#Application_Code Application Code] make sure you have specified the requirements of the application in a [ApplicationDevelopmentProcedure#Application_Specification Specification Document], and, you have defined an [ApplicationDevelopmentProcedure#Application_Coding_Standard Application Coding Standard].
 
 http://masuland.googlecode.com/files/ApplicationDevelopmentProcedure.png
 
