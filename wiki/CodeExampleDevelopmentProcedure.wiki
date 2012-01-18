@@ -1,5 +1,5 @@
 #summary This page proposes a Code Example Development Procedure
 
-= Code Example Development Procedure =
+= Proposal: Code Example Development Procedure =
 
 http://masuland.googlecode.com/files/Proposal-CodeExampleDevelopmentProcedure.png
