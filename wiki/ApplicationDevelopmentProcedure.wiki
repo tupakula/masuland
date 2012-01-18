@@ -1,10 +1,10 @@
 #summary This page proposes an Application Development Procedure
 
-= Code Example Development Procedure =
+= Application Development Procedure =
 
 <wiki:toc />
 
-http://masuland.googlecode.com/files/CodeExampleDevelopmentProcedure.png
+http://masuland.googlecode.com/files/ApplicationDevelopmentProcedure.png
 
 == 1. Example Specification ==
 
