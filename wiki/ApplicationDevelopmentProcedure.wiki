@@ -1,4 +1,4 @@
-#summary This page proposes an Application Development Procedure
+#summary This page recommends an Application Development Procedure
 
 = Application Development Procedure =
 
