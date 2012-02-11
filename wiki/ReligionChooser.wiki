@@ -6,11 +6,11 @@
 
 == Preface ==
 
-The Religion Chooser aims to be for Flex Newbies and intermediate Flex coders which are having hard times building their first large-scale Flex app. While you can see the following code examples as a way I would recommend building these apps, I am not in the position to say: "This is the way you have to do it" ...
+The Religion Chooser app aims to be for Flex Newbies and intermediate Flex coders which are having hard times building their first large-scale Flex app. While you can see the following code examples as a way I would recommend building these apps, I am not in the position to say: "This is the way you have to do it" ...
 
 == Introduction ==
 
-The Religion Chooser application should be seen as a fun application based on a decision tree structure created by [http://www.holytaco.com/flowchart-determine-what-religion-you-should-follow holytaco.com]. For more information about the application please read the [ReligionChooserFeatureSpec Feature Specification] document. The following code examples provide solutions for several dimensions in Flex development:
+The Religion Chooser app should be seen as a fun application based on a decision tree structure created by [http://www.holytaco.com/flowchart-determine-what-religion-you-should-follow holytaco.com]. For more information about the application please read the [ReligionChooserFeatureSpec Feature Specification] document. The following code examples provide solutions for several dimensions in Flex development:
 
  # *Flex SDKs* (Flex 4.1 "Gumbo" and Flex 4.5 "Hero" TODO)
  # *IoC Microarchitectures* ([http://www.spicefactory.org/parsley/ Parsley 2.4.1], [http://www.springactionscript.org/ Spring AS 1.1], [http://www.swizframework.org/ Swiz 1.4])
