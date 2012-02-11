@@ -70,7 +70,7 @@ You can post problems and feature enhancements into my [http://code.google.com/p
 ==== Can I participate in your project? ====
 Sure! There are still things left for me to do (see [http://code.google.com/p/masuland/issues/list issue tracker]). Any help would be appreciated!
 
-==== Would you be willing to donate your code to a higher instance? ====
+==== Would you be willing to donate your code and docs to a higher instance? ====
 Of cause! For the moment, I just haven't found the people sharing the same interest making the lifes of Flex newbies ... etc. easier building large-scale Flex apps. If I would see an authority growing up somewhere I would be happy to jump over. 
 
 ==== Who is this guy occupying land in the web? ====
