@@ -4,7 +4,13 @@
 
 <wiki:toc max_depth="3" />
 
-The Religion Chooser application aims to be a fun application based on a decision tree structure created by [http://www.holytaco.com/flowchart-determine-what-religion-you-should-follow holytaco.com]. For more information about the application please read the [ReligionChooserFeatureSpec Feature Specification] document. The following code examples provide solutions for several dimensions in Flex development:
+== Preface ==
+
+The Religion Chooser aims to be for Flex Newbies and intermediate Flex coders which are having hard times building their first large-scale Flex app. While you can see the following code examples as a way I would recommend building these apps, I am not in the position to say: "This is the way you have to do it" ...
+
+== Introduction ==
+
+The Religion Chooser application should be seen as a fun application based on a decision tree structure created by [http://www.holytaco.com/flowchart-determine-what-religion-you-should-follow holytaco.com]. For more information about the application please read the [ReligionChooserFeatureSpec Feature Specification] document. The following code examples provide solutions for several dimensions in Flex development:
 
  # *Flex SDKs* (Flex 4.1 "Gumbo" and Flex 4.5 "Hero" TODO)
  # *IoC Microarchitectures* ([http://www.spicefactory.org/parsley/ Parsley 2.4.1], [http://www.springactionscript.org/ Spring AS 1.1], [http://www.swizframework.org/ Swiz 1.4])
@@ -63,6 +69,9 @@ You can post problems and feature enhancements into my [http://code.google.com/p
 
 ==== Can I participate in your project? ====
 Sure! There are still things left for me to do (see [http://code.google.com/p/masuland/issues/list issue tracker]). Any help would be appreciated!
+
+==== Would you be willing to donate your code to a higher instance? ====
+Of cause! For the moment, I just haven't found the people sharing the same interest making the lifes of Flex Newbies etc. easier building large-scale Flex apps. If I would see an authority growing up somewhere I would be happy to jump over. 
 
 ==== Who is this guy occupying land in the web? ====
 Details about me can be found [http://masuland.wordpress.com/about/ here].
