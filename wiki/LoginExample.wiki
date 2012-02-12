@@ -219,6 +219,14 @@ Features: Flex 4.5 (Spark) with [NanoarchitectureMVCb "Model - View - Component"
 
  * Login Example Server, Zend AMF 1.11.11, ([http://masuland.googlecode.com/svn/trunk/LoginExampleServerZendAmf_1.11.11/trunk/ svn repo])
 
+=== BlazeDS ===
+
+ * TODO
+
+=== GraniteDS ===
+
+ * TODO
+
 ...
 
 == Used Nanoarchitectures ==
