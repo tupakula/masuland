@@ -17,7 +17,7 @@
    * Coding Conventions
      * [Flex3CodingConventions Flex 3 Coding Conventions]
      * [Flex4CodingConventions Flex 4 Coding Conventions]
- * [MigrationFromFlex3ToFlex4 Migration from Flex 3 to Flex 4]
+ * [MigrationFromFlex3ToFlex4 How to migrate from Flex 3 to Flex 4]
  * [Statistics]
  * [LetterOfMotivation Letter of Motivation]
  * [WhatsWrongWithFlex What's wrong with Flex?]
