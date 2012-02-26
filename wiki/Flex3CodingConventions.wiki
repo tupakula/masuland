@@ -9,20 +9,20 @@ This document proposes additional Flex 3 coding conventions to the existing Flex
 == MXML File Conventions ==
 
 - For indentation always use tabs<br/>
-- When using string notation in <mx:Script /> tag always use single quotes, e.g. 'Hallo String'<br/>
+- When using string notation in {{{<mx:Script/>}}} tag always use single quotes, e.g. 'Hallo String'<br/>
 - Use a consistent MXML node order:
- # <mx:Metadata/>
- # <mx:State/>
- # <mx:Transition/>
- # <mx:Script/>
+ # {{{<mx:Metadata/>}}}
+ # {{{<mx:State/>}}}
+ # {{{<mx:Transition/>}}}
+ # {{{<mx:Script/>}}}
    # Constants
    # Properties
    # Constructor
    # Getter / Setter
    # Methods
    # Handler
- # <mx:Effect/>
- # <mx:UIComponent/>
+ # {{{<mx:Effect/>}}}
+ # {{{<mx:UIComponent/>}}}
 
 - Use a consistent attribute order inside MXML nodes:
  # Name spaces
@@ -118,43 +118,43 @@ This document proposes additional Flex 3 coding conventions to the existing Flex
 }}}
 
 || *Prefix* || *Flex 3 SDK Component (Control)* ||
-|| {{{btn_}}} || Button, LinkButton ||
-|| {{{cb_}}} || CheckBox ||
-|| {{{cp_}}} || ColorPicker ||
-|| {{{cbb_}}} || ComboBox ||
-|| {{{dg_}}} || DataGrid, AdvancedDataGrid, OLAPDataGrid ||
-|| {{{dc_}}} || DateChooser ||
-|| {{{df_}}} || DateField ||
-|| {{{li_}}} || List, HorizontalList, TileList ||
+|| {{{btn_}}} || Button, !LinkButton ||
+|| {{{cb_}}} || !CheckBox ||
+|| {{{cp_}}} || !ColorPicker ||
+|| {{{cbb_}}} || !ComboBox ||
+|| {{{dg_}}} || !DataGrid, !AdvancedDataGrid, !OLAPDataGrid ||
+|| {{{dc_}}} || !DateChooser ||
+|| {{{df_}}} || !DateField ||
+|| {{{li_}}} || List, !HorizontalList, !TileList ||
 || {{{sl_}}} || HSlider, VSlider ||
 || {{{img_}}} || Image ||
-|| {{{nst_}}} || NumericStepper ||
-|| {{{pbtn_}}} || PopupButton ||
-|| {{{pmbtn}}} || PopupMenuButton ||
-|| {{{pb_}}} || ProgressBar ||
-|| {{{rb_}}} || RadioButton ||
-|| {{{rbg_}}} || RadioButtonGroup ||
-|| {{{rte_}}} || RichTextEditor ||
+|| {{{nst_}}} || !NumericStepper ||
+|| {{{pbtn_}}} || !PopupButton ||
+|| {{{pmbtn}}} || !PopupMenuButton ||
+|| {{{pb_}}} || !ProgressBar ||
+|| {{{rb_}}} || !RadioButton ||
+|| {{{rbg_}}} || !RadioButtonGroup ||
+|| {{{rte_}}} || !RichTextEditor ||
 || {{{sl_}}} || SWFLoader ||
-|| {{{ta_}}} || TextArea ||
+|| {{{ta_}}} || !TextArea ||
 || {{{txt_}}} || Text, Label ||
-|| {{{tip_}}} || TextInput ||
+|| {{{tip_}}} || !TextInput ||
 || {{{tr_}}} || Tree ||
-|| {{{vd_}}} || VideoDisplay ||
+|| {{{vd_}}} || !VideoDisplay ||
 
 || *Prefix* || *Flex 3 SDK Component (Layout)* ||
 || {{{bx_}}} || Box, HBox, VBox, Canvas ||
-|| {{{ctlb_}}} || ControlBar, ApplicationControlBar ||
+|| {{{ctlb_}}} || !ControlBar, !ApplicationControlBar ||
 || {{{f_}}} || Form ||
-|| {{{fh_}}} || FormHeading ||
+|| {{{fh_}}} || !FormHeading ||
 || {{{gr_}}} || Grid ||
 || {{{dbx_}}} || HDividedBox, VDividedBox ||
 || {{{rl_}}} || HRule, VRule ||
-|| {{{ml_}}} || ModuleLoader ||
+|| {{{ml_}}} || !ModuleLoader ||
 || {{{pn_}}} || Panel ||
 || {{{sp_}}} || Spacer ||
 || {{{tl_}}} || Tile ||
-|| {{{tlw_}}} || TileWindow ||
+|| {{{tlw_}}} || !TileWindow ||
 
 == Actionscript File Conventions ==
 
