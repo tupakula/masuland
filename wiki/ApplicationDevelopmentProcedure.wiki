@@ -8,6 +8,9 @@
 
 http://masuland.googlecode.com/files/ApplicationDevelopmentProcedure.png
 
+_Created with the [http://www.yworks.com/en/products_yed_about.html yEd Graph Editor].
+Source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleDocs/trunk/yed_diagram/ApplicationDevelopmentProcedure.graphml svn repo]._
+
 == Specification Document ==
 
  * [LoginExampleFeatureSpec Login Example Spec]
