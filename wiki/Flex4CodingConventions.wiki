@@ -9,7 +9,7 @@ This document proposes additional Flex 4 coding conventions to the existing Flex
 == MXML File Conventions ==
 
 - For indentation always use tabs<br/>
-- When using string notation in {{{<fx:Script />}}} tag always use single quotes, e.g. 'Hallo String'<br/>
+- When using string notation in {{{<fx:Script/>}}} tag always use single quotes, e.g. 'Hallo String'<br/>
 - Use a consistent MXML node order:
  # {{{<fx:Metadata/>}}}
  # {{{<s:State/>}}}
@@ -140,11 +140,12 @@ This document proposes additional Flex 4 coding conventions to the existing Flex
 || {{{pb_}}} || !ProgressBar ||
 || {{{rb_}}} || !RadioButton ||
 || {{{rbg_}}} || !RadioButtonGroup ||
-|| {{{sl_}}} || !SWFLoader ||
+|| {{{sl_}}} || SWFLoader ||
 || {{{ta_}}} || !TextArea ||
 || {{{txt_}}} || Label, !RichText, !RichEditableText ||
 || {{{tip_}}} || !TextInput ||
 || {{{vd_}}} || !VideoDisplay ||
+|| ... || ... ||
 
 || *Prefix* || *Flex 4 SDK Component (Layout)* ||
 || {{{bx_}}} || Group, HGroup, VGroup ||
@@ -153,6 +154,7 @@ This document proposes additional Flex 4 coding conventions to the existing Flex
 || {{{fi_}}} || !FormItem ||
 || {{{ml_}}} || !ModuleLoader ||
 || {{{pn_}}} || Panel ||
+|| ... || ... ||
 
 == Actionscript File Conventions ==
 
