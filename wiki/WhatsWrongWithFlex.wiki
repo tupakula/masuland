@@ -181,7 +181,7 @@ _Original source: Question 2 from this [http://code.google.com/p/masuland/wiki/S
 Flex 4.x is a "Hybrid" SDK because Flex 4.x still relies on the old MX-namespace for two main reasons:
 
   # Downward-compatibility with Flex 3 UIComponents
-  # Some MX-components have not been transfered to the Spark-component set yet (e.g. MX-!DateChooser, MX-!ColorPicker, MX-!TabNavigator ... etc.). For more infomation check out this link: https://cwiki.apache.org/confluence/display/FLEX/Missing+Spark+Components
+  # Some MX-components have not been transfered to the Spark-component set yet (e.g. MX-!DateChooser, MX-!ColorPicker, MX-!TabNavigator ... etc.). For more information, check out this link: https://cwiki.apache.org/confluence/display/FLEX/Missing+Spark+Components
 
 Flex 5 promises to tie off this dependency to the MX-namespace, and therefore can be seen again as a pure Flex SDK (just like Flex 3 is).
 
