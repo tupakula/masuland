@@ -391,7 +391,7 @@ Benefits:
  * Faster Javascript code execution 
  * Better tooling-support for Javascript
 
-=== 5.5. Conclusion ===
+== 5. Conclusion ==
 
 We should occupy W3C and ECMA Int, because then, there wouldn't be the need to occupy Flash: http://www.occupyflash.org/
 
