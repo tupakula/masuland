@@ -391,7 +391,7 @@ Benefits:
  * Faster Javascript code execution 
  * Better tooling-support for Javascript
 
-== 5. Conclusion ==
+== 6. Conclusion ==
 
 We should occupy W3C and ECMA Int, because then, there wouldn't be the need to occupy Flash: http://www.occupyflash.org/
 
@@ -401,9 +401,9 @@ For more information check out:
  * http://www.occupyw3c.org/ (Not occupied yet)
  * http://www.occupyecma.org/ (Not occupied yet)
 
-== 6. Related Resources ==
+== 7. Related Resources ==
 
-=== 6.1. Flex Future ===
+=== 7.1. Flex Future ===
 
  * http://www.riagora.com/2011/11/flex-is-open/
  * http://blogs.adobe.com/flex/2011/11/your-questions-about-flex.html 
@@ -411,7 +411,7 @@ For more information check out:
  * http://www.adobe.com/devnet/flashplatform/articles/recent-updates.html
  * http://tv.adobe.com/watch/max-2011-develop/flash-platform-roadmap-flex-flash-builder-flash-player-air/
 
-=== 6.2. Spoon Project ===
+=== 7.2. Spoon Project ===
 
  * http://zaa.tv/2011/04/360flex-denver-2011–day-2-keynote-spoon/
  * http://tv.adobe.com/watch/max-2011-develop/open-source-flex-what-the-spoon-project-means-to-you/
