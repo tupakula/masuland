@@ -393,9 +393,7 @@ Benefits:
 
 == 6. Conclusion ==
 
-We should occupy W3C and ECMA Int, because then, there wouldn't be the need to occupy Flash: http://www.occupyflash.org/
-
-For more information check out:
+We should occupy W3C and ECMA Int, because then, there wouldn't be the need to occupy Flash: [http://www.occupyflash.org/]. For more information check out:
 
  * http://www.occupyhtml.org/
  * http://www.occupyw3c.org/ (Not occupied yet)
