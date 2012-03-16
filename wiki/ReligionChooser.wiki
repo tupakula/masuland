@@ -6,7 +6,7 @@
 
 == Preface ==
 
-The Religion Chooser app aims to be for Flex beginners and intermediate Flex coders which are having hard times building their first large-scale Flex app. While you can see the following code examples as a way I would recommend building these apps, I am not in the position to say: "This is the way you have to do it".
+The Religion Chooser app aims to be a quick and easy guide for Flex beginners and intermediate Flex coders which are having hard times building their first large-scale Flex app. While you can see the following code examples as a way I would recommend building these apps, I am not in the position to say: "This is the way you have to do it".
 
 == Introduction ==
 
