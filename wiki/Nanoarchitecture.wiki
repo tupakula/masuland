@@ -24,6 +24,7 @@ Microarchitectures like [http://sourceforge.net/adobe/cairngorm Cairngorm 2.2.1]
 
  * "Controller" (Ctl)
  * "Command" (Cmd)
+ * "Action Chaining" (AChn)
  * "Task" (Tsk)
  * "Story/Task" (!StoTsk)
 
