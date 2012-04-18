@@ -12,21 +12,15 @@ Microarchitectures like [http://sourceforge.net/adobe/cairngorm Cairngorm 2.2.1]
  * [NanoarchitectureMVCb "Model - View - Code Behind" (MVCb)]
  * "Model - View - Code Behind - Controller" (MVCbCtl)
  * "Model - View - Code Behind - Command" (MVCbCmd)
- * "Model - View - Code Behind - Task" (MVCbTsk)
- * "Model - View - Code Behind - Story/Task" (MVCbStoTsk)
  * [NanoarchitectureMVCb "Model - View - Component" (MVCp)]
  * "Model - View - Component - Controller" (MVCbCtl)
  * "Model - View - Component - Command" (MVCbCmd)
- * "Model - View - Component - Task" (MVCbTsk)
- * "Model - View - Component - Story/Task" (MVCbStoTsk)
 
 *Structural Nanoarchitectures*
 
- * "Controller" (Ctl)
+ * [NanoarchitectureCtl "Controller" (Ctl)]
  * "Command" (Cmd)
  * "Action Chaining" (AChn)
- * "Task" (Tsk)
- * "Story/Task" (!StoTsk)
 
 *Conceptual Nanoarchitectures*
 
