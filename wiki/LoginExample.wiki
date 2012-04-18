@@ -238,7 +238,7 @@ Features: Flex 4.5 (Spark) with [NanoarchitectureMVCb "Model - View - Component"
  * [NanoarchitecturePInj "Property Injection" (PInj)]
  * [NanoarchitectureNoEvt "No Event" (NoEvt)]
  * [NanoarchitectureCtl "Controller" (Ctl)]
- * "Command" (Cmd)
+ * [NanoarchitectureCmd "Command" (Cmd)]
  * "Story/Task" (!StoTsk)
 
 ...
