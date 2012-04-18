@@ -41,9 +41,9 @@ Features: Flex 4.1 (Spark) with [NanoarchitectureMVCb "Model - View - Component"
 == Used Nanoarchitectures ==
 
  * [NanoarchitectureMVCb "Model - View - Component" (MVCp)]
- * "Controller" (Ctl)
  * [NanoarchitectureCpsh "C-Push" (Cpsh)]
  * [NanoarchitecturePInj "Property Injection" (PInj)]
+ * [NanoarchitectureCtl "Controller" (Ctl)]
 
 ...
 
