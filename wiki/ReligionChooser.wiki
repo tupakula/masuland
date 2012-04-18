@@ -14,7 +14,7 @@ The Religion Chooser app should be seen as a fun application based on a decision
 
  # *Flex SDKs* (Flex 4.1 "Gumbo" and Flex 4.5 "Hero" TODO)
  # *IoC Microarchitectures* ([http://www.spicefactory.org/parsley/ Parsley 2.4.1], [http://www.springactionscript.org/ Spring AS 1.1], [http://www.swizframework.org/ Swiz 1.4])
- # *Nanoarchitectures* ([NanoarchitectureMVCb MVCp], [NanoarchitectureCpsh Cpsh], [NanoarchitecturePInj PInj], [NanoarchitectureM M], [NanoarchitectureCtl Ctl])
+ # *Nanoarchitectures* ([NanoarchitectureM M], [NanoarchitectureVCb VCp], [NanoarchitectureCpsh Cpsh], [NanoarchitecturePInj PInj], [NanoarchitectureCtl Ctl])
  # *Flex coding conventions* ([Flex4CodingConventions Flex 4]) 
  # *Project planning* (see [ReligionChooserFeatureSpec Religion Chooser Feature Specification])
 
@@ -30,7 +30,7 @@ http://masuland.googlecode.com/files/ReligionChooserScreenshotWeb.png
 
 ==== Flex 4.1 (Spark) with MVCpshCtl_PInj ====
 
-Features: Flex 4.1 (Spark) with [NanoarchitectureMVCb "Model - View - Component" (MVCp)], [NanoarchitectureCpsh "C-Push" (Cpsh)], "Controller" (Ctl) & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
+Features: Flex 4.1 (Spark) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Component" (VCp)], [NanoarchitectureCpsh "C-Push" (Cpsh)], "Controller" (Ctl) & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
 
  * Flex 4.1 (Spark) Religion Chooser with Parsley 2.4.1 (MVCb), ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboParsleyMVCpshCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboParsleyMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/ReligionChooserGumboParsleyMVCpshCtl_PInj/trunk/ svn repo])
  * Flex 4.1 (Spark) Religion Chooser with Spring 1.1 (MVCb), ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSpringMVCpshCtl_PInj/index.html live app]) ([http://dl.dropbox.com/u/352808/code/ReligionChooserGumboSpringMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/ReligionChooserGumboSpringMVCpshCtl_PInj/trunk/ svn repo])
@@ -40,7 +40,7 @@ Features: Flex 4.1 (Spark) with [NanoarchitectureMVCb "Model - View - Component"
 
 == Used Nanoarchitectures ==
 
- * [NanoarchitectureMVCb "Model - View - Component" (MVCp)]
+ * [NanoarchitectureVCb "View - Component" (VCp)]
  * [NanoarchitectureCpsh "C-Push" (Cpsh)]
  * [NanoarchitecturePInj "Property Injection" (PInj)]
  * [NanoarchitectureM "Model" (M)]
