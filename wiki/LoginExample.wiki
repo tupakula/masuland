@@ -231,12 +231,12 @@ Features: Flex 4.5 (Spark) with [NanoarchitectureM "Model" (M)], [Nanoarchitectu
 
 == Used Nanoarchitectures ==
 
- * [NanoarchitectureM "Model" (M)]
  * [NanoarchitectureVCb "View - Code Behind / Component" (VCb / VCp)]
  * [NanoarchitectureCpll "C-Pull" (Cpll)]
  * [NanoarchitectureCpsh "C-Push" (Cpsh)]
  * [NanoarchitecturePInj "Property Injection" (PInj)]
  * [NanoarchitectureNoEvt "No Event" (NoEvt)]
+ * [NanoarchitectureM "Model" (M)]
  * [NanoarchitectureCtl "Controller" (Ctl)]
  * [NanoarchitectureCmd "Command" (Cmd)]
  * "Story/Task" (!StoTsk)
