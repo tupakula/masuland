@@ -276,6 +276,7 @@ _Complete source available in the  [http://masuland.googlecode.com/svn/trunk/Log
  * [NanoarchitectureCpsh "C-Push" (Cpsh)]
  * [NanoarchitectureNoEvt "No Event" (NoEvt)]
  * [NanoarchitecturePInj "Property Injection" (PInj)]
+ * [NanoarchitectureM "Model" (M)]
  * [NanoarchitectureCtl "Controller" (Ctl)]
 
 ...
