@@ -25,7 +25,7 @@ The following example is from a Robotlegs / Signals project
 }}}
 _Complete source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroRobotlegsSignalsMobileMVCpshCmd/trunk/src/main/flex/com/masuland/loginexample/view/component/SettingsBoxCP.as svn repo]._
 
-==== Property Injection with Parsley ====
+==== "Property Injection" (PInj) with Parsley ====
 {{{
 	[Subscribe(scope='appModel', objectId='settings')]
 	[Bindable]
@@ -44,7 +44,7 @@ _Complete source available in the  [http://masuland.googlecode.com/svn/trunk/Log
 }}}
 _Complete source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroParsleyMobileMVCpshCtl_PInj/trunk/src/main/flex/com/masuland/loginexample/view/component/SettingsBoxCP.as svn repo]._
 
-==== Property Injection with Spring ====
+==== "Property Injection" (PInj) with Spring ====
 {{{
 	[Inject(name='appModel', property='settings')]
 	[Bindable]
@@ -63,7 +63,7 @@ _Complete source available in the  [http://masuland.googlecode.com/svn/trunk/Log
 }}}
 _Complete source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroSpringMobileMVCpshCtl_PInj/trunk/src/main/flex/com/masuland/loginexample/view/component/SettingsBoxCP.as svn repo]._
 
-==== Property Injection with Swiz ====
+==== "Property Injection" (PInj) with Swiz ====
 {{{
 	[Inject(source='appModel.settings', bind='true')]
 	[Bindable]
