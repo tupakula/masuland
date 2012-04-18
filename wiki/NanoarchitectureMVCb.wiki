@@ -57,6 +57,7 @@ This architecture contains 3 types of application flows:
  * [NanoarchitectureCpsh "C-Push" (Cpsh)]
  * [NanoarchitectureNoEvt "No Event" (NoEvt)]
  * [NanoarchitecturePInj "Property Injection" (PInj)]
+ * [NanoarchitectureM "Model" (M)]
  * [NanoarchitectureCtl "Controller" (Ctl)]
  * [NanoarchitectureCmd "Command" (Cmd)]
 
