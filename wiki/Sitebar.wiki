@@ -14,6 +14,7 @@
      * [NanoarchitecturePInj Property Injection (PInj)]
      * [NanoarchitectureCpll C-Pull (Cpll)]
      * [NanoarchitectureCpsh C-Push (Cpsh)]
+     * [NanoarchitectureCtl Controller (Ctl)]
    * Coding Conventions
      * [Flex3CodingConventions Flex 3 Coding Conventions]
      * [Flex4CodingConventions Flex 4 Coding Conventions]
