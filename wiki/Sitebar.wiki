@@ -10,10 +10,10 @@
    * [Nanoarchitecture Nanoarchitecture]
      * [NanoarchitectureMVCb Model-View-Codebehind (MVCb)]
      * [NanoarchitectureMVCb Model-View-Component (MVCp)]
-     * [NanoarchitectureNoEvt No Event (NoEvt)]
-     * [NanoarchitecturePInj Property Injection (PInj)]
      * [NanoarchitectureCpll C-Pull (Cpll)]
      * [NanoarchitectureCpsh C-Push (Cpsh)]
+     * [NanoarchitectureNoEvt No Event (NoEvt)]
+     * [NanoarchitecturePInj Property Injection (PInj)]
      * [NanoarchitectureCtl Controller (Ctl)]
      * [NanoarchitectureCmd Command (Cmd)]
    * Coding Conventions
