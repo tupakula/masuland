@@ -2,7 +2,6 @@
 
 = "Command" (Cmd) Nanoarchitecture =
 
-
 ==== "Command" (Cmd) Nanoarchitecture with Cairngorm 2.2.2 ====
 {{{
 	public class GetSettingsCommand implements ICommand, IResponder
@@ -34,7 +33,6 @@
 	}
 }}}
 _Complete source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx3Cairngorm222/trunk/src/main/flex/com/masuland/loginexample/action/command/GetSettingsCommand.as svn repo]._
-
 
 ==== "Command" (Cmd) Nanoarchitecture with Mate ====
 {{{
@@ -76,7 +74,6 @@ _Complete source available in the  [http://masuland.googlecode.com/svn/trunk/Log
 	}
 }}}
 _Complete source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroMateMobileMVCpshCmd_PInj/trunk/src/main/flex/com/masuland/loginexample/action/command/GetSettingsCommand.as svn repo]._
-
 
 ==== "Command" (Cmd) Nanoarchitecture with Parsley ====
 {{{
@@ -126,7 +123,6 @@ _Complete source available in the  [http://masuland.googlecode.com/svn/trunk/Log
 }}}
 _Complete source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloParsleyMVCbCmd/trunk/src/main/flex/com/masuland/loginexample/action/command/GetSettingsCommand.as svn repo]._
 
-
 ==== "Command" (Cmd) Nanoarchitecture with Robotlegs / Signals ====
 {{{
 	public class GetSettingsCommand extends SignalCommand
@@ -174,7 +170,6 @@ _Complete source available in the  [http://masuland.googlecode.com/svn/trunk/Log
 }}}
 _Complete source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroRobotlegsSignalsMobileMVCpshCmd/trunk/src/main/flex/com/masuland/loginexample/action/command/GetSettingsCommand.as svn repo]._
 
-
 ==== "Command" (Cmd) Nanoarchitecture with Spring ====
 {{{
 	public class GetSettingsCommand extends EventDispatcher
@@ -219,7 +214,6 @@ _Complete source available in the  [http://masuland.googlecode.com/svn/trunk/Log
 	}
 }}}
 _Complete source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpringMVCbCmd/trunk/src/main/flex/com/masuland/loginexample/action/command/GetSettingsCommand.as svn repo]._
-
 
 ==== "Command" (Cmd) Nanoarchitecture with Swiz ====
 {{{
@@ -269,13 +263,11 @@ _Complete source available in the  [http://masuland.googlecode.com/svn/trunk/Log
 }}}
 _Complete source available in the  [http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSwizMVCbCmd/trunk/src/main/flex/com/masuland/loginexample/action/command/GetSettingsCommand.as svn repo]._
 
-
 == Code Examples Implementing the "Controller" (Ctl) Nanoarchitecture ==
 
  * [LoginExample Login Example] written in Flex 3 and Flex 4.1 (MX, Spark) and Flex 4.5 (Spark)
 
 ...
-
 
 == More Nanoarchitectures ==
 
@@ -288,14 +280,12 @@ _Complete source available in the  [http://masuland.googlecode.com/svn/trunk/Log
 
 ...
 
-
 == Frequently Asked Questions (FAQs) ==
 
 ==== What's a Nanoarchitecture? ==== 
 Please read this page about [Nanoarchitecture Nanoarchitectures].
 
 ...
-
 
 == Feedback ==
 
