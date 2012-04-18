@@ -45,9 +45,9 @@ _Complete source available in the  [http://masuland.googlecode.com/svn/trunk/Log
 == More Nanoarchitectures ==
 
  * [NanoarchitectureMVCb "Model - View - Code Behind / Component" (MVCb / MVCp)]
+ * [NanoarchitectureCpsh "C-Push" (Cpsh)]
  * [NanoarchitectureNoEvt "No Event" (NoEvt)]
  * [NanoarchitecturePInj "Property Injection" (PInj)]
- * [NanoarchitectureCpsh "C-Push" (Cpsh)]
  * [NanoarchitectureCtl "Controller" (Ctl)]
  * [NanoarchitectureCmd "Command" (Cmd)]
 
