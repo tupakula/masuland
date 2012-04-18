@@ -15,6 +15,7 @@
      * [NanoarchitectureCpll C-Pull (Cpll)]
      * [NanoarchitectureCpsh C-Push (Cpsh)]
      * [NanoarchitectureCtl Controller (Ctl)]
+     * [NanoarchitectureCmd Command (Cmd)]
    * Coding Conventions
      * [Flex3CodingConventions Flex 3 Coding Conventions]
      * [Flex4CodingConventions Flex 4 Coding Conventions]
