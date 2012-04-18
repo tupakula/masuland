@@ -157,6 +157,7 @@ _Complete source available in the  [http://masuland.googlecode.com/svn/trunk/Log
  * [NanoarchitectureCpll "C-Pull" (Cpll)]
  * [NanoarchitectureCpsh "C-Push" (Cpsh)]
  * [NanoarchitecturePInj "Property Injection" (PInj)]
+ * [NanoarchitectureCmd "Command" (Cmd)]
 
 ...
 
