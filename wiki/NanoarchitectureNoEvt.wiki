@@ -52,7 +52,7 @@ Just like [NanoarchitectureMVCb MVCb] this nanoarchitecture contains 3 types of 
 
 == More Nanoarchitectures ==
 
- * [NanoarchitectureMVCb "Model - View - Code Behind / Component" (MVCb / MVCp)]
+ * [NanoarchitectureVCb "View - Code Behind / Component" (VCb / VCp)]
  * [NanoarchitectureCpll "C-Pull" (Cpll)]
  * [NanoarchitectureCpsh "C-Push" (Cpsh)]
  * [NanoarchitecturePInj "Property Injection" (PInj)]
