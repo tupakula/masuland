@@ -80,9 +80,9 @@ _Complete source available in the  [http://masuland.googlecode.com/svn/trunk/Log
 == More Nanoarchitectures ==
 
  * [NanoarchitectureMVCb "Model - View - Code Behind / Component" (MVCb / MVCp)]
+ * [NanoarchitectureCpll "C-Pull" (Cpll)]
  * [NanoarchitectureNoEvt "No Event" (NoEvt)]
  * [NanoarchitecturePInj "Property Injection" (PInj)]
- * [NanoarchitectureCpll "C-Pull" (Cpll)]
  * [NanoarchitectureCtl "Controller" (Ctl)]
  * [NanoarchitectureCmd "Command" (Cmd)]
 
