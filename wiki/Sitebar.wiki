@@ -8,8 +8,8 @@
      * [ReligionChooserFeatureSpec Feature Specification]
  * Application Coding Standard
    * [Nanoarchitecture Nanoarchitecture]
-     * [NanoarchitectureMVCb Model-View-Codebehind (MVCb)]
-     * [NanoarchitectureMVCb Model-View-Component (MVCp)]
+     * [NanoarchitectureVCb Model-View-Codebehind (VCb)]
+     * [NanoarchitectureVCb Model-View-Component (VCp)]
      * [NanoarchitectureCpll C-Pull (Cpll)]
      * [NanoarchitectureCpsh C-Push (Cpsh)]
      * [NanoarchitectureNoEvt No Event (NoEvt)]
