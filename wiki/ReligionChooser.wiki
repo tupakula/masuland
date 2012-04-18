@@ -14,7 +14,7 @@ The Religion Chooser app should be seen as a fun application based on a decision
 
  # *Flex SDKs* (Flex 4.1 "Gumbo" and Flex 4.5 "Hero" TODO)
  # *IoC Microarchitectures* ([http://www.spicefactory.org/parsley/ Parsley 2.4.1], [http://www.springactionscript.org/ Spring AS 1.1], [http://www.swizframework.org/ Swiz 1.4])
- # *Nanoarchitectures* ([NanoarchitectureMVCb MVCp], [NanoarchitectureCpsh Cpsh], Ctl, [NanoarchitecturePInj PInj])
+ # *Nanoarchitectures* ([NanoarchitectureMVCb MVCp], [NanoarchitectureCpsh Cpsh], [NanoarchitecturePInj PInj], [NanoarchitectureM M], [NanoarchitectureCtl Ctl])
  # *Flex coding conventions* ([Flex4CodingConventions Flex 4]) 
  # *Project planning* (see [ReligionChooserFeatureSpec Religion Chooser Feature Specification])
 
@@ -43,6 +43,7 @@ Features: Flex 4.1 (Spark) with [NanoarchitectureMVCb "Model - View - Component"
  * [NanoarchitectureMVCb "Model - View - Component" (MVCp)]
  * [NanoarchitectureCpsh "C-Push" (Cpsh)]
  * [NanoarchitecturePInj "Property Injection" (PInj)]
+ * [NanoarchitectureM "Model" (M)]
  * [NanoarchitectureCtl "Controller" (Ctl)]
 
 ...
