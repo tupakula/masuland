@@ -57,6 +57,7 @@ Just like [NanoarchitectureMVCb MVCb] this nanoarchitecture contains 3 types of 
  * [NanoarchitectureCpll "C-Pull" (Cpll)]
  * [NanoarchitectureCpsh "C-Push" (Cpsh)]
  * [NanoarchitectureCtl "Controller" (Ctl)]
+ * [NanoarchitectureCmd "Command" (Cmd)]
 
 ...
 
