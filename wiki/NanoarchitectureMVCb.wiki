@@ -58,6 +58,7 @@ This architecture contains 3 types of application flows:
  * [NanoarchitectureCpll "C-Pull" (Cpll)]
  * [NanoarchitectureCpsh "C-Push" (Cpsh)]
  * [NanoarchitectureCtl "Controller" (Ctl)]
+ * [NanoarchitectureCmd "Command" (Cmd)]
 
 ...
 
