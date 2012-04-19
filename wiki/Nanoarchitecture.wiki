@@ -18,6 +18,7 @@ Microarchitectures like [http://sourceforge.net/adobe/cairngorm Cairngorm 2.2.1]
 
 *Structural Nanoarchitectures*
 
+ * [NanoarchitectureM "Model" (M)]
  * [NanoarchitectureCtl "Controller" (Ctl)]
  * [NanoarchitectureCmd "Command" (Cmd)]
  * "Action Chaining" (AChn)
