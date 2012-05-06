@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin 
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:fx="http://ns.adobe.com/mxml/2009"
+	>
+	
+	<fx:Metadata>[HostComponent("spark.components.Button")]</fx:Metadata>
+	
+	<s:states>
+		<s:State name="up"/>
+		<s:State name="over"/>
+		<s:State name="down"/>
+		<s:State name="disabled"/>
+	</s:states>
+
+	<s:BorderContainer
+		id="bx_logo"
+		styleName="logoBox"
+		minWidth="0" minHeight="0"
+		>
+		
+		<s:layout>
+			<s:TileLayout 
+				paddingLeft="15" paddingRight="15" paddingTop="15" paddingBottom="15" 
+				/>
+		</s:layout>
+		
+		<s:Path 
+			x="0" y="-0.111"
+			width="25" height="26.004"
+			data="M 54 0.001 C 57.033 2.935 45.907 8.404 44 13.001 C 46.009 18.326 46.066 25.602 48 31.001 C 54.493 31.175 59.355 32.98 65 34.001 C 71.066 32.387 74.598 22.951 79 23.001 C 77.361 32.887 74.242 43.514 62 46.001 C 58.624 46.687 53.401 43.913 49 45.001 C 42.41 46.632 35.677 56.324 30 62.001 C 26.044 65.958 15.73 79.884 13 80.001 C 8.64 80.188 1.957 67.731 0 66.001 C 11.75 55.085 23.084 43.751 34 32.001 C 28.223 15.978 37.179 -0.168 54 0.001 Z"
+			>
+			<s:fill>
+				<s:SolidColor color="{ bx_logo.getStyle('borderColor') }"/>
+			</s:fill>
+		</s:Path>
+		
+	</s:BorderContainer>
+
+</s:Skin>
