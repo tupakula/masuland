@@ -1,0 +1,23 @@
+#summary This page lists presentation materials
+
+= Presentations =
+
+In the following I'd like to list my presentation material:
+
+== Presentation: "Apache Flex and the imperfect Web" (2012-07-05, Berlin) ==
+
+ * [https://dl.dropbox.com/u/352808/presentations/Apache_Flex_and_the_imperfect_Web-2012-07-05.odp .ODP file (Open Office Presentation)]
+ * [https://dl.dropbox.com/u/352808/presentations/Apache_Flex_and_the_imperfect_Web-2012-07-05.pdf .PDF file (Portable Document Format)]
+
+...
+
+= Feedback =
+
+Please feel free to post comments on this subject.
+
+= Code Examples =
+
+Please check out my code examples:
+
+ * [LoginExample Login Example] written in Flex 3 and Flex 4.1 (Halo, Gumbo) and Flex 4.5 (Hero)
+ * [ReligionChooser Religion Chooser] with Flex 4.1 (Gumbo)
