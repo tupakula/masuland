@@ -8,7 +8,7 @@ This presentation has been presented at the Flex User Group in Berlin on July 5t
 
 https://dl.dropbox.com/u/352808/presentations/Apache_Flex_and_the_imperfect_Web-2012-07-05.png
 
-View this presentation at [http://www.slideshare.net/masuland/apache-flex-and-the-imperfect-web SlideShare] or download this presentation:
+View this presentation at [http://www.slideshare.net/masuland/apache-flex-and-the-imperfect-web SlideShare] or download this presentation here:
  * [https://dl.dropbox.com/u/352808/presentations/Apache_Flex_and_the_imperfect_Web-2012-07-05.odp .ODP file (Open Document Presentation)]
  * [https://dl.dropbox.com/u/352808/presentations/Apache_Flex_and_the_imperfect_Web-2012-07-05.pdf .PDF file (Portable Document Format)]
 
