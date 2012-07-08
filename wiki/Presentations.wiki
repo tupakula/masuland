@@ -16,7 +16,7 @@ View this presentation at [http://www.slideshare.net/masuland/apache-flex-and-th
 
 = Feedback =
 
-Please feel free to post comments on this subject.
+Please feel free to post comments on these thoughts.
 
 = Code Examples =
 
