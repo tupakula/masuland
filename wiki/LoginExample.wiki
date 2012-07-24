@@ -12,7 +12,7 @@ The Login Example aims to be a quick and easy "Show Me The Code" guide for Flex 
 
 Please read the [LoginExampleFeatureSpec Feature Specification] of the Login Example application. The following code examples provide solutions for several dimensions in Flex development:
 
- # *Flex SDKs* (Flex 3.5 "Halo", Flex 4.1 "Gumbo" and Flex 4.5 "Hero")
+ # *Flex SDKs* (Flex 3.5 "Halo", Flex 4.1 "Gumbo", Flex 4.5 "Hero" and Apache Flex 4.8 TODO)
  # *Runtimes* (Adobe Flashplayer & Adobe AIR)
  # *Mobile platforms* (Google Android, Apple iOS TODO and !BlackBerry Tablet OS TODO)
  # *Flex 3 to Flex 4 Migration Guide*
