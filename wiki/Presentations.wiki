@@ -6,7 +6,7 @@
 
 This presentation has been presented at the [http://www.flash-kiez.de Flex User Group in Berlin] on July 5th, 2012. I basically tried to cover the current state of Apache Flex, its possible future role in 2050 and compared Apache Flex with other Web technologies. I also tried to summarise my current work at Apache Flex. Hopefully, you'll find this presentation inspiring, too ;)
 
-https://dl.dropbox.com/u/352808/presentations/Apache_Flex_and_the_imperfect_Web-2012-07-05.png
+http://masuland.googlecode.com/files/Apache_Flex_and_the_imperfect_Web-2012-07-05.png
 
 View this presentation at [http://www.slideshare.net/masuland/apache-flex-and-the-imperfect-web SlideShare] or download this presentation here:
  * [https://dl.dropbox.com/u/352808/presentations/Apache_Flex_and_the_imperfect_Web-2012-07-05.odp .ODP file (Open Document Presentation)]
