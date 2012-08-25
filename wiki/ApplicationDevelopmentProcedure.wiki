@@ -20,7 +20,7 @@ A list of "Application Code" examples that follow the "Application Development P
 
 == Specification Document ==
 
-A list of "Specification Document" that specify the requirements of the underlying application:
+A list of "Specification Documents" that specify the requirements of the underlying application:
 
  * [LoginExampleFeatureSpec Login Example Spec]
  * [ReligionChooserFeatureSpec Religion Chooser Spec]
@@ -31,7 +31,7 @@ An "Application Coding Standard" consists of a set of [ApplicationDevelopmentPro
 
 === Nanoarchitecture / Architectural Pattern ===
 
-The definition of "Nanoarchitectures / Architectural Patterns" will be explained [Nanoarchitecture here]. 
+The definition of "Nanoarchitecture / Architectural Pattern" will be explained [Nanoarchitecture here]. 
 
 === Coding Conventions ===
 
