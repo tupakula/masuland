@@ -155,6 +155,8 @@ Features: Flex 4.1 (Spark) with [NanoarchitectureM "Model" (M)], [Nanoarchitectu
  * Flex 4.1 (Spark) Login Example with Spring AS 1.1 (MVCbCtl), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCbCtl/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCbCtl/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCbCtl/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboSpringMVCbCtl/trunk/ svn repo])
  * Flex 4.1 (Spark) Login Example with Swiz 1.4 (MVCbCtl), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCbCtl/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCbCtl/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCbCtl/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboSwizMVCbCtl_/trunk/ svn repo])
 
+http://masuland.googlecode.com/files/Flex4SparkAppWithNanoarchitecturesMVCbCtlDS.png
+
 ==== Flex 4.1 (Spark) with MVCbCtlDS_PInj ====
 
 Features: Flex 4.1 (Spark) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCtl "Controller" (Ctl)], "Delegate" (D), "Service" (S) & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
@@ -162,6 +164,8 @@ Features: Flex 4.1 (Spark) with [NanoarchitectureM "Model" (M)], [Nanoarchitectu
  * Flex 4.1 (Spark) Login Example with Parsley 2.4.1 (MVCbCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboParsleyMVCbCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboParsleyMVCbCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboParsleyMVCbCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboParsleyMVCbCtl_PInj/trunk/ svn repo])
  * Flex 4.1 (Spark) Login Example with Spring AS 1.1 (MVCbCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCbCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCbCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCbCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboSpringMVCbCtl_PInj/trunk/ svn repo])
  * Flex 4.1 (Spark) Login Example with Swiz 1.4 (MVCbCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCbCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCbCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCbCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboSwizMVCbCtl_PInj/trunk/ svn repo])
+
+http://masuland.googlecode.com/files/Flex4SparkAppWithNanoarchitecturesMVCbCtlDS_PInj.png
 
 ==== Flex 4.1 (Spark) with MVCpllCtlDS_PInj ====
 
