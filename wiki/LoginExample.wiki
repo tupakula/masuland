@@ -171,7 +171,9 @@ Features: Flex 4.1 (Spark) with [NanoarchitectureM "Model" (M)], [Nanoarchitectu
  * Flex 4.1 (Spark) Login Example with Spring AS 1.1 (MVCpllCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCpllCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCpllCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCpllCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboSpringMVCpllCtl_PInj/trunk/ svn repo])
  * Flex 4.1 (Spark) Login Example with Swiz 1.4 (MVCpllCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCpllCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCpllCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCpllCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboSwizMVCpllCtl_PInj/trunk/ svn repo])
 
-==== Flex 4.1 (Spark) with MVCpshCtDSl_PInj ====
+http://masuland.googlecode.com/files/Flex4SparkAppWithNanoarchitecturesMVCpllCtlDS_PInj.png
+
+==== Flex 4.1 (Spark) with MVCpshCtlDS_PInj ====
 
 Features: Flex 4.1 (Spark) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCpsh "C-Push" (Cpsh)], [NanoarchitectureCtl "Controller" (Ctl)], "Delegate" (D), "Service" (S) & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
 
