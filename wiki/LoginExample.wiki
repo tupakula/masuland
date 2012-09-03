@@ -48,9 +48,9 @@ http://masuland.googlecode.com/files/LoginExampleScreenshotMobile.png
 
 === Flex 3 === 
 
-==== Flex 3 with MVC ====
+==== Flex 3 with MVCtlDS ====
 
-Features: Flex 3 with "Model - View - Controller" (MVC) Nanoarchitecture
+Features: Flex 3 with "Model - View - Controller - Delegate - Service" (MVCtlDS) Nanoarchitectures
 
  * Flex 3 Login Example with Cairngorm 2.2.2, ([http://dl.dropbox.com/u/352808/code/LoginExampleFx3Cairngorm222/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx3Cairngorm222/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx3Cairngorm222/trunk/ svn repo])
  * Flex 3 Login Example with Parsley 2.4.1, ([http://dl.dropbox.com/u/352808/code/LoginExampleFx3Parsley/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx3Parsley/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx3Parsley/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx3Parsley/trunk/ svn repo])
@@ -58,21 +58,25 @@ Features: Flex 3 with "Model - View - Controller" (MVC) Nanoarchitecture
  * Flex 3 Login Example with Swiz 0.6.4, ([http://dl.dropbox.com/u/352808/code/LoginExampleFx3Swiz064/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx3Swiz064/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx3Swiz064/trunk/ svn repo])
  * Flex 3 Login Example with Swiz 1.4, ([http://dl.dropbox.com/u/352808/code/LoginExampleFx3Swiz/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx3Swiz/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx3Swiz/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx3Swiz/trunk/ svn repo])
 
+http://masuland.googlecode.com/files/Flex3AppWithNanoarchitecturesMVCtlDS.png
+
 ...
 
 === Flex 4.1 (MX) ===
 
-==== Flex 4.1 (MX) with MVC ====
+==== Flex 4.1 (MX) with MVCtlDS ====
 
-Features: Flex 4.1 (MX) with "Model - View - Controller" (MVC) Nanoarchitecture
+Features: Flex 4.1 (MX) with "Model - View - Controller - Delegate - Service" (MVCtlDS) Nanoarchitectures
 
  * Flex 4.1 (MX) Login Example with Parsley 2.4.1, ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsley/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsley/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsley/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloParsley/trunk/ svn repo])
  * Flex 4.1 (MX) Login Example with Spring AS 1.1, ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpring/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpring/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpring/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpring/trunk/ svn repo])
  * Flex 4.1 (MX) Login Example with Swiz 1.4, ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwiz/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwiz/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwiz/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSwiz/trunk/ svn repo])
 
-==== Flex 4.1 (MX) with MVCbCmd ====
+http://masuland.googlecode.com/files/Flex4MxAppWithNanoarchitecturesMVCtlDS.png
 
-Features: Flex 4.1 (MX) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)] & [NanoarchitectureCmd "Command" (Cmd)] Nanoarchitectures
+==== Flex 4.1 (MX) with MVCbCmdDS ====
+
+Features: Flex 4.1 (MX) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCmd "Command" (Cmd)], "Delegate" (D) & "Service" (S) Nanoarchitectures
 
  * Flex 4.1 (MX) Login Example with Mate 0.9.1 (MVCbCmd), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloMateMVCbCmd/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloMateMVCbCmd/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloMateMVCbCmd/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloMateMVCbCmd/trunk/ svn repo])
  * Flex 4.1 (MX) Login Example with Parsley 2.4.1 (MVCbCmd), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbCmd/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbCmd/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbCmd/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloParsleyMVCbCmd/trunk/ svn repo])
@@ -80,25 +84,29 @@ Features: Flex 4.1 (MX) with [NanoarchitectureM "Model" (M)], [NanoarchitectureV
  * Flex 4.1 (MX) Login Example with Spring AS 1.1 (MVCbCmd), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCmd/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCmd/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCmd/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpringMVCbCmd/trunk/ svn repo])
  * Flex 4.1 (MX) Login Example with Swiz 1.4 (MVCbCmd), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCmd/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCmd/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCmd/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSwizMVCbCmd/trunk/ svn repo])
 
-==== Flex 4.1 (MX) with MVCbCtl ====
+http://masuland.googlecode.com/files/Flex4MxAppWithNanoarchitecturesMVCbCmdDS.png
 
-Features: Flex 4.1 (MX) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)] & [NanoarchitectureCtl "Controller" (Ctl)] Nanoarchitectures
+==== Flex 4.1 (MX) with MVCbCtlDS ====
+
+Features: Flex 4.1 (MX) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCtl "Controller" (Ctl)], "Delegate" (D) & "Service" (S) Nanoarchitectures
 
  * Flex 4.1 (MX) Login Example with Parsley 2.4.1 (MVCbCtl), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbCtl/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbCtl/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbCtl/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloParsleyMVCbCtl/trunk/ svn repo])
  * Flex 4.1 (MX) Login Example with Spring AS 1.1 (MVCbCtl), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpringMVCbCtl/trunk/ svn repo])
  * Flex 4.1 (MX) Login Example with Swiz 1.4 (MVCbCtl), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSwizMVCbCtl/trunk/ svn repo])
 
-==== Flex 4.1 (MX) with MVCbCtl_Val ====
+http://masuland.googlecode.com/files/Flex4MxAppWithNanoarchitecturesMVCbCtlDS.png
 
-Features: Flex 4.1 (MX) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCtl "Controller" (Ctl)] & "Validation" (Val) Nanoarchitectures & Cairngorm 3 Validation Library
+==== Flex 4.1 (MX) with MVCbCtlDS_Val ====
+
+Features: Flex 4.1 (MX) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCtl "Controller" (Ctl)], "Delegate" (D), "Service" (S) & "Validation" (Val) Nanoarchitectures & Cairngorm 3 Validation Library
 
  * Flex 4.1 (MX) Login Example with Parsley 2.4.1 (MVCbCtl, Val), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbCtl_Val/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbCtl_Val/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbCtl_Val/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloParsleyCbVal/trunk/ svn repo])
  * Flex 4.1 (MX) Login Example with Spring AS 1.1 (MVCbCtl, Val), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_Val/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_Val/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_Val/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpringMVCbCtl_Val/trunk/ svn repo])
  * Flex 4.1 (MX) Login Example with Swiz 1.4 (MVCbCtl, Val), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl_Val/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl_Val/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl_Val/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSwizMVCbCtl_Val/trunk/ svn repo])
 
-==== Flex 4.1 (MX) with MVCbCtl_PInj ====
+==== Flex 4.1 (MX) with MVCbCtlDS_PInj ====
 
-Features: Flex 4.1 (MX) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCtl "Controller" (Ctl)] & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
+Features: Flex 4.1 (MX) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCtl "Controller" (Ctl)], "Delegate" (D), "Service" (S) & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
 
 *Please note:* Two Parsley projects. First project Parsley 2.4.1 (MVCbCtl, PInj) uses the Publish/Subscribe-Tags from Parsley. Second project Parsley 2.4.1 (MVCbCtl, PInj, Wire) uses the Wire-tag from the Cairngorm 3 Observer Library.
 
@@ -107,25 +115,29 @@ Features: Flex 4.1 (MX) with [NanoarchitectureM "Model" (M)], [NanoarchitectureV
  * Flex 4.1 (MX) Login Example with Spring AS 1.1 (MVCbCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpringMVCbCtl_PInj/trunk/ svn repo])
  * Flex 4.1 (MX) Login Example with Swiz 1.4 (MVCbCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSwizMVCbCtl_PInj/trunk/ svn repo])
 
-==== Flex 4.1 (MX) with MVCbCtl_PInjDdd ====
+http://masuland.googlecode.com/files/Flex4MxAppWithNanoarchitecturesMVCbCtlDS_PInj.png
 
-Features: Flex 4.1 (MX) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCtl "Controller" (Ctl)] & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures & [http://en.wikipedia.org/wiki/Domain-driven_design "Domain-Driven Design" (Ddd)] approach
+==== Flex 4.1 (MX) with MVCbCtlDS_PInjDdd ====
+
+Features: Flex 4.1 (MX) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCtl "Controller" (Ctl)], "Delegate" (D), "Service" (S) & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures & [http://en.wikipedia.org/wiki/Domain-driven_design "Domain-Driven Design" (Ddd)] approach
 
  * Flex 4.1 (MX) Login Example with Parsley 2.4.1 (MVCbCtl, PInj, Ddd), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbCtl_PInjDdd/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbCtl_PInjDdd/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbCtl_PInjDdd/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloParsleyMVCbCtl_PInjDdd/trunk/ svn repo])
  * Flex 4.1 (MX) Login Example with Spring AS 1.1 (MVCbCtl, PInj, Ddd), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_PInjDdd/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_PInjDdd/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_PInjDdd/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpringMVCbCtl_PInjDdd/trunk/ svn repo])
  * Flex 4.1 (MX) Login Example with Swiz 1.4 (MVCbCtl, PInj, Ddd), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl_PInjDdd/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl_PInjDdd/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl_PInjDdd/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSwizMVCbCtl_PInjDdd/trunk/ svn repo])
 
-==== Flex 4.1 (MX) with MVCbCtl_PInjNoEvt ====
+==== Flex 4.1 (MX) with MVCbCtlDS_PInjNoEvt ====
 
-Features: Flex 4.1 (MX) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCtl "Controller" (Ctl)], [NanoarchitecturePInj "Property Injection" (PInj)] & [NanoarchitectureNoEvt "No Event" (NoEvt)]  Nanoarchitectures
+Features: Flex 4.1 (MX) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCtl "Controller" (Ctl)], "Delegate" (D), "Service" (S), [NanoarchitecturePInj "Property Injection" (PInj)] & [NanoarchitectureNoEvt "No Event" (NoEvt)]  Nanoarchitectures
 
  * Flex 4.1 (MX) Login Example with Parsley 2.4.1 (MVCbCtl, PInj, !NoEvt), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbCtl_PInjNoEvt/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbCtl_PInjNoEvt/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbCtl_PInjNoEvt/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloParsleyMVCbCtl_PInjNoEvt/trunk/ svn repo])
  * Flex 4.1 (MX) Login Example with Spring AS 1.1 (MVCbCtl, PInj, !NoEvt), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_PInjNoEvt/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_PInjNoEvt/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbCtl_PInjNoEvt/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpringMVCbCtl_PInjNoEvt/trunk/ svn repo])
  * Flex 4.1 (MX) Login Example with Swiz 1.4 (MVCbCtl, PInj, !NoEvt), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl_PInjNoEvt/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl_PInjNoEvt/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSwizMVCbCtl_PInjNoEvt/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSwizMVCbCtl_PInjNoEvt/trunk/ svn repo])
 
-==== Flex 4.1 (MX) with MVCbStoTsk_PInj ====
+http://masuland.googlecode.com/files/Flex4MxAppWithNanoarchitecturesMVCbCtlDS_PInjNoEvt.png
 
-Features: Flex 4.1 (MX) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], "Story/Task" (!StoTsk) & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures & Cairngorm 3 Task Library
+==== Flex 4.1 (MX) with MVCbStoTskDS_PInj ====
+
+Features: Flex 4.1 (MX) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], "Story/Task" (!StoTsk), "Delegate" (D), "Service" (S) & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures & Cairngorm 3 Task Library
 
  * Flex 4.1 (MX) Login Example with Parsley 2.4.1 (MVCbStoTsk, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbStoTsk_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbStoTsk_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloParsleyMVCbStoTsk_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloParsleyMVCbStoTsk_PInj/trunk/ svn repo])
  * Flex 4.1 (MX) Login Example with Spring AS 1.1 (MVCbStoTsk, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbStoTsk_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbStoTsk_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HaloSpringMVCbStoTsk_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HaloSpringMVCbStoTsk_PInj/trunk/ svn repo])
@@ -135,41 +147,43 @@ Features: Flex 4.1 (MX) with [NanoarchitectureM "Model" (M)], [NanoarchitectureV
 
 === Flex 4.1 (Spark) ===
 
-==== Flex 4.1 (Spark) with MVCbCtl ====
+==== Flex 4.1 (Spark) with MVCbCtlDS ====
 
-Features: Flex 4.1 (Spark) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)] & [NanoarchitectureCtl "Controller" (Ctl)] Nanoarchitectures
+Features: Flex 4.1 (Spark) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCtl "Controller" (Ctl)], "Delegate" (D) & "Service" (S) Nanoarchitectures
 
  * Flex 4.1 (Spark) Login Example with Parsley 2.4.1 (MVCbCtl), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboParsleyMVCbCtl/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboParsleyMVCbCtl/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboParsleyMVCbCtl/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboParsleyMVCbCtl/trunk/ svn repo])
  * Flex 4.1 (Spark) Login Example with Spring AS 1.1 (MVCbCtl), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCbCtl/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCbCtl/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCbCtl/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboSpringMVCbCtl/trunk/ svn repo])
  * Flex 4.1 (Spark) Login Example with Swiz 1.4 (MVCbCtl), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCbCtl/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCbCtl/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCbCtl/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboSwizMVCbCtl_/trunk/ svn repo])
 
-==== Flex 4.1 (Spark) with MVCbCtl_PInj ====
+==== Flex 4.1 (Spark) with MVCbCtlDS_PInj ====
 
-Features: Flex 4.1 (Spark) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCtl "Controller" (Ctl)] & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
+Features: Flex 4.1 (Spark) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCtl "Controller" (Ctl)], "Delegate" (D), "Service" (S) & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
 
  * Flex 4.1 (Spark) Login Example with Parsley 2.4.1 (MVCbCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboParsleyMVCbCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboParsleyMVCbCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboParsleyMVCbCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboParsleyMVCbCtl_PInj/trunk/ svn repo])
  * Flex 4.1 (Spark) Login Example with Spring AS 1.1 (MVCbCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCbCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCbCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCbCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboSpringMVCbCtl_PInj/trunk/ svn repo])
  * Flex 4.1 (Spark) Login Example with Swiz 1.4 (MVCbCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCbCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCbCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCbCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboSwizMVCbCtl_PInj/trunk/ svn repo])
 
-==== Flex 4.1 (Spark) with MVCpllCtl_PInj ====
+==== Flex 4.1 (Spark) with MVCpllCtlDS_PInj ====
 
-Features: Flex 4.1 (Spark) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCpll "C-Pull" (Cpll)], [NanoarchitectureCtl "Controller" (Ctl)] & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
+Features: Flex 4.1 (Spark) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCpll "C-Pull" (Cpll)], [NanoarchitectureCtl "Controller" (Ctl)], "Delegate" (D), "Service" (S) & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
 
  * Flex 4.1 (Spark) Login Example with Parsley 2.4.1 (MVCpllCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboParsleyMVCpllCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboParsleyMVCpllCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboParsleyMVCpllCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboParsleyMVCpllCtl_PInj/trunk/ svn repo])
  * Flex 4.1 (Spark) Login Example with Spring AS 1.1 (MVCpllCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCpllCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCpllCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCpllCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboSpringMVCpllCtl_PInj/trunk/ svn repo])
  * Flex 4.1 (Spark) Login Example with Swiz 1.4 (MVCpllCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCpllCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCpllCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCpllCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboSwizMVCpllCtl_PInj/trunk/ svn repo])
 
-==== Flex 4.1 (Spark) with MVCpshCtl_PInj ====
+==== Flex 4.1 (Spark) with MVCpshCtDSl_PInj ====
 
-Features: Flex 4.1 (Spark) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCpsh "C-Push" (Cpsh)], [NanoarchitectureCtl "Controller" (Ctl)] & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
+Features: Flex 4.1 (Spark) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCpsh "C-Push" (Cpsh)], [NanoarchitectureCtl "Controller" (Ctl)], "Delegate" (D), "Service" (S) & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
 
  * Flex 4.1 (Spark) Login Example with Parsley 2.4.1 (MVCpshCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboParsleyMVCpshCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboParsleyMVCpshCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboParsleyMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboParsleyMVCpshCtl_PInj/trunk/ svn repo])
  * Flex 4.1 (Spark) Login Example with Spring AS 1.1 (MVCpshCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCpshCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCpshCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboSpringMVCpshCtl_PInj/trunk/ svn repo])
  * Flex 4.1 (Spark) Login Example with Swiz 1.4 (MVCpshCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCpshCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCpshCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSwizMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboSwizMVCpshCtl_PInj/trunk/ svn repo])
 
-==== Flex 4.1 (Spark) with MVCpshStoTsk_PInjNoEvt ====
+http://masuland.googlecode.com/files/Flex4SparkAppWithNanoarchitecturesMVCpshCtlDS_PInj.png
 
-Features: Flex 4.1 (Spark) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCpsh "C-Push" (Cpsh)], "Story/Task" (!StoTsk), [NanoarchitecturePInj "Property Injection" (PInj)] & [NanoarchitectureNoEvt "No Event" (NoEvt)] Nanoarchitectures & Cairngorm 3 Task Library
+==== Flex 4.1 (Spark) with MVCpshStoTskDS_PInjNoEvt ====
+
+Features: Flex 4.1 (Spark) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCpsh "C-Push" (Cpsh)], "Story/Task" (!StoTsk), "Delegate" (D), "Service" (S), [NanoarchitecturePInj "Property Injection" (PInj)] & [NanoarchitectureNoEvt "No Event" (NoEvt)] Nanoarchitectures & Cairngorm 3 Task Library
 
  * Flex 4.1 (Spark) Login Example with Parsley 2.4.1 (MVCpshStoTsk, PInj, !NoEvt), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboParsleyMVCpshStoTsk_PInjNoEvt/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboParsleyMVCpshStoTsk_PInjNoEvt/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboParsleyMVCpshStoTsk_PInjNoEvt/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboParsleyMVCpshStoTsk_PInjNoEvt/trunk/ svn repo])
  * Flex 4.1 (Spark) Login Example with Spring AS 1.1 (MVCpshStoTsk, PInj, !NoEvt), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCpshStoTsk_PInjNoEvt/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCpshStoTsk_PInjNoEvt/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4GumboSpringMVCpshStoTsk_PInjNoEvt/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4GumboSpringMVCpshStoTsk_PInjNoEvt/trunk/ svn repo])
@@ -179,21 +193,25 @@ Features: Flex 4.1 (Spark) with [NanoarchitectureM "Model" (M)], [Nanoarchitectu
 
 === Flex 4.5 (Spark) ===
 
-==== Flex 4.5 (Spark) with MVCpshCmd ====
+==== Flex 4.5 (Spark) with MVCpshCmdDS ====
 
-Features: Flex 4.5 (Spark) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCpsh "C-Push" (Cpsh)] & [NanoarchitectureCmd "Command" (Cmd)] Nanoarchitectures
+Features: Flex 4.5 (Spark) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCpsh "C-Push" (Cpsh)], [NanoarchitectureCmd "Command" (Cmd)], "Delegate" (D) & "Service" (S) Nanoarchitectures
 
  * Flex 4.5 (Spark) Login Example for Mobile with Robotlegs 1.5.2 / AS3-Signals 0.8 (MVCpshCmd), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroRobotlegsSignalsMobileMVCpshCmd.air air app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroRobotlegsSignalsMobileMVCpshCmd.apk android app]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroRobotlegsSignalsMobileMVCpshCmd/trunk/ svn repo])
 
-==== Flex 4.5 (Spark) with MVCpshCmd_PInj ====
+http://masuland.googlecode.com/files/Flex4SparkAppWithNanoarchitecturesMVCpshCmdDS.png
 
-Features: Flex 4.5 (Spark) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCpsh "C-Push" (Cpsh)], [NanoarchitectureCmd "Command" (Cmd)] & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
+==== Flex 4.5 (Spark) with MVCpshCmdDS_PInj ====
+
+Features: Flex 4.5 (Spark) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCpsh "C-Push" (Cpsh)], [NanoarchitectureCmd "Command" (Cmd)], "Delegate" (D), "Service" (S) & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
 
  * Flex 4.5 (Spark) Login Example for Mobile with Mate 0.9.1 (MVCpshCmd, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroMateMobileMVCpshCmd_PInj.air air app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroMateMobileMVCpshCmd_PInj.apk android app]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroMateMobileMVCpshCmd_PInj/trunk/ svn repo])
 
-==== Flex 4.5 (Spark) with MVCpshCtl_PInj ====
+http://masuland.googlecode.com/files/Flex4SparkAppWithNanoarchitecturesMVCpshCmdDS_PInj.png
 
-Features: Flex 4.5 (Spark) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCpsh "C-Push" (Cpsh)], [NanoarchitectureCtl "Controller" (Ctl)] & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
+==== Flex 4.5 (Spark) with MVCpshCtlDS_PInj ====
+
+Features: Flex 4.5 (Spark) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCpsh "C-Push" (Cpsh)], [NanoarchitectureCtl "Controller" (Ctl)], "Delegate" (D), "Service" (S) & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
 
  * Flex 4.5 (Spark) Login Example for Web with Parsley 2.4.1 (MVCpshCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroParsleyWebMVCpshCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroParsleyWebMVCpshCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroParsleyWebMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroParsleyWebMVCpshCtl_PInj/trunk/ svn repo])
  * Flex 4.5 (Spark) Login Example for Web with Spring AS 1.1 (MVCpshCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroSpringWebMVCpshCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroSpringWebMVCpshCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroSpringWebMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroSpringWebMVCpshCtl_PInj/trunk/ svn repo])
@@ -206,6 +224,8 @@ Features: Flex 4.5 (Spark) with [NanoarchitectureM "Model" (M)], [Nanoarchitectu
  * Flex 4.5 (Spark) Login Example for Mobile with Parsley 2.4.1 (MVCpshCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroParsleyMobileMVCpshCtl_PInj.air air app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroParsleyMobileMVCpshCtl_PInj.apk android app]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroParsleyMobileMVCpshCtl_PInj/trunk/ svn repo])
  * Flex 4.5 (Spark) Login Example for Mobile with Spring AS 1.1 (MVCpshCtl, PInj), (air app TODO) (android app TODO) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroSpringMobileMVCpshCtl_PInj/trunk/ svn repo])
  * Flex 4.5 (Spark) Login Example for Mobile with Swiz 1.4 (MVCpshCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroSwizMobileMVCpshCtl_PInj.air air app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx4HeroSwizMobileMVCpshCtl_PInj.apk android app])  ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx4HeroSwizMobileMVCpshCtl_PInj/trunk/ svn repo])
+
+http://masuland.googlecode.com/files/Flex4SparkAppWithNanoarchitecturesMVCpshCtlDS_PInj.png
 
 ...
 
@@ -240,6 +260,9 @@ Features: Flex 4.5 (Spark) with [NanoarchitectureM "Model" (M)], [Nanoarchitectu
  * [NanoarchitectureCtl "Controller" (Ctl)]
  * [NanoarchitectureCmd "Command" (Cmd)]
  * "Story/Task" (!StoTsk)
+ * "Action Chaining" (AChn)
+ * "Delegate" (D)
+ * "Service" (S)
 
 ...
 
@@ -267,7 +290,7 @@ I am thinking of adding other Microarchitectures, too. If they fit into the conc
 No! I just have started adding Robotlegs and Mate examples to the Login Example.
 
 ==== Which Nanoarchitectures do you prefer? ==== 
-For Flex 4 applications, I recommend, you should have a look at the [LoginExample#Flex_4.1_(Spark)_with_MVCpshStoTsk_PInjNoEvt Login Example for Flex 4.1 (Spark) with MVCpshStoTsk_PInjNoEvt] Nanoarchitectures. For Flex 3 applications, consider to use the [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)] Nanoarchitecture as shown in the [LoginExample#Flex_4.1_(MX)_with_MVCbCtl LoginExample for Flex 4.1 (MX) with MVCbCtl].
+For Flex 4 applications, I recommend, you should have a look at the [LoginExample#Flex_4.1_(Spark)_with_MVCpshStoTskDS_PInjNoEvt Login Example for Flex 4.1 (Spark) with MVCpshStoTskDS_PInjNoEvt] Nanoarchitectures. For Flex 3 applications, consider to use the [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)] Nanoarchitecture as shown in the [LoginExample#Flex_4.1_(MX)_with_MVCbCtlDS LoginExample for Flex 4.1 (MX) with MVCbCtlDS].
 
 ==== How can I migrate my Flex 3 application to a Flex 4 application? ====
 Please read this [MigrationFromFlex3ToFlex4 Flex 3 to Flex 4 Migration Guide].
