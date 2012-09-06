@@ -54,6 +54,8 @@ Features: Flex 3 with "Model - View - Command - Delegate - Service" (MVCmdDS) Na
 
  * Flex 3 Login Example with Cairngorm 2.2.2, ([http://dl.dropbox.com/u/352808/code/LoginExampleFx3Cairngorm222/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx3Cairngorm222/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx3Cairngorm222/trunk/ svn repo])
 
+http://masuland.googlecode.com/files/Flex3AppWithNanoarchitecturesMVCmdDS.png
+
 ==== Flex 3 with MVCtlDS ====
 
 Features: Flex 3 with "Model - View - Controller - Delegate - Service" (MVCtlDS) Nanoarchitectures
