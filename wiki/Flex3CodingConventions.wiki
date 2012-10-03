@@ -4,7 +4,7 @@
 
 <wiki:toc />
 
-This document proposes additional Flex 3 coding conventions to the existing Flex coding conventions provided by Adobe, see http://opensource.adobe.com/wiki/display/flexsdk/Coding+Conventions
+This document proposes additional Flex 3 coding conventions to the existing Flex coding conventions provided by Adobe, see http://sourceforge.net/adobe/flexsdk/wiki/Coding%20Conventions/
 
 == MXML File Conventions ==
 
