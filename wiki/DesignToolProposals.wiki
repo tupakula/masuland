@@ -1,8 +1,8 @@
 #summary This page proposes design tools for Apache Flex.
 
-<wiki:toc max_depth="3" />
-
 = Proposal: Thermo MK2 for Apache Flex =
+
+<wiki:toc max_depth="3" />
 
 == Introduction ==
 
@@ -12,25 +12,26 @@ Things you can do with this app so far:
  * Switching Perspectives (top-right) ... more information about Perspectives see [http://www.eclipse.org Eclipse].
  * Switching between Source- and Design-Mode (text editor in the middle) ... more information about the "Design View" see [http://www.adobe.com/products/flash-builder.html Flash Builder 4.6]
 
-The source code follows certain Architectual Patterns summarized as [http://code.google.com/p/masuland/wiki/LoginExample#Flex_4.5_(Spark)_with_MVCpshCtlDS_PInj MVCpshCtlDS_PInj]. For more information about other coding structures please check out this [http://code.google.com/p/masuland/wiki/LoginExample Login Example]
-and this [http://code.google.com/p/masuland/wiki/ApplicationDevelopmentProcedure Application Coding Procedure].
-
 == Screenshots == 
 
 === Thermo MK2 for Web ===
 
-http://masuland.googlecode.com/files/ThermoMK2ScreenshotWeb.png
+[https://dl.dropbox.com/u/352808/code/ProposalThermoMK2/index.html http://masuland.googlecode.com/files/ThermoMK2ScreenshotWeb.png]
 
 == Client == 
 
 === Flex 4.5 (Spark) with MVCpshCtlDS_PInj ===
 
-Features: Flex 4.5 (Spark) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCpsh "C-Push" (Cpsh)], [NanoarchitectureCtl "Controller" (Ctl)], "Delegate" (D), "Service" (S) & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
+Features: Flex 4.5 (Spark) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Component" (VCb)], [NanoarchitectureCpsh "C-Push" (Cpsh)], [NanoarchitectureCtl "Controller" (Ctl)], "Delegate" (D), "Service" (S) & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
 
- * Flex 4.5 (Spark) Thermo MK2 for Web with Parsley 3.0 (MVCpshCtl, PInj), ([https://dl.dropbox.com/u/352808/code/ProposalThermoMK2/index.html web app]) ([https://dl.dropbox.com/u/352808/code/ProposalThermoMK2/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/ProposalThermoMK2/trunk/ svn repo])
+ * Flex 4.5 (Spark) Thermo MK2 for Web with Parsley 3.0 (MVCpshCtl, PInj), ([https://dl.dropbox.com/u/352808/code/ProposalThermoMK2/index.html web app]) ([https://dl.dropbox.com/u/352808/code/ProposalThermoMK2/srcview/index.html view source])
 
+
+The source code follows certain Architectual Patterns summarized as MVCpshCtlDS_PInj, see diagram below. 
 
 http://masuland.googlecode.com/files/Flex4SparkAppWithNanoarchitecturesMVCpshCtlDS_PInj.png
+
+For more information about other Application Coding Standards please check out the [http://code.google.com/p/masuland/wiki/LoginExample Login Example].
 
 ...
 
