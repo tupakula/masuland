@@ -1,6 +1,6 @@
 #summary This page proposes design tools for Apache Flex.
 
-= Proposal: Thermo MK2 for Apache Flex =
+= Thermo MK2 for Apache Flex =
 
 <wiki:toc max_depth="3" />
 
