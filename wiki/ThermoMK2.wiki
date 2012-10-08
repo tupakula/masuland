@@ -21,7 +21,7 @@ Things that Thermo MK2 should do:
  * Thermo MK2 should be able to visually link !SkinnableComponents with their Skins within CSS files.
  * Thermo MK2 should be clever about screen sizes (compare with [http://html.adobe.com/edge/reflow/  Adobe Edge Reflow]).
 
-The Data-Centric features are not necessarily needed because other IDEs would be more appropriate for that.
+The Data-Centric features inside Thermo MK2 are not necessarily needed because other IDEs would be more appropriate for that.
 
 == Screenshot of Thermo MK2 == 
 
