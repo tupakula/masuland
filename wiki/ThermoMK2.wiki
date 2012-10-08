@@ -23,7 +23,7 @@ Things that Thermo MK2 should do:
 
 The Data-Centric features are not necessarily needed because other IDEs would be more appropriate for that.
 
-== Screenshots of Thermo MK2 == 
+== Screenshot of Thermo MK2 == 
 
 [https://dl.dropbox.com/u/352808/code/ProposalThermoMK2/index.html http://masuland.googlecode.com/files/ThermoMK2ScreenshotWeb.png]
 
