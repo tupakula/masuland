@@ -18,7 +18,7 @@ Things that Thermo MK2 should do:
  * Thermo MK2 should be able to import FXG files, Photoshop and Illustrator files.
  * Thermo MK2 should be able to communicate via a certain API with Flash Builder 4.7 or other IDEs.
  * Thermo MK2 should be able to visually manage and edit CSS files.
- * Thermo MK2 should be able to visually link !SkinnableComponents with their Skins inside CSS.
+ * Thermo MK2 should be able to visually link !SkinnableComponents with their Skins within CSS files.
  * Thermo MK2 should be clever about screen sizes (compare with [http://html.adobe.com/edge/reflow/  Adobe Edge Reflow]).
 
 The Data-Centric features are not necessarily needed because other IDEs would be more appropriate for that.
