@@ -6,7 +6,7 @@
 
 == Introduction ==
 
-This proposed Design Tool (codenamed Thermo MK2) should be seen as a hybrid of [http://www.adobe.com/devnet/flashcatalyst/articles/introducing-flashcatalyst-cs55.html Flash Catalyst CS5.5], the "Design View" of [http://www.adobe.com/products/flash-builder.html Flash Builder 4.6] and the [http://www.eclipse.org Eclipse] IDE.
+This proposed Design Tool (codenamed Thermo MK2) should be seen as a hybrid of [http://www.adobe.com/devnet/flashcatalyst/articles/introducing-flashcatalyst-cs55.html Flash Catalyst CS5.5] (codenamed Adobe Thermo in 2007), the "Design View" of [http://www.adobe.com/products/flash-builder.html Flash Builder 4.6] and the [http://www.eclipse.org Eclipse] IDE.
 
 Things you can do with Thermo MK2 so far:
  * Switching Perspectives (see top-right) ... more information about Perspectives see [http://www.eclipse.org Eclipse].
