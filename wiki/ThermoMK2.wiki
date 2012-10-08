@@ -13,7 +13,7 @@ Things you can do with Thermo MK2 so far:
  * Switching between Source- and Design-Mode (see text editor in the middle) ... more information about the "Design View" see [http://www.adobe.com/products/flash-builder.html Flash Builder 4.6].
 
 Things that Thermo MK2 should do:
- * Thermo MK2 should detect !SkinParts" and !SkinStates of !SkinnableComponents.
+ * Thermo MK2 should detect !SkinParts and !SkinStates of !SkinnableComponents.
  * Thermo MK2 should be able to draw graphics in a [http://sourceforge.net/adobe/flexsdk/wiki/FXG%202.0%20Specification/ FXG 2.0] compliant way.
  * Thermo MK2 should be able to import FXG files, Photoshop and Illustrator files.
  * Thermo MK2 should be able to communicate via a certain API with Flash Builder 4.7 or other IDEs.
