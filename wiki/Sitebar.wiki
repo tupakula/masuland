@@ -1,26 +1,26 @@
 #summary The sitebar
 
  * [ApplicationDevelopmentProcedure Application Development Procedure]
- * Code Examples
-   * [LoginExample Login Example]
-     * [LoginExampleFeatureSpec Feature Specification]
-   * [ReligionChooser Religion Chooser]
-     * [ReligionChooserFeatureSpec Feature Specification]
-   * [ThermoMK2 Thermo MK2 for Apache Flex]
- * Application Coding Standard
-   * [Nanoarchitecture Nanoarchitecture]
-     * [NanoarchitectureVCb View-Codebehind (VCb)]
-     * [NanoarchitectureVCb View-Component (VCp)]
-     * [NanoarchitectureCpll C-Pull (Cpll)]
-     * [NanoarchitectureCpsh C-Push (Cpsh)]
-     * [NanoarchitectureNoEvt No Event (NoEvt)]
-     * [NanoarchitecturePInj Property Injection (PInj)]
-     * [NanoarchitectureM Model (M)]
-     * [NanoarchitectureCtl Controller (Ctl)]
-     * [NanoarchitectureCmd Command (Cmd)]
-   * Coding Conventions
-     * [Flex3CodingConventions Flex 3 Coding Conventions]
-     * [Flex4CodingConventions Flex 4 Coding Conventions]
+   * Application Code
+     * [LoginExample Login Example]
+       * [LoginExampleFeatureSpec Feature Specification]
+     * [ReligionChooser Religion Chooser]
+       * [ReligionChooserFeatureSpec Feature Specification]
+     * [ThermoMK2 Thermo MK2 for Apache Flex]
+   * Application Coding Standard
+     * [Nanoarchitecture Nanoarchitecture]
+       * [NanoarchitectureVCb View-Codebehind (VCb)]
+       * [NanoarchitectureVCb View-Component (VCp)]
+       * [NanoarchitectureCpll C-Pull (Cpll)]
+       * [NanoarchitectureCpsh C-Push (Cpsh)]
+       * [NanoarchitectureNoEvt No Event (NoEvt)]
+       * [NanoarchitecturePInj Property Injection (PInj)]
+       * [NanoarchitectureM Model (M)]
+       * [NanoarchitectureCtl Controller (Ctl)]
+       * [NanoarchitectureCmd Command (Cmd)]
+     * Coding Conventions
+       * [Flex3CodingConventions Flex 3 Coding Conventions]
+       * [Flex4CodingConventions Flex 4 Coding Conventions]
  * [MigrationFromFlex3ToFlex4 Migration from Flex 3 to Flex 4]
  * [Statistics]
  * [Presentations]
