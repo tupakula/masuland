@@ -27,7 +27,7 @@ The Data-Centric features inside Thermo MK2 are not necessarily needed because o
 
 [https://dl.dropbox.com/u/352808/code/ProposalThermoMK2/index.html http://masuland.googlecode.com/files/ThermoMK2ScreenshotWeb.png]
 
-== Client with Flex 4.5 (Spark & MX) ===
+== Thermo MK2 Client with Flex 4.5 (Spark & MX) ===
 
 ([https://dl.dropbox.com/u/352808/code/ProposalThermoMK2/index.html Thermo MK2 Live-App]) ([https://dl.dropbox.com/u/352808/code/ProposalThermoMK2/srcview/index.html Thermo MK2 Sourcecode])
 
