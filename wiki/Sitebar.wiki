@@ -3,9 +3,9 @@
  * [ApplicationDevelopmentProcedure Application Development Procedure]
    * Application Code
      * [LoginExample Login Example]
-       * [LoginExampleFeatureSpec Feature Specification]
+       * [LoginExampleFeatureSpec Specification Document]
      * [ReligionChooser Religion Chooser]
-       * [ReligionChooserFeatureSpec Feature Specification]
+       * [ReligionChooserFeatureSpec Specification Document]
      * [ThermoMK2 Thermo MK2 for Apache Flex]
    * Application Coding Standard
      * [Nanoarchitecture Nanoarchitecture]
