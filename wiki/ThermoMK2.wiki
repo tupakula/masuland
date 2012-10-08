@@ -31,7 +31,7 @@ The Data-Centric features inside Thermo MK2 are not necessarily needed because o
 
 ([https://dl.dropbox.com/u/352808/code/ProposalThermoMK2/index.html Thermo MK2 Live-App]) ([https://dl.dropbox.com/u/352808/code/ProposalThermoMK2/srcview/index.html Thermo MK2 Sourcecode])
 
-The Thermo MK2 coding convention follows an [http://code.google.com/p/masuland/wiki/ApplicationDevelopmentProcedure Application Development Procedure] and a set of Architectual Patterns - hereby called [Nanoarchitecture Nanoarchitectures]. The used Nanoarchitectures can be summarized as follows: MVCpshCtlDS_PInj, see diagram below. Thermo MK2 uses the latest version of the [http://www.spicefactory.org/parsley/ Parsley 3.0] Microarchitecture. 
+The Thermo MK2 coding convention follows an [http://code.google.com/p/masuland/wiki/ApplicationDevelopmentProcedure Application Development Procedure] and a set of Architectual Patterns - hereby called [Nanoarchitecture Nanoarchitectures]. The used Nanoarchitectures can be summarized as follows: MVCpshCtlDS_PInj (see diagram below). Thermo MK2 uses the latest version of the [http://www.spicefactory.org/parsley/ Parsley 3.0] Microarchitecture. 
 
 http://masuland.googlecode.com/files/Flex4SparkAppWithNanoarchitecturesMVCpshCtlDS_PInj.png
 
