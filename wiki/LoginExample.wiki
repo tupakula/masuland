@@ -6,7 +6,7 @@
 
 == Preface ==
 
-The Login Example aims to be a quick and easy "Show Me The Code" guide for Flex beginners and intermediate Flex coders that try to build their first large-scale Flex app. While you can see the following code examples as a way I would recommend building these apps, I am not in the position to say that: "This is the way you have to do it".
+The Login Example aims to be a quick and easy "Show Me The Code" guide for Flex beginners and intermediate Flex coders that try to build large-scale Flex apps. While you can see the following code examples as a way I would recommend building these apps, I am not in the position to say that: "This is the way you have to do it".
 
 == Introduction ==
 
