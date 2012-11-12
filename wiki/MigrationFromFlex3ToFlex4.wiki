@@ -2,43 +2,64 @@
 
 = Migration from Flex 3 to Flex 4 =
 
-==== Step 1: Switch your Flex 3 SDK to the Flex 4 SDK ====
+<wiki:toc max_depth="3" />
 
-See [LoginExample#Flex_4.1_(MX)_with_MVC Flex 4.1 (MX) Login Example with MVC]
 
-...
+== Preface ==
 
-==== Step 2: Create Code Behind classes for each MXML file ====
+The following migration guide consists of 4 steps to migrate your Flex 3 project into a Flex 4 project. This migration guide assumes that you have already setup a MVC structure in your Flex 3 project, which should look similar to this diagram:
 
-See [LoginExample#Flex_4.1_(MX)_with_MVCbCtl Flex 4.1 (MX) Login Example with MVCbCtl]
+http://masuland.googlecode.com/files/Flex3AppWithNanoarchitecturesMVCtlDS.png
 
-...
 
-==== Step 3: Replace your Flex 3 (MX) components with Flex 4 (Spark) components ====
+== Step 1: Switch your Flex 3 SDK to the Flex 4 SDK ==
 
-See [LoginExample#Flex_4.1_(Spark)_with_MVCbCtl Flex 4.1 (Spark) Login Example with MVCbCtl]
+Switch the Flex 3 SDK to the Flex 4 SDK with "Flex 3 backward compatibility" mode switched on. In Flash Builder this can be done like this: "Project Properties > Flex Compiler > Use Flex 3 compatibility mode".
 
-...
+http://masuland.googlecode.com/files/Flex4MxAppWithNanoarchitecturesMVCtlDS.png
 
-==== Step 4: Extend your Code Behind classes from !SkinnableComponent or !SkinnableContainer ====
+Check out this example: [LoginExample#Flex_4.1_(MX)_with_MVCtlDS Flex 4.1 (MX) Login Example with MVCtlDS]
 
-See [LoginExample#Flex_4.1_(Spark)_with_MVCpllCtl_PInj Flex 4.1 (Spark) Login Example with MVCpllCtl_PInj] or [LoginExample#Flex_4.1_(Spark)_with_MVCpshCtl_PInj  Flex 4.1 (Spark) Login Example with MVCpshCtl_PInj]
 
-...
+== Step 2: Create Code Behind classes for each MXML file ==
 
-== Further Readings ==
+For every MXML file create a Code Behind class. They will be needed in Step 4.
+
+http://masuland.googlecode.com/files/Flex4MxAppWithNanoarchitecturesMVCbCtlDS.png
+
+Check out this example: [LoginExample#Flex_4.1_(MX)_with_MVCbCtlDS Flex 4.1 (MX) Login Example with MVCbCtlDS]
+
+
+== Step 3: Replace your Flex 3 (MX) components with Flex 4 (Spark) components ==
+
+Replace every Flex 3 (MX) component with Flex 4 (Spark) components. When you have finished this step, the "Flex 3 backward compatibility" mode can be switched off again.
+
+http://masuland.googlecode.com/files/Flex4SparkAppWithNanoarchitecturesMVCbCtlDS.png
+
+Check out this example: [LoginExample#Flex_4.1_(Spark)_with_MVCbCtlDS Flex 4.1 (Spark) Login Example with MVCbCtlDS]
+
+
+== Step 4: Extend your Code Behind classes from !SkinnableComponent or !SkinnableContainer ==
+
+Every Code Behind class extends from !SkinnableComponent or !SkinnableContainer.
+
+http://masuland.googlecode.com/files/Flex4SparkAppWithNanoarchitecturesMVCpshCtlDS_PInj.png
+
+Check out this example: [LoginExample#Flex_4.1_(Spark)_with_MVCpshCtlDS_PInj  Flex 4.1 (Spark) Login Example with MVCpshCtlDS_PInj]
+
+= Further Readings =
 
  * Mihai Corlan & Alin Achim: [http://www.adobe.com/devnet/flex/articles/upgrading-flex3-to-flex4-techguide.html Upgrading Flex 3 to Flex 4 Techguide] ([http://wwwimages.adobe.com/www.adobe.com/content/dam/Adobe/en/devnet/flex/pdfs/upgrading-flex3-to-flex4-techguide.pdf PDF Version])
  * Renaun Erickson: [http://renaun.com/blog/2010/04/converting-flex-3-microphone-application-to-flex-4-part-1/ Converting Flex 3 Microphone application to Flex 4]
 
 ...
 
-== Code Examples ==
+= Code Examples =
 
  * [LoginExample Login Example] written in Flex 3 and Flex 4.1 (MX, Spark) and Flex 4.5 (Spark)
 
 ...
 
-== Feedback ==
+= Feedback =
 
 Please feel free to post comments or suggestions because this page is still work in progress.
