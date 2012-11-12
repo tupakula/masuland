@@ -7,7 +7,7 @@
 
 == Preface ==
 
-The following migration guide consists of 4 steps to migrate your Flex 3 project into a Flex 4 project. This migration guide assumes that you have already setup a MVC structure in your Flex 3 project, which should look similar to this diagram:
+The following migration guide consists of 4 steps to migrate your Flex 3 project into a Flex 4 project. This migration guide assumes that you have already setup a MVC structure in your Flex 3 project, which might look similar to this diagram:
 
 http://masuland.googlecode.com/files/Flex3AppWithNanoarchitecturesMVCtlDS.png
 
