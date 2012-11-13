@@ -53,7 +53,8 @@ During the last years, due to heavy competition between involved companies (like
 
 Due to heavy investments of Macromedia (and later Adobe) into the Flashplayer - and later Adobe AIR (the successor of [http://www.adobe.com/products/central/ Macromedia Central]) - and their Flash platform tools ([http://www.adobe.com/products/flash.html Adobe Flash Pro]), the creative web industry was highly interested to build artistic Flash websites, to create compelling animations to attract customers and to use the Flash video delivery capabilities for years. 
 
-Adobe plans to update its Flashplayer and Adobe AIR on faster release cycles (four times a year). 
+Adobe plans to update its Flashplayer and Adobe AIR on faster release cycles (four times a year). More information about future version of the Flashruntime can be found here:
+http://www.adobe.com/devnet/flashplatform/whitepapers/roadmap.html
 
 === 1.3. Evolution of Flex ===
 
@@ -183,7 +184,7 @@ Flex 4.x is a "Hybrid" SDK because Flex 4.x still relies on the old MX-namespace
   # Downward-compatibility with Flex 3 UIComponents
   # Some MX-components have not been transfered to the Spark-component set yet (e.g. MX-!DateChooser, MX-!ColorPicker, MX-!TabNavigator ... etc.). For more information, check out this link: https://cwiki.apache.org/confluence/display/FLEX/Missing+Spark+Components
 
-Flex 5 promises to tie off this dependency to the MX-namespace, and therefore can be seen again as a pure Flex SDK (just like Flex 3 is).
+Flex 5, potentially, ties off this dependency to the MX-namespace, and therefore can be seen again as a pure Flex SDK (just like Flex 3 is).
 
 === 1.6. Designer/Developer Workflow ===
 
@@ -202,7 +203,7 @@ Lots of code examples can be found in the web for Adobe and Apache Flex.
 
 === 1.9. Coding Conventions ===
 
-Adobe promotes the usage of [http://opensource.adobe.com/wiki/display/flexsdk/Coding+Conventions Coding Conventions].
+Adobe promotes the usage of [http://sourceforge.net/adobe/flexsdk/wiki/Coding%20Conventions/ Coding Conventions].
 
 === 1.10. Code generation tools ===
 
@@ -239,19 +240,19 @@ The current situation is good for all Flex Developers. Working in such an uncert
 
 ==== 2.1.2. Positive: Adobe is getting payed for their Investments ====
 
-...
+Until the end of 2011, Adobe was heavily investing into Adobe Flex. I personally want to acknowledge their past work, and, want to encourage the Flex Community to continue buying their Designer & Developer tools that support the creation of Flex application (e.g. Flash Catalyst CS5.5, Flash Builder 4.6 Premium, Fireworks CS6, Illustrator CS6, Photoshop CS6, ... etc.) 
 
-==== 2.1.3. Positive: The Flash-Platform is becoming more and more powerful ====
+==== 2.1.3. Positive: The Flash-Platform and Apache Flex are becoming more and more powerful ====
 
-...
+Based on the circumstance that Flashplayer 12 will introduce a new AVM with better Multithreading support, Apache Flex should considerably become more and more powerful in future.
 
 ==== 2.1.4. Positive: Adobe continuously open sourcing technology ====
 
- * http://opensource.adobe.com/
- * http://sourceforge.net/adobe/
- * Apache Flex, http://wiki.apache.org/incubator/FlexProposal
+Adobe will continue to collaborate with the Open Source Community and will provide more open source technologies in future ... see examples:
 
-...
+ * Adobe Opensource, http://sourceforge.net/adobe/
+ * Adobe Github, https://github.com/adobe
+ * Apache Flex, http://wiki.apache.org/incubator/FlexProposal
 
 === 2.2. What's negative? ===
 
@@ -265,17 +266,17 @@ While this can be seen as a great opportunity to the open source community and o
 
 ==== 2.2.3. Negative: Flex 4.x has still an incomplete Spark component set ====
 
-... therefore, we are forced to use the old MX components (e.g. MX-!DateChooser, MX-!ColorPicker, MX-!TabNavigator ... etc.), or, have to take the time to build them ourself.
+Because Flex 4.x has still an incomplete Spark component set, we are forced to use the old MX components (e.g. MX-!DateChooser, MX-!ColorPicker, MX-!TabNavigator ... etc.), or, have to take the time to build them ourself.
 
 ==== 2.2.4. Negative: Restrictive Designer/Developer Workflow ====
 
-The designer/developer workflow introduced with Flash Catalyst CS5.5 and Flash Builder 4.5 is fairly restrictive, and therefore, not very productive. Hopefully, this issue will be improved when Flex 5, Flash Builder 5 and Flash Catalyst CS6 has been released.
+The designer/developer workflow introduced with Flash Catalyst CS5.5 and Flash Builder 4.5 is great, but, fairly restrictive, and therefore, not very productive. Hopefully, this issue will be improved when Flex 5, Flash Builder 5 and Flash Catalyst CS6 has been released.
 
 ==== 2.2.5. Negative: "Fairly unexperienced" Developer Community ====
 
 Because Flex is a fairly new technology, the Flex community in average is still "fairly unexperienced", and, in this community there are only a few "very well experienced" Flex Evangelists out there from whom "normal experienced" Flex developers, like me, could learn from. Communities like the Java, ASP.NET or PHP community are much more settled down ... and the chance to find a helping hand in these communities is much more likely than in ours.
 
-==== 2.2.6. Negative: Missleading Code Examples ====
+==== 2.2.6. Negative: Misleading Code Examples ====
 
 Even though there are many Flex code examples out there - most of them cover the topic "Component Development in Flex" (like Spark- and MX-Components) - only few information can be found on professional and sustainable "Application-Architecture Development in Flex" in combination with third party Microarchitectures. Because of the lack of these information many Flex projects tend to implement their required application-features with unconventional coding practices.
 
@@ -285,31 +286,27 @@ Even though Adobe promotes the usage of [http://opensource.adobe.com/wiki/displa
 
 ==== 2.2.8. Negative: Only few code generation tools ====
 
-A lack of code generation tools and wizards to speedup development productivity with Microarchitectures. Because of that the development of well featured real world applications using Microarchitectures potentially produces an development overhead when adding new features to these applications.
+A lack of code generation tools and wizards to speedup development productivity with Microarchitectures. Because of that the development of well featured real world applications using Microarchitectures potentially produces a development overhead when adding new features to these applications.
 
-==== 2.2.9. Negative: Varying Developer Coding Backgrounds ====
+==== 2.2.9. Negative: Lack of Education for Flex Beginners ====
 
-...
+Apart from the USA, only few universities (or comparable institutions) teach Flex development. Therefore Flex beginners and intermediate Flex developers are forced to learn from code in the web. Because the web is packed with many misleading code examples the risk for Flex beginners and intermediate Flex developers rises that they build improper Flex code.
 
-==== 2.2.10. Negative: Few Universities teach Flex Development ====
+==== 2.2.10. Negative: Black-Box Coding with Adobe Flashplayer and Adobe AIR ====
 
-...
-
-==== 2.2.11. Negative: Black-Box Coding with Flashplayer and Adobe AIR ====
-
-...
+Because Adobe Flashplayer and Adobe AIR cannot be developed Open Source, other Open Source communities, like Apache Flex, have to live with the restrictions of the underlying Virtual Machine.
 
 == 3. Goals: How should Flex-Coding be? ==
 
 === 3.1. Strengthening large-scale Flex applications ===
 
-Because Flex tends to be used for smaller projects (see diagram below: between 25 and 100 MXML files), Apache Flex should consider finding ways to strengthen large-scale Flex applications (more than 250 MXML files). This can be done by simplifying (or restricting) the ways how the Flex cummunity should develop their Flex projects. Furthermore, educating the Flex community might be another option to improve large-scale Flex applications (e.g. more "Best Practices for large-scale Flex apps" articles are needed).
+Because Flex tends to be used for smaller projects (see diagram below: between 25 and 100 MXML files), Apache Flex should consider finding ways to strengthen large-scale Flex applications (more than 250 MXML files). This can be done by simplifying (or restricting) the ways how the Flex community should develop their Flex projects. Furthermore, educating the Flex community might be another option to improve large-scale Flex applications (e.g. writing articles about "Best Practices for large-scale Flex Applications").
 
 http://masuland.googlecode.com/files/Flex_Usage_2011-Result-Question_1-Goal_2012+.png
 
 === 3.2. Highly productive and fast development environment ===
 
-A great programming language could not exist without tools that support the productivity of the designer and developer.
+...
 
 === 3.3. Flex code should be easily mergeable across different Flex projects worldwide ===
 
@@ -317,7 +314,7 @@ A great programming language could not exist without tools that support the prod
 
 === 3.4. Flex code should be based on coding standards ===
 
-...
+Because coding standards matter, I'd like to encourage the Flex community to use the existing [http://sourceforge.net/adobe/flexsdk/wiki/Coding%20Conventions/ Coding Conventions] provided by Adobe. I would also see the need to introduce an [http://code.google.com/p/masuland/wiki/ApplicationDevelopmentProcedure Application Development Procedure] into the Flex application development process.
 
 === 3.5. Flex code should be sustainable and easily maintainable ===
 
@@ -325,27 +322,27 @@ A great programming language could not exist without tools that support the prod
 
 === 3.6. There should be more highly skilled Flex Developers around ===
 
-...
+Because education matters, I'd like to ask the Flex experts out there to think about ways how you could give back your valuable knowledge to those that consider themselves being a Flex beginner. The faster those unskilled Flex developers learn from you, the sooner we have more highly skilled Flex Developers around.
 
 === 3.7. Developer tools should be easy to be used and should help the designer/developer to be more productive ===
 
-...
+Flex could not survive without tools that support the productivity of the designer and developer. Therefore, I encourage the Flex community to build those tools that are needed to speed up our developer productivity.
 
 === 3.8. The Flashplayer - "Actionscript Virtual Machine" (AVM) respectively - should be as powerful as the "Java Virtual Machine" (JVM) ===
 
-...
+The faster a virtual machine becomes, the more the performance gets your code that runs in it. Therefore, I see the need that Apache Flex 5 will run in the latest AVM of the Adobe Flashplayer (e.g. Flashplayer 12+ approx. released in Mid 2013).
 
 === 3.9. The Adobe Flash Catalyst should be as powerful as Microsoft Expression Blend ===
 
 ...
 
-== 4. Alternatives: How to achieve better Flex-Coding? ==
+== 4. Alternatives: How to achieve these Goals? ==
 
- * Less release cycles starting with Flex 6 and Flashplayer 12
+ * Less release cycles starting with Flex 5 and Flashplayer 12
  * Funding for the developer teams which create Microarchitecture frameworks to speed up their development cycles
  * Open up a Flex Coding Standard Foundation (together with Flex community and Adobe) ... maybe the Spoon Project will help: http://www.spoon.as
- * Integration of a MVC framework to Flex 6 in collaboration with existing Microarchitecture developers
- * MVC code generators In Flash Builder 6 on the basis of the Flex 6 MVC framework
+ * Integration of a MVC framework to Flex 5 in collaboration with existing Microarchitecture developers
+ * MVC code generators In Flash Builder 5 on the basis of the Flex 5 MVC framework
 
 ...
 
