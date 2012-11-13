@@ -392,7 +392,7 @@ Benefits:
 
 == 6. Conclusion ==
 
-So, again the Question: What's wrong with Flex? The Answer: There is nothing really wrong with Flex! Things are only - as usual - imperfect! And, we have to live with the imperfectness of the Web and Apache Flex, and slowly start making improvements to them. And in the meantime we have to imply except those silly fights like [http://www.occupyflash.org www.occupyflash.org] and [http://www.occupyhtml.org www.occupyhtml.org] until a perfect Web for their developers and their users has finally emerged out of it. Let's talk again in 2050 ;)
+So, again the Question: What's wrong with Flex? The Answer: There is nothing really wrong with Flex! Things are only - as usual - imperfect! And, we have to live with the imperfectness of the Web and Apache Flex, and slowly start making improvements to them. And, in the meantime, we have to imply except those silly fights like [http://www.occupyflash.org www.occupyflash.org] and [http://www.occupyhtml.org www.occupyhtml.org] until a perfect Web for their developers and their users has finally emerged out of it. Let's talk again in 2050 ;)
 
 For more information about this conlusion check out my presentation [http://code.google.com/p/masuland/wiki/Presentations "Apache Flex and the imperfect Web"].
 
