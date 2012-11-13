@@ -2,6 +2,8 @@
 
 = Letter of Motivation =
 
+<wiki:toc max_depth="3" />
+
 Here I'd like to explain the reason why I have created these code examples:
 
 == Code Examples ==
