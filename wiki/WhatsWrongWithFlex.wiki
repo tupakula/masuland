@@ -240,7 +240,7 @@ The current situation is good for all Flex Developers. Working in such an uncert
 
 ==== 2.1.2. Positive: Adobe is getting payed for their Investments ====
 
-Until the end of 2011, Adobe was heavily investing into Adobe Flex. I personally want to acknowledge their past work, and, want to encourage the Flex Community to continue buying their Designer & Developer tools that support the creation of Flex application (e.g. Flash Catalyst CS5.5, Flash Builder 4.6 Premium, Fireworks CS6, Illustrator CS6, Photoshop CS6, ... etc.) 
+Until the end of 2011, Adobe was heavily investing into Adobe Flex. I personally want to acknowledge their past work, and, I want to encourage the Flex Community to continue buying their Designer & Developer tools that support the creation of Flex application (e.g. Flash Catalyst CS5.5, Flash Builder 4.6 Premium, Fireworks CS6, Illustrator CS6, Photoshop CS6, ... etc.) 
 
 ==== 2.1.3. Positive: The Flash-Platform and Apache Flex are becoming more and more powerful ====
 
