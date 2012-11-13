@@ -300,7 +300,7 @@ Because Adobe Flashplayer and Adobe AIR cannot be developed Open Source, other O
 
 === 3.1. Strengthening large-scale Flex applications ===
 
-Because Flex tends to be used for smaller projects (see diagram below: between 25 and 100 MXML files), Apache Flex should consider finding ways to strengthen large-scale Flex applications (more than 250 MXML files). This can be done by simplifying (or restricting) the ways how the Flex community should develop their Flex projects. Furthermore, educating the Flex community might be another option to improve large-scale Flex applications (e.g. writing articles about "Best Practices for large-scale Flex Applications").
+Because Flex tends to be used for smaller projects (see diagram below: between 25 and 100 MXML files per Flex project), Apache Flex should consider finding ways to strengthen large-scale Flex applications (more than 250 MXML files per Flex project). This can be done by simplifying (or restricting) the ways how the Flex community should develop their Flex projects. Furthermore, educating the Flex community might be another option to improve large-scale Flex applications (e.g. writing articles about "Best Practices for large-scale Flex Applications").
 
 http://masuland.googlecode.com/files/Flex_Usage_2011-Result-Question_1-Goal_2012+.png
 
