@@ -8,7 +8,7 @@
 
 == Abstract ==
 
-This document aims to be an objective and independent resource of the current state of Adobe Flex / Apache Flex. Furthermore, this document tries to evaluate things that can be seen positive and negative in Flex, defines goals for future versions of Flex and shows up some ways how to reach these goals in future. This document is currently under construction and the author highly encourages the community to take part in the creation of this document, or, to build your own document with your personal ideas. 
+This document aims to be an objective and independent resource of the current state of Adobe Flex / Apache Flex. Furthermore, this document tries to evaluate things that can be seen positive and negative in Flex, defines goals for future versions of Flex and shows up some ways how to reach these goals in future. This document is currently under construction and the author highly encourages the community to take part in the creation of this document, or, to write down your own document with your personal ideas. 
 
 == Before you start reading ... ==
 
@@ -208,9 +208,9 @@ Adobe promotes the usage of [http://sourceforge.net/adobe/flexsdk/wiki/Coding%20
 === 1.10. Code generation tools ===
 
  * Ant and Maven code generators for services and value objects (VO) ... etc.
- * Flash Catalyst (Generating skins for !SkinnableComponent classes)
- * Flash Builder (Generating services & code templates)
- * Creative Suite Products (Generating skins)
+ * Flash Catalyst CS5.5 (Generating skins for !SkinnableComponent classes)
+ * Flash Builder 4.6 (Generating services & code templates)
+ * Adobe Creative Suite 5+ Products (Generating skins)
 
 === 1.11. Varying Developer Coding Backgrounds ===
 
@@ -253,6 +253,8 @@ Adobe will continue to collaborate with the Open Source Community and will provi
  * Adobe Opensource, http://sourceforge.net/adobe/
  * Adobe Github, https://github.com/adobe
  * Apache Flex, http://wiki.apache.org/incubator/FlexProposal
+ * Adobe at W3C, http://www.w3.org/Consortium/Member/List
+ * Adobe at ECMA International, http://www.ecma-international.org/memento/members.htm
 
 === 2.2. What's negative? ===
 
@@ -392,9 +394,9 @@ Benefits:
 
 == 6. Conclusion ==
 
-So, again the Question: What's wrong with Flex? The Answer: There is nothing really wrong with Flex! Things are only - as usual - imperfect! And, we have to live with the imperfectness of the Web and Apache Flex, and slowly start making improvements to them. And, in the meantime, we have to imply except those silly fights like [http://www.occupyflash.org www.occupyflash.org] and [http://www.occupyhtml.org www.occupyhtml.org] until a perfect Web for their developers and their users has finally emerged out of it. Let's talk again in 2050 ;)
+So, again, the question: What's wrong with Flex? The answer: There is nothing really wrong with Flex! Things are only - as usual - imperfect! And, we have to live with the imperfectness of the Web and Apache Flex, and, everyone who is working on those technologies, can only make small improvements for them. And, in the meantime, we have to simply except those silly fights like [http://www.occupyflash.org www.occupyflash.org] and [http://www.occupyhtml.org www.occupyhtml.org] until a perfect Web for their developers and their users has finally emerged out of it. Let's talk again in 2050 ;)
 
-For more information about this conlusion check out my presentation [http://code.google.com/p/masuland/wiki/Presentations "Apache Flex and the imperfect Web"].
+As a summary, please, also check out my presentation [http://code.google.com/p/masuland/wiki/Presentations "Apache Flex and the imperfect Web"].
 
 
 == Related Resources ==
