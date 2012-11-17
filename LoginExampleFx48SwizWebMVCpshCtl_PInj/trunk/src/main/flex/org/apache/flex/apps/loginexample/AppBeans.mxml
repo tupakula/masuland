@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<swiz:BeanProvider
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:swiz="http://swiz.swizframework.org"
+	xmlns:business="org.apache.flex.apps.loginexample.business.*"
+	xmlns:action="org.apache.flex.apps.loginexample.action.*"
+	xmlns:data="org.apache.flex.apps.loginexample.data.*" 
+	xmlns:view="org.apache.flex.apps.loginexample.view.*" 
+	xmlns:component="org.apache.flex.apps.loginexample.view.component.*" 
+	>
+	
+	<swiz:ServiceHelper 
+		id="serviceHelper" 
+		/>
+	
+	<!-- SERVICE -->	
+	
+	<!-- AmfPHP -->
+<!--	
+	<mx:RemoteObject
+		id="appRemoteObject" 
+		destination="amfphp"
+		source="AppMockDAO"
+		showBusyCursor="true"
+		>
+		<mx:channelSet>
+			<mx:ChannelSet>
+				<mx:channels>
+					<mx:AMFChannel 
+						url="http://localhost/LoginExampleServerAmfPHP_1.9/gateway.php"
+						/>
+				</mx:channels>
+			</mx:ChannelSet> 
+		</mx:channelSet>
+	</mx:RemoteObject>
+-->	
+	
+	<!-- ZendAMF -->
+<!--	
+	<mx:RemoteObject
+		id="appRemoteObject" 
+		destination="zend"
+		source="AppMockDAO"
+		showBusyCursor="true"
+		>
+		<mx:channelSet>
+			<mx:ChannelSet>
+				<mx:channels>
+					<mx:AMFChannel 
+						url="http://localhost/LoginExampleServerZendAmf_1.11.11/"
+						/>
+				</mx:channels>
+			</mx:ChannelSet> 
+		</mx:channelSet>
+	</mx:RemoteObject>
+-->	
+	
+	<!-- GraniteDS -->
+<!--	
+	<mx:RemoteObject
+		id="appRemoteObject" 
+		destination="appService"
+		source="org.apache.flex.apps.loginexample.parsley.service.AppService"
+		channelSet="{ appDynamicChannel }"
+		>
+		<mx:channelSet>
+			<mx:ChannelSet>
+				<mx:channels>
+					<mx:AMFChannel 
+						url="http://localhost:8080/AppName/graniteamf/"
+						/>
+				</mx:channels>
+			</mx:ChannelSet> 
+		</mx:channelSet>
+	</mx:RemoteObject>
+-->	
+	
+	<!-- BUSINESS -->	
+	
+<!--	
+	<business:AppAmfDelegate 
+		id="appDelegate" 
+		/>
+-->	
+	<business:AppMockDelegate 
+		id="appDelegate" 
+		/>
+	
+	<!-- ACTION -->	
+
+	<action:AppController
+		id="appController"
+		/>
+
+	<!-- DATA -->	
+
+	<data:AppModel 
+		id="appModel"
+		/>
+
+	<!-- VIEW -->
+	
+	<component:AppViewCP 
+		id="appViewCP"
+		/>
+	
+	<component:SettingsBoxCP 
+		id="settingsBoxCP"
+		/>
+
+	<component:LayoutStackCP
+		id="layoutStackCP"
+		/>
+	
+	<component:AppStackCP
+		id="appStackCP"
+		/>
+
+	<component:LoginBoxCP
+		id="loginBoxCP"
+		/>
+	
+	<component:UserBoxCP
+		id="userBoxCP"
+		/>
+
+</swiz:BeanProvider>
