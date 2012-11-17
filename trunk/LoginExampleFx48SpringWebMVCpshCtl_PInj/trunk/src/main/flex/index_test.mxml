@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application 
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:mx="library://ns.adobe.com/flex/mx" 
+	xmlns:flexUnitUIRunner="http://www.adobe.com/2009/flexUnitUIRunner"
+	xmlns:loginexample="org.apache.flex.apps.loginexample.*"
+	creationComplete="complete()" 
+	>
+	
+	<fx:Script>
+		<![CDATA[
+			import org.apache.flex.apps.loginexample.AppTestSuite;
+			import org.flexunit.listeners.UIListener;
+			import org.flexunit.runner.FlexUnitCore;
+			import org.springextensions.actionscript.test.context.flexunit4.SpringFlexUnit4ClassRunner;
+			
+			private var core:FlexUnitCore;
+			private var dummy:SpringFlexUnit4ClassRunner;
+			
+			private function complete():void
+			{
+				core = new FlexUnitCore();
+				core.addListener(new UIListener(runner));
+				core.run([AppTestSuite]);
+			}
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<loginexample:AppTestConfig
+			id="config"
+			/>
+	</fx:Declarations>
+	
+	<flexUnitUIRunner:TestRunnerBase 
+		id="runner"
+		width="100%" height="100%"
+		/>
+	
+</s:Application>
