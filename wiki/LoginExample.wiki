@@ -242,9 +242,17 @@ http://masuland.googlecode.com/files/Flex4SparkAppWithNanoarchitecturesMVCpshCtl
 
 ...
 
-=== Flex 4.8 (Spark) ===
+=== Apache Flex 4.8 (Spark) ===
 
-TODO
+==== Apache Flex 4.8 (Spark) with MVCpshCtlDS_PInj ====
+
+Features: Apache Flex 4.8 (Spark) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCpsh "C-Push" (Cpsh)], [NanoarchitectureCtl "Controller" (Ctl)], "Delegate" (D), "Service" (S) & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
+
+ * Apache Flex 4.8 (Spark) Login Example for Web with Parsley 2.4.1 (MVCpshCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48ParsleyWebMVCpshCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48ParsleyWebMVCpshCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48ParsleyWebMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx48ParsleyWebMVCpshCtl_PInj/trunk/ svn repo])
+ * Apache Flex 4.8 (Spark) Login Example for Web with Spring AS 1.1 (MVCpshCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48SpringWebMVCpshCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48SpringWebMVCpshCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48SpringWebMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx48SpringWebMVCpshCtl_PInj/trunk/ svn repo])
+ * Apache Flex 4.8 (Spark) Login Example for Web with Swiz 1.4 (MVCpshCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48SwizWebMVCpshCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48SwizWebMVCpshCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48SwizWebMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx48SwizWebMVCpshCtl_PInj/trunk/ svn repo])
+
+http://masuland.googlecode.com/files/Flex4SparkAppWithNanoarchitecturesMVCpshCtlDS_PInj.png
 
 ...
 
