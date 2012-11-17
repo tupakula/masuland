@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin 
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:component="org.apache.flex.apps.loginexample.view.component.*" 
+	resizeEffect="{ fx_resize }" 
+	>
+	
+	<fx:Metadata>
+		[HostComponent("org.apache.flex.apps.loginexample.view.component.LayoutStackCP")]
+	</fx:Metadata>
+	
+	<s:states>
+		<s:State name="web" />
+		<s:State name="phone" />
+	</s:states>
+	
+	<fx:Declarations>
+		<s:Resize
+			id="fx_resize"
+			duration="150"
+			/>
+	</fx:Declarations>
+	
+	<component:AppStackCP
+		id="layout_web"
+		width="100%" height="100%"
+		visible="false"
+		includeInLayout="false"
+		visible.web="true"
+		includeInLayout.web="true"
+		skinClass="org.apache.flex.apps.loginexample.view.skin.web.AppStackSkin"
+		/>
+
+	<component:AppStackCP
+		id="layout_phone"
+		width="100%" height="100%"
+		visible="false"
+		includeInLayout="false"
+		visible.phone="true"
+		includeInLayout.phone="true"
+		skinClass="org.apache.flex.apps.loginexample.view.skin.phone.AppStackSkin"
+		/>
+
+</s:Skin>
