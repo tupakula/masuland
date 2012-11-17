@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin 
+	xmlns:fx="http://ns.adobe.com/mxml/2009"
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:mx="library://ns.adobe.com/flex/mx" 
+	xmlns:component="org.apache.flex.apps.loginexample.view.component.*" 
+	>
+	
+	<fx:Metadata>
+		[HostComponent("org.apache.flex.apps.loginexample.view.component.AppViewCP")]
+	</fx:Metadata>	
+	
+	<s:layout>
+		<s:HorizontalLayout
+			paddingLeft="10" paddingRight="10" paddingTop="10" paddingBottom="10" 
+			/>
+	</s:layout>
+	
+	<s:VGroup 
+		width="100%" height="100%"
+		>
+		
+		<s:HGroup
+			id="bx_header"
+			verticalAlign="middle"
+			>
+			<mx:Image
+				source="@Embed(source='images/logo-apache_flex.gif')"
+				buttonMode="true"
+				useHandCursor="true"
+				mouseChildren="true"
+				click="navigateToURL(new URLRequest('http://incubator.apache.org/flex/'))"
+				toolTip="Apache Flex"
+				/>
+			<s:RichEditableText
+				editable="false"
+				text="Apache Flex 4.8 Login Example with Spring Actionscript 1.1 (MVCpshCtl, PInj)"
+				styleName="appTitle"
+				/>
+		</s:HGroup>
+		
+		<s:Group
+			width="100%" height="100%"
+			>
+			
+			<component:LayoutStackCP
+				id="cp_layout"
+				horizontalCenter="0" verticalCenter="0"
+				skinClass="org.apache.flex.apps.loginexample.view.skin.LayoutStackSkin"
+				/>
+			
+		</s:Group>
+		
+	</s:VGroup>
+	
+	<component:SettingsBoxCP 
+		id="cp_settings"
+		skinClass="org.apache.flex.apps.loginexample.view.skin.SettingsBoxSkin"
+		/>
+	
+</s:Skin>
