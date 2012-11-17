@@ -1,0 +1,44 @@
+package org.apache.flex.apps.loginexample.action.event
+{	
+	import org.apache.flex.apps.loginexample.data.vo.LocaleVO;
+	
+	import flash.events.Event;
+
+	/**
+	 * 
+	 */
+	public class LoadLocaleEvent extends Event
+	{	
+		//----------------------
+		// Constants
+		//----------------------
+		
+		public static const EVENT_NAME:String = 'LoadLocaleEvent.EVENT_NAME';
+		
+		//----------------------
+		// Properties
+		//----------------------
+		
+		public var locale:LocaleVO;
+		
+		//----------------------
+		// Constructor
+		//----------------------
+		
+		public function LoadLocaleEvent(locale:LocaleVO, bubbles:Boolean=true, cancelable:Boolean=true)
+		{
+			super(EVENT_NAME, bubbles, cancelable);
+			
+			this.locale = locale;
+		}
+		
+		//----------------------
+		// Methods
+		//----------------------
+		
+		override public function clone():Event
+		{
+			return new LoadLocaleEvent(locale);
+		}
+	}
+}

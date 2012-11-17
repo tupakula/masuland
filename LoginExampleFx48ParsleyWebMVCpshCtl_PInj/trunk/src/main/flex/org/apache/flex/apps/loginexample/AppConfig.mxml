@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Object 
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:business="org.apache.flex.apps.loginexample.business.*" 
+	xmlns:action="org.apache.flex.apps.loginexample.action.*" 
+	xmlns:data="org.apache.flex.apps.loginexample.data.*" 
+	xmlns:component="org.apache.flex.apps.loginexample.view.component.*" 
+	xmlns:parsley="http://www.spicefactory.org/parsley" 
+	>
+	
+	<mx:Script>
+		<![CDATA[
+			import org.apache.flex.apps.loginexample.view.component.AppStackCP;
+			import org.apache.flex.apps.loginexample.view.component.AppViewCP;
+			import org.apache.flex.apps.loginexample.view.component.LayoutStackCP;
+			import org.apache.flex.apps.loginexample.view.component.LoginBoxCP;
+			import org.apache.flex.apps.loginexample.view.component.SettingsBoxCP;
+			import org.apache.flex.apps.loginexample.view.component.UserBoxCP;
+		]]>
+	</mx:Script>
+	
+	<!-- SERVICE -->	
+	
+	<!-- AmfPHP -->
+<!--	
+	<mx:RemoteObject
+		id="appRemoteObject" 
+		destination="amfphp"
+		source="AppMockDAO"
+		showBusyCursor="true"
+		>
+		<mx:channelSet>
+			<mx:ChannelSet>
+				<mx:channels>
+					<mx:AMFChannel 
+						url="http://localhost/LoginExampleServerAmfPHP_1.9/gateway.php"
+						/>
+				</mx:channels>
+			</mx:ChannelSet> 
+		</mx:channelSet>
+	</mx:RemoteObject>
+-->	
+	
+	<!-- ZendAMF -->
+<!--	
+	<mx:RemoteObject
+		id="appRemoteObject" 
+		destination="zend"
+		source="AppMockDAO"
+		showBusyCursor="true"
+		>
+		<mx:channelSet>
+			<mx:ChannelSet>
+				<mx:channels>
+					<mx:AMFChannel 
+						url="http://localhost/LoginExampleServerZendAmf_1.11.11/"
+						/>
+				</mx:channels>
+			</mx:ChannelSet> 
+		</mx:channelSet>
+	</mx:RemoteObject>
+-->	
+	
+	<!-- GraniteDS -->
+<!--	
+	<mx:RemoteObject
+		id="appRemoteObject" 
+		destination="appService"
+		source="org.apache.flex.apps.loginexample.parsley.service.AppService"
+		channelSet="{ appDynamicChannel }"
+		>
+		<mx:channelSet>
+			<mx:ChannelSet>
+				<mx:channels>
+					<mx:AMFChannel 
+						url="http://localhost:8080/AppName/graniteamf/"
+						/>
+				</mx:channels>
+			</mx:ChannelSet> 
+		</mx:channelSet>
+	</mx:RemoteObject>
+-->	
+	
+	<!-- BUSINESS -->	
+	
+<!--	
+	<business:AppAmfDelegate 
+		id="appDelegate" 
+		/>
+-->	
+	<business:AppMockDelegate 
+		id="appDelegate" 
+		/>
+	
+	<!-- ACTION -->	
+	
+	<action:AppController
+		id="appController"
+		/>
+	
+	<!-- DATA -->	
+	
+	<data:AppModel 
+		id="appModel"
+		/>
+	
+	<!-- VIEW -->
+	
+	<parsley:View type="{ AppViewCP }" />
+	<parsley:View type="{ SettingsBoxCP }" />
+	<parsley:View type="{ LayoutStackCP }" />
+	<parsley:View type="{ AppStackCP }" />
+	<parsley:View type="{ LoginBoxCP }" />
+	<parsley:View type="{ UserBoxCP }" />
+	
+</mx:Object>
