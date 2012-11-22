@@ -46,7 +46,7 @@ http://masuland.googlecode.com/files/LoginExampleScreenshotMobile.png
 
 == Client == 
 
-=== Flex 3 === 
+=== Adobe Flex 3 === 
 
 ==== Flex 3 with MVCmdDS ====
 
@@ -69,7 +69,7 @@ http://masuland.googlecode.com/files/Flex3AppWithNanoarchitecturesMVCtlDS.png
 
 ...
 
-=== Flex 4.1 (MX) ===
+=== Adobe Flex 4.1 (MX) ===
 
 ==== Flex 4.1 (MX) with MVCtlDS ====
 
@@ -152,7 +152,7 @@ Features: Flex 4.1 (MX) with [NanoarchitectureM "Model" (M)], [NanoarchitectureV
 
 ...
 
-=== Flex 4.1 (Spark) ===
+=== Adobe Flex 4.1 (Spark) ===
 
 ==== Flex 4.1 (Spark) with MVCbCtlDS ====
 
@@ -204,7 +204,7 @@ Features: Flex 4.1 (Spark) with [NanoarchitectureM "Model" (M)], [Nanoarchitectu
 
 ...
 
-=== Flex 4.5 (Spark) ===
+=== Adobe Flex 4.5 (Spark) ===
 
 ==== Flex 4.5 (Spark) with MVCpshCmdDS ====
 
@@ -244,13 +244,13 @@ http://masuland.googlecode.com/files/Flex4SparkAppWithNanoarchitecturesMVCpshCtl
 
 === Apache Flex 4.8 (Spark) ===
 
-==== Apache Flex 4.8 (Spark) with MVCpshCtlDS_PInj ====
+==== Flex 4.8 (Spark) with MVCpshCtlDS_PInj ====
 
-Features: Apache Flex 4.8 (Spark) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCpsh "C-Push" (Cpsh)], [NanoarchitectureCtl "Controller" (Ctl)], "Delegate" (D), "Service" (S) & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
+Features: Flex 4.8 (Spark) with [NanoarchitectureM "Model" (M)], [NanoarchitectureVCb "View - Code Behind" (VCb)], [NanoarchitectureCpsh "C-Push" (Cpsh)], [NanoarchitectureCtl "Controller" (Ctl)], "Delegate" (D), "Service" (S) & [NanoarchitecturePInj "Property Injection" (PInj)] Nanoarchitectures
 
- * Apache Flex 4.8 (Spark) Login Example for Web with Parsley 2.4.1 (MVCpshCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48ParsleyWebMVCpshCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48ParsleyWebMVCpshCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48ParsleyWebMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx48ParsleyWebMVCpshCtl_PInj/trunk/ svn repo])
- * Apache Flex 4.8 (Spark) Login Example for Web with Spring AS 1.1 (MVCpshCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48SpringWebMVCpshCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48SpringWebMVCpshCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48SpringWebMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx48SpringWebMVCpshCtl_PInj/trunk/ svn repo])
- * Apache Flex 4.8 (Spark) Login Example for Web with Swiz 1.4 (MVCpshCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48SwizWebMVCpshCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48SwizWebMVCpshCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48SwizWebMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx48SwizWebMVCpshCtl_PInj/trunk/ svn repo])
+ * Flex 4.8 (Spark) Login Example for Web with Parsley 2.4.1 (MVCpshCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48ParsleyWebMVCpshCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48ParsleyWebMVCpshCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48ParsleyWebMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx48ParsleyWebMVCpshCtl_PInj/trunk/ svn repo])
+ * Flex 4.8 (Spark) Login Example for Web with Spring AS 1.1 (MVCpshCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48SpringWebMVCpshCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48SpringWebMVCpshCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48SpringWebMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx48SpringWebMVCpshCtl_PInj/trunk/ svn repo])
+ * Flex 4.8 (Spark) Login Example for Web with Swiz 1.4 (MVCpshCtl, PInj), ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48SwizWebMVCpshCtl_PInj/index.html web app]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48SwizWebMVCpshCtl_PInj/index_test.html web test]) ([http://dl.dropbox.com/u/352808/code/LoginExampleFx48SwizWebMVCpshCtl_PInj/srcview/index.html view source]) ([http://masuland.googlecode.com/svn/trunk/LoginExampleFx48SwizWebMVCpshCtl_PInj/trunk/ svn repo])
 
 http://masuland.googlecode.com/files/Flex4SparkAppWithNanoarchitecturesMVCpshCtlDS_PInj.png
 
