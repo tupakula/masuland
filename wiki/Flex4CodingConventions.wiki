@@ -1,6 +1,6 @@
 #summary This page defines the coding conventions for a Flex 4 applications
 
-= Additional Adobe/Apache Flex 4 Coding Conventions =
+= Additional Apache Flex 4 Coding Conventions =
 
 <wiki:toc />
 
